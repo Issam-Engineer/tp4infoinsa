@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TP4fraction", "TP4fraction\TP4fraction.vcxproj", "{67C411F9-0A0F-4E90-99E3-E0B701F91D84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67C411F9-0A0F-4E90-99E3-E0B701F91D84}.Debug|Win32.ActiveCfg = Debug|Win32
+		{67C411F9-0A0F-4E90-99E3-E0B701F91D84}.Debug|Win32.Build.0 = Debug|Win32
+		{67C411F9-0A0F-4E90-99E3-E0B701F91D84}.Release|Win32.ActiveCfg = Release|Win32
+		{67C411F9-0A0F-4E90-99E3-E0B701F91D84}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

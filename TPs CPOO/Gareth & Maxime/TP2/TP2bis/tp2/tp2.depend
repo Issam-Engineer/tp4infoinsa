@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1285870604 source:d:\users\gareth\desktop\tps 4info\tps cpoo\tp2bis\tp2\chaine.cpp
+	"chaine.h"
+	<cstdlib>
+
+1285870348 d:\users\gareth\desktop\tps 4info\tps cpoo\tp2bis\tp2\chaine.h
+	<iostream>
+	<fstream>
+

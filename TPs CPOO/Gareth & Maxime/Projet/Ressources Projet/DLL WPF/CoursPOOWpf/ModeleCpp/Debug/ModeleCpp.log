@@ -1,0 +1,36 @@
+﻿La génération a démarré 07/11/2010 20:26:52.
+     1>Projet "D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\ModeleCpp\ModeleCpp.vcxproj" sur le nœud 2 (build cible(s)).
+     1>InitializeBuildStatus:
+         Création de "Debug\ModeleCpp.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D MODELECPP_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Coordonnee.cpp Tir.cpp
+         Tir.cpp
+     1>d:\users\gareth\desktop\4info\tps 4info\tps cpoo\projet\ressources projet\dll wpf\courspoowpf\modelecpp\tir.h(12): warning C4251: 'Tir::tabDeCoord' : class 'std::vector<_Ty>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Tir'
+                 with
+                 [
+                     _Ty=Coordonnee
+                 ]
+         Coordonnee.cpp
+         Génération de code en cours...
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\ModeleCpp.dll.embed.manifest.res" Debug\ModeleCpp_manifest.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\Debug\ModeleCpp.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ModeleCpp.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\Debug\ModeleCpp.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\Debug\ModeleCpp.lib" /MACHINE:X86 /DLL Debug\ModeleCpp.dll.embed.manifest.res
+         Debug\Coordonnee.obj
+         Debug\Tir.obj
+         LINK : D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\Debug\ModeleCpp.dll introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
+            Création de la bibliothèque D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\Debug\ModeleCpp.lib et de l'objet D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\Debug\ModeleCpp.exp
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\ModeleCpp.dll.embed.manifest" /manifest Debug\ModeleCpp.dll.intermediate.manifest
+         Toutes les sorties sont à jour.
+       LinkEmbedManifest:
+         Toutes les sorties sont à jour.
+         ModeleCpp.vcxproj -> D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\Debug\ModeleCpp.dll
+       FinalizeBuildStatus:
+         Suppression du fichier "Debug\ModeleCpp.unsuccessfulbuild".
+         Mise à jour de l'horodatage "Debug\ModeleCpp.lastbuildstate".
+     1>Génération du projet "D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\ModeleCpp\ModeleCpp.vcxproj" terminée (build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:23.03

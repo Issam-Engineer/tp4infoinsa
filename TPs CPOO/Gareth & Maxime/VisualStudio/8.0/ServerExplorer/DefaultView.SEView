@@ -1,0 +1,82 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:RootNode id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<Children href="#ref-3"/>
+</a1:RootNode>
+<SOAP-ENC:Array id="ref-3" SOAP-ENC:arrayType="a1:NodeSite[2]" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item href="#ref-4"/>
+<item href="#ref-5"/>
+</SOAP-ENC:Array>
+<a1:NodeSite id="ref-4" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<Node href="#ref-6"/>
+<Expanded>true</Expanded>
+<Parent href="#ref-1"/>
+<Children href="#ref-7"/>
+</a1:NodeSite>
+<a1:NodeSite id="ref-5" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<Node href="#ref-8"/>
+<Expanded>true</Expanded>
+<Parent href="#ref-1"/>
+<Children href="#ref-9"/>
+</a1:NodeSite>
+<a1:DataConnectionsNode id="ref-6" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+</a1:DataConnectionsNode>
+<SOAP-ENC:Array id="ref-7" SOAP-ENC:arrayType="a1:NodeSite[2]" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item href="#ref-10"/>
+<item href="#ref-11"/>
+</SOAP-ENC:Array>
+<a1:ServersNode id="ref-8" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+</a1:ServersNode>
+<SOAP-ENC:Array id="ref-9" SOAP-ENC:arrayType="a1:NodeSite[1]" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item href="#ref-12"/>
+</SOAP-ENC:Array>
+<a1:NodeSite id="ref-10" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<Node href="#ref-13"/>
+<Expanded>false</Expanded>
+<Parent href="#ref-4"/>
+<Children href="#ref-14"/>
+</a1:NodeSite>
+<a1:NodeSite id="ref-11" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<Node href="#ref-15"/>
+<Expanded>false</Expanded>
+<Parent href="#ref-4"/>
+<Children href="#ref-16"/>
+</a1:NodeSite>
+<a1:NodeSite id="ref-12" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<Node href="#ref-17"/>
+<Expanded>false</Expanded>
+<Parent href="#ref-5"/>
+<Children href="#ref-18"/>
+</a1:NodeSite>
+<a1:DataViewNode id="ref-13" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<Label id="ref-19">duplo.BDASIM.dbo</Label>
+<Provider id="ref-20">91510608-8809-4020-8897-fba057e22d54</Provider>
+<ConnectionString id="ref-21">01000000D08C9DDF0115D1118C7A00C04FC297EB0100000029218B8A249230478219169E914F6CC70000000002000000000003660000A800000010000000A503F148EC85CA8CBA69673612E84C500000000004800000A000000010000000AD3518A16B075425D39737E5994E945F880000005D65E15CD26770A9C834463E2EB1B10AC1C5B6FCFC33184748C1AD40B8B612AA12CD5CC9EE53A24DB67320C4F0D104EC1B0CB1CA2A570D0CDC3766B9270E513C7477748530F4884D5B77A463A1FD85D76E033918DCE4EC7024AFF7E484DF55599444436516DB043CB7B010107996E866B8BC3EABFA80FC506E07EFEA4D4AD546892BF6224880265F140000008B01CC3697D12A17AF0D343AAA5D96EDD7E3D69A</ConnectionString>
+<EncryptedString>true</EncryptedString>
+<HierarchyData href="#ref-22"/>
+<DocumentPrefix id="ref-23">MSSQL:://DUPLO/BDASIM/</DocumentPrefix>
+<DataConnectionProperties xsi:type="a1:DataConnectionProperties" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">None</DataConnectionProperties>
+</a1:DataViewNode>
+<SOAP-ENC:Array id="ref-14" SOAP-ENC:arrayType="a1:NodeSite[0]" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+</SOAP-ENC:Array>
+<a1:DataViewNode id="ref-15" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<Label id="ref-24">duplo.master.dbo</Label>
+<Provider id="ref-25">91510608-8809-4020-8897-fba057e22d54</Provider>
+<ConnectionString id="ref-26">01000000D08C9DDF0115D1118C7A00C04FC297EB0100000029218B8A249230478219169E914F6CC70000000002000000000003660000A8000000100000004AD811FC5D89341A8B3174C89F2885FF0000000004800000A0000000100000008F4C9E27A10A74CC23892D0994F1078288000000BCC2CDB0BE6BB912D292034F7EB2523BBD28D7AEDA666E878163350196A9BAF6FEE7F1AF89B34C18175F615A1C9EFB5D904AE77002430AA9140D1802F2272C4AE4A2D7F5B896397742401CDECAA94C4CFDEF7AB434A15BBB514C8A2B05237063A095B6432EC573BDAEB4DB32FA7ED9023D9D8ABBDF8BA67F3FF14F3311C783CAD469E7F1B45C592614000000A37B413E4C05B752C2926428F4AFDDD1351D2667</ConnectionString>
+<EncryptedString>true</EncryptedString>
+<HierarchyData href="#ref-27"/>
+<DocumentPrefix id="ref-28">MSSQL:://DUPLO/MASTER/</DocumentPrefix>
+<DataConnectionProperties xsi:type="a1:DataConnectionProperties" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">None</DataConnectionProperties>
+</a1:DataViewNode>
+<SOAP-ENC:Array id="ref-16" SOAP-ENC:arrayType="a1:NodeSite[0]" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+</SOAP-ENC:Array>
+<a1:ServerNode id="ref-17" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<ServerName id="ref-29">PC3-INFO4</ServerName>
+<ConnectAsDifferentUser>false</ConnectAsDifferentUser>
+</a1:ServerNode>
+<SOAP-ENC:Array id="ref-18" SOAP-ENC:arrayType="a1:NodeSite[0]" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Microsoft.VSDesigner.ServerExplorer/Microsoft.VSDesigner%2C%20Version%3D8.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-22" xsi:type="SOAP-ENC:base64">AAEAAAD/////AQAAAAAAAAAMAgAAAGNNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLkRhdGFUb29scywgVmVyc2lvbj04LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAADxNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLkRhdGFUb29scy5EQlBhY2thZ2UuRGF0YVZpZXdIaWVyYXJjaHkHAAAACFByb3ZpZGVyEENvbm5lY3Rpb25TdHJpbmcLQmFja2VuZFR5cGUMU2VsZWN0ZWRWaWV3EE1rRG9jdW1lbnRQcmVmaXgPSXNBcHBEZWJ1Z2dhYmxlFEFsbG93U3FsQ2xyRGVidWdnaW5nAwEAAQEAAAtTeXN0ZW0uR3VpZAgBAQIAAAAE/f///wtTeXN0ZW0uR3VpZAsAAAACX2ECX2ICX2MCX2QCX2UCX2YCX2cCX2gCX2kCX2oCX2sAAAAAAAAAAAAAAAgHBwICAgICAgICCAZRkQmIIECIl/ugV+ItVAYEAAAApAQwMTAwMDAwMEQwOEM5RERGMDExNUQxMTE4QzdBMDBDMDRGQzI5N0VCMDEwMDAwMDAyOTIxOEI4QTI0OTIzMDQ3ODIxOTE2OUU5MTRGNkNDNzAwMDAwMDAwMDIwMDAwMDAwMDAwMDM2NjAwMDBBODAwMDAwMDEwMDAwMDAwMjdGN0I1RUFGQjhCOUY4RkEyRjNDMjg4RjUwN0Q4Q0YwMDAwMDAwMDA0ODAwMDAwQTAwMDAwMDAxMDAwMDAwMENCNzhGQjhCNTk4RThDQUVBMkI4N0Y0QTAyQjE5RDA3ODgwMDAwMDBDNkUxQUY4MUJERTI4MjQyQzgyMTA0M0M5Nzc4QkFFODUxRUFBOTRGRTU0NTgxRjlBRDZDRTNCNjFGMjE1MEFGMzFDMjY4QUNCMjRGRDY0QjBFOTUxNDQzQUEyN0RDOEQ1REQ1MUI0QzA3MTJCMTYzMjM3MDYzNEE1RTFFRjQ1NjNDQTAwOTEwMDRGNjRCRjE4NUNFMUJFNkZEQjNFNUY2RUI3Q0UyOUU1N0EzMUMyMjY5NDY3RjE2QUFFNTYyNkI5OENFQzg0NzQxM0E2OTdGNzg3OTFCMzYzQzY3Q0VBNDZDQzY3QUY4MUFEMDE5RjE1ODJFMzRBQTFGQjZCODVEQkZCMzFFMTQ2MjhBRjlCOTE0MDAwMDAwNEJBQURGMUI0ODU5MzZCOEVENjMzNjBGMTEwQjI5NjJGRTczNENEMRAAAAAGBQAAAAxDbGFzc2ljIFZpZXcGBgAAABZtc3NxbDo6Ly9kdXBsby9CREFTSU0vAAAL</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-27" xsi:type="SOAP-ENC:base64">AAEAAAD/////AQAAAAAAAAAMAgAAAGNNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLkRhdGFUb29scywgVmVyc2lvbj04LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAADxNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLkRhdGFUb29scy5EQlBhY2thZ2UuRGF0YVZpZXdIaWVyYXJjaHkHAAAACFByb3ZpZGVyEENvbm5lY3Rpb25TdHJpbmcLQmFja2VuZFR5cGUMU2VsZWN0ZWRWaWV3EE1rRG9jdW1lbnRQcmVmaXgPSXNBcHBEZWJ1Z2dhYmxlFEFsbG93U3FsQ2xyRGVidWdnaW5nAwEAAQEAAAtTeXN0ZW0uR3VpZAgBAQIAAAAE/f///wtTeXN0ZW0uR3VpZAsAAAACX2ECX2ICX2MCX2QCX2UCX2YCX2cCX2gCX2kCX2oCX2sAAAAAAAAAAAAAAAgHBwICAgICAgICCAZRkQmIIECIl/ugV+ItVAYEAAAApAQwMTAwMDAwMEQwOEM5RERGMDExNUQxMTE4QzdBMDBDMDRGQzI5N0VCMDEwMDAwMDAyOTIxOEI4QTI0OTIzMDQ3ODIxOTE2OUU5MTRGNkNDNzAwMDAwMDAwMDIwMDAwMDAwMDAwMDM2NjAwMDBBODAwMDAwMDEwMDAwMDAwNEFEODExRkM1RDg5MzQxQThCMzE3NEM4OUYyODg1RkYwMDAwMDAwMDA0ODAwMDAwQTAwMDAwMDAxMDAwMDAwMDhGNEM5RTI3QTEwQTc0Q0MyMzg5MkQwOTk0RjEwNzgyODgwMDAwMDBCQ0MyQ0RCMEJFNkJCOTEyRDI5MjAzNEY3RUIyNTIzQkJEMjhEN0FFREE2NjZFODc4MTYzMzUwMTk2QTlCQUY2RkVFN0YxQUY4OUIzNEMxODE3NUY2MTVBMUM5RUZCNUQ5MDRBRTc3MDAyNDMwQUE5MTQwRDE4MDJGMjI3MkM0QUU0QTJEN0Y1Qjg5NjM5Nzc0MjQwMUNERUNBQTk0QzRDRkRFRjdBQjQzNEExNUJCQjUxNEM4QTJCMDUyMzcwNjNBMDk1QjY0MzJFQzU3M0JEQUVCNERCMzJGQTdFRDkwMjNEOUQ4QUJCREY4QkE2N0YzRkYxNEYzMzExQzc4M0NBRDQ2OUU3RjFCNDVDNTkyNjE0MDAwMDAwQTM3QjQxM0U0QzA1Qjc1MkMyOTI2NDI4RjRBRkRERDEzNTFEMjY2NxAAAAAGBQAAAAxDbGFzc2ljIFZpZXcGBgAAABZtc3NxbDo6Ly9kdXBsby9tYXN0ZXIvAAAL</SOAP-ENC:Array>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

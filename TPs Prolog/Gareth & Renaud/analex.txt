@@ -1,0 +1,30 @@
+
+lettre(C) :- char_code(C,N), N=cc(97,122).
+nlettre(C) :- char_code(C,N), (N<97;N>122).
+
+chiffre(C) :- char_code(C,N), N=cc(48,57).
+nchiffre(C) :- char_code(C,N), (N<48;N>57).
+
+blanc(C) :- C=' ';C='\n';C='\t'.
+nblanc(C) :- dif(C,' '),dif(C,'\n'),dif(C,'\t').
+
+analex(Lul) :- peek_char(C), aiguil(C,Lul).
+
+aiguil('.',[]) :- get_char('.').
+aiguil(C,[X]o Lul) :- lettre(C), identif(I,C),atom_chars(X,I), analex(Lul).
+aiguil(C,[X]o Lul) :- chiffre(C) ,nombre(N,C), number_chars(X,N), analex(Lul).
+aiguil(C,Lul) :- blanc(C), blancs(C), analex(Lul).
+aiguil(C,[C]o Lul) :- nlettre(C),nchiffre(C),nblanc(C),dif(C,'.'),get_char(C),analex(Lul).
+
+identif([C]o I,C) :- lettre(C), get_char(C), peek_char(CS), identif(I,CS).
+identif([C]o I,C) :- chiffre(C), get_char(C), peek_char(CS), identif(I,CS).
+identif([],C) :- nlettre(C), nchiffre(C).
+
+nombre([C]o N,C) :- chiffre(C), get_char(C), peek_char(CS), nombre(N,CS).
+nombre([],C) :- nchiffre(C).
+
+blancs(C) :- blanc(C), get_char(C), peek_char(CS), blancs(CS).
+blancs(C) :- nblanc(C).
+
+
+

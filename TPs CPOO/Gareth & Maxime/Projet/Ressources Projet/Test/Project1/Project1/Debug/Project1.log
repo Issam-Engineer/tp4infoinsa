@@ -1,0 +1,23 @@
+﻿La génération a démarré 29/10/2010 16:32:19.
+Projet "C:\Documents and Settings\cellier\mes documents\visual studio 2010\Projects\Project1\Project1\Project1.vcxproj" sur le nœud 2 (rebuild cible(s)).
+_PrepareForClean:
+  Suppression du fichier "Debug\Project1.lastbuildstate".
+InitializeBuildStatus:
+  Création de "Debug\Project1.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Etudiant.cpp main.cpp
+  main.cpp
+  Etudiant.cpp
+  Génération de code en cours...
+Lib:
+  C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Documents and Settings\cellier\mes documents\visual studio 2010\Projects\Project1\Debug\Project1.lib" /NOLOGO Debug\Etudiant.obj
+  Debug\main.obj
+  Project1.vcxproj -> C:\Documents and Settings\cellier\mes documents\visual studio 2010\Projects\Project1\Debug\Project1.lib
+FinalizeBuildStatus:
+  Suppression du fichier "Debug\Project1.unsuccessfulbuild".
+  Mise à jour de l'horodatage "Debug\Project1.lastbuildstate".
+Génération du projet "C:\Documents and Settings\cellier\mes documents\visual studio 2010\Projects\Project1\Project1\Project1.vcxproj" terminée (rebuild cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:03.92

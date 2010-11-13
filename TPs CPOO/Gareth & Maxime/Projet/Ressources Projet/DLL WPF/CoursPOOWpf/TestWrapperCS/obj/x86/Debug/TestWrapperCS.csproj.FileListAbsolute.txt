@@ -1,0 +1,9 @@
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\TestWrapperCS\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\TestWrapperCS\bin\Debug\TestWrapperCS.exe
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\TestWrapperCS\bin\Debug\TestWrapperCS.pdb
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\TestWrapperCS\bin\Debug\mWrapper.dll
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\TestWrapperCS\bin\Debug\mWrapper.pdb
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\TestWrapperCS\obj\x86\Debug\TestWrapperCS.exe
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\TestWrapperCS\obj\x86\Debug\TestWrapperCS.pdb
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\Debug\TestWrapperCS.exe
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\Debug\TestWrapperCS.pdb

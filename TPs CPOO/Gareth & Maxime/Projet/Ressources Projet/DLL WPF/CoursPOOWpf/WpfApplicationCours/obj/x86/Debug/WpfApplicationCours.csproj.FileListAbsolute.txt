@@ -1,0 +1,13 @@
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\WpfApplicationCours\bin\Debug\WpfApplicationCours.exe
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\WpfApplicationCours\bin\Debug\WpfApplicationCours.pdb
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\WpfApplicationCours\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\WpfApplicationCours\obj\x86\Debug\MainWindow.baml
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\WpfApplicationCours\obj\x86\Debug\MainWindow.g.cs
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\WpfApplicationCours\obj\x86\Debug\App.g.cs
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\WpfApplicationCours\obj\x86\Debug\WpfApplicationCours_MarkupCompile.cache
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\WpfApplicationCours\obj\x86\Debug\WpfApplicationCours.g.resources
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\WpfApplicationCours\obj\x86\Debug\WpfApplicationCours.Properties.Resources.resources
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\WpfApplicationCours\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\WpfApplicationCours\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\WpfApplicationCours\obj\x86\Debug\WpfApplicationCours.exe
+C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\WpfApplicationCours\obj\x86\Debug\WpfApplicationCours.pdb

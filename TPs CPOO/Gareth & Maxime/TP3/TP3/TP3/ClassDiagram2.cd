@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Alea" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>alea.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ange" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIgAAAAAAAAAAAAgAAAABAEAQAAAAAAAAAAABAAA=</HashCode>
+      <FileName>ange.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AngeAleatoire" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAQAAAAAAAAAACAAAQAAAAAA=</HashCode>
+      <FileName>angeAleatoire.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AngeHumain" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAgAAAAAQAAAAAAAAAAAACAAAQAAAAAA=</HashCode>
+      <FileName>angeHumain.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Case" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAiAAAAAIAIBAAAAEAgAAAABAEAAAAAAAABgAGAAAAA=</HashCode>
+      <FileName>case.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Damier" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACEAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>damier.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diable" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>diable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiableAleatoire" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAACAAAQAAAAAA=</HashCode>
+      <FileName>diableAleatoire.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiableHumain" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAQAAAAAgAAAAAAAAAAAAAAAAAACAAAQAAAAAA=</HashCode>
+      <FileName>diableHumain.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Joueur" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAIAAAQAAAAAA=</HashCode>
+      <FileName>joueur.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Partie" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAABAABAAAAAAoCAAEAABAAAAAAEBAAAAAA=</HashCode>
+      <FileName>partie.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="timezone" Collapsed="true">
+    <Position X="9.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>alea.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

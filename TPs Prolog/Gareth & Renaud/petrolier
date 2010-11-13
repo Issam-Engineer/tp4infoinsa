@@ -1,0 +1,52 @@
+% 	definition d'une matrice n_l X n_c
+%       matrice(m,n_l,n_c)
+matrice([L|M],Nl,Nc) 	:- ligne(L,Nc), matrice(M,Nl-1,Nc), Nl>0.
+matrice([],   0,  Nc) .
+ligne([E|L],Nc)       	:- ligne(L,Nc-1), Nc>0, lelin(0,E).
+ligne([],   0).
+
+% 	contraindre c a etre la colonne i de la matrice m
+%	colonne(I,M,C)
+
+% 	produit scalaire
+%       ps(V1,V2,P)
+
+% 	sigma
+%       sigma(V,S)
+
+% 	cont1	
+
+%	cont2
+
+%	cont3
+
+%	expression du profit
+
+
+%	le problhme complet
+%	difinition de la matrice 5X5 des 25 variables du pb
+%	application de la contrainte 1
+%       application de la cont ...
+%       ....
+%	calcul du profit
+%	et sa maximisation
+                                    
+pb(M,P) :-
+  matrice(M,5,5).
+ 
+  
+
+% 	les donnies du problhme
+quant_jour([70,110,120,150,170]) .
+taux_octane([112,109,103,96,92]) .
+
+taux_melange([111,107,102,98,95]).
+quant_max_dem([25,1200,17,1500,20]).
+
+matriceprofit([[104,97,92,85,72],
+	   [98 ,95,88,82,70],
+           [95 ,91,87,80,68],
+           [90 ,89,81,77,68],
+           [88 ,88,80,75,68]]).
+%	le but
+%	pb(M,P).
