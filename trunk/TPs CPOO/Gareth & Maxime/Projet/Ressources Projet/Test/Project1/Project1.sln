@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1", "Project1\Project1.vcxproj", "{125D9A9B-1DE9-4FA9-AF50-977C5EB84B90}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestProject1", "TestProject1\TestProject1.vcxproj", "{B25C2F47-9DA5-465C-B3A0-ACC6D4E0ED57}"
+	ProjectSection(ProjectDependencies) = postProject
+		{125D9A9B-1DE9-4FA9-AF50-977C5EB84B90} = {125D9A9B-1DE9-4FA9-AF50-977C5EB84B90}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D3846F41-AE10-445A-9235-5ABDEA38FF95}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		Project1.vsmdi = Project1.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Project1.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{125D9A9B-1DE9-4FA9-AF50-977C5EB84B90}.Debug|Win32.ActiveCfg = Debug|Win32
+		{125D9A9B-1DE9-4FA9-AF50-977C5EB84B90}.Debug|Win32.Build.0 = Debug|Win32
+		{125D9A9B-1DE9-4FA9-AF50-977C5EB84B90}.Release|Win32.ActiveCfg = Release|Win32
+		{125D9A9B-1DE9-4FA9-AF50-977C5EB84B90}.Release|Win32.Build.0 = Release|Win32
+		{B25C2F47-9DA5-465C-B3A0-ACC6D4E0ED57}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B25C2F47-9DA5-465C-B3A0-ACC6D4E0ED57}.Debug|Win32.Build.0 = Debug|Win32
+		{B25C2F47-9DA5-465C-B3A0-ACC6D4E0ED57}.Release|Win32.ActiveCfg = Release|Win32
+		{B25C2F47-9DA5-465C-B3A0-ACC6D4E0ED57}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

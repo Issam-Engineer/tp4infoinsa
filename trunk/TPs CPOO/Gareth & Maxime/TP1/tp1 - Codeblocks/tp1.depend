@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1284905505 source:d:\users\gareth\desktop\tps 4info\tp1\main.cpp
+	"Carte.h"
+	<iostream>
+	<cstdlib>
+
+1285326946 d:\users\gareth\desktop\tps 4info\tp1\carte.h
+
+1285286750 source:d:\users\gareth\desktop\tps 4info\tp1\carte.cpp
+	"Carte.h"
+	<iostream>
+	<cstdlib>
+

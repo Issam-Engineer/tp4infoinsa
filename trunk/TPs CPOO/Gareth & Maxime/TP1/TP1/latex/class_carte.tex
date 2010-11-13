@@ -1,0 +1,242 @@
+\hypertarget{class_carte}{
+\section{Carte Class Reference}
+\label{class_carte}\index{Carte@{Carte}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_carte_af149f6331c1f23f96239f01397d885e6}{Carte} (\hyperlink{_carte_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur} c, \hyperlink{_carte_8h_a44967720f2d16f8ec13b66b11ee4dd2f}{Valeur} v, char p)
+\begin{DoxyCompactList}\small\item\em Constructor with 3 parameters. \item\end{DoxyCompactList}\item 
+\hyperlink{_carte_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur} \hyperlink{class_carte_ae30ae4dd0507816fca34aeb482c1f9ef}{couleur} () const 
+\begin{DoxyCompactList}\small\item\em gives an access to the current card color \item\end{DoxyCompactList}\item 
+\hyperlink{_carte_8h_a44967720f2d16f8ec13b66b11ee4dd2f}{Valeur} \hyperlink{class_carte_a6c698d6dd7ebc25a00dd9d07748946cc}{valeur} () const 
+\begin{DoxyCompactList}\small\item\em gives an access to the current card value \item\end{DoxyCompactList}\item 
+char \hyperlink{class_carte_ac8ab17d79c87c9afd75d02287f3b0c84}{proprio} () const 
+\begin{DoxyCompactList}\small\item\em gives an access to the current card owner \item\end{DoxyCompactList}\item 
+\hyperlink{class_carte}{Carte} $\ast$ \hyperlink{class_carte_ad303ca1f958b92c9101db475e4beb38d}{suc} () const 
+\begin{DoxyCompactList}\small\item\em gives an access to the current card successor \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_carte_a86374a9ff2cf25ed3cecfe9d4025e230}{supAbs} (\hyperlink{class_carte}{Carte} c)
+\begin{DoxyCompactList}\small\item\em return true if the current element is stronger than called element \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_carte_a4161154e1d88672d5ef2230e86d2dcec}{egale} (\hyperlink{class_carte}{Carte} c)
+\begin{DoxyCompactList}\small\item\em compares two cards together and tests their equality \item\end{DoxyCompactList}\item 
+\hypertarget{class_carte_a007f478e6e0efb44fb4421a94bdacf65}{
+void \hyperlink{class_carte_a007f478e6e0efb44fb4421a94bdacf65}{afficher} ()}
+\label{class_carte_a007f478e6e0efb44fb4421a94bdacf65}
+
+\begin{DoxyCompactList}\small\item\em prints a description of the current card \item\end{DoxyCompactList}\item 
+\hypertarget{class_carte_a5debebf002512c0b1157753077dc323a}{
+void \hyperlink{class_carte_a5debebf002512c0b1157753077dc323a}{changerProp} ()}
+\label{class_carte_a5debebf002512c0b1157753077dc323a}
+
+\begin{DoxyCompactList}\small\item\em puts the first card of the owner at the end of the other player's packet \item\end{DoxyCompactList}\item 
+\hypertarget{class_carte_a68b30935dec56e2f4ace695d8a0a547e}{
+void \hyperlink{class_carte_a68b30935dec56e2f4ace695d8a0a547e}{passerDerriere} ()}
+\label{class_carte_a68b30935dec56e2f4ace695d8a0a547e}
+
+\begin{DoxyCompactList}\small\item\em puts the card at the end of the packet \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_carte}{Carte} $\ast$ \hyperlink{class_carte_a4b6cd4cff868f6426f7cfa867299513e}{getNTete} ()
+\begin{DoxyCompactList}\small\item\em allows an access to the top element of N-\/packet \item\end{DoxyCompactList}\item 
+static \hyperlink{class_carte}{Carte} $\ast$ \hyperlink{class_carte_aeef010254173726e76a7414524d0f2c5}{getSTete} ()
+\begin{DoxyCompactList}\small\item\em allows an access to the top element of S-\/packet \item\end{DoxyCompactList}\item 
+static \hyperlink{class_carte}{Carte} $\ast$ \hyperlink{class_carte_add2d5fb320c8c52c828b686dcbbb9883}{getNQueue} ()
+\begin{DoxyCompactList}\small\item\em allows an access to the last element of N-\/packet \item\end{DoxyCompactList}\item 
+static \hyperlink{class_carte}{Carte} $\ast$ \hyperlink{class_carte_ae293791cc7ca50e969f1dc707270b847}{getSQueue} ()
+\begin{DoxyCompactList}\small\item\em allows an access to the last element of S-\/packet \item\end{DoxyCompactList}\item 
+\hypertarget{class_carte_ad355c321219d1cd9cdc5a62a490db861}{
+static void {\bfseries afficherS} ()}
+\label{class_carte_ad355c321219d1cd9cdc5a62a490db861}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_carte_af149f6331c1f23f96239f01397d885e6}{
+\index{Carte@{Carte}!Carte@{Carte}}
+\index{Carte@{Carte}!Carte@{Carte}}
+\subsubsection[{Carte}]{\setlength{\rightskip}{0pt plus 5cm}Carte::Carte (
+\begin{DoxyParamCaption}
+\item[{{\bf Couleur}}]{ c, }
+\item[{{\bf Valeur}}]{ v, }
+\item[{char}]{ p}
+\end{DoxyParamCaption}
+)}}
+\label{class_carte_af149f6331c1f23f96239f01397d885e6}
+
+
+Constructor with 3 parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{\tt[in]} {\em c}]Card color \item[\mbox{\tt[in]} {\em v}]Card value \item[\mbox{\tt[in]} {\em p}]Card owner, represented by a char ('N' ou 'S') \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_carte_ae30ae4dd0507816fca34aeb482c1f9ef}{
+\index{Carte@{Carte}!couleur@{couleur}}
+\index{couleur@{couleur}!Carte@{Carte}}
+\subsubsection[{couleur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Couleur} Carte::couleur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_carte_ae30ae4dd0507816fca34aeb482c1f9ef}
+
+
+gives an access to the current card color 
+
+\begin{DoxyReturn}{Returns}
+color of the current card 
+\end{DoxyReturn}
+\hypertarget{class_carte_a4161154e1d88672d5ef2230e86d2dcec}{
+\index{Carte@{Carte}!egale@{egale}}
+\index{egale@{egale}!Carte@{Carte}}
+\subsubsection[{egale}]{\setlength{\rightskip}{0pt plus 5cm}bool Carte::egale (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte}}]{ c}
+\end{DoxyParamCaption}
+)}}
+\label{class_carte_a4161154e1d88672d5ef2230e86d2dcec}
+
+
+compares two cards together and tests their equality 
+
+\begin{DoxyReturn}{Returns}
+a boolean, true if the elements are equals, else false 
+\end{DoxyReturn}
+\hypertarget{class_carte_add2d5fb320c8c52c828b686dcbbb9883}{
+\index{Carte@{Carte}!getNQueue@{getNQueue}}
+\index{getNQueue@{getNQueue}!Carte@{Carte}}
+\subsubsection[{getNQueue}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Carte} $\ast$ Carte::getNQueue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_carte_add2d5fb320c8c52c828b686dcbbb9883}
+
+
+allows an access to the last element of N-\/packet 
+
+\begin{DoxyReturn}{Returns}
+the pointer on the last card of N-\/packet 
+\end{DoxyReturn}
+\hypertarget{class_carte_a4b6cd4cff868f6426f7cfa867299513e}{
+\index{Carte@{Carte}!getNTete@{getNTete}}
+\index{getNTete@{getNTete}!Carte@{Carte}}
+\subsubsection[{getNTete}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Carte} $\ast$ Carte::getNTete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_carte_a4b6cd4cff868f6426f7cfa867299513e}
+
+
+allows an access to the top element of N-\/packet 
+
+\begin{DoxyReturn}{Returns}
+the pointer on the first card of N-\/packet 
+\end{DoxyReturn}
+\hypertarget{class_carte_ae293791cc7ca50e969f1dc707270b847}{
+\index{Carte@{Carte}!getSQueue@{getSQueue}}
+\index{getSQueue@{getSQueue}!Carte@{Carte}}
+\subsubsection[{getSQueue}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Carte} $\ast$ Carte::getSQueue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_carte_ae293791cc7ca50e969f1dc707270b847}
+
+
+allows an access to the last element of S-\/packet 
+
+\begin{DoxyReturn}{Returns}
+a pointer on the last card of S-\/packet 
+\end{DoxyReturn}
+\hypertarget{class_carte_aeef010254173726e76a7414524d0f2c5}{
+\index{Carte@{Carte}!getSTete@{getSTete}}
+\index{getSTete@{getSTete}!Carte@{Carte}}
+\subsubsection[{getSTete}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Carte} $\ast$ Carte::getSTete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_carte_aeef010254173726e76a7414524d0f2c5}
+
+
+allows an access to the top element of S-\/packet 
+
+\begin{DoxyReturn}{Returns}
+the pointer on the first card of S-\/packet 
+\end{DoxyReturn}
+\hypertarget{class_carte_ac8ab17d79c87c9afd75d02287f3b0c84}{
+\index{Carte@{Carte}!proprio@{proprio}}
+\index{proprio@{proprio}!Carte@{Carte}}
+\subsubsection[{proprio}]{\setlength{\rightskip}{0pt plus 5cm}char Carte::proprio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_carte_ac8ab17d79c87c9afd75d02287f3b0c84}
+
+
+gives an access to the current card owner 
+
+\begin{DoxyReturn}{Returns}
+a char which represents the current card owner 
+\end{DoxyReturn}
+\hypertarget{class_carte_ad303ca1f958b92c9101db475e4beb38d}{
+\index{Carte@{Carte}!suc@{suc}}
+\index{suc@{suc}!Carte@{Carte}}
+\subsubsection[{suc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Carte} $\ast$ Carte::suc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_carte_ad303ca1f958b92c9101db475e4beb38d}
+
+
+gives an access to the current card successor 
+
+\begin{DoxyReturn}{Returns}
+a pointer on the successor 
+\end{DoxyReturn}
+\hypertarget{class_carte_a86374a9ff2cf25ed3cecfe9d4025e230}{
+\index{Carte@{Carte}!supAbs@{supAbs}}
+\index{supAbs@{supAbs}!Carte@{Carte}}
+\subsubsection[{supAbs}]{\setlength{\rightskip}{0pt plus 5cm}bool Carte::supAbs (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte}}]{ c}
+\end{DoxyParamCaption}
+)}}
+\label{class_carte_a86374a9ff2cf25ed3cecfe9d4025e230}
+
+
+return true if the current element is stronger than called element 
+
+\begin{DoxyReturn}{Returns}
+a boolean, true if the current element is stronger false esle 
+\end{DoxyReturn}
+\hypertarget{class_carte_a6c698d6dd7ebc25a00dd9d07748946cc}{
+\index{Carte@{Carte}!valeur@{valeur}}
+\index{valeur@{valeur}!Carte@{Carte}}
+\subsubsection[{valeur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Valeur} Carte::valeur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_carte_a6c698d6dd7ebc25a00dd9d07748946cc}
+
+
+gives an access to the current card value 
+
+\begin{DoxyReturn}{Returns}
+value of the current card 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+TP1/TP1/\hyperlink{_carte_8h}{Carte.h}\item 
+TP1/TP1/\hyperlink{_carte_8cpp}{Carte.cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,17 @@
+﻿La génération a démarré 07/11/2010 20:27:15.
+     1>Projet "D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\mWrapper\mWrapper.vcxproj" sur le nœud 3 (build cible(s)).
+     1>InitializeBuildStatus:
+         Création de "Debug\mWrapper.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\ModeleCpp" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\mWrapper.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt Stdafx.cpp /clr:nostdlib 
+         Stdafx.cpp
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\anquetil\Documents\Visual Studio 2010\Projects\CoursPOO\ModeleCpp" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\mWrapper.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt AssemblyInfo.cpp mWrapper.cpp /clr:nostdlib 
+         AssemblyInfo.cpp
+         mWrapper.cpp
+     1>d:\users\gareth\desktop\4info\tps 4info\tps cpoo\projet\ressources projet\dll wpf\courspoowpf\mwrapper\mWrapper.h(6): fatal error C1083: Impossible d'ouvrir le fichier include : 'Tir.h' : No such file or directory
+         Génération de code en cours...
+     1>Génération du projet "D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\mWrapper\mWrapper.vcxproj" terminée (build cible(s)) -- ÉCHEC.
+
+ÉCHEC de la build.
+
+Temps écoulé 00:00:04.13

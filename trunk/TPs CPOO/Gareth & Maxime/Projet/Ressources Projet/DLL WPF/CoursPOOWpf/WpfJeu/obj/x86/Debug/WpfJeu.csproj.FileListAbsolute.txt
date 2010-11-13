@@ -1,0 +1,34 @@
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\WpfJeu\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\WpfJeu\obj\x86\Debug\MainWindow.baml
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\WpfJeu\obj\x86\Debug\MainWindow.g.cs
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\WpfJeu\obj\x86\Debug\App.g.cs
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\WpfJeu\obj\x86\Debug\WpfJeu_MarkupCompile.cache
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\WpfJeu\obj\x86\Debug\WpfJeu.g.resources
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\WpfJeu\bin\Debug\WpfJeu.exe
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\WpfJeu\bin\Debug\WpfJeu.pdb
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\WpfJeu\obj\x86\Debug\WpfJeu.exe
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\WpfJeu\obj\x86\Debug\WpfJeu.pdb
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\WpfJeu\bin\Debug\mWrapper.dll
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\WpfJeu\bin\Debug\mWrapper.pdb
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\Debug\WpfJeu.exe
+C:\Users\anquetil\documents\visual studio 2010\Projects\CoursPOO\Debug\WpfJeu.pdb
+C:\DATA_ANQUETIL\COURS\4info_CPOOJavaC++\CODE\CoursPOOWpf\Debug\WpfJeu.exe
+C:\DATA_ANQUETIL\COURS\4info_CPOOJavaC++\CODE\CoursPOOWpf\Debug\WpfJeu.pdb
+C:\DATA_ANQUETIL\COURS\4info_CPOOJavaC++\CODE\CoursPOOWpf\WpfJeu\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\DATA_ANQUETIL\COURS\4info_CPOOJavaC++\CODE\CoursPOOWpf\WpfJeu\obj\x86\Debug\MainWindow.baml
+C:\DATA_ANQUETIL\COURS\4info_CPOOJavaC++\CODE\CoursPOOWpf\WpfJeu\obj\x86\Debug\MainWindow.g.cs
+C:\DATA_ANQUETIL\COURS\4info_CPOOJavaC++\CODE\CoursPOOWpf\WpfJeu\obj\x86\Debug\App.g.cs
+C:\DATA_ANQUETIL\COURS\4info_CPOOJavaC++\CODE\CoursPOOWpf\WpfJeu\obj\x86\Debug\WpfJeu_MarkupCompile.cache
+C:\DATA_ANQUETIL\COURS\4info_CPOOJavaC++\CODE\CoursPOOWpf\WpfJeu\obj\x86\Debug\WpfJeu.g.resources
+C:\DATA_ANQUETIL\COURS\4info_CPOOJavaC++\CODE\CoursPOOWpf\WpfJeu\obj\x86\Debug\WpfJeu.exe
+C:\DATA_ANQUETIL\COURS\4info_CPOOJavaC++\CODE\CoursPOOWpf\WpfJeu\obj\x86\Debug\WpfJeu.pdb
+D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\WpfJeu\obj\x86\Debug\WpfJeu.exe
+D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\WpfJeu\obj\x86\Debug\WpfJeu.pdb
+D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\Debug\WpfJeu.exe
+D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\Debug\WpfJeu.pdb
+D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\WpfJeu\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\WpfJeu\obj\x86\Debug\MainWindow.baml
+D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\WpfJeu\obj\x86\Debug\MainWindow.g.cs
+D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\WpfJeu\obj\x86\Debug\App.g.cs
+D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\WpfJeu\obj\x86\Debug\WpfJeu_MarkupCompile.cache
+D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Projet\Ressources Projet\DLL WPF\CoursPOOWpf\WpfJeu\obj\x86\Debug\WpfJeu.g.resources

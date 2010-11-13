@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="24b07727-293f-4a45-8dd5-d271035e3896" name="cellier@THALIE 2010-10-29 16:19:16" runUser="IRISA\cellier" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e9d2e1ce-8a1c-4f93-aa35-2555c727b671">
+    <Description>Il s'agit des paramètres de test par défaut pour une série de tests locale.</Description>
+    <Deployment enabled="false" runDeploymentRoot="cellier_THALIE 2010-10-29 16_19_16" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-10-29T16:19:16.4531250+02:00" queuing="2010-10-29T16:19:16.5000000+02:00" start="2010-10-29T16:19:16.6093750+02:00" finish="2010-10-29T16:19:23.2500000+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\documents and settings\cellier\mes documents\visual studio 2010\projects\project1\debug\defaulttest.dll" id="59863143-3238-122e-4d8a-637b491cc755">
+      <Execution id="d46c715d-729e-45d9-99b3-bf6a54ebedfe" />
+      <TestMethod codeBase="C:/Documents and Settings/cellier/mes documents/visual studio 2010/Projects/Project1/Debug/DefaultTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.UnitTest1, DefaultTest, Version=1.0.3954.27558, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Les résultats ne figurent pas dans une liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Tous les résultats chargés" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="59863143-3238-122e-4d8a-637b491cc755" executionId="d46c715d-729e-45d9-99b3-bf6a54ebedfe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d46c715d-729e-45d9-99b3-bf6a54ebedfe" testId="59863143-3238-122e-4d8a-637b491cc755" testName="TestMethod1" computerName="THALIE" duration="00:00:01.3491688" startTime="2010-10-29T16:19:16.9843750+02:00" endTime="2010-10-29T16:19:22.9531250+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d46c715d-729e-45d9-99b3-bf6a54ebedfe">
+    </UnitTestResult>
+  </Results>
+</TestRun>

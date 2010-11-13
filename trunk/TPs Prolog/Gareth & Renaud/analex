@@ -1,0 +1,37 @@
+%  Octobre 2001
+% ECLIPSE TP8 ANALYSE ECLIPSE TP8 ANALYSE ECLIPSE TP8 ANALYSE
+% ===========================================================
+
+
+lettre(C) :- char_int(C,N), N>=97, N=<122.
+nlettre(C) :- char_int(C,N), (N<97;N>122).
+
+chiffre(C) :- char_int(C,N), N>=48, N=<57.
+nchiffre(C) :- char_int(C,N), (N<48;N>57).
+
+blanc(C) :- C=" ";C="\n";C="\t".
+nblanc(C) :- C\=" ",C\="\n",C\="\t".
+
+analex(Lul,Clu) :- aiguil(Clu,Lul).
+
+aiguil(".",[]).
+aiguil(Clu,[X | Lul])  :- lettre(Clu), identif(I,Clu,Cprelu),
+                            concat_string (I,S),atom_string(X,S), analex(Lul,Cprelu).
+aiguil(Clu,[X | Lul])  :- chiffre(Clu) ,nombre(N,Clu,Cprelu),
+                            concat_string (N,S),number_string(X,S), analex(Lul,Cprelu).
+aiguil(Clu,Lul)        :- blanc(Clu), blancs(Clu,Cprelu), analex(Lul,Cprelu).
+aiguil(Clu,[X | Lul]):- nlettre(Clu),nchiffre(Clu),nblanc(Clu),Clu\=".",atom_string(X,Clu),
+                            get_char(Cprelu),analex(Lul,Cprelu).
+
+identif([Clu | I],Clu,Cavant) :- lettre(Clu), get_char(Cprelu), identif(I,Cprelu,Cavant).
+identif([Clu | I],Clu,Cavant) :- chiffre(Clu), get_char(Cprelu), identif(I,Cprelu,Cavant).
+identif([],Clu,Clu)           :- nlettre(Clu), nchiffre(Clu).
+
+nombre([Clu | N],Clu,Cavant) :- chiffre(Clu), get_char(Cprelu), nombre(N,Cprelu,Cavant).
+nombre([],Clu,Clu)    :- nchiffre(Clu).
+
+blancs(Clu,Cavant) :- blanc(Clu), get_char(Cprelu), blancs(Cprelu,Cavant).
+blancs(Clu,Clu) :- nblanc(Clu).
+
+/*******************/
+

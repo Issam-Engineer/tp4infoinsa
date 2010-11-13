@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MyHelpUserSettings Version="8.0.50727.762">
+  <ShowAbstract>True</ShowAbstract>
+  <HighlightTerms>True</HighlightTerms>
+  <ItemsPerPage>20</ItemsPerPage>
+  <SearchProviderPreferences>
+    <Provider Type="SearchProviderTypeLocalHelp" Enabled="True" />
+    <Provider Type="SearchProviderTypeMsdnOnline" Enabled="True" />
+    <Provider Type="SearchProviderTypeCodeWise" Enabled="True" />
+    <Provider Type="SearchProviderTypeQuestions" Enabled="True" />
+  </SearchProviderPreferences>
+  <CodeWiseProviders />
+</MyHelpUserSettings>
