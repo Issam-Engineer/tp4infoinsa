@@ -1,19 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="81cbb4b5-bf96-46ae-bdcb-a2cd4987bbb9">
-      <profileInstance Id="2ee588ea-62ab-48c6-bfda-dfe90182db12" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="d1ae8699-718b-436d-b131-31d47cd0b4f9">
-      <profileInstance Id="1c43894b-7d6e-47fa-b47b-dea68a2bca57" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+  <ownedCommentsInternal>
+    <comment Id="571bede5-5460-4e51-98bb-24bf9d8936c6">
+      <elementDefinition Id="6536fcb9-b86d-466c-9434-d4f4e1ee87b7" />
+      <body>courant.execute(CaseAction)</body>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="3ae49d1c-c64e-4b94-953f-82a1736a75e6" name="Plateau" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -307,38 +299,30 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="d134eb87-f5a9-406f-963c-ec413bca873b" />
           </association>
-          <association Id="d0e799c7-e6f8-4329-ba96-870a432bc955" isDerived="false" sourceEndRoleName="MoteurJeu" targetEndRoleName="Etat" isLeaf="false" isAbstract="false">
-            <classMoniker Id="c50bb468-3861-4bd3-a2ec-8435b74f536a" LastKnownName="Etat" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="6004f1c5-b067-4fe0-b864-5b859ceccb5b" name="MoteurJeu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="3d6f945d-64b0-45c0-b5d6-e9a48494263d" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="9ec2d056-13e3-4ceb-a295-a603f1193fcc" name="Etat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="c76b15fa-5446-44e6-9f0b-357c540e6f21" name="Lower" value="1">
-                      <elementDefinition Id="69b285d2-6323-42b8-8910-f15f977eba17" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="f97b0209-4ac8-45ac-9ff1-b676077621b1" name="Upper" value="1">
-                      <elementDefinition Id="fd37c125-2b13-4cd3-8a57-10659d8f069e" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="f2fc74bf-ed64-4786-a8d4-a666ba488a5b" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="de478f1f-5c77-4c06-a728-d2f615b4a40e" />
-          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="b43bf96a-26ef-4949-883d-c5084825b31e" name="nbjoueurs" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="2dfb70f3-f6fa-42b1-beac-63f277d1deeb" />
           </property>
+          <property Id="5a000e43-5561-4a66-aaa6-31d02543ad02" name="courant" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d135681f-01c0-40ce-b4e2-a1a67fa8e2d0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="366849e0-58cb-4393-936a-e888eb45db20" LastKnownName="Etat" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0d2cb505-8dbb-46a4-b2f0-c460879f8975" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="14a07670-8794-46cf-a1a1-419c4c830c50" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6cec067d-abfb-47e1-83a7-c2d400a27278" name="CaseAction" direction="In" isUnique="false">
+                  <elementDefinition Id="aa060d16-c3c5-4dde-88f4-aaf8ac533f23" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -530,12 +514,164 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="c50bb468-3861-4bd3-a2ec-8435b74f536a" name="Etat" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="b2097d1e-aba4-424c-bf1f-e30c23721dfa" />
+      <Interface Id="4943062b-5da2-4247-a808-ba642525472f" name="Etat" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="32b79ced-b70a-43fb-a700-883ce1c35afa" />
+        <targetEnds>
+          <association Id="1b754280-6cc5-4bac-833a-75a181c58977" isDerived="false" sourceEndRoleName="Etat" targetEndRoleName="MoteurJeu" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7d0452f3-7dd7-41d0-b084-02ff238f831b" LastKnownName="MoteurJeu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4fafe3db-09f9-41c0-b3d1-fe1888559348" name="Etat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e434ddd8-04b5-4135-ab6d-bb3bcf0ec75a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be7f4b7d-807e-4e1f-8f69-9b0762b2a78b" name="MoteurJeu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2b0a971b-8cc5-4527-966d-2454e2bc474b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c3926b15-302e-4cce-9146-e6e208958f8d" />
+          </association>
+        </targetEnds>
+        <ownedOperations>
+          <operation Id="18e1210b-f34c-4be5-afd2-11fcc22a1976" name="Excecute" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a6521c9d-9608-4a97-87a8-b5da010d048c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="24bfbf83-4df7-4077-a11f-3275dc624efd" name="CaseAction" direction="In" isUnique="false">
+                  <elementDefinition Id="245ce86c-f2de-4eca-b594-779580e30bea" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="894206be-e8f9-4fcf-a518-3e34c52fd598" name="EtatDuel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fe6e8b86-9622-4a25-bdab-5066f70b19d5" />
+        <suppliersInternal>
+          <interfaceRealization Id="e14191b7-baec-495c-a652-17d8bb4c615b">
+            <interfaceMoniker Id="4943062b-5da2-4247-a808-ba642525472f" LastKnownName="Etat" />
+            <elementDefinition Id="07478d70-aab6-42a8-960a-3b21b9ec0f87" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="e4071ca1-3042-410b-a0cf-90b2ed237762" name="motor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="74351715-23ef-4850-b6f0-443095b7939f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="650761e5-d82f-47e7-a9f3-46967ef3945d" LastKnownName="Moteur" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="88032283-cf07-4c77-baff-95a2ea5cc84f" name="Excecute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3c178988-80bf-4e50-b991-a800c173b188" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ed329d4b-15e4-4320-b2d6-a6602522a12d" name="CaseAction" direction="In" isUnique="false">
+                  <elementDefinition Id="30ff35b3-f178-43a9-81fd-089ed3202cdd" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="009f3068-d762-4837-9f7e-d2dea9d75986" name="EtatTresor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="23033e18-2ae2-47ef-ac2f-508a9144aa04" />
+        <suppliersInternal>
+          <interfaceRealization Id="3ee8719a-061a-47f1-a893-6690860df4b2">
+            <interfaceMoniker Id="4943062b-5da2-4247-a808-ba642525472f" LastKnownName="Etat" />
+            <elementDefinition Id="5a73a7f1-69d8-4698-876c-0b6e4d8fa17c" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="0ca8958a-22c2-4b6a-a93e-241b820a9b21" name="motor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4593c8aa-df4a-4755-b2e2-6358be050fd5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3577a2c7-b0ab-4bed-9cd8-ff6d0dc91bc6" LastKnownName="Moteur" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="680a24e3-dc0a-4738-a9cb-ca8e0a1127d3" name="Excecute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4b4b1e92-c9a5-4004-93e0-37d9ff959498" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0f50872d-ecde-4e31-afa2-a285465e4c86" name="CaseAction" direction="In" isUnique="false">
+                  <elementDefinition Id="712e5028-936e-4f8c-8eb6-f8f69bf1047f" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="24b12fd4-1201-4f25-b619-f823e99a0e84" name="EtatLancerDe" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1ba3fc1a-04c0-4652-9fcb-b2108a66f887" />
+        <suppliersInternal>
+          <interfaceRealization Id="5817117e-7bb8-4a3d-8605-25d2785e1b27">
+            <interfaceMoniker Id="4943062b-5da2-4247-a808-ba642525472f" LastKnownName="Etat" />
+            <elementDefinition Id="1368292f-7ab3-47b0-9d26-6f8d6b030da2" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="1bf1e18a-a33c-4a80-8ea8-2dfd0ee0279f" name="motor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="90adcb35-bea0-43b6-9092-3128af1e6d2c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="650761e5-d82f-47e7-a9f3-46967ef3945d" LastKnownName="Moteur" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="09f9f904-5d59-4e96-aa7f-ce59af37fbc4" name="Excecute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="559d9ee2-fe51-4154-8149-4066c5046bef" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b22ef8a2-2e2c-45c7-8482-410bcf99b953" name="CaseAction" direction="In" isUnique="false">
+                  <elementDefinition Id="4a687b2a-a6da-499c-8661-d47176fee8c6" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="366849e0-58cb-4393-936a-e888eb45db20" name="Etat" isAbstract="false" isLeaf="false" cachedFullName="CanonNoir::Etat">
+        <elementDefinition Id="b2097d1e-aba4-424c-bf1f-e30c23721dfa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="650761e5-d82f-47e7-a9f3-46967ef3945d" name="Moteur" isAbstract="false" isLeaf="false" cachedFullName="CanonNoir::Moteur">
+        <elementDefinition Id="486f2cc5-6fa3-4891-93d5-6b1cf4832507" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3577a2c7-b0ab-4bed-9cd8-ff6d0dc91bc6" name="Moteur" isAbstract="false" isLeaf="false" cachedFullName="CanonNoir::Moteur">
+        <elementDefinition Id="486f2cc5-6fa3-4891-93d5-6b1cf4832507" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="3af465bf-7222-4ae4-a005-adf1a332bcc4" name="CanonNoir">
     <elementDefinition Id="d1255448-f23c-4490-af91-82b9caa462ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="81cbb4b5-bf96-46ae-bdcb-a2cd4987bbb9">
+        <profileInstance Id="2ee588ea-62ab-48c6-bfda-dfe90182db12" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d1ae8699-718b-436d-b131-31d47cd0b4f9">
+        <profileInstance Id="1c43894b-7d6e-47fa-b47b-dea68a2bca57" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

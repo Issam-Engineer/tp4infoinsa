@@ -3,6 +3,12 @@
   dslVersion="1.0.0.0"
   Id="d1255448-f23c-4490-af91-82b9caa462ca"
   name="CanonNoir" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="6536fcb9-b86d-466c-9434-d4f4e1ee87b7">
+      <body>courant.execute(CaseAction)</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -652,58 +658,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
-          <association
-            Id="de478f1f-5c77-4c06-a728-d2f615b4a40e"
-            isDerived="false"
-            sourceEndRoleName="MoteurJeu"
-            targetEndRoleName="Etat"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="b2097d1e-aba4-424c-bf1f-e30c23721dfa"
-              LastKnownName="Etat"
-              LastKnownLocation="CanonNoir.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="3d6f945d-64b0-45c0-b5d6-e9a48494263d"
-                  name="MoteurJeu"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f2fc74bf-ed64-4786-a8d4-a666ba488a5b"
-                  name="Etat"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="69b285d2-6323-42b8-8910-f15f977eba17"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="fd37c125-2b13-4cd3-8a57-10659d8f069e"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -717,7 +671,45 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="d135681f-01c0-40ce-b4e2-a1a67fa8e2d0"
+            name="courant"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="b2097d1e-aba4-424c-bf1f-e30c23721dfa"
+                LastKnownName="Etat"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="14a07670-8794-46cf-a1a1-419c4c830c50"
+            name="execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="aa060d16-c3c5-4dde-88f4-aaf8ac533f23"
+                  name="CaseAction"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1211,8 +1203,300 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="02dc78b0-3596-41b9-8b76-c635c2c2699d"
+            isDerived="false"
+            sourceEndRoleName="Etat"
+            targetEndRoleName="MoteurJeu"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5656d5bb-765f-470e-967a-37dd27c2ef4d"
+              LastKnownName="MoteurJeu"
+              LastKnownLocation="CanonNoir.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f5477180-0d2b-4e1a-a8ab-54ee5ee37380"
+                  name="Etat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f7879746-5185-4656-8e99-59b3ad591312"
+                  name="MoteurJeu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="32b79ced-b70a-43fb-a700-883ce1c35afa"
+        name="Etat"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c3926b15-302e-4cce-9146-e6e208958f8d"
+            isDerived="false"
+            sourceEndRoleName="Etat"
+            targetEndRoleName="MoteurJeu"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5656d5bb-765f-470e-967a-37dd27c2ef4d"
+              LastKnownName="MoteurJeu"
+              LastKnownLocation="CanonNoir.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e434ddd8-04b5-4135-ab6d-bb3bcf0ec75a"
+                  name="Etat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b0a971b-8cc5-4527-966d-2454e2bc474b"
+                  name="MoteurJeu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperations>
+          <operation
+            Id="a6521c9d-9608-4a97-87a8-b5da010d048c"
+            name="Excecute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="245ce86c-f2de-4eca-b594-779580e30bea"
+                  name="CaseAction"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fe6e8b86-9622-4a25-bdab-5066f70b19d5"
+        name="EtatDuel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="07478d70-aab6-42a8-960a-3b21b9ec0f87">
+            <interfaceMoniker
+              Id="32b79ced-b70a-43fb-a700-883ce1c35afa"
+              LastKnownName="Etat"
+              LastKnownLocation="CanonNoir.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="74351715-23ef-4850-b6f0-443095b7939f"
+            name="motor"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="486f2cc5-6fa3-4891-93d5-6b1cf4832507"
+                LastKnownName="Moteur"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3c178988-80bf-4e50-b991-a800c173b188"
+            name="Excecute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="30ff35b3-f178-43a9-81fd-089ed3202cdd"
+                  name="CaseAction"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="23033e18-2ae2-47ef-ac2f-508a9144aa04"
+        name="EtatTresor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="5a73a7f1-69d8-4698-876c-0b6e4d8fa17c">
+            <interfaceMoniker
+              Id="32b79ced-b70a-43fb-a700-883ce1c35afa"
+              LastKnownName="Etat"
+              LastKnownLocation="CanonNoir.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="4593c8aa-df4a-4755-b2e2-6358be050fd5"
+            name="motor"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="486f2cc5-6fa3-4891-93d5-6b1cf4832507"
+                LastKnownName="Moteur"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4b4b1e92-c9a5-4004-93e0-37d9ff959498"
+            name="Excecute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="712e5028-936e-4f8c-8eb6-f8f69bf1047f"
+                  name="CaseAction"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1ba3fc1a-04c0-4652-9fcb-b2108a66f887"
+        name="EtatLancerDe"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="1368292f-7ab3-47b0-9d26-6f8d6b030da2">
+            <interfaceMoniker
+              Id="32b79ced-b70a-43fb-a700-883ce1c35afa"
+              LastKnownName="Etat"
+              LastKnownLocation="CanonNoir.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="90adcb35-bea0-43b6-9092-3128af1e6d2c"
+            name="motor"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="486f2cc5-6fa3-4891-93d5-6b1cf4832507"
+                LastKnownName="Moteur"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="559d9ee2-fe51-4154-8149-4066c5046bef"
+            name="Excecute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4a687b2a-a6da-499c-8661-d47176fee8c6"
+                  name="CaseAction"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="353e14e5-c02c-469e-a239-852a77bd4830"
+        LastKnownName="Package1"
+        LastKnownLocation="Package_2127.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7c65218d-b9e4-4d3b-9346-f657cdfd0a86"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
