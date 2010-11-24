@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="571bede5-5460-4e51-98bb-24bf9d8936c6">
       <elementDefinition Id="6536fcb9-b86d-466c-9434-d4f4e1ee87b7" />
@@ -169,16 +169,16 @@ return : courant.execute(c) }</body>
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="08558252-aad9-4825-94fe-2cd32ab90450" name="couleur" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="9303cd1d-b56b-4997-a303-74d149612c7d" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="e0ec5ae2-4a52-434a-aa62-a89d49ec73f8" LastKnownName="int" />
-            </type_NamedElement>
-          </property>
           <property Id="79773332-6e06-4a87-9a7f-b6349b89c032" name="nom" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="eb755ae0-a224-4c4a-9f91-0e4c94416011" />
             <type_NamedElement>
               <referencedTypeMoniker Id="ee9b553d-44db-419b-8961-c3c6e38ad11f" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="570013d5-4ae8-483c-8251-7b2c3a0a84e1" name="numero" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ca84934b-9b9b-4ada-99dd-997f273255f8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -191,6 +191,19 @@ return : courant.execute(c) }</body>
                   <elementDefinition Id="6c0cd9d3-6bfa-4d4e-a3c1-68b4d64df9af" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="73f1e6ed-1d7e-4d7b-b5f1-90a984c384a6" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e58648df-a62b-4591-9b49-a19ba7828ccb" name="numero" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b8c979bc-4048-44f7-97a4-f3fdcd50ea86" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e281e8a5-60af-4467-b582-b8c8f4f182ee" direction="Return" isUnique="false">
+                  <elementDefinition Id="645fecf1-7e3f-48ee-a2db-8c1df0932592" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -430,6 +443,9 @@ return : courant.execute(c) }</body>
           <operation Id="01ab17ad-b76c-4e3e-b50e-ab4b6360bb51" name="lanceDe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="75e2435b-3fc3-4ffe-9ed8-f85385e922d2" />
           </operation>
+          <operation Id="63f96ce7-8fe8-4b37-afa8-9ff41c42207e" name="initialiser" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4c5fa10e-005f-49c9-a32c-a02a49d40f11" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -632,8 +648,57 @@ return : courant.execute(c) }</body>
           <operation Id="66bced6a-13af-4ff6-b8dc-b5d22f931f36" name="lancerDe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="26118291-fde3-4496-828b-90bca69bcb25" />
           </operation>
-          <operation Id="7a4ca796-649a-4eda-b5ea-8a70fae18b86" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="6de6f702-f567-4b6c-b80d-fab7e582d1c4" />
+          <operation Id="33798b30-0236-418e-8829-36696011064f" name="getPosition" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bdf5b921-4762-4e0c-961d-ccad4eba60d5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4a7483fb-8647-4cbd-b3a3-2ccabc640b11" name="j" direction="In" isUnique="false">
+                  <elementDefinition Id="38021891-1956-4119-bf4f-055af0e49e1d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de0cbadd-6da7-463d-b198-07daef73801c" LastKnownName="Joueur" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6d319dc8-3c4e-4f62-85f3-affa521c0df6" name="getBateau" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d2af7dd8-bded-4bf7-9a20-2022b2a62647" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="169fee07-3e24-4d36-90a0-f7fb49653451" name="j" direction="In" isUnique="false">
+                  <elementDefinition Id="a1bae2d9-d707-48e2-918e-9b86731e5a2b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de0cbadd-6da7-463d-b198-07daef73801c" LastKnownName="Joueur" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d68502d4-d041-4368-874c-5d334e6d6c29" name="largeur" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="44ed1e4d-3ff7-4325-a186-d7cee11f0add" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="335e4fe7-7d26-437f-ba9c-51aeabb3e721" direction="Return" isUnique="false">
+                  <elementDefinition Id="e2c6b76b-dc2d-4f93-9bf6-528e76bfcb4d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b017d52f-ecec-4b66-a5ed-05d27ae8cf8d" name="longueur" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ce7827ff-db30-4c2e-9bfb-3093f5f0dde8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a7db4039-01a5-45b5-90fe-a5d38a9943be" direction="Return" isUnique="false">
+                  <elementDefinition Id="d7de3cc7-4cd2-4e3d-b1bb-6764e3c70437" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -927,11 +992,6 @@ return : courant.execute(c) }</body>
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="e0ec5ae2-4a52-434a-aa62-a89d49ec73f8" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
-        <elementDefinition Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="73f1e6ed-1d7e-4d7b-b5f1-90a984c384a6" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
         <elementDefinition Id="5ce18fbc-2ff2-4b01-b6ee-1ccdff6785e1" />
       </referencedType>
@@ -939,6 +999,11 @@ return : courant.execute(c) }</body>
     <packageHasNamedElement>
       <referencedType Id="ee9b553d-44db-419b-8961-c3c6e38ad11f" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
         <elementDefinition Id="5ce18fbc-2ff2-4b01-b6ee-1ccdff6785e1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="de0cbadd-6da7-463d-b198-07daef73801c" name="Joueur" isAbstract="false" isLeaf="false" cachedFullName="CanonNoir::Joueur">
+        <elementDefinition Id="dcaeca72-503d-4099-8367-ee0d6ab2c135" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
