@@ -6,7 +6,8 @@
   <ownedCommentsInternal>
     <comment
       Id="6536fcb9-b86d-466c-9434-d4f4e1ee87b7">
-      <body>courant.execute(CaseAction)</body>
+      <body>{ context MoteurJeu::execute(c:Case) 
+return : courant.execute(c) }</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -96,7 +97,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+                LastKnownName="int"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="350242bf-7d44-4285-b744-dd78704724f6"
             name="largeur"
@@ -107,8 +115,65 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+                LastKnownName="int"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2faec7ad-f9cf-4230-8eb8-b6de9c318248"
+            name="largeur"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2f2bcefa-c09a-46a1-9265-f65b0b400167"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+                      LastKnownName="int"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bfe50e17-6db8-48ac-b983-6d7bb274fca3"
+            name="longueur"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="de31c5b2-1a54-4d25-9247-ced54da0f18d"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+                      LastKnownName="int"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -191,6 +256,30 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="ba121562-892a-46a1-8f0c-513d0824bcf5"
+            name="lancerDe"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="adf5bb8e-bf8c-4c89-8a59-18b5505e82ef"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4cc0bae3-4f92-4447-8b2b-9e1ac5232c97"
+                      LastKnownName="int[]"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -266,7 +355,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+                LastKnownName="int"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="eb755ae0-a224-4c4a-9f91-0e4c94416011"
             name="nom"
@@ -277,8 +373,41 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5ce18fbc-2ff2-4b01-b6ee-1ccdff6785e1"
+                LastKnownName="string"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0e37f618-3564-404c-88ea-eed763d62410"
+            name="nom"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6c0cd9d3-6bfa-4d4e-a3c1-68b4d64df9af"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5ce18fbc-2ff2-4b01-b6ee-1ccdff6785e1"
+                      LastKnownName="string"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -744,7 +873,7 @@
         <ownedOperationsInternal>
           <operation
             Id="14a07670-8794-46cf-a1a1-419c4c830c50"
-            name="execute"
+            name="tire"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -754,12 +883,38 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="aa060d16-c3c5-4dde-88f4-aaf8ac533f23"
-                  name="CaseAction"
+                  name="Case"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="6bbf2a74-ab92-4b3f-9aaa-85673d0305dc"
+            name="deplace"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ea491003-d1c5-42f4-ad2a-3298034435bd"
+                  name="Case"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="75e2435b-3fc3-4ffe-9ed8-f85385e922d2"
+            name="lanceDe"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -792,7 +947,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9747b71b-5760-4947-a400-dd891fa273cf"
+                LastKnownName="bool"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="3cd24518-3eed-44ee-b720-77d220f4fca2"
             name="hauteur"
@@ -803,8 +965,65 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+                LastKnownName="int"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1e63682d-dfd5-4241-8a25-d65dcc1bc98b"
+            name="hauteur"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="401670ba-a916-4758-88b0-61cca61135bd"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+                      LastKnownName="int"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ffa2312f-9697-48e0-9e49-d1a41530c117"
+            name="accessible"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="33ab2b1e-0b8c-4a76-b420-5f022d9dd050"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9747b71b-5760-4947-a400-dd891fa273cf"
+                      LastKnownName="bool"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -998,7 +1217,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+                LastKnownName="int"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -1096,6 +1322,24 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="26118291-fde3-4496-828b-90bca69bcb25"
+            name="lancerDe"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6de6f702-f567-4b6c-b80d-fab7e582d1c4"
+            name="execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1343,7 +1587,7 @@
         <ownedOperations>
           <operation
             Id="a6521c9d-9608-4a97-87a8-b5da010d048c"
-            name="Excecute"
+            name="tire"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
@@ -1352,10 +1596,52 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="245ce86c-f2de-4eca-b594-779580e30bea"
-                  name="CaseAction"
+                  Id="12faf9f6-27e7-4c3d-b999-cc21b5477406"
+                  name="Case"
                   direction="In"
                   isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="34953b80-7434-4caa-add6-74e5d647f525"
+            name="deplace"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="519e96c8-5180-464e-b591-5de9c6a6d756"
+                  name="Case"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1b5e810a-00da-452f-96b5-fb0457f04fa4"
+            name="lanceDe"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="877ae281-4774-4949-a9d4-d0f27691987b"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4cc0bae3-4f92-4447-8b2b-9e1ac5232c97"
+                      LastKnownName="int[]"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -1400,7 +1686,7 @@
         <ownedOperationsInternal>
           <operation
             Id="3c178988-80bf-4e50-b991-a800c173b188"
-            name="Excecute"
+            name="tire"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1409,10 +1695,52 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="30ff35b3-f178-43a9-81fd-089ed3202cdd"
-                  name="CaseAction"
+                  Id="403bf213-01b4-4bde-a93d-a7a50a6ba5df"
+                  name="Case"
                   direction="In"
                   isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8a9fa47e-f079-4aa1-b61c-ecdfc2283d26"
+            name="deplace"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="70afec66-f1a5-4258-92e1-f459f0087759"
+                  name="Case"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ba8312e5-531b-4e29-bd9c-67902a285a76"
+            name="lanceDe"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="70104891-005e-4e17-9493-ee77db6722a1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4cc0bae3-4f92-4447-8b2b-9e1ac5232c97"
+                      LastKnownName="int[]"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -1457,7 +1785,7 @@
         <ownedOperationsInternal>
           <operation
             Id="4b4b1e92-c9a5-4004-93e0-37d9ff959498"
-            name="Excecute"
+            name="tire"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1467,9 +1795,51 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="712e5028-936e-4f8c-8eb6-f8f69bf1047f"
-                  name="CaseAction"
+                  name="Case"
                   direction="In"
                   isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="15c6ef25-848d-4a92-a798-622ce0e1b37d"
+            name="deplace"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="43856f2c-a2b2-49a0-805f-c1837f9c864a"
+                  name="Case"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="319e2410-6a9c-427d-8008-5954e00dc9c4"
+            name="lanceDe"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a45cfd5f-8639-4faa-b24b-a75c182b2416"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4cc0bae3-4f92-4447-8b2b-9e1ac5232c97"
+                      LastKnownName="int[]"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -1515,7 +1885,7 @@
         <ownedOperationsInternal>
           <operation
             Id="559d9ee2-fe51-4154-8149-4066c5046bef"
-            name="Excecute"
+            name="tire"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1525,9 +1895,51 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="4a687b2a-a6da-499c-8661-d47176fee8c6"
-                  name="CaseAction"
+                  name="Case"
                   direction="In"
                   isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8de5a5ad-faa6-48e2-bcd2-94ca7aa68858"
+            name="deplace"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="04eb87df-8f9d-4929-bf73-c223a1e926a7"
+                  name="Case"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="89e7c638-7bf8-4d09-a4f9-fb7c33252df1"
+            name="lanceDe"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d366c337-ae54-447a-b98f-0d1660a39992"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4cc0bae3-4f92-4447-8b2b-9e1ac5232c97"
+                      LastKnownName="int[]"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -1546,6 +1958,27 @@
       <undefinedType
         Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
         name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="db034b6b-4a61-47eb-9a35-a7f2fa9e794e"
+        LastKnownName="Package1"
+        LastKnownLocation="Package_1954.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="9747b71b-5760-4947-a400-dd891fa273cf"
+        name="bool" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4cc0bae3-4f92-4447-8b2b-9e1ac5232c97"
+        name="int[]" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5ce18fbc-2ff2-4b01-b6ee-1ccdff6785e1"
+        name="string" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
