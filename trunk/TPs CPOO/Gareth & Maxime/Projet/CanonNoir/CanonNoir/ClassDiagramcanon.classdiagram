@@ -52,13 +52,39 @@
       <class Id="b2c7a349-0190-463c-80d4-158585bad791" name="Dé" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e5949a4e-127c-4471-b431-b680a081e966" />
         <ownedAttributesInternal>
-          <property Id="17a53c14-b11d-43cf-b504-06ef76a75ae2" name="valeur" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="17a53c14-b11d-43cf-b504-06ef76a75ae2" name="valeurDe1" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="586e3faf-e8b6-4321-b662-9b36c56e53c5" />
+          </property>
+          <property Id="b0750de6-8ce6-44ba-a366-3d82f0d2345c" name="valeurDe2" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="21ee97a8-833d-44d7-840b-2b91869826f4" />
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="efcec8ff-f5d8-4df7-af3d-4973a9e68dc7" name="lancerDe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="efcec8ff-f5d8-4df7-af3d-4973a9e68dc7" name="lancerDe1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="e21d784c-678f-4a44-aa71-fc26038ba26a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1ebc7ddd-e0da-4634-8f0b-edf0222995cf" direction="Return" isUnique="false">
+                  <elementDefinition Id="1a6c7ef9-bad9-42c3-9218-ffacd6f6985a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1618e9da-32aa-4499-9170-5196aba7d036" name="lancerDe2" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e68247d3-911f-45b6-890d-b141481c0e33" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="57e4b5c6-0fa4-4fc5-81a6-49534c82173c" direction="Return" isUnique="false">
+                  <elementDefinition Id="f95fd9de-a053-4f63-ab3e-37766ceaf936" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -258,12 +284,12 @@
               <associationHasOwnedEnds>
                 <memberEnd Id="02fd0880-054f-40b5-884d-77a81b22f1d0" name="Dé" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
-                    <literalString Id="4b03e26f-addd-4d16-bc7c-9f0a750f7ba8" name="Lower" value="2">
+                    <literalString Id="4b03e26f-addd-4d16-bc7c-9f0a750f7ba8" name="Lower" value="1">
                       <elementDefinition Id="2d34c4f2-4c5e-40e4-8a41-7749c9611bdc" />
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="1646b608-adf3-4c83-a999-e05ef89abc01" name="Upper" value="2">
+                    <literalString Id="1646b608-adf3-4c83-a999-e05ef89abc01" name="Upper" value="1">
                       <elementDefinition Id="a09968ff-6ced-4d07-823d-b59c3ac2fc8c" />
                     </literalString>
                   </upperValueInternal>
@@ -454,7 +480,7 @@
             <classMoniker Id="2005e43b-b4cf-4541-9882-5ee6759e862c" LastKnownName="Adaptateur" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="032f6f6e-350a-418b-a564-690a48b4dd04" name="Moteur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="032f6f6e-350a-418b-a564-690a48b4dd04" name="Moteur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="82bde45a-1fe1-408b-8774-c25e12336265" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -654,6 +680,11 @@
     <packageHasNamedElement>
       <referencedType Id="3577a2c7-b0ab-4bed-9cd8-ff6d0dc91bc6" name="Moteur" isAbstract="false" isLeaf="false" cachedFullName="CanonNoir::Moteur">
         <elementDefinition Id="486f2cc5-6fa3-4891-93d5-6b1cf4832507" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ffeded2a-f5a7-4905-bd39-82e731e43404" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

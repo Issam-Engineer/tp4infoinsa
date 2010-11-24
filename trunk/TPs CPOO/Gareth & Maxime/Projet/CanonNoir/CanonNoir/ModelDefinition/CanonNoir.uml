@@ -121,7 +121,18 @@
         <ownedAttributesInternal>
           <property
             Id="586e3faf-e8b6-4321-b662-9b36c56e53c5"
-            name="valeur"
+            name="valeurDe1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="21ee97a8-833d-44d7-840b-2b91869826f4"
+            name="valeurDe2"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -134,12 +145,52 @@
         <ownedOperationsInternal>
           <operation
             Id="e21d784c-678f-4a44-aa71-fc26038ba26a"
-            name="lancerDe"
+            name="lancerDe1"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1a6c7ef9-bad9-42c3-9218-ffacd6f6985a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+                      LastKnownName="int"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e68247d3-911f-45b6-890d-b141481c0e33"
+            name="lancerDe2"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f95fd9de-a053-4f63-ab3e-37766ceaf936"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+                      LastKnownName="int"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -555,13 +606,13 @@
                     <literalString
                       Id="2d34c4f2-4c5e-40e4-8a41-7749c9611bdc"
                       name="Lower"
-                      value="2" />
+                      value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="a09968ff-6ced-4d07-823d-b59c3ac2fc8c"
                       name="Upper"
-                      value="2" />
+                      value="1" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -989,8 +1040,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -1485,18 +1535,17 @@
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <packageMoniker
-        Id="353e14e5-c02c-469e-a239-852a77bd4830"
-        LastKnownName="Package1"
-        LastKnownLocation="Package_2127.uml" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <class
         Id="7c65218d-b9e4-4d3b-9346-f657cdfd0a86"
         name="Class1"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+        name="int" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
