@@ -37,12 +37,12 @@
       <SubType>Content</SubType>
       <DependentUpon>CasUtilisationGlobal.usecasediagram</DependentUpon>
     </Content>
-    <Content Include="Jeu.activitydiagram">
+    <Content Include="Jeu2.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Jeu.activitydiagram.layout">
+    <Content Include="Jeu2.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Jeu.activitydiagram</DependentUpon>
+      <DependentUpon>Jeu2.activitydiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ClassDiagramcanon.classdiagram">
