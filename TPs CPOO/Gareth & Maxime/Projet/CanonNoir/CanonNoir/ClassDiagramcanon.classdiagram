@@ -1,36 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="571bede5-5460-4e51-98bb-24bf9d8936c6">
       <elementDefinition Id="6536fcb9-b86d-466c-9434-d4f4e1ee87b7" />
       <body>{ context MoteurJeu::execute() return : courant.execute(c) }</body>
-    </comment>
-    <comment Id="851a046c-abd7-4a1e-9eb7-44f5ddfdf1c6">
-      <elementDefinition Id="7ca97eb7-9131-4682-ac60-91d942bae947" />
-      <body>{ context MoteurJeu::init()
-lance une fenêtre dans laquelle on rentre les informations initiales}</body>
+      <annotatedElements>
+        <classMoniker Id="7d0452f3-7dd7-41d0-b084-02ff238f831b" LastKnownName="MoteurJeu" />
+      </annotatedElements>
     </comment>
     <comment Id="eac42fcf-9ac8-42f4-8632-2ff41e006e51">
       <elementDefinition Id="783ddd60-55f7-465f-9503-813ec5918d7f" />
       <body>plutot mettre des attributs (booléens) 
 isDe =&gt; si vrai on affiche le dé...</body>
+      <annotatedElements>
+        <classMoniker Id="eb228b6e-3d83-46d9-9154-08b4c7ad64de" LastKnownName="Facade" />
+      </annotatedElements>
     </comment>
     <comment Id="a2a424b5-68d4-4db1-a348-64948db423b3">
       <elementDefinition Id="e4fe6672-2946-4ec7-bbcf-a72151a89ed3" />
       <body>execute() =&gt; qui appel la fonction Motor.de.lanceDe()</body>
+      <annotatedElements>
+        <classMoniker Id="24b12fd4-1201-4f25-b619-f823e99a0e84" LastKnownName="EtatLancerDe" />
+      </annotatedElements>
     </comment>
     <comment Id="2c585c55-f024-44e5-8120-56f3e89c9351">
       <elementDefinition Id="4529a14d-8fc9-4bbd-b460-60bb891c0156" />
       <body>execute() =&gt; affiche les possibilités de déplacement
 </body>
+      <annotatedElements>
+        <classMoniker Id="1d12a253-1aba-47c6-854b-39c15c80e48e" LastKnownName="EtatPropDeplacement" />
+      </annotatedElements>
     </comment>
     <comment Id="37a5a56d-d3a5-4dd9-925a-159b1856cc39">
       <elementDefinition Id="1e6b8fc7-c949-4af3-856d-54b8d658ac01" />
       <body>execute() =&gt; amène le Joueur sur une case. Selon la case on lance  un état Tir, Depot, </body>
+      <annotatedElements>
+        <classMoniker Id="17c9358a-c640-4360-81e7-3e7a63f0d4ee" LastKnownName="EtatDeplacement" />
+      </annotatedElements>
     </comment>
     <comment Id="42280310-748b-4ecf-aef2-8e94c349a54e">
       <elementDefinition Id="7d89f753-2d8f-48d0-8106-40ecff899775" />
       <body>execute() =&gt; lance la selection de la puissance et de l'angle du tir, puis créer le tir grace a la fonction du canon</body>
+      <annotatedElements>
+        <classMoniker Id="894206be-e8f9-4fcf-a518-3e34c52fd598" LastKnownName="EtatTir" />
+      </annotatedElements>
+    </comment>
+    <comment Id="3e94e7c9-1d2d-465c-a75e-dc80d99e5d21">
+      <elementDefinition Id="23276ddd-a8e2-4a29-99b4-2bad27876703" />
+      <body>le tableau resDe contient les résultats du lancement des deux dé par joueur(non ordonné)
+j_indJoueur = 0 </body>
+      <annotatedElements>
+        <classMoniker Id="5ccac6e1-9990-458e-a33a-086d7f370eaf" LastKnownName="EtatInitialisationLancerDe" />
+      </annotatedElements>
+    </comment>
+    <comment Id="d7a2345b-e6a7-44c1-981b-025f107c907a">
+      <elementDefinition Id="cc8d9658-5b15-49be-8ed2-b891a7f51fd0" />
+      <body>execute() =&gt; rentrer nbjoueur couleur et nom (puis Joueur(j,nom,coul))</body>
+      <annotatedElements>
+        <classMoniker Id="b544d5a1-ffdc-413b-a66a-e9642a790df9" LastKnownName="EtatInitialisation" />
+      </annotatedElements>
+    </comment>
+    <comment Id="8bf82c73-ae32-49aa-bdf1-268dbb3a5f9c">
+      <elementDefinition Id="b50700b9-6623-41cb-9eac-26f4fbeb4e56" />
+      <body>Si le nbJoueur=2 Execute de l'état précédent propose cet état</body>
+      <annotatedElements>
+        <classMoniker Id="a4f9d38f-c2b8-4143-8496-c8624c9e1adf" LastKnownName="EtatChoisirBateau" />
+      </annotatedElements>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -217,6 +252,48 @@ isDe =&gt; si vrai on affiche le dé...</body>
               <operationHasOwnedParameters>
                 <parameter Id="e281e8a5-60af-4467-b582-b8c8f4f182ee" direction="Return" isUnique="false">
                   <elementDefinition Id="645fecf1-7e3f-48ee-a2db-8c1df0932592" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b47f55ac-0705-4bab-b0cb-1c421b36aa49" name="modifierNumero" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fde2ca64-d05a-4391-9c20-b11d0b43c2b3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b0976368-c77d-401f-a828-212eed402542" name="i" direction="In" isUnique="false">
+                  <elementDefinition Id="99917eea-15f9-4f8b-8210-82f2f9878517" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b95225bb-46e3-4cad-a89c-fc6adaa6e98e" name="Joueur" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="83bdbaee-8cfc-4e10-96f9-b3cae9307e5f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cba92331-f03e-4267-93c8-8ae935a6e3e5" name="n" direction="In" isUnique="false">
+                  <elementDefinition Id="7d2221a6-e18c-47c4-9ce0-ff3baddb17a6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="73f1e6ed-1d7e-4d7b-b5f1-90a984c384a6" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="20b7e86f-d569-4a5e-954f-a0b7343ccc7c" name="coul" direction="In" isUnique="false">
+                  <elementDefinition Id="2bde2ae5-28d0-45f3-8a84-55d6adc2c0df" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b22e436f-8aae-4023-9a45-6bfcc3aa2f4a" name="num" direction="In" isUnique="false">
+                  <elementDefinition Id="993f38ed-6563-491b-a812-96287c7c6b53" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
                   </type_NamedElement>
@@ -453,10 +530,16 @@ isDe =&gt; si vrai on affiche le dé...</body>
               <referencedTypeMoniker Id="fccd9476-7faa-4392-970a-70aa1b2487f2" LastKnownName="Case" />
             </type_NamedElement>
           </property>
-          <property Id="2a4fbd5d-8db1-49ae-8213-db76ec3e847c" name="j_courant" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="2a4fbd5d-8db1-49ae-8213-db76ec3e847c" name="j_indJoueurCourant" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="37a9dcf8-d9d5-4b36-b583-e775cd1cb116" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="de0cbadd-6da7-463d-b198-07daef73801c" LastKnownName="Joueur" />
+              <referencedTypeMoniker Id="e855b2e7-63fb-4b1b-916c-eb2d47df12b6" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="7d74cafe-8996-4857-8b0a-de2fd2b996d6" name="tabJoueurs" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3069f9fc-1fd7-4ece-b849-6f582bb29e36" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c2d9438d-b335-4a10-9914-6ff65462dd9e" LastKnownName="Joueur[]" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -970,9 +1053,99 @@ isDe =&gt; si vrai on affiche le dé...</body>
             <elementDefinition Id="91690228-7169-41da-a668-ad78b7482e80" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="b04cb33b-dfe5-44c7-b0e5-59abfadfa9ce" name="motor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d650f098-ea47-4317-a297-d9fd4e0ad4cc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="650761e5-d82f-47e7-a9f3-46967ef3945d" LastKnownName="Moteur" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="973ded23-1887-4df0-98d0-c2e5d7f8c1e8" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="67226949-3c1f-490e-9b5b-5b756ab84245" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5ccac6e1-9990-458e-a33a-086d7f370eaf" name="EtatInitialisationLancerDe" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9f83c293-17d2-4659-a095-9b7a69e30950" />
+        <suppliersInternal>
+          <interfaceRealization Id="eb48ad08-1fe2-4025-813c-8db78458b341">
+            <interfaceMoniker Id="4943062b-5da2-4247-a808-ba642525472f" LastKnownName="Etat" />
+            <elementDefinition Id="d20061e5-ef25-44aa-8d90-58aa8154f1f3" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="820f7b9d-b771-4f0f-9ac7-9982696c27dc" name="resDe" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e6643dd8-0fc1-4b1b-82cb-15005a8d4eaa" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ddfc5c39-185c-4e6f-981d-6733af351915" LastKnownName="int[]" />
+            </type_NamedElement>
+          </property>
+          <property Id="70f671d7-bacb-4556-8452-9dd5ad097b9c" name="motor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="99f5abcc-f5bf-4535-bc92-3894ed16e081" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="650761e5-d82f-47e7-a9f3-46967ef3945d" LastKnownName="Moteur" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="d2a4954f-6f7b-496d-bc46-a9026fa40e49" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1d45924f-8aa4-4568-ab4a-dd49aaff8858" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="ddfc5c39-185c-4e6f-981d-6733af351915" name="int[]" isAbstract="false" isLeaf="false" cachedFullName="int[]">
+        <elementDefinition Id="4cc0bae3-4f92-4447-8b2b-9e1ac5232c97" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c2d9438d-b335-4a10-9914-6ff65462dd9e" name="Joueur[]" isAbstract="false" isLeaf="false" cachedFullName="Joueur[]">
+        <elementDefinition Id="31f1623c-d896-401e-808a-103433a47912" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e855b2e7-63fb-4b1b-916c-eb2d47df12b6" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a4f9d38f-c2b8-4143-8496-c8624c9e1adf" name="EtatChoisirBateau" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="01e1d144-2611-4ee6-a23a-ab49e88e44f4" />
+        <ownedAttributesInternal>
+          <property Id="8fb9e019-4101-4642-8923-cb6e2dc28ea5" name="motor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="12b402c5-dab6-4dfd-9178-93a90f047063" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="650761e5-d82f-47e7-a9f3-46967ef3945d" LastKnownName="Moteur" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0a0d4d57-e079-441b-af53-cad5c361f31d" name="Duel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="74d1c3b4-ea0f-452a-905b-507d6de08ecb" />
+        <suppliersInternal>
+          <interfaceRealization Id="9786f504-2c16-4b07-b1a6-b96ad34c19ba">
+            <interfaceMoniker Id="4943062b-5da2-4247-a808-ba642525472f" LastKnownName="Etat" />
+            <elementDefinition Id="ccbf47b3-e082-4fac-885c-81051c09f97e" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="47aadda9-3c32-4563-91ed-8ad939fc6581" name="motor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0104cd78-7f56-4b4e-aa6d-c3fb407ab114" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="650761e5-d82f-47e7-a9f3-46967ef3945d" LastKnownName="Moteur" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="08757534-9bab-4236-8157-fec95efeceb9" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8d4b882e-4aaf-4ae6-93d7-2f7a522831a6" />
           </operation>
         </ownedOperationsInternal>
       </class>
