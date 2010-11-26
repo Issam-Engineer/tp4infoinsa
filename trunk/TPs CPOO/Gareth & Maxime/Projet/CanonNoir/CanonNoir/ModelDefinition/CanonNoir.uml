@@ -97,6 +97,28 @@ j_indJoueur = 0 </body>
           LastKnownLocation="CanonNoir.uml" />
       </annotatedElements>
     </comment>
+    <comment
+      Id="a9dbf349-2043-4224-96b3-951fed0d0b0d">
+      <body>Joueur(1,nom1,coul1)
+Joueur(2,nom2,coul2)
+Joueur(3,nom3,coul3)
+Joueur(4,nom4,coul4)
+
+tabJoueur[4]
+
+puis en fonction du res des dé -&gt; 
+modifiernuméro(j)</body>
+      <annotatedElements>
+        <mergeNodeMoniker
+          Id="3a52ecaa-6a56-40a6-9d70-db4e30b75a7e"
+          LastKnownName="Merge1"
+          LastKnownLocation="CanonNoir.uml" />
+        <opaqueActionMoniker
+          Id="d5f634b2-32ce-4005-88db-6a550f29214d"
+          LastKnownName="Ordonner par défaut"
+          LastKnownLocation="CanonNoir.uml" />
+      </annotatedElements>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -3610,13 +3632,40 @@ j_indJoueur = 0 </body>
         isReentrant="false">
         <lifelines>
           <lifeline
-            Id="d03cd608-7212-427e-bf93-fa8770cdaec2"
-            name="MoteurJeu"
+            Id="b2d01b61-8174-4924-be3c-ae5fe758501f"
+            name="Utilisateur"
             isActor="false"
-            lifelineDisplayName="MoteurJeu">
+            lifelineDisplayName="Utilisateur" />
+          <lifeline
+            Id="d03cd608-7212-427e-bf93-fa8770cdaec2"
+            name="m : MoteurJeu"
+            isActor="false"
+            lifelineDisplayName="m : MoteurJeu">
             <represents>
               <propertyMoniker
                 Id="8302fa54-107f-45a7-aa9d-7c57ab49e63b"
+                LastKnownLocation="CanonNoir.uml" />
+            </represents>
+          </lifeline>
+          <lifeline
+            Id="b0c98436-6ab1-459e-8ca0-226e5cd6344b"
+            name="j1 : Joueur"
+            isActor="false"
+            lifelineDisplayName="j1 : Joueur">
+            <represents>
+              <propertyMoniker
+                Id="fed8e904-6d15-4005-9e4f-b6dd05473618"
+                LastKnownLocation="CanonNoir.uml" />
+            </represents>
+          </lifeline>
+          <lifeline
+            Id="773061cf-d8bf-4170-9429-301faf4eac18"
+            name="j2 : Joueur"
+            isActor="false"
+            lifelineDisplayName="j2 : Joueur">
+            <represents>
+              <propertyMoniker
+                Id="ae72b13b-7d0e-49c9-91c9-12d8376ba453"
                 LastKnownLocation="CanonNoir.uml" />
             </represents>
           </lifeline>
@@ -3635,6 +3684,70 @@ j_indJoueur = 0 </body>
               <classMoniker
                 Id="5656d5bb-765f-470e-967a-37dd27c2ef4d"
                 LastKnownName="MoteurJeu"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fed8e904-6d15-4005-9e4f-b6dd05473618"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="dcaeca72-503d-4099-8367-ee0d6ab2c135"
+                LastKnownName="Joueur"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ae72b13b-7d0e-49c9-91c9-12d8376ba453"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="dcaeca72-503d-4099-8367-ee0d6ab2c135"
+                LastKnownName="Joueur"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3a14f258-860d-4894-988c-f7d8e627af0b"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="dcaeca72-503d-4099-8367-ee0d6ab2c135"
+                LastKnownName="Joueur"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="91e0dd16-adee-413d-9d0c-a3ce0af49681"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="dcaeca72-503d-4099-8367-ee0d6ab2c135"
+                LastKnownName="Joueur"
                 LastKnownLocation="CanonNoir.uml" />
             </type_NamedElement>
           </property>

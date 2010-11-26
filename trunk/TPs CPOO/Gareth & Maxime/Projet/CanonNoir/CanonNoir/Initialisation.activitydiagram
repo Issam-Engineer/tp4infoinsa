@@ -1,5 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="e00bc4c6-9357-43d7-b70f-20be170a846e" name="Activity1" linkedPackageId="e8f01d08-6ebc-47e9-a9ee-83f19447e892" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="593021de-732a-496c-a2e6-1e855c97c4ef">
+      <elementDefinition Id="a9dbf349-2043-4224-96b3-951fed0d0b0d" />
+      <body>Joueur(1,nom1,coul1)
+Joueur(2,nom2,coul2)
+Joueur(3,nom3,coul3)
+Joueur(4,nom4,coul4)
+
+tabJoueur[4]
+
+puis en fonction du res des dé -&gt; 
+modifiernuméro(j)</body>
+      <annotatedElements>
+        <mergeNodeMoniker Id="32596828-9d67-4f51-a2e7-df2344f710d6" LastKnownName="Merge1" />
+        <opaqueActionMoniker Id="db0e3a19-7d60-49f8-ad2f-4822050c6c68" LastKnownName="Ordonner par défaut" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="19c83a5e-b739-4d6d-b3e5-9cd129c9a0a9" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
