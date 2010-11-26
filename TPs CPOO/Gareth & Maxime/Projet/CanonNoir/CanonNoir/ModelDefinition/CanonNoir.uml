@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="d1255448-f23c-4490-af91-82b9caa462ca"
   name="CanonNoir" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -13,15 +13,6 @@
           LastKnownName="MoteurJeu"
           LastKnownLocation="CanonNoir.uml" />
       </annotatedElements>
-    </comment>
-    <comment
-      Id="f0dde9f8-c392-4ff1-b013-ca9b42fc5c78">
-      <body>n=2
-</body>
-    </comment>
-    <comment
-      Id="18ca93a6-38b2-4467-8dba-670a27e81327">
-      <body>n=3 ou 4</body>
     </comment>
     <comment
       Id="783ddd60-55f7-465f-9503-813ec5918d7f">
@@ -734,30 +725,6 @@ j_indJoueur = 0 </body>
         isActiveClass="false">
         <ownedOperationsInternal>
           <operation
-            Id="a3843177-8bc5-4b9b-a418-ae7ca588f0ed"
-            name="hasTresor"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="9807171a-9891-4a64-aea6-87a50aaa8ab4"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9747b71b-5760-4947-a400-dd891fa273cf"
-                      LastKnownName="bool"
-                      LastKnownLocation="CanonNoir.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
             Id="72637e42-988a-44c6-8e0e-e50089fece71"
             name="typebateau"
             isLeaf="false"
@@ -1393,6 +1360,24 @@ j_indJoueur = 0 </body>
           <property
             Id="3be1315c-6685-40b6-9cc4-63053a30559e"
             name="tresor"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9747b71b-5760-4947-a400-dd891fa273cf"
+                LastKnownName="bool"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a85fa13d-975a-4b55-8647-26df4bdd6035"
+            name="bateau"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2426,6 +2411,7 @@ j_indJoueur = 0 </body>
             <flowNodeTargets>
               <controlFlow
                 Id="3535e8db-4c7d-48df-8fdc-360690d74aec"
+                guard="nbJoueur=2"
                 isLeaf="false">
                 <acceptEventActionMoniker
                   Id="dacf5738-c1d4-4079-a398-81d9450e894c"
@@ -2434,6 +2420,7 @@ j_indJoueur = 0 </body>
               </controlFlow>
               <controlFlow
                 Id="0757cebd-9cd0-4814-8057-96d920bdf0fd"
+                guard="nbJoueur=3 || nbJoueur=4"
                 isLeaf="false">
                 <acceptEventActionMoniker
                   Id="0d8e690a-a004-4a7e-993c-072bf691a725"
@@ -3094,11 +3081,12 @@ j_indJoueur = 0 </body>
             isUnmarshall="false">
             <flowNodeTargets>
               <controlFlow
-                Id="abfb4543-9ff0-4409-8dfa-25bb20bce14f"
+                Id="83b5809d-2dd3-43c8-8595-383f9ccdd04e"
+                guard="nbJoueur=2"
                 isLeaf="false">
-                <decisionNodeMoniker
-                  Id="8c3c860a-f406-4588-bae0-776fcf9d8463"
-                  LastKnownName="Decision1"
+                <acceptEventActionMoniker
+                  Id="601f5407-ee4a-4d15-90e7-d2fb3b9959b1"
+                  LastKnownName="Choisir un bateau"
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -3166,30 +3154,6 @@ j_indJoueur = 0 </body>
             </flowNodeTargets>
           </acceptEventAction>
           <decisionNode
-            Id="8c3c860a-f406-4588-bae0-776fcf9d8463"
-            name="Decision1"
-            isLeaf="false">
-            <flowNodeTargets>
-              <controlFlow
-                Id="2e724358-5780-4391-ab6a-628022797530"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="bf2d9d24-9acb-4fc5-8b4b-f607fa96341c"
-                  LastKnownName="proposer déplacements possibles"
-                  LastKnownLocation="CanonNoir.uml" />
-              </controlFlow>
-              <controlFlow
-                Id="871104b1-ce2a-47d5-a6e0-cde6220575ee"
-                guard="[nbjoueur=2]"
-                isLeaf="false">
-                <acceptEventActionMoniker
-                  Id="601f5407-ee4a-4d15-90e7-d2fb3b9959b1"
-                  LastKnownName="Choisir un bateau"
-                  LastKnownLocation="CanonNoir.uml" />
-              </controlFlow>
-            </flowNodeTargets>
-          </decisionNode>
-          <decisionNode
             Id="6583deb1-6720-4ff8-9ae6-cbacd6e1e4a3"
             name="Decision2"
             isLeaf="false">
@@ -3204,7 +3168,7 @@ j_indJoueur = 0 </body>
               </controlFlow>
               <controlFlow
                 Id="39a32e34-3cc0-4467-9ccc-8cf5c5cb95ac"
-                guard="nbjoueur=2 &amp;&amp; c_courant.hasBateau()"
+                guard=" c_courant.hasBateau()"
                 isLeaf="false">
                 <acceptEventActionMoniker
                   Id="601f5407-ee4a-4d15-90e7-d2fb3b9959b1"
@@ -3255,7 +3219,7 @@ j_indJoueur = 0 </body>
               </controlFlow>
               <controlFlow
                 Id="0f07b715-efd4-4b47-8ae4-639405a99cad"
-                guard="c_courant.isPort() &amp;&amp; j_courant.hisPort() &amp;&amp; typeBateau()!=caravelle"
+                guard="c_courant.isPort() &amp;&amp; tabJoueur[i].hisPort() &amp;&amp; typeBateau()!=caravelle"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="6ea5c6fd-8cb3-423c-b72b-d9fa791e9754"
@@ -3634,6 +3598,48 @@ j_indJoueur = 0 </body>
             isQuery="false" />
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="9e0a7621-cbd4-43e2-b174-595d18f12054"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <lifelines>
+          <lifeline
+            Id="d03cd608-7212-427e-bf93-fa8770cdaec2"
+            name="MoteurJeu"
+            isActor="false"
+            lifelineDisplayName="MoteurJeu">
+            <represents>
+              <propertyMoniker
+                Id="8302fa54-107f-45a7-aa9d-7c57ab49e63b"
+                LastKnownLocation="CanonNoir.uml" />
+            </represents>
+          </lifeline>
+        </lifelines>
+        <ownedAttributesInternal>
+          <property
+            Id="8302fa54-107f-45a7-aa9d-7c57ab49e63b"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="5656d5bb-765f-470e-967a-37dd27c2ef4d"
+                LastKnownName="MoteurJeu"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
