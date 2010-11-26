@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e00bc4c6-9357-43d7-b70f-20be170a846e" name="Activity1" linkedPackageId="e8f01d08-6ebc-47e9-a9ee-83f19447e892" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="25f96bb3-e895-4dc7-94da-d22a2bea29df">
+      <elementDefinition Id="f0dde9f8-c392-4ff1-b013-ca9b42fc5c78" />
+      <body>n=2
+</body>
+    </comment>
+    <comment Id="e11a3026-849e-4c9c-92c8-1814c3b18582">
+      <elementDefinition Id="b799579d-1556-4472-ab38-c32127022146" />
+      <body>n=3
+</body>
+    </comment>
+    <comment Id="19e154bf-62f7-4ef6-a61c-8e83a7018291">
+      <elementDefinition Id="18ca93a6-38b2-4467-8dba-670a27e81327" />
+      <body>n=4
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="ac032958-e037-49f1-af5a-2d760897d31b">
+      <profileInstance Id="c495fa73-c6da-4db5-8c09-dabef78a5ab2" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="10aacbff-2310-4da6-be38-406f782e8fbe">
+      <profileInstance Id="8189059b-f7d8-4b82-b0a2-52cbfbb78928" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="19c83a5e-b739-4d6d-b3e5-9cd129c9a0a9" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="a7c5f1ef-befc-4e09-b0a0-3798f4e5240a" />
+        <nodes>
+          <initialNode Id="5855a783-10c4-4d39-9ec4-7f6e0b12f6d6" name="Initial1" isLeaf="false">
+            <elementDefinition Id="f5d179cf-0c10-4d09-8711-5ebc19c1e63b" />
+            <flowNodeTargets>
+              <controlFlow Id="e55a8548-4d77-4305-963d-5bbb383155a1" isLeaf="false">
+                <opaqueActionMoniker Id="df2d1340-2c68-4655-8a51-d01614ea784e" LastKnownName="Choisir nombre de Joueurs" />
+                <elementDefinition Id="7166325d-9054-4759-8bcc-b3025b299728" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="df2d1340-2c68-4655-8a51-d01614ea784e" name="Choisir nombre de Joueurs" isLeaf="false">
+            <elementDefinition Id="c4c43ae1-c1b7-4b8f-a7ec-7aaa68b7b35a" />
+            <flowNodeTargets>
+              <controlFlow Id="9b0d94fb-4127-4ddb-baea-2e01e6adfe03" isLeaf="false">
+                <decisionNodeMoniker Id="021bc9dd-96a6-4272-8564-ec3070fb087f" LastKnownName="Decision1" />
+                <elementDefinition Id="957b6f02-7515-4cfd-8964-33f44d2a4eaf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="004a7d5d-fc6a-46a2-bb35-3bc28ba7e679" name="Choisir 2 couleurs" isLeaf="false">
+            <elementDefinition Id="d917c9de-f919-4462-9962-896cd7d09905" />
+            <flowNodeTargets>
+              <controlFlow Id="c30fc5eb-bf93-4902-adff-91ce1a30e524" isLeaf="false">
+                <mergeNodeMoniker Id="32596828-9d67-4f51-a2e7-df2344f710d6" LastKnownName="Merge1" />
+                <elementDefinition Id="3704240f-93e7-4dc8-825f-eaf16d9bb04c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8150d2c2-c9ed-43cd-add0-aeee6cffd371" name="Choisir 1 couleur par joueur" isLeaf="false">
+            <elementDefinition Id="bbb85aad-74b1-45bf-8997-e5158ad58814" />
+            <flowNodeTargets>
+              <controlFlow Id="6b468b6c-a9c2-416d-904b-e6c4c0b03c02" isLeaf="false">
+                <mergeNodeMoniker Id="32596828-9d67-4f51-a2e7-df2344f710d6" LastKnownName="Merge1" />
+                <elementDefinition Id="6b4894a0-e2f4-4b2c-8a53-19234354695b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="56da755f-029d-49a8-b5ba-ea60e09755ff" name="Choisir 1 couleur par joueur" isLeaf="false">
+            <elementDefinition Id="1267ef7b-275f-489e-a02e-6f9b1d7e69cb" />
+            <flowNodeTargets>
+              <controlFlow Id="e89c121f-80da-4ebf-b35b-883642616cde" isLeaf="false">
+                <mergeNodeMoniker Id="32596828-9d67-4f51-a2e7-df2344f710d6" LastKnownName="Merge1" />
+                <elementDefinition Id="33b4b27f-9db9-4e3b-a7bb-550d976b174e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="021bc9dd-96a6-4272-8564-ec3070fb087f" name="Decision1" isLeaf="false">
+            <elementDefinition Id="66c9489e-f74c-4136-b092-b9f539c0f08d" />
+            <flowNodeTargets>
+              <controlFlow Id="30e09cb1-c129-4246-9ee4-03b520e57416" isLeaf="false">
+                <opaqueActionMoniker Id="8150d2c2-c9ed-43cd-add0-aeee6cffd371" LastKnownName="Choisir 1 couleur par joueur" />
+                <elementDefinition Id="5926d5ad-1795-4ddb-ae78-bd1678e94507" />
+              </controlFlow>
+              <controlFlow Id="736a710f-fb77-4638-ae26-eb5e46c3740c" isLeaf="false">
+                <opaqueActionMoniker Id="004a7d5d-fc6a-46a2-bb35-3bc28ba7e679" LastKnownName="Choisir 2 couleurs" />
+                <elementDefinition Id="40a8d0c5-851d-448a-84ea-13ecbfed27f7" />
+              </controlFlow>
+              <controlFlow Id="1f81339f-02de-461e-982d-cef41deef845" isLeaf="false">
+                <opaqueActionMoniker Id="56da755f-029d-49a8-b5ba-ea60e09755ff" LastKnownName="Choisir 1 couleur par joueur" />
+                <elementDefinition Id="10ce1ed4-93da-41b3-9b68-5adec5dac40c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="25cb6194-e603-484c-b119-47c11d200dc1" name="Lancer les dés" isLeaf="false">
+            <elementDefinition Id="419cdec7-3fdb-48d1-93c9-1cefd781bdc6" />
+            <flowNodeTargets>
+              <controlFlow Id="6c69a4ea-d009-4569-9d66-0932a8c25aad" isLeaf="false">
+                <opaqueActionMoniker Id="6951ab58-3d04-44e3-8dcf-8fda576c0a3c" LastKnownName="Définir l'ordre de Jeu" />
+                <elementDefinition Id="edc8af07-862a-4248-ab4b-07e9e4ba0352" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="32596828-9d67-4f51-a2e7-df2344f710d6" name="Merge1" isLeaf="false">
+            <elementDefinition Id="3a52ecaa-6a56-40a6-9d70-db4e30b75a7e" />
+            <flowNodeTargets>
+              <controlFlow Id="33180635-2cdb-4f03-9b42-9805fdfd97ff" isLeaf="false">
+                <opaqueActionMoniker Id="25cb6194-e603-484c-b119-47c11d200dc1" LastKnownName="Lancer les dés" />
+                <elementDefinition Id="012f5d81-fa9a-4c76-8245-656cb08f4456" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="6951ab58-3d04-44e3-8dcf-8fda576c0a3c" name="Définir l'ordre de Jeu" isLeaf="false">
+            <elementDefinition Id="b49ccf47-df7e-4101-b964-ba9f9df58b8d" />
+            <flowNodeTargets>
+              <controlFlow Id="1491b5ca-6ec4-40a4-9f1a-63b0e93bd72e" isLeaf="false">
+                <opaqueActionMoniker Id="cf216e6f-ff13-44bd-88f3-525a5e4d6a98" LastKnownName="Joueur numéro 1 joue" />
+                <elementDefinition Id="3697caf4-2bfe-4dca-82e0-5967b65acaab" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cf216e6f-ff13-44bd-88f3-525a5e4d6a98" name="Joueur numéro 1 joue" isLeaf="false">
+            <elementDefinition Id="e960e7e0-f06f-4fd6-b860-20b8771d56db" />
+            <flowNodeTargets>
+              <controlFlow Id="ffa53e6d-aeeb-41a2-bcf5-face7d8e0772" isLeaf="false">
+                <decisionNodeMoniker Id="d59eb0cc-f943-4387-b7be-40be48d98644" LastKnownName="Decision2" />
+                <elementDefinition Id="534eaadc-adff-44e6-a101-50914f0315c7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="d59eb0cc-f943-4387-b7be-40be48d98644" name="Decision2" isLeaf="false">
+            <elementDefinition Id="fa325544-c513-4752-bb21-bbe16cf492fd" />
+            <flowNodeTargets>
+              <controlFlow Id="e261a020-74c5-4fba-be68-9a309677732a" isLeaf="false">
+                <opaqueActionMoniker Id="6cf90a7c-0b73-49ba-9b47-5aa4dbcda8db" LastKnownName="Prendre la somme des dés" />
+                <elementDefinition Id="168f8e9d-4b64-4480-9460-d74d1e33eed1" />
+              </controlFlow>
+              <controlFlow Id="c6a42e89-f48c-4029-a9bb-8cb38add6736" isLeaf="false">
+                <opaqueActionMoniker Id="d238fb99-9c68-4844-8581-3c2557fba433" LastKnownName="Prendre un des deux dés" />
+                <elementDefinition Id="a0bfbf8a-86fb-4dca-9ed3-efa1419a7987" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="6cf90a7c-0b73-49ba-9b47-5aa4dbcda8db" name="Prendre la somme des dés" isLeaf="false">
+            <elementDefinition Id="5433cfa4-489c-4f03-ab93-bce70eb015b8" />
+            <flowNodeTargets>
+              <controlFlow Id="ff8c577e-88b4-4f67-ba03-7953f4f7656c" isLeaf="false">
+                <mergeNodeMoniker Id="92232a5d-7a56-4323-a9fc-6d258b7c2610" LastKnownName="Merge11" />
+                <elementDefinition Id="561d7895-42cf-4145-a3ba-cb4d202096f1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d238fb99-9c68-4844-8581-3c2557fba433" name="Prendre un des deux dés" isLeaf="false">
+            <elementDefinition Id="07f0b0b1-d71e-4748-bcb2-5b2e06876916" />
+            <flowNodeTargets>
+              <controlFlow Id="0ff9200c-497b-41c4-b07d-5cc035b5fc1f" isLeaf="false">
+                <mergeNodeMoniker Id="92232a5d-7a56-4323-a9fc-6d258b7c2610" LastKnownName="Merge11" />
+                <elementDefinition Id="dee41de0-5f29-427d-8556-269e4460346c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="92232a5d-7a56-4323-a9fc-6d258b7c2610" name="Merge11" isLeaf="false">
+            <elementDefinition Id="70a9bb97-889c-4dea-9470-9d3906172170" />
+            <flowNodeTargets>
+              <controlFlow Id="2c3c3316-7ac2-4ece-a561-f7cf53166023" isLeaf="false">
+                <opaqueActionMoniker Id="ba9ff3f5-7356-47e3-8b63-f466403ba7a8" LastKnownName="Déplacer le bateau" />
+                <elementDefinition Id="bb24f030-043e-49e4-8161-aa0bf2ef6819" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="ba9ff3f5-7356-47e3-8b63-f466403ba7a8" name="Déplacer le bateau" isLeaf="false">
+            <elementDefinition Id="b9f1a104-2c30-4703-8dbc-151dbc68c6ff" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="e8f01d08-6ebc-47e9-a9ee-83f19447e892" name="CanonNoir">
+    <elementDefinition Id="d1255448-f23c-4490-af91-82b9caa462ca" />
+  </package>
+</activityRootModel>

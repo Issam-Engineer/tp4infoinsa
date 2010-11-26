@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sequenceDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLSequenceDiagram1">
+  <SequenceDesignerModelMoniker Id="58744986-0994-4946-a19d-3109164b323d" />
+  <nestedChildShapes>
+    <lifelineShape Id="78ceceb9-2be5-4d5a-bdcd-a4ca88fd9187" absoluteBounds="1.0625, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="8373044c-19f6-49f2-8c8f-e9939c8c5df3" LastKnownName="MoteurJeu" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="db993740-f2d7-4a9c-ae22-7b86dbc0260a" absoluteBounds="0.6375, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="8373044c-19f6-49f2-8c8f-e9939c8c5df3" LastKnownName="MoteurJeu" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="fae5b1be-ae32-40e1-b76f-30a4985af786" absoluteBounds="1.0625, 1, 0, 7">
+          <lifelineMoniker Id="8373044c-19f6-49f2-8c8f-e9939c8c5df3" LastKnownName="MoteurJeu" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+  </nestedChildShapes>
+</sequenceDesignerDiagram>
