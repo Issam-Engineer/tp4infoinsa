@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="58744986-0994-4946-a19d-3109164b323d" name="Sequence1" linkedPackageId="5f69f9e8-1bc4-474d-a2e3-c43357140bfc" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="58744986-0994-4946-a19d-3109164b323d" name="Sequence1" linkedPackageId="5f69f9e8-1bc4-474d-a2e3-c43357140bfc" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
   <profileInstances>
     <packageHasProfileInstances Id="a7ee2d04-a434-4f74-866c-1fa44288fc97">
       <profileInstance Id="2c456941-685e-4023-9396-c9b7a78896d8" name="StandardProfileL2">
@@ -19,10 +19,25 @@
       <interaction Id="41db1acf-800f-46ca-89c9-f7d4b85b9ee2" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
         <elementDefinition Id="9e0a7621-cbd4-43e2-b174-595d18f12054" />
         <lifelines>
-          <lifeline Id="8373044c-19f6-49f2-8c8f-e9939c8c5df3" name="MoteurJeu" isActor="false" lifelineDisplayName="MoteurJeu">
+          <lifeline Id="0af11e2d-e822-4ae0-a22c-43146ee98378" name="Utilisateur" isActor="false" lifelineDisplayName="Utilisateur">
+            <elementDefinition Id="b2d01b61-8174-4924-be3c-ae5fe758501f" />
+          </lifeline>
+          <lifeline Id="8373044c-19f6-49f2-8c8f-e9939c8c5df3" name="m : MoteurJeu" isActor="false" lifelineDisplayName="m : MoteurJeu">
             <elementDefinition Id="d03cd608-7212-427e-bf93-fa8770cdaec2" />
             <represents>
               <propertyMoniker Id="252df16e-04c2-432a-9b2c-65054230c09f" />
+            </represents>
+          </lifeline>
+          <lifeline Id="823e41b8-49d9-44c9-986a-6f40205f5eed" name="j1 : Joueur" isActor="false" lifelineDisplayName="j1 : Joueur">
+            <elementDefinition Id="b0c98436-6ab1-459e-8ca0-226e5cd6344b" />
+            <represents>
+              <propertyMoniker Id="4896338d-378a-4729-bdb9-d85d72e2bd98" />
+            </represents>
+          </lifeline>
+          <lifeline Id="ff69e148-51da-4d31-892a-66220c2fc246" name="j2 : Joueur" isActor="false" lifelineDisplayName="j2 : Joueur">
+            <elementDefinition Id="773061cf-d8bf-4170-9429-301faf4eac18" />
+            <represents>
+              <propertyMoniker Id="f1b58ef9-38a0-428d-8084-95e60b41e72c" />
             </represents>
           </lifeline>
         </lifelines>
@@ -31,6 +46,30 @@
             <elementDefinition Id="8302fa54-107f-45a7-aa9d-7c57ab49e63b" />
             <type_NamedElement>
               <referencedTypeMoniker Id="f76c03fe-844a-4f15-ad7e-12740a91f2d3" LastKnownName="MoteurJeu" />
+            </type_NamedElement>
+          </property>
+          <property Id="4896338d-378a-4729-bdb9-d85d72e2bd98" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fed8e904-6d15-4005-9e4f-b6dd05473618" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="889db373-87bf-4dab-ba8e-bd0df5e10c7e" LastKnownName="Joueur" />
+            </type_NamedElement>
+          </property>
+          <property Id="f1b58ef9-38a0-428d-8084-95e60b41e72c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ae72b13b-7d0e-49c9-91c9-12d8376ba453" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="889db373-87bf-4dab-ba8e-bd0df5e10c7e" LastKnownName="Joueur" />
+            </type_NamedElement>
+          </property>
+          <property Id="13b4fcf3-af83-4969-87b2-5829cd2fc9db" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3a14f258-860d-4894-988c-f7d8e627af0b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="889db373-87bf-4dab-ba8e-bd0df5e10c7e" LastKnownName="Joueur" />
+            </type_NamedElement>
+          </property>
+          <property Id="34462aff-8064-4bc9-8ebf-4e1de71ff849" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="91e0dd16-adee-413d-9d0c-a3ce0af49681" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="889db373-87bf-4dab-ba8e-bd0df5e10c7e" LastKnownName="Joueur" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -44,6 +83,11 @@
     <packageHasNamedElement>
       <referencedType Id="f76c03fe-844a-4f15-ad7e-12740a91f2d3" name="MoteurJeu" isAbstract="false" isLeaf="false" cachedFullName="CanonNoir::MoteurJeu">
         <elementDefinition Id="5656d5bb-765f-470e-967a-37dd27c2ef4d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="889db373-87bf-4dab-ba8e-bd0df5e10c7e" name="Joueur" isAbstract="false" isLeaf="false" cachedFullName="CanonNoir::Joueur">
+        <elementDefinition Id="dcaeca72-503d-4099-8367-ee0d6ab2c135" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
