@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="164bd51e-bd7e-4d51-b6b0-5bc31dea54d8" name="Activity1" linkedPackageId="be48b96b-45f2-4981-840d-05288eadb90d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="458aba30-4fcf-4232-8d80-bcd7960f2d16" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="101ebb2c-4386-4d99-a71f-0ad77d934e4f" />
+        <nodes>
+          <initialNode Id="67a7a23a-d9ff-438e-9827-8c34f46f6444" name="Initial1" isLeaf="false">
+            <elementDefinition Id="cadd4356-6014-4de2-9bae-df98b09d1e47" />
+            <flowNodeTargets>
+              <controlFlow Id="3b03a702-d287-4705-9932-a72c91caced4" isLeaf="false">
+                <acceptEventActionMoniker Id="44e845db-20c7-4892-ab24-4bab16755b62" LastKnownName="Joueur1 lance dé" />
+                <elementDefinition Id="e4e7d15c-1cf9-4383-8fd4-c3c0c61248f9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="8a8f5db9-241f-4d2a-a838-1e461bc1140e" name="proposer déplacements possibles" isLeaf="false">
+            <elementDefinition Id="bf2d9d24-9acb-4fc5-8b4b-f607fa96341c" />
+            <flowNodeTargets>
+              <controlFlow Id="b5da9ede-8de6-4824-8f8c-b88a30c83022" isLeaf="false">
+                <acceptEventActionMoniker Id="e3ac04d5-cab2-4d7b-8de2-9d662e944df1" LastKnownName="Clic sur une case" />
+                <elementDefinition Id="a4ab6de8-5fb8-4e89-a336-dc264f9468f4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <acceptEventAction Id="44e845db-20c7-4892-ab24-4bab16755b62" name="Joueur1 lance dé" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="bea7cae0-18f0-4a0a-9491-5a160529de08" />
+            <flowNodeTargets>
+              <controlFlow Id="2482174b-4892-486d-85e0-3b32773488e0" guard="nbJoueur=2" isLeaf="false">
+                <acceptEventActionMoniker Id="a8875bff-836c-44ab-990a-e547dbfdde15" LastKnownName="Choisir un bateau" />
+                <elementDefinition Id="83b5809d-2dd3-43c8-8595-383f9ccdd04e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <acceptEventAction Id="e3ac04d5-cab2-4d7b-8de2-9d662e944df1" name="Clic sur une case" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="5cec3b1d-4f85-480d-b3eb-1cf948173a17" />
+            <flowNodeTargets>
+              <controlFlow Id="efa23123-f6e3-41e7-b1d8-4ae58492e46f" isLeaf="false">
+                <decisionNodeMoniker Id="3f22d2e8-0e19-4b28-a612-d6c425239e51" LastKnownName="Decision2" />
+                <elementDefinition Id="be84d337-59b1-4195-ab49-23d0834146ef" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <opaqueAction Id="3db97b13-59ef-4e0e-9f9d-3f88cc011fe5" name="Réaliser déplacement" isLeaf="false">
+            <elementDefinition Id="9d9c24db-ad29-4ce8-a354-52fa966a9a8e" />
+            <flowNodeTargets>
+              <controlFlow Id="e1d50a73-8fbb-450b-84bc-feed0572663b" isLeaf="false">
+                <opaqueActionMoniker Id="2551c820-b479-4800-acb2-4b3fd7309604" LastKnownName="Analyser la case d'arrivée" />
+                <elementDefinition Id="b6324969-ee14-416d-871f-6e54f22f6fdf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2551c820-b479-4800-acb2-4b3fd7309604" name="Analyser la case d'arrivée" isLeaf="false">
+            <elementDefinition Id="53152480-439b-48e0-aff5-d56fda6e0fe4" />
+            <flowNodeTargets>
+              <controlFlow Id="82a2df1a-2ec4-41a3-8c0d-2e198ce642df" isLeaf="false">
+                <decisionNodeMoniker Id="cd538943-43a7-4f59-9a57-dedcbbc75c83" LastKnownName="Decision3" />
+                <elementDefinition Id="c38b1c01-ed06-4bac-8cbf-0e27e3315119" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <acceptEventAction Id="a8875bff-836c-44ab-990a-e547dbfdde15" name="Choisir un bateau" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="601f5407-ee4a-4d15-90e7-d2fb3b9959b1" />
+            <flowNodeTargets>
+              <controlFlow Id="956e581f-af3b-4775-9974-e13131707e34" isLeaf="false">
+                <opaqueActionMoniker Id="8a8f5db9-241f-4d2a-a838-1e461bc1140e" LastKnownName="proposer déplacements possibles" />
+                <elementDefinition Id="c61c672d-f060-475f-ba2f-8a7aaad20953" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <decisionNode Id="3f22d2e8-0e19-4b28-a612-d6c425239e51" name="Decision2" isLeaf="false">
+            <elementDefinition Id="6583deb1-6720-4ff8-9ae6-cbacd6e1e4a3" />
+            <flowNodeTargets>
+              <controlFlow Id="97e0aa06-c820-4975-87e4-6bcd9ad7bd74" isLeaf="false">
+                <opaqueActionMoniker Id="3db97b13-59ef-4e0e-9f9d-3f88cc011fe5" LastKnownName="Réaliser déplacement" />
+                <elementDefinition Id="33120267-2f76-439e-aae5-3b578b68c423" />
+              </controlFlow>
+              <controlFlow Id="c104a9df-6af5-4261-9514-77a76c020830" guard=" c_courant.hasBateau()" isLeaf="false">
+                <acceptEventActionMoniker Id="a8875bff-836c-44ab-990a-e547dbfdde15" LastKnownName="Choisir un bateau" />
+                <elementDefinition Id="39a32e34-3cc0-4467-9ccc-8cf5c5cb95ac" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="cd538943-43a7-4f59-9a57-dedcbbc75c83" name="Decision3" isLeaf="false">
+            <elementDefinition Id="b1e7b0bc-8050-4bac-bd13-fc58b39ad6bc" />
+            <flowNodeTargets>
+              <controlFlow Id="1f03fe7d-a2c3-4194-b2c6-7a667aaf802d" guard="c_courant.hasTresor() &amp;&amp; typeBateau()!=radeau &amp;&amp; !Bateau.hastresor()" isLeaf="false">
+                <opaqueActionMoniker Id="5cf58e92-2c56-44fc-8e67-bbac17e632e1" LastKnownName="Prendre le trésor" />
+                <elementDefinition Id="a8e71ceb-be57-41b6-82fe-9a45426b53db" />
+              </controlFlow>
+              <controlFlow Id="324dc7d6-e6dd-4af8-9ce5-e62fead68909" isLeaf="false">
+                <opaqueActionMoniker Id="c07bf675-619d-49c8-8da7-f1b8c5f200ef" LastKnownName="Lancer Duel" />
+                <elementDefinition Id="abd21f2f-dc5a-4222-adb7-e63ca6f16010" />
+              </controlFlow>
+              <controlFlow Id="8d9baee4-a1ed-42eb-a63c-084327298eda" guard="c_courant.hasCanon()" isLeaf="false">
+                <opaqueActionMoniker Id="030409f2-0aff-446a-b805-b1243183b2bf" LastKnownName="Tir" />
+                <elementDefinition Id="0657a310-43c9-434a-a086-dc84e6aee690" />
+              </controlFlow>
+              <controlFlow Id="5f713f6f-41ae-489c-85d1-9975c43dc3da" guard="c_courant.isPort() &amp;&amp; j_courant.hisPort() &amp;&amp; Bateau.hasTresor()" isLeaf="false">
+                <opaqueActionMoniker Id="72e64ba8-a655-4272-8e98-c448c36f986a" LastKnownName="Déposer trésor" />
+                <elementDefinition Id="2911b95e-09d4-4acc-b6f5-d2e81b178a5b" />
+              </controlFlow>
+              <controlFlow Id="94e38a61-fb15-4772-85c7-a2074f835eb2" guard="c_courant.isPort() &amp;&amp; tabJoueur[i].hisPort() &amp;&amp; typeBateau()!=caravelle" isLeaf="false">
+                <opaqueActionMoniker Id="256edcc3-d486-4e3f-8cbd-d33f41b0c16a" LastKnownName="Changer Bateau" />
+                <elementDefinition Id="0f07b715-efd4-4b47-8ae4-639405a99cad" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="5cf58e92-2c56-44fc-8e67-bbac17e632e1" name="Prendre le trésor" isLeaf="false">
+            <elementDefinition Id="03c0b41b-4123-49c7-ab67-bf5bbe1f969c" />
+          </opaqueAction>
+          <opaqueAction Id="c07bf675-619d-49c8-8da7-f1b8c5f200ef" name="Lancer Duel" isLeaf="false">
+            <elementDefinition Id="46b1d14a-1e0e-43a1-a4ae-4b0d6f65f643" />
+          </opaqueAction>
+          <opaqueAction Id="030409f2-0aff-446a-b805-b1243183b2bf" name="Tir" isLeaf="false">
+            <elementDefinition Id="8a89b2b7-b41d-492f-90b7-633af3260b57" />
+          </opaqueAction>
+          <opaqueAction Id="72e64ba8-a655-4272-8e98-c448c36f986a" name="Déposer trésor" isLeaf="false">
+            <elementDefinition Id="492eb5d8-a845-4af9-8b66-79528d3da413" />
+          </opaqueAction>
+          <opaqueAction Id="256edcc3-d486-4e3f-8cbd-d33f41b0c16a" name="Changer Bateau" isLeaf="false">
+            <elementDefinition Id="6ea5c6fd-8cb3-423c-b72b-d9fa791e9754" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="be48b96b-45f2-4981-840d-05288eadb90d" name="CanonNoir">
+    <elementDefinition Id="d1255448-f23c-4490-af91-82b9caa462ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e283e8ee-d4a1-439d-847a-0a0643811198">
+        <profileInstance Id="3053ebf6-f5ee-4937-a638-9bc2f0fc44c6" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c17629ce-2dc5-4952-a4a9-fe1e85943c2a">
+        <profileInstance Id="ba688417-e797-4647-91a3-6d3bf852a256" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

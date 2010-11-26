@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="daad3e8d-529c-4c37-a365-1398a1356f10" name="UMLUseCaseDiagram1" linkedPackageId="84206027-c387-4b28-a686-7cc9bdce9b09" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="09b9fc9f-a3d7-4e38-bcaf-067b96d99b83" name="Joueur" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5519c4a3-6f96-4e16-8d1c-043d5e2866a1" />
+        <targetEnds>
+          <association Id="4b2e2e0d-f80b-4f19-963a-aab852d96cd4" isDerived="false" sourceEndRoleName="Joueur" targetEndRoleName="Initialisation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c1637359-f72d-4575-ae8e-c5a6d373f9bb" LastKnownName="Initialisation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9256f1dc-4a55-4a8f-87f7-9a5a66cd0254" name="Joueur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="27924308-5cd9-4a67-9458-a16c396d2337" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="57a05813-d43f-4e00-8427-1664ddd8305d" name="Initialisation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="76eaef7a-fdd1-4173-8e4b-40c4149ed54c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ecd712ba-7005-4a29-9d2b-00594a65ea01" />
+          </association>
+          <association Id="82ffa973-5ced-428c-93a1-97dba318274d" isDerived="false" sourceEndRoleName="Joueur" targetEndRoleName="Lance les dés" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e011d3fa-8866-4d9f-8070-81991684b355" LastKnownName="Lance les dés" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e65c3a9a-ed05-4d0d-9c80-26f1d0934f26" name="Joueur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="66f8437d-f798-4fea-ba33-fd6f635582ed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8f6c6563-49df-46c6-a6e6-e9f8a235cf46" name="Lance les dés" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e7d3c17a-7d04-41c7-b798-2f5d43859831" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4191674f-2698-4bde-9145-bd0937e30cc3" />
+          </association>
+          <association Id="f114df23-5143-4510-80d6-6332298a5f71" isDerived="false" sourceEndRoleName="Joueur" targetEndRoleName="Choix du déplacement" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="57f472fb-6f75-47f2-b3da-05d436580c4a" LastKnownName="Choix du déplacement" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="52384520-9bbb-40cd-9329-0d260a8078e3" name="Joueur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2951e4aa-9a77-431c-9366-a0dc35e355fc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b684017f-3a70-40cc-b4f4-3fe7313ca5d4" name="Choix du déplacement" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ee1c6a79-f2cd-44ac-84a6-aac69724920f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="af2e0f83-0cc3-4f5a-9ab4-b9fbe3d2d744" />
+          </association>
+          <association Id="dc361bd1-e422-42c8-9bbe-5cdd57e897fc" isDerived="false" sourceEndRoleName="Joueur" targetEndRoleName="Fin du jeu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b1aa6af7-de26-4824-96bc-f85e315b556f" LastKnownName="Fin du jeu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="54d46fd0-5598-48e6-8e8d-bc933da5dac1" name="Joueur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="296fa223-8a49-4e09-a60f-cc736ab1656c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3fb56244-b8d3-41b8-9ad0-8bd5acbc0e30" name="Fin du jeu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2a43a653-cc75-43c1-9508-6d416b91b396" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="77879ba8-3eca-4d21-9f9a-39acd3edfe53" />
+          </association>
+          <association Id="34397eac-84ba-436a-a6a1-c581a9a6af9c" isDerived="false" sourceEndRoleName="Joueur" targetEndRoleName="Choisir angle" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f97e69c8-18ef-4bd4-8add-2a06aa1c9553" LastKnownName="Choisir angle" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ec59c46-8eb4-412c-9176-d10c9f9d9a17" name="Joueur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="628395a0-d56f-49b1-802d-3179bbd1473b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5a8f10fe-c424-482d-95e7-1b8d7c1a810d" name="Choisir angle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d9148f91-e204-40b1-aa7e-a25031eb480c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="eb9fa21b-3090-43ae-a312-1aadd621207f" />
+          </association>
+          <association Id="3d191048-d308-40e2-bb35-0ff5f43aa1f2" isDerived="false" sourceEndRoleName="Joueur" targetEndRoleName="Choisir puissance" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2fbdc0dd-4099-4e40-95d2-7dad36d281a4" LastKnownName="Choisir puissance" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd816618-9d02-41b7-9a24-cbf4af17a7b3" name="Joueur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0d620863-078a-4fae-b34d-135efc012ea4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="810cada8-125e-4496-a7fd-36cf6ed5dedc" name="Choisir puissance" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2292d0f7-a22c-4819-aeae-8371e028afa1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fdf65792-aa24-477f-a076-704ce80c462f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="c38c8f85-a1d2-4f04-90bf-f90c9d39409d" name="CanonNoir" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="51ab8c37-92e9-40c3-8bd9-12d99572ba7d" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="c1637359-f72d-4575-ae8e-c5a6d373f9bb" name="Initialisation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c14e1fc-5c8d-46c6-9e50-a499289b6c08" />
+        <additions>
+          <include Id="fd8dbfb8-def1-46f3-bc7f-d1de7e66dd3f">
+            <useCaseMoniker Id="a59eef2b-2f25-403c-a679-78b94c26eb4b" LastKnownName="Choix du nombre de joueurs" />
+            <elementDefinition Id="feac683f-e3e4-488c-ab5f-bb3bf8ebe457" />
+          </include>
+          <include Id="95e874fc-c55c-4755-b6e7-1ecc2e951c7f">
+            <useCaseMoniker Id="31b3aedc-82d4-4557-a5f8-0200cfa67548" LastKnownName="Choix des couleurs associées" />
+            <elementDefinition Id="9b9b4865-b602-4967-8c34-7d90a5e03ea3" />
+          </include>
+          <include Id="e7edaed8-e956-4c4d-bed6-314830983b37">
+            <useCaseMoniker Id="de61bbe6-264a-44b8-abb1-b1d85ad7085c" LastKnownName="Choix de l'ordre" />
+            <elementDefinition Id="04195437-260d-496a-bd89-cac241ff3ed7" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="c38c8f85-a1d2-4f04-90bf-f90c9d39409d" LastKnownName="CanonNoir" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a59eef2b-2f25-403c-a679-78b94c26eb4b" name="Choix du nombre de joueurs" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a7996181-346e-4204-8b27-df3a544a88ac" />
+        <subjects>
+          <subsystemMoniker Id="c38c8f85-a1d2-4f04-90bf-f90c9d39409d" LastKnownName="CanonNoir" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="31b3aedc-82d4-4557-a5f8-0200cfa67548" name="Choix des couleurs associées" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="75ca2975-a6e3-41d2-a14e-833f01f2afb4" />
+        <subjects>
+          <subsystemMoniker Id="c38c8f85-a1d2-4f04-90bf-f90c9d39409d" LastKnownName="CanonNoir" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="de61bbe6-264a-44b8-abb1-b1d85ad7085c" name="Choix de l'ordre" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="210f8e06-2be5-4c4f-8876-44432e2a3fdd" />
+        <subjects>
+          <subsystemMoniker Id="c38c8f85-a1d2-4f04-90bf-f90c9d39409d" LastKnownName="CanonNoir" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4ccf1421-ab4a-44a9-ac3f-d45ecec5bb1b" name="Le Jeu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3d2ebe2a-b7e2-4592-b852-aeaa4349fe20" />
+        <suppliersInternal>
+          <dependency Id="ed39b21a-2aad-4ac0-87e0-f120b5e74ff4">
+            <useCaseMoniker Id="c1637359-f72d-4575-ae8e-c5a6d373f9bb" LastKnownName="Initialisation" />
+            <elementDefinition Id="1ecbc536-2d47-42a6-a821-e4eab7d0a5bd" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include Id="8dada591-378b-49ef-b21a-e5d1a9d582fe">
+            <useCaseMoniker Id="e011d3fa-8866-4d9f-8070-81991684b355" LastKnownName="Lance les dés" />
+            <elementDefinition Id="75bf7db4-9c2b-4ad0-87e4-511a16a7261d" />
+          </include>
+          <include Id="a7dd16e5-16e1-4b33-9155-f3f1bb1c5ed2">
+            <useCaseMoniker Id="57f472fb-6f75-47f2-b3da-05d436580c4a" LastKnownName="Choix du déplacement" />
+            <elementDefinition Id="5d621692-54ec-4e98-a810-14a03b357480" />
+          </include>
+          <include Id="1c37ba9d-f3ec-485c-8fef-aa914296a637">
+            <useCaseMoniker Id="93116459-984d-4768-8d53-22b86f99dec0" LastKnownName="Tir de canon" />
+            <elementDefinition Id="a4f6f98e-9305-490a-b7cd-165e715cc116" />
+          </include>
+          <include Id="d14faa30-be03-42d3-8fe5-c442da6de609">
+            <useCaseMoniker Id="b1aa6af7-de26-4824-96bc-f85e315b556f" LastKnownName="Fin du jeu" />
+            <elementDefinition Id="4de964ff-6f0d-4607-b692-93fbaf20bf0b" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="c38c8f85-a1d2-4f04-90bf-f90c9d39409d" LastKnownName="CanonNoir" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e011d3fa-8866-4d9f-8070-81991684b355" name="Lance les dés" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e61595d8-cee2-4a76-89a5-5e6dc9f5f57f" />
+        <subjects>
+          <subsystemMoniker Id="c38c8f85-a1d2-4f04-90bf-f90c9d39409d" LastKnownName="CanonNoir" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="57f472fb-6f75-47f2-b3da-05d436580c4a" name="Choix du déplacement" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="68050852-70c8-41ea-8726-e2da9a4b7ff2" />
+        <subjects>
+          <subsystemMoniker Id="c38c8f85-a1d2-4f04-90bf-f90c9d39409d" LastKnownName="CanonNoir" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="93116459-984d-4768-8d53-22b86f99dec0" name="Tir de canon" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="45577097-30a6-41c7-a051-a0054665b875" />
+        <additions>
+          <include Id="f4602f12-0808-4e1b-a9b0-fcf827e025a5">
+            <useCaseMoniker Id="f97e69c8-18ef-4bd4-8add-2a06aa1c9553" LastKnownName="Choisir angle" />
+            <elementDefinition Id="8bea1045-abf7-4983-8101-2eddf14e6663" />
+          </include>
+          <include Id="651bfca2-6483-43f0-9823-f2f1beb299c3">
+            <useCaseMoniker Id="2fbdc0dd-4099-4e40-95d2-7dad36d281a4" LastKnownName="Choisir puissance" />
+            <elementDefinition Id="7549f10b-941b-4e36-b32b-5665ac6081b3" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="c38c8f85-a1d2-4f04-90bf-f90c9d39409d" LastKnownName="CanonNoir" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b1aa6af7-de26-4824-96bc-f85e315b556f" name="Fin du jeu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="94d5ff9a-b459-4297-8864-347172ac97e2" />
+        <subjects>
+          <subsystemMoniker Id="c38c8f85-a1d2-4f04-90bf-f90c9d39409d" LastKnownName="CanonNoir" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f97e69c8-18ef-4bd4-8add-2a06aa1c9553" name="Choisir angle" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="584702fd-57c1-48b9-90b0-9f2554230b4b" />
+        <subjects>
+          <subsystemMoniker Id="c38c8f85-a1d2-4f04-90bf-f90c9d39409d" LastKnownName="CanonNoir" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2fbdc0dd-4099-4e40-95d2-7dad36d281a4" name="Choisir puissance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="90686eae-d0f1-48be-8915-7e064bbd2f4a" />
+        <subjects>
+          <subsystemMoniker Id="c38c8f85-a1d2-4f04-90bf-f90c9d39409d" LastKnownName="CanonNoir" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="84206027-c387-4b28-a686-7cc9bdce9b09" name="CanonNoir">
+    <elementDefinition Id="d1255448-f23c-4490-af91-82b9caa462ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b95337e1-e354-46ff-b4d9-42416b7a4336">
+        <profileInstance Id="cd60cbc4-653a-4102-a40e-c0ac704d1491" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="76e8490c-1010-4a37-892f-208168e5d538">
+        <profileInstance Id="dc77cbf6-ac77-44dd-9d88-961d748ad762" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
