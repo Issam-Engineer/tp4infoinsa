@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="b9d3b332-926d-4f43-9c63-43d3733b16e7" name="Activity2" linkedPackageId="d6b251f6-c2cb-4851-811b-fc2e160d5ca3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="2a3fed76-c846-402a-bdea-088ce3b0362d">
-      <profileInstance Id="764087d3-82bd-4057-a9c5-79c31546ef46" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="a43249d7-71a7-4b69-ba84-769aff9873ab">
-      <profileInstance Id="077325de-39bf-419d-acfb-41bea13ea889" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="b9d3b332-926d-4f43-9c63-43d3733b16e7" name="Activity2" linkedPackageId="d6b251f6-c2cb-4851-811b-fc2e160d5ca3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="d60cb772-03f1-4fed-9fcc-ea1795a36e15" name="Activity2" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -23,17 +9,17 @@
             <elementDefinition Id="861aad68-4a04-437b-887c-995ff59c5970" />
             <flowNodeTargets>
               <controlFlow Id="8e27a3bc-4c3a-4159-b8e1-2e2dec6ce706" isLeaf="false">
-                <opaqueActionMoniker Id="b7b82ff8-b9eb-47ed-9830-5288274dc491" LastKnownName="Attaquant /Attaqué" />
+                <opaqueActionMoniker Id="b7b82ff8-b9eb-47ed-9830-5288274dc491" LastKnownName="Définir Attaquant /Attaqué" />
                 <elementDefinition Id="dcbf3cae-8b0f-46df-9f29-ae83dc6b02d7" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
-          <opaqueAction Id="edd71273-7e84-4597-ac74-26124704917f" name="Simuler le tireCanon voir la Case d'atterrissage" isLeaf="false">
+          <opaqueAction Id="edd71273-7e84-4597-ac74-26124704917f" name="Simuler le tirCanon " isLeaf="false">
             <elementDefinition Id="897a051b-71cb-42b1-9040-8c6f2a37f49f" />
             <flowNodeTargets>
-              <controlFlow Id="8b5e1347-7d22-4239-82e9-d02b5575cdb6" isLeaf="false">
-                <decisionNodeMoniker Id="7bc0a297-7cbb-4e47-8fc0-1e1e2de2a82b" LastKnownName="Decision1" />
-                <elementDefinition Id="f9c8eed3-9e32-4995-88a4-6b3d985f7323" />
+              <controlFlow Id="24d21117-2f1d-4c28-b329-cc98e75bc6cd" isLeaf="false">
+                <opaqueActionMoniker Id="b5d4a51b-9263-41e0-bc01-33bcffe59c95" LastKnownName="Analyser le résultat du tir" />
+                <elementDefinition Id="433a8ef1-0052-42c7-abcf-8a250d90a0c4" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -59,7 +45,7 @@
             <elementDefinition Id="e02f8594-161e-4346-9713-13fbd500ac82" />
             <flowNodeTargets>
               <controlFlow Id="74dafbdc-dcf3-42d3-ae69-452d23576789" isLeaf="false">
-                <opaqueActionMoniker Id="edd71273-7e84-4597-ac74-26124704917f" LastKnownName="Simuler le tireCanon voir la Case d'atterrissage" />
+                <opaqueActionMoniker Id="edd71273-7e84-4597-ac74-26124704917f" LastKnownName="Simuler le tirCanon " />
                 <elementDefinition Id="9311d23d-31bb-4f3c-8538-d9ad6117f62e" />
               </controlFlow>
             </flowNodeTargets>
@@ -77,7 +63,7 @@
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
-          <opaqueAction Id="b7b82ff8-b9eb-47ed-9830-5288274dc491" name="Attaquant /Attaqué" isLeaf="false">
+          <opaqueAction Id="b7b82ff8-b9eb-47ed-9830-5288274dc491" name="Définir Attaquant /Attaqué" isLeaf="false">
             <elementDefinition Id="92a693af-09fb-4e59-b174-cb50b33ac90e" />
             <flowNodeTargets>
               <controlFlow Id="b93e397a-e3a3-4890-a326-e713c212911d" isLeaf="false">
@@ -90,7 +76,7 @@
             <elementDefinition Id="75958fa5-0201-490d-a3c5-8c85d973ec02" />
             <flowNodeTargets>
               <controlFlow Id="6ca8ee7a-4d08-4e1e-b161-f158836bc19f" isLeaf="false">
-                <opaqueActionMoniker Id="b7b82ff8-b9eb-47ed-9830-5288274dc491" LastKnownName="Attaquant /Attaqué" />
+                <opaqueActionMoniker Id="b7b82ff8-b9eb-47ed-9830-5288274dc491" LastKnownName="Définir Attaquant /Attaqué" />
                 <elementDefinition Id="6eed67ae-ac5b-4bb9-a0a8-436762f2c386" />
               </controlFlow>
             </flowNodeTargets>
@@ -116,11 +102,34 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+          <opaqueAction Id="b5d4a51b-9263-41e0-bc01-33bcffe59c95" name="Analyser le résultat du tir" isLeaf="false">
+            <elementDefinition Id="078b9c43-0abb-4de4-8071-bc8061ae2078" />
+            <flowNodeTargets>
+              <controlFlow Id="c4a862e8-3064-4b88-ba2f-2213d41a1ed6" isLeaf="false">
+                <decisionNodeMoniker Id="7bc0a297-7cbb-4e47-8fc0-1e1e2de2a82b" LastKnownName="Decision1" />
+                <elementDefinition Id="5642c6b9-8a58-4c74-aa2d-03c9eb51d8e5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
   </packagedElements>
   <package Id="d6b251f6-c2cb-4851-811b-fc2e160d5ca3" name="CanonNoir">
     <elementDefinition Id="d1255448-f23c-4490-af91-82b9caa462ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2a3fed76-c846-402a-bdea-088ce3b0362d">
+        <profileInstance Id="764087d3-82bd-4057-a9c5-79c31546ef46" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a43249d7-71a7-4b69-ba84-769aff9873ab">
+        <profileInstance Id="077325de-39bf-419d-acfb-41bea13ea889" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

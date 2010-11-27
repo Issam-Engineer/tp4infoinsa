@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="164bd51e-bd7e-4d51-b6b0-5bc31dea54d8" name="Activity1" linkedPackageId="be48b96b-45f2-4981-840d-05288eadb90d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="164bd51e-bd7e-4d51-b6b0-5bc31dea54d8" name="Activity1" linkedPackageId="be48b96b-45f2-4981-840d-05288eadb90d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="b3187ea6-fea4-4937-8767-5e825554409d">
       <elementDefinition Id="131d0a39-8115-4ce4-90fa-35c1c07cea42" />
@@ -32,9 +32,9 @@
           <acceptEventAction Id="44e845db-20c7-4892-ab24-4bab16755b62" name="Joueur1 lance dé" isLeaf="false" isUnmarshall="false">
             <elementDefinition Id="bea7cae0-18f0-4a0a-9491-5a160529de08" />
             <flowNodeTargets>
-              <controlFlow Id="2482174b-4892-486d-85e0-3b32773488e0" guard="nbJoueur=2" isLeaf="false">
+              <controlFlow Id="65cd6994-f5df-4bed-bf1d-41b06a4d66d6" isLeaf="false">
                 <acceptEventActionMoniker Id="a8875bff-836c-44ab-990a-e547dbfdde15" LastKnownName="Choisir un bateau" />
-                <elementDefinition Id="83b5809d-2dd3-43c8-8595-383f9ccdd04e" />
+                <elementDefinition Id="ee1cb986-9893-4bcc-bcc9-3fa2f5e319e1" />
               </controlFlow>
             </flowNodeTargets>
           </acceptEventAction>
@@ -71,6 +71,10 @@
               <controlFlow Id="956e581f-af3b-4775-9974-e13131707e34" isLeaf="false">
                 <opaqueActionMoniker Id="8a8f5db9-241f-4d2a-a838-1e461bc1140e" LastKnownName="proposer déplacements possibles" />
                 <elementDefinition Id="c61c672d-f060-475f-ba2f-8a7aaad20953" />
+              </controlFlow>
+              <controlFlow Id="0a356349-3e0a-4805-8634-2170242fbd65" isLeaf="false">
+                <decisionNodeMoniker Id="fdca99ef-84db-4b1d-ad0c-f0a9c1ed9ee9" LastKnownName="Decision1" />
+                <elementDefinition Id="5cdfc4d4-0b3c-4107-97ab-7e53c6623484" />
               </controlFlow>
             </flowNodeTargets>
           </acceptEventAction>
@@ -130,6 +134,28 @@
           <activityFinalNode Id="1fc146e5-7b04-4ee9-936c-70d08191bb2f" name="ActivityFinal1" isLeaf="false">
             <elementDefinition Id="3870eba9-2aa9-4e3a-9382-f89d406abbcb" />
           </activityFinalNode>
+          <acceptEventAction Id="51ad1afc-e9bd-45b1-91be-f75c7e10af76" name="Choisir Dé " isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="70e657b3-f678-48c2-86d9-4571abac206b" />
+            <flowNodeTargets>
+              <controlFlow Id="9f7f73f8-b965-45d8-aa87-b1932acd90c8" isLeaf="false">
+                <opaqueActionMoniker Id="8a8f5db9-241f-4d2a-a838-1e461bc1140e" LastKnownName="proposer déplacements possibles" />
+                <elementDefinition Id="b08ffbaf-a8da-45b1-a5fb-4bcbe76d069a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <decisionNode Id="fdca99ef-84db-4b1d-ad0c-f0a9c1ed9ee9" name="Decision1" isLeaf="false">
+            <elementDefinition Id="52c6e283-f518-4ea5-8bd1-f83596054fab" />
+            <flowNodeTargets>
+              <controlFlow Id="e2b5d9ee-3280-46ae-a5cf-b8c18b18c5d0" guard="tabJoueurs[indJoueurCourant].getBateau(i) = &quot;Caravelle&quot;" isLeaf="false">
+                <acceptEventActionMoniker Id="51ad1afc-e9bd-45b1-91be-f75c7e10af76" LastKnownName="Choisir Dé " />
+                <elementDefinition Id="827f97ca-ba03-4183-b6c6-e3212641bba4" />
+              </controlFlow>
+              <controlFlow Id="f461082e-dd48-4ab1-af86-18a08c874001" isLeaf="false">
+                <opaqueActionMoniker Id="8a8f5db9-241f-4d2a-a838-1e461bc1140e" LastKnownName="proposer déplacements possibles" />
+                <elementDefinition Id="8607d91e-3832-462f-b85a-a04132f9a995" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
