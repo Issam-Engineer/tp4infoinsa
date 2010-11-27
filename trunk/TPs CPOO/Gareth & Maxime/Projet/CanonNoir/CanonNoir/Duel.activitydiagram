@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="b9d3b332-926d-4f43-9c63-43d3733b16e7" name="Activity2" linkedPackageId="d6b251f6-c2cb-4851-811b-fc2e160d5ca3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="2a3fed76-c846-402a-bdea-088ce3b0362d">
+      <profileInstance Id="764087d3-82bd-4057-a9c5-79c31546ef46" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a43249d7-71a7-4b69-ba84-769aff9873ab">
+      <profileInstance Id="077325de-39bf-419d-acfb-41bea13ea889" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="d60cb772-03f1-4fed-9fcc-ea1795a36e15" name="Activity2" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="0a882271-e223-4e2c-9b39-5c5842c857a1" />
+        <nodes>
+          <initialNode Id="4bbb30f3-7eb0-4a68-85c2-3d2486a8e805" name="Initial1" isLeaf="false">
+            <elementDefinition Id="861aad68-4a04-437b-887c-995ff59c5970" />
+            <flowNodeTargets>
+              <controlFlow Id="8e27a3bc-4c3a-4159-b8e1-2e2dec6ce706" isLeaf="false">
+                <opaqueActionMoniker Id="b7b82ff8-b9eb-47ed-9830-5288274dc491" LastKnownName="Attaquant /Attaqué" />
+                <elementDefinition Id="dcbf3cae-8b0f-46df-9f29-ae83dc6b02d7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="edd71273-7e84-4597-ac74-26124704917f" name="Simuler le tireCanon voir la Case d'atterrissage" isLeaf="false">
+            <elementDefinition Id="897a051b-71cb-42b1-9040-8c6f2a37f49f" />
+            <flowNodeTargets>
+              <controlFlow Id="8b5e1347-7d22-4239-82e9-d02b5575cdb6" isLeaf="false">
+                <decisionNodeMoniker Id="7bc0a297-7cbb-4e47-8fc0-1e1e2de2a82b" LastKnownName="Decision1" />
+                <elementDefinition Id="f9c8eed3-9e32-4995-88a4-6b3d985f7323" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <acceptEventAction Id="635e562d-3c64-420f-8a43-23a036d1b222" name="Paramétrer la puissance" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="a8031963-87dd-4d2d-9e46-f74c304fabdf" />
+            <flowNodeTargets>
+              <controlFlow Id="d2cbf654-a4ac-41e7-a300-14deb37c0b20" isLeaf="false">
+                <acceptEventActionMoniker Id="56df07cd-5d8c-407e-8aff-2863bfbfe2f0" LastKnownName="Paramétré l'angle" />
+                <elementDefinition Id="1873bf94-112b-4ffe-8041-18a517397b3e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <acceptEventAction Id="56df07cd-5d8c-407e-8aff-2863bfbfe2f0" name="Paramétré l'angle" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="fda71549-046c-43ab-8a2f-29b6834acb7a" />
+            <flowNodeTargets>
+              <controlFlow Id="b8ea7ca4-3e89-4e76-b282-6a54328a8e09" isLeaf="false">
+                <acceptEventActionMoniker Id="767db2c4-bad7-4095-a1a3-41d22896214d" LastKnownName="Tirer" />
+                <elementDefinition Id="b7894a4b-8666-4613-a6e0-e03274020cf7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <acceptEventAction Id="767db2c4-bad7-4095-a1a3-41d22896214d" name="Tirer" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="e02f8594-161e-4346-9713-13fbd500ac82" />
+            <flowNodeTargets>
+              <controlFlow Id="74dafbdc-dcf3-42d3-ae69-452d23576789" isLeaf="false">
+                <opaqueActionMoniker Id="edd71273-7e84-4597-ac74-26124704917f" LastKnownName="Simuler le tireCanon voir la Case d'atterrissage" />
+                <elementDefinition Id="9311d23d-31bb-4f3c-8538-d9ad6117f62e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <decisionNode Id="7bc0a297-7cbb-4e47-8fc0-1e1e2de2a82b" name="Decision1" isLeaf="false">
+            <elementDefinition Id="7edf930d-08d8-4ae0-bce9-793f8ff68161" />
+            <flowNodeTargets>
+              <controlFlow Id="a79c83ff-6e86-490d-abee-188fdd1df03f" guard="loupé &amp;&amp; ntir&lt;2" isLeaf="false">
+                <opaqueActionMoniker Id="eb2ace1d-ffcd-49b5-a4c3-205f08570581" LastKnownName="inverser  Attaquant/attaqué" />
+                <elementDefinition Id="867b8907-7d3d-407f-a12d-b30bc69cd76f" />
+              </controlFlow>
+              <controlFlow Id="34c390e6-ef03-46d6-994e-d913bf8ed30d" isLeaf="false">
+                <opaqueActionMoniker Id="44ccadb5-1ef2-44e3-869a-a37297a6622b" LastKnownName="Attaquant récupère trésor attaqué perd son trésor" />
+                <elementDefinition Id="f7841f5e-2002-4951-8f52-b8615802464a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="b7b82ff8-b9eb-47ed-9830-5288274dc491" name="Attaquant /Attaqué" isLeaf="false">
+            <elementDefinition Id="92a693af-09fb-4e59-b174-cb50b33ac90e" />
+            <flowNodeTargets>
+              <controlFlow Id="b93e397a-e3a3-4890-a326-e713c212911d" isLeaf="false">
+                <acceptEventActionMoniker Id="635e562d-3c64-420f-8a43-23a036d1b222" LastKnownName="Paramétrer la puissance" />
+                <elementDefinition Id="0341842c-396e-4047-b281-2a257f9467fa" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="eb2ace1d-ffcd-49b5-a4c3-205f08570581" name="inverser  Attaquant/attaqué" isLeaf="false">
+            <elementDefinition Id="75958fa5-0201-490d-a3c5-8c85d973ec02" />
+            <flowNodeTargets>
+              <controlFlow Id="6ca8ee7a-4d08-4e1e-b161-f158836bc19f" isLeaf="false">
+                <opaqueActionMoniker Id="b7b82ff8-b9eb-47ed-9830-5288274dc491" LastKnownName="Attaquant /Attaqué" />
+                <elementDefinition Id="6eed67ae-ac5b-4bb9-a0a8-436762f2c386" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="44ccadb5-1ef2-44e3-869a-a37297a6622b" name="Attaquant récupère trésor attaqué perd son trésor" isLeaf="false">
+            <elementDefinition Id="dde43395-fde4-4eb0-95ac-7fa8a44886b3" />
+            <flowNodeTargets>
+              <controlFlow Id="9b30f8f4-de66-4abf-aecb-877d5fe1b508" isLeaf="false">
+                <opaqueActionMoniker Id="3cc7296a-c546-4a00-bda2-0419fab891c6" LastKnownName="Changer bateau attaqué" />
+                <elementDefinition Id="b46f2a1c-88a2-4e6e-9a65-06410e1590ab" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="9c5d3d4a-a3a0-4afd-a1d7-54f2258b2e89" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="0ac2b6ca-18ed-448b-9feb-bd7364245bf3" />
+          </activityFinalNode>
+          <opaqueAction Id="3cc7296a-c546-4a00-bda2-0419fab891c6" name="Changer bateau attaqué" isLeaf="false">
+            <elementDefinition Id="e24e27ff-dd76-4dfd-b1f6-6fc23c8d793f" />
+            <flowNodeTargets>
+              <controlFlow Id="23d82a22-e11b-4ed5-8024-0faf9ced8f59" isLeaf="false">
+                <activityFinalNodeMoniker Id="9c5d3d4a-a3a0-4afd-a1d7-54f2258b2e89" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="d654ad96-52c6-4303-b739-4dc04d187293" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="d6b251f6-c2cb-4851-811b-fc2e160d5ca3" name="CanonNoir">
+    <elementDefinition Id="d1255448-f23c-4490-af91-82b9caa462ca" />
+  </package>
+</activityRootModel>
