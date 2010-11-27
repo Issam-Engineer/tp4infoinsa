@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="164bd51e-bd7e-4d51-b6b0-5bc31dea54d8" name="Activity1" linkedPackageId="be48b96b-45f2-4981-840d-05288eadb90d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="164bd51e-bd7e-4d51-b6b0-5bc31dea54d8" name="Activity1" linkedPackageId="be48b96b-45f2-4981-840d-05288eadb90d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="b3187ea6-fea4-4937-8767-5e825554409d">
+      <elementDefinition Id="131d0a39-8115-4ce4-90fa-35c1c07cea42" />
+      <body>arréter le diagramme sur l'analyse de la case d'arrivée et détailler chaque cas ??</body>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="458aba30-4fcf-4232-8d80-bcd7960f2d16" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -121,6 +127,9 @@
           <opaqueAction Id="256edcc3-d486-4e3f-8cbd-d33f41b0c16a" name="Changer Bateau" isLeaf="false">
             <elementDefinition Id="6ea5c6fd-8cb3-423c-b72b-d9fa791e9754" />
           </opaqueAction>
+          <activityFinalNode Id="1fc146e5-7b04-4ee9-936c-70d08191bb2f" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="3870eba9-2aa9-4e3a-9382-f89d406abbcb" />
+          </activityFinalNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>

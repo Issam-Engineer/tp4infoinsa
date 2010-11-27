@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 11.75" name="UMLActivityDiagram1">
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 13.125" name="UMLActivityDiagram1">
   <activityRootModelMoniker Id="164bd51e-bd7e-4d51-b6b0-5bc31dea54d8" />
   <nestedChildShapes>
     <initialNodeShape Id="386f44ec-d91e-429f-8792-e91182b18614" absoluteBounds="3.875, 0.75, 0.125, 0.125" customColor="89, 89, 89">
@@ -136,7 +136,7 @@
       <controlFlowMoniker Id="8d9baee4-a1ed-42eb-a63c-084327298eda" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="3.1875, 8.375, 1.2378833293914795, 0.14800345897674561" shapeFieldName="Guard" />
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="3.1875, 8.625, 1.2378833293914795, 0.14800345897674561" shapeFieldName="Guard" />
       </moveableDecoratorHostShapes>
       <nodes>
         <decisionNodeShapeMoniker Id="8734b913-c228-4046-b340-51a4b4f93854" />
@@ -165,7 +165,7 @@
         <actionShapeMoniker Id="3d52a63d-8944-462e-a4c1-d3ad969e9fdf" />
       </nodes>
     </controlFlowConnector>
-    <controlFlowConnector edgePoints="[(3.9375 : 1.625); (3.9375 : 2.75)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <controlFlowConnector edgePoints="[(3.9375 : 1.625); (3.9375 : 2.75)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <controlFlowMoniker Id="2482174b-4892-486d-85e0-3b32773488e0" />
       <relativeChildShapes />
       <nodes>
@@ -173,5 +173,12 @@
         <acceptEventActionShapeMoniker Id="e0fd83a0-7ef4-4576-964b-ae47a97ae81b" />
       </nodes>
     </controlFlowConnector>
+    <activityFinalNodeShape Id="2d2b66be-53fd-46d0-a26d-ce7fede15b10" absoluteBounds="3.875, 12.125, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="1fc146e5-7b04-4ee9-936c-70d08191bb2f" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <commentShape Id="30507618-ad39-4761-a25d-9465a351f0f8" absoluteBounds="4.25, 12, 1.25, 0.875" customColor="251, 247, 200">
+      <commentMoniker Id="b3187ea6-fea4-4937-8767-5e825554409d" />
+      <relativeChildShapes />
+    </commentShape>
   </nestedChildShapes>
 </activityDiagram>

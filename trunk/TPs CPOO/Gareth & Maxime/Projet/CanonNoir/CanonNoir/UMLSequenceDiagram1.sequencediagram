@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="58744986-0994-4946-a19d-3109164b323d" name="Sequence1" linkedPackageId="5f69f9e8-1bc4-474d-a2e3-c43357140bfc" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="a7ee2d04-a434-4f74-866c-1fa44288fc97">
-      <profileInstance Id="2c456941-685e-4023-9396-c9b7a78896d8" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="eab1c438-f504-47ff-9049-d8fefd4f3be7">
-      <profileInstance Id="367cfe8f-d85a-44f5-8276-2bb972acf5bb" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="58744986-0994-4946-a19d-3109164b323d" name="Sequence1" linkedPackageId="5f69f9e8-1bc4-474d-a2e3-c43357140bfc" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="41db1acf-800f-46ca-89c9-f7d4b85b9ee2" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
@@ -21,6 +7,9 @@
         <lifelines>
           <lifeline Id="0af11e2d-e822-4ae0-a22c-43146ee98378" name="Utilisateur" isActor="false" lifelineDisplayName="Utilisateur">
             <elementDefinition Id="b2d01b61-8174-4924-be3c-ae5fe758501f" />
+          </lifeline>
+          <lifeline Id="cae7f3af-5947-4e81-87c7-ab6ff96939d4" name="Adaptateur ???" isActor="false" lifelineDisplayName="Adaptateur ???">
+            <elementDefinition Id="4496e4da-1210-424e-88f4-17b3dc724a76" />
           </lifeline>
           <lifeline Id="8373044c-19f6-49f2-8c8f-e9939c8c5df3" name="m : MoteurJeu" isActor="false" lifelineDisplayName="m : MoteurJeu">
             <elementDefinition Id="d03cd608-7212-427e-bf93-fa8770cdaec2" />
@@ -93,5 +82,19 @@
   </packagedElements>
   <package Id="5f69f9e8-1bc4-474d-a2e3-c43357140bfc" name="CanonNoir">
     <elementDefinition Id="d1255448-f23c-4490-af91-82b9caa462ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a7ee2d04-a434-4f74-866c-1fa44288fc97">
+        <profileInstance Id="2c456941-685e-4023-9396-c9b7a78896d8" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="eab1c438-f504-47ff-9049-d8fefd4f3be7">
+        <profileInstance Id="367cfe8f-d85a-44f5-8276-2bb972acf5bb" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </SequenceDesignerModel>

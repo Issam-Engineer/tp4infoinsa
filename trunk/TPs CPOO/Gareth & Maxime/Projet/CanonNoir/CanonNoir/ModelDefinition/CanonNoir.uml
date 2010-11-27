@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="d1255448-f23c-4490-af91-82b9caa462ca"
   name="CanonNoir" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -58,7 +58,7 @@ isDe =&gt; si vrai on affiche le dé...</body>
     </comment>
     <comment
       Id="7d89f753-2d8f-48d0-8106-40ecff899775">
-      <body>execute() =&gt; lance la selection de la puissance et de l'angle du tir, puis créer le tir grace a la fonction du canon</body>
+      <body>execute() =&gt;  Ouvre une fenêtre, lance la selection de la puissance et de l'angle du tir, puis créer le tir grace a la fonction du canon</body>
       <annotatedElements>
         <classMoniker
           Id="fe6e8b86-9622-4a25-bdab-5066f70b19d5"
@@ -118,6 +118,18 @@ modifiernuméro(j)</body>
           LastKnownName="Ordonner par défaut"
           LastKnownLocation="CanonNoir.uml" />
       </annotatedElements>
+    </comment>
+    <comment
+      Id="90be05ab-3ebb-4ac1-a3f8-8a73ec34d9b0">
+      <body>On doit savoir si l'on est dans l'état tire depuis l'état Duel </body>
+    </comment>
+    <comment
+      Id="cac43e8c-bf73-4f34-968b-b6a3f1a473ed">
+      <body>Identifie les différents états</body>
+    </comment>
+    <comment
+      Id="131d0a39-8115-4ce4-90fa-35c1c07cea42">
+      <body>arréter le diagramme sur l'analyse de la case d'arrivée et détailler chaque cas ??</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -541,6 +553,24 @@ modifiernuméro(j)</body>
               <undefinedTypeMoniker
                 Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
                 LastKnownName="int"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="be3090c1-bba0-4128-9388-0d8a53e426ee"
+            name="gagnant"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9747b71b-5760-4947-a400-dd891fa273cf"
+                LastKnownName="bool"
                 LastKnownLocation="CanonNoir.uml" />
             </type_NamedElement>
           </property>
@@ -2225,11 +2255,37 @@ modifiernuméro(j)</body>
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="e318f146-a953-4e37-aee1-cc09e47e0ba6"
+            name="Duel"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9747b71b-5760-4947-a400-dd891fa273cf"
+                LastKnownName="bool"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="fa198c2b-2137-49d3-b6fb-18059ee8b0a6"
             name="execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4acb6a53-0eb1-4b5c-b93b-f64471616978"
+            name="tirCanon"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -3346,6 +3402,10 @@ modifiernuméro(j)</body>
             Id="6ea5c6fd-8cb3-423c-b72b-d9fa791e9754"
             name="Changer Bateau"
             isLeaf="false" />
+          <activityFinalNode
+            Id="3870eba9-2aa9-4e3a-9382-f89d406abbcb"
+            name="ActivityFinal1"
+            isLeaf="false" />
         </nodes>
       </activity>
     </packageHasNamedElement>
@@ -3627,6 +3687,15 @@ modifiernuméro(j)</body>
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="da0e9282-f4ae-4dc2-ace6-c6578920002d">
+            <interfaceMoniker
+              Id="32b79ced-b70a-43fb-a700-883ce1c35afa"
+              LastKnownName="Etat"
+              LastKnownLocation="CanonNoir.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <property
             Id="12b402c5-dab6-4dfd-9178-93a90f047063"
@@ -3647,6 +3716,16 @@ modifiernuméro(j)</body>
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bef58c4d-fad5-4933-9e68-aabd8e21b047"
+            name="execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -3712,6 +3791,11 @@ modifiernuméro(j)</body>
             name="Utilisateur"
             isActor="false"
             lifelineDisplayName="Utilisateur" />
+          <lifeline
+            Id="4496e4da-1210-424e-88f4-17b3dc724a76"
+            name="Adaptateur ???"
+            isActor="false"
+            lifelineDisplayName="Adaptateur ???" />
           <lifeline
             Id="d03cd608-7212-427e-bf93-fa8770cdaec2"
             name="m : MoteurJeu"
@@ -3829,6 +3913,204 @@ modifiernuméro(j)</body>
           </property>
         </ownedAttributesInternal>
       </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="c1304734-5e44-4324-9c68-c9dc9d8d343a"
+        name="Activity2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="856c6ffc-34fe-4ade-a457-76676d6fd474"
+            name="Initial1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="0a882271-e223-4e2c-9b39-5c5842c857a1"
+        name="Activity2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="861aad68-4a04-437b-887c-995ff59c5970"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dcbf3cae-8b0f-46df-9f29-ae83dc6b02d7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="92a693af-09fb-4e59-b174-cb50b33ac90e"
+                  LastKnownName="Attaquant /Attaqué"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="897a051b-71cb-42b1-9040-8c6f2a37f49f"
+            name="Simuler le tireCanon voir la Case d'atterrissage"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f9c8eed3-9e32-4995-88a4-6b3d985f7323"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="7edf930d-08d8-4ae0-bce9-793f8ff68161"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <acceptEventAction
+            Id="a8031963-87dd-4d2d-9e46-f74c304fabdf"
+            name="Paramétrer la puissance"
+            isLeaf="false"
+            isUnmarshall="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1873bf94-112b-4ffe-8041-18a517397b3e"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="fda71549-046c-43ab-8a2f-29b6834acb7a"
+                  LastKnownName="Paramétré l'angle"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <acceptEventAction
+            Id="fda71549-046c-43ab-8a2f-29b6834acb7a"
+            name="Paramétré l'angle"
+            isLeaf="false"
+            isUnmarshall="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b7894a4b-8666-4613-a6e0-e03274020cf7"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="e02f8594-161e-4346-9713-13fbd500ac82"
+                  LastKnownName="Tirer"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <acceptEventAction
+            Id="e02f8594-161e-4346-9713-13fbd500ac82"
+            name="Tirer"
+            isLeaf="false"
+            isUnmarshall="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9311d23d-31bb-4f3c-8538-d9ad6117f62e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="897a051b-71cb-42b1-9040-8c6f2a37f49f"
+                  LastKnownName="Simuler le tireCanon voir la Case d'atterrissage"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <decisionNode
+            Id="7edf930d-08d8-4ae0-bce9-793f8ff68161"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="867b8907-7d3d-407f-a12d-b30bc69cd76f"
+                guard="loupé &amp;&amp; ntir&lt;2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="75958fa5-0201-490d-a3c5-8c85d973ec02"
+                  LastKnownName="inverser  Attaquant/attaqué"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f7841f5e-2002-4951-8f52-b8615802464a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dde43395-fde4-4eb0-95ac-7fa8a44886b3"
+                  LastKnownName="Attaquant récupère trésor attaqué perd son trésor"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="92a693af-09fb-4e59-b174-cb50b33ac90e"
+            name="Attaquant /Attaqué"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0341842c-396e-4047-b281-2a257f9467fa"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="a8031963-87dd-4d2d-9e46-f74c304fabdf"
+                  LastKnownName="Paramétrer la puissance"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="75958fa5-0201-490d-a3c5-8c85d973ec02"
+            name="inverser  Attaquant/attaqué"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6eed67ae-ac5b-4bb9-a0a8-436762f2c386"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="92a693af-09fb-4e59-b174-cb50b33ac90e"
+                  LastKnownName="Attaquant /Attaqué"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="dde43395-fde4-4eb0-95ac-7fa8a44886b3"
+            name="Attaquant récupère trésor attaqué perd son trésor"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b46f2a1c-88a2-4e6e-9a65-06410e1590ab"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e24e27ff-dd76-4dfd-b1f6-6fc23c8d793f"
+                  LastKnownName="Changer bateau attaqué"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="0ac2b6ca-18ed-448b-9feb-bd7364245bf3"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="e24e27ff-dd76-4dfd-b1f6-6fc23c8d793f"
+            name="Changer bateau attaqué"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d654ad96-52c6-4303-b739-4dc04d187293"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="0ac2b6ca-18ed-448b-9feb-bd7364245bf3"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

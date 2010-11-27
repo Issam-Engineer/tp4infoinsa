@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="571bede5-5460-4e51-98bb-24bf9d8936c6">
       <elementDefinition Id="6536fcb9-b86d-466c-9434-d4f4e1ee87b7" />
@@ -40,7 +40,7 @@ isDe =&gt; si vrai on affiche le dé...</body>
     </comment>
     <comment Id="42280310-748b-4ecf-aef2-8e94c349a54e">
       <elementDefinition Id="7d89f753-2d8f-48d0-8106-40ecff899775" />
-      <body>execute() =&gt; lance la selection de la puissance et de l'angle du tir, puis créer le tir grace a la fonction du canon</body>
+      <body>execute() =&gt;  Ouvre une fenêtre, lance la selection de la puissance et de l'angle du tir, puis créer le tir grace a la fonction du canon</body>
       <annotatedElements>
         <classMoniker Id="894206be-e8f9-4fcf-a518-3e34c52fd598" LastKnownName="EtatTir" />
       </annotatedElements>
@@ -66,6 +66,10 @@ j_indJoueur = 0 </body>
       <annotatedElements>
         <classMoniker Id="a4f9d38f-c2b8-4143-8496-c8624c9e1adf" LastKnownName="EtatChoisirBateau" />
       </annotatedElements>
+    </comment>
+    <comment Id="55c8d88d-dda2-42fb-b7b3-cd2f4e551cc2">
+      <elementDefinition Id="90be05ab-3ebb-4ac1-a3f8-8a73ec34d9b0" />
+      <body>On doit savoir si l'on est dans l'état tire depuis l'état Duel </body>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -229,6 +233,12 @@ j_indJoueur = 0 </body>
             <elementDefinition Id="d65099f9-e592-4e7f-99c1-6d9daf1b3d55" />
             <type_NamedElement>
               <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="f2d77cac-eb40-49dc-a229-c78074d2728e" name="gagnant" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="be3090c1-bba0-4128-9388-0d8a53e426ee" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -403,16 +413,6 @@ j_indJoueur = 0 </body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="3af52cb5-5e83-4f34-ad43-465a7f4c087d" name="Canon" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="4c4bf462-f381-42d7-9cb4-1e35e90ee0c8" />
-        <ownedOperationsInternal>
-          <operation Id="d91d759f-d8bf-47aa-947d-8e9316e1a495" name="Tir" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="e8e930a4-487f-4ef4-9c4f-e7e53004af5d" />
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="7d0452f3-7dd7-41d0-b084-02ff238f831b" name="MoteurJeu" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5656d5bb-765f-470e-967a-37dd27c2ef4d" />
         <targetEnds>
@@ -457,22 +457,6 @@ j_indJoueur = 0 </body>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="a0d25e86-f058-4b17-bf81-b6eb3ed8252f" />
-          </association>
-          <association Id="3ef7bcdb-484c-4152-926f-3c2671232bf9" isDerived="false" sourceEndRoleName="Jeu" targetEndRoleName="Canon" isLeaf="false" isAbstract="false">
-            <classMoniker Id="3af52cb5-5e83-4f34-ad43-465a7f4c087d" LastKnownName="Canon" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="bfd3dcd3-4574-409c-99fa-c0a8aa5751d2" name="Jeu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="0fa42713-7fa9-40f9-80a4-463880a69c23" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="28db9643-21c8-46f2-a81c-79abe6acdca8" name="Canon" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="526aebc8-f786-45b1-b78c-bcbaa700a24f" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="f66deaa8-25bd-406a-b114-80c4999f8543" />
           </association>
           <association Id="7fcfa47e-feac-4180-8b98-515e44dffe25" isDerived="false" sourceEndRoleName="Jeu" targetEndRoleName="Dé" isLeaf="false" isAbstract="false">
             <classMoniker Id="b2c7a349-0190-463c-80d4-158585bad791" LastKnownName="Dé" />
@@ -881,10 +865,19 @@ j_indJoueur = 0 </body>
           <property Id="8f857d67-d47c-4d0e-a172-0e4c90c55d5b" name="angle" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="778d2035-c5fb-46ab-8cc4-790e5a9acebd" />
           </property>
+          <property Id="08bb7d4d-f0cb-4335-88d8-0887f07006f2" name="Duel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e318f146-a953-4e37-aee1-cc09e47e0ba6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="145f6080-b8f4-4a91-a9f4-783e96b1072a" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="fa198c2b-2137-49d3-b6fb-18059ee8b0a6" />
+          </operation>
+          <operation Id="84736c60-03d4-44fb-8582-ddedbd800b84" name="tirCanon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4acb6a53-0eb1-4b5c-b93b-f64471616978" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1109,6 +1102,12 @@ j_indJoueur = 0 </body>
     <logicalClassDesignerModelHasTypes>
       <class Id="a4f9d38f-c2b8-4143-8496-c8624c9e1adf" name="EtatChoisirBateau" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="01e1d144-2611-4ee6-a23a-ab49e88e44f4" />
+        <suppliersInternal>
+          <interfaceRealization Id="19e082aa-28b3-4beb-b74b-ae44b6b21fd5">
+            <interfaceMoniker Id="4943062b-5da2-4247-a808-ba642525472f" LastKnownName="Etat" />
+            <elementDefinition Id="da0e9282-f4ae-4dc2-ace6-c6578920002d" />
+          </interfaceRealization>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <property Id="8fb9e019-4101-4642-8923-cb6e2dc28ea5" name="motor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="12b402c5-dab6-4dfd-9178-93a90f047063" />
@@ -1117,6 +1116,11 @@ j_indJoueur = 0 </body>
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="8da35c99-1e12-4cd1-a13e-f19de0383c12" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bef58c4d-fad5-4933-9e68-aabd8e21b047" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>

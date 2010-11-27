@@ -44,6 +44,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Jeu2.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="Duel.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Duel.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Duel.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="UMLComponentDiagram1.componentdiagram">
       <SubType>Content</SubType>
     </Content>
