@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="d1255448-f23c-4490-af91-82b9caa462ca"
   name="CanonNoir" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -2840,6 +2840,84 @@ modifiernuméro(j)</body>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="ceec8864-4849-4df7-954f-f7a3420d6612"
+            isDerived="false"
+            sourceEndRoleName="Joueur"
+            targetEndRoleName="Choix du nombre de joueurs"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a7996181-346e-4204-8b27-df3a544a88ac"
+              LastKnownName="Choix du nombre de joueurs"
+              LastKnownLocation="CanonNoir.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c808a9d-1825-40c7-99af-25dcbbe7c872"
+                  name="Joueur"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3dd56335-6a2f-4e30-89fd-71fe16bffa7b"
+                  name="Choix du nombre de joueurs"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d8849527-69cc-4412-837d-654bfbd0b3dc"
+            isDerived="false"
+            sourceEndRoleName="Joueur"
+            targetEndRoleName="Choix des couleurs associées"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="75ca2975-a6e3-41d2-a14e-833f01f2afb4"
+              LastKnownName="Choix des couleurs associées"
+              LastKnownLocation="CanonNoir.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3ac9f41e-6d21-4950-a882-b443ebcc54b3"
+                  name="Joueur"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cad1ff70-864b-4ca2-990f-68d3928bef4f"
+                  name="Choix des couleurs associées"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -2876,7 +2954,7 @@ modifiernuméro(j)</body>
             Id="04195437-260d-496a-bd89-cac241ff3ed7">
             <useCaseMoniker
               Id="210f8e06-2be5-4c4f-8876-44432e2a3fdd"
-              LastKnownName="Choix de l'ordre"
+              LastKnownName="Lance les dés d'initialisation"
               LastKnownLocation="CanonNoir.uml" />
           </include>
         </additions>
@@ -2919,7 +2997,7 @@ modifiernuméro(j)</body>
     <packageHasNamedElement>
       <useCase
         Id="210f8e06-2be5-4c4f-8876-44432e2a3fdd"
-        name="Choix de l'ordre"
+        name="Lance les dés d'initialisation"
         isAbstract="false"
         isLeaf="false">
         <subjects>
@@ -2936,15 +3014,6 @@ modifiernuméro(j)</body>
         name="Le Jeu"
         isAbstract="false"
         isLeaf="false">
-        <suppliersInternal>
-          <dependency
-            Id="1ecbc536-2d47-42a6-a821-e4eab7d0a5bd">
-            <useCaseMoniker
-              Id="9c14e1fc-5c8d-46c6-9e50-a499289b6c08"
-              LastKnownName="Initialisation"
-              LastKnownLocation="CanonNoir.uml" />
-          </dependency>
-        </suppliersInternal>
         <additions>
           <include
             Id="75bf7db4-9c2b-4ad0-87e4-511a16a7261d">
@@ -2972,6 +3041,13 @@ modifiernuméro(j)</body>
             <useCaseMoniker
               Id="94d5ff9a-b459-4297-8864-347172ac97e2"
               LastKnownName="Fin du jeu"
+              LastKnownLocation="CanonNoir.uml" />
+          </include>
+          <include
+            Id="0e961d90-79ef-4890-b1b3-9a0e8b0f626e">
+            <useCaseMoniker
+              Id="9c14e1fc-5c8d-46c6-9e50-a499289b6c08"
+              LastKnownName="Initialisation"
               LastKnownLocation="CanonNoir.uml" />
           </include>
         </additions>
