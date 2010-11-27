@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="571bede5-5460-4e51-98bb-24bf9d8936c6">
       <elementDefinition Id="6536fcb9-b86d-466c-9434-d4f4e1ee87b7" />
@@ -160,9 +160,6 @@ j_indJoueur = 0 </body>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="efcec8ff-f5d8-4df7-af3d-4973a9e68dc7" name="lancerDe1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="e21d784c-678f-4a44-aa71-fc26038ba26a" />
-          </operation>
           <operation Id="2e772d33-f0a7-468a-b20f-c8427080e638" name="lancerDe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="ba121562-892a-46a1-8f0c-513d0824bcf5" />
           </operation>
@@ -306,6 +303,27 @@ j_indJoueur = 0 </body>
                   <elementDefinition Id="993f38ed-6563-491b-a812-96287c7c6b53" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="91bf2d5f-5db3-4b6a-a6cf-4c072d3db05f" name="getBateau" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f9f923b0-439c-47b3-b78d-27e7545428ba" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="eedaae83-3727-45cc-802c-d97dd162c7e5" name="i" direction="In" isUnique="false">
+                  <elementDefinition Id="00f61075-4a2c-4176-9a6a-5423f33117fd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a81eb01c-f390-4cb9-a08a-e0ff825192c3" direction="Return" isUnique="false">
+                  <elementDefinition Id="4711ff0c-ea52-47fd-8d05-49fa910ed8dc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="71c67d08-f391-4b64-9df5-e8ad031a5fbc" LastKnownName="Bateau" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -647,6 +665,19 @@ j_indJoueur = 0 </body>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="4961884b-f41e-474e-959a-dfdca82e4011" name="DuelPossible" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8da1ee89-6197-4878-b430-818070e9047f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="951a3025-759d-48e4-9d2a-4f1873870f7d" direction="Return" isUnique="false">
+                  <elementDefinition Id="89fb0ff1-4132-40a5-8c9e-6ddfa3a84086" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -903,6 +934,9 @@ j_indJoueur = 0 </body>
           <operation Id="0a04ac09-5b12-485e-a041-651d9ed08ba4" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="ca6fc6c3-80d6-441f-a7f1-31d9f913c845" />
           </operation>
+          <operation Id="94d0cf72-d3d4-4617-8bb6-aac7256843f5" name="choisirDe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4fad161a-7263-46fe-8795-65570c0bca17" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -1139,6 +1173,12 @@ j_indJoueur = 0 </body>
               <referencedTypeMoniker Id="650761e5-d82f-47e7-a9f3-46967ef3945d" LastKnownName="Moteur" />
             </type_NamedElement>
           </property>
+          <property Id="ab7d1a8a-072d-425a-baf4-b9854fe8bfb9" name="touche" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6fda7fd0-e2e6-45ec-9eb0-924c645c33fd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="08757534-9bab-4236-8157-fec95efeceb9" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1147,6 +1187,11 @@ j_indJoueur = 0 </body>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="71c67d08-f391-4b64-9df5-e8ad031a5fbc" name="Bateau" isAbstract="false" isLeaf="false" cachedFullName="CanonNoir::Bateau">
+        <elementDefinition Id="5ed6397d-8634-4493-b206-449bc36fd1cc" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="3af465bf-7222-4ae4-a005-adf1a332bcc4" name="CanonNoir">
     <elementDefinition Id="d1255448-f23c-4490-af91-82b9caa462ca" />

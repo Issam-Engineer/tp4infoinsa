@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="d1255448-f23c-4490-af91-82b9caa462ca"
   name="CanonNoir" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -330,14 +330,6 @@ modifiernuméro(j)</body>
             isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation
-            Id="e21d784c-678f-4a44-aa71-fc26038ba26a"
-            name="lancerDe1"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
           <operation
             Id="ba121562-892a-46a1-8f0c-513d0824bcf5"
             name="lancerDe"
@@ -696,6 +688,44 @@ modifiernuméro(j)</body>
                     <undefinedTypeMoniker
                       Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
                       LastKnownName="int"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f9f923b0-439c-47b3-b78d-27e7545428ba"
+            name="getBateau"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="00f61075-4a2c-4176-9a6a-5423f33117fd"
+                  name="i"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+                      LastKnownName="int"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4711ff0c-ea52-47fd-8d05-49fa910ed8dc"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ed6397d-8634-4493-b206-449bc36fd1cc"
+                      LastKnownName="Bateau"
                       LastKnownLocation="CanonNoir.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1637,6 +1667,30 @@ modifiernuméro(j)</body>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="8da1ee89-6197-4878-b430-818070e9047f"
+            name="DuelPossible"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="89fb0ff1-4132-40a5-8c9e-6ddfa3a84086"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9747b71b-5760-4947-a400-dd891fa273cf"
+                      LastKnownName="bool"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -2381,6 +2435,14 @@ modifiernuméro(j)</body>
           <operation
             Id="ca6fc6c3-80d6-441f-a7f1-31d9f913c845"
             name="execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4fad161a-7263-46fe-8795-65570c0bca17"
+            name="choisirDe"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -3235,8 +3297,7 @@ modifiernuméro(j)</body>
             isUnmarshall="false">
             <flowNodeTargets>
               <controlFlow
-                Id="83b5809d-2dd3-43c8-8595-383f9ccdd04e"
-                guard="nbJoueur=2"
+                Id="ee1cb986-9893-4bcc-bcc9-3fa2f5e319e1"
                 isLeaf="false">
                 <acceptEventActionMoniker
                   Id="601f5407-ee4a-4d15-90e7-d2fb3b9959b1"
@@ -3303,6 +3364,14 @@ modifiernuméro(j)</body>
                 <opaqueActionMoniker
                   Id="bf2d9d24-9acb-4fc5-8b4b-f607fa96341c"
                   LastKnownName="proposer déplacements possibles"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="5cdfc4d4-0b3c-4107-97ab-7e53c6623484"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="52c6e283-f518-4ea5-8bd1-f83596054fab"
+                  LastKnownName="Decision1"
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -3406,6 +3475,46 @@ modifiernuméro(j)</body>
             Id="3870eba9-2aa9-4e3a-9382-f89d406abbcb"
             name="ActivityFinal1"
             isLeaf="false" />
+          <acceptEventAction
+            Id="70e657b3-f678-48c2-86d9-4571abac206b"
+            name="Choisir Dé "
+            isLeaf="false"
+            isUnmarshall="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b08ffbaf-a8da-45b1-a5fb-4bcbe76d069a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bf2d9d24-9acb-4fc5-8b4b-f607fa96341c"
+                  LastKnownName="proposer déplacements possibles"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <decisionNode
+            Id="52c6e283-f518-4ea5-8bd1-f83596054fab"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="827f97ca-ba03-4183-b6c6-e3212641bba4"
+                guard="tabJoueurs[indJoueurCourant].getBateau(i) = &quot;Caravelle&quot;"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="70e657b3-f678-48c2-86d9-4571abac206b"
+                  LastKnownName="Choisir Dé "
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8607d91e-3832-462f-b85a-a04132f9a995"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bf2d9d24-9acb-4fc5-8b4b-f607fa96341c"
+                  LastKnownName="proposer déplacements possibles"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </packageHasNamedElement>
@@ -3763,6 +3872,24 @@ modifiernuméro(j)</body>
                 LastKnownLocation="CanonNoir.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="6fda7fd0-e2e6-45ec-9eb0-924c645c33fd"
+            name="touche"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9747b71b-5760-4947-a400-dd891fa273cf"
+                LastKnownName="bool"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -3953,22 +4080,22 @@ modifiernuméro(j)</body>
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="92a693af-09fb-4e59-b174-cb50b33ac90e"
-                  LastKnownName="Attaquant /Attaqué"
+                  LastKnownName="Définir Attaquant /Attaqué"
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
           <opaqueAction
             Id="897a051b-71cb-42b1-9040-8c6f2a37f49f"
-            name="Simuler le tireCanon voir la Case d'atterrissage"
+            name="Simuler le tirCanon "
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="f9c8eed3-9e32-4995-88a4-6b3d985f7323"
+                Id="433a8ef1-0052-42c7-abcf-8a250d90a0c4"
                 isLeaf="false">
-                <decisionNodeMoniker
-                  Id="7edf930d-08d8-4ae0-bce9-793f8ff68161"
-                  LastKnownName="Decision1"
+                <opaqueActionMoniker
+                  Id="078b9c43-0abb-4de4-8071-bc8061ae2078"
+                  LastKnownName="Analyser le résultat du tir"
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -4016,7 +4143,7 @@ modifiernuméro(j)</body>
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="897a051b-71cb-42b1-9040-8c6f2a37f49f"
-                  LastKnownName="Simuler le tireCanon voir la Case d'atterrissage"
+                  LastKnownName="Simuler le tirCanon "
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -4047,7 +4174,7 @@ modifiernuméro(j)</body>
           </decisionNode>
           <opaqueAction
             Id="92a693af-09fb-4e59-b174-cb50b33ac90e"
-            name="Attaquant /Attaqué"
+            name="Définir Attaquant /Attaqué"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -4070,7 +4197,7 @@ modifiernuméro(j)</body>
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="92a693af-09fb-4e59-b174-cb50b33ac90e"
-                  LastKnownName="Attaquant /Attaqué"
+                  LastKnownName="Définir Attaquant /Attaqué"
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -4105,6 +4232,21 @@ modifiernuméro(j)</body>
                 <activityFinalNodeMoniker
                   Id="0ac2b6ca-18ed-448b-9feb-bd7364245bf3"
                   LastKnownName="ActivityFinal1"
+                  LastKnownLocation="CanonNoir.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="078b9c43-0abb-4de4-8071-bc8061ae2078"
+            name="Analyser le résultat du tir"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5642c6b9-8a58-4c74-aa2d-03c9eb51d8e5"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="7edf930d-08d8-4ae0-bce9-793f8ff68161"
+                  LastKnownName="Decision1"
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
