@@ -2,26 +2,26 @@
 <sequenceDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLSequenceDiagram1">
   <SequenceDesignerModelMoniker Id="58744986-0994-4946-a19d-3109164b323d" />
   <nestedChildShapes>
-    <lifelineShape Id="78ceceb9-2be5-4d5a-bdcd-a4ca88fd9187" absoluteBounds="2.8958333333333335, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+    <lifelineShape Id="78ceceb9-2be5-4d5a-bdcd-a4ca88fd9187" absoluteBounds="4.9791666666666661, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
       <lifelineMoniker Id="8373044c-19f6-49f2-8c8f-e9939c8c5df3" LastKnownName="m : MoteurJeu" />
       <relativeChildShapes>
-        <umlLifelineHeadShape Id="db993740-f2d7-4a9c-ae22-7b86dbc0260a" absoluteBounds="2.4335778566201531, 0.6, 1.0745109534263611, 0.4" customColor="White" visualStyleMode="Modified">
+        <umlLifelineHeadShape Id="db993740-f2d7-4a9c-ae22-7b86dbc0260a" absoluteBounds="4.5169111899534853, 0.6, 1.0745109534263611, 0.4" customColor="White" visualStyleMode="Modified">
           <lifelineMoniker Id="8373044c-19f6-49f2-8c8f-e9939c8c5df3" LastKnownName="m : MoteurJeu" />
           <relativeChildShapes />
         </umlLifelineHeadShape>
-        <lifelineHoverShape Id="fae5b1be-ae32-40e1-b76f-30a4985af786" absoluteBounds="2.8958333333333335, 1, 0, 7">
+        <lifelineHoverShape Id="fae5b1be-ae32-40e1-b76f-30a4985af786" absoluteBounds="4.9791666666666661, 1, 0, 7">
           <lifelineMoniker Id="8373044c-19f6-49f2-8c8f-e9939c8c5df3" LastKnownName="m : MoteurJeu" />
         </lifelineHoverShape>
       </relativeChildShapes>
     </lifelineShape>
-    <lifelineShape Id="00874969-3f2a-4222-bba5-2ac4a36a1e72" absoluteBounds="4.114583333333333, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+    <lifelineShape Id="00874969-3f2a-4222-bba5-2ac4a36a1e72" absoluteBounds="6.239583333333333, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
       <lifelineMoniker Id="823e41b8-49d9-44c9-986a-6f40205f5eed" LastKnownName="j1 : Joueur" />
       <relativeChildShapes>
-        <umlLifelineHeadShape Id="417d4223-42b7-4ddf-bf90-cc729ceceeaa" absoluteBounds="3.6895833333333332, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
+        <umlLifelineHeadShape Id="417d4223-42b7-4ddf-bf90-cc729ceceeaa" absoluteBounds="5.8145833333333332, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
           <lifelineMoniker Id="823e41b8-49d9-44c9-986a-6f40205f5eed" LastKnownName="j1 : Joueur" />
           <relativeChildShapes />
         </umlLifelineHeadShape>
-        <lifelineHoverShape Id="98ec70bc-ce5e-45f2-af25-b4fde73ff17a" absoluteBounds="4.114583333333333, 1, 0, 7">
+        <lifelineHoverShape Id="98ec70bc-ce5e-45f2-af25-b4fde73ff17a" absoluteBounds="6.239583333333333, 1, 0, 7">
           <lifelineMoniker Id="823e41b8-49d9-44c9-986a-6f40205f5eed" LastKnownName="j1 : Joueur" />
         </lifelineHoverShape>
       </relativeChildShapes>
@@ -38,15 +38,27 @@
         </lifelineHoverShape>
       </relativeChildShapes>
     </lifelineShape>
-    <lifelineShape Id="ea51c94f-04e3-4fdc-9b89-0da3b1962d1e" absoluteBounds="5.2979166666666675, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+    <lifelineShape Id="ea51c94f-04e3-4fdc-9b89-0da3b1962d1e" absoluteBounds="7.5687500000000005, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
       <lifelineMoniker Id="ff69e148-51da-4d31-892a-66220c2fc246" LastKnownName="j2 : Joueur" />
       <relativeChildShapes>
-        <umlLifelineHeadShape Id="1bc3bd53-1a23-4e76-884c-a5caf3da1789" absoluteBounds="4.8729166666666677, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
+        <umlLifelineHeadShape Id="1bc3bd53-1a23-4e76-884c-a5caf3da1789" absoluteBounds="7.1437500000000007, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
           <lifelineMoniker Id="ff69e148-51da-4d31-892a-66220c2fc246" LastKnownName="j2 : Joueur" />
           <relativeChildShapes />
         </umlLifelineHeadShape>
-        <lifelineHoverShape Id="45bd58ed-927d-4afd-b98f-bc4450d26ada" absoluteBounds="5.2979166666666675, 1, 0, 7">
+        <lifelineHoverShape Id="45bd58ed-927d-4afd-b98f-bc4450d26ada" absoluteBounds="7.5687500000000005, 1, 0, 7">
           <lifelineMoniker Id="ff69e148-51da-4d31-892a-66220c2fc246" LastKnownName="j2 : Joueur" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <lifelineShape Id="faedb4e4-d178-43a0-8546-d2bf4b51bcf5" absoluteBounds="3.1979167461395264, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="cae7f3af-5947-4e81-87c7-ab6ff96939d4" LastKnownName="Adaptateur ???" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="c57167b5-c0b5-4741-a37d-27b386a2c706" absoluteBounds="2.7126578104496004, 0.6, 1.1205178713798523, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="cae7f3af-5947-4e81-87c7-ab6ff96939d4" LastKnownName="Adaptateur ???" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="0598db41-44f1-42bb-a542-0d6ebbc16211" absoluteBounds="3.1979167461395264, 1, 0, 7">
+          <lifelineMoniker Id="cae7f3af-5947-4e81-87c7-ab6ff96939d4" LastKnownName="Adaptateur ???" />
         </lifelineHoverShape>
       </relativeChildShapes>
     </lifelineShape>
