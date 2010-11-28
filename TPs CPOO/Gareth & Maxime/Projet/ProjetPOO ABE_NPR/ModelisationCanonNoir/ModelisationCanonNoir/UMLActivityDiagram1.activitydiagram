@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3e7f0e85-d8b9-4b0d-a995-90239e5ce36b" name="Activity1" linkedPackageId="2d6d0974-e82f-4207-be75-457eaa168998" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="cb6b449f-cec5-4bde-aa31-ad80093c5ac3">
+      <profileInstance Id="16825414-6caf-4741-bba5-c8e4d3888f50" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2af0fede-1dcd-4148-8f6d-2e86afbebb48">
+      <profileInstance Id="eed37d10-6929-4f3b-bf87-38032838a207" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="83a5f5c7-987a-407d-97fd-7e1af752262f" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="51771914-2f51-4a39-8b72-d82293f39cba" />
+        <nodes>
+          <initialNode Id="9b71f5d5-14c0-4e0c-a1ad-e6f13a7ed11e" name="Initial1" isLeaf="false">
+            <elementDefinition Id="6a614eff-4e7d-4c97-842c-309593f5dc7a" />
+            <flowNodeTargets>
+              <controlFlow Id="e29fc60d-2420-40fc-8ef0-2c76c35540a2" isLeaf="false">
+                <opaqueActionMoniker Id="3a87a70c-fa97-45ff-b56e-9c2584f0baa2" LastKnownName="Attente nombre de joueur" />
+                <elementDefinition Id="40fd8780-2c2c-4c37-9102-daae833581f4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="3a87a70c-fa97-45ff-b56e-9c2584f0baa2" name="Attente nombre de joueur" isLeaf="false">
+            <elementDefinition Id="cd67a18e-de8e-4840-ab88-9469af1298ca" />
+            <flowNodeTargets>
+              <controlFlow Id="b0f2768d-e8da-4e08-801a-5e66c8afe458" isLeaf="false">
+                <decisionNodeMoniker Id="8e4babb4-cea1-43d9-aab1-938f305e5727" LastKnownName="Decision1" />
+                <elementDefinition Id="b5b36247-4692-406b-b3f3-e8d9efc9c29f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="8e4babb4-cea1-43d9-aab1-938f305e5727" name="Decision1" isLeaf="false">
+            <elementDefinition Id="18194de7-39fa-4bbd-8036-e393d37f9f3f" />
+          </decisionNode>
+          <opaqueAction Id="ecc418bf-afe3-475f-a0ce-710abf900843" name="Attente Couleur" isLeaf="false">
+            <elementDefinition Id="a3b24048-da60-4502-8921-2d4ed7c3fac2" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="2d6d0974-e82f-4207-be75-457eaa168998" name="ModelisationCanonNoir">
+    <elementDefinition Id="d92ffaef-7316-4406-b7c8-bafc2cbf92e3" />
+  </package>
+</activityRootModel>
