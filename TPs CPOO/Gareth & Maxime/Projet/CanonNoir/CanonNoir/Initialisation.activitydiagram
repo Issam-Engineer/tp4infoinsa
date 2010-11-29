@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="e00bc4c6-9357-43d7-b70f-20be170a846e" name="Activity1" linkedPackageId="e8f01d08-6ebc-47e9-a9ee-83f19447e892" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="e00bc4c6-9357-43d7-b70f-20be170a846e" name="Activity1" linkedPackageId="e8f01d08-6ebc-47e9-a9ee-83f19447e892" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="593021de-732a-496c-a2e6-1e855c97c4ef">
       <elementDefinition Id="a9dbf349-2043-4224-96b3-951fed0d0b0d" />
@@ -69,9 +69,9 @@ modifiernuméro(j)</body>
           <acceptEventAction Id="41c908b5-42f9-46c8-aefa-5e59c4c1e5f4" name="Entrer nombre de Joueur" isLeaf="false" isUnmarshall="false">
             <elementDefinition Id="ea665211-429a-49f0-9764-291a18354093" />
             <flowNodeTargets>
-              <controlFlow Id="e96defab-10fa-4d7a-9553-906f751fbcff" isLeaf="false">
-                <decisionNodeMoniker Id="021bc9dd-96a6-4272-8564-ec3070fb087f" LastKnownName="Decision1" />
-                <elementDefinition Id="d14d9acb-f67c-4243-82fd-1e01a86f3ba4" />
+              <controlFlow Id="cfe6f963-34d3-4147-b109-3684dd25da99" isLeaf="false">
+                <opaqueActionMoniker Id="3a958a54-6fc4-4758-b58b-385c7154b5bf" LastKnownName="Enregistrer le nombre de joueur" />
+                <elementDefinition Id="9aedc809-9605-4662-868a-0c974dfa9f50" />
               </controlFlow>
             </flowNodeTargets>
           </acceptEventAction>
@@ -96,9 +96,9 @@ modifiernuméro(j)</body>
           <acceptEventAction Id="65e9db2f-6fba-41de-bd73-f496d8923017" name="Lancer les dés" isLeaf="false" isUnmarshall="false">
             <elementDefinition Id="75c554d4-1b9a-4fda-b6d9-063d2031db36" />
             <flowNodeTargets>
-              <controlFlow Id="3d26a9f9-85e7-418c-ac8a-7ba39ac97e8c" isLeaf="false">
-                <opaqueActionMoniker Id="6951ab58-3d04-44e3-8dcf-8fda576c0a3c" LastKnownName="Définir l'ordre de Jeu" />
-                <elementDefinition Id="1f39005a-e266-4849-a8a9-4e8808538e1c" />
+              <controlFlow Id="efe22991-33b4-45d8-956f-54a86b1b2f9d" isLeaf="false">
+                <decisionNodeMoniker Id="34590fe2-f272-4d37-891d-67745044a8da" LastKnownName="Decision2" />
+                <elementDefinition Id="46c75c64-245e-41d5-adb4-d25440f6c76c" />
               </controlFlow>
             </flowNodeTargets>
           </acceptEventAction>
@@ -129,6 +129,28 @@ modifiernuméro(j)</body>
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+          <opaqueAction Id="3a958a54-6fc4-4758-b58b-385c7154b5bf" name="Enregistrer le nombre de joueur" isLeaf="false">
+            <elementDefinition Id="9ed48972-97ac-4a47-9b9e-00515fdf1ca8" />
+            <flowNodeTargets>
+              <controlFlow Id="3ae8b8aa-5ff8-480d-82d5-e493af039036" isLeaf="false">
+                <decisionNodeMoniker Id="021bc9dd-96a6-4272-8564-ec3070fb087f" LastKnownName="Decision1" />
+                <elementDefinition Id="d6731647-963b-4ac7-9cde-a8c30dbf47ef" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="34590fe2-f272-4d37-891d-67745044a8da" name="Decision2" isLeaf="false">
+            <elementDefinition Id="9de80198-fb81-460b-a65f-67d0eaac8d62" />
+            <flowNodeTargets>
+              <controlFlow Id="a7238efd-e014-4f21-a41a-43024ed6e3fd" isLeaf="false">
+                <opaqueActionMoniker Id="6951ab58-3d04-44e3-8dcf-8fda576c0a3c" LastKnownName="Définir l'ordre de Jeu" />
+                <elementDefinition Id="10b94b21-ffd6-48d7-90f3-2b079d1a8bf4" />
+              </controlFlow>
+              <controlFlow Id="737bd5c8-3876-49a4-be76-075caa5815ad" guard="nbLance&lt;nbjoueur" isLeaf="false">
+                <acceptEventActionMoniker Id="65e9db2f-6fba-41de-bd73-f496d8923017" LastKnownName="Lancer les dés" />
+                <elementDefinition Id="38e0af94-af35-4fe7-9a3f-ea6b848a54e9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="164bd51e-bd7e-4d51-b6b0-5bc31dea54d8" name="Activity1" linkedPackageId="be48b96b-45f2-4981-840d-05288eadb90d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="164bd51e-bd7e-4d51-b6b0-5bc31dea54d8" name="Activity1" linkedPackageId="be48b96b-45f2-4981-840d-05288eadb90d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="b3187ea6-fea4-4937-8767-5e825554409d">
       <elementDefinition Id="131d0a39-8115-4ce4-90fa-35c1c07cea42" />
@@ -41,9 +41,9 @@
           <acceptEventAction Id="e3ac04d5-cab2-4d7b-8de2-9d662e944df1" name="Clic sur une case" isLeaf="false" isUnmarshall="false">
             <elementDefinition Id="5cec3b1d-4f85-480d-b3eb-1cf948173a17" />
             <flowNodeTargets>
-              <controlFlow Id="efa23123-f6e3-41e7-b1d8-4ae58492e46f" isLeaf="false">
-                <decisionNodeMoniker Id="3f22d2e8-0e19-4b28-a612-d6c425239e51" LastKnownName="Decision2" />
-                <elementDefinition Id="be84d337-59b1-4195-ab49-23d0834146ef" />
+              <controlFlow Id="f872e9ef-4a18-4868-9173-93ef7c721b6d" isLeaf="false">
+                <opaqueActionMoniker Id="3db97b13-59ef-4e0e-9f9d-3f88cc011fe5" LastKnownName="Réaliser déplacement" />
+                <elementDefinition Id="badb982f-fbff-4a42-8495-6afcffeefab8" />
               </controlFlow>
             </flowNodeTargets>
           </acceptEventAction>
@@ -78,19 +78,6 @@
               </controlFlow>
             </flowNodeTargets>
           </acceptEventAction>
-          <decisionNode Id="3f22d2e8-0e19-4b28-a612-d6c425239e51" name="Decision2" isLeaf="false">
-            <elementDefinition Id="6583deb1-6720-4ff8-9ae6-cbacd6e1e4a3" />
-            <flowNodeTargets>
-              <controlFlow Id="97e0aa06-c820-4975-87e4-6bcd9ad7bd74" isLeaf="false">
-                <opaqueActionMoniker Id="3db97b13-59ef-4e0e-9f9d-3f88cc011fe5" LastKnownName="Réaliser déplacement" />
-                <elementDefinition Id="33120267-2f76-439e-aae5-3b578b68c423" />
-              </controlFlow>
-              <controlFlow Id="c104a9df-6af5-4261-9514-77a76c020830" guard=" c_courant.hasBateau()" isLeaf="false">
-                <acceptEventActionMoniker Id="a8875bff-836c-44ab-990a-e547dbfdde15" LastKnownName="Choisir un bateau" />
-                <elementDefinition Id="39a32e34-3cc0-4467-9ccc-8cf5c5cb95ac" />
-              </controlFlow>
-            </flowNodeTargets>
-          </decisionNode>
           <decisionNode Id="cd538943-43a7-4f59-9a57-dedcbbc75c83" name="Decision3" isLeaf="false">
             <elementDefinition Id="b1e7b0bc-8050-4bac-bd13-fc58b39ad6bc" />
             <flowNodeTargets>

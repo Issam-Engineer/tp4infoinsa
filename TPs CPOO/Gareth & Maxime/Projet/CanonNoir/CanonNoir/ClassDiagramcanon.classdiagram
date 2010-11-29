@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="571bede5-5460-4e51-98bb-24bf9d8936c6">
       <elementDefinition Id="6536fcb9-b86d-466c-9434-d4f4e1ee87b7" />
@@ -626,6 +626,9 @@ j_indJoueur = 0 </body>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="464a87ac-6990-4b8d-ac67-1dd7a7b6a303" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="96383859-2fed-44cb-a60b-ed7bd380134d" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -877,17 +880,20 @@ j_indJoueur = 0 </body>
         <ownedAttributesInternal>
           <property Id="bb503773-82b7-4311-b38a-ab98e056b8ee" name="nbJoueur" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="256bf62d-79c0-45ee-8354-5fd8b36f87b6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="db7dba48-0d92-428f-83a4-a81a6cbbd87d" LastKnownName="int" />
+            </type_NamedElement>
             <defaultValue>
               <literalString Id="729564c4-bae7-4fde-9069-e321c6b814f0" name="DefaultValue" value="-1">
                 <elementDefinition Id="3a0e5ac2-b4ba-401b-97d3-6790611ef201" />
               </literalString>
             </defaultValue>
           </property>
-          <property Id="414851f9-1e17-4600-9544-40522ebbcee3" name="caseCliquee" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="414851f9-1e17-4600-9544-40522ebbcee3" name="caseCliquee pair&lt;int,int&gt;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f85a7420-1a25-411d-9725-f0fb6dd028f9" />
             <defaultValue>
-              <literalString Id="9f31f6ea-fc23-4e01-bf0d-bd3340c7d902" name="DefaultValue" value="null">
-                <elementDefinition Id="c8722b61-9f8c-4ecd-8fe1-a84b3d682ece" />
+              <literalString Id="eae68526-a843-4f7f-ab0d-9937b28278bf" name="DefaultValue" value="null">
+                <elementDefinition Id="178b56f2-93c0-4c4d-a7e7-173d54bca64e" />
               </literalString>
             </defaultValue>
           </property>
@@ -952,7 +958,29 @@ j_indJoueur = 0 </body>
               </literalString>
             </defaultValue>
           </property>
+          <property Id="ce194269-bf71-4c60-a7cf-c8733f319278" name="posBateau" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3008da97-4664-464a-90c5-01233c1dea62" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="daab10bc-d0d3-4904-a9e5-2eda34eb8fa2" LastKnownName="pair&lt;int,int&gt;" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="6e9a738b-b3e9-41f4-9b95-8d863c9fac51" name="DefaultValue" value="null">
+                <elementDefinition Id="99294278-d52f-49d7-814f-a09367651bf3" />
+              </literalString>
+            </defaultValue>
+          </property>
+          <property Id="6862b199-2957-467f-a0c0-4954d40c03bd" name="getNewPos=false" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b7b2dcfd-8f67-46cc-9b00-e17c6679d6a6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="62b7098f-ef0f-4e5b-8b87-0baecc8c6406" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fb27759e-f89a-4ecf-953b-deb1f32ca7db" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -961,7 +989,7 @@ j_indJoueur = 0 </body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="5ab636de-9457-4c35-a800-1d22dc41f6d6" name="Affichage WPF" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="5ab636de-9457-4c35-a800-1d22dc41f6d6" name="AffichageWPF" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5c4916c8-a518-485a-8295-991face1cf56" />
         <targetEnds>
           <association Id="2fb8708f-ce34-4810-846c-ed3eb207984d" isDerived="false" sourceEndRoleName="Affichage WPF" targetEndRoleName="Adaptateur" isLeaf="false" isAbstract="false">
@@ -1290,6 +1318,12 @@ j_indJoueur = 0 </body>
               <referencedTypeMoniker Id="650761e5-d82f-47e7-a9f3-46967ef3945d" LastKnownName="Moteur" />
             </type_NamedElement>
           </property>
+          <property Id="453163e4-dbaf-4725-b1e4-69e3bef4d155" name="nbLance" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="915ddc7d-fc2a-4d32-8f8f-1e8852b8adf0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="03ba37a5-08e3-455d-8c20-96dc84e2d956" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1479,6 +1513,16 @@ j_indJoueur = 0 </body>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <referencedType Id="db82a222-0d23-4155-8709-55ddb5efb4fc" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="daab10bc-d0d3-4904-a9e5-2eda34eb8fa2" name="pair&lt;int,int&gt;" isAbstract="false" isLeaf="false" cachedFullName="pair&lt;int,int&gt;">
+        <elementDefinition Id="f05a02ec-cdd4-42ab-a9f0-8ea9255e81b7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="db7dba48-0d92-428f-83a4-a81a6cbbd87d" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
         <elementDefinition Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0" />
       </referencedType>
     </packageHasNamedElement>
