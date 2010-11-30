@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="d1255448-f23c-4490-af91-82b9caa462ca"
   name="CanonNoir" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -4096,7 +4096,7 @@ modifiernuméro(j)</body>
           </initialNode>
           <opaqueAction
             Id="bf2d9d24-9acb-4fc5-8b4b-f607fa96341c"
-            name="proposer déplacements possibles"
+            name="Proposer déplacements possibles"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -4182,7 +4182,7 @@ modifiernuméro(j)</body>
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="bf2d9d24-9acb-4fc5-8b4b-f607fa96341c"
-                  LastKnownName="proposer déplacements possibles"
+                  LastKnownName="Proposer déplacements possibles"
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
               <controlFlow
@@ -4281,7 +4281,7 @@ modifiernuméro(j)</body>
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="bf2d9d24-9acb-4fc5-8b4b-f607fa96341c"
-                  LastKnownName="proposer déplacements possibles"
+                  LastKnownName="Proposer déplacements possibles"
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -4293,7 +4293,7 @@ modifiernuméro(j)</body>
             <flowNodeTargets>
               <controlFlow
                 Id="827f97ca-ba03-4183-b6c6-e3212641bba4"
-                guard="tabJoueurs[indJoueurCourant].getBateau(i) = &quot;Caravelle&quot;"
+                guard="tabJoueurs[indJoueurCourant].getBateau(i).typeBateau() = &quot;Caravelle&quot;"
                 isLeaf="false">
                 <acceptEventActionMoniker
                   Id="70e657b3-f678-48c2-86d9-4571abac206b"
@@ -4305,7 +4305,7 @@ modifiernuméro(j)</body>
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="bf2d9d24-9acb-4fc5-8b4b-f607fa96341c"
-                  LastKnownName="proposer déplacements possibles"
+                  LastKnownName="Proposer déplacements possibles"
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -5273,7 +5273,7 @@ modifiernuméro(j)</body>
           </message>
           <message
             Id="ac311f2b-ec08-4f01-9ae1-002777980175"
-            name="caseCliquee!=null"
+            name="caseCliquee != null"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false"
@@ -5588,10 +5588,11 @@ modifiernuméro(j)</body>
               </controlFlow>
               <controlFlow
                 Id="f7841f5e-2002-4951-8f52-b8615802464a"
+                guard="tabJoueurs[indAdversaire].getBateau(i).typeBateau() == radeau"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="dde43395-fde4-4eb0-95ac-7fa8a44886b3"
-                  LastKnownName="Attaquant récupère trésor attaqué perd son trésor"
+                  LastKnownName="Attaquant récupère trésor, attaqué perd son trésor"
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -5628,7 +5629,7 @@ modifiernuméro(j)</body>
           </opaqueAction>
           <opaqueAction
             Id="dde43395-fde4-4eb0-95ac-7fa8a44886b3"
-            name="Attaquant récupère trésor attaqué perd son trésor"
+            name="Attaquant récupère trésor, attaqué perd son trésor"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -5636,7 +5637,7 @@ modifiernuméro(j)</body>
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="e24e27ff-dd76-4dfd-b1f6-6fc23c8d793f"
-                  LastKnownName="Changer bateau attaqué"
+                  LastKnownName="Retour port pour changer bateau attaqué"
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -5647,7 +5648,7 @@ modifiernuméro(j)</body>
             isLeaf="false" />
           <opaqueAction
             Id="e24e27ff-dd76-4dfd-b1f6-6fc23c8d793f"
-            name="Changer bateau attaqué"
+            name="Retour port pour changer bateau attaqué"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -5848,7 +5849,7 @@ modifiernuméro(j)</body>
     <packageHasNamedElement>
       <class
         Id="385dc23a-4d39-451b-8678-50a7b033239c"
-        name="EtatDepos"
+        name="EtatDepot"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
