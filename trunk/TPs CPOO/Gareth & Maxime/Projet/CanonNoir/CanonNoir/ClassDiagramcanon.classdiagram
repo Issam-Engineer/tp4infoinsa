@@ -892,11 +892,14 @@ j_indJoueur = 0 </body>
               </literalString>
             </defaultValue>
           </property>
-          <property Id="414851f9-1e17-4600-9544-40522ebbcee3" name="caseCliquee pair&lt;int,int&gt;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="414851f9-1e17-4600-9544-40522ebbcee3" name="caseClic" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f85a7420-1a25-411d-9725-f0fb6dd028f9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a70b7d37-9081-441c-9d21-bdec781ace60" LastKnownName="pair&lt;int,int&gt;" />
+            </type_NamedElement>
             <defaultValue>
-              <literalString Id="eae68526-a843-4f7f-ab0d-9937b28278bf" name="DefaultValue" value="null">
-                <elementDefinition Id="178b56f2-93c0-4c4d-a7e7-173d54bca64e" />
+              <literalString Id="5a4d370a-80d9-4ff3-8263-be994ed3e904" name="DefaultValue" value="null">
+                <elementDefinition Id="ce4491d4-2ec7-4e6c-abe9-2e9be4ad1972" />
               </literalString>
             </defaultValue>
           </property>
@@ -1039,6 +1042,17 @@ j_indJoueur = 0 </body>
               <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
             </type_NamedElement>
           </property>
+          <property Id="603b1a91-3d02-4040-96f7-323561ea1fdc" name="afficherDeplacementPoss" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8c65b4fe-e4a2-4470-954f-f4589a2c4435" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="d68db389-4752-49aa-b884-ed42df7b823a" name="DefaultValue" value="false">
+                <elementDefinition Id="c3c1d763-1bec-4741-b04a-750cb72ffdda" />
+              </literalString>
+            </defaultValue>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="62b7098f-ef0f-4e5b-8b87-0baecc8c6406" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1094,6 +1108,12 @@ j_indJoueur = 0 </body>
           </operation>
           <operation Id="9ff1c43f-ec7f-400e-92e5-52f7526c1afc" name="JeuInitialise" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="ab9b93c2-538e-422e-b08d-f743fbb84893" />
+          </operation>
+          <operation Id="62335041-b9e3-455d-99eb-07fadd1f6630" name="afficherDeplacementPoss" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="57aa396a-62e8-4b68-96c3-bad2b098514b" />
+          </operation>
+          <operation Id="b1c6f50e-ed5c-4f53-be2e-768151181402" name="afficherCaseClic" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1972fecb-16da-4850-9c7e-9e03ed69cc89" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1722,6 +1742,11 @@ j_indJoueur = 0 </body>
     <packageHasNamedElement>
       <referencedType Id="22809246-ff25-43df-9eb7-6ae3f97fad1d" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
         <elementDefinition Id="9747b71b-5760-4947-a400-dd891fa273cf" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a70b7d37-9081-441c-9d21-bdec781ace60" name="pair&lt;int,int&gt;" isAbstract="false" isLeaf="false" cachedFullName="pair&lt;int,int&gt;">
+        <elementDefinition Id="f05a02ec-cdd4-42ab-a9f0-8ea9255e81b7" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
