@@ -57,8 +57,8 @@
                 <opaqueActionMoniker Id="eb2ace1d-ffcd-49b5-a4c3-205f08570581" LastKnownName="inverser  Attaquant/attaqué" />
                 <elementDefinition Id="867b8907-7d3d-407f-a12d-b30bc69cd76f" />
               </controlFlow>
-              <controlFlow Id="34c390e6-ef03-46d6-994e-d913bf8ed30d" isLeaf="false">
-                <opaqueActionMoniker Id="44ccadb5-1ef2-44e3-869a-a37297a6622b" LastKnownName="Attaquant récupère trésor attaqué perd son trésor" />
+              <controlFlow Id="34c390e6-ef03-46d6-994e-d913bf8ed30d" guard="tabJoueurs[indAdversaire].getBateau(i).typeBateau() == radeau" isLeaf="false">
+                <opaqueActionMoniker Id="44ccadb5-1ef2-44e3-869a-a37297a6622b" LastKnownName="Attaquant récupère trésor, attaqué perd son trésor" />
                 <elementDefinition Id="f7841f5e-2002-4951-8f52-b8615802464a" />
               </controlFlow>
             </flowNodeTargets>
@@ -81,11 +81,11 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="44ccadb5-1ef2-44e3-869a-a37297a6622b" name="Attaquant récupère trésor attaqué perd son trésor" isLeaf="false">
+          <opaqueAction Id="44ccadb5-1ef2-44e3-869a-a37297a6622b" name="Attaquant récupère trésor, attaqué perd son trésor" isLeaf="false">
             <elementDefinition Id="dde43395-fde4-4eb0-95ac-7fa8a44886b3" />
             <flowNodeTargets>
               <controlFlow Id="9b30f8f4-de66-4abf-aecb-877d5fe1b508" isLeaf="false">
-                <opaqueActionMoniker Id="3cc7296a-c546-4a00-bda2-0419fab891c6" LastKnownName="Changer bateau attaqué" />
+                <opaqueActionMoniker Id="3cc7296a-c546-4a00-bda2-0419fab891c6" LastKnownName="Retour port pour changer bateau attaqué" />
                 <elementDefinition Id="b46f2a1c-88a2-4e6e-9a65-06410e1590ab" />
               </controlFlow>
             </flowNodeTargets>
@@ -93,7 +93,7 @@
           <activityFinalNode Id="9c5d3d4a-a3a0-4afd-a1d7-54f2258b2e89" name="ActivityFinal1" isLeaf="false">
             <elementDefinition Id="0ac2b6ca-18ed-448b-9feb-bd7364245bf3" />
           </activityFinalNode>
-          <opaqueAction Id="3cc7296a-c546-4a00-bda2-0419fab891c6" name="Changer bateau attaqué" isLeaf="false">
+          <opaqueAction Id="3cc7296a-c546-4a00-bda2-0419fab891c6" name="Retour port pour changer bateau attaqué" isLeaf="false">
             <elementDefinition Id="e24e27ff-dd76-4dfd-b1f6-6fc23c8d793f" />
             <flowNodeTargets>
               <controlFlow Id="23d82a22-e11b-4ed5-8024-0faf9ced8f59" isLeaf="false">
