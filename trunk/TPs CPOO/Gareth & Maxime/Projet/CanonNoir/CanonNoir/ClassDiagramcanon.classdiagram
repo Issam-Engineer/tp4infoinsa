@@ -1005,6 +1005,12 @@ j_indJoueur = 0 </body>
               </literalString>
             </defaultValue>
           </property>
+          <property Id="3751084a-da8b-495a-a6bb-2871fd6a8aca" name="premiersLances" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f362156e-bee0-4bd1-b010-7c6862d9f4e6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ddfc5c39-185c-4e6f-981d-6733af351915" LastKnownName="int[]" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="62b7098f-ef0f-4e5b-8b87-0baecc8c6406" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1042,6 +1048,9 @@ j_indJoueur = 0 </body>
           </operation>
           <operation Id="bb4d9436-6906-4fb6-8cb2-74b4832e4ef9" name="desactiveClicNbJoueurs" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="43b0118f-04dd-417d-acab-ff59d3fd75ff" />
+          </operation>
+          <operation Id="8e2eed1b-d27e-4b83-8387-f6d30e0ed038" name="premierLancerDe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b311e410-94f6-4613-861a-135a1d46f2c2" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1089,38 +1098,17 @@ j_indJoueur = 0 </body>
           </association>
         </targetEnds>
         <ownedOperationsInternal>
-          <operation Id="9631710f-720c-4452-bba8-d4b0eeba41d8" name="clicBoutonDe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="9631710f-720c-4452-bba8-d4b0eeba41d8" name="clicDe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="90d33025-3fcf-4264-99ed-0830faf80eef" />
           </operation>
           <operation Id="7bb8ec71-df6c-4a06-bc6e-83ff844d81a9" name="clicCase" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="a58f385b-6f21-4353-992e-454f2996f490" />
           </operation>
-          <operation Id="eef895cc-ed10-462b-9015-623cdbb3f59f" name="champNom" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="f620cabc-687d-44d0-8f77-f74cc9297956" />
-          </operation>
-          <operation Id="719983ed-4209-4137-a1a9-15766d495105" name="clicCouleur" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="25b12084-9fbc-4db8-9264-e8a2c9fb9c55" />
-          </operation>
           <operation Id="8857f427-6f84-4293-b73b-fefde38a4c96" name="clicLancerPartie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="f5d58b1a-ff4a-4f8c-bb78-ba2b9c85abe0" />
           </operation>
-          <operation Id="44640509-b13d-4919-93c5-ef164d843f0f" name="clicDepart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="70ff5602-a7ff-4f04-95cd-fc5570585d6a" />
-          </operation>
           <operation Id="52609fe7-6275-4c02-9a53-0dcd4f5c6ed2" name="ceerFenetre" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="39a11289-ab4f-403e-8b37-2c1d0fe5b579" />
-          </operation>
-          <operation Id="1c2cbacc-fb85-45a4-869a-528102317333" name="closeFenetre" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="cb33b4d0-8c8f-4dfc-a285-4b30641b5d9d" />
-          </operation>
-          <operation Id="7b5920f3-dfca-4ac5-84df-197e6d619d5e" name="clicInit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="11dca38c-73a1-4b4e-9d94-1d853d4df38a" />
-          </operation>
-          <operation Id="b9dae94b-1caa-4997-a72e-10a2d094e05c" name="clicNbJoueur2" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="a098e178-afa6-4db9-824a-a703f833b5f9" />
-          </operation>
-          <operation Id="7e852de5-2bf6-491c-85f0-bbe3101a6927" name="clicNbJoueur4" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="2ec507aa-53e4-4fe8-915a-dac5142114f8" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1626,6 +1614,26 @@ j_indJoueur = 0 </body>
     <logicalClassDesignerModelHasTypes>
       <class Id="9292baa1-8315-4c7b-8b6b-526e94d6d4c4" name="FenetreInit" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="2c34a23f-973e-4844-b7d8-6abd9d07c2c2" />
+        <ownedOperationsInternal>
+          <operation Id="3131cabd-bbb4-4ad8-a79e-df1d78cea2bf" name="clicNbJoueurs2" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b5804c85-9a3e-47c6-8f9a-b35ec784c6c1" />
+          </operation>
+          <operation Id="4c171249-f078-40cc-b58d-1c6f3135db77" name="clicNbJoueurs4" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2ed8ef1a-3fc9-4d02-a9d9-10c32e14d5c9" />
+          </operation>
+          <operation Id="02a9b340-58ab-4363-bfb5-05326525f1f8" name="clicInit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="23ea8339-2fc8-457d-86c8-e4b74322b3b7" />
+          </operation>
+          <operation Id="391f5c35-56ca-479b-854f-f226cbe0d5db" name="closeFenetre" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2b76beb8-1780-4986-aa80-664d796a36eb" />
+          </operation>
+          <operation Id="2dc6d35c-ae2e-49ae-8fd7-1133565f8031" name="champNom" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ff378576-bffe-4a73-a907-142bad03a5d7" />
+          </operation>
+          <operation Id="e6f45a96-f269-4833-aa54-8f3fc9b5aa27" name="champCouleur" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3730c91d-2b56-449d-b3bc-871cfdfc3228" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
