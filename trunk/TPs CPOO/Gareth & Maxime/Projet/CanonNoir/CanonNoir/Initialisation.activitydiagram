@@ -25,12 +25,6 @@ modifiernuméro(j)</body>
         <nodes>
           <initialNode Id="5855a783-10c4-4d39-9ec4-7f6e0b12f6d6" name="Initial1" isLeaf="false">
             <elementDefinition Id="f5d179cf-0c10-4d09-8711-5ebc19c1e63b" />
-            <flowNodeTargets>
-              <controlFlow Id="5d890408-4d8f-46c3-aa83-a47e3464a432" isLeaf="false">
-                <acceptEventActionMoniker Id="41c908b5-42f9-46c8-aefa-5e59c4c1e5f4" LastKnownName="Entrer nombre de Joueur" />
-                <elementDefinition Id="1cf4b08a-e508-4dc0-86f5-8172e6b7b48c" />
-              </controlFlow>
-            </flowNodeTargets>
           </initialNode>
           <decisionNode Id="021bc9dd-96a6-4272-8564-ec3070fb087f" name="Decision1" isLeaf="false">
             <elementDefinition Id="66c9489e-f74c-4136-b092-b9f539c0f08d" />
@@ -151,6 +145,9 @@ modifiernuméro(j)</body>
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
+          <acceptEventAction Id="5e6efd44-4365-436c-a59d-55bfd050ef8a" name="ClicDepart" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="da56b9c9-d2f9-468f-b2cf-f232313cb76f" />
+          </acceptEventAction>
         </nodes>
       </activity>
     </activityRootModelHasActivity>

@@ -881,14 +881,14 @@ j_indJoueur = 0 </body>
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="bb503773-82b7-4311-b38a-ab98e056b8ee" name="nbJoueur" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="bb503773-82b7-4311-b38a-ab98e056b8ee" name="nbJoueurs" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="256bf62d-79c0-45ee-8354-5fd8b36f87b6" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="db7dba48-0d92-428f-83a4-a81a6cbbd87d" LastKnownName="int" />
+              <referencedTypeMoniker Id="7eea95ec-25de-4a75-8460-f50548ec0961" LastKnownName="int" />
             </type_NamedElement>
             <defaultValue>
-              <literalString Id="729564c4-bae7-4fde-9069-e321c6b814f0" name="DefaultValue" value="-1">
-                <elementDefinition Id="3a0e5ac2-b4ba-401b-97d3-6790611ef201" />
+              <literalString Id="65094e2c-5365-4d33-8d8f-26a45095c3b1" name="DefaultValue" value="-1">
+                <elementDefinition Id="d838056e-ba1a-4db6-a0e1-381fd27c9f2c" />
               </literalString>
             </defaultValue>
           </property>
@@ -922,42 +922,14 @@ j_indJoueur = 0 </body>
               </literalString>
             </defaultValue>
           </property>
-          <property Id="ec4dc72f-aeee-441d-b434-19760fb31902" name="couleur1" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="3b5b2cad-cc1c-4539-8c1a-5cb514cfa619" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="db82a222-0d23-4155-8709-55ddb5efb4fc" LastKnownName="int" />
-            </type_NamedElement>
-            <defaultValue>
-              <literalString Id="da2cd040-9c39-4946-952e-a2d150e6c947" name="DefaultValue" value="null">
-                <elementDefinition Id="90418582-03ac-4a93-8704-1c857af8a196" />
-              </literalString>
-            </defaultValue>
-          </property>
-          <property Id="dc045ae0-03ba-455d-a1e5-480986aa9672" name="couleur2" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="005b8b79-5379-47c7-a3a2-e354f647effa" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
-            </type_NamedElement>
-          </property>
-          <property Id="679980d9-e63d-4a15-9a82-afe0a0ed1aa4" name="couleur3" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="b5e58822-71d5-4917-bf24-ff3ce1f41c6c" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
-            </type_NamedElement>
-            <defaultValue>
-              <literalString Id="a361c045-c32e-41bc-a41c-8df977d29310" name="DefaultValue" value="null">
-                <elementDefinition Id="e828292b-a096-473c-96ef-c182247cdbe9" />
-              </literalString>
-            </defaultValue>
-          </property>
-          <property Id="ada6fbb0-4a93-44d4-a9a0-35980359075a" name="couleur4" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="ada6fbb0-4a93-44d4-a9a0-35980359075a" name="couleurs" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="8060b888-8a97-4c07-81ff-8dfcdf5e0354" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="ffeded2a-f5a7-4905-bd39-82e731e43404" LastKnownName="int" />
+              <referencedTypeMoniker Id="adf92d27-80b9-477d-b23c-b94b716e0b88" LastKnownName="int []" />
             </type_NamedElement>
             <defaultValue>
-              <literalString Id="bbff04df-328d-44ab-8b5d-d4e30982e2c2" name="DefaultValue" value="null">
-                <elementDefinition Id="d6c17246-8a0b-48ac-969e-6fdbf0e4b7a1" />
+              <literalString Id="2e7cd104-1973-45e5-b33a-80f409501dd7" name="DefaultValue" value="null">
+                <elementDefinition Id="950f9793-e65b-4bc7-8b7e-723b608e3325" />
               </literalString>
             </defaultValue>
           </property>
@@ -978,10 +950,98 @@ j_indJoueur = 0 </body>
               <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
             </type_NamedElement>
           </property>
+          <property Id="211a17ab-6b2f-4e90-bba9-22c571cc51a2" name="clicDepart" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e8a170be-8e69-4133-858b-249b5664ae5c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="e20a8779-50e1-4d76-84c1-03a2e0b29a28" name="DefaultValue" value="false">
+                <elementDefinition Id="7d907be1-499d-452e-bf1b-33f7012e48b5" />
+              </literalString>
+            </defaultValue>
+          </property>
+          <property Id="bcf2004b-a0ac-467d-a870-cec6e6e89a75" name="clicInit" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0571b33e-3763-4a36-9aa5-351cfe2132da" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="e8063057-c412-402a-9f87-8e0410e92122" name="DefaultValue" value="false">
+                <elementDefinition Id="a513f0d2-e010-4edf-abdf-6a0056fef7dc" />
+              </literalString>
+            </defaultValue>
+          </property>
+          <property Id="aa490439-6cc4-42fa-9492-ad47e998f885" name="noms" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="65189984-7427-4aab-a941-d622f6427f07" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c9cfb9f1-da52-45a3-a1f2-740f20bf63cd" LastKnownName="string[]" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="92a85f87-602b-4cb8-9f4a-414f52478a64" name="DefaultValue" value="null">
+                <elementDefinition Id="5f72c6bd-b3ec-4b4c-bb5c-6a52b7162c00" />
+              </literalString>
+            </defaultValue>
+          </property>
+          <property Id="1db72999-4cc0-4c5b-ac53-361d68254801" name="partieEnCours" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4f4fdb96-96be-42b4-ae0b-dd6bdf056f1f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6f1bb5eb-895e-49ab-82e4-efa14a463058" LastKnownName="boo" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="900c19e4-5787-4d14-bc5f-47ae4197bec7" name="DefaultValue" value="false">
+                <elementDefinition Id="c65ec99a-ec9b-4478-85cb-bfc525487672" />
+              </literalString>
+            </defaultValue>
+          </property>
+          <property Id="c82ad918-f938-4504-b75c-2a6566d9a3af" name="clicNbJoueurs" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f958e0f1-2bef-4a5b-893e-32a9a27300db" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="aff16930-d9ab-43d1-97bc-27874fbb63e3" name="DefaultValue" value="false">
+                <elementDefinition Id="98759392-dbc5-4af7-95aa-b943b703740e" />
+              </literalString>
+            </defaultValue>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="62b7098f-ef0f-4e5b-8b87-0baecc8c6406" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="fb27759e-f89a-4ecf-953b-deb1f32ca7db" />
+          </operation>
+          <operation Id="a5116cd2-b899-494c-a5da-70b0cd17c0f0" name="activeClicDepart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3e3ebe55-355b-48d3-bd78-89d0a6edd2a1" />
+          </operation>
+          <operation Id="36be97cd-5107-4f09-884d-96d7a85ad37b" name="initialiser" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2035f947-4606-4b9a-ac7d-425f15c055ca" />
+          </operation>
+          <operation Id="23dee925-fcde-45ea-beaf-97ba6350f400" name="desactiveClicDepart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a662578e-62a2-4362-973a-1f898dbfea2d" />
+          </operation>
+          <operation Id="b096b944-436c-4ccc-bcb8-0a95e6cc8935" name="acitveClicInit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="129021bf-b545-454c-b9b9-0dee96bfa06c" />
+          </operation>
+          <operation Id="2f19ff6e-59e3-4ae4-9f3c-f2f4988b40fe" name="desactiveClicInit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0affd2ba-d90c-4dc7-861e-93ded0dc7bc2" />
+          </operation>
+          <operation Id="0867201b-9863-466f-b5df-03c85fdc522c" name="initCouleurs" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="140dd480-9612-4572-a163-52f28c5b65b6" />
+          </operation>
+          <operation Id="703b8ef0-0a7e-4dab-8d41-2a49866071de" name="initNoms" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c57d1302-40a7-4840-9a51-fac5d09fe1e7" />
+          </operation>
+          <operation Id="395cea49-71c4-4e52-b5f5-5e87de55f191" name="lancerPartie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f4be8a30-6d37-439c-a016-9159aff12d2f" />
+          </operation>
+          <operation Id="627d1368-5650-42c2-b167-f6457361c290" name="initNbJoueurs" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c4841846-c18d-489f-8e4b-4280aae69200" />
+          </operation>
+          <operation Id="3f04e4f7-81fa-4e31-a0e1-de8a608da9d3" name="activeClicNbJoueurs" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cb10ea9b-409e-4403-b037-a17bb6a7fb34" />
+          </operation>
+          <operation Id="bb4d9436-6906-4fb6-8cb2-74b4832e4ef9" name="desactiveClicNbJoueurs" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="43b0118f-04dd-417d-acab-ff59d3fd75ff" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1011,6 +1071,22 @@ j_indJoueur = 0 </body>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="cdaf669f-7655-4430-8536-37495d652026" />
           </association>
+          <association Id="a73b7a3e-804e-46f6-95ed-b838c6d50a12" isDerived="false" sourceEndRoleName="AffichageWPF" targetEndRoleName="FenetreInit" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9292baa1-8315-4c7b-8b6b-526e94d6d4c4" LastKnownName="FenetreInit" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d401932-53ee-4992-83c2-fa3417ce3345" name="AffichageWPF" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="79ba71f3-f50d-4707-b84e-2c840713d755" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d910e6c-6e20-4d86-a31d-60886b0bf6d4" name="FenetreInit" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1344b975-68d4-4e0f-aac7-0b98818f047c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2810575d-92da-4501-a8a2-72ac8f875c6d" />
+          </association>
         </targetEnds>
         <ownedOperationsInternal>
           <operation Id="9631710f-720c-4452-bba8-d4b0eeba41d8" name="clicBoutonDe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1027,6 +1103,24 @@ j_indJoueur = 0 </body>
           </operation>
           <operation Id="8857f427-6f84-4293-b73b-fefde38a4c96" name="clicLancerPartie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="f5d58b1a-ff4a-4f8c-bb78-ba2b9c85abe0" />
+          </operation>
+          <operation Id="44640509-b13d-4919-93c5-ef164d843f0f" name="clicDepart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="70ff5602-a7ff-4f04-95cd-fc5570585d6a" />
+          </operation>
+          <operation Id="52609fe7-6275-4c02-9a53-0dcd4f5c6ed2" name="ceerFenetre" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="39a11289-ab4f-403e-8b37-2c1d0fe5b579" />
+          </operation>
+          <operation Id="1c2cbacc-fb85-45a4-869a-528102317333" name="closeFenetre" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cb33b4d0-8c8f-4dfc-a285-4b30641b5d9d" />
+          </operation>
+          <operation Id="7b5920f3-dfca-4ac5-84df-197e6d619d5e" name="clicInit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="11dca38c-73a1-4b4e-9d94-1d853d4df38a" />
+          </operation>
+          <operation Id="b9dae94b-1caa-4997-a72e-10a2d094e05c" name="clicNbJoueur2" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a098e178-afa6-4db9-824a-a703f833b5f9" />
+          </operation>
+          <operation Id="7e852de5-2bf6-491c-85f0-bbe3101a6927" name="clicNbJoueur4" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2ec507aa-53e4-4fe8-915a-dac5142114f8" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1515,20 +1609,51 @@ j_indJoueur = 0 </body>
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="db82a222-0d23-4155-8709-55ddb5efb4fc" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
-        <elementDefinition Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="daab10bc-d0d3-4904-a9e5-2eda34eb8fa2" name="pair&lt;int,int&gt;" isAbstract="false" isLeaf="false" cachedFullName="pair&lt;int,int&gt;">
         <elementDefinition Id="f05a02ec-cdd4-42ab-a9f0-8ea9255e81b7" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="db7dba48-0d92-428f-83a4-a81a6cbbd87d" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+      <referencedType Id="adf92d27-80b9-477d-b23c-b94b716e0b88" name="int []" isAbstract="false" isLeaf="false" cachedFullName="int []">
+        <elementDefinition Id="ab0bc3fb-3ebd-46c5-9d18-380dde59d0f3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c9cfb9f1-da52-45a3-a1f2-740f20bf63cd" name="string[]" isAbstract="false" isLeaf="false" cachedFullName="string[]">
+        <elementDefinition Id="98164f81-7fa7-4722-af5f-94d8f09b8e4a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9292baa1-8315-4c7b-8b6b-526e94d6d4c4" name="FenetreInit" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2c34a23f-973e-4844-b7d8-6abd9d07c2c2" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="6f1bb5eb-895e-49ab-82e4-efa14a463058" name="boo" isAbstract="false" isLeaf="false" cachedFullName="boo">
+        <elementDefinition Id="1feea663-f693-4fc4-bff3-2a3cdeea1dd2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7eea95ec-25de-4a75-8460-f50548ec0961" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
         <elementDefinition Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fe4f6d5a-8430-4f01-ba7e-e18f70dea7a5" name="AttenteNbJoueurs" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1d2c283c-6e26-4a21-9b91-07916712e454" />
+        <suppliersInternal>
+          <interfaceRealization Id="5f6ee934-d3b9-4c1d-83fd-26147e4debbb">
+            <interfaceMoniker Id="4943062b-5da2-4247-a808-ba642525472f" LastKnownName="Etat" />
+            <elementDefinition Id="14503cc2-402d-41b8-b793-9c605538f94d" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="d5de7306-f8e6-4e7e-ba0d-d03460ea68f3" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ea4f732a-ddf4-45f8-8b75-021befef1745" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="3af465bf-7222-4ae4-a005-adf1a332bcc4" name="CanonNoir">
     <elementDefinition Id="d1255448-f23c-4490-af91-82b9caa462ca" />
