@@ -863,21 +863,21 @@ j_indJoueur = 0 </body>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="40128ba6-c40a-4203-a1d6-b0becb6eaee2" />
           </association>
-          <association Id="5cdbca23-a022-4535-a37d-c9fb5978efd9" isDerived="false" sourceEndRoleName="Facade" targetEndRoleName="MoteurJeu" isLeaf="false" isAbstract="false">
+          <association Id="f7d7e386-b900-4c4e-9e8a-3d3eb907a1d1" isDerived="false" sourceEndRoleName="Facade" targetEndRoleName="MoteurJeu" isLeaf="false" isAbstract="false">
             <classMoniker Id="7d0452f3-7dd7-41d0-b084-02ff238f831b" LastKnownName="MoteurJeu" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="43386afe-27c6-4160-8d29-caa5d8ec9943" name="Facade" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="1a45266e-26e2-4d93-bfbf-83acc350a906" />
+                <memberEnd Id="a976d4d5-87c4-4012-a314-acddb8de273d" name="Facade" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c96a9466-e8cb-450b-a00d-4d8cf9278a10" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="d6ab1d98-1b65-42ae-abfd-11c0ad741c13" name="MoteurJeu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="db49bbcb-5689-48dd-a6b3-a2aeb433e851" />
+                <memberEnd Id="fa23b2fa-25c5-49ed-8bfd-59eae1d40353" name="MoteurJeu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2ce036b7-c8ef-4b5d-b59e-4d2e47e95457" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="c33c9e2b-3a70-4c77-b588-964442f66a58" />
+            <elementDefinition Id="f60445ff-98f9-48dd-b35c-82902a578471" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -1022,6 +1022,23 @@ j_indJoueur = 0 </body>
               <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
             </type_NamedElement>
           </property>
+          <property Id="b3c84496-7ca6-433e-86ee-3894eec16078" name="afficherJoueur1" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9382829b-109d-4960-97b0-8c2936669590" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="22809246-ff25-43df-9eb7-6ae3f97fad1d" LastKnownName="bool" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="5c379a09-bd50-4141-8141-5787603fec7f" name="DefaultValue" value="false">
+                <elementDefinition Id="6e85e9cd-8833-4540-ba7d-4ab896659585" />
+              </literalString>
+            </defaultValue>
+          </property>
+          <property Id="a2024586-fc06-406c-a30f-9b7ac9dd06a1" name="initialiserOK" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7a268128-ade7-4191-8129-5ca6586ea489" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="62b7098f-ef0f-4e5b-8b87-0baecc8c6406" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1071,6 +1088,12 @@ j_indJoueur = 0 </body>
           </operation>
           <operation Id="183a4ec9-ef5b-428a-b6a0-0186660414b4" name="afficher1De" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="ae7dc0c1-e1e3-43e7-8dab-79402e7941cc" />
+          </operation>
+          <operation Id="bb34af72-a00b-4079-a468-2c5acb6aa04b" name="afficherJoueur1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a6405b98-ff47-4a2c-9038-f1f743b1a6e6" />
+          </operation>
+          <operation Id="9ff1c43f-ec7f-400e-92e5-52f7526c1afc" name="JeuInitialise" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ab9b93c2-538e-422e-b08d-f743fbb84893" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1437,6 +1460,9 @@ j_indJoueur = 0 </body>
           <operation Id="03ba37a5-08e3-455d-8c20-96dc84e2d956" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="e3891d11-d122-4b73-b8c5-7ebc171ce128" />
           </operation>
+          <operation Id="aa3963df-6875-4001-89fa-f414e2d8534f" name="determinerOrdre" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="be30462a-5ad3-44b0-abfe-7caf4de56c51" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -1690,6 +1716,11 @@ j_indJoueur = 0 </body>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <referencedType Id="71cfd7a9-b137-4de4-8039-e6f6af0929bc" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="9747b71b-5760-4947-a400-dd891fa273cf" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="22809246-ff25-43df-9eb7-6ae3f97fad1d" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
         <elementDefinition Id="9747b71b-5760-4947-a400-dd891fa273cf" />
       </referencedType>
     </packageHasNamedElement>
