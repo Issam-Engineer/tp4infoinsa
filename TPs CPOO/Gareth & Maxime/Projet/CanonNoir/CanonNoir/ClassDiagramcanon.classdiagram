@@ -1066,6 +1066,12 @@ j_indJoueur = 0 </body>
           <operation Id="c341e0fa-da8f-431b-86af-57ce9ae965e6" name="afficherTabDe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="512d172d-eb9a-4a69-b86e-6c1f4f436b7e" />
           </operation>
+          <operation Id="c9f3f36d-3f04-48e0-acde-9ff4ca4e695f" name="afficher2De" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="351ab7bb-e546-4d38-977d-a352e30c18b1" />
+          </operation>
+          <operation Id="183a4ec9-ef5b-428a-b6a0-0186660414b4" name="afficher1De" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ae7dc0c1-e1e3-43e7-8dab-79402e7941cc" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
