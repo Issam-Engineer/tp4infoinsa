@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="571bede5-5460-4e51-98bb-24bf9d8936c6">
       <elementDefinition Id="6536fcb9-b86d-466c-9434-d4f4e1ee87b7" />
@@ -846,23 +846,13 @@ j_indJoueur = 0 </body>
     <logicalClassDesignerModelHasTypes>
       <class Id="eb228b6e-3d83-46d9-9154-08b4c7ad64de" name="Facade" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="745e0fd8-bef0-4f49-b424-051e82aaef86" />
-        <targetEnds>
-          <association Id="f249c4a3-a6ca-42c2-8820-a5c0aad7f7d8" isDerived="false" sourceEndRoleName="Moteur" targetEndRoleName="Adaptateur" isLeaf="false" isAbstract="false">
+        <suppliersInternal>
+          <dependency Id="bc13b307-af94-4660-80b6-6d0defe6b498">
             <classMoniker Id="2005e43b-b4cf-4541-9882-5ee6759e862c" LastKnownName="Adaptateur" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="032f6f6e-350a-418b-a564-690a48b4dd04" name="Moteur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="82bde45a-1fe1-408b-8774-c25e12336265" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="6350d68f-e508-4a47-b0a9-79e21e811214" name="Adaptateur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="1973cee9-6ce4-4d87-9ed1-a9c3d7dc2859" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="40128ba6-c40a-4203-a1d6-b0becb6eaee2" />
-          </association>
+            <elementDefinition Id="d0ede7ac-4858-47c1-b6f1-b0e35b145f1e" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
           <association Id="f7d7e386-b900-4c4e-9e8a-3d3eb907a1d1" isDerived="false" sourceEndRoleName="Facade" targetEndRoleName="MoteurJeu" isLeaf="false" isAbstract="false">
             <classMoniker Id="7d0452f3-7dd7-41d0-b084-02ff238f831b" LastKnownName="MoteurJeu" />
             <relationshipOwnedElementsInternal>
@@ -1126,12 +1116,6 @@ j_indJoueur = 0 </body>
     <logicalClassDesignerModelHasTypes>
       <class Id="5ab636de-9457-4c35-a800-1d22dc41f6d6" name="AffichageWPF" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5c4916c8-a518-485a-8295-991face1cf56" />
-        <suppliersInternal>
-          <dependency Id="60fd759d-41d5-4f65-9252-89670071d0b9">
-            <classMoniker Id="2005e43b-b4cf-4541-9882-5ee6759e862c" LastKnownName="Adaptateur" />
-            <elementDefinition Id="415762b1-1860-4288-a413-d2741720d674" />
-          </dependency>
-        </suppliersInternal>
         <targetEnds>
           <association Id="a73b7a3e-804e-46f6-95ed-b838c6d50a12" isDerived="false" sourceEndRoleName="AffichageWPF" targetEndRoleName="FenetreInit" isLeaf="false" isAbstract="false">
             <classMoniker Id="9292baa1-8315-4c7b-8b6b-526e94d6d4c4" LastKnownName="FenetreInit" />
@@ -1148,6 +1132,22 @@ j_indJoueur = 0 </body>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="2810575d-92da-4501-a8a2-72ac8f875c6d" />
+          </association>
+          <association Id="8ea4cbe7-7545-402f-bbc7-ad8c7c77f635" isDerived="false" sourceEndRoleName="AffichageWPF" targetEndRoleName="Adaptateur" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2005e43b-b4cf-4541-9882-5ee6759e862c" LastKnownName="Adaptateur" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc7f1c72-a431-44e9-90d1-06d88c9d92d1" name="AffichageWPF" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="24fe08d8-629a-4b5d-b346-48dfd9d5cb76" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c431426d-2aa7-4a03-88ed-67c31f58c988" name="Adaptateur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cb95fa96-a131-4671-a526-622aa857a730" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="01d6e4bb-d86f-4334-b982-1902e39a7ec2" />
           </association>
         </targetEnds>
         <ownedOperationsInternal>
