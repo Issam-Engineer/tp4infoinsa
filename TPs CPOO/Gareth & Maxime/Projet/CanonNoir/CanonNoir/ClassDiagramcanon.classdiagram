@@ -1082,6 +1082,28 @@ j_indJoueur = 0 </body>
               </literalString>
             </defaultValue>
           </property>
+          <property Id="829f8f2a-adf0-4e95-8bd1-0b893384b411" name="afficherAttaqué" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2a5ed3f2-3302-4ef3-afea-32204bdb1dfe" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="2c62ebdd-daa4-426a-8610-4f21d88b6935" name="DefaultValue" value="false">
+                <elementDefinition Id="cd455ef9-a744-49b3-a3aa-928beac065b6" />
+              </literalString>
+            </defaultValue>
+          </property>
+          <property Id="463f8984-9f48-4b54-ae08-a2cdf98d9814" name="afficherAttanquant" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7b2947fe-3848-4f64-92a4-1c876276124c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="4f9c0c82-ba8a-4351-9e0d-ec33aeec503f" name="DefaultValue" value="false">
+                <elementDefinition Id="1424f3c8-2510-4df1-9d74-6e6e95e682d1" />
+              </literalString>
+            </defaultValue>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="62b7098f-ef0f-4e5b-8b87-0baecc8c6406" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1155,6 +1177,12 @@ j_indJoueur = 0 </body>
           </operation>
           <operation Id="a46e91a8-288f-4784-840b-4f577ade8d2a" name="desactiverClicRefuserDuel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="88e5dcb5-1dec-4b21-b7ec-3c67d5b97915" />
+          </operation>
+          <operation Id="40bd1d98-fe05-4d36-a31a-98ec1e08edfe" name="afficherAttaquant" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9e11ba62-6ae6-41ec-8e5d-1d1ad271c429" />
+          </operation>
+          <operation Id="f3342eb0-9155-4434-a14e-e0bd4c6a2b70" name="afficherAttaqué" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="64462d41-9750-47fd-b84e-841d6e4978bf" />
           </operation>
         </ownedOperationsInternal>
       </class>
