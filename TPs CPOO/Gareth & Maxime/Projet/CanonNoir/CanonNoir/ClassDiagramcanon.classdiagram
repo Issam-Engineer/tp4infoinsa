@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="571bede5-5460-4e51-98bb-24bf9d8936c6">
       <elementDefinition Id="6536fcb9-b86d-466c-9434-d4f4e1ee87b7" />
@@ -1126,23 +1126,13 @@ j_indJoueur = 0 </body>
     <logicalClassDesignerModelHasTypes>
       <class Id="5ab636de-9457-4c35-a800-1d22dc41f6d6" name="AffichageWPF" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5c4916c8-a518-485a-8295-991face1cf56" />
-        <targetEnds>
-          <association Id="2fb8708f-ce34-4810-846c-ed3eb207984d" isDerived="false" sourceEndRoleName="Affichage WPF" targetEndRoleName="Adaptateur" isLeaf="false" isAbstract="false">
+        <suppliersInternal>
+          <dependency Id="60fd759d-41d5-4f65-9252-89670071d0b9">
             <classMoniker Id="2005e43b-b4cf-4541-9882-5ee6759e862c" LastKnownName="Adaptateur" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="e6423a69-0033-4c2f-9caa-72a3ae5e6137" name="Affichage WPF" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="d6420949-dc18-4ce9-a9f6-9a7a3e2c41fe" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="b1916f25-656a-49e6-ba02-9ff1f76b27d0" name="Adaptateur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="93f004dc-08ce-4d95-909e-8e0a9ab9eec5" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="cdaf669f-7655-4430-8536-37495d652026" />
-          </association>
+            <elementDefinition Id="415762b1-1860-4288-a413-d2741720d674" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
           <association Id="a73b7a3e-804e-46f6-95ed-b838c6d50a12" isDerived="false" sourceEndRoleName="AffichageWPF" targetEndRoleName="FenetreInit" isLeaf="false" isAbstract="false">
             <classMoniker Id="9292baa1-8315-4c7b-8b6b-526e94d6d4c4" LastKnownName="FenetreInit" />
             <relationshipOwnedElementsInternal>
@@ -1356,6 +1346,9 @@ j_indJoueur = 0 </body>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+          <operation Id="88d44eed-3d85-470f-a22b-2919f789802e" name="getState" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eed2d98d-7c88-42c6-a10b-e6a3ef3f5505" />
           </operation>
         </ownedOperationsInternal>
       </class>

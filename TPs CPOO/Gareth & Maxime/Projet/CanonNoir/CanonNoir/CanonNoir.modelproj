@@ -51,33 +51,19 @@
       <SubType>Content</SubType>
       <DependentUpon>Duel.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="UMLComponentDiagram1.componentdiagram">
+    <Content Include="InitialisationNominal.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLComponentDiagram1.componentdiagram.layout">
+    <Content Include="InitialisationNominal.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UMLComponentDiagram1.componentdiagram</DependentUpon>
+      <DependentUpon>InitialisationNominal.sequencediagram</DependentUpon>
     </Content>
-    <Content Include="UMLSequenceDiagram1.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UMLSequenceDiagram1.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>UMLSequenceDiagram1.sequencediagram</DependentUpon>
-    </Content>
-    <Content Include="UMLSequenceDiagram2.sequencediagram">
+    <Content Include="DeplacementNominal.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLSequenceDiagram2.sequencediagram.layout">
+    <Content Include="DeplacementNominal.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UMLSequenceDiagram2.sequencediagram</DependentUpon>
-    </Content>
-    <Content Include="UMLSequenceDiagram3.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UMLSequenceDiagram3.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>UMLSequenceDiagram3.sequencediagram</DependentUpon>
+      <DependentUpon>DeplacementNominal.sequencediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ClassDiagramcanon.classdiagram">
