@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b9d3b332-926d-4f43-9c63-43d3733b16e7" name="Activity2" linkedPackageId="d6b251f6-c2cb-4851-811b-fc2e160d5ca3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="b9d3b332-926d-4f43-9c63-43d3733b16e7" name="Activity2" linkedPackageId="d6b251f6-c2cb-4851-811b-fc2e160d5ca3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="d60cb772-03f1-4fed-9fcc-ea1795a36e15" name="Activity2" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -23,7 +23,7 @@
               </controlFlow>
             </flowNodeTargets>
           </acceptEventAction>
-          <acceptEventAction Id="56df07cd-5d8c-407e-8aff-2863bfbfe2f0" name="Paramétré l'angle" isLeaf="false" isUnmarshall="false">
+          <acceptEventAction Id="56df07cd-5d8c-407e-8aff-2863bfbfe2f0" name="Paramétrer l'angle" isLeaf="false" isUnmarshall="false">
             <elementDefinition Id="fda71549-046c-43ab-8a2f-29b6834acb7a" />
             <flowNodeTargets>
               <controlFlow Id="f910c97d-97b8-4600-9d30-cb0ca61c57cf" isLeaf="false">
@@ -36,16 +36,16 @@
             <elementDefinition Id="7edf930d-08d8-4ae0-bce9-793f8ff68161" />
             <flowNodeTargets>
               <controlFlow Id="a79c83ff-6e86-490d-abee-188fdd1df03f" guard="loupé &amp;&amp; ntir&lt;2" isLeaf="false">
-                <opaqueActionMoniker Id="eb2ace1d-ffcd-49b5-a4c3-205f08570581" LastKnownName="inverser  Attaquant/attaqué" />
+                <opaqueActionMoniker Id="eb2ace1d-ffcd-49b5-a4c3-205f08570581" LastKnownName="Inverser  Attaquant/attaqué" />
                 <elementDefinition Id="867b8907-7d3d-407f-a12d-b30bc69cd76f" />
               </controlFlow>
-              <controlFlow Id="ca8dec14-c504-46f4-8704-aa6bad9ff89e" guard="loupé &amp;&amp; ntir=2" isLeaf="false">
-                <mergeNodeMoniker Id="da5d5798-0e82-467d-ae4f-7806ca222a02" LastKnownName="Merge1" />
-                <elementDefinition Id="d7c1e6b1-dd7d-457c-9908-d2c6c5216c11" />
-              </controlFlow>
-              <controlFlow Id="9605be39-4d6e-4145-ae77-a6121558d4dc" isLeaf="false">
+              <controlFlow Id="320e46c8-e132-4038-8a81-1f5519a0cd08" isLeaf="false">
                 <sendSignalActionMoniker Id="3be6af11-a648-40a1-bf9b-5d8dfd132a06" LastKnownName="Afficher &quot;Touché!&quot;" />
-                <elementDefinition Id="b9cbd457-93e9-49ba-8849-478b757562a8" />
+                <elementDefinition Id="ffc5b2a5-f3a1-4e18-9aa9-f297ae2fa7d8" />
+              </controlFlow>
+              <controlFlow Id="dd1b12e1-b9eb-47d3-a94a-c2bcc8b4dc71" guard="loupé &amp;&amp; ntir=2" isLeaf="false">
+                <mergeNodeMoniker Id="da5d5798-0e82-467d-ae4f-7806ca222a02" LastKnownName="Merge1" />
+                <elementDefinition Id="db715898-5925-4e47-8b64-ab9ca733317f" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
@@ -58,7 +58,7 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="eb2ace1d-ffcd-49b5-a4c3-205f08570581" name="inverser  Attaquant/attaqué" isLeaf="false">
+          <opaqueAction Id="eb2ace1d-ffcd-49b5-a4c3-205f08570581" name="Inverser  Attaquant/attaqué" isLeaf="false">
             <elementDefinition Id="75958fa5-0201-490d-a3c5-8c85d973ec02" />
             <flowNodeTargets>
               <controlFlow Id="6ca8ee7a-4d08-4e1e-b161-f158836bc19f" isLeaf="false">
@@ -70,9 +70,9 @@
           <opaqueAction Id="44ccadb5-1ef2-44e3-869a-a37297a6622b" name="Attaquant récupère trésor" isLeaf="false">
             <elementDefinition Id="dde43395-fde4-4eb0-95ac-7fa8a44886b3" />
             <flowNodeTargets>
-              <controlFlow Id="184e401f-f782-49ba-b36e-90b00f204211" isLeaf="false">
+              <controlFlow Id="e776e511-f4a2-46cd-8d6d-ad20a2da1805" isLeaf="false">
                 <opaqueActionMoniker Id="f7b16ec8-802b-475a-b49e-48bae16ad967" LastKnownName="Attaqué perd son trésor" />
-                <elementDefinition Id="c8fdbb59-959a-4f85-bfa6-7edb661acb2f" />
+                <elementDefinition Id="b3fa621c-822d-4870-876e-fc6db26b26c5" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -123,7 +123,7 @@
             <elementDefinition Id="77b70925-b610-4c59-986f-6b0ebee68df2" />
             <flowNodeTargets>
               <controlFlow Id="52294bed-9dfa-437a-b9d8-54af2d85b037" isLeaf="false">
-                <acceptEventActionMoniker Id="56df07cd-5d8c-407e-8aff-2863bfbfe2f0" LastKnownName="Paramétré l'angle" />
+                <acceptEventActionMoniker Id="56df07cd-5d8c-407e-8aff-2863bfbfe2f0" LastKnownName="Paramétrer l'angle" />
                 <elementDefinition Id="a9da7329-cc38-44e7-94d1-c4b2a8b2a489" />
               </controlFlow>
             </flowNodeTargets>
@@ -193,6 +193,12 @@
           </opaqueAction>
           <opaqueAction Id="f7b16ec8-802b-475a-b49e-48bae16ad967" name="Attaqué perd son trésor" isLeaf="false">
             <elementDefinition Id="d785f7ab-b92a-4ed1-a0b9-cd1a4a218f16" />
+            <flowNodeTargets>
+              <controlFlow Id="4e033c2b-58a9-49bd-8743-3d3d898aec5f" isLeaf="false">
+                <mergeNodeMoniker Id="da5d5798-0e82-467d-ae4f-7806ca222a02" LastKnownName="Merge1" />
+                <elementDefinition Id="e5898493-a9e5-4cb6-a8cd-19f5aec0dfd6" />
+              </controlFlow>
+            </flowNodeTargets>
           </opaqueAction>
           <sendSignalAction Id="ba9d1322-8dc7-4824-bbc5-4fa6462c8fe4" name="afficher Attaquant" isLeaf="false">
             <elementDefinition Id="f0e63df3-97ed-461d-b036-910f96b861ad" />
@@ -215,21 +221,34 @@
           <sendSignalAction Id="3be6af11-a648-40a1-bf9b-5d8dfd132a06" name="Afficher &quot;Touché!&quot;" isLeaf="false">
             <elementDefinition Id="97d1a0ef-7647-4b06-9506-4a9e452a5da0" />
             <flowNodeTargets>
-              <controlFlow Id="096cf9f1-a131-49f6-9d68-c4b499e3b65b" isLeaf="false">
-                <opaqueActionMoniker Id="44ccadb5-1ef2-44e3-869a-a37297a6622b" LastKnownName="Attaquant récupère trésor" />
-                <elementDefinition Id="b9314d87-126d-4264-a19b-00308599041a" />
+              <controlFlow Id="4e8db3f8-0c66-453e-b64a-e3c593632aee" isLeaf="false">
+                <opaqueActionMoniker Id="7ed0f76c-afb8-4013-832e-51468a5d4697" LastKnownName="Attaqué regresse de bateau" />
+                <elementDefinition Id="043bd0fc-f5d5-4e73-83b5-b1620173e211" />
               </controlFlow>
             </flowNodeTargets>
           </sendSignalAction>
           <opaqueAction Id="7ed0f76c-afb8-4013-832e-51468a5d4697" name="Attaqué regresse de bateau" isLeaf="false">
             <elementDefinition Id="5fe6e782-e2d2-4ce1-bd10-9737ce6c9cd7" />
             <flowNodeTargets>
-              <controlFlow Id="0c50de84-22d0-4e90-9f4f-0ab1c9353a6f" isLeaf="false">
-                <mergeNodeMoniker Id="da5d5798-0e82-467d-ae4f-7806ca222a02" LastKnownName="Merge1" />
-                <elementDefinition Id="1a000acb-79d6-41c6-b10d-8016f9fa0761" />
+              <controlFlow Id="395cf55d-e48b-4086-93f4-f3256d3a6bd1" isLeaf="false">
+                <decisionNodeMoniker Id="abca9bce-6551-4804-aec1-c1ddb770a2cf" LastKnownName="Decision3" />
+                <elementDefinition Id="6c65bb11-a000-4493-bb77-ecb5b877b6fd" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+          <decisionNode Id="abca9bce-6551-4804-aec1-c1ddb770a2cf" name="Decision3" isLeaf="false">
+            <elementDefinition Id="0f36a435-0941-4cd2-9708-d586bebff2da" />
+            <flowNodeTargets>
+              <controlFlow Id="11fc8b02-5158-4f43-8ed8-ac4a6b6505e3" guard="si bateau attaqué = radeau" isLeaf="false">
+                <opaqueActionMoniker Id="44ccadb5-1ef2-44e3-869a-a37297a6622b" LastKnownName="Attaquant récupère trésor" />
+                <elementDefinition Id="b401757a-5980-4bd2-ae90-e4d65cf94ca5" />
+              </controlFlow>
+              <controlFlow Id="0adc0d25-ba98-4cb0-ab1e-13554802928b" guard="si bateau attaqué != radeau" isLeaf="false">
+                <mergeNodeMoniker Id="da5d5798-0e82-467d-ae4f-7806ca222a02" LastKnownName="Merge1" />
+                <elementDefinition Id="0951e6e6-6fcb-4d92-bff2-b7d95a73fc38" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="571bede5-5460-4e51-98bb-24bf9d8936c6">
       <elementDefinition Id="6536fcb9-b86d-466c-9434-d4f4e1ee87b7" />
@@ -1092,6 +1092,12 @@ j_indJoueur = 0 </body>
               </literalString>
             </defaultValue>
           </property>
+          <property Id="bfaba318-b229-4457-a86c-3fdcc6f30004" name="bateauSelect" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fb717ff8-52bc-4f85-a946-86c51ed77757" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="62b7098f-ef0f-4e5b-8b87-0baecc8c6406" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1217,7 +1223,7 @@ j_indJoueur = 0 </body>
             <elementDefinition Id="01d6e4bb-d86f-4334-b982-1902e39a7ec2" />
           </association>
           <association Id="ecddf6c1-b034-4477-ae51-f6ada4b8ac02" isDerived="false" sourceEndRoleName="AffichageWPF" targetEndRoleName="FenetreTire" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7e4f3253-3345-4aca-b29a-6fc2ef4e4886" LastKnownName="FenetreTire" />
+            <classMoniker Id="7e4f3253-3345-4aca-b29a-6fc2ef4e4886" LastKnownName="FenetreTir" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="587f22c7-6530-4cb8-ad86-b0de8601da6d" name="AffichageWPF" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -1243,10 +1249,10 @@ j_indJoueur = 0 </body>
           <operation Id="8857f427-6f84-4293-b73b-fefde38a4c96" name="clicLancerPartie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="f5d58b1a-ff4a-4f8c-bb78-ba2b9c85abe0" />
           </operation>
-          <operation Id="52609fe7-6275-4c02-9a53-0dcd4f5c6ed2" name="ceerFenetre" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="52609fe7-6275-4c02-9a53-0dcd4f5c6ed2" name="creerFenetre" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="39a11289-ab4f-403e-8b37-2c1d0fe5b579" />
           </operation>
-          <operation Id="352949c4-76d4-4b15-a871-93ca737d4131" name="raffraichir" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="352949c4-76d4-4b15-a871-93ca737d4131" name="rafraichir" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="e4b1888d-9cd7-48b5-b507-f1aad07aac6d" />
           </operation>
         </ownedOperationsInternal>
@@ -1860,7 +1866,7 @@ j_indJoueur = 0 </body>
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="7e4f3253-3345-4aca-b29a-6fc2ef4e4886" name="FenetreTire" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="7e4f3253-3345-4aca-b29a-6fc2ef4e4886" name="FenetreTir" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="8311ff11-6068-426d-b5b6-cb78d2f3eeb1" />
         <ownedOperationsInternal>
           <operation Id="1e44b484-6bdb-498d-a878-59d789ccfbf4" name="champPuissance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1899,6 +1905,22 @@ j_indJoueur = 0 </body>
         <elementDefinition Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f7b51ec7-7152-4084-833a-24d20dfd298d" name="EtatFinPartie" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b31c1f9d-b753-422c-8a07-2765f2cd4f3c" />
+        <suppliersInternal>
+          <interfaceRealization Id="25ec2998-846e-4294-bc69-3e56f6033007">
+            <interfaceMoniker Id="4943062b-5da2-4247-a808-ba642525472f" LastKnownName="Etat" />
+            <elementDefinition Id="6d53bb24-726f-42dc-9e99-209021c25b92" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="eff11ef9-18a4-4b46-999a-45a98f43167d" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="295a58c6-595d-410c-8b0f-e3d6498cefaa" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="3af465bf-7222-4ae4-a005-adf1a332bcc4" name="CanonNoir">
     <elementDefinition Id="d1255448-f23c-4490-af91-82b9caa462ca" />
