@@ -15,21 +15,6 @@
       </annotatedElements>
     </comment>
     <comment
-      Id="783ddd60-55f7-465f-9503-813ec5918d7f">
-      <body>design pattern 
-
-
-?présentateur? 
-
-nom =&gt; mal adapté </body>
-      <annotatedElements>
-        <classMoniker
-          Id="745e0fd8-bef0-4f49-b424-051e82aaef86"
-          LastKnownName="Facade"
-          LastKnownLocation="CanonNoir.uml" />
-      </annotatedElements>
-    </comment>
-    <comment
       Id="e4fe6672-2946-4ec7-bbcf-a72151a89ed3">
       <body>execute() =&gt; qui appel la fonction Motor.de.lanceDe()
 
