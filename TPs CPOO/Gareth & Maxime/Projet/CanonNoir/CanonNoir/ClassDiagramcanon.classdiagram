@@ -8,18 +8,6 @@
         <classMoniker Id="7d0452f3-7dd7-41d0-b084-02ff238f831b" LastKnownName="MoteurJeu" />
       </annotatedElements>
     </comment>
-    <comment Id="eac42fcf-9ac8-42f4-8632-2ff41e006e51">
-      <elementDefinition Id="783ddd60-55f7-465f-9503-813ec5918d7f" />
-      <body>design pattern 
-
-
-?présentateur? 
-
-nom =&gt; mal adapté </body>
-      <annotatedElements>
-        <classMoniker Id="eb228b6e-3d83-46d9-9154-08b4c7ad64de" LastKnownName="Facade" />
-      </annotatedElements>
-    </comment>
     <comment Id="a2a424b5-68d4-4db1-a348-64948db423b3">
       <elementDefinition Id="e4fe6672-2946-4ec7-bbcf-a72151a89ed3" />
       <body>execute() =&gt; qui appel la fonction Motor.de.lanceDe()
