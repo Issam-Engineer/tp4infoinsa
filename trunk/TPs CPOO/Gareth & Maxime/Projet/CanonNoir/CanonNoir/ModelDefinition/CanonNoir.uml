@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="d1255448-f23c-4490-af91-82b9caa462ca"
   name="CanonNoir" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -2045,45 +2045,16 @@ modifiernuméro(j)</body>
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="40128ba6-c40a-4203-a1d6-b0becb6eaee2"
-            isDerived="false"
-            sourceEndRoleName="Moteur"
-            targetEndRoleName="Adaptateur"
-            isLeaf="false"
-            isAbstract="false">
+        <suppliersInternal>
+          <dependency
+            Id="d0ede7ac-4858-47c1-b6f1-b0e35b145f1e">
             <classMoniker
               Id="e8cab352-6da8-48bd-b0db-fe554cf9760a"
               LastKnownName="Adaptateur"
               LastKnownLocation="CanonNoir.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="82bde45a-1fe1-408b-8774-c25e12336265"
-                  name="Moteur"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="1973cee9-6ce4-4d87-9ed1-a9c3d7dc2859"
-                  name="Adaptateur"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
           <association
             Id="f60445ff-98f9-48dd-b35c-82902a578471"
             isDerived="false"
@@ -2695,15 +2666,6 @@ modifiernuméro(j)</body>
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <suppliersInternal>
-          <dependency
-            Id="415762b1-1860-4288-a413-d2741720d674">
-            <classMoniker
-              Id="e8cab352-6da8-48bd-b0db-fe554cf9760a"
-              LastKnownName="Adaptateur"
-              LastKnownLocation="CanonNoir.uml" />
-          </dependency>
-        </suppliersInternal>
         <targetEnds>
           <association
             Id="2810575d-92da-4501-a8a2-72ac8f875c6d"
@@ -2734,6 +2696,45 @@ modifiernuméro(j)</body>
                 <memberEnd
                   Id="1344b975-68d4-4e0f-aac7-0b98818f047c"
                   name="FenetreInit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="01d6e4bb-d86f-4334-b982-1902e39a7ec2"
+            isDerived="false"
+            sourceEndRoleName="AffichageWPF"
+            targetEndRoleName="Adaptateur"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e8cab352-6da8-48bd-b0db-fe554cf9760a"
+              LastKnownName="Adaptateur"
+              LastKnownLocation="CanonNoir.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="24fe08d8-629a-4b5d-b346-48dfd9d5cb76"
+                  name="AffichageWPF"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb95fa96-a131-4671-a526-622aa857a730"
+                  name="Adaptateur"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -10017,6 +10018,486 @@ les bateaus ont une couleur spé !</body>
           </comment>
         </ownedCommentsInternal>
         <fragments>
+          <messageOccurrenceSpecification
+            Id="4593611d-4b3c-4b74-8dcf-2f01305a880f"
+            name="MessageOccurrenceSpecification32">
+            <event>
+              <receiveOperationEventMoniker
+                Id="4b0bffae-7d7d-45fc-bdd5-fa557fab79ba"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
+                LastKnownName=": Facade"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="15ebe6f8-e61c-4daa-9c64-190a9856fe81"
+            name="MessageOccurrenceSpecification31">
+            <event>
+              <sendOperationEventMoniker
+                Id="59f2bd64-f662-4588-99a2-974dd816e956"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
+                LastKnownName=": AffichageWPF"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3d2d019a-0912-4674-81df-81dc0a18ed3b"
+            name="MessageOccurrenceSpecification18">
+            <event>
+              <receiveOperationEventMoniker
+                Id="c4be3ba7-0e34-4e58-953f-304fe0bc7c40"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
+                LastKnownName=": Facade"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9fae7eec-a170-46bf-9762-2bccb30c8d9f"
+            name="MessageOccurrenceSpecification25">
+            <event>
+              <sendOperationEventMoniker
+                Id="34ceba55-8a63-439a-a758-b6a760792429"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="13097816-5636-470e-a0db-9fbecae856f7"
+                LastKnownName=": utilisateurs"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e19c2485-bcbe-4204-9fbf-b2e5f5205b65"
+            name="MessageOccurrenceSpecification17">
+            <event>
+              <sendOperationEventMoniker
+                Id="10289aec-dfa4-41c5-b015-c5b12d1fa52b"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
+                LastKnownName=": AffichageWPF"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c1e4032c-5472-4fcc-93c8-9be5b856cb8c"
+            name="MessageOccurrenceSpecification40">
+            <covered>
+              <lifelineMoniker
+                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
+                LastKnownName=": MoteurJeu"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d9a99883-ce86-4af6-a46e-a8e455cee9d2"
+            name="MessageOccurrenceSpecification43">
+            <covered>
+              <lifelineMoniker
+                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
+                LastKnownName=": MoteurJeu"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dbfa97aa-abfd-495c-90d5-8db21e051034"
+            name="MessageOccurrenceSpecification39">
+            <covered>
+              <lifelineMoniker
+                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
+                LastKnownName=": Facade"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="58e86082-f4b3-4f37-a839-42f31fc70a2b"
+            name="MessageOccurrenceSpecification13">
+            <event>
+              <sendOperationEventMoniker
+                Id="bea699e2-c67c-4101-8d33-db17c9ad1718"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="13097816-5636-470e-a0db-9fbecae856f7"
+                LastKnownName=": utilisateurs"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bf028eb5-a119-4a83-a2a5-fffe90356f0d"
+            name="MessageOccurrenceSpecification14">
+            <event>
+              <receiveOperationEventMoniker
+                Id="40712d0b-4d84-4c13-bed9-082b837eede0"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
+                LastKnownName=": AffichageWPF"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="78e159b3-9123-46b6-8894-a8c869869884"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
+                LastKnownName=": AffichageWPF"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9f124874-5dfa-4bc3-8681-9a423c278e11"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
+                LastKnownName=": AffichageWPF"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f0e89d02-7fd6-45d0-a9ed-b9b783504527"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
+                LastKnownName=": Facade"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9fa0cadd-dc4e-4272-9870-acdbaa85b36e"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
+                LastKnownName=": Facade"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0ced8e59-cfbe-456f-a34b-f05819acca1a"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
+                LastKnownName=": MoteurJeu"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="03325b40-a372-43be-ba71-11540f354e37"
+            name="MessageOccurrenceSpecification22">
+            <event>
+              <receiveOperationEventMoniker
+                Id="c21aac06-1fc7-4ce5-9b00-463ef03e86a0"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
+                LastKnownName=": MoteurJeu"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ac2f9c9e-1956-4b61-947f-e5947039fb5a"
+            name="MessageOccurrenceSpecification26">
+            <event>
+              <receiveOperationEventMoniker
+                Id="d3a6708e-55e1-47ac-93ea-b549c87359f5"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
+                LastKnownName=": AffichageWPF"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1c098d48-4bcd-4bc4-85ce-0ba508b742da"
+            name="MessageOccurrenceSpecification21">
+            <event>
+              <sendOperationEventMoniker
+                Id="2453eb3a-37f5-4ed1-bd1c-4d74e536e913"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
+                LastKnownName=": Facade"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8a49b506-877d-4f0d-b17b-c3449b8fffcf"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="13097816-5636-470e-a0db-9fbecae856f7"
+                LastKnownName=": utilisateurs"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="efab7387-8d8c-4e89-809c-70a5a01b0a4e"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
+                LastKnownName=": MoteurJeu"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="03915538-252f-400b-be7d-1100c0ffcf75"
+            name="MessageOccurrenceSpecification5">
+            <event>
+              <sendOperationEventMoniker
+                Id="ab6d011e-0ce9-40c4-aa8a-ca5fac96328e"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
+                LastKnownName=": AffichageWPF"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7748666f-d439-4516-b5be-de831c0bdc08"
+            name="MessageOccurrenceSpecification34">
+            <covered>
+              <lifelineMoniker
+                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
+                LastKnownName=": AffichageWPF"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ec339034-74a5-4121-9a48-c326fde8e9bc"
+            name="MessageOccurrenceSpecification6">
+            <event>
+              <receiveOperationEventMoniker
+                Id="cce72544-8b95-4ac6-b82e-8b6463811b8d"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
+                LastKnownName=": Facade"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="eeb8ff0a-baeb-429b-b967-e7747e8ec051"
+            name="MessageOccurrenceSpecification41">
+            <covered>
+              <lifelineMoniker
+                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
+                LastKnownName=": MoteurJeu"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f4bffa3d-434e-48bc-8b0c-e0e20a95bcb1"
+            name="MessageOccurrenceSpecification33">
+            <covered>
+              <lifelineMoniker
+                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
+                LastKnownName=": Facade"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="87e09649-f542-47a8-a992-516397c3e011"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="13097816-5636-470e-a0db-9fbecae856f7"
+                LastKnownName=": utilisateurs"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="58834d35-5ec8-4af0-85f9-11d4f7beda5b"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
+                LastKnownName=": MoteurJeu"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="64684980-17c7-4e46-9a87-db3f96be535b"
+            name="MessageOccurrenceSpecification2">
+            <event>
+              <receiveOperationEventMoniker
+                Id="3dc1ccdd-40cc-4412-a31d-7bc7427f2972"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
+                LastKnownName=": AffichageWPF"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="24f02565-5ac8-4887-a12b-651ad9439821"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
+                LastKnownName=": AffichageWPF"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ea192d93-1532-4adb-a1d1-a897127d9cdc"
+            name="MessageOccurrenceSpecification1">
+            <event>
+              <sendOperationEventMoniker
+                Id="b592e8fd-65a4-4157-bdc0-a1de05c8221d"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="13097816-5636-470e-a0db-9fbecae856f7"
+                LastKnownName=": utilisateurs"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a9539d5b-f529-4a09-ab5a-bc23162517e7"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
+                LastKnownName=": Facade"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cac452a0-f245-47ac-bcfd-d1a1b5633995"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
+                LastKnownName=": AffichageWPF"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="efabff91-e9a9-4825-94b6-aaacef898f73"
+            name="MessageOccurrenceSpecification44">
+            <covered>
+              <lifelineMoniker
+                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
+                LastKnownName=": MoteurJeu"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5aeb0637-e1af-4cd8-a7be-5d914235afe5"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
+                LastKnownName=": AffichageWPF"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ce8a3d46-a98b-409e-a450-79b96e660d17"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="13097816-5636-470e-a0db-9fbecae856f7"
+                LastKnownName=": utilisateurs"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7ec01b8d-0c98-4175-98f2-bcc789877763"
+            name="MessageOccurrenceSpecification10">
+            <event>
+              <receiveOperationEventMoniker
+                Id="93675044-43fc-49b8-90ad-ad79093e49be"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
+                LastKnownName=": MoteurJeu"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c0371781-acfb-4415-97ea-4325d1c38aaa"
+            name="MessageOccurrenceSpecification9">
+            <event>
+              <sendOperationEventMoniker
+                Id="7fb95024-419f-4316-ac40-d9eae0f29418"
+                LastKnownLocation="CanonNoir.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
+                LastKnownName=": Facade"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ede97d82-3eb9-4935-9ba0-7f41333ac123"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
+                LastKnownName=": MoteurJeu"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1291dfd7-f8b1-419b-9bd9-84e5d7ca9993"
+            name="MessageOccurrenceSpecification42">
+            <covered>
+              <lifelineMoniker
+                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
+                LastKnownName=": Facade"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="839d1fb8-a434-4280-9ada-2b751d2d37d6"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
+                LastKnownName=": Facade"
+                LastKnownLocation="CanonNoir.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="8e61eba0-61d6-48d8-872d-8649a12a45ed"
             name="BehaviorExecutionSpecification1">
@@ -10075,36 +10556,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="64684980-17c7-4e46-9a87-db3f96be535b"
-            name="MessageOccurrenceSpecification2">
-            <event>
-              <receiveOperationEventMoniker
-                Id="3dc1ccdd-40cc-4412-a31d-7bc7427f2972"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
-                LastKnownName=": AffichageWPF"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="ea192d93-1532-4adb-a1d1-a897127d9cdc"
-            name="MessageOccurrenceSpecification1">
-            <event>
-              <sendOperationEventMoniker
-                Id="b592e8fd-65a4-4157-bdc0-a1de05c8221d"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="13097816-5636-470e-a0db-9fbecae856f7"
-                LastKnownName=": utilisateurs"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="d3e3059f-12d9-4d19-aa6c-d847cbc68291"
             name="BehaviorExecutionSpecification2">
@@ -10163,36 +10614,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="03915538-252f-400b-be7d-1100c0ffcf75"
-            name="MessageOccurrenceSpecification5">
-            <event>
-              <sendOperationEventMoniker
-                Id="ab6d011e-0ce9-40c4-aa8a-ca5fac96328e"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
-                LastKnownName=": AffichageWPF"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="ec339034-74a5-4121-9a48-c326fde8e9bc"
-            name="MessageOccurrenceSpecification6">
-            <event>
-              <receiveOperationEventMoniker
-                Id="cce72544-8b95-4ac6-b82e-8b6463811b8d"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
-                LastKnownName=": Facade"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="88e57244-78d1-40a7-bd7d-21e6e048a487"
             name="BehaviorExecutionSpecification3">
@@ -10243,56 +10664,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="c0371781-acfb-4415-97ea-4325d1c38aaa"
-            name="MessageOccurrenceSpecification9">
-            <event>
-              <sendOperationEventMoniker
-                Id="7fb95024-419f-4316-ac40-d9eae0f29418"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
-                LastKnownName=": Facade"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="7ec01b8d-0c98-4175-98f2-bcc789877763"
-            name="MessageOccurrenceSpecification10">
-            <event>
-              <receiveOperationEventMoniker
-                Id="93675044-43fc-49b8-90ad-ad79093e49be"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
-                LastKnownName=": MoteurJeu"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="ede97d82-3eb9-4935-9ba0-7f41333ac123"
-            name="MessageOccurrenceSpecification11">
-            <covered>
-              <lifelineMoniker
-                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
-                LastKnownName=": MoteurJeu"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="839d1fb8-a434-4280-9ada-2b751d2d37d6"
-            name="MessageOccurrenceSpecification12">
-            <covered>
-              <lifelineMoniker
-                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
-                LastKnownName=": Facade"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
             Id="6391a931-6051-491d-bdb0-e62215015ffa"
             name="ExecutionOccurrenceSpecification6">
@@ -10311,26 +10682,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="cac452a0-f245-47ac-bcfd-d1a1b5633995"
-            name="MessageOccurrenceSpecification8">
-            <covered>
-              <lifelineMoniker
-                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
-                LastKnownName=": AffichageWPF"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="a9539d5b-f529-4a09-ab5a-bc23162517e7"
-            name="MessageOccurrenceSpecification7">
-            <covered>
-              <lifelineMoniker
-                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
-                LastKnownName=": Facade"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
             Id="3867b8e7-9ed9-4eb5-8335-69224029dc86"
             name="ExecutionOccurrenceSpecification4">
@@ -10349,26 +10700,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="ce8a3d46-a98b-409e-a450-79b96e660d17"
-            name="MessageOccurrenceSpecification4">
-            <covered>
-              <lifelineMoniker
-                Id="13097816-5636-470e-a0db-9fbecae856f7"
-                LastKnownName=": utilisateurs"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="5aeb0637-e1af-4cd8-a7be-5d914235afe5"
-            name="MessageOccurrenceSpecification3">
-            <covered>
-              <lifelineMoniker
-                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
-                LastKnownName=": AffichageWPF"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
             Id="8f13ab96-419b-472c-9420-82dd11e1ff40"
             name="ExecutionOccurrenceSpecification2">
@@ -10445,36 +10776,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="bf028eb5-a119-4a83-a2a5-fffe90356f0d"
-            name="MessageOccurrenceSpecification14">
-            <event>
-              <receiveOperationEventMoniker
-                Id="40712d0b-4d84-4c13-bed9-082b837eede0"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
-                LastKnownName=": AffichageWPF"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="58e86082-f4b3-4f37-a839-42f31fc70a2b"
-            name="MessageOccurrenceSpecification13">
-            <event>
-              <sendOperationEventMoniker
-                Id="bea699e2-c67c-4101-8d33-db17c9ad1718"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="13097816-5636-470e-a0db-9fbecae856f7"
-                LastKnownName=": utilisateurs"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="06d6d46a-b545-497f-a92b-0bdd86a66931"
             name="BehaviorExecutionSpecification5">
@@ -10533,36 +10834,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="3d2d019a-0912-4674-81df-81dc0a18ed3b"
-            name="MessageOccurrenceSpecification18">
-            <event>
-              <receiveOperationEventMoniker
-                Id="c4be3ba7-0e34-4e58-953f-304fe0bc7c40"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
-                LastKnownName=": Facade"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="e19c2485-bcbe-4204-9fbf-b2e5f5205b65"
-            name="MessageOccurrenceSpecification17">
-            <event>
-              <sendOperationEventMoniker
-                Id="10289aec-dfa4-41c5-b015-c5b12d1fa52b"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
-                LastKnownName=": AffichageWPF"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="4bf4bca5-f33a-4bca-bb5f-78310be66eac"
             name="BehaviorExecutionSpecification6">
@@ -10625,46 +10896,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="03325b40-a372-43be-ba71-11540f354e37"
-            name="MessageOccurrenceSpecification22">
-            <event>
-              <receiveOperationEventMoniker
-                Id="c21aac06-1fc7-4ce5-9b00-463ef03e86a0"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
-                LastKnownName=": MoteurJeu"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="1c098d48-4bcd-4bc4-85ce-0ba508b742da"
-            name="MessageOccurrenceSpecification21">
-            <event>
-              <sendOperationEventMoniker
-                Id="2453eb3a-37f5-4ed1-bd1c-4d74e536e913"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
-                LastKnownName=": Facade"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="efab7387-8d8c-4e89-809c-70a5a01b0a4e"
-            name="MessageOccurrenceSpecification29">
-            <covered>
-              <lifelineMoniker
-                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
-                LastKnownName=": MoteurJeu"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="19ea9b20-609d-4fd1-9ffb-0c1fe00bf455"
             name="BehaviorExecutionSpecification8">
@@ -10711,16 +10942,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="58834d35-5ec8-4af0-85f9-11d4f7beda5b"
-            name="MessageOccurrenceSpecification30">
-            <covered>
-              <lifelineMoniker
-                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
-                LastKnownName=": MoteurJeu"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
             Id="87b541db-386c-4834-9425-2df2eaade7e5"
             name="ExecutionOccurrenceSpecification16">
@@ -10739,26 +10960,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="0ced8e59-cfbe-456f-a34b-f05819acca1a"
-            name="MessageOccurrenceSpecification23">
-            <covered>
-              <lifelineMoniker
-                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
-                LastKnownName=": MoteurJeu"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="9fa0cadd-dc4e-4272-9870-acdbaa85b36e"
-            name="MessageOccurrenceSpecification24">
-            <covered>
-              <lifelineMoniker
-                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
-                LastKnownName=": Facade"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
             Id="9163aae7-9142-41ce-80ce-1b8f488a4481"
             name="ExecutionOccurrenceSpecification12">
@@ -10777,26 +10978,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="f0e89d02-7fd6-45d0-a9ed-b9b783504527"
-            name="MessageOccurrenceSpecification19">
-            <covered>
-              <lifelineMoniker
-                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
-                LastKnownName=": Facade"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="78e159b3-9123-46b6-8894-a8c869869884"
-            name="MessageOccurrenceSpecification20">
-            <covered>
-              <lifelineMoniker
-                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
-                LastKnownName=": AffichageWPF"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
             Id="375510ef-3eeb-4948-82ba-64da7f550df8"
             name="ExecutionOccurrenceSpecification10">
@@ -10815,26 +10996,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="9f124874-5dfa-4bc3-8681-9a423c278e11"
-            name="MessageOccurrenceSpecification15">
-            <covered>
-              <lifelineMoniker
-                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
-                LastKnownName=": AffichageWPF"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="8a49b506-877d-4f0d-b17b-c3449b8fffcf"
-            name="MessageOccurrenceSpecification16">
-            <covered>
-              <lifelineMoniker
-                Id="13097816-5636-470e-a0db-9fbecae856f7"
-                LastKnownName=": utilisateurs"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
             Id="bf6fa5ca-8b9c-49d6-be48-67dbf44a82c0"
             name="ExecutionOccurrenceSpecification8">
@@ -10911,36 +11072,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="ac2f9c9e-1956-4b61-947f-e5947039fb5a"
-            name="MessageOccurrenceSpecification26">
-            <event>
-              <receiveOperationEventMoniker
-                Id="d3a6708e-55e1-47ac-93ea-b549c87359f5"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
-                LastKnownName=": AffichageWPF"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="9fae7eec-a170-46bf-9762-2bccb30c8d9f"
-            name="MessageOccurrenceSpecification25">
-            <event>
-              <sendOperationEventMoniker
-                Id="34ceba55-8a63-439a-a758-b6a760792429"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="13097816-5636-470e-a0db-9fbecae856f7"
-                LastKnownName=": utilisateurs"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="e955002e-d12c-4b4e-b9cf-14588c39b9ea"
             name="BehaviorExecutionSpecification9">
@@ -10999,36 +11130,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="4593611d-4b3c-4b74-8dcf-2f01305a880f"
-            name="MessageOccurrenceSpecification32">
-            <event>
-              <receiveOperationEventMoniker
-                Id="4b0bffae-7d7d-45fc-bdd5-fa557fab79ba"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
-                LastKnownName=": Facade"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="15ebe6f8-e61c-4daa-9c64-190a9856fe81"
-            name="MessageOccurrenceSpecification31">
-            <event>
-              <sendOperationEventMoniker
-                Id="59f2bd64-f662-4588-99a2-974dd816e956"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
-                LastKnownName=": AffichageWPF"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="660fe6db-78b7-4122-a85a-30ce2853a230"
             name="BehaviorExecutionSpecification11">
@@ -11091,36 +11192,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="dbfa97aa-abfd-495c-90d5-8db21e051034"
-            name="MessageOccurrenceSpecification39">
-            <covered>
-              <lifelineMoniker
-                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
-                LastKnownName=": Facade"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="c1e4032c-5472-4fcc-93c8-9be5b856cb8c"
-            name="MessageOccurrenceSpecification40">
-            <covered>
-              <lifelineMoniker
-                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
-                LastKnownName=": MoteurJeu"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="d9a99883-ce86-4af6-a46e-a8e455cee9d2"
-            name="MessageOccurrenceSpecification43">
-            <covered>
-              <lifelineMoniker
-                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
-                LastKnownName=": MoteurJeu"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="1d7be422-f762-464b-877b-67ec7b852339"
             name="BehaviorExecutionSpecification12">
@@ -11167,16 +11238,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="efabff91-e9a9-4825-94b6-aaacef898f73"
-            name="MessageOccurrenceSpecification44">
-            <covered>
-              <lifelineMoniker
-                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
-                LastKnownName=": MoteurJeu"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
             Id="0b35e718-7aea-4435-8ceb-18378dff0ede"
             name="ExecutionOccurrenceSpecification24">
@@ -11195,26 +11256,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="1291dfd7-f8b1-419b-9bd9-84e5d7ca9993"
-            name="MessageOccurrenceSpecification42">
-            <covered>
-              <lifelineMoniker
-                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
-                LastKnownName=": Facade"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="eeb8ff0a-baeb-429b-b967-e7747e8ec051"
-            name="MessageOccurrenceSpecification41">
-            <covered>
-              <lifelineMoniker
-                Id="e9cfc20d-fe4a-4b33-b44d-8aafceb7f84a"
-                LastKnownName=": MoteurJeu"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
             Id="3f1445ba-7917-48ee-ba8d-5e3dd390cd00"
             name="ExecutionOccurrenceSpecification22">
@@ -11233,26 +11274,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="f4bffa3d-434e-48bc-8b0c-e0e20a95bcb1"
-            name="MessageOccurrenceSpecification33">
-            <covered>
-              <lifelineMoniker
-                Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
-                LastKnownName=": Facade"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="7748666f-d439-4516-b5be-de831c0bdc08"
-            name="MessageOccurrenceSpecification34">
-            <covered>
-              <lifelineMoniker
-                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
-                LastKnownName=": AffichageWPF"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
             Id="28c7acd9-3bc9-4cbd-b28e-3461bac97fed"
             name="ExecutionOccurrenceSpecification18">
@@ -11271,26 +11292,6 @@ les bateaus ont une couleur spé !</body>
                 LastKnownLocation="CanonNoir.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="24f02565-5ac8-4887-a12b-651ad9439821"
-            name="MessageOccurrenceSpecification27">
-            <covered>
-              <lifelineMoniker
-                Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
-                LastKnownName=": AffichageWPF"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="87e09649-f542-47a8-a992-516397c3e011"
-            name="MessageOccurrenceSpecification28">
-            <covered>
-              <lifelineMoniker
-                Id="13097816-5636-470e-a0db-9fbecae856f7"
-                LastKnownName=": utilisateurs"
-                LastKnownLocation="CanonNoir.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
             Id="f6ed6c47-3835-4f6a-b29a-31ade6da113d"
             name="ExecutionOccurrenceSpecification14">
@@ -12198,6 +12199,32 @@ les bateaus ont une couleur spé !</body>
       <executionEvent
         Id="f8b59e3a-e771-4f61-a98d-3e53b94fd5f9"
         name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="04877165-0f26-4cba-ac0b-1a38dbf41f87"
+        LastKnownName="Package2"
+        LastKnownLocation="Package_1906.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ee31c798-2bcd-43fc-a540-76e7408e1977"
+        LastKnownName="Moteur"
+        LastKnownLocation="Package1_1906.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3794aa30-ca2e-47cb-b4d5-5bc768e05b46"
+        name="Adaptateur"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1cf35461-f9b3-4459-899d-186352213d76"
+        LastKnownName="AffichageWPF"
+        LastKnownLocation="Package_1907.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
