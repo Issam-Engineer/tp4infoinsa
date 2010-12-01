@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="571bede5-5460-4e51-98bb-24bf9d8936c6">
       <elementDefinition Id="6536fcb9-b86d-466c-9434-d4f4e1ee87b7" />
@@ -951,11 +951,11 @@ j_indJoueur = 0 </body>
           <property Id="211a17ab-6b2f-4e90-bba9-22c571cc51a2" name="clicDepart" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="e8a170be-8e69-4133-858b-249b5664ae5c" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+              <referencedTypeMoniker Id="03654535-c761-4a3f-ba32-3f6af0c4f0a1" LastKnownName="bool" />
             </type_NamedElement>
             <defaultValue>
-              <literalString Id="e20a8779-50e1-4d76-84c1-03a2e0b29a28" name="DefaultValue" value="false">
-                <elementDefinition Id="7d907be1-499d-452e-bf1b-33f7012e48b5" />
+              <literalString Id="061bee0b-aa3c-4585-8f00-8144c7eb2a0e" name="DefaultValue" value="true">
+                <elementDefinition Id="74cbc8fd-5c0b-4977-b17a-c64c74d81027" />
               </literalString>
             </defaultValue>
           </property>
@@ -995,11 +995,11 @@ j_indJoueur = 0 </body>
           <property Id="c82ad918-f938-4504-b75c-2a6566d9a3af" name="clicNbJoueurs" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f958e0f1-2bef-4a5b-893e-32a9a27300db" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="c00c35ea-6a1d-4c73-961c-4c8cbfe4df4f" LastKnownName="bool" />
+              <referencedTypeMoniker Id="57fd44af-9925-48f6-95a4-610721de4911" LastKnownName="bool" />
             </type_NamedElement>
             <defaultValue>
-              <literalString Id="aff16930-d9ab-43d1-97bc-27874fbb63e3" name="DefaultValue" value="false">
-                <elementDefinition Id="98759392-dbc5-4af7-95aa-b943b703740e" />
+              <literalString Id="29772e18-fd23-4f7c-ba47-9e1574fdceb7" name="DefaultValue" value="true">
+                <elementDefinition Id="273e8eb5-ddde-4067-822e-a640470a418d" />
               </literalString>
             </defaultValue>
           </property>
@@ -1042,6 +1042,12 @@ j_indJoueur = 0 </body>
                 <elementDefinition Id="c3c1d763-1bec-4741-b04a-750cb72ffdda" />
               </literalString>
             </defaultValue>
+          </property>
+          <property Id="b36ee76c-0b19-474c-879c-9e5bf9206aeb" name="tempJoueurs" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="db4cc38b-9a3b-4e5a-ab47-6ac00bd61449" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a71c78ed-d2ac-4cd2-8756-ed3f0c78b893" LastKnownName="Joueurs[]" />
+            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
@@ -1698,6 +1704,9 @@ j_indJoueur = 0 </body>
           <operation Id="f908d759-36fc-4438-bf65-44aa278c29fe" name="raffraichir" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="e3a0aad1-2d72-46eb-9898-b3c7abdbf3c6" />
           </operation>
+          <operation Id="c5479254-096f-4487-afc9-e71e15a1a2d9" name="clicNbJoueurs3" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a50e9e1b-9d75-4552-a02f-98a6f62fe384" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -1740,6 +1749,21 @@ j_indJoueur = 0 </body>
     <packageHasNamedElement>
       <referencedType Id="a70b7d37-9081-441c-9d21-bdec781ace60" name="pair&lt;int,int&gt;" isAbstract="false" isLeaf="false" cachedFullName="pair&lt;int,int&gt;">
         <elementDefinition Id="f05a02ec-cdd4-42ab-a9f0-8ea9255e81b7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="03654535-c761-4a3f-ba32-3f6af0c4f0a1" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="9747b71b-5760-4947-a400-dd891fa273cf" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="57fd44af-9925-48f6-95a4-610721de4911" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="9747b71b-5760-4947-a400-dd891fa273cf" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a71c78ed-d2ac-4cd2-8756-ed3f0c78b893" name="Joueurs[]" isAbstract="false" isLeaf="false" cachedFullName="Joueurs[]">
+        <elementDefinition Id="d3b00a73-f9d8-4dc7-97c9-24385dfae00b" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
