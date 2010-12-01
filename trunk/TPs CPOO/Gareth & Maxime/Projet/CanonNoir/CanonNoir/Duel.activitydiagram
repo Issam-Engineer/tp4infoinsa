@@ -39,22 +39,22 @@
                 <opaqueActionMoniker Id="eb2ace1d-ffcd-49b5-a4c3-205f08570581" LastKnownName="inverser  Attaquant/attaqué" />
                 <elementDefinition Id="867b8907-7d3d-407f-a12d-b30bc69cd76f" />
               </controlFlow>
-              <controlFlow Id="34c390e6-ef03-46d6-994e-d913bf8ed30d" guard="tabJoueurs[indAdversaire].getBateau(i).typeBateau() == radeau" isLeaf="false">
-                <opaqueActionMoniker Id="44ccadb5-1ef2-44e3-869a-a37297a6622b" LastKnownName="Attaquant récupère trésor" />
-                <elementDefinition Id="f7841f5e-2002-4951-8f52-b8615802464a" />
-              </controlFlow>
               <controlFlow Id="ca8dec14-c504-46f4-8704-aa6bad9ff89e" guard="loupé &amp;&amp; ntir=2" isLeaf="false">
                 <mergeNodeMoniker Id="da5d5798-0e82-467d-ae4f-7806ca222a02" LastKnownName="Merge1" />
                 <elementDefinition Id="d7c1e6b1-dd7d-457c-9908-d2c6c5216c11" />
+              </controlFlow>
+              <controlFlow Id="9605be39-4d6e-4145-ae77-a6121558d4dc" isLeaf="false">
+                <sendSignalActionMoniker Id="3be6af11-a648-40a1-bf9b-5d8dfd132a06" LastKnownName="Afficher &quot;Touché!&quot;" />
+                <elementDefinition Id="b9cbd457-93e9-49ba-8849-478b757562a8" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
           <opaqueAction Id="b7b82ff8-b9eb-47ed-9830-5288274dc491" name="Définir Attaquant /Attaqué" isLeaf="false">
             <elementDefinition Id="92a693af-09fb-4e59-b174-cb50b33ac90e" />
             <flowNodeTargets>
-              <controlFlow Id="b93e397a-e3a3-4890-a326-e713c212911d" isLeaf="false">
-                <acceptEventActionMoniker Id="635e562d-3c64-420f-8a43-23a036d1b222" LastKnownName="Paramétrer la puissance" />
-                <elementDefinition Id="0341842c-396e-4047-b281-2a257f9467fa" />
+              <controlFlow Id="b9b6af4a-fe7d-42a7-92e1-db61562ca30c" isLeaf="false">
+                <sendSignalActionMoniker Id="ba9d1322-8dc7-4824-bbc5-4fa6462c8fe4" LastKnownName="afficher Attaquant" />
+                <elementDefinition Id="59f6512d-d873-4d87-8ccf-e27c443d5aa4" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -175,12 +175,60 @@
           </sendSignalAction>
           <mergeNode Id="da5d5798-0e82-467d-ae4f-7806ca222a02" name="Merge1" isLeaf="false">
             <elementDefinition Id="535c7a8a-ec1d-4a53-80f2-56ff2269a674" />
+            <flowNodeTargets>
+              <controlFlow Id="c0d78e85-82be-4d45-9b73-77a5eeab9009" isLeaf="false">
+                <opaqueActionMoniker Id="19b99ee1-6caa-46c4-b898-67a56d853366" LastKnownName="Fermer la fenêtre" />
+                <elementDefinition Id="654b60fd-92f4-4c1d-a6ff-1f90c5995bb2" />
+              </controlFlow>
+            </flowNodeTargets>
           </mergeNode>
           <opaqueAction Id="19b99ee1-6caa-46c4-b898-67a56d853366" name="Fermer la fenêtre" isLeaf="false">
             <elementDefinition Id="2575d123-c36e-4ae5-b9b1-4510c7ed4d04" />
+            <flowNodeTargets>
+              <controlFlow Id="8d2253c4-e6b9-45cd-b766-31dc5036c777" isLeaf="false">
+                <activityFinalNodeMoniker Id="9c5d3d4a-a3a0-4afd-a1d7-54f2258b2e89" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="517e2796-d9f1-487d-be0b-a5bb1554c0f5" />
+              </controlFlow>
+            </flowNodeTargets>
           </opaqueAction>
           <opaqueAction Id="f7b16ec8-802b-475a-b49e-48bae16ad967" name="Attaqué perd son trésor" isLeaf="false">
             <elementDefinition Id="d785f7ab-b92a-4ed1-a0b9-cd1a4a218f16" />
+          </opaqueAction>
+          <sendSignalAction Id="ba9d1322-8dc7-4824-bbc5-4fa6462c8fe4" name="afficher Attaquant" isLeaf="false">
+            <elementDefinition Id="f0e63df3-97ed-461d-b036-910f96b861ad" />
+            <flowNodeTargets>
+              <controlFlow Id="ca9c7dd7-db7b-42af-bd16-38bbd64ae080" isLeaf="false">
+                <sendSignalActionMoniker Id="be923807-26c7-42fd-8468-3d8233303415" LastKnownName="afficher Attaqué" />
+                <elementDefinition Id="b5b4d8a1-a6a6-498d-b801-860860e1c865" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <sendSignalAction Id="be923807-26c7-42fd-8468-3d8233303415" name="afficher Attaqué" isLeaf="false">
+            <elementDefinition Id="661ff5c6-9295-4c79-ae1d-3e247f4a9e22" />
+            <flowNodeTargets>
+              <controlFlow Id="58085d94-98cd-4a77-a2d6-c6f5c7348438" isLeaf="false">
+                <acceptEventActionMoniker Id="635e562d-3c64-420f-8a43-23a036d1b222" LastKnownName="Paramétrer la puissance" />
+                <elementDefinition Id="8f4223a8-6d35-4cdb-9d14-89f23b18cf2f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <sendSignalAction Id="3be6af11-a648-40a1-bf9b-5d8dfd132a06" name="Afficher &quot;Touché!&quot;" isLeaf="false">
+            <elementDefinition Id="97d1a0ef-7647-4b06-9506-4a9e452a5da0" />
+            <flowNodeTargets>
+              <controlFlow Id="096cf9f1-a131-49f6-9d68-c4b499e3b65b" isLeaf="false">
+                <opaqueActionMoniker Id="44ccadb5-1ef2-44e3-869a-a37297a6622b" LastKnownName="Attaquant récupère trésor" />
+                <elementDefinition Id="b9314d87-126d-4264-a19b-00308599041a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <opaqueAction Id="7ed0f76c-afb8-4013-832e-51468a5d4697" name="Attaqué regresse de bateau" isLeaf="false">
+            <elementDefinition Id="5fe6e782-e2d2-4ce1-bd10-9737ce6c9cd7" />
+            <flowNodeTargets>
+              <controlFlow Id="0c50de84-22d0-4e90-9f4f-0ab1c9353a6f" isLeaf="false">
+                <mergeNodeMoniker Id="da5d5798-0e82-467d-ae4f-7806ca222a02" LastKnownName="Merge1" />
+                <elementDefinition Id="1a000acb-79d6-41c6-b10d-8016f9fa0761" />
+              </controlFlow>
+            </flowNodeTargets>
           </opaqueAction>
         </nodes>
       </activity>
