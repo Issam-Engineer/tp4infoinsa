@@ -17,6 +17,13 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
   <ItemGroup>
+    <Content Include="EtatsTransitions.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="EtatsTransitions.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>EtatsTransitions.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Package1_1906.uml">
       <SubType>Content</SubType>
     </Content>
