@@ -10,9 +10,9 @@
       </nestedChildShapes>
     </classShape>
     <packageShape Id="bd53e5a1-c12c-4286-96d1-ff656625d902" absoluteBounds="5.625, 1.25, 1.875, 1" customColor="255, 249, 230" hideQualifiedName="false">
-      <packageMoniker Id="464fb8b0-cb7e-4d81-8e17-fb8a9a869c35" LastKnownName="Moteur" />
+      <packageMoniker Id="464fb8b0-cb7e-4d81-8e17-fb8a9a869c35" LastKnownName="MoteurJeu" />
     </packageShape>
-    <dependencyConnector edgePoints="[(5.625 : 1.8125); (5.125 : 1.8125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <dependencyConnector edgePoints="[(5.625 : 1.8125); (5.125 : 1.8125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <dependencyMoniker Id="0f76ec5e-1108-4f68-acd9-12baef75a938" />
       <relativeChildShapes />
       <nodes>
@@ -23,7 +23,7 @@
     <packageShape Id="307a0284-a781-452e-b3ab-7aff1f8245e1" absoluteBounds="1.25, 1.25, 1.875, 1" customColor="255, 249, 230" hideQualifiedName="false">
       <packageMoniker Id="548258fb-0562-4d8d-8dad-c1881c4fdd2a" LastKnownName="AffichageWPF" />
     </packageShape>
-    <dependencyConnector edgePoints="[(3.125 : 1.8125); (3.625 : 1.8125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <dependencyConnector edgePoints="[(3.125 : 1.8125); (3.625 : 1.8125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <dependencyMoniker Id="849142e6-2f03-433e-8227-1a7009b7932a" />
       <relativeChildShapes />
       <nodes>
