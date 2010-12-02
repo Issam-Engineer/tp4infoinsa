@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="437db670-5bda-4f41-aa9d-baad3ea6f3da" name="EtatsTransitions" linkedPackageId="666e3ac2-4de9-4edf-9b29-1cf2c46c64d8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="437db670-5bda-4f41-aa9d-baad3ea6f3da" name="EtatsTransitions" linkedPackageId="666e3ac2-4de9-4edf-9b29-1cf2c46c64d8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="3efea7b0-09eb-4822-9a85-795cdd5ae5ef" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="75d8ab5e-355c-45eb-bd24-00608fdb6e78" />
@@ -163,7 +163,7 @@
                 <callOperationActionMoniker Id="9daa5636-0021-4cad-9d60-8289eda9801f" LastKnownName="EtatTresor" />
                 <elementDefinition Id="65a85014-f0d0-4355-8ebd-0394d9c481c1" />
               </controlFlow>
-              <controlFlow Id="64374b78-2aac-4561-9fbd-9343fd4ffebe" isLeaf="false">
+              <controlFlow Id="64374b78-2aac-4561-9fbd-9343fd4ffebe" guard="caseCourante == caseCanon" isLeaf="false">
                 <callOperationActionMoniker Id="cc1e5c10-edef-452a-b0d1-d40c92183875" LastKnownName="EtatTir" />
                 <elementDefinition Id="381acd35-3151-4662-9d87-5817c3dba4ec" />
               </controlFlow>
@@ -282,7 +282,7 @@
                 <callOperationActionMoniker Id="cc1e5c10-edef-452a-b0d1-d40c92183875" LastKnownName="EtatTir" />
                 <elementDefinition Id="217c250e-ee9d-4037-ac43-f8f994d64695" />
               </controlFlow>
-              <controlFlow Id="6569f061-e388-474e-92a3-f2118557df41" isLeaf="false">
+              <controlFlow Id="6569f061-e388-474e-92a3-f2118557df41" guard="clicRefuserDuel == true" isLeaf="false">
                 <callOperationActionMoniker Id="4fa0d7dd-c362-4314-a666-f6c20418107d" LastKnownName="AttenteLancerDe" />
                 <elementDefinition Id="355a8fa6-8262-4efb-951f-77b970d0d76f" />
               </controlFlow>
@@ -295,7 +295,7 @@
                 <callOperationActionMoniker Id="cc1e5c10-edef-452a-b0d1-d40c92183875" LastKnownName="EtatTir" />
                 <elementDefinition Id="01919191-2413-4298-a066-13ab6d5fdf55" />
               </controlFlow>
-              <controlFlow Id="2cf6a1da-64dc-4dc7-9ef0-f821638cb2c9" isLeaf="false">
+              <controlFlow Id="2cf6a1da-64dc-4dc7-9ef0-f821638cb2c9" guard="nbTirs = 2 || (tirLoupé == false &amp;&amp; bateauAdversaire != radeau" isLeaf="false">
                 <callOperationActionMoniker Id="4fa0d7dd-c362-4314-a666-f6c20418107d" LastKnownName="AttenteLancerDe" />
                 <elementDefinition Id="f71c765c-134c-42bd-9b90-81bc5c984e0d" />
               </controlFlow>

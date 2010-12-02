@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="d1255448-f23c-4490-af91-82b9caa462ca"
   name="CanonNoir" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -22524,6 +22524,7 @@ les bateaus ont une couleur spé !</body>
               </controlFlow>
               <controlFlow
                 Id="381acd35-3151-4662-9d87-5817c3dba4ec"
+                guard="caseCourante == caseCanon"
                 isLeaf="false">
                 <callOperationActionMoniker
                   Id="2d7a632b-c893-47c1-bfe7-a779d1d93cf9"
@@ -22735,6 +22736,7 @@ les bateaus ont une couleur spé !</body>
               </controlFlow>
               <controlFlow
                 Id="355a8fa6-8262-4efb-951f-77b970d0d76f"
+                guard="clicRefuserDuel == true"
                 isLeaf="false">
                 <callOperationActionMoniker
                   Id="1501457a-d7d2-409e-a557-98cedaed7cc0"
@@ -22758,6 +22760,7 @@ les bateaus ont une couleur spé !</body>
               </controlFlow>
               <controlFlow
                 Id="f71c765c-134c-42bd-9b90-81bc5c984e0d"
+                guard="nbTirs = 2 || (tirLoupé == false &amp;&amp; bateauAdversaire != radeau"
                 isLeaf="false">
                 <callOperationActionMoniker
                   Id="1501457a-d7d2-409e-a557-98cedaed7cc0"
