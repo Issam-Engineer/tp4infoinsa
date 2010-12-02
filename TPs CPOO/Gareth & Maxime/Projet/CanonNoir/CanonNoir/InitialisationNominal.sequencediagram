@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="0ab3afaf-9a9a-45de-9333-101971beef1c" name="Initialisation" linkedPackageId="8ba29d6b-cef5-40af-9282-f0da26707b9e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="0ab3afaf-9a9a-45de-9333-101971beef1c" name="Initialisation" linkedPackageId="8ba29d6b-cef5-40af-9282-f0da26707b9e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="0b317b1c-ce66-4d79-a6e3-db1917995068" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="75d8ab5e-355c-45eb-bd24-00608fdb6e78" />
@@ -1538,7 +1538,7 @@
           </lifeline>
         </lifelines>
         <messages>
-          <message Id="a49ad66b-ff49-425e-8df9-025a77d2285e" name="ClicBoutonDepart" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="a49ad66b-ff49-425e-8df9-025a77d2285e" name="clic sur le bouton pour commencer la partie" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicLancerPartie()">
             <elementDefinition Id="deed27fa-129f-4729-acef-46997f2170c4" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="2bc1b0b3-5652-487e-ad66-c57c0c39021f" LastKnownName="MessageOccurrenceSpecification1" />
@@ -1565,7 +1565,7 @@
               <messageOccurrenceSpecificationMoniker Id="27064258-1a23-47bc-b35c-8d87afdbfbc9" LastKnownName="MessageOccurrenceSpecification6" />
             </receiveEvent>
           </message>
-          <message Id="acf0f450-f112-439d-9eeb-631cf886b00d" name="creerFenetre() &amp;&amp; rafraichir() " messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="acf0f450-f112-439d-9eeb-631cf886b00d" name="creerFenetreInit() &amp;&amp; rafraichir() " messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="bf42187b-4cf5-40e6-9bf3-ff86b3b2bf2e" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="6a66ceda-aa36-42f5-a48c-fcce5a9ceaf0" LastKnownName="MessageOccurrenceSpecification7" />
@@ -1574,7 +1574,7 @@
               <messageOccurrenceSpecificationMoniker Id="f13890fc-fe29-443a-97f2-1dff05afe321" LastKnownName="MessageOccurrenceSpecification8" />
             </receiveEvent>
           </message>
-          <message Id="4e51de9e-b3cb-468e-9875-ad892a8e66d0" name="LancerJeu" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ setEtat(AttenteInitialisation)">
+          <message Id="4e51de9e-b3cb-468e-9875-ad892a8e66d0" name="LancerJeu" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ setEtat(AttenteNbJoueurs)">
             <elementDefinition Id="8acb879b-18a1-4af3-9464-2bb830556e3c" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="08f1875e-8ac6-43d7-a215-73fbbbb79c61" LastKnownName="MessageOccurrenceSpecification9" />
@@ -1583,7 +1583,7 @@
               <messageOccurrenceSpecificationMoniker Id="47512819-5f1d-4aa8-8110-7bc304855d02" LastKnownName="MessageOccurrenceSpecification10" />
             </receiveEvent>
           </message>
-          <message Id="88683427-c6ad-4f98-8ca2-ac4c863a8746" name="initialiser() " messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="88683427-c6ad-4f98-8ca2-ac4c863a8746" name="ouvrirFenetreInit()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="0277fe29-f2c5-487c-a448-44c9fdf2ab0f" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="447f04fb-2628-49ca-948e-c7b89c2dc232" LastKnownName="MessageOccurrenceSpecification11" />
@@ -1592,7 +1592,7 @@
               <messageOccurrenceSpecificationMoniker Id="cf5b2d1d-11da-42c5-acbb-b274ba0c6302" LastKnownName="MessageOccurrenceSpecification12" />
             </receiveEvent>
           </message>
-          <message Id="63ac300d-8cf2-45bb-822f-bd703a4fb9ad" name="fenetre d'initialisation" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+          <message Id="63ac300d-8cf2-45bb-822f-bd703a4fb9ad" name="ouverture de fenetre d'initialisation" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
             <elementDefinition Id="868cdfb9-deb2-435e-bf32-fc60a4caf60f" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="51f05144-e96c-4701-bc06-4caa6fd08fd7" LastKnownName="MessageOccurrenceSpecification59" />
@@ -1619,7 +1619,7 @@
               <messageOccurrenceSpecificationMoniker Id="96056eda-a9cb-46ac-9156-ab24560be832" LastKnownName="MessageOccurrenceSpecification64" />
             </receiveEvent>
           </message>
-          <message Id="f479c21f-eb7d-4f63-a995-75a7cb314db4" name="Initialiser nbJoueurs" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false" signatureText="+desactiveClicNbJoueurs()">
+          <message Id="f479c21f-eb7d-4f63-a995-75a7cb314db4" name="Initialiser nbJoueurs" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false" signatureText="+desactiveClicNbJoueurs(2)">
             <elementDefinition Id="1d0d28e5-38e8-41cf-917e-1272a2c5e973" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="22ace2e2-3531-4177-a6f2-5a7c10706b2b" LastKnownName="MessageOccurrenceSpecification65" />
@@ -1664,7 +1664,7 @@
               <messageOccurrenceSpecificationMoniker Id="cb54f8a0-3b64-4beb-9877-28f94609dcc4" LastKnownName="MessageOccurrenceSpecification74" />
             </receiveEvent>
           </message>
-          <message Id="8bf85fa2-bae7-4568-ab75-728833071cae" name="ClicBoutonInit" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicInit()">
+          <message Id="8bf85fa2-bae7-4568-ab75-728833071cae" name="clic sur le bouton OK" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicInit()">
             <elementDefinition Id="fca892ab-508c-42fb-b331-556a374ba2bb" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="9a1eb75d-cd54-4e31-a3ea-da7a52e7d4a7" LastKnownName="MessageOccurrenceSpecification75" />
@@ -1691,7 +1691,7 @@
               <messageOccurrenceSpecificationMoniker Id="2be69924-f9a2-443d-9739-0ac28007ac7a" LastKnownName="MessageOccurrenceSpecification84" />
             </receiveEvent>
           </message>
-          <message Id="39a7b4fc-f78a-4b2e-b190-c50a3d1ea17d" name="fermerFenetre()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="39a7b4fc-f78a-4b2e-b190-c50a3d1ea17d" name="fermerFenetreInit()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="77f69db9-a87e-4df2-97f4-c2920215d3db" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="5d8dcabd-da28-480b-a17a-5ee922671612" LastKnownName="MessageOccurrenceSpecification85" />
@@ -1700,7 +1700,7 @@
               <messageOccurrenceSpecificationMoniker Id="352aba29-1454-4334-9fb4-bd94d47c3c7d" LastKnownName="MessageOccurrenceSpecification86" />
             </receiveEvent>
           </message>
-          <message Id="42ae7b21-73be-45a2-b161-26c85ff9e727" name="Initiliser les noms et couleurs" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ execute()">
+          <message Id="42ae7b21-73be-45a2-b161-26c85ff9e727" name="Initialiser les noms et couleurs" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ execute()">
             <elementDefinition Id="3ae8b899-3b07-485c-ab23-30114605d682" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="4fbb4eba-9398-4b19-9e6a-58fbd6f92d55" LastKnownName="MessageOccurrenceSpecification87" />
@@ -1718,7 +1718,7 @@
               <messageOccurrenceSpecificationMoniker Id="9cdea24e-9244-4017-964f-a1cd3fcd76d8" LastKnownName="MessageOccurrenceSpecification90" />
             </receiveEvent>
           </message>
-          <message Id="67cdb204-f4d4-48fa-9eb6-c808f3b7d8e3" name="ClicLancerDe" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicDe()">
+          <message Id="67cdb204-f4d4-48fa-9eb6-c808f3b7d8e3" name="clic sur le bouton lancerDe" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicDe()">
             <elementDefinition Id="14d620f1-4add-4d83-aa2e-696f02ab337f" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="81f8dc46-6688-4f08-9aaf-2ac2755b6239" LastKnownName="MessageOccurrenceSpecification99" />
@@ -1736,7 +1736,7 @@
               <messageOccurrenceSpecificationMoniker Id="6796254c-4494-46cb-9522-07b3f93a03f2" LastKnownName="MessageOccurrenceSpecification102" />
             </receiveEvent>
           </message>
-          <message Id="46704d1e-dbfc-4329-a31e-8e833ae1f25a" name="AfficherDe" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="afficher2De() &amp;&amp; execute()">
+          <message Id="46704d1e-dbfc-4329-a31e-8e833ae1f25a" name="Afficher les dés" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="afficher2De() &amp;&amp; execute()">
             <elementDefinition Id="84d44d2f-9b29-4cba-b791-2935b72712df" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="17f7ba33-c282-427a-9ee2-c820f29a149a" LastKnownName="MessageOccurrenceSpecification107" />
@@ -1772,7 +1772,7 @@
               <messageOccurrenceSpecificationMoniker Id="0b61488f-83e7-4918-8d55-1176e2022737" LastKnownName="MessageOccurrenceSpecification114" />
             </receiveEvent>
           </message>
-          <message Id="b0904c9a-7bf8-4141-a135-579d2629a56a" name="ClicLancerDe" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicDe()">
+          <message Id="b0904c9a-7bf8-4141-a135-579d2629a56a" name="clic sur le bouton lancerDe" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicDe()">
             <elementDefinition Id="3c9c2490-8780-4197-90ce-94ef67801ebf" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="03eb7a96-56d4-4df8-a9f1-dcc4b2b2649a" LastKnownName="MessageOccurrenceSpecification115" />
@@ -1790,7 +1790,7 @@
               <messageOccurrenceSpecificationMoniker Id="1a7bd6d8-8e9b-4e78-9e64-e6fe0f8d9202" LastKnownName="MessageOccurrenceSpecification118" />
             </receiveEvent>
           </message>
-          <message Id="80ed2822-9ccd-44f7-adc5-e1054d24c5f8" name="AfficheDe" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="afficher2De() &amp;&amp; afficherJoueur1() &amp;&amp; initialiserJeu() &amp;&amp; execute()">
+          <message Id="80ed2822-9ccd-44f7-adc5-e1054d24c5f8" name="Afficher les dés" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="afficher2De() &amp;&amp; afficherJoueur1() &amp;&amp; initialiserJeu() &amp;&amp; execute()">
             <elementDefinition Id="38979fb4-cb1e-43f9-88b9-a1761c530dc5" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="d1ad0851-84d9-44d8-9fe3-812ca8f3b776" LastKnownName="MessageOccurrenceSpecification119" />
@@ -1817,7 +1817,7 @@
               <messageOccurrenceSpecificationMoniker Id="34d4d13d-321f-4467-a055-6ac260db9fd5" LastKnownName="MessageOccurrenceSpecification124" />
             </receiveEvent>
           </message>
-          <message Id="4daed9dc-5d63-48f8-ac9d-543e91f52320" name="afficher2De() : false + afficherJoueur1() : false" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="4daed9dc-5d63-48f8-ac9d-543e91f52320" name="afficher2De() : false &amp;&amp; afficherJoueur1() : false" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="4f996375-4ab8-4927-9d88-e53625ed58cf" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="5ad94873-3c90-40ef-88e6-8fae479346c6" LastKnownName="MessageOccurrenceSpecification125" />

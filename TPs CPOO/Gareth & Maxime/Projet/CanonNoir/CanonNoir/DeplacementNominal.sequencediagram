@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="626e4078-7d88-4abc-8f44-fed17a898e07" name="Sequence3" linkedPackageId="337a1eae-7717-4fcb-8d70-7d402f065817" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="626e4078-7d88-4abc-8f44-fed17a898e07" name="Sequence3" linkedPackageId="337a1eae-7717-4fcb-8d70-7d402f065817" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="51e30e1f-0142-4c22-8a7a-9b6a745d9eea" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="75d8ab5e-355c-45eb-bd24-00608fdb6e78" />
@@ -826,7 +826,7 @@ les bateaus ont une couleur spé !</body>
           </lifeline>
         </lifelines>
         <messages>
-          <message Id="f5731a76-dfac-4a4c-8465-68bf5231ea88" name="ClicLancerDe" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicDe()">
+          <message Id="f5731a76-dfac-4a4c-8465-68bf5231ea88" name="clic sur le bouton lancerDe" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicDe()">
             <elementDefinition Id="030e97d0-46f3-49ba-9376-70bf259a17b0" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="dd0cb3e0-12ea-4946-a878-a73e08ce799d" LastKnownName="MessageOccurrenceSpecification1" />
@@ -844,7 +844,7 @@ les bateaus ont une couleur spé !</body>
               <messageOccurrenceSpecificationMoniker Id="a5f7c825-c865-4845-9a4d-de6cdfd22647" LastKnownName="MessageOccurrenceSpecification4" />
             </receiveEvent>
           </message>
-          <message Id="d250acf4-3350-4419-9e6a-9fbd4bcc8145" name="Afficher les Des" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ afficher2De() &amp;&amp; execute() ">
+          <message Id="d250acf4-3350-4419-9e6a-9fbd4bcc8145" name="Afficher les dés" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ afficher2De() &amp;&amp; execute() ">
             <elementDefinition Id="608a9744-f9c3-41de-8a76-dd876f83885d" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="0f7d92eb-1058-4abb-a0b2-13af25e1bbed" LastKnownName="MessageOccurrenceSpecification5" />
@@ -934,7 +934,7 @@ les bateaus ont une couleur spé !</body>
               <messageOccurrenceSpecificationMoniker Id="33334911-5a74-4aa5-9d5d-da9c9b6f2706" LastKnownName="MessageOccurrenceSpecification24" />
             </receiveEvent>
           </message>
-          <message Id="f66930a0-759a-423d-9f2c-8776e93553ad" name="ClicCase" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicCase()">
+          <message Id="f66930a0-759a-423d-9f2c-8776e93553ad" name="clic sur une case" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicCase()">
             <elementDefinition Id="575354e6-d5db-4acd-bb5d-d1851e66930d" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="d1688378-09f6-4369-bc90-208653a65cc6" LastKnownName="MessageOccurrenceSpecification25" />
