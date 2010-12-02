@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dc85f5ab-79b6-426c-9fc7-b8fa68960841" name="ClassDiagramcanon" linkedPackageId="3af465bf-7222-4ae4-a005-adf1a332bcc4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="571bede5-5460-4e51-98bb-24bf9d8936c6">
       <elementDefinition Id="6536fcb9-b86d-466c-9434-d4f4e1ee87b7" />
@@ -5890,43 +5890,6 @@ j_indJoueur = 0 </body>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="5ab636de-9457-4c35-a800-1d22dc41f6d6" name="AffichageWPF" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <appliedStereotypesInternal>
-          <stereotypeInstance Id="d8623f12-49a3-4c8a-940a-067e236d1a76" name="class" profile="CSharpProfile">
-            <elementDefinition Id="ff311145-1321-4c24-9ebb-d483aee380a0" />
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="1a8192f3-ea7a-4897-b67b-ab94107fd383">
-                <propertyInstance Id="302acd03-db62-4630-9fee-f1f2fe66f3a4" name="ClrAttributes">
-                  <elementDefinition Id="03b62376-aea7-4b9e-9405-c1f37f3fd868" />
-                </propertyInstance>
-                <elementDefinition Id="955bcf00-05e8-4b9a-b05a-09e1f80c92ad" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="61fdc583-44dd-44c0-914a-5e4275cdd691">
-                <propertyInstance Id="a85f23d6-9dd3-41c1-b7be-bb0063fe3fc9" name="IsPartial" value="false">
-                  <elementDefinition Id="e5153897-5cd6-43ec-b1d4-cd971009584d" />
-                </propertyInstance>
-                <elementDefinition Id="bbb6266f-608b-4e57-be47-a6ea36f27e4d" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="a1d3d37a-e4cc-4322-90d9-fd6e43e3176a">
-                <propertyInstance Id="bef169b2-dc03-42b4-a917-b9e5b73e65e9" name="IsStatic" value="false">
-                  <elementDefinition Id="6014647d-e20d-4d11-954f-2a8c01308bd8" />
-                </propertyInstance>
-                <elementDefinition Id="dede5377-29cd-4f4d-8731-7100fac702db" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="9c6234f8-cbf6-4099-a9f7-7024f7c0f885">
-                <propertyInstance Id="add78181-a673-4929-9a8b-793dd70c56c6" name="IsUnsafe" value="false">
-                  <elementDefinition Id="5ea1e287-6eb2-42c9-a57b-e3331c1b2fba" />
-                </propertyInstance>
-                <elementDefinition Id="44d86b19-77e6-4593-863e-a307a435f5bf" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="23c3b5d3-9f73-432f-98af-214a220ed396">
-                <propertyInstance Id="9e6d0799-4201-4d14-a2c9-b37c80db9954" name="PackageVisibility" value="internal">
-                  <elementDefinition Id="eea1d091-f45d-4999-aafc-17a7a953d1ce" />
-                </propertyInstance>
-                <elementDefinition Id="2057ffa9-efad-4643-9998-f8c7d80f1db8" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-        </appliedStereotypesInternal>
         <elementDefinition Id="5c4916c8-a518-485a-8295-991face1cf56" />
         <targetEnds>
           <association Id="d34c8e3a-3163-4f97-8f1b-ac0be62c94ab" isDerived="false" sourceEndRoleName="AffichageWPF" targetEndRoleName="FenetreTir" isLeaf="false" isAbstract="false">
@@ -8658,43 +8621,6 @@ j_indJoueur = 0 </body>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
       <class Id="9292baa1-8315-4c7b-8b6b-526e94d6d4c4" name="FenetreInit" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <appliedStereotypesInternal>
-          <stereotypeInstance Id="03f7b1b8-1983-40a9-a4d0-4ca098b48ca8" name="class" profile="CSharpProfile">
-            <elementDefinition Id="b8c8ef43-aa55-49b9-aef0-a9da0059a6e4" />
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="0d8e258e-f7b5-4944-a6c6-7674c2c1cf8b">
-                <propertyInstance Id="c1dc9020-c1c8-4e5e-8048-d936d4ac687f" name="ClrAttributes">
-                  <elementDefinition Id="795e9326-9d56-46e7-87f3-1fd00f82e3e1" />
-                </propertyInstance>
-                <elementDefinition Id="a1ef9359-a881-4d65-9150-717dd93285c6" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="ef72aa6f-98e3-4e66-a873-27d5329bcbda">
-                <propertyInstance Id="96fd0fa6-1a37-4a13-a73c-37e8d0c6ac69" name="IsPartial" value="false">
-                  <elementDefinition Id="64c556bb-60a1-4abd-a690-33256601e782" />
-                </propertyInstance>
-                <elementDefinition Id="7ff089b9-a6ad-451d-8e9a-b77179573353" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="23e2953a-a5ab-41d9-8a00-4677f0516f45">
-                <propertyInstance Id="1ad3835c-01ee-427d-85af-48fd11f276bb" name="IsStatic" value="false">
-                  <elementDefinition Id="1e4107e5-3879-4d88-9fb4-902b0587affc" />
-                </propertyInstance>
-                <elementDefinition Id="31d3f4f0-1919-4bfb-a18f-7ff8917451b3" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="f5463922-11e6-4c5e-8d4a-907a7c0ad32a">
-                <propertyInstance Id="caf688b7-6be4-483f-8884-8e6dea3e57b2" name="IsUnsafe" value="false">
-                  <elementDefinition Id="9f044e8d-f45e-4ecb-a022-589998b76967" />
-                </propertyInstance>
-                <elementDefinition Id="75ba9391-30bc-484d-84df-730311ef1d87" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="23762e46-7166-4ee8-8974-ee0a1635f061">
-                <propertyInstance Id="796edf40-c7c8-4b43-aca7-acf02d7cd75f" name="PackageVisibility" value="internal">
-                  <elementDefinition Id="6310870d-9db0-416f-8651-4a0d91f98cc9" />
-                </propertyInstance>
-                <elementDefinition Id="387c8c85-4f43-4763-a737-fc0e16776918" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-        </appliedStereotypesInternal>
         <elementDefinition Id="2c34a23f-973e-4844-b7d8-6abd9d07c2c2" />
         <ownedOperationsInternal>
           <operation Id="3131cabd-bbb4-4ad8-a79e-df1d78cea2bf" name="clicNbJoueurs2" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -9152,43 +9078,6 @@ j_indJoueur = 0 </body>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
       <class Id="7e4f3253-3345-4aca-b29a-6fc2ef4e4886" name="FenetreTir" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <appliedStereotypesInternal>
-          <stereotypeInstance Id="4c9ca330-2bc1-400d-a9f1-2b351fd444f7" name="class" profile="CSharpProfile">
-            <elementDefinition Id="7146db64-e1f3-4851-84d0-2aba0b67f8c8" />
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="1f6a25f5-acad-4231-b3bb-7c5e42e726fb">
-                <propertyInstance Id="9dbb5e10-13b3-47e6-ae84-8a4a904e10c2" name="ClrAttributes">
-                  <elementDefinition Id="b55c4653-bf39-4f08-8351-20c6270ae44c" />
-                </propertyInstance>
-                <elementDefinition Id="5dc72727-1962-409c-b5b1-61c248b9cdc6" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="dda6fab3-4f95-4f82-b093-b436a62ea2a9">
-                <propertyInstance Id="c06a75d8-3d24-4cbf-a299-7efe263c169c" name="IsPartial" value="false">
-                  <elementDefinition Id="35c3158c-8e3f-42b9-ac66-5309d96811b7" />
-                </propertyInstance>
-                <elementDefinition Id="c4e55485-465b-4600-9c64-486d4cded701" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="8bfbf9a2-5cab-4301-9ee7-0b753e28b5e9">
-                <propertyInstance Id="fe73e42d-e577-43e7-af69-8c0743268004" name="IsStatic" value="false">
-                  <elementDefinition Id="db848010-3f44-4ffa-83f8-ebead539aa48" />
-                </propertyInstance>
-                <elementDefinition Id="a04a9c65-45fb-4503-9f85-0ca0df690778" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="6b0c0757-6ca4-4f00-8baf-d2d3f84ed1b6">
-                <propertyInstance Id="449287cc-6494-47da-adbb-674a0ca64334" name="IsUnsafe" value="false">
-                  <elementDefinition Id="3adc727b-a0b5-4111-89e2-c5d19e5d2c24" />
-                </propertyInstance>
-                <elementDefinition Id="707df321-c53d-4e9c-a191-8a0cdf40a26e" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="a038cd0b-ef3e-4295-9239-fdb54cb5a158">
-                <propertyInstance Id="b8795eef-abec-447e-ae2e-6a10ec622467" name="PackageVisibility" value="internal">
-                  <elementDefinition Id="f037bd2f-dfe5-4c9c-b494-7086de8b955f" />
-                </propertyInstance>
-                <elementDefinition Id="47ce1639-539a-4ae4-9f71-ed71ac332d34" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-        </appliedStereotypesInternal>
         <elementDefinition Id="8311ff11-6068-426d-b5b6-cb78d2f3eeb1" />
         <ownedOperationsInternal>
           <operation Id="1e44b484-6bdb-498d-a878-59d789ccfbf4" name="champPuissance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
