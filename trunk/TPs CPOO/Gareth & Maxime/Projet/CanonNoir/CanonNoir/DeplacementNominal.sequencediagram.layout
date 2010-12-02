@@ -239,7 +239,7 @@
       <commentMoniker Id="af9eaca0-f029-4897-8405-a77ee70c5389" />
       <relativeChildShapes />
     </commentShape>
-    <commentConnector edgePoints="[(11.625 : 8.97422125); (11.1604166666667 : 8.97422125)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+    <commentConnector edgePoints="[(11.625 : 8.97422125); (11.1604166666667 : 8.97422125)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
       <relativeChildShapes />
       <nodes>
         <commentShapeMoniker Id="a666633b-ce8e-4f19-9330-1d22ba1b0fc3" />

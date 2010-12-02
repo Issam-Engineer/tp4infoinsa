@@ -24,6 +24,13 @@
       <SubType>Content</SubType>
       <DependentUpon>EtatsTransitions.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="InitialisationAlternatif.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="InitialisationAlternatif.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>InitialisationAlternatif.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Package1_1906.uml">
       <SubType>Content</SubType>
     </Content>
@@ -87,6 +94,13 @@
     <Content Include="UMLComponentDiagram1.componentdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>UMLComponentDiagram1.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="InitialisationErreur.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="InitialisationErreur.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>InitialisationErreur.sequencediagram</DependentUpon>
     </Content>
     <Content Include="VisualisationGlobale.classdiagram">
       <SubType>Content</SubType>
