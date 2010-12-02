@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="24aef1dc-6cef-4aee-b7f7-247af80320fb" name="UMLComponentDiagram1" linkedPackageId="4dc1d4b8-be21-4ab6-980a-5d90a385c522" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="24aef1dc-6cef-4aee-b7f7-247af80320fb" name="UMLComponentDiagram1" linkedPackageId="4dc1d4b8-be21-4ab6-980a-5d90a385c522" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="ca09acf6-e632-413a-a4ce-9d653e6b5c42" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="75d8ab5e-355c-45eb-bd24-00608fdb6e78" />
@@ -72,6 +72,145 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="5c5e0e25-6147-4db5-8242-e6269babf54e" name="Etats" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cb990dfd-f11b-4094-8095-e416646dd122" />
+        <ownedAttributesInternal>
+          <part Id="ebc98b3a-e04a-4a7f-b8d0-9bef221c08ca" name="AttenteNbJoueurs" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="236a209c-833c-472a-87e7-7d73fa37725d" />
+            <type_NamedElement>
+              <componentMoniker Id="2a377014-a49a-4c33-8010-5a2ddda244ea" LastKnownName="Component1" />
+            </type_NamedElement>
+          </part>
+          <part Id="41e8bba3-abc6-44c8-b488-c52708b392d5" name="AttenteInitialisation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="21a1bf30-2e43-41cd-a869-b33535e332cf" />
+            <type_NamedElement>
+              <componentMoniker Id="6b7c843a-a947-4846-8d5b-cd833c1e4595" LastKnownName="Component2" />
+            </type_NamedElement>
+          </part>
+          <part Id="f1a60667-574a-4244-8596-8c51f9cdc67d" name="AttenteCanonAngle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="c7a3bfaf-d4b1-457c-a320-3cdf8433bd48" />
+            <type_NamedElement>
+              <componentMoniker Id="2228a921-565a-4fcd-9924-854330ee6394" LastKnownName="Component6" />
+            </type_NamedElement>
+          </part>
+          <part Id="cbea6107-3a5a-41dd-ac26-00e5d9806c82" name="Etat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="be08b488-e30b-4aa6-895b-0910f50e7fa0" />
+            <type_NamedElement>
+              <componentMoniker Id="0cc2af44-8100-483f-bc56-cc57d33b766f" LastKnownName="Component7" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="261f0d3e-9774-4e72-a6d4-10bf4e0eb5f7" name="Affichage WPF" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c3f77d75-a6dd-4b6d-b28c-9d7698ae6702" />
+        <ownedAttributesInternal>
+          <part Id="6098a945-eccd-4a80-a816-d4008a7a902c" name="AffichageWPF" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="1995b7a5-c466-4849-ac2d-8871d91eabe6" />
+            <type_NamedElement>
+              <componentMoniker Id="62fe5b92-15fa-4a9f-b2d0-44908c5e3a15" LastKnownName="Component3" />
+            </type_NamedElement>
+          </part>
+          <part Id="177827ce-7692-4059-882b-3bf514286ba2" name="FenetreInit" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="6cc42512-c600-43c2-8518-bd58bfa6fc0b" />
+            <targetNamedElementsInternal>
+              <connector Id="719b7ff4-8f4b-49a6-97cb-a0547efee27c" isLeaf="false" isStatic="false">
+                <partMoniker Id="6098a945-eccd-4a80-a816-d4008a7a902c" LastKnownName="AffichageWPF" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="9f7ee76b-911b-4cf6-8173-8fa41ddcb3aa">
+                      <elementDefinition Id="6589e237-5f70-439c-96d9-8d8fa2a0ffe8" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="a9ec6253-509a-4371-b30b-0d7528f2aaa7">
+                      <elementDefinition Id="d34135c2-0832-41b4-982b-afd8c9455b9e" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="1b530764-8412-4b7b-8597-0b4e35a8a0b3" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="fb2a6f64-5966-4328-a1e1-ccaf67f7655e" LastKnownName="Component4" />
+            </type_NamedElement>
+          </part>
+          <part Id="21bc6feb-813c-415d-b4d0-2f444ef8dd6d" name="FenetreTir" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="f9cb203e-5ae7-4da6-8a7b-651823c75abe" />
+            <targetNamedElementsInternal>
+              <connector Id="d3db0637-df64-4bca-9f40-b5cb732f4c8e" isLeaf="false" isStatic="false">
+                <partMoniker Id="6098a945-eccd-4a80-a816-d4008a7a902c" LastKnownName="AffichageWPF" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="d7cdbd8f-f681-4de5-a97f-b7993a50bbe8">
+                      <elementDefinition Id="54f22e00-f0bb-4a6b-bbd3-4289f65dedbc" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="e119e41b-2095-4e51-8274-4d2d33b87cb2">
+                      <elementDefinition Id="d2b51d7b-9766-428d-bc8f-a1ec9cb67ab6" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="0f03d690-b242-4435-9a66-94be5fa03c21" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="174eede4-d343-487a-a8ca-3ea3ad697682" LastKnownName="Component5" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="64c60f70-6d52-4c56-b42f-5c4d6a78ed6f" name="Adaptateur" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="56943632-1c65-4145-a946-53544e55c0f7" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="2a377014-a49a-4c33-8010-5a2ddda244ea" name="Component1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1b81c6d0-b1e6-407d-87eb-6639b8aa9ab0" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="6b7c843a-a947-4846-8d5b-cd833c1e4595" name="Component2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0732e2df-3add-4346-a52f-fef6cc2e5e99" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="62fe5b92-15fa-4a9f-b2d0-44908c5e3a15" name="Component3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a4781ae6-801b-49b5-ae6e-9a6e09766b3a" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="fb2a6f64-5966-4328-a1e1-ccaf67f7655e" name="Component4" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3374e17f-faf1-4cf1-a098-8fce4ff93ea9" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="174eede4-d343-487a-a8ca-3ea3ad697682" name="Component5" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="17cffc0a-0ad9-40f5-a584-ba32f6f53905" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="fd2063f4-d93b-42bf-a7d2-7b0aaaa3c931" name="Façade" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4d1de438-f7fd-42c3-9dff-0b8ad5977e6b" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="2228a921-565a-4fcd-9924-854330ee6394" name="Component6" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="71272c65-99ba-43ad-9a20-8c080804e55a" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="0cc2af44-8100-483f-bc56-cc57d33b766f" name="Component7" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="71a7a256-bffc-471b-8bdf-4c4459ec19c1" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
   <package Id="4dc1d4b8-be21-4ab6-980a-5d90a385c522" name="CanonNoir">
     <elementDefinition Id="d1255448-f23c-4490-af91-82b9caa462ca" />
     <profileInstances>

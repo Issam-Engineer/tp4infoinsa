@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="d1255448-f23c-4490-af91-82b9caa462ca"
   name="CanonNoir" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -26965,6 +26965,275 @@ les bateaus ont une couleur spé !</body>
             LastKnownLocation="CanonNoir.uml" />
         </subjects>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="cb990dfd-f11b-4094-8095-e416646dd122"
+        name="Etats"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <part
+            Id="236a209c-833c-472a-87e7-7d73fa37725d"
+            name="AttenteNbJoueurs"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="1b81c6d0-b1e6-407d-87eb-6639b8aa9ab0"
+                LastKnownName="Component1"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="21a1bf30-2e43-41cd-a869-b33535e332cf"
+            name="AttenteInitialisation"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="0732e2df-3add-4346-a52f-fef6cc2e5e99"
+                LastKnownName="Component2"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="c7a3bfaf-d4b1-457c-a320-3cdf8433bd48"
+            name="AttenteCanonAngle"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="71272c65-99ba-43ad-9a20-8c080804e55a"
+                LastKnownName="Component6"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="be08b488-e30b-4aa6-895b-0910f50e7fa0"
+            name="Etat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="71a7a256-bffc-471b-8bdf-4c4459ec19c1"
+                LastKnownName="Component7"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="c3f77d75-a6dd-4b6d-b28c-9d7698ae6702"
+        name="Affichage WPF"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <part
+            Id="1995b7a5-c466-4849-ac2d-8871d91eabe6"
+            name="AffichageWPF"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="a4781ae6-801b-49b5-ae6e-9a6e09766b3a"
+                LastKnownName="Component3"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="6cc42512-c600-43c2-8518-bd58bfa6fc0b"
+            name="FenetreInit"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <targetNamedElementsInternal>
+              <connector
+                Id="1b530764-8412-4b7b-8597-0b4e35a8a0b3"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="1995b7a5-c466-4849-ac2d-8871d91eabe6"
+                  LastKnownName="AffichageWPF"
+                  LastKnownLocation="CanonNoir.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="6589e237-5f70-439c-96d9-8d8fa2a0ffe8" />
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="d34135c2-0832-41b4-982b-afd8c9455b9e" />
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker
+                Id="3374e17f-faf1-4cf1-a098-8fce4ff93ea9"
+                LastKnownName="Component4"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="f9cb203e-5ae7-4da6-8a7b-651823c75abe"
+            name="FenetreTir"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <targetNamedElementsInternal>
+              <connector
+                Id="0f03d690-b242-4435-9a66-94be5fa03c21"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="1995b7a5-c466-4849-ac2d-8871d91eabe6"
+                  LastKnownName="AffichageWPF"
+                  LastKnownLocation="CanonNoir.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="54f22e00-f0bb-4a6b-bbd3-4289f65dedbc" />
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="d2b51d7b-9766-428d-bc8f-a1ec9cb67ab6" />
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker
+                Id="17cffc0a-0ad9-40f5-a584-ba32f6f53905"
+                LastKnownName="Component5"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ad18859d-73b0-4ccf-a3ba-76251a10492b"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="56943632-1c65-4145-a946-53544e55c0f7"
+        name="Adaptateur"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="1b81c6d0-b1e6-407d-87eb-6639b8aa9ab0"
+        name="Component1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="0732e2df-3add-4346-a52f-fef6cc2e5e99"
+        name="Component2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="a4781ae6-801b-49b5-ae6e-9a6e09766b3a"
+        name="Component3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="3374e17f-faf1-4cf1-a098-8fce4ff93ea9"
+        name="Component4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="17cffc0a-0ad9-40f5-a584-ba32f6f53905"
+        name="Component5"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f5030a27-c6d8-44d6-90b8-64427845983b"
+        name="Interface2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="4d1de438-f7fd-42c3-9dff-0b8ad5977e6b"
+        name="Façade"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="71272c65-99ba-43ad-9a20-8c080804e55a"
+        name="Component6"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="71a7a256-bffc-471b-8bdf-4c4459ec19c1"
+        name="Component7"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
