@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="402e390e-872b-4917-b272-4a3f196b032a" name="InitialisationErreur" linkedPackageId="53abddd6-4e58-42b9-bc47-0826f723dbaa" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="402e390e-872b-4917-b272-4a3f196b032a" name="InitialisationErreur" linkedPackageId="53abddd6-4e58-42b9-bc47-0826f723dbaa" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="3e3effff-90a9-4812-af1c-eec2cc8fd535" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="75d8ab5e-355c-45eb-bd24-00608fdb6e78" />
@@ -83,158 +83,14 @@
         </ownedCommentsInternal>
         <elementDefinition Id="956a1f57-d7d0-4f17-bce5-5a6026255718" />
         <fragments>
-          <messageOccurrenceSpecification Id="491cd6d6-f3a8-48f4-ba0e-91455e236012" name="MessageOccurrenceSpecification111">
-            <elementDefinition Id="48ecab11-59bb-496a-a894-6de019636059" />
-            <covered>
-              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="fcedcc13-5048-4a84-a871-623fdf865aca" name="MessageOccurrenceSpecification117">
-            <elementDefinition Id="50025d91-a60a-4bf8-92e2-88b214c96575" />
-            <covered>
-              <lifelineMoniker Id="08cd91e6-23ee-44d2-b115-8dac303bc8e3" LastKnownName=": AffichageWPF" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="f21ed667-d8b3-4b9d-a150-cbb1735c4502" name="MessageOccurrenceSpecification76">
-            <elementDefinition Id="2a1b52c4-cd02-4b08-b3ef-652171386b4d" />
-            <covered>
-              <lifelineMoniker Id="559ea8bf-95bb-4f56-98ce-6db391ae40ae" LastKnownName=": FenetreInit" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="3a925f0a-3521-4c95-addc-e35f3e513e30" name="MessageOccurrenceSpecification75">
-            <elementDefinition Id="53084356-679d-45fa-9c28-105f7e9d8555" />
-            <covered>
-              <lifelineMoniker Id="013c4ebc-d813-46e3-9366-6cf5a4ac37fd" LastKnownName=": utilisateurs" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="4bcb7dce-cc71-4c94-8709-f0782971b5bc" name="MessageOccurrenceSpecification118">
-            <elementDefinition Id="59dc952b-67b6-444c-ac76-cba0812f29a1" />
-            <covered>
-              <lifelineMoniker Id="013c4ebc-d813-46e3-9366-6cf5a4ac37fd" LastKnownName=": utilisateurs" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="6dcd22f1-9d7c-4b3b-982d-0e062e2806f4" name="MessageOccurrenceSpecification121">
-            <elementDefinition Id="a1f88ffa-468c-4fac-92bc-4e9f57a9d7be" />
-            <covered>
-              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="5ea110ce-ec4a-4677-8403-c120cfd8e95d" name="MessageOccurrenceSpecification84">
-            <elementDefinition Id="37a051d5-080f-42ca-81c6-4b5a644f3606" />
-            <covered>
-              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="ce30204c-492a-4b75-80b8-428b7885d0d0" name="MessageOccurrenceSpecification83">
-            <elementDefinition Id="11d7623c-9fe1-4a36-a7cc-4d44278ed43f" />
-            <covered>
-              <lifelineMoniker Id="559ea8bf-95bb-4f56-98ce-6db391ae40ae" LastKnownName=": FenetreInit" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="529cce9d-1db8-4f47-b657-d00cfda307fe" name="MessageOccurrenceSpecification122">
-            <elementDefinition Id="12c3c62d-93cd-48aa-9b2a-0ea4914f229e" />
-            <covered>
-              <lifelineMoniker Id="08cd91e6-23ee-44d2-b115-8dac303bc8e3" LastKnownName=": AffichageWPF" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="eca3667b-380c-4522-bf49-72d2a74181d7" name="MessageOccurrenceSpecification125">
-            <elementDefinition Id="b98e99e9-e0a9-4130-bb8e-2fee796d45e1" />
-            <covered>
-              <lifelineMoniker Id="071e45b6-5954-4d3e-a3de-264577391751" LastKnownName=": MoteurJeu" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="4d01de03-ed85-47fa-a7cc-14794bbd2afe" name="MessageOccurrenceSpecification87">
-            <elementDefinition Id="46fdaffa-7585-475f-8da7-c9b8a9cd280a" />
-            <covered>
-              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="cb55170e-0dff-440e-aca0-7fd7c5909455" name="MessageOccurrenceSpecification88">
-            <elementDefinition Id="01c69ecb-8b46-4c64-89d9-57f2993e8d6e" />
-            <covered>
-              <lifelineMoniker Id="071e45b6-5954-4d3e-a3de-264577391751" LastKnownName=": MoteurJeu" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="0315e24d-4555-40b6-8736-f4b85edc7cf2" name="MessageOccurrenceSpecification90">
-            <elementDefinition Id="c291bf02-5314-4aa4-b57d-2514e1a67de0" />
-            <covered>
-              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="2c13fdba-bd1c-4053-9e2c-7841fca211b5" name="MessageOccurrenceSpecification89">
-            <elementDefinition Id="0d04dd25-2e06-44ee-9401-d5525d98e79b" />
-            <covered>
-              <lifelineMoniker Id="071e45b6-5954-4d3e-a3de-264577391751" LastKnownName=": MoteurJeu" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="c7560f33-84d2-4a5a-9847-b94183a2a72a" name="MessageOccurrenceSpecification126">
-            <elementDefinition Id="ac884e1e-4e4a-400c-901e-753558b51f4f" />
-            <covered>
-              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="05d89a13-4a80-48e5-ae12-9da0207877e3" name="MessageOccurrenceSpecification86">
-            <elementDefinition Id="b2f86248-0495-4533-b2f9-b5ba7cb2444a" />
-            <covered>
-              <lifelineMoniker Id="559ea8bf-95bb-4f56-98ce-6db391ae40ae" LastKnownName=": FenetreInit" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="59ab10d4-beba-45bb-98ab-eeac631b0e85" name="MessageOccurrenceSpecification85">
-            <elementDefinition Id="4349b4eb-040d-4764-b3bb-62d930c2f648" />
-            <covered>
-              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="6e0d44b9-35e4-477a-9afd-94fea5c023ac" name="MessageOccurrenceSpecification123">
-            <elementDefinition Id="098b24cf-d412-4947-89fb-0ff9354b190d" />
-            <covered>
-              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="401e25de-fadb-4ada-b351-033624b52117" name="MessageOccurrenceSpecification78">
-            <elementDefinition Id="b1a46e41-8dac-47a0-8f92-b49d46948b20" />
-            <covered>
-              <lifelineMoniker Id="013c4ebc-d813-46e3-9366-6cf5a4ac37fd" LastKnownName=": utilisateurs" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="6f1cbc3b-8cd2-45db-a04a-7f0e826f49a5" name="MessageOccurrenceSpecification77">
-            <elementDefinition Id="51f826f8-4c06-4867-863a-cefea0f89788" />
-            <covered>
-              <lifelineMoniker Id="559ea8bf-95bb-4f56-98ce-6db391ae40ae" LastKnownName=": FenetreInit" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="d2466efd-08a7-4706-871d-8f0e0c8b46e1" name="MessageOccurrenceSpecification124">
-            <elementDefinition Id="f0563b86-15c4-42d2-a0a9-3d8eeea71ea3" />
-            <covered>
-              <lifelineMoniker Id="071e45b6-5954-4d3e-a3de-264577391751" LastKnownName=": MoteurJeu" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="16859238-a1fb-45cf-9f74-27c94344c3b8" name="MessageOccurrenceSpecification119">
-            <elementDefinition Id="2e9903b2-a066-41ad-b2d4-86dcd7781fe0" />
-            <covered>
-              <lifelineMoniker Id="08cd91e6-23ee-44d2-b115-8dac303bc8e3" LastKnownName=": AffichageWPF" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="17d7cf34-1e4e-4cf2-b4af-2cc07bf9a512" name="MessageOccurrenceSpecification120">
-            <elementDefinition Id="5a016b2a-223a-4530-a7fe-7136f2b3ff3a" />
-            <covered>
-              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="4e34d843-f30b-4bb7-ae3e-af4a9c54fde0" name="MessageOccurrenceSpecification99">
-            <elementDefinition Id="5804f8f4-bd64-4d11-ac3e-cfec61b88902" />
-            <covered>
-              <lifelineMoniker Id="013c4ebc-d813-46e3-9366-6cf5a4ac37fd" LastKnownName=": utilisateurs" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="53119d7b-fd1d-4c9f-bd30-0ec2b442e150" name="MessageOccurrenceSpecification100">
             <elementDefinition Id="e0bea430-3b5e-42ba-9ad1-95d228f312ad" />
             <covered>
               <lifelineMoniker Id="08cd91e6-23ee-44d2-b115-8dac303bc8e3" LastKnownName=": AffichageWPF" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="2e904226-105b-4a7f-ae80-a86eb46049e5" name="MessageOccurrenceSpecification115">
-            <elementDefinition Id="8394755f-1c49-4346-8153-a8e71025d8b9" />
+          <messageOccurrenceSpecification Id="4e34d843-f30b-4bb7-ae3e-af4a9c54fde0" name="MessageOccurrenceSpecification99">
+            <elementDefinition Id="5804f8f4-bd64-4d11-ac3e-cfec61b88902" />
             <covered>
               <lifelineMoniker Id="013c4ebc-d813-46e3-9366-6cf5a4ac37fd" LastKnownName=": utilisateurs" />
             </covered>
@@ -245,38 +101,38 @@
               <lifelineMoniker Id="08cd91e6-23ee-44d2-b115-8dac303bc8e3" LastKnownName=": AffichageWPF" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="5f36b1bd-6d5a-45df-aab4-3fe87f9691d9" name="MessageOccurrenceSpecification108">
-            <elementDefinition Id="607cc464-7a82-4ccd-8592-ff93ce0c1518" />
-            <covered>
-              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="de18248b-453d-43ac-8dcf-74bbadd6442f" name="MessageOccurrenceSpecification107">
-            <elementDefinition Id="d57f070d-98c8-489e-8f62-e2d3441629f1" />
-            <covered>
-              <lifelineMoniker Id="08cd91e6-23ee-44d2-b115-8dac303bc8e3" LastKnownName=": AffichageWPF" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="d807b043-9410-4e4d-9033-eae1c2ee9ff1" name="MessageOccurrenceSpecification102">
-            <elementDefinition Id="08679110-2767-4951-b0d5-5facf9c691d5" />
+          <messageOccurrenceSpecification Id="2e904226-105b-4a7f-ae80-a86eb46049e5" name="MessageOccurrenceSpecification115">
+            <elementDefinition Id="8394755f-1c49-4346-8153-a8e71025d8b9" />
             <covered>
               <lifelineMoniker Id="013c4ebc-d813-46e3-9366-6cf5a4ac37fd" LastKnownName=": utilisateurs" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="01e2bde1-ef9c-4e07-bf91-37c13e0995c9" name="MessageOccurrenceSpecification101">
-            <elementDefinition Id="6fb2c6ae-ca2b-4d5a-abde-11df8d372f2c" />
-            <covered>
-              <lifelineMoniker Id="08cd91e6-23ee-44d2-b115-8dac303bc8e3" LastKnownName=": AffichageWPF" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="6f15c77f-e0c6-4784-882f-ad577eb525ba" name="MessageOccurrenceSpecification109">
-            <elementDefinition Id="35758e0c-6f6d-45fc-ba20-afaa1e7271e6" />
+          <messageOccurrenceSpecification Id="17d7cf34-1e4e-4cf2-b4af-2cc07bf9a512" name="MessageOccurrenceSpecification120">
+            <elementDefinition Id="5a016b2a-223a-4530-a7fe-7136f2b3ff3a" />
             <covered>
               <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="2c267edb-c4b9-4c9e-95f9-fda45d2ee909" name="MessageOccurrenceSpecification112">
-            <elementDefinition Id="77e7af7f-55fc-4594-b321-12f64075dbe7" />
+          <messageOccurrenceSpecification Id="6f1cbc3b-8cd2-45db-a04a-7f0e826f49a5" name="MessageOccurrenceSpecification77">
+            <elementDefinition Id="51f826f8-4c06-4867-863a-cefea0f89788" />
+            <covered>
+              <lifelineMoniker Id="559ea8bf-95bb-4f56-98ce-6db391ae40ae" LastKnownName=": FenetreInit" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="401e25de-fadb-4ada-b351-033624b52117" name="MessageOccurrenceSpecification78">
+            <elementDefinition Id="b1a46e41-8dac-47a0-8f92-b49d46948b20" />
+            <covered>
+              <lifelineMoniker Id="013c4ebc-d813-46e3-9366-6cf5a4ac37fd" LastKnownName=": utilisateurs" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="16859238-a1fb-45cf-9f74-27c94344c3b8" name="MessageOccurrenceSpecification119">
+            <elementDefinition Id="2e9903b2-a066-41ad-b2d4-86dcd7781fe0" />
+            <covered>
+              <lifelineMoniker Id="08cd91e6-23ee-44d2-b115-8dac303bc8e3" LastKnownName=": AffichageWPF" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d2466efd-08a7-4706-871d-8f0e0c8b46e1" name="MessageOccurrenceSpecification124">
+            <elementDefinition Id="f0563b86-15c4-42d2-a0a9-3d8eeea71ea3" />
             <covered>
               <lifelineMoniker Id="071e45b6-5954-4d3e-a3de-264577391751" LastKnownName=": MoteurJeu" />
             </covered>
@@ -287,8 +143,8 @@
               <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="0354d5e9-2292-4ab6-a6e7-3a6207e7585a" name="MessageOccurrenceSpecification113">
-            <elementDefinition Id="974037ed-d5bc-4706-9b80-caab514f4b48" />
+          <messageOccurrenceSpecification Id="2c267edb-c4b9-4c9e-95f9-fda45d2ee909" name="MessageOccurrenceSpecification112">
+            <elementDefinition Id="77e7af7f-55fc-4594-b321-12f64075dbe7" />
             <covered>
               <lifelineMoniker Id="071e45b6-5954-4d3e-a3de-264577391751" LastKnownName=": MoteurJeu" />
             </covered>
@@ -297,6 +153,150 @@
             <elementDefinition Id="3c781178-65f2-4eb2-80ad-b9a3e3e4ac48" />
             <covered>
               <lifelineMoniker Id="08cd91e6-23ee-44d2-b115-8dac303bc8e3" LastKnownName=": AffichageWPF" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0354d5e9-2292-4ab6-a6e7-3a6207e7585a" name="MessageOccurrenceSpecification113">
+            <elementDefinition Id="974037ed-d5bc-4706-9b80-caab514f4b48" />
+            <covered>
+              <lifelineMoniker Id="071e45b6-5954-4d3e-a3de-264577391751" LastKnownName=": MoteurJeu" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6f15c77f-e0c6-4784-882f-ad577eb525ba" name="MessageOccurrenceSpecification109">
+            <elementDefinition Id="35758e0c-6f6d-45fc-ba20-afaa1e7271e6" />
+            <covered>
+              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="de18248b-453d-43ac-8dcf-74bbadd6442f" name="MessageOccurrenceSpecification107">
+            <elementDefinition Id="d57f070d-98c8-489e-8f62-e2d3441629f1" />
+            <covered>
+              <lifelineMoniker Id="08cd91e6-23ee-44d2-b115-8dac303bc8e3" LastKnownName=": AffichageWPF" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5f36b1bd-6d5a-45df-aab4-3fe87f9691d9" name="MessageOccurrenceSpecification108">
+            <elementDefinition Id="607cc464-7a82-4ccd-8592-ff93ce0c1518" />
+            <covered>
+              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="01e2bde1-ef9c-4e07-bf91-37c13e0995c9" name="MessageOccurrenceSpecification101">
+            <elementDefinition Id="6fb2c6ae-ca2b-4d5a-abde-11df8d372f2c" />
+            <covered>
+              <lifelineMoniker Id="08cd91e6-23ee-44d2-b115-8dac303bc8e3" LastKnownName=": AffichageWPF" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d807b043-9410-4e4d-9033-eae1c2ee9ff1" name="MessageOccurrenceSpecification102">
+            <elementDefinition Id="08679110-2767-4951-b0d5-5facf9c691d5" />
+            <covered>
+              <lifelineMoniker Id="013c4ebc-d813-46e3-9366-6cf5a4ac37fd" LastKnownName=": utilisateurs" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5ea110ce-ec4a-4677-8403-c120cfd8e95d" name="MessageOccurrenceSpecification84">
+            <elementDefinition Id="37a051d5-080f-42ca-81c6-4b5a644f3606" />
+            <covered>
+              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6dcd22f1-9d7c-4b3b-982d-0e062e2806f4" name="MessageOccurrenceSpecification121">
+            <elementDefinition Id="a1f88ffa-468c-4fac-92bc-4e9f57a9d7be" />
+            <covered>
+              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="529cce9d-1db8-4f47-b657-d00cfda307fe" name="MessageOccurrenceSpecification122">
+            <elementDefinition Id="12c3c62d-93cd-48aa-9b2a-0ea4914f229e" />
+            <covered>
+              <lifelineMoniker Id="08cd91e6-23ee-44d2-b115-8dac303bc8e3" LastKnownName=": AffichageWPF" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="ce30204c-492a-4b75-80b8-428b7885d0d0" name="MessageOccurrenceSpecification83">
+            <elementDefinition Id="11d7623c-9fe1-4a36-a7cc-4d44278ed43f" />
+            <covered>
+              <lifelineMoniker Id="559ea8bf-95bb-4f56-98ce-6db391ae40ae" LastKnownName=": FenetreInit" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="4bcb7dce-cc71-4c94-8709-f0782971b5bc" name="MessageOccurrenceSpecification118">
+            <elementDefinition Id="59dc952b-67b6-444c-ac76-cba0812f29a1" />
+            <covered>
+              <lifelineMoniker Id="013c4ebc-d813-46e3-9366-6cf5a4ac37fd" LastKnownName=": utilisateurs" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="fcedcc13-5048-4a84-a871-623fdf865aca" name="MessageOccurrenceSpecification117">
+            <elementDefinition Id="50025d91-a60a-4bf8-92e2-88b214c96575" />
+            <covered>
+              <lifelineMoniker Id="08cd91e6-23ee-44d2-b115-8dac303bc8e3" LastKnownName=": AffichageWPF" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="491cd6d6-f3a8-48f4-ba0e-91455e236012" name="MessageOccurrenceSpecification111">
+            <elementDefinition Id="48ecab11-59bb-496a-a894-6de019636059" />
+            <covered>
+              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="3a925f0a-3521-4c95-addc-e35f3e513e30" name="MessageOccurrenceSpecification75">
+            <elementDefinition Id="53084356-679d-45fa-9c28-105f7e9d8555" />
+            <covered>
+              <lifelineMoniker Id="013c4ebc-d813-46e3-9366-6cf5a4ac37fd" LastKnownName=": utilisateurs" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="f21ed667-d8b3-4b9d-a150-cbb1735c4502" name="MessageOccurrenceSpecification76">
+            <elementDefinition Id="2a1b52c4-cd02-4b08-b3ef-652171386b4d" />
+            <covered>
+              <lifelineMoniker Id="559ea8bf-95bb-4f56-98ce-6db391ae40ae" LastKnownName=": FenetreInit" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="05d89a13-4a80-48e5-ae12-9da0207877e3" name="MessageOccurrenceSpecification86">
+            <elementDefinition Id="b2f86248-0495-4533-b2f9-b5ba7cb2444a" />
+            <covered>
+              <lifelineMoniker Id="559ea8bf-95bb-4f56-98ce-6db391ae40ae" LastKnownName=": FenetreInit" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c7560f33-84d2-4a5a-9847-b94183a2a72a" name="MessageOccurrenceSpecification126">
+            <elementDefinition Id="ac884e1e-4e4a-400c-901e-753558b51f4f" />
+            <covered>
+              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6e0d44b9-35e4-477a-9afd-94fea5c023ac" name="MessageOccurrenceSpecification123">
+            <elementDefinition Id="098b24cf-d412-4947-89fb-0ff9354b190d" />
+            <covered>
+              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="59ab10d4-beba-45bb-98ab-eeac631b0e85" name="MessageOccurrenceSpecification85">
+            <elementDefinition Id="4349b4eb-040d-4764-b3bb-62d930c2f648" />
+            <covered>
+              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2c13fdba-bd1c-4053-9e2c-7841fca211b5" name="MessageOccurrenceSpecification89">
+            <elementDefinition Id="0d04dd25-2e06-44ee-9401-d5525d98e79b" />
+            <covered>
+              <lifelineMoniker Id="071e45b6-5954-4d3e-a3de-264577391751" LastKnownName=": MoteurJeu" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="4d01de03-ed85-47fa-a7cc-14794bbd2afe" name="MessageOccurrenceSpecification87">
+            <elementDefinition Id="46fdaffa-7585-475f-8da7-c9b8a9cd280a" />
+            <covered>
+              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="eca3667b-380c-4522-bf49-72d2a74181d7" name="MessageOccurrenceSpecification125">
+            <elementDefinition Id="b98e99e9-e0a9-4130-bb8e-2fee796d45e1" />
+            <covered>
+              <lifelineMoniker Id="071e45b6-5954-4d3e-a3de-264577391751" LastKnownName=": MoteurJeu" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0315e24d-4555-40b6-8736-f4b85edc7cf2" name="MessageOccurrenceSpecification90">
+            <elementDefinition Id="c291bf02-5314-4aa4-b57d-2514e1a67de0" />
+            <covered>
+              <lifelineMoniker Id="13699a1b-cdf8-489d-87bb-884fbe42c659" LastKnownName=": Facade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="cb55170e-0dff-440e-aca0-7fd7c5909455" name="MessageOccurrenceSpecification88">
+            <elementDefinition Id="01c69ecb-8b46-4c64-89d9-57f2993e8d6e" />
+            <covered>
+              <lifelineMoniker Id="071e45b6-5954-4d3e-a3de-264577391751" LastKnownName=": MoteurJeu" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="7b1ce722-0f9d-4d29-b21d-a5a135a09d89" name="BehaviorExecutionSpecification22">
@@ -727,7 +727,7 @@
               <messageOccurrenceSpecificationMoniker Id="f21ed667-d8b3-4b9d-a150-cbb1735c4502" LastKnownName="MessageOccurrenceSpecification76" />
             </receiveEvent>
           </message>
-          <message Id="96873dbc-a93f-4298-a6a4-317130a3241c" name="ClicInit active" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ acitveClicInit()">
+          <message Id="96873dbc-a93f-4298-a6a4-317130a3241c" name="ClicInit active" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ desacitveClicInit() &amp;&amp; execute()">
             <elementDefinition Id="e2de43c1-f7f3-4971-a408-18c23e26046f" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="ce30204c-492a-4b75-80b8-428b7885d0d0" LastKnownName="MessageOccurrenceSpecification83" />
@@ -754,7 +754,7 @@
               <messageOccurrenceSpecificationMoniker Id="0315e24d-4555-40b6-8736-f4b85edc7cf2" LastKnownName="MessageOccurrenceSpecification90" />
             </receiveEvent>
           </message>
-          <message Id="5d44363b-4d56-4afc-84c6-4aeac78af5c6" name="fermerFenetre()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="5d44363b-4d56-4afc-84c6-4aeac78af5c6" name="fermerFenetreInit()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="5bc6ca2e-ecd8-43e8-9d03-ddd4270b646d" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="59ab10d4-beba-45bb-98ab-eeac631b0e85" LastKnownName="MessageOccurrenceSpecification85" />
@@ -772,7 +772,7 @@
               <messageOccurrenceSpecificationMoniker Id="401e25de-fadb-4ada-b351-033624b52117" LastKnownName="MessageOccurrenceSpecification78" />
             </receiveEvent>
           </message>
-          <message Id="02665022-d318-4f91-bc15-5041953518ad" name="ClicLancerDe" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicDe()">
+          <message Id="02665022-d318-4f91-bc15-5041953518ad" name="Clic sur le bouton lancerDe" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicDe()">
             <elementDefinition Id="e1ec98a1-7267-4955-91aa-6cedf11e981a" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="4e34d843-f30b-4bb7-ae3e-af4a9c54fde0" LastKnownName="MessageOccurrenceSpecification99" />
@@ -781,7 +781,7 @@
               <messageOccurrenceSpecificationMoniker Id="53119d7b-fd1d-4c9f-bd30-0ec2b442e150" LastKnownName="MessageOccurrenceSpecification100" />
             </receiveEvent>
           </message>
-          <message Id="8d7c1c55-1496-4208-834a-e5ae85b5b5d2" name="AfficherDe" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ premierLancerDe()">
+          <message Id="8d7c1c55-1496-4208-834a-e5ae85b5b5d2" name="Afficher les dés" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="afficher2De() &amp;&amp; execute()">
             <elementDefinition Id="678c1ed9-f26e-42a4-bc6f-2fa0f4247f96" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="de18248b-453d-43ac-8dcf-74bbadd6442f" LastKnownName="MessageOccurrenceSpecification107" />
@@ -835,7 +835,7 @@
               <messageOccurrenceSpecificationMoniker Id="6856f2fc-fa40-4c65-be32-2df1c7237e21" LastKnownName="MessageOccurrenceSpecification116" />
             </receiveEvent>
           </message>
-          <message Id="2eebf5ea-9a28-4933-8966-ff795d086224" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicCase(c : pair&lt;int, int&gt;)">
+          <message Id="2eebf5ea-9a28-4933-8966-ff795d086224" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicCase(c : pair&lt;int, int&gt;) &amp;&amp; execute()">
             <elementDefinition Id="20eff8d2-0dfc-4664-a254-f4c3bda2a3c0" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="16859238-a1fb-45cf-9f74-27c94344c3b8" LastKnownName="MessageOccurrenceSpecification119" />
@@ -853,7 +853,7 @@
               <messageOccurrenceSpecificationMoniker Id="d2466efd-08a7-4706-871d-8f0e0c8b46e1" LastKnownName="MessageOccurrenceSpecification124" />
             </receiveEvent>
           </message>
-          <message Id="3e058238-3e04-457f-a6d6-078ccdd95f0a" name="initClicCase()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="3e058238-3e04-457f-a6d6-078ccdd95f0a" name="initCaseClic()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="41e3bf35-c8c9-4878-a066-5680aedb2f5c" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="eca3667b-380c-4522-bf49-72d2a74181d7" LastKnownName="MessageOccurrenceSpecification125" />
