@@ -354,10 +354,6 @@
         <umlExecutionSpecificationShapeMoniker Id="34faa0a4-71e2-461e-a632-9e3223dc54be" />
       </nodes>
     </returnMessageConnector>
-    <commentShape Id="608e1fab-1379-462b-80bb-1cc1e3ef7cdf" absoluteBounds="8.875, 14.125, 1.25, 0.875" customColor="251, 247, 200">
-      <commentMoniker Id="63c41bd5-c8fd-4914-8184-c8e25a7525e0" />
-      <relativeChildShapes />
-    </commentShape>
     <asyncSelfMessageConnector edgePoints="[(11.4416668256124 : 15.790625); (11.6916668256124 : 15.790625); (11.6916668256124 : 16.040625); (11.5166668256124 : 16.040625)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
       <relativeChildShapes />
       <nodes>
