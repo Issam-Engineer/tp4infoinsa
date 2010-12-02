@@ -17,12 +17,12 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
   <ItemGroup>
-    <Content Include="EtatsTransitions.activitydiagram">
+    <Content Include="EtatsTransitions2.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="EtatsTransitions.activitydiagram.layout">
+    <Content Include="EtatsTransitions2.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>EtatsTransitions.activitydiagram</DependentUpon>
+      <DependentUpon>EtatsTransitions2.activitydiagram</DependentUpon>
     </Content>
     <Content Include="InitialisationAlternatif.sequencediagram">
       <SubType>Content</SubType>
