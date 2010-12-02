@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="d1255448-f23c-4490-af91-82b9caa462ca"
   name="CanonNoir" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -8821,7 +8821,7 @@ modifiernuméro(j)</body>
           </operation>
           <operation
             Id="39a11289-ab4f-403e-8b37-2c1d0fe5b579"
-            name="creerFenetre"
+            name="creerFenetreInit"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -8923,6 +8923,14 @@ modifiernuméro(j)</body>
               </stereotypeInstance>
             </appliedStereotypesInternal>
           </operation>
+          <operation
+            Id="67c3a689-0e1b-4ea9-8808-ca3f6c65c888"
+            name="creerFenetreTir"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -13771,11 +13779,11 @@ modifiernuméro(j)</body>
             isUnmarshall="false">
             <flowNodeTargets>
               <controlFlow
-                Id="a7b9680a-3e10-4a16-ac8b-fa3ce22738c1"
+                Id="651c1d9f-7d7d-4c3a-b5b6-fe6b15f8f881"
                 isLeaf="false">
-                <sendSignalActionMoniker
-                  Id="77b70925-b610-4c59-986f-6b0ebee68df2"
-                  LastKnownName="Afficher la puissance"
+                <acceptEventActionMoniker
+                  Id="fda71549-046c-43ab-8a2f-29b6834acb7a"
+                  LastKnownName="Paramétrer l'angle"
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -13787,11 +13795,11 @@ modifiernuméro(j)</body>
             isUnmarshall="false">
             <flowNodeTargets>
               <controlFlow
-                Id="77304c62-8395-496c-84ed-085eb772baeb"
+                Id="93363a17-08bc-4289-8545-5af738ade551"
                 isLeaf="false">
-                <sendSignalActionMoniker
-                  Id="5b44676f-ab76-4d86-a007-b4527978c58f"
-                  LastKnownName="Afficher l'angle"
+                <opaqueActionMoniker
+                  Id="4f52e07d-fab2-40ed-bac1-9e5815b8cc6b"
+                  LastKnownName="Paramétrer le Tir"
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -13949,36 +13957,6 @@ modifiernuméro(j)</body>
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
-          <sendSignalAction
-            Id="77b70925-b610-4c59-986f-6b0ebee68df2"
-            name="Afficher la puissance"
-            isLeaf="false">
-            <flowNodeTargets>
-              <controlFlow
-                Id="a9da7329-cc38-44e7-94d1-c4b2a8b2a489"
-                isLeaf="false">
-                <acceptEventActionMoniker
-                  Id="fda71549-046c-43ab-8a2f-29b6834acb7a"
-                  LastKnownName="Paramétrer l'angle"
-                  LastKnownLocation="CanonNoir.uml" />
-              </controlFlow>
-            </flowNodeTargets>
-          </sendSignalAction>
-          <sendSignalAction
-            Id="5b44676f-ab76-4d86-a007-b4527978c58f"
-            name="Afficher l'angle"
-            isLeaf="false">
-            <flowNodeTargets>
-              <controlFlow
-                Id="adc7df1c-71fd-45eb-86d3-8a91785a75a5"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="4f52e07d-fab2-40ed-bac1-9e5815b8cc6b"
-                  LastKnownName="Paramétrer le Tir"
-                  LastKnownLocation="CanonNoir.uml" />
-              </controlFlow>
-            </flowNodeTargets>
-          </sendSignalAction>
           <opaqueAction
             Id="4f52e07d-fab2-40ed-bac1-9e5815b8cc6b"
             name="Paramétrer le Tir"
