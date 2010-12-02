@@ -63,7 +63,7 @@
       <controlFlowMoniker Id="49abeb95-620b-4e10-bd8b-740b892d596a" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallySized="true" absoluteBounds="3.367083333333333, 3.56, 2.010416666666667, 0.14800345897674561" shapeFieldName="Guard" />
+        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="3.4375, 3.5625, 2.010416666666667, 0.14800345897674561" shapeFieldName="Guard" />
       </moveableDecoratorHostShapes>
       <nodes>
         <callOperationActionShapeMoniker Id="bf91e50a-751c-4d4a-bc73-addcc785921e" />
@@ -298,6 +298,9 @@
     <controlFlowConnector edgePoints="[(7.5625 : 8.5); (7.5625 : 4.07291666666667); (6.125 : 4.07291666666667)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <controlFlowMoniker Id="6569f061-e388-474e-92a3-f2118557df41" />
       <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="7.625, 6.25, 1.3360278606414795, 0.14800345897674561" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
       <nodes>
         <decisionNodeShapeMoniker Id="521d94dc-227f-4d1e-85bc-1a2cf070b52e" />
         <callOperationActionShapeMoniker Id="e9c897c2-8365-41ed-84a3-2a5e1d351d42" />
@@ -326,6 +329,9 @@
     <controlFlowConnector edgePoints="[(8.82065217391304 : 11.991847826087); (8.82065217391304 : 12.375); (10.6666666666667 : 12.375); (10.6666666666667 : 3.87996031746032); (6.125 : 3.87996031746032)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <controlFlowMoniker Id="2cf6a1da-64dc-4dc7-9ef0-f821638cb2c9" />
       <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="8.125, 12.4375, 3.3830654621124268, 0.14800345897674561" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
       <nodes>
         <decisionNodeShapeMoniker Id="d1d063fb-1e41-47c5-a1ac-a3747592c01a" />
         <callOperationActionShapeMoniker Id="e9c897c2-8365-41ed-84a3-2a5e1d351d42" />
