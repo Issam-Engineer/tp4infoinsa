@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="437db670-5bda-4f41-aa9d-baad3ea6f3da" name="EtatsTransitions" linkedPackageId="666e3ac2-4de9-4edf-9b29-1cf2c46c64d8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="437db670-5bda-4f41-aa9d-baad3ea6f3da" name="EtatsTransitions" linkedPackageId="666e3ac2-4de9-4edf-9b29-1cf2c46c64d8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="3efea7b0-09eb-4822-9a85-795cdd5ae5ef" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="75d8ab5e-355c-45eb-bd24-00608fdb6e78" />
@@ -128,7 +128,7 @@
           <callOperationAction Id="fb46adde-09cb-4c89-9dc6-635ca5619fdd" name="AttenteDeplacement" isLeaf="false">
             <elementDefinition Id="f4b1e1d4-8171-47f4-943c-f6496056e26a" />
             <flowNodeTargets>
-              <controlFlow Id="92976841-2a84-4e83-8b2e-362636ce3564" isLeaf="false">
+              <controlFlow Id="92976841-2a84-4e83-8b2e-362636ce3564" guard="bateauArriveSurCase == true" isLeaf="false">
                 <decisionNodeMoniker Id="b3fd5418-8ba7-44aa-accb-de27f153fb73" LastKnownName="Decision1" />
                 <elementDefinition Id="db79a140-dcff-43aa-bce5-d399623a294f" />
               </controlFlow>
@@ -220,7 +220,7 @@
           <callOperationAction Id="cc1e5c10-edef-452a-b0d1-d40c92183875" name="EtatTir" isLeaf="false">
             <elementDefinition Id="2d7a632b-c893-47c1-bfe7-a779d1d93cf9" />
             <flowNodeTargets>
-              <controlFlow Id="66da1d4f-22d9-4fc8-92fd-c3c9be40669f" isLeaf="false">
+              <controlFlow Id="66da1d4f-22d9-4fc8-92fd-c3c9be40669f" guard="bateauVise != null" isLeaf="false">
                 <callOperationActionMoniker Id="156f73b8-725d-4484-8b4b-65778f8b959d" LastKnownName="AttenteCanonPuissance" />
                 <elementDefinition Id="f8126a49-9614-45fb-b80c-7f42baf6afcd" />
               </controlFlow>
@@ -229,7 +229,7 @@
           <callOperationAction Id="156f73b8-725d-4484-8b4b-65778f8b959d" name="AttenteCanonPuissance" isLeaf="false">
             <elementDefinition Id="f2dcd676-e9ff-49fe-a2a0-c97c98a92209" />
             <flowNodeTargets>
-              <controlFlow Id="a72fc3a4-3f81-40db-9a90-8bb34f98891a" isLeaf="false">
+              <controlFlow Id="a72fc3a4-3f81-40db-9a90-8bb34f98891a" guard="puissance != null" isLeaf="false">
                 <callOperationActionMoniker Id="1414e149-6911-439d-b233-ea816baa89cc" LastKnownName="AttenteCanonAngle" />
                 <elementDefinition Id="72165bc4-2489-45d8-9b91-79eb73fddebe" />
               </controlFlow>
@@ -238,7 +238,7 @@
           <callOperationAction Id="1414e149-6911-439d-b233-ea816baa89cc" name="AttenteCanonAngle" isLeaf="false">
             <elementDefinition Id="94633526-11e2-40e1-98d9-2e6ec83a541e" />
             <flowNodeTargets>
-              <controlFlow Id="ca9aedab-3e9a-46c1-a599-e6b3dc56d164" isLeaf="false">
+              <controlFlow Id="ca9aedab-3e9a-46c1-a599-e6b3dc56d164" guard="angle != null" isLeaf="false">
                 <callOperationActionMoniker Id="1445f4e5-9822-4097-9f32-28cc3050be2d" LastKnownName="EtatCanonFin" />
                 <elementDefinition Id="94dd0b6c-b666-4680-b107-da6c42df4132" />
               </controlFlow>
@@ -247,7 +247,7 @@
           <callOperationAction Id="1445f4e5-9822-4097-9f32-28cc3050be2d" name="EtatCanonFin" isLeaf="false">
             <elementDefinition Id="17aa2141-a846-4c14-a65a-181c1e0f7155" />
             <flowNodeTargets>
-              <controlFlow Id="3606bb6c-acdf-48e8-896c-41458a51f3f7" isLeaf="false">
+              <controlFlow Id="3606bb6c-acdf-48e8-896c-41458a51f3f7" guard="caseTouche != null" isLeaf="false">
                 <decisionNodeMoniker Id="99ad2ec5-8bb6-48d5-8e07-a7444fd87014" LastKnownName="Decision5" />
                 <elementDefinition Id="a1a391e8-0932-442e-b4b2-87da9f942857" />
               </controlFlow>
@@ -278,7 +278,7 @@
           <decisionNode Id="8dcdb941-7ef1-4a0b-b180-798e06bd8ff9" name="Decision4" isLeaf="false">
             <elementDefinition Id="1f908fac-1883-4c33-9e35-74c6a6f4d1ae" />
             <flowNodeTargets>
-              <controlFlow Id="8f507eaa-d2dd-4be0-85e1-1a5c88cf54a8" isLeaf="false">
+              <controlFlow Id="8f507eaa-d2dd-4be0-85e1-1a5c88cf54a8" guard="clicValiderDuel == true" isLeaf="false">
                 <callOperationActionMoniker Id="cc1e5c10-edef-452a-b0d1-d40c92183875" LastKnownName="EtatTir" />
                 <elementDefinition Id="217c250e-ee9d-4037-ac43-f8f994d64695" />
               </controlFlow>
@@ -291,7 +291,7 @@
           <decisionNode Id="99ad2ec5-8bb6-48d5-8e07-a7444fd87014" name="Decision5" isLeaf="false">
             <elementDefinition Id="eed683d3-e43e-47b3-8104-8d7cabde94f5" />
             <flowNodeTargets>
-              <controlFlow Id="de1fe3b5-f2b6-4c8e-be72-93cde330a9f9" isLeaf="false">
+              <controlFlow Id="de1fe3b5-f2b6-4c8e-be72-93cde330a9f9" guard="tirLoupé == true &amp;&amp; modeDuel" isLeaf="false">
                 <callOperationActionMoniker Id="cc1e5c10-edef-452a-b0d1-d40c92183875" LastKnownName="EtatTir" />
                 <elementDefinition Id="01919191-2413-4298-a066-13ab6d5fdf55" />
               </controlFlow>

@@ -10,7 +10,7 @@
       </nestedChildShapes>
     </classShape>
     <packageShape Id="bd53e5a1-c12c-4286-96d1-ff656625d902" absoluteBounds="5.625, 1.25, 1.875, 1" customColor="255, 249, 230" hideQualifiedName="false">
-      <packageMoniker Id="464fb8b0-cb7e-4d81-8e17-fb8a9a869c35" LastKnownName="MoteurJeu" />
+      <packageMoniker Id="464fb8b0-cb7e-4d81-8e17-fb8a9a869c35" LastKnownName="Moteur" />
     </packageShape>
     <dependencyConnector edgePoints="[(5.625 : 1.8125); (5.125 : 1.8125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <dependencyMoniker Id="0f76ec5e-1108-4f68-acd9-12baef75a938" />
