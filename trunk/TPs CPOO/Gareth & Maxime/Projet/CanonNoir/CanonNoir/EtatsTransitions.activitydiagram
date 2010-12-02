@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="437db670-5bda-4f41-aa9d-baad3ea6f3da" name="EtatsTransitions" linkedPackageId="666e3ac2-4de9-4edf-9b29-1cf2c46c64d8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="437db670-5bda-4f41-aa9d-baad3ea6f3da" name="EtatsTransitions" linkedPackageId="666e3ac2-4de9-4edf-9b29-1cf2c46c64d8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="3efea7b0-09eb-4822-9a85-795cdd5ae5ef" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="75d8ab5e-355c-45eb-bd24-00608fdb6e78" />
@@ -72,20 +72,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="c8d1d379-c8e8-4269-aae2-4298304b5a1a">
-      <profileInstance Id="61fca19f-641e-44ef-9593-09290dbcb2a6" name="CSharpProfile">
-        <elementDefinition Id="4c3a23cd-7e61-4b13-9904-86e57ec305f3" />
-      </profileInstance>
-      <elementDefinition Id="b29d2ff8-e64c-4c39-991e-3677c023ae66" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="38cae9ae-792a-4504-941f-b62c2e0938a4">
-      <profileInstance Id="5e5809f1-1ba6-4d99-8d89-3c0f1810f1b7" name="TextTemplateBindings">
-        <elementDefinition Id="9cec5e19-a287-46c0-a8c6-9466cab8c829" />
-      </profileInstance>
-      <elementDefinition Id="85f02885-01ae-4865-b27d-08956d8b1847" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="dff90971-fba6-453e-9ac6-238ebb87f8b3" name="EtatsTransitions" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -169,11 +155,11 @@
           <decisionNode Id="b3fd5418-8ba7-44aa-accb-de27f153fb73" name="Decision1" isLeaf="false">
             <elementDefinition Id="d5113f8f-4c86-4f7b-a6df-f05fc66a2f6c" />
             <flowNodeTargets>
-              <controlFlow Id="b647766d-5204-4b7c-96a0-9f7eabfc1e2e" isLeaf="false">
+              <controlFlow Id="b647766d-5204-4b7c-96a0-9f7eabfc1e2e" guard="caseCourante == CasePort" isLeaf="false">
                 <callOperationActionMoniker Id="e46a84f5-5799-4dde-8e74-08723d872d7c" LastKnownName="EtatDepot" />
                 <elementDefinition Id="779fb660-161e-4eca-8004-4868df0cd198" />
               </controlFlow>
-              <controlFlow Id="d41efc87-9b48-4d97-b2e5-423466e95dde" isLeaf="false">
+              <controlFlow Id="d41efc87-9b48-4d97-b2e5-423466e95dde" guard="caseCourante == caseTresor" isLeaf="false">
                 <callOperationActionMoniker Id="9daa5636-0021-4cad-9d60-8289eda9801f" LastKnownName="EtatTresor" />
                 <elementDefinition Id="65a85014-f0d0-4355-8ebd-0394d9c481c1" />
               </controlFlow>
@@ -181,7 +167,7 @@
                 <callOperationActionMoniker Id="cc1e5c10-edef-452a-b0d1-d40c92183875" LastKnownName="EtatTir" />
                 <elementDefinition Id="381acd35-3151-4662-9d87-5817c3dba4ec" />
               </controlFlow>
-              <controlFlow Id="b6c61d40-41f6-4b69-b035-49495169d42f" isLeaf="false">
+              <controlFlow Id="b6c61d40-41f6-4b69-b035-49495169d42f" guard="caseCourante == caseBordure" isLeaf="false">
                 <callOperationActionMoniker Id="1f5309fe-1deb-4449-a785-b71a96d2fb04" LastKnownName="Duel" />
                 <elementDefinition Id="8d6d801a-6fcc-418b-9f98-3c9744fabd3a" />
               </controlFlow>
@@ -313,7 +299,7 @@
                 <callOperationActionMoniker Id="4fa0d7dd-c362-4314-a666-f6c20418107d" LastKnownName="AttenteLancerDe" />
                 <elementDefinition Id="f71c765c-134c-42bd-9b90-81bc5c984e0d" />
               </controlFlow>
-              <controlFlow Id="08fd4b79-1502-43b7-89fa-86bbe296c0e8" isLeaf="false">
+              <controlFlow Id="08fd4b79-1502-43b7-89fa-86bbe296c0e8" guard="tirLoupé == false &amp;&amp; bateauAdversaire == radeau" isLeaf="false">
                 <callOperationActionMoniker Id="9daa5636-0021-4cad-9d60-8289eda9801f" LastKnownName="EtatTresor" />
                 <elementDefinition Id="33d2d5b6-d266-4777-bf5a-bc8fb50ef233" />
               </controlFlow>
@@ -322,11 +308,11 @@
           <decisionNode Id="2fe98162-dc9c-4598-ad62-c36817be860d" name="Decision6" isLeaf="false">
             <elementDefinition Id="410039d3-3c15-4e49-abf1-16d5d0c6e21f" />
             <flowNodeTargets>
-              <controlFlow Id="e9975fe9-e7a9-4b6d-96a7-e2727f6e0f20" isLeaf="false">
+              <controlFlow Id="e9975fe9-e7a9-4b6d-96a7-e2727f6e0f20" guard="nbTresorsJoueur == 3" isLeaf="false">
                 <callOperationActionMoniker Id="66a0a1ab-81a3-4942-9f69-26d0033f2e0d" LastKnownName="EtatFinPartie" />
                 <elementDefinition Id="51b44bcd-de69-4d7e-b917-247a39c6f4c3" />
               </controlFlow>
-              <controlFlow Id="67bbff82-a119-4063-8a39-047165a82521" isLeaf="false">
+              <controlFlow Id="67bbff82-a119-4063-8a39-047165a82521" guard="nbTresorsJoueur &lt; 3" isLeaf="false">
                 <callOperationActionMoniker Id="4fa0d7dd-c362-4314-a666-f6c20418107d" LastKnownName="AttenteLancerDe" />
                 <elementDefinition Id="c5536377-c3dd-4823-8215-c65c50ca29ee" />
               </controlFlow>
@@ -350,6 +336,18 @@
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c8d1d379-c8e8-4269-aae2-4298304b5a1a">
+        <profileInstance Id="61fca19f-641e-44ef-9593-09290dbcb2a6" name="CSharpProfile">
+          <elementDefinition Id="4c3a23cd-7e61-4b13-9904-86e57ec305f3" />
+        </profileInstance>
+        <elementDefinition Id="b29d2ff8-e64c-4c39-991e-3677c023ae66" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="38cae9ae-792a-4504-941f-b62c2e0938a4">
+        <profileInstance Id="5e5809f1-1ba6-4d99-8d89-3c0f1810f1b7" name="TextTemplateBindings">
+          <elementDefinition Id="9cec5e19-a287-46c0-a8c6-9466cab8c829" />
+        </profileInstance>
+        <elementDefinition Id="85f02885-01ae-4865-b27d-08956d8b1847" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>
