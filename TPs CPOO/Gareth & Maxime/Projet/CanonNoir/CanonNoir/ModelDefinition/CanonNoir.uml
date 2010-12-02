@@ -6461,80 +6461,6 @@ modifiernuméro(j)</body>
             </type_NamedElement>
           </property>
           <property
-            Id="8c65b4fe-e4a2-4470-954f-f4589a2c4435"
-            name="afficherDeplacementPoss"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="d6fc0f55-c304-4d48-a3fc-519eeb227838"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="bd280809-4edc-41ec-92bf-66fc0c450a83">
-                    <propertyInstance
-                      Id="cc7f9d95-3596-4bfc-954f-7c417edd7779"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3c0f1374-3381-43b8-87a6-a1328974d221">
-                    <propertyInstance
-                      Id="b2c8814a-ed0b-46ef-9fdc-064b81881717"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5a2b90cb-29ba-4879-b33d-213b23df00d9">
-                    <propertyInstance
-                      Id="27d711d0-f2eb-4100-8529-9e62d84e488e"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="cb32263a-49c2-4496-a960-2a66883f8dcc">
-                    <propertyInstance
-                      Id="838e05f2-f23c-4f98-bc72-4db534f8bad1"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e2fa0a74-f461-46dc-808f-b83936eb55a5">
-                    <propertyInstance
-                      Id="4a65d16a-79cd-4c35-8f04-ba87cc3c3502"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c4f44389-1aff-459b-917d-b2323cf56d19">
-                    <propertyInstance
-                      Id="33a56996-053f-4fd9-9a5f-3b42a13eafdb"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="9747b71b-5760-4947-a400-dd891fa273cf"
-                LastKnownName="bool"
-                LastKnownLocation="CanonNoir.uml" />
-            </type_NamedElement>
-            <defaultValue>
-              <literalString
-                Id="c3c1d763-1bec-4741-b04a-750cb72ffdda"
-                name="DefaultValue"
-                value="false" />
-            </defaultValue>
-          </property>
-          <property
             Id="db4cc38b-9a3b-4e5a-ab47-6ac00bd61449"
             name="tempJoueurs"
             isLeaf="false"
@@ -7055,6 +6981,60 @@ modifiernuméro(j)</body>
               <undefinedTypeMoniker
                 Id="79d3a8dd-f92e-4346-9a54-64de39d5bf9a"
                 LastKnownName="pair&lt;int,int&gt;[]"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="17c0f4f1-e5dd-4f17-8c74-6ab686045da9"
+            name="tabBateau"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="cabc7284-cb30-40cd-99db-3fa8cc191896"
+                LastKnownName="Bateau[]"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="017b6b75-f6e3-4b0d-90e1-52dd2ab127cf"
+            name="fenetreInit"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9747b71b-5760-4947-a400-dd891fa273cf"
+                LastKnownName="bool"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c0507342-e595-44be-b39e-509432b00ba9"
+            name="fenetreTir"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9747b71b-5760-4947-a400-dd891fa273cf"
+                LastKnownName="bool"
                 LastKnownLocation="CanonNoir.uml" />
             </type_NamedElement>
           </property>
@@ -7997,60 +7977,8 @@ modifiernuméro(j)</body>
             </appliedStereotypesInternal>
           </operation>
           <operation
-            Id="57aa396a-62e8-4b68-96c3-bad2b098514b"
-            name="afficherDeplacementPoss"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="13135eee-6bba-458e-8ae7-af83940764fe"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="55b989a6-85ea-443c-8e4f-4461a301716c">
-                    <propertyInstance
-                      Id="afac548c-8035-416a-a616-74d8f6d1e20c"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="80fef1f4-57e4-472c-8b86-26a8bfc6b713">
-                    <propertyInstance
-                      Id="2118f472-d537-446b-a978-648315b4cf31"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ecdda2f5-cac2-4586-ac31-746093776435">
-                    <propertyInstance
-                      Id="1817c5a9-dc9b-4bd2-8db2-ee433cb08ba7"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="883cca31-1167-4de3-8ecb-44597f009761">
-                    <propertyInstance
-                      Id="408f44a2-2edd-474d-95af-c639be23c26e"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="21811ce3-1bb9-4703-a0b8-8c7945134220">
-                    <propertyInstance
-                      Id="3751a9de-5908-4614-a261-a6c05e9b0311"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </operation>
-          <operation
             Id="8bba3dd3-8eb6-4692-9b20-afb7d7d0765c"
-            name="afficherAngle"
+            name="getAngle"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -8099,10 +8027,25 @@ modifiernuméro(j)</body>
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c2e54ef4-e637-4b4b-89ac-e5a7bb15e951"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+                      LastKnownName="int"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
           <operation
             Id="bb849e24-c099-4a90-b63d-1d4a177af6ba"
-            name="afficherPuissance"
+            name="getPuissance"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -8151,6 +8094,21 @@ modifiernuméro(j)</body>
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="36bf86ad-27b5-4f39-ba20-bd6f4b292450"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4cd7cfc7-621d-4a22-a99d-0a26fd5559a0"
+                      LastKnownName="int"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
           <operation
             Id="0641a6f1-f0e5-480a-8454-ed6d213a06ea"
@@ -8424,6 +8382,62 @@ modifiernuméro(j)</body>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="daef02a0-1112-40b9-85fb-7249204dc927"
+            name="afficherCasesProposees"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b683cdce-bc39-4516-b537-792c39b9fdff"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f05a02ec-cdd4-42ab-a9f0-8ea9255e81b7"
+                      LastKnownName="pair&lt;int,int&gt;"
+                      LastKnownLocation="CanonNoir.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8af06bf5-3975-4785-a2fa-f0e1172a8b50"
+            name="ouvrirFenetreInit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ff348e5a-022a-4931-a439-443ec58cff0d"
+            name="fermerFenetreInit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7f25fb0d-582a-4652-bdcf-4fc131116f91"
+            name="ouvrirFenetreTir"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c4e9b58d-bcd1-4827-a5ea-a377aa626257"
+            name="fermerFenetreTir"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -19893,11 +19907,6 @@ les bateaus ont une couleur spé !</body>
           <messageOccurrenceSpecification
             Id="3d2d019a-0912-4674-81df-81dc0a18ed3b"
             name="MessageOccurrenceSpecification18">
-            <event>
-              <receiveOperationEventMoniker
-                Id="c4be3ba7-0e34-4e58-953f-304fe0bc7c40"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
             <covered>
               <lifelineMoniker
                 Id="3376208c-e3d5-488a-88c8-5bf2e38d4d2f"
@@ -19923,11 +19932,6 @@ les bateaus ont une couleur spé !</body>
           <messageOccurrenceSpecification
             Id="e19c2485-bcbe-4204-9fbf-b2e5f5205b65"
             name="MessageOccurrenceSpecification17">
-            <event>
-              <sendOperationEventMoniker
-                Id="10289aec-dfa4-41c5-b015-c5b12d1fa52b"
-                LastKnownLocation="CanonNoir.uml" />
-            </event>
             <covered>
               <lifelineMoniker
                 Id="af662c08-dab9-4b03-ac61-c51ef325dc1f"
@@ -21460,8 +21464,7 @@ les bateaus ont une couleur spé !</body>
             name="Afficher les possibilités de déplacement et la case du clic"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false"
-            signatureText="+ afficherDeplacementPoss() &amp;&amp; execute() &amp;&amp; clicCase(pair&lt;int,int&gt;)">
+            createSelfMessage="false">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="e19c2485-bcbe-4204-9fbf-b2e5f5205b65"
@@ -21890,28 +21893,6 @@ les bateaus ont une couleur spé !</body>
           <operationMoniker
             Id="a58f385b-6f21-4353-992e-454f2996f490"
             LastKnownName="clicCase"
-            LastKnownLocation="CanonNoir.uml" />
-        </operation>
-      </receiveOperationEvent>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <sendOperationEvent
-        Id="10289aec-dfa4-41c5-b015-c5b12d1fa52b">
-        <operation>
-          <operationMoniker
-            Id="57aa396a-62e8-4b68-96c3-bad2b098514b"
-            LastKnownName="afficherDeplacementPoss"
-            LastKnownLocation="CanonNoir.uml" />
-        </operation>
-      </sendOperationEvent>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <receiveOperationEvent
-        Id="c4be3ba7-0e34-4e58-953f-304fe0bc7c40">
-        <operation>
-          <operationMoniker
-            Id="57aa396a-62e8-4b68-96c3-bad2b098514b"
-            LastKnownName="afficherDeplacementPoss"
             LastKnownLocation="CanonNoir.uml" />
         </operation>
       </receiveOperationEvent>
@@ -27273,6 +27254,11 @@ les bateaus ont une couleur spé !</body>
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="cabc7284-cb30-40cd-99db-3fa8cc191896"
+        name="Bateau[]" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
