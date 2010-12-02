@@ -88,6 +88,34 @@
       <SubType>Content</SubType>
       <DependentUpon>DeplacementNominal.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="VueAffichage.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VueAffichage.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VueAffichage.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="VueFacade.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VueFacade.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VueFacade.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="VueEtat.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VueEtat.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VueEtat.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="VueMoteur.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VueMoteur.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VueMoteur.classdiagram</DependentUpon>
+    </Content>
     <Content Include="UMLComponentDiagram1.componentdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -110,12 +138,12 @@
       <DependentUpon>VisualisationGlobale.classdiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
-    <Content Include="ClassDiagramcanon.classdiagram">
+    <Content Include="Global.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ClassDiagramcanon.classdiagram.layout">
+    <Content Include="Global.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>ClassDiagramcanon.classdiagram</DependentUpon>
+      <DependentUpon>Global.classdiagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\CanonNoir.uml">
       <SubType>Content</SubType>
