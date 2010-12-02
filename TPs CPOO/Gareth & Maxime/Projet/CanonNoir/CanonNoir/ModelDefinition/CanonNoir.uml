@@ -22628,6 +22628,12 @@ les bateaus ont une couleur spé !</body>
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
+            <operation>
+              <operationMoniker
+                Id="c0f531d7-1079-4613-a111-2efbe4fc7537"
+                LastKnownName="execute"
+                LastKnownLocation="CanonNoir.uml" />
+            </operation>
           </callOperationAction>
           <callOperationAction
             Id="090af549-0a4f-4a3d-8c99-9b4a2144c661"
@@ -22644,6 +22650,12 @@ les bateaus ont une couleur spé !</body>
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
+            <operation>
+              <operationMoniker
+                Id="fea7926b-1a80-41fd-81fa-70c8e11a1880"
+                LastKnownName="execute"
+                LastKnownLocation="CanonNoir.uml" />
+            </operation>
           </callOperationAction>
           <callOperationAction
             Id="011879d6-fcee-4c33-9aa9-3431934b0bb0"
@@ -22660,6 +22672,12 @@ les bateaus ont une couleur spé !</body>
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
+            <operation>
+              <operationMoniker
+                Id="42678fcb-3d11-4f5f-a71e-2f25be706e1f"
+                LastKnownName="execute"
+                LastKnownLocation="CanonNoir.uml" />
+            </operation>
           </callOperationAction>
           <decisionNode
             Id="d5113f8f-4c86-4f7b-a6df-f05fc66a2f6c"
@@ -22751,6 +22769,12 @@ les bateaus ont une couleur spé !</body>
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
+            <operation>
+              <operationMoniker
+                Id="9c82c4b2-4d0a-41dc-8d4a-8c967ee91326"
+                LastKnownName="execute"
+                LastKnownLocation="CanonNoir.uml" />
+            </operation>
           </callOperationAction>
           <callOperationAction
             Id="00d0d527-518f-43bb-a3db-daf26591b821"
@@ -22766,6 +22790,12 @@ les bateaus ont une couleur spé !</body>
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
+            <operation>
+              <operationMoniker
+                Id="0a636a10-9687-411e-a2f3-4f1dba25888d"
+                LastKnownName="execute"
+                LastKnownLocation="CanonNoir.uml" />
+            </operation>
           </callOperationAction>
           <callOperationAction
             Id="2eef5e6b-31a2-4aa7-9e60-11c42c91111c"
@@ -22781,6 +22811,12 @@ les bateaus ont une couleur spé !</body>
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
+            <operation>
+              <operationMoniker
+                Id="7a33a9ed-7ee7-474f-aa2b-7bb064cefa23"
+                LastKnownName="execute"
+                LastKnownLocation="CanonNoir.uml" />
+            </operation>
           </callOperationAction>
           <callOperationAction
             Id="2d7a632b-c893-47c1-bfe7-a779d1d93cf9"
@@ -22813,6 +22849,12 @@ les bateaus ont une couleur spé !</body>
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
+            <operation>
+              <operationMoniker
+                Id="bd65bdb8-ef23-4296-a55d-6a5f8d1def31"
+                LastKnownName="execute"
+                LastKnownLocation="CanonNoir.uml" />
+            </operation>
           </callOperationAction>
           <callOperationAction
             Id="94633526-11e2-40e1-98d9-2e6ec83a541e"
@@ -22829,6 +22871,12 @@ les bateaus ont une couleur spé !</body>
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
+            <operation>
+              <operationMoniker
+                Id="5855cb72-d74d-480d-953e-f9c00ee0fb34"
+                LastKnownName="execute"
+                LastKnownLocation="CanonNoir.uml" />
+            </operation>
           </callOperationAction>
           <callOperationAction
             Id="17aa2141-a846-4c14-a65a-181c1e0f7155"
@@ -22845,6 +22893,12 @@ les bateaus ont une couleur spé !</body>
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
+            <operation>
+              <operationMoniker
+                Id="400de154-26f0-4ca4-9a2b-8016a12972c5"
+                LastKnownName="execute"
+                LastKnownLocation="CanonNoir.uml" />
+            </operation>
           </callOperationAction>
           <callOperationAction
             Id="66421113-6eb1-40c7-8297-3a8faa4404aa"
@@ -22861,6 +22915,12 @@ les bateaus ont une couleur spé !</body>
                   LastKnownLocation="CanonNoir.uml" />
               </controlFlow>
             </flowNodeTargets>
+            <operation>
+              <operationMoniker
+                Id="295a58c6-595d-410c-8b0f-e3d6498cefaa"
+                LastKnownName="execute"
+                LastKnownLocation="CanonNoir.uml" />
+            </operation>
           </callOperationAction>
           <decisionNode
             Id="cff9b89f-545e-4e22-8294-51907e7aa47c"
