@@ -88,6 +88,13 @@
       <SubType>Content</SubType>
       <DependentUpon>DeplacementNominal.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="VueCases.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VueCases.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VueCases.classdiagram</DependentUpon>
+    </Content>
     <Content Include="VueAffichage.classdiagram">
       <SubType>Content</SubType>
     </Content>
