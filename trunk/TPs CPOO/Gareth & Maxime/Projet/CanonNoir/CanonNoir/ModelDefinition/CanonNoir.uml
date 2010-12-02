@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="d1255448-f23c-4490-af91-82b9caa462ca"
   name="CanonNoir" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -25399,48 +25399,7 @@ les bateaus ont une couleur spé !</body>
         name="motor : Moteur"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false">
-        <ownedAttributesInternal>
-          <providedInterface
-            Id="eb1cf180-30b8-49d4-9ad0-abe606636a18"
-            name="Port1"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="221ef05d-c13e-4d9d-9614-5c8821e7e938"
-                LastKnownName="modifie"
-                LastKnownLocation="CanonNoir.uml" />
-            </type_NamedElement>
-          </providedInterface>
-          <requiredInterface
-            Id="0fe56852-f265-4042-9f5b-cb68484609bb"
-            name="Port2"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="37560312-2c35-4db0-a9a5-3871a898eb51"
-                LastKnownName="récupère"
-                LastKnownLocation="CanonNoir.uml" />
-            </type_NamedElement>
-          </requiredInterface>
-        </ownedAttributesInternal>
-      </component>
+        isActiveClass="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <component
@@ -25700,48 +25659,7 @@ les bateaus ont une couleur spé !</body>
         name="Façade"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false">
-        <ownedAttributesInternal>
-          <requiredInterface
-            Id="c2c2653b-a219-4d2e-beae-f10db6faf6fc"
-            name="Port1"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="d40f868e-18f2-4b9d-9044-bea693034e8c"
-                LastKnownName="nécessite"
-                LastKnownLocation="CanonNoir.uml" />
-            </type_NamedElement>
-          </requiredInterface>
-          <providedInterface
-            Id="1a757204-61ea-4872-a67b-98f606761bea"
-            name="Port2"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="017511ee-4158-4395-b713-45213413a7fd"
-                LastKnownName="fournit"
-                LastKnownLocation="CanonNoir.uml" />
-            </type_NamedElement>
-          </providedInterface>
-        </ownedAttributesInternal>
-      </component>
+        isActiveClass="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <component
@@ -31357,6 +31275,259 @@ les bateaus ont une couleur spé !</body>
     <packageHasNamedElement>
       <Interface
         Id="6dd340b6-f895-4481-8f6d-6cea4665e75c"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="a1351929-a2f5-462c-9119-4afa2bd17948"
+        name="Wrapper C#"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <part
+            Id="fd0e7933-fcf2-4953-9293-bf656b1ced9d"
+            name="motor : Moteur (C++)"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="fa147f23-18fe-4a38-9977-8434863d66b6"
+                LastKnownName="Component8"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </part>
+          <providedInterface
+            Id="5ee4223b-05d3-4a51-a0ab-5bdd157fe115"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f4107428-057d-4ca0-8c6e-e250d15d3d02"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="42c5f379-55a8-47d3-87a0-b1affbdf3898"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="93cb48f9-2d97-4dbf-95c2-659345fad050"
+                LastKnownName="récupère les action du joueur"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="fa147f23-18fe-4a38-9977-8434863d66b6"
+        name="Component8"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="e008df7c-8df5-4c7b-90e0-361d08a69466"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="77f13238-9528-44f1-b459-da724f6bb9b9"
+                LastKnownName="utilise"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="c227f9f2-7819-499e-ae89-43671ec728d5"
+        name="Executable C#"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="cfd7c5ff-ca00-40ba-b7d2-172518388c87">
+            <componentMoniker
+              Id="bb3c68d9-05e6-462e-a772-e0bd2dc8609c"
+              LastKnownName="image plateau"
+              LastKnownLocation="CanonNoir.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part
+            Id="4ff7812c-9731-4f75-b088-da30a83010da"
+            name="Interface WPF"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="c4206048-2ca4-43b2-85e1-0be015011e8c"
+                LastKnownName="Component9"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </part>
+          <requiredInterface
+            Id="04a04ec8-046c-41bc-b4fb-01cf345e3ec7"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="1c505449-b299-4830-89bd-3e93b4ed3435"
+                LastKnownName="affichage du jeu"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface
+            Id="b484b76b-7fa0-42b5-8920-4de1042aad1f"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="d27c4593-fe77-4dff-ba5d-19b5aa533084"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="c4206048-2ca4-43b2-85e1-0be015011e8c"
+        name="Component9"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="bb3c68d9-05e6-462e-a772-e0bd2dc8609c"
+        name="image plateau"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f4107428-057d-4ca0-8c6e-e250d15d3d02"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="93cb48f9-2d97-4dbf-95c2-659345fad050"
+        name="récupère les action du joueur"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="1c505449-b299-4830-89bd-3e93b4ed3435"
+        name="affichage du jeu"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d27c4593-fe77-4dff-ba5d-19b5aa533084"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="a937a645-7eb4-4686-9c2d-645f0f8838ed"
+        name="STL"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="c5ec17ae-8224-4371-ac19-8f9de4329266"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="2a8d929a-c4a2-42e4-a8bd-7589b20467dc"
+                LastKnownLocation="CanonNoir.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="77f13238-9528-44f1-b459-da724f6bb9b9"
+        name="utilise"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="2a8d929a-c4a2-42e4-a8bd-7589b20467dc"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
