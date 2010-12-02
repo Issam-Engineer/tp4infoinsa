@@ -5267,9 +5267,9 @@ modifiernuméro(j)</body>
             </type_NamedElement>
             <defaultValue>
               <literalString
-                Id="a513f0d2-e010-4edf-abdf-6a0056fef7dc"
+                Id="24fe44e0-857b-425d-93c0-9a2c29f0bef7"
                 name="DefaultValue"
-                value="false" />
+                value="true" />
             </defaultValue>
           </property>
           <property
@@ -13527,10 +13527,6 @@ modifiernuméro(j)</body>
         isReentrant="false">
         <ownedCommentsInternal>
           <comment
-            Id="b91767e5-f302-42f5-b959-8d60c41a241c">
-            <body>on doit controler le execute à chaque fois .. si il clic à un endroit innatendu on ne doit rien faire !!!</body>
-          </comment>
-          <comment
             Id="905fe331-1eb0-4e7b-a9e8-aa717a3c0971">
             <body>la constante initialiserOK=true alors l'affichage évolue </body>
           </comment>
@@ -16436,7 +16432,7 @@ modifiernuméro(j)</body>
         <messages>
           <message
             Id="deed27fa-129f-4729-acef-46997f2170c4"
-            name="ClicBoutonDepart"
+            name="clic sur le bouton de départ"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">
@@ -16474,7 +16470,7 @@ modifiernuméro(j)</body>
           </message>
           <message
             Id="5c915abc-46be-48e7-9de9-cfd95d202fc1"
-            name="ClicDepartActive()"
+            name="desactiver le bouton"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false"
@@ -16494,7 +16490,7 @@ modifiernuméro(j)</body>
           </message>
           <message
             Id="bf42187b-4cf5-40e6-9bf3-ff86b3b2bf2e"
-            name="creerFenetre() &amp;&amp; rafraichir() "
+            name="creerFenetreInit() &amp;&amp; rafraichir() "
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
@@ -16571,7 +16567,7 @@ modifiernuméro(j)</body>
           </message>
           <message
             Id="904d8e21-5a6c-459a-a401-2a4c8e0107e4"
-            name="ClicNbreJoueur"
+            name="clic sur le nombre de joueur souhaité"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false"
@@ -16706,7 +16702,7 @@ modifiernuméro(j)</body>
           </message>
           <message
             Id="fca892ab-508c-42fb-b331-556a374ba2bb"
-            name="ClicBoutonInit"
+            name="Clic sur le bouton OK"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false"
@@ -16765,7 +16761,7 @@ modifiernuméro(j)</body>
           </message>
           <message
             Id="77f69db9-a87e-4df2-97f4-c2920215d3db"
-            name="fermerFenetre()"
+            name="fermerFenetreInit()"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
@@ -22889,7 +22885,7 @@ les bateaus ont une couleur spé !</body>
         <messages>
           <message
             Id="2cd40ff3-c7a9-425d-852a-bf1792d18d5f"
-            name="ClicBoutonInit"
+            name="Clic sur le bouton OK"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false"
@@ -22913,7 +22909,7 @@ les bateaus ont une couleur spé !</body>
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false"
-            signatureText="+ acitveClicInit()">
+            signatureText="+ desacitveClicInit()">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="11d7623c-9fe1-4a36-a7cc-4d44278ed43f"
@@ -23029,7 +23025,7 @@ les bateaus ont une couleur spé !</body>
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false"
-            signatureText="+ premierLancerDe()">
+            signatureText="afficher2De() &amp;&amp; execute()">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="d57f070d-98c8-489e-8f62-e2d3441629f1"
@@ -23126,7 +23122,7 @@ les bateaus ont une couleur spé !</body>
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false"
-            signatureText="+ clicDe()">
+            signatureText="+ clicCase()">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="8394755f-1c49-4346-8153-a8e71025d8b9"
@@ -23444,8 +23440,8 @@ les bateaus ont une couleur spé !</body>
         Id="42ccfb9c-85ad-4e6f-8a42-543775322406">
         <operation>
           <operationMoniker
-            Id="90d33025-3fcf-4264-99ed-0830faf80eef"
-            LastKnownName="clicDe"
+            Id="a58f385b-6f21-4353-992e-454f2996f490"
+            LastKnownName="clicCase"
             LastKnownLocation="CanonNoir.uml" />
         </operation>
       </sendOperationEvent>
@@ -23455,8 +23451,8 @@ les bateaus ont une couleur spé !</body>
         Id="39770a0b-bc62-4d1d-8396-ff29e4afae78">
         <operation>
           <operationMoniker
-            Id="90d33025-3fcf-4264-99ed-0830faf80eef"
-            LastKnownName="clicDe"
+            Id="a58f385b-6f21-4353-992e-454f2996f490"
+            LastKnownName="clicCase"
             LastKnownLocation="CanonNoir.uml" />
         </operation>
       </receiveOperationEvent>
@@ -24883,7 +24879,7 @@ les bateaus ont une couleur spé !</body>
           </message>
           <message
             Id="62029a03-846d-4112-893c-852e0093df63"
-            name="ClicBoutonInit"
+            name="Clic sur le bouton OK"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false"
@@ -24907,7 +24903,7 @@ les bateaus ont une couleur spé !</body>
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false"
-            signatureText="+ acitveClicInit()">
+            signatureText="+ desacitveClicInit()">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="0da3b4c9-c487-41a2-84d6-1b54c13b73fd"
@@ -24961,7 +24957,7 @@ les bateaus ont une couleur spé !</body>
           </message>
           <message
             Id="e2a7ee87-441a-4a27-91c6-87465cd2e9ae"
-            name="fermerFenetre()"
+            name="fermerFenetreInit()"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
