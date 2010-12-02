@@ -28,37 +28,37 @@
       <elementDefinition Id="f5fc2d2e-6de4-4a11-b16f-f11f78c08962" />
       <propertyInstances>
         <stereotypeInstanceHasPropertyInstances Id="2e09d61a-bc7b-4b76-bd3e-a2b67e990fd7">
-          <propertyInstance Id="bea6f90f-87f1-4de1-b0c9-bd0b32572a11" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate|TemplateHeader|CSharpCommentHelpers|CSharpHelpers|CSharpStereotypeHelpers">
+          <propertyInstance Id="bea6f90f-87f1-4de1-b0c9-bd0b32572a11" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate|TemplateHeader">
             <elementDefinition Id="3fb83c5c-db01-44ec-b85a-c8da00d83fdc" />
           </propertyInstance>
           <elementDefinition Id="609dd535-927e-4029-93e9-4b34efc6d911" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances Id="ccbcfe3f-ed09-4fa9-b770-45310a59f9d3">
-          <propertyInstance Id="1702a2dc-ae0d-45ab-87c3-3b5c54364a15" name="TemplateFilePath" value="ClassTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\ClassTemplate.t4|EnumTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\EnumTemplate.t4|InterfaceTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\InterfaceTemplate.t4|StructTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\StructTemplate.t4|TemplateHeader=..\..\..\..\..\..\..\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\TemplateHeader.t4|CSharpCommentHelpers=..\..\..\..\..\..\..\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\CSharpCommentHelpers.t4|CSharpHelpers=..\..\..\..\..\..\..\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\CSharpHelpers.t4|CSharpStereotypeHelpers=..\..\..\..\..\..\..\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\CSharpStereotypeHelpers.t4">
+          <propertyInstance Id="1702a2dc-ae0d-45ab-87c3-3b5c54364a15" name="TemplateFilePath" value="ClassTemplate=..\..\Ressources Projet\ClassTemplate.t4|EnumTemplate=..\..\Ressources Projet\EnumTemplate.t4|InterfaceTemplate=..\..\Ressources Projet\InterfaceTemplate.t4|StructTemplate=..\..\Ressources Projet\StructTemplate.t4|TemplateHeader=..\..\Ressources Projet\TemplateHeader.t4">
             <elementDefinition Id="d416c4b9-2add-412c-82f7-6cb389cdd15a" />
           </propertyInstance>
           <elementDefinition Id="7a02ca60-2013-47ee-b067-dd1b1330a172" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances Id="c945df89-1f29-443e-9577-85c49f976fd6">
-          <propertyInstance Id="7b3f99d3-6d70-4f2d-ac77-f71e693b2758" name="ProjectPath" value="ClassTemplate=..\CanonNoirLib\CanonNoirLib.csproj|EnumTemplate=..\CanonNoirLib\CanonNoirLib.csproj|InterfaceTemplate=..\CanonNoirLib\CanonNoirLib.csproj|StructTemplate=..\CanonNoirLib\CanonNoirLib.csproj|TemplateHeader=..\CanonNoirLib\CanonNoirLib.csproj|CSharpCommentHelpers=..\CanonNoirLib\CanonNoirLib.csproj|CSharpHelpers=..\CanonNoirLib\CanonNoirLib.csproj|CSharpStereotypeHelpers=..\CanonNoirLib\CanonNoirLib.csproj">
+          <propertyInstance Id="7b3f99d3-6d70-4f2d-ac77-f71e693b2758" name="ProjectPath" value="ClassTemplate=..\CanonNoirLib\CanonNoirLib.csproj|EnumTemplate=..\CanonNoirLib\CanonNoirLib.csproj|InterfaceTemplate=..\CanonNoirLib\CanonNoirLib.csproj|StructTemplate=..\CanonNoirLib\CanonNoirLib.csproj|TemplateHeader=..\CanonNoirLib\CanonNoirLib.csproj">
             <elementDefinition Id="edf2aeb7-f3dd-4300-ab9f-50cf8ebec820" />
           </propertyInstance>
           <elementDefinition Id="b23101c0-5169-4173-8b04-afbfd02e0e34" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances Id="665be16c-bb18-4618-96f3-7b7097ef084d">
-          <propertyInstance Id="68f06b1c-f6d0-45c2-8766-0f64bf59ae36" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}|TemplateHeader=GeneratedCode\{PackageStructure}|CSharpCommentHelpers=GeneratedCode\{PackageStructure}|CSharpHelpers=GeneratedCode\{PackageStructure}|CSharpStereotypeHelpers=GeneratedCode\{PackageStructure}">
+          <propertyInstance Id="68f06b1c-f6d0-45c2-8766-0f64bf59ae36" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}|TemplateHeader=GeneratedCode\{PackageStructure}">
             <elementDefinition Id="b267d318-7554-44cf-b14e-2051d30213e1" />
           </propertyInstance>
           <elementDefinition Id="7831f2dc-dcfc-465a-815b-acb4504dc3b8" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances Id="fa7f4d18-98f0-4d5f-a064-119cc919d5cb">
-          <propertyInstance Id="459dfc5c-9f51-4a56-ac83-eae3716b9f37" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}|TemplateHeader={Name}|CSharpCommentHelpers={Name}|CSharpHelpers={Name}|CSharpStereotypeHelpers={Name}">
+          <propertyInstance Id="459dfc5c-9f51-4a56-ac83-eae3716b9f37" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}|TemplateHeader={Name}">
             <elementDefinition Id="69c07bbb-da5d-4ff1-a90f-0f25111750bb" />
           </propertyInstance>
           <elementDefinition Id="8feb5cf1-de9c-4d36-89bb-4d77fbcf3ab6" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances Id="df6f8228-bfc6-4c34-940f-7b51d2b9d4b9">
-          <propertyInstance Id="da1883d3-1e8e-4dc3-8bb8-54c226144863" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True|TemplateHeader=True|CSharpCommentHelpers=True|CSharpHelpers=True|CSharpStereotypeHelpers=True">
+          <propertyInstance Id="da1883d3-1e8e-4dc3-8bb8-54c226144863" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True|TemplateHeader=True">
             <elementDefinition Id="49e29120-29e8-43eb-b40c-eb10b2028d4e" />
           </propertyInstance>
           <elementDefinition Id="2279e01a-f19d-40d0-bae9-0c866a656ed8" />
@@ -72,20 +72,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="8d5babdc-1753-4c38-9f13-f2933bae5305">
-      <profileInstance Id="8ac1705d-c9a9-42f8-b4ed-5e5e6a2dcee9" name="CSharpProfile">
-        <elementDefinition Id="4c3a23cd-7e61-4b13-9904-86e57ec305f3" />
-      </profileInstance>
-      <elementDefinition Id="b29d2ff8-e64c-4c39-991e-3677c023ae66" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="64cbd568-26dc-4bc7-9dea-981d4a4e995d">
-      <profileInstance Id="1c455cb4-5f7e-4219-94eb-2db53afe0ac5" name="TextTemplateBindings">
-        <elementDefinition Id="9cec5e19-a287-46c0-a8c6-9466cab8c829" />
-      </profileInstance>
-      <elementDefinition Id="85f02885-01ae-4865-b27d-08956d8b1847" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="dd1b1930-6985-4dd8-900e-0978b1b0bd49" name="Sequence3" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
@@ -867,7 +853,7 @@ les bateaus ont une couleur spé !</body>
               <messageOccurrenceSpecificationMoniker Id="744cf318-50e8-402e-8d9c-b8056ee9cc08" LastKnownName="MessageOccurrenceSpecification6" />
             </receiveEvent>
           </message>
-          <message Id="4fd68559-3540-423c-ac2d-69c402415c3a" name="raffraichir()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="4fd68559-3540-423c-ac2d-69c402415c3a" name="rafraichir()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="2f91e465-023d-4a2b-bb4e-31ab5534af70" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="405af443-5dc4-4917-bb3e-6cad69093db4" LastKnownName="MessageOccurrenceSpecification7" />
@@ -912,7 +898,7 @@ les bateaus ont une couleur spé !</body>
               <messageOccurrenceSpecificationMoniker Id="5995ee40-086d-4df1-9c57-07f66b9a7529" LastKnownName="MessageOccurrenceSpecification16" />
             </receiveEvent>
           </message>
-          <message Id="8dcbc819-6301-4e0a-9bf4-469b83edba07" name="Afficher les possibilités de déplacement et la case du clic" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ afficherDeplacementPoss() &amp;&amp; execute() &amp;&amp;  afficherCaseClic()">
+          <message Id="8dcbc819-6301-4e0a-9bf4-469b83edba07" name="Afficher les possibilités de déplacement et la case du clic" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ afficherDeplacementPoss() &amp;&amp; execute() &amp;&amp; clicCase(pair&lt;int,int&gt;)">
             <elementDefinition Id="bf3e9dac-f7cb-4e8f-b930-5ff39cddb98d" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="111f2b6b-8c67-48cf-9012-9c86ac331b21" LastKnownName="MessageOccurrenceSpecification17" />
@@ -921,7 +907,7 @@ les bateaus ont une couleur spé !</body>
               <messageOccurrenceSpecificationMoniker Id="e00c2b11-5500-4156-939d-74db5e55e8bb" LastKnownName="MessageOccurrenceSpecification18" />
             </receiveEvent>
           </message>
-          <message Id="982280b3-f724-43ee-9271-48468985e05b" name="raffraichir()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="982280b3-f724-43ee-9271-48468985e05b" name="rafraichir()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="25d1c08a-f16b-4cd3-a4e7-e41c18a1d68e" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="4d0adda2-9142-43b9-8e42-26f077a40848" LastKnownName="MessageOccurrenceSpecification19" />
@@ -975,7 +961,7 @@ les bateaus ont une couleur spé !</body>
               <messageOccurrenceSpecificationMoniker Id="b95eba2e-c8cb-4972-8d21-97914013b9c7" LastKnownName="MessageOccurrenceSpecification30" />
             </receiveEvent>
           </message>
-          <message Id="765a26f6-eed2-4d71-b1df-1c30c0b3b23e" name="Afficher la case du clic" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ afficherCaseClic() &amp;&amp; afficherDeplacementPoss() : false">
+          <message Id="765a26f6-eed2-4d71-b1df-1c30c0b3b23e" name="Afficher la case du clic" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ clicCase(c : pair&lt;int, int&gt;)">
             <elementDefinition Id="65ea1881-7455-48a5-8a55-04efcbef8c38" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="08bfcdac-90fd-4b2c-9c76-0c0b141381a0" LastKnownName="MessageOccurrenceSpecification31" />
@@ -984,7 +970,7 @@ les bateaus ont une couleur spé !</body>
               <messageOccurrenceSpecificationMoniker Id="3fb99440-1b05-4331-95e5-0afd82536121" LastKnownName="MessageOccurrenceSpecification32" />
             </receiveEvent>
           </message>
-          <message Id="133b56d4-e2ff-4df9-bc14-b040e6733ce8" name="raffraichir()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="133b56d4-e2ff-4df9-bc14-b040e6733ce8" name="rafraichir()" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="0e017688-16db-4ab4-b34c-ac2970b446ab" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="bb08704a-6994-4417-8b25-99391fc0d3d4" LastKnownName="MessageOccurrenceSpecification33" />
@@ -1194,6 +1180,18 @@ les bateaus ont une couleur spé !</body>
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8d5babdc-1753-4c38-9f13-f2933bae5305">
+        <profileInstance Id="8ac1705d-c9a9-42f8-b4ed-5e5e6a2dcee9" name="CSharpProfile">
+          <elementDefinition Id="4c3a23cd-7e61-4b13-9904-86e57ec305f3" />
+        </profileInstance>
+        <elementDefinition Id="b29d2ff8-e64c-4c39-991e-3677c023ae66" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="64cbd568-26dc-4bc7-9dea-981d4a4e995d">
+        <profileInstance Id="1c455cb4-5f7e-4219-94eb-2db53afe0ac5" name="TextTemplateBindings">
+          <elementDefinition Id="9cec5e19-a287-46c0-a8c6-9466cab8c829" />
+        </profileInstance>
+        <elementDefinition Id="85f02885-01ae-4865-b27d-08956d8b1847" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>
