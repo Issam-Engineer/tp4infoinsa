@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="b9d3b332-926d-4f43-9c63-43d3733b16e7" name="Activity2" linkedPackageId="d6b251f6-c2cb-4851-811b-fc2e160d5ca3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b9d3b332-926d-4f43-9c63-43d3733b16e7" name="Activity2" linkedPackageId="d6b251f6-c2cb-4851-811b-fc2e160d5ca3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="3dbaa8d3-50e0-49fa-a86b-3b022d101c43" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="75d8ab5e-355c-45eb-bd24-00608fdb6e78" />
@@ -89,18 +89,18 @@
           <acceptEventAction Id="635e562d-3c64-420f-8a43-23a036d1b222" name="Paramétrer la puissance" isLeaf="false" isUnmarshall="false">
             <elementDefinition Id="a8031963-87dd-4d2d-9e46-f74c304fabdf" />
             <flowNodeTargets>
-              <controlFlow Id="99a3030c-5bc3-4fbb-ae9f-57c26757442e" isLeaf="false">
-                <sendSignalActionMoniker Id="784057f7-1299-4d00-aef8-2f0b9ceb6ad9" LastKnownName="Afficher la puissance" />
-                <elementDefinition Id="a7b9680a-3e10-4a16-ac8b-fa3ce22738c1" />
+              <controlFlow Id="74d4f0b2-af21-476c-9aee-3357c8760dd9" isLeaf="false">
+                <acceptEventActionMoniker Id="56df07cd-5d8c-407e-8aff-2863bfbfe2f0" LastKnownName="Paramétrer l'angle" />
+                <elementDefinition Id="651c1d9f-7d7d-4c3a-b5b6-fe6b15f8f881" />
               </controlFlow>
             </flowNodeTargets>
           </acceptEventAction>
           <acceptEventAction Id="56df07cd-5d8c-407e-8aff-2863bfbfe2f0" name="Paramétrer l'angle" isLeaf="false" isUnmarshall="false">
             <elementDefinition Id="fda71549-046c-43ab-8a2f-29b6834acb7a" />
             <flowNodeTargets>
-              <controlFlow Id="f910c97d-97b8-4600-9d30-cb0ca61c57cf" isLeaf="false">
-                <sendSignalActionMoniker Id="66825e72-a8b8-4f5c-9724-f1596da1d936" LastKnownName="Afficher l'angle" />
-                <elementDefinition Id="77304c62-8395-496c-84ed-085eb772baeb" />
+              <controlFlow Id="64e4ae1c-b5e5-47ce-8e1d-98abf4b30bb0" isLeaf="false">
+                <opaqueActionMoniker Id="9521f691-009b-4709-9602-7e62ca32ad35" LastKnownName="Paramétrer le Tir" />
+                <elementDefinition Id="93363a17-08bc-4289-8545-5af738ade551" />
               </controlFlow>
             </flowNodeTargets>
           </acceptEventAction>
@@ -191,24 +191,6 @@
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
-          <sendSignalAction Id="784057f7-1299-4d00-aef8-2f0b9ceb6ad9" name="Afficher la puissance" isLeaf="false">
-            <elementDefinition Id="77b70925-b610-4c59-986f-6b0ebee68df2" />
-            <flowNodeTargets>
-              <controlFlow Id="52294bed-9dfa-437a-b9d8-54af2d85b037" isLeaf="false">
-                <acceptEventActionMoniker Id="56df07cd-5d8c-407e-8aff-2863bfbfe2f0" LastKnownName="Paramétrer l'angle" />
-                <elementDefinition Id="a9da7329-cc38-44e7-94d1-c4b2a8b2a489" />
-              </controlFlow>
-            </flowNodeTargets>
-          </sendSignalAction>
-          <sendSignalAction Id="66825e72-a8b8-4f5c-9724-f1596da1d936" name="Afficher l'angle" isLeaf="false">
-            <elementDefinition Id="5b44676f-ab76-4d86-a007-b4527978c58f" />
-            <flowNodeTargets>
-              <controlFlow Id="911efd13-a189-48ec-8d6d-f39d8b42719b" isLeaf="false">
-                <opaqueActionMoniker Id="9521f691-009b-4709-9602-7e62ca32ad35" LastKnownName="Paramétrer le Tir" />
-                <elementDefinition Id="adc7df1c-71fd-45eb-86d3-8a91785a75a5" />
-              </controlFlow>
-            </flowNodeTargets>
-          </sendSignalAction>
           <opaqueAction Id="9521f691-009b-4709-9602-7e62ca32ad35" name="Paramétrer le Tir" isLeaf="false">
             <elementDefinition Id="4f52e07d-fab2-40ed-bac1-9e5815b8cc6b" />
             <flowNodeTargets>

@@ -6099,7 +6099,7 @@ j_indJoueur = 0 </body>
             </appliedStereotypesInternal>
             <elementDefinition Id="f5d58b1a-ff4a-4f8c-bb78-ba2b9c85abe0" />
           </operation>
-          <operation Id="52609fe7-6275-4c02-9a53-0dcd4f5c6ed2" name="creerFenetre" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="52609fe7-6275-4c02-9a53-0dcd4f5c6ed2" name="creerFenetreInit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="d915d157-c7cc-4f8d-b20e-bda3397c617e" name="method" profile="CSharpProfile">
                 <elementDefinition Id="17afe115-8319-4db9-a62a-58b0950a59e8" />
@@ -6178,6 +6178,9 @@ j_indJoueur = 0 </body>
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="e4b1888d-9cd7-48b5-b507-f1aad07aac6d" />
+          </operation>
+          <operation Id="19671a38-68bf-45d3-b207-ad1cd39d2178" name="creerFenetreTir" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="67c3a689-0e1b-4ea9-8808-ca3f6c65c888" />
           </operation>
         </ownedOperationsInternal>
       </class>
