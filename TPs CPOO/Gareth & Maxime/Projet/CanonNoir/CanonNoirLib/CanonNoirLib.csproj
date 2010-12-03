@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF059CC3-75A5-4C46-A5EC-F989948CE249}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CanonNoirLib</RootNamespace>
+    <AssemblyName>CanonNoirLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeneratedCode\Etat.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GeneratedCode\Adaptateur.h" />
+    <Content Include="GeneratedCode\AffichageWPF.h" />
+    <Content Include="GeneratedCode\AttenteCanonAngle.h" />
+    <Content Include="GeneratedCode\AttenteCanonPuissance.h" />
+    <Content Include="GeneratedCode\AttenteChoixBateau.h" />
+    <Content Include="GeneratedCode\AttenteDeplacement.h" />
+    <Content Include="GeneratedCode\AttenteInitialisation.h" />
+    <Content Include="GeneratedCode\AttenteLancerDe.h" />
+    <Content Include="GeneratedCode\AttenteNbJoueurs.h" />
+    <Content Include="GeneratedCode\AttentePremLancerDe.h" />
+    <Content Include="GeneratedCode\Bateau.h" />
+    <Content Include="GeneratedCode\Caravelle.h" />
+    <Content Include="GeneratedCode\Case.h" />
+    <Content Include="GeneratedCode\CaseBordurePlateau.h" />
+    <Content Include="GeneratedCode\CaseCanonNoir.h" />
+    <Content Include="GeneratedCode\CaseContourIle.h" />
+    <Content Include="GeneratedCode\CaseIle.h" />
+    <Content Include="GeneratedCode\CaseNavigable.h" />
+    <Content Include="GeneratedCode\CasePort.h" />
+    <Content Include="GeneratedCode\CaseTresor.h" />
+    <Content Include="GeneratedCode\Duel.h" />
+    <Content Include="GeneratedCode\Dé.h" />
+    <Content Include="GeneratedCode\EtatCanonFin.h" />
+    <Content Include="GeneratedCode\EtatDepot.h" />
+    <Content Include="GeneratedCode\EtatFinPartie.h" />
+    <Content Include="GeneratedCode\EtatTir.h" />
+    <Content Include="GeneratedCode\EtatTresor.h" />
+    <Content Include="GeneratedCode\Facade.h" />
+    <Content Include="GeneratedCode\FenetreInit.h" />
+    <Content Include="GeneratedCode\FenetreTir.h" />
+    <Content Include="GeneratedCode\Frégate.h" />
+    <Content Include="GeneratedCode\Joueur.h" />
+    <Content Include="GeneratedCode\MoteurJeu.h" />
+    <Content Include="GeneratedCode\Plateau.h" />
+    <Content Include="GeneratedCode\ProposeDeplacement.h" />
+    <Content Include="GeneratedCode\Radeau.h" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
