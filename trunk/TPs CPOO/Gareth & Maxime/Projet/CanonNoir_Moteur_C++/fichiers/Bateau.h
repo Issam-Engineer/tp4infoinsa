@@ -1,5 +1,5 @@
 ﻿/**
-* \file  Radeau.h
+* \file  Bateau.h
 * \brief fichier qui regroupe les fonctionnalité et les attributs de la classe Bateau
 * \author Havez Maxime
 * \author Thiveux Gareth
@@ -40,18 +40,51 @@ class Bateau
 		* \return le string du nom de la classe
 		*/
 		virtual string typeBateau() = 0;
-
 		/**
 		* \fn virtual void init() =0
 		* \brief fonction virtuelle pure qui doit permettre aux héritié d'initialiser l'instance
 		*/
 		virtual void init() =0;
 
-		
+
+
+		/**
+		* \fn pair<int,int> getPosition()
+		* \brief fonction virtuelle qui retourne la position du bateau
+		*
+		* \return pair<int,int> la position du bateau
+		*/
 		virtual pair<int,int> getPosition();
+		/**
+		* \fn bool peutTirer()
+		* \brief fonction virtuelle qui retourne la capacité d'un bateau à tirer
+		*
+		* \return bool true si le bateau peut tirer
+		*/
 		virtual bool peutTirer();
+		/**
+		* \fn bool peutEtreVise()
+		* \brief fonction virtuelle qui retourne la capacité d'un bateau à pouvoir être tiré
+		*
+		* permet de distinguer le radeau qui ne peut pas être tiré
+		*
+		* \return bool true si le bateau peut être tirer
+		*/
 		virtual bool peutEtreVise();
+		/**
+		* \fn bool peutJouer2Des()
+		* \brief fonction virtuelle qui retourne la capacité d'un bateau à pouvoir lancer 2 Dé
+		*
+		* permet de distinguer la caravelle qui peut lancer 2 dés
+		*
+		* \return bool true si le bateau peut être lancer 2 dés
+		*/
 		virtual bool peutJouer2Des();
+		/**
+		* \fn void positionner(pair<int,int> p)
+		* \brief fonction virtuelle qui permet de positionner un bateau à une position précise
+		* \param[in] pair<int,int> une position
+		*/
 		virtual void positionner(pair<int,int> p);
 }; 
 

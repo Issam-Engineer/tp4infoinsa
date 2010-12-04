@@ -1,6 +1,6 @@
 ﻿/**
-* \file  Radeau.h
-* \brief fichier qui regroupe les fonctionnalité et les attributs de la classe Fregate
+* \file  Fregate.h
+* \brief fichier qui regroupe les fonctionnalités et les attributs de la classe Fregate
 * \author Havez Maxime
 * \author Thiveux Gareth
 * \version 1.0
@@ -19,10 +19,21 @@ class Fregate : public Bateau
 {
 
 	public :
-
+		/**
+		* \fn virtual string typeBateau() = 0
+		* \brief fonction hérité qui permet de donner le nom de la classe 
+		* \return string le nom de la classe
+		*/
 		string typeBateau();
+		/**
+		* \fn void init()
+		* \brief fonction hérité qui doit d'initialiser l'instance
+		*/
 		void init();
-
+		/**
+		* \fn Fregate()
+		* \brief constructeur par défaut qui initialise le bateau
+		*/
 		Fregate();
 }; 
 
