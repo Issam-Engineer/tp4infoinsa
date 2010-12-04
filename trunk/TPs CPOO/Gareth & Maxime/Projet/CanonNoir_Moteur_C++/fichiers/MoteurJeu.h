@@ -6,6 +6,10 @@
 //------------------------------------------------------------------------------
 
 /// <remarks>{ context MoteurJeu::execute() return : courant.execute() }</remarks>
+
+#include "Etat.h"
+#include "Joueur.h"
+
 class MoteurJeu
 {
 	private :

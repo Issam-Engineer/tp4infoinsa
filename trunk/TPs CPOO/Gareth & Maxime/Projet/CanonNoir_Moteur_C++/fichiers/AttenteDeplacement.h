@@ -10,19 +10,7 @@ class AttenteDeplacement : public Etat
 {
 	private :
 
-		Moteur motor;
-
-	protected :
-
-
-	public :
-
-
-	private :
-
-
-	protected :
-
+		MoteurJeu motor;
 
 	public :
 
