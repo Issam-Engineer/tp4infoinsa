@@ -1,6 +1,6 @@
 /**
 * \file Radeau.cpp
-* \brief fichier qui contient le code des fonctions de la classe Radeau
+* \brief file which contains function and code of the Radeau class
 * \author Havez Maxime
 * \author Thiveux Gareth
 * \version 1.0

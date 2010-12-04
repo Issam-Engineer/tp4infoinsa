@@ -34,13 +34,29 @@ class Case
 		//virtuelle pure
 		/**
 		* \fn virtual void getEtat() = 0
-		* \brief fonction virtuelle pure qui doit permettre aux héritié de donner l'état qui leur correspond
-		* \return Etat l'état associé
+		* \brief pure virtual function which allows to inherit classes to give their states
+		* \return state the associated state
 		*/
 		virtual Etat getEtat() = 0;
 
+
+		/**
+		* \fn int getHauteur()
+		* \brief function which gives the height
+		* \return int the height of the case
+		*/
 		virtual int getHauteur();
+		/**
+		* \fn bool accessible()
+		* \brief function which indicates if it's an accessible case
+		* \return bool true if the case is accessible
+ 		*/
 		virtual bool accessible();
+		/**
+		* \fn pair<int,int> getPosition()
+		* \brief function which gives the case position 
+		* \return pair<int,int> the case position
+		*/
 		virtual pair<int,int> getPosition();
 		
 }; 

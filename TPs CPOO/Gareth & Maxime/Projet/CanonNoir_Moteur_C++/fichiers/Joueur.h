@@ -5,25 +5,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+#include <cstdlib>
+#include <iostream>
+#include "Bateau.h"
+
+using namespace std;
+
 class Joueur
 {
-	private :
-
-
-	protected :
-
 
 	public :
 
 		string nom;
 		int numero;
 		bool gagnant;
-
-	private :
-
-
-	protected :
-
 
 	public :
 

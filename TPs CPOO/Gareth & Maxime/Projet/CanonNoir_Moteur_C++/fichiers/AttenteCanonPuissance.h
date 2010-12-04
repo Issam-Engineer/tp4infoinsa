@@ -5,26 +5,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+#include "EtatTir.h"
+
 class AttenteCanonPuissance : public EtatTir
 {
-	private :
-
-
-	protected :
-
-
+	
 	public :
 
-
-	private :
-
-
-	protected :
-
-
-	public :
-
-		override void execute();
+		void execute();
 
 }; 
 
