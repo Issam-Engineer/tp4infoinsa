@@ -1,3 +1,11 @@
+/**
+* \file Fregate.cpp
+* \brief fichier qui contient le code des fonctions de la classe Fregate
+* \author Havez Maxime
+* \author Thiveux Gareth
+* \version 1.0
+*/
+
 #include "Fregate.h"
 
 Fregate::Fregate(){

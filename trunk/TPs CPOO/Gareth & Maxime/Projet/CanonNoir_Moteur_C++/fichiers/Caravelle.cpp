@@ -1,3 +1,11 @@
+/**
+* \file Caravelle.cpp
+* \brief fichier qui contient le code des fonctions de la classe Caravelle
+* \author Havez Maxime
+* \author Thiveux Gareth
+* \version 1.0
+*/
+
 #include "Caravelle.h"
 
 
