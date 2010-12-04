@@ -1,5 +1,14 @@
 #include "Radeau.h"
 
+Radeau::Radeau() {
+	
+	peutTirer = false;
+	PeutPorterTresor = false;
+	peutEtreVise = false;
+	peutJouer2Des = false;
+
+}
+
 void Radeau::init(){
 	
 	peutTirer = false;
@@ -11,5 +20,7 @@ void Radeau::init(){
 }
 
 string Radeau::typeBateau(){
+
 	return "Radeau";
+
 }

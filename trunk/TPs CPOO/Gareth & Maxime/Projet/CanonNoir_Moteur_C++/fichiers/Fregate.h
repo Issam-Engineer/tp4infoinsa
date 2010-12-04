@@ -15,5 +15,6 @@ class Fregate : public Bateau
 		string typeBateau();
 		void init();
 
+		Fregate();
 }; 
 
