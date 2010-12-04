@@ -96,6 +96,7 @@
     <ClInclude Include="..\..\fichiers\CaseTresor.h" />
     <ClInclude Include="..\..\fichiers\Duel.h" />
     <ClInclude Include="..\..\fichiers\Dé.h" />
+    <ClInclude Include="..\..\fichiers\Etat.h" />
     <ClInclude Include="..\..\fichiers\EtatCanonFin.h" />
     <ClInclude Include="..\..\fichiers\EtatDepot.h" />
     <ClInclude Include="..\..\fichiers\EtatFinPartie.h" />
@@ -110,9 +111,6 @@
     <ClInclude Include="..\..\fichiers\Plateau.h" />
     <ClInclude Include="..\..\fichiers\ProposeDeplacement.h" />
     <ClInclude Include="..\..\fichiers\Radeau.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\fichiers\Etat.cs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\fichiers\Bateau.cpp" />

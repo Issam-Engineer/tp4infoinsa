@@ -123,11 +123,9 @@
     <ClInclude Include="..\..\fichiers\Fregate.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\fichiers\Etat.cs">
+    <ClInclude Include="..\..\fichiers\Etat.h">
       <Filter>Fichiers d%27en-tête</Filter>
-    </None>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\fichiers\Radeau.cpp">
