@@ -1,6 +1,6 @@
 ﻿/**
-* \file  Radeau.h
-* \brief fichier qui regroupe les fonctionnalité et les attributs de la classe Caravelle
+* \file  Caravelle.h
+* \brief fichier qui regroupe les fonctionnalités et les attributs de la classe Caravelle
 * \author Havez Maxime
 * \author Thiveux Gareth
 * \version 1.0
@@ -20,9 +20,21 @@ class Caravelle : public Bateau
 
 	public :
 
+		/**
+		* \fn virtual string typeBateau() = 0
+		* \brief fonction hérité qui permet de donner le nom de la classe 
+		* \return string le nom de la classe
+		*/
 		string typeBateau();
+		/**
+		* \fn void init()
+		* \brief fonction hérité qui permet d'initialiser l'instance
+		*/
 		void init();
-		
+		/**
+		* \fn Caravelle()
+		* \brief constructeur par défaut qui initialise le bateau
+		*/
 		Caravelle();
 
 }; 
