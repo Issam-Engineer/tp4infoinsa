@@ -1,3 +1,11 @@
+/**
+* \file Radeau.cpp
+* \brief fichier qui contient le code des fonctions de la classe Radeau
+* \author Havez Maxime
+* \author Thiveux Gareth
+* \version 1.0
+*/
+
 #include "Radeau.h"
 
 Radeau::Radeau() {

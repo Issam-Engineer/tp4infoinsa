@@ -115,6 +115,7 @@
     <None Include="..\..\fichiers\Etat.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\fichiers\Bateau.cpp" />
     <ClCompile Include="..\..\fichiers\Caravelle.cpp" />
     <ClCompile Include="..\..\fichiers\Fregate.cpp" />
     <ClCompile Include="..\..\fichiers\Radeau.cpp" />
