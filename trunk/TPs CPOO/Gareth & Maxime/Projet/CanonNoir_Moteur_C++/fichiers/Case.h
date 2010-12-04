@@ -14,6 +14,7 @@
 //------------------------------------------------------------------------------
 #include <cstdlib>
 #include <iostream>
+#include "Etat.h"
 
 using namespace std;
 

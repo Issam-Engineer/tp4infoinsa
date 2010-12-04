@@ -1,6 +1,6 @@
 /**
 * \file Fregate.cpp
-* \brief file which contains function and code of the Fregate class
+* \brief file which contains functions and code of the Fregate class
 * \author Havez Maxime
 * \author Thiveux Gareth
 * \version 1.0
