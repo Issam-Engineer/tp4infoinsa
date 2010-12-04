@@ -31,6 +31,7 @@ class Bateau
 		virtual bool peutTirer();
 		virtual bool peutEtreVise();
 		virtual bool peutJouer2Des();
+		virtual void positionner(pair<int,int> p);
 }; 
 
 inline pair<int,int> Bateau::getPosition(){

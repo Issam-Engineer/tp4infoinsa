@@ -14,6 +14,8 @@ class Caravelle : public Bateau
 
 		string typeBateau();
 		void init();
+		
+		Caravelle();
 
 }; 
 

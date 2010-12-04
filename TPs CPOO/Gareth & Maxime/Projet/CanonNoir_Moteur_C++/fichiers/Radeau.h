@@ -16,5 +16,6 @@ class Radeau : public Bateau
 		string typeBateau();
 		void init();
 
+		Radeau(); 
 }; 
 

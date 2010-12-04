@@ -1,5 +1,14 @@
 #include "Fregate.h"
 
+Fregate::Fregate(){
+
+	peutTirer = true;
+	PeutPorterTresor = true;
+	peutEtreVise = true;
+	peutJouer2Des = true;
+
+}
+
 void Fregate::init(){
 	
 	peutTirer = true;
@@ -11,5 +20,7 @@ void Fregate::init(){
 }
 
 string Fregate::typeBateau(){
+
 	return "Fregate";
+
 }
