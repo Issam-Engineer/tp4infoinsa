@@ -104,7 +104,7 @@
     <ClInclude Include="..\..\fichiers\Facade.h" />
     <ClInclude Include="..\..\fichiers\FenetreInit.h" />
     <ClInclude Include="..\..\fichiers\FenetreTir.h" />
-    <ClInclude Include="..\..\fichiers\Frégate.h" />
+    <ClInclude Include="..\..\fichiers\Fregate.h" />
     <ClInclude Include="..\..\fichiers\Joueur.h" />
     <ClInclude Include="..\..\fichiers\MoteurJeu.h" />
     <ClInclude Include="..\..\fichiers\Plateau.h" />
@@ -113,6 +113,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\fichiers\Etat.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\fichiers\Caravelle.cpp" />
+    <ClCompile Include="..\..\fichiers\Fregate.cpp" />
+    <ClCompile Include="..\..\fichiers\Radeau.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

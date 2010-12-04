@@ -4,11 +4,13 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+#include <cstdlib>
+#include <string>
+
+using namespace std;
 
 class Bateau
 {
-	private :
-
 
 	protected :
 
@@ -20,18 +22,25 @@ class Bateau
 
 	public :
 
+		/*vituelle pure*/
+		virtual string typeBateau() = 0;
+		virtual void init() =0;
 
-	private :
-
-
-	protected :
-
-
-	public :
-
-		abstract string typeBateau();
 		virtual pair<int,int> getPosition();
-		abstract void init();
-
+		virtual bool peutTirer();
+		virtual bool peutEtreVise();
+		virtual bool peutJouer2Des();
 }; 
 
+inline pair<int,int> Bateau::getPosition(){
+	return position;
+}
+inline bool Bateau::peutTirer(){
+	return peutTirer;
+}
+inline bool Bateau::peutEtreVise(){
+	return peutEtreVise;
+}
+inline bool Bateau::peutJouer2Des(){
+	return peutJouer2Des;
+}
