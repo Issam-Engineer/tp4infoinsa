@@ -105,9 +105,6 @@
     <ClInclude Include="..\..\fichiers\FenetreTir.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\fichiers\Frégate.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\fichiers\Joueur.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
@@ -123,10 +120,24 @@
     <ClInclude Include="..\..\fichiers\Radeau.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\fichiers\Fregate.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\fichiers\Etat.cs">
       <Filter>Fichiers d%27en-tête</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\fichiers\Radeau.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fichiers\Caravelle.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fichiers\Fregate.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

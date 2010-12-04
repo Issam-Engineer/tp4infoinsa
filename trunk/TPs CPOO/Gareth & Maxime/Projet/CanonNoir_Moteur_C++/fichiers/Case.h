@@ -4,34 +4,41 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+#include <cstdlib>
+#include <string>
+
+using namespace std;
 
 class Case
 {
-	private :
+	public :
 
+		static int nbTotTresor;
 
 	protected :
 
 		pair<int,int>  position;
 		bool accessible;
 		int hauteur;
-		static int nbTotTresor;
 
 	public :
 
-
-	private :
-
-
-	protected :
-
-
-	public :
+		//virtuelle pure
+		virtual void getEtat() = 0;
 
 		virtual int getHauteur();
 		virtual bool accessible();
 		virtual pair<int,int> getPosition();
-		virtual void getEtat();
-
+		
 }; 
+
+inline bool Case::accessible(){
+	return accessible;
+}
+inline int Case::getHauteur(){
+	return hauteur;
+}
+inline pair<int,int> Case::getPosition(){
+	return position;
+}
 

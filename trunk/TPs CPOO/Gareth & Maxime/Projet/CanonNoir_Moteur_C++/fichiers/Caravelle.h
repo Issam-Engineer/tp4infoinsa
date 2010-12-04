@@ -4,28 +4,16 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+#include "Bateau.h"
+using namespace std;
 
 class Caravelle : public Bateau
 {
-	private :
-
-
-	protected :
-
 
 	public :
 
-
-	private :
-
-
-	protected :
-
-
-	public :
-
-		override string typeBateau();
-		override void init();
+		string typeBateau();
+		void init();
 
 }; 
 
