@@ -9,6 +9,7 @@ class CaseTresor : public CaseContourIle
 {
 	private :
 
+		Etat EtatTresor;
 
 	protected :
 
@@ -24,7 +25,15 @@ class CaseTresor : public CaseContourIle
 
 	public :
 
-		virtual void getEtat();
+		/**
+		* \fn void getEtat() 
+		* \brief Function which gives the state associated to the class
+		* \return Etat the associated state
+		*/
+		void getEtat();
 
 }; 
 
+inline int CaseTresor::getEtat(){
+	return EtatTresor;
+}
