@@ -1,8 +1,8 @@
 ﻿/**
 *\file  Bateau.h
-*\brief file which contains attributs and functions declarations of the Caravelle class
-*\author Havez Maxime
-*\author Thiveux Gareth
+*\brief File which contains the attributes and function declarations of the Bateau class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
 *\version 1.0
 */
 
@@ -25,55 +25,52 @@ class Bateau
 
 	public :
 
-		/*vituelle pure*/
-
 		/**
 		* \fn virtual string typeBateau() = 0
-		* \brief pure virtual function which allows to inherit classes to give their name
+		* \brief Pure virtual function which allows inherited classes to give their name
 		* \return string the class name
 		*/
 		virtual string typeBateau() = 0;
 		/**
-		* \fn virtual void init() =0
-		* \brief pure virtual function which allows to inherit classes to initialize themselves
+		* \fn Virtual void init() = 0
+		* \brief pure virtual function which allows inherited classes to initialize themselves
 		*/
-		virtual void init() =0;
-
-
+		virtual void init() = 0;
 
 		/**
 		* \fn pair<int,int> getPosition()
-		* \brief virtual function which return the boat position
+		* \brief Virtual function which return the boat position
 		* \return pair<int,int> boat position
 		*/
 		virtual pair<int,int> getPosition();
 		/**
 		* \fn bool peutTirer()
-		* \brief virtual function which indicates if the boat can shoot
+		* \brief Virtual function which indicates if the boat can shoot
+		* (for example a Radeau can't be shot)
+		*
 		* \return bool true if boat can shoot
 		*/
 		virtual bool peutTirer();
 		/**
 		*\fn bool peutEtreVise()
-		*\brief virtual function which indicates if the boat can be shooted
+		*\brief Virtual function which indicates if the boat can be shot
+		* (for example a Radeau can't be shot)
 		*
-		*for example a Radeau can't be shooted
-		*
-		*\return bool true if the boat can be shooted
+		*\return bool true if the boat can be shot
 		*/
 		virtual bool peutEtreVise();
 		/**
 		*\fn bool peutJouer2Des()
-		*\brief virtual funcction which indicates if the boat is allowed to play two De
+		*\brief Virtual function which indicates if the boat is allowed to play two dices
 		*
-		*Only a Caravelle can play twice
+		*Only a Caravelle can roll the dice twice
 		*
-		*\return bool true if the boat can play twice
+		*\return bool true if the boat can role the dice twice
 		*/
 		virtual bool peutJouer2Des();
 		/**
 		*\fn void positionner(pair<int,int> p)
-		*\brief virtual function which replace the boat at a given position
+		*\brief Virtual function which replaces the boat at a given position
 		*\param[in] pair<int,int> a position
 		*/
 		virtual void positionner(pair<int,int> p);

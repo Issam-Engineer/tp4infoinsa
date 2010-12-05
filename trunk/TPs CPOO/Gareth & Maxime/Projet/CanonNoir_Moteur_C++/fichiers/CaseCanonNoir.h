@@ -24,6 +24,11 @@ class CaseCanonNoir : public CaseContourIle
 
 	public :
 
+		/**
+		* \fn void getEtat() 
+		* \brief Function which gives the state associated to the class
+		* \return Etat the associated state
+		*/
 		virtual void getEtat();
 
 }; 

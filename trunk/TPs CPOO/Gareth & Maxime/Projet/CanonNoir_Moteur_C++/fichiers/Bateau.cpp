@@ -1,8 +1,8 @@
 /**
 * \file Bateau.cpp
-* \brief file which contains function and code of the Bateau class
-* \author Havez Maxime
-* \author Thiveux Gareth
+* \brief File which contains the functions and code of the Bateau class
+* \author Maxime HAVEZ
+* \author Gareth THIVEUX
 * \version 1.0
 */
 
