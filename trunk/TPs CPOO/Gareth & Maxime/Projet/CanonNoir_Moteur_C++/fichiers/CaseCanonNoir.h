@@ -7,19 +7,6 @@
 
 class CaseCanonNoir : public CaseContourIle
 {
-	private :
-
-
-	protected :
-
-
-	public :
-
-
-	private :
-
-
-	protected :
 
 
 	public :

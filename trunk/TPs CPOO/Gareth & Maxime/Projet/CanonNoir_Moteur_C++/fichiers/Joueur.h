@@ -19,7 +19,8 @@ class Joueur
 		string nom;
 		int numero;
 		bool gagnant;
-		Bateau[2] Bateau;
+		Bateau bateau1;
+		Bateau bateau2; /*NULL if nb joueur !=2*/
 
 	public :
 

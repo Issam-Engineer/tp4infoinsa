@@ -5,8 +5,9 @@
 *\author Gareth THIVEUX
 *\version 1.0
 */
+#include "Case.h"
 
-class CasePort : public Case Fixe, public Case
+class CasePort : public Case
 {
 	private :
 
@@ -21,14 +22,14 @@ class CasePort : public Case Fixe, public Case
 		* \brief Virtual function which returns the color of the harbour
 		* \return int color of the harbour
 		*/
-		virtual int getCouleur();
+		int getCouleur();
 
 		/**
 		* \fn void getEtat() 
 		* \brief Function which gives the state associated to the class
 		* \return Etat the associated state
 		*/
-		override Etat getEtat();
+		Etat getEtat();
 
 }; 
 

@@ -27,11 +27,11 @@ class Case
 	public :
 
 		/**
-		* \fn virtual void getEtat() = 0
-		* \brief pure virtual function which allows inherited classes to give their state
+		* \fn virtual void getEtat()
+		* \brief virtual function which allows inherited classes to give their state
 		* \return Etat the associated state
 		*/
-		virtual Etat getEtat() = 0;
+		virtual Etat getEtat();/*ON NE MET PAS VIRTUELLE PURE*/
 
 		/**
 		* \fn int getHauteur()
