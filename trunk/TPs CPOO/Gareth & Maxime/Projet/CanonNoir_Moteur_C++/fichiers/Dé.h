@@ -10,20 +10,8 @@ class Dé
 {
 	private :
 
-		//c'est normal que ce soit des objects ? ça devrait pas être des int ?
-		object valeurDe1;
-		object valeurDe2;
-
-	protected :
-
-
-	public :
-
-
-	private :
-
-
-	protected :
+		int valeurDe1;
+		int valeurDe2;
 
 
 	public :
