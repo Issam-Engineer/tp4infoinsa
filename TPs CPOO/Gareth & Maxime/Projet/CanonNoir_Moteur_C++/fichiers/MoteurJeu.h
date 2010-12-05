@@ -24,7 +24,16 @@ class MoteurJeu
 
 	public :
 
+		/**
+		*\fn void setEtat(Etat e)
+		*\brief Function which sets a given state as the current state
+		*\param[in] e : a state
+		*/
 		virtual void setEtat(Etat e);
+		/**
+		*\fn void execute()
+		*\brief Function which executes the current state
+		*/
 		virtual void execute();
 
 }; 

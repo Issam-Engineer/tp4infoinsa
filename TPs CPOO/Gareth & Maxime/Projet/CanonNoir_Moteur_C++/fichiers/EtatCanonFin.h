@@ -1,8 +1,8 @@
 ﻿/**
 * \file  Etat.h
 * \brief file which contains function declarations and attributes of the EtatCanonFin class
-* \author Havez Maxime
-* \author Thiveux Gareth
+* \author Maxime HAVEZ
+* \author Gareth THIVEUX
 * \version 1.0
 */
 
@@ -14,7 +14,7 @@ class EtatCanonFin : public EtatTir
 	public :
 		/**
 		*\fn void execute()
-		*\brief function which execute the current state
+		*\brief Function which executes the current state
 		*/
 		void execute();
 
