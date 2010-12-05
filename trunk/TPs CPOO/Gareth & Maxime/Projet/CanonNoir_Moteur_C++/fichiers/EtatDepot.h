@@ -1,8 +1,8 @@
 ﻿/**
 * \file  Etat.h
-* \brief file which contains function declarations and attributes of the EtatDepos class
-* \author Havez Maxime
-* \author Thiveux Gareth
+* \brief file which contains function declarations and attributes of the EtatDepot class
+* \author Maxime HAVEZ
+* \author Gareth THIVEUX
 * \version 1.0
 */
 
@@ -18,7 +18,7 @@ class EtatDepot : public Etat
 	public :
 		/**
 		*\fn void execute()
-		*\brief function which execute the current state
+		*\brief Function which executes the current state
 		*/
 		virtual void execute();
 

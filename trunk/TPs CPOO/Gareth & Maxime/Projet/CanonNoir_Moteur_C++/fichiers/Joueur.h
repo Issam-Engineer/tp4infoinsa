@@ -1,8 +1,8 @@
 ﻿/**
 * \file  Joueur.h
-* \brief file which contains attributs and functions declarations of the Joueur class
-* \author Havez Maxime
-* \author Thiveux Gareth
+* \brief file which contains the attributes and function declarations of the Joueur class
+* \author Maxime HAVEZ
+* \author Gareth THIVEUX
 * \version 1.0
 */
 #include <cstdlib>

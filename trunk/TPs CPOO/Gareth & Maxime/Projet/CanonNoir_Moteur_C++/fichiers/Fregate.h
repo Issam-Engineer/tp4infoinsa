@@ -1,8 +1,8 @@
 ﻿/**
-* \file  Caravelle.h
-* \brief file which contains attributs and functions declarations of the Fregate class
-* \author Havez Maxime
-* \author Thiveux Gareth
+* \file  Fregate.h
+* \brief file which contains the attributes and function declarations of the Fregate class
+* \author Maxime HAVEZ
+* \author Gareth THIVEUX
 * \version 1.0
 */
 

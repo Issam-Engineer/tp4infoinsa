@@ -1,8 +1,8 @@
 ﻿/**
 * \file  Etat.h
 * \brief file which contains function declarations and attributes of the EtatTresor class
-* \author Havez Maxime
-* \author Thiveux Gareth
+* \author Maxime HAVEZ
+* \author Gareth THIVEUX
 * \version 1.0
 */
 
@@ -18,7 +18,7 @@ class EtatTresor : public Etat
 	public :
 		/**
 		*\fn void execute()
-		*\brief function which execute the current state
+		*\brief Function which executes the current state
 		*/
 		virtual void execute();
 

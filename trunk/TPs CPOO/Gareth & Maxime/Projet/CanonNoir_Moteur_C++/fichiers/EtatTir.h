@@ -1,8 +1,8 @@
 ﻿/**
 * \file  EtatTir.h
 * \brief file which contains function declarations and attributes of the EtatTir class
-* \author Havez Maxime
-* \author Thiveux Gareth
+* \author Maxime HAVEZ
+* \author Gareth THIVEUX
 * \version 1.0
 */
 
@@ -24,19 +24,19 @@ class EtatTir : public Etat
 	public :
 		/**
 		*\fn virtual void tirCanon()
-		*\brief function which execute the shoot
+		*\brief Function which executes the shot
 		*/
 		virtual void tirCanon();
 		/**
 		*\fn virtual void init(int p, int a);
-		*\brief function which initiates the shoot
-		*\param[in] int p : the puissance
-		*\param[in] int p : the angle
+		*\brief Function which initiates the shoot
+		*\param[in] int p : the power
+		*\param[in] int a : the angle
 		*/
 		virtual void init(int p, int a);
 		/**
 		*\fn void execute()
-		*\brief function which execute the current state
+		*\brief Function which executes the current state
 		*/
 		virtual void execute();
 
