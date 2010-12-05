@@ -20,11 +20,24 @@ class EtatTir : public Etat
 		int puissance;
 		int angle;
 		bool Duel;
-
+		 
 	public :
-
+		/**
+		*\fn virtual void tirCanon()
+		*\brief function which execute the shoot
+		*/
 		virtual void tirCanon();
+		/**
+		*\fn virtual void init(int p, int a);
+		*\brief function which initiates the shoot
+		*\param[in] int p : the puissance
+		*\param[in] int p : the angle
+		*/
 		virtual void init(int p, int a);
+		/**
+		*\fn void execute()
+		*\brief function which execute the current state
+		*/
 		virtual void execute();
 
 }; 
