@@ -26,16 +26,16 @@ class Bateau
 	public :
 
 		/**
-		* \fn virtual string typeBateau() = 0
+		* \fn virtual string typeBateau()
 		* \brief Pure virtual function which allows inherited classes to give their name
 		* \return string the class name
 		*/
-		virtual string typeBateau() = 0;
+		virtual string typeBateau();/*ON NE MET PAS VIRTUELLE PURE*/
 		/**
-		* \fn Virtual void init() = 0
-		* \brief pure virtual function which allows inherited classes to initialize themselves
+		* \fn Virtual void init()
+		* \brief function which allows inherited classes to initialize themselves
 		*/
-		virtual void init() = 0;
+		virtual void init();/*ON NE MET PAS VIRTUELLE PURE*/
 
 		/**
 		* \fn pair<int,int> getPosition()

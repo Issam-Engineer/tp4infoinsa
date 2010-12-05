@@ -14,10 +14,9 @@ using namespace std;
 class Etat 
 {
 	/**
-	* \fn virtual void getEtat() = 0
-	* \brief pure virtual function which execute the current state
+	* \fn void execute()
+	* \brief function which execute the current state
 	*/
-	virtual void execute() = 0;
+	virtual void execute(); /*on ne la met pas virtuelle pure ... sinon on ne peut pas instancier un état !*/
 
 };
-
