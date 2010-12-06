@@ -5,6 +5,11 @@
 *\author Gareth THIVEUX
 *\version 1.0
 */
+#include <cstdlib>
+#include "Case.h"
+#include <iostream>
+
+using namespace std;
 
 class Plateau
 {
@@ -12,6 +17,7 @@ class Plateau
 
 		int longueur;
 		int largeur;
+		Case * tabCase;
 
 	public :
 
