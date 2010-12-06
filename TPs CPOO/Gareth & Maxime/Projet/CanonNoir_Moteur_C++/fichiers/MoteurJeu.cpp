@@ -12,7 +12,7 @@
 
 void MoteurJeu::setEtat(){
 	Etat* courant = new AttenteNbJoueurs();
-	execute();
+	courant->motor = this;
 }
 
 

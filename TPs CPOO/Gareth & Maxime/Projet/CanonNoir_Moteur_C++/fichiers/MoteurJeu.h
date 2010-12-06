@@ -19,12 +19,14 @@ class MoteurJeu
 {
 	private :
 
+		Facade * facade; // association bi-directionnelle
 		int nbJoueurs;
 		Etat * courant;
 		int j_indJoueurCourant;
 		Joueur * tabJoueurs;
 		bool finPartie;
-
+		
+		friend class Etat; // pouvoir utiliser les attributs du moteur à partir d'Etat
 
 	public :
 
@@ -35,6 +37,9 @@ class MoteurJeu
 		void setEtat();
 		/**
 		*\fn void execute()
+		*
+		*this function is used when someone clic (is called by Facade::execute())
+		*
 		*\brief Function which executes the current state
 		*/
 		void execute();
@@ -44,6 +49,12 @@ class MoteurJeu
 		*\return pointer on the instance
 		*/
 		MoteurJeu();
+		/**
+		*\fn Facade* getFacade() const
+		*\brief acces function for the facade
+		*\return pointer on the facade
+		*/
+		Facade* getFacade() const;  
 }; 
 
 #endif

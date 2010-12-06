@@ -11,3 +11,7 @@
 void Facade::initNbJoueurs(int n){
 	nb_Joueurs=n;
 }
+
+void Facade::execute(){
+	moteur->execute();
+}

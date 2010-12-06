@@ -9,6 +9,7 @@
 #ifndef ATTENTENBJOUEURS_H
 #define ATTENTENBJOUEURS_H
 
+#include "Etat.h"
 
 class AttenteNbJoueurs : public Etat
 {

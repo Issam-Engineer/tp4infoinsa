@@ -12,6 +12,7 @@
 #include <cstdlib>
 #include <string>
 #include <iostream>
+#include "MoteurJeu.h"
 
 using namespace std;
 
@@ -20,7 +21,7 @@ class Facade
 
 	public :
 		//utilisés
-		MoteurJeu* moteur;
+		MoteurJeu* moteur;// association bi-directionnelle
 		int nb_Joueurs;
 
 		//à traiter
@@ -60,14 +61,16 @@ class Facade
 		*\brief Function which initiates the nb_Joueurs value 
 		*/
 		void initNbJoueurs(int n);
-		
-		
-		//à traiter
 		/**
 		*\fn void execute()
-		*\brief Function which executes the current state
+		*\brief Function which is called after an action and which call MoteurJeu::execute() 
 		*/
+		//permet de ne pas faire de l'attente active
 		void execute();
+		
+
+		
+		//à traiter
 		void activeClicDepart();
 		void initialiser();
 		void desactiveClicDepart();
