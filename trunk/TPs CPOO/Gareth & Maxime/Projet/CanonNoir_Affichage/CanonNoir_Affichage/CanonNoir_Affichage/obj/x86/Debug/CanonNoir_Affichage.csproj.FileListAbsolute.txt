@@ -11,3 +11,7 @@ C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichag
 C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\Window1.baml
 C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\FenetreInit.g.cs
 C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\Window1.g.cs
+C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\bin\Debug\CanonNoir_Affichage.exe
+C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\bin\Debug\CanonNoir_Affichage.pdb
+C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\CanonNoir_Affichage.exe
+C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\CanonNoir_Affichage.pdb

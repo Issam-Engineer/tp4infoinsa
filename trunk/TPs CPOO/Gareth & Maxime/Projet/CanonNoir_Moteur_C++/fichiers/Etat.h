@@ -11,11 +11,16 @@
 
 #include <cstdlib>
 #include <iostream>
+#include "MoteurJeu.h"
 
 using namespace std;
 
 class Etat 
 {
+public:
+	MoteurJeu motor;
+
+public:
 	/**
 	* \fn void execute()
 	* \brief function which execute the current state
