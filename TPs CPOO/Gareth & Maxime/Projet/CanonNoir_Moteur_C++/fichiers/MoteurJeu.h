@@ -18,7 +18,7 @@ class MoteurJeu
 		int nbJoueurs;
 		Etat courant;
 		int j_indJoueurCourant;
-		Joueur[] tabJoueurs;
+		Joueur * tabJoueurs;
 		bool finPartie;
 
 
