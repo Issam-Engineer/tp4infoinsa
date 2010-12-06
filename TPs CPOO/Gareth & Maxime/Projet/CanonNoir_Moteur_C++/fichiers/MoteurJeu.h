@@ -55,6 +55,22 @@ class MoteurJeu
 		*\return pointer on the facade
 		*/
 		Facade* getFacade() const;  
+		/**
+		*\fn void modifNbJoueurs(int n);
+		*\brief function which changes the current nbJoueurs
+		*\parma[in] int n 
+		*/
+		void modifNbJoueurs(int n);  
+		/**
+		*\fn void modifCourant(Etat* e);
+		*\brief function which changes the current Etat courant
+		*\parma[in] Etat* e
+		*/
+		void modifCourant(Etat* e);  
+
 }; 
+
+
+inline Facade* MoteurJeu::getFacade() const { return facade;}
 
 #endif
