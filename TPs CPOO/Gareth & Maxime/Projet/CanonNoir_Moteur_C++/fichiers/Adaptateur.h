@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef ADAPTATEUR_H
+#define ADAPTATEUR_H
+
 /// <remarks>réalisé par le wrapper</remarks>
 class Adaptateur
 {
@@ -29,3 +32,4 @@ class Adaptateur
 
 }; 
 
+#endif

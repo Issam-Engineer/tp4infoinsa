@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef ETAT_H
+#define ETAT_H
+
 #include <cstdlib>
 #include <iostream>
 
@@ -20,3 +23,5 @@ class Etat
 	virtual void execute(); /*on ne la met pas virtuelle pure ... sinon on ne peut pas instancier un état !*/
 
 };
+
+#endif

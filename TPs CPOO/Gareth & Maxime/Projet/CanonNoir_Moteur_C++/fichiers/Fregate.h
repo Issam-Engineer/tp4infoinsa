@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef FREGATE_H
+#define FREGATE_H
+
 #include "Bateau.h"
 
 class Fregate : public Bateau
@@ -30,3 +33,4 @@ class Fregate : public Bateau
 		Fregate();
 }; 
 
+#endif

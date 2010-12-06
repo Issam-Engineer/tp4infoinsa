@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef ATTENTECHOIXBATEAU_H
+#define ATTENTECHOIXBATEAU_H
+
 /// <remarks>Si le nbJoueur=2 Execute de l'état précédent propose cet état</remarks>
 class AttenteChoixBateau : public Etat
 {
@@ -34,3 +37,4 @@ class AttenteChoixBateau : public Etat
 
 }; 
 
+#endif

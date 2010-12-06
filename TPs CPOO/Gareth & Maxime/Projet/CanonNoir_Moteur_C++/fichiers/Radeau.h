@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef RADEAU_H
+#define RADEAU_H
+
 #include "Bateau.h"
 
 class Radeau : public Bateau
@@ -30,3 +33,4 @@ class Radeau : public Bateau
 		Radeau(); 
 }; 
 
+#endif

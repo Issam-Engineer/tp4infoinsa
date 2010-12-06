@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef ATTENTEDEPLACEMENT_H
+#define ATTENTEDEPLACEMENT_H
+
 /// <remarks>execute() => amène le Joueur sur une case. Selon la case on lance  un état Tir, Depot, </remarks>
 class AttenteDeplacement : public Etat
 {
@@ -22,3 +25,4 @@ class AttenteDeplacement : public Etat
 
 }; 
 
+#endif

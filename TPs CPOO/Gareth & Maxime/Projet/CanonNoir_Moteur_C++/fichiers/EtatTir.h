@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef ETATTIR_H
+#define ETATTIR_H
+
 #include "Etat.h"
 #include "MoteurJeu.h"
 
@@ -42,3 +45,4 @@ class EtatTir : public Etat
 
 }; 
 
+#endif

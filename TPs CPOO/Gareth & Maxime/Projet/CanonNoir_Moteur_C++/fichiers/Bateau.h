@@ -6,6 +6,9 @@
 *\version 1.0
 */
 
+#ifndef BATEAU_H
+#define BATEAU_H
+
 #include <cstdlib>
 #include <string>
 #include <iostream>
@@ -88,3 +91,5 @@ inline bool Bateau::peutEtreVise(){
 inline bool Bateau::peutJouer2Des(){
 	return peutJouer2Des;
 }
+
+#endif

@@ -6,9 +6,13 @@
 * \version 1.0
 */
 
+#ifndef CASEILE_H
+#define CASEILE_H
+
 #include "Case.h"
 
 class CaseIle : public Case
 {
 }; 
 
+#endif

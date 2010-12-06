@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef CASECONTOURILE_H
+#define CASECONTOURILE_H
+
 #include "CaseNavigable.h"
 
 class CaseContourIle : public CaseNavigable
@@ -13,3 +16,4 @@ class CaseContourIle : public CaseNavigable
 	
 }; 
 
+#endif

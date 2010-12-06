@@ -5,6 +5,10 @@
 *\author Gareth THIVEUX
 *\version 1.0
 */
+
+#ifndef PLATEAU_H
+#define PLATEAU_H
+
 #include <cstdlib>
 #include "Case.h"
 #include <iostream>
@@ -43,3 +47,5 @@ inline int Plateau::largeur(){
 inline int Plateau::longueur(){
 	return longueur;
 }
+
+#endif

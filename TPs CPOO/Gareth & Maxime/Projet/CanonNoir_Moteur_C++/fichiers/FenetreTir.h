@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef FENETRETIR_H
+#define FENETRETIR_H
+
 class FenetreTir
 {
 	private :
@@ -34,3 +37,4 @@ class FenetreTir
 
 }; 
 
+#endif

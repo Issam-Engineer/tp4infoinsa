@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef ATTENTECANONPUISSANCE_H
+#define ATTENTECANONPUISSANCE_H
+
 #include "EtatTir.h"
 
 class AttenteCanonPuissance : public EtatTir
@@ -20,3 +23,4 @@ class AttenteCanonPuissance : public EtatTir
 
 }; 
 
+#endif

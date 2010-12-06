@@ -1,10 +1,13 @@
 ﻿/**
-* \file  Etat.h
+* \file  EtatDepot.h
 * \brief file which contains function declarations and attributes of the EtatDepot class
 * \author Maxime HAVEZ
 * \author Gareth THIVEUX
 * \version 1.0
 */
+
+#ifndef ETATDEPOT_H
+#define ETATDEPOT_H
 
 #include "Etat.h"
 #include "MoteurJeu.h"
@@ -24,3 +27,4 @@ class EtatDepot : public Etat
 
 }; 
 
+#endif

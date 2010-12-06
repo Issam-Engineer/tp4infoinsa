@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef AFFICHAGEWPF_H
+#define AFFICHAGEWPF_H
+
 class AffichageWPF
 {
 	private :
@@ -34,3 +37,4 @@ class AffichageWPF
 
 }; 
 
+#endif
