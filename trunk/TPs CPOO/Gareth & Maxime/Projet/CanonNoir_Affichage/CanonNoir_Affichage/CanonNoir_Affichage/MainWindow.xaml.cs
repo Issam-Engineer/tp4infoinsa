@@ -23,5 +23,17 @@ namespace CanonNoir_Affichage
         {
             InitializeComponent();
         }
-    }
+
+        private void Plateau_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+        
+        }
+
+        public void MouseDown(object sender,MouseButtonEventArgs e){
+            //On récupère la position du MouseDown
+            Point pt = e.GetPosition(Plateau);
+            //On déplace le joueur à ces coordonnées
+            Canvas.SetLeft(...);
+            Canvas.SetTop(...);
+        }
 }

@@ -4,7 +4,7 @@
         Title="Canon Noir" Height="375" Width="663" DataContext="{Binding}" IsEnabled="True">
     <Grid Background="#FFDFF5F1">
         <Button Content="Lancer Partie" Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="button1" VerticalAlignment="Top" Width="123" Click="button1_Click" IsEnabled="True" />
-        <Canvas Height="285" HorizontalAlignment="Left" Margin="173,14,0,0" Name="canvas1" VerticalAlignment="Top" Width="436" DataContext="{Binding}">
+        <Canvas MouseLeftButtonDown="MouseDown" Name="Plateau" Height="285" HorizontalAlignment="Left" Margin="173,12,0,0" VerticalAlignment="Top" Width="436" DataContext="{Binding}">
             <Canvas.Background>
                 <ImageBrush ImageSource="/CanonNoir_Affichage;component/Images/carte.PNG" />
             </Canvas.Background>
