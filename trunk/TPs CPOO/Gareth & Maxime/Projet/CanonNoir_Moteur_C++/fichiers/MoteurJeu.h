@@ -6,6 +6,9 @@
 *\version 1.0
 */
 
+#ifndef MOTEURJEU_H
+#define MOTEURJEU_H
+
 /// <remarks>{ context MoteurJeu::execute() return : courant.execute() }</remarks>
 
 #include "Etat.h"
@@ -38,3 +41,4 @@ class MoteurJeu
 
 }; 
 
+#endif

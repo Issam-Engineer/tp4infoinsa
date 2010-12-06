@@ -6,6 +6,9 @@
 *\version 1.0
 */
 
+#ifndef CARAVELLE_H
+#define CARAVELLE_H
+
 #include "Bateau.h"
 
 class Caravelle : public Bateau
@@ -32,3 +35,4 @@ class Caravelle : public Bateau
 
 }; 
 
+#endif

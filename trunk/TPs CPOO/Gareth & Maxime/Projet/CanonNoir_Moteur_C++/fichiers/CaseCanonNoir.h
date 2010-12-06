@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef CASECANONNOIR_H
+#define CASECANONNOIR_H
+
 #include "CaseContourIle.h"
 
 class CaseCanonNoir : public CaseContourIle
@@ -22,3 +25,4 @@ class CaseCanonNoir : public CaseContourIle
 
 }; 
 
+#endif

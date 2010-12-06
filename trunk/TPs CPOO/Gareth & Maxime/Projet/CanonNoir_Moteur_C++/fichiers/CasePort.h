@@ -5,6 +5,10 @@
 *\author Gareth THIVEUX
 *\version 1.0
 */
+
+#ifndef CASEPORT_H
+#define CASEPORT_H
+
 #include "Case.h"
 
 class CasePort : public Case
@@ -38,5 +42,7 @@ inline int CasePort::getCouleur(){
 }
 
 inline int CasePort::getEtat(){
-	return EtatDepot;
+	return new Etat(EtatDepot);
 }
+
+#endif

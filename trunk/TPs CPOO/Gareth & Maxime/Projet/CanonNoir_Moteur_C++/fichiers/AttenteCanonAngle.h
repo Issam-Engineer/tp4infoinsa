@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef ATTENTECANONANGLE_H
+#define ATTENTECANONANGLE_H
+
 #include "EtatTir.h" 
 
 class AttenteCanonAngle : public EtatTir
@@ -20,3 +23,4 @@ class AttenteCanonAngle : public EtatTir
 
 }; 
 
+#endif

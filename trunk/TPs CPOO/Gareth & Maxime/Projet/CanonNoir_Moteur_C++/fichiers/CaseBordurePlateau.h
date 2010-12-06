@@ -5,6 +5,10 @@
 * \author Gareth THIVEUX
 * \version 1.0
 */
+
+#ifndef CASEBORDUREPLATEAU_H
+#define CASEBORDUREPLATEAU_H
+
 #include "CaseNavigable.h"
 
 class CaseBordurePlateau : public CaseNavigable
@@ -33,3 +37,4 @@ class CaseBordurePlateau : public CaseNavigable
 
 }; 
 
+#endif

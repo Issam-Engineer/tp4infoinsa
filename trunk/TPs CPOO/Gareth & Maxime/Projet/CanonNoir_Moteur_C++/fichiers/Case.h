@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef CASE_H
+#define CASE_H
+
 #include <cstdlib>
 #include <iostream>
 #include "Etat.h"
@@ -64,3 +67,4 @@ inline pair<int,int> Case::getPosition(){
 	return position;
 }
 
+#endif

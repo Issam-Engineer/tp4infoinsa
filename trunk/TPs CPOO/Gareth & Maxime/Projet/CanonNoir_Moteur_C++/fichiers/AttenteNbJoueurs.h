@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef ATTENTENBJOUEURS_H
+#define ATTENTENBJOUEURS_H
+
 class AttenteNbJoueurs : public Etat
 {
 	private :
@@ -32,3 +35,4 @@ class AttenteNbJoueurs : public Etat
 
 }; 
 
+#endif

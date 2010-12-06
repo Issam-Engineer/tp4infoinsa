@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef ATTENTEPREMLANCERDE_H
+#define ATTENTEPREMLANCERDE_H
+
 /// <remarks>
 /// le tableau resDe contient les résultats du lancement des deux dé par joueur(non ordonné)
 /// j_indJoueur = 0 
@@ -40,3 +43,4 @@ class AttentePremLancerDe : public Etat
 
 }; 
 
+#endif

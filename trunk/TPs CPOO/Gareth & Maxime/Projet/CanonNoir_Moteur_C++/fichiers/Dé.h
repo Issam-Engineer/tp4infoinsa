@@ -6,6 +6,9 @@
 *\version 1.0
 */
 
+#ifndef DE_H
+#define DE_H
+
 class Dé
 {
 	private :
@@ -24,3 +27,4 @@ class Dé
 
 }; 
 
+#endif

@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef CASETRESOR_H
+#define CASETRESOR_H
+
 #include "CaseContourIle.h"
 
 class CaseTresor : public CaseContourIle
@@ -25,3 +28,5 @@ class CaseTresor : public CaseContourIle
 /*inline Etat CaseTresor::getEtat(){
 	return new Etat(EtatTresor);
 }*/
+
+#endif

@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef DUEL_H
+#define DUEL_H
+
 #include "Etat.h"
 #include "MoteurJeu.h"
 
@@ -25,3 +28,4 @@ class Duel : public Etat
 
 }; 
 
+#endif

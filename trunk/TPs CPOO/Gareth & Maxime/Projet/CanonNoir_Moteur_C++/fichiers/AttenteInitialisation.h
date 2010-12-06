@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef ATTENTEINITIALISATION_H
+#define ATTENTEINITIALISATION_H
+
 /// <remarks>execute() => rentrer nbjoueur couleur et nom (puis Joueur(j,nom,coul))</remarks>
 class AttenteInitialisation : public Etat
 {
@@ -34,3 +37,4 @@ class AttenteInitialisation : public Etat
 
 }; 
 
+#endif

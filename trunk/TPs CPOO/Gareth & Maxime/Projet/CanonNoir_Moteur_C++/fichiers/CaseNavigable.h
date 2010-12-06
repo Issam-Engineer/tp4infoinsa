@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef CASENAVIGABLE_H
+#define CASENAVIGABLE_H
+
 #include "Case.h"
 
 class CaseNavigable : public Case
@@ -31,3 +34,4 @@ class CaseNavigable : public Case
 
 }; 
 
+#endif

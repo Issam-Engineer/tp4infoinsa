@@ -5,9 +5,16 @@
 * \author Gareth THIVEUX
 * \version 1.0
 */
+
+#ifndef CASE_H
+#define CASE_H
+
 #include <cstdlib>
 #include <iostream>
 #include "Bateau.h"
+
+#ifndef JOUEUR_H
+#define JOUEUR_H
 
 using namespace std;
 
@@ -32,3 +39,4 @@ class Joueur
 
 }; 
 
+#endif

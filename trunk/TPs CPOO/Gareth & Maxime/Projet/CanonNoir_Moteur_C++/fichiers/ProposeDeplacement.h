@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef PROPOSEDEPLACEMENT_H
+#define PROPOSEDEPLACEMENT_H
+
 /// <remarks>
 /// execute() => affiche les possibilités de déplacement
 /// 
@@ -38,3 +41,4 @@ class ProposeDeplacement : public Etat
 
 }; 
 
+#endif

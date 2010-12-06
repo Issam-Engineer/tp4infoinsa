@@ -6,6 +6,9 @@
 * \version 1.0
 */
 
+#ifndef FENETREINIT_H
+#define FENETREINIT_H
+
 class FenetreInit
 {
 	private :
@@ -36,3 +39,4 @@ class FenetreInit
 
 }; 
 
+#endif
