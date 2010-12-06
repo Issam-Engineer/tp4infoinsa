@@ -7,13 +7,20 @@
 */
 
 #include "MoteurJeu.h"
+#include "AttenteNbJoueurs.h"
 
 
-	void MoteurJeu::setEtat(Etat e){
-		
-		Etat* courant = new Etat(EtatAttenteNbJoueurs);
-	}
+void MoteurJeu::setEtat(){
+	Etat* courant = new AttenteNbJoueurs();
+	execute();
+}
 
 
-	void MoteurJeu::execute(){
-	}
+void MoteurJeu::execute(){
+	courant->motor = this;
+	courant->execute();
+}
+
+MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),j_indJoueurCourant(0),tabJoueurs(NULL),finPartie(false){
+	
+};

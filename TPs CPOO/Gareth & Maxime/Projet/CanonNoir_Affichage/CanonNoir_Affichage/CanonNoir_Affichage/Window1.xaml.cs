@@ -22,5 +22,15 @@ namespace CanonNoir_Affichage
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

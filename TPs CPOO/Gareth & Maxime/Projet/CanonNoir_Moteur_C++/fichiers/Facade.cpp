@@ -8,3 +8,6 @@
 
 #include "Facade.h"
 
+void Facade::initNbJoueurs(int n){
+	nb_Joueurs=n;
+}

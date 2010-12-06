@@ -13,13 +13,14 @@
 
 #include "Etat.h"
 #include "Joueur.h"
+#include "Facade.h"
 
 class MoteurJeu
 {
 	private :
 
 		int nbJoueurs;
-		Etat courant;
+		Etat * courant;
 		int j_indJoueurCourant;
 		Joueur * tabJoueurs;
 		bool finPartie;
@@ -28,17 +29,21 @@ class MoteurJeu
 	public :
 
 		/**
-		*\fn void setEtat(Etat e)
-		*\brief Function which sets a given state as the current state
-		*\param[in] e : a state
+		*\fn void setEtat()
+		*\brief Function which sets the initial state to the motor
 		*/
-		virtual void setEtat(Etat e);
+		void setEtat();
 		/**
 		*\fn void execute()
 		*\brief Function which executes the current state
 		*/
-		virtual void execute();
-
+		void execute();
+		/**
+		*\fn MoteurJeu()
+		*\brief default constructor of MoteurJeu
+		*\return pointer on the instance
+		*/
+		MoteurJeu();
 }; 
 
 #endif

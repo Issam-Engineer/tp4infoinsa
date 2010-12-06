@@ -19,71 +19,83 @@ class Facade
 {
 
 	public :
+		//utilisés
+		int nb_Joueurs;
 
-		int nbJoueurs;
+		//à traiter
 		pair<int,int> caseClic;
 		bool afficherDe1;
 		bool afficherDe2;
-		int [] couleurs;
+		int* couleurs;
 		pair<int,int> posBateau;
 		bool getNewPos;
 		bool clicDepart;
 		bool clicInit;
-		string[] noms;
+		string* noms;
 		bool partieEnCours;
 		bool clicNbJoueurs;
 		bool lancerDe;
 		bool tabPremierLance;
 		bool afficherJoueur1;
 		bool initialiserOK;
-		Joueurs[] tempJoueurs;
+		Joueur* tempJoueurs;
 		int angle;
 		int puissance;
 		bool clicRefuserDuel;
 		bool afficherAttaqué;
 		bool afficherAttanquant;
 		bool bateauSelect;
-		pair<int,int>[] casesProposees;
-		Bateau[] tabBateau;
+		pair<int,int>* casesProposees;
+		Bateau* tabBateau;
 		bool fenetreInit;
 		bool fenetreTir;
 
+
 	public :
+		
+		//utilisées
+		/**
+		*\fn void initNbJoueurs(int n)
+		*\brief Function which initiates the nb_Joueurs value 
+		*/
+		void initNbJoueurs(int n);
+		
+		
+		//à traiter
 		/**
 		*\fn void execute()
 		*\brief Function which executes the current state
 		*/
-		virtual void execute();
-		virtual void activeClicDepart();
-		virtual void initialiser();
-		virtual void desactiveClicDepart();
-		virtual void acitveClicInit();
-		virtual void desactiveClicInit();
-		virtual void initCouleurs();
-		virtual void initNoms();
-		virtual void lancerPartie();
-		virtual void initNbJoueurs();
-		virtual void activeClicNbJoueurs();
-		virtual void desactiveClicNbJoueurs();
-		virtual void premierLancerDe();
-		virtual void afficherTabDe();
-		virtual void afficher2De();
-		virtual void afficher1De();
-		virtual void afficherJoueur1();
-		virtual void JeuInitialise();
-		virtual int getAngle();
-		virtual int getPuissance();
-		virtual void activerClicRefuserDuel();
-		virtual void desactiverClicRefuserDuel();
-		virtual void afficherAttaquant();
-		virtual void afficherAttaqué();
-		virtual void clicCase(pair<int c, object int>);
-		virtual void afficherCasesProposees(pair<int c, object int>[]);
-		virtual pair<int,int> afficherCasesProposees();
-		virtual void ouvrirFenetreInit();
-		virtual void fermerFenetreInit();
-		virtual void ouvrirFenetreTir();
-		virtual void fermerFenetreTir();
+		void execute();
+		void activeClicDepart();
+		void initialiser();
+		void desactiveClicDepart();
+		void acitveClicInit();
+		void desactiveClicInit();
+		void initCouleurs();
+		void initNoms();
+		void lancerPartie();
+		void activeClicNbJoueurs();
+		void desactiveClicNbJoueurs();
+		void premierLancerDe();
+		void afficherTabDe();
+		void afficher2De();
+		void afficher1De();
+		void afficherJoueur1();
+		void JeuInitialise();
+		int getAngle();
+		int getPuissance();
+		void activerClicRefuserDuel();
+		void desactiverClicRefuserDuel();
+		void afficherAttaquant();
+		void afficherAttaqué();
+		void clicCase(pair<int c, object int>);
+		void afficherCasesProposees(pair<int c, object int>[]);
+		pair<int,int> afficherCasesProposees();
+		void ouvrirFenetreInit();
+		void fermerFenetreInit();
+		void ouvrirFenetreTir();
+		void fermerFenetreTir();
 
 }; 
 

@@ -22,5 +22,28 @@ namespace CanonNoir_Affichage
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            //appeler fonction de façade qui initialise nbjoueur=2
+            Close();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            //appeler fonction de façade qui initialise nbjouer=3
+            Close();
+        }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            //appeler fonction de façade qui initialise nbjouer=4
+            Close();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
