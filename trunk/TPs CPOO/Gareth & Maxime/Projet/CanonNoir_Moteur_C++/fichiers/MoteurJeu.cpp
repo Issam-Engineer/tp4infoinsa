@@ -24,3 +24,11 @@ void MoteurJeu::execute(){
 MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),j_indJoueurCourant(0),tabJoueurs(NULL),finPartie(false){
 	
 };
+
+void MoteurJeu::modifNbJoueurs(int n){
+	nbJoueurs=n;
+}
+
+void MoteurJeu::modifCourant(Etat* e){
+	courant=e;
+}

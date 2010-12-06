@@ -12,9 +12,9 @@
 
 
 void AttenteNbJoueurs::execute(){
-	if((motor.facade)->nb_Joueurs==2 || motor.facade->nb_Joueurs==3 || motor.facade->nb_Joueurs==4){
-		motor.nbJoueurs = motor.facade->nb_Joueurs;
-		motor.courant = new AttenteInitialisation();
+	if((motor.getFacade())->nb_Joueurs==2 || motor.getFacade()->nb_Joueurs==3 || motor.getFacade()->nb_Joueurs==4){
+		motor.modifNbJoueurs(motor.getFacade()->nb_Joueurs);
+		motor.modifCourant(new AttenteInitialisation());
 	}else{
 		cerr<<"ERROR : AttenteNbJoueurs"<<endl;
 }
