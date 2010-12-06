@@ -33,7 +33,7 @@ namespace CanonNoir_Affichage
             //On récupère la position du MouseDown
             Point pt = e.GetPosition(Plateau);
             //On déplace le joueur à ces coordonnées
-            Canvas.SetLeft(...);
-            Canvas.SetTop(...);
+            Canvas.SetLeft();
+            Canvas.SetTop();
         }
-}
+};
