@@ -176,5 +176,8 @@
     <ClCompile Include="..\..\fichiers\Plateau.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\fichiers\AttenteNbJoueurs.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
