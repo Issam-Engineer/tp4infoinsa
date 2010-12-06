@@ -140,37 +140,40 @@
     <ClCompile Include="..\..\fichiers\Bateau.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Case.cpp">
+    <ClCompile Include="..\..\fichiers\Case.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="CasePort.cpp">
+    <ClCompile Include="..\..\fichiers\CaseBordurePlateau.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="CaseTresor.cpp">
+    <ClCompile Include="..\..\fichiers\CaseCanonNoir.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="CaseCanonNoir.cpp">
+    <ClCompile Include="..\..\fichiers\CasePort.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="CaseBordurePlateau.cpp">
+    <ClCompile Include="..\..\fichiers\CaseTresor.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Joueur.cpp">
+    <ClCompile Include="..\..\fichiers\Dé.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="FenetreTir.cpp">
+    <ClCompile Include="..\..\fichiers\Facade.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="FenetreInit.cpp">
+    <ClCompile Include="..\..\fichiers\FenetreInit.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Dé.cpp">
+    <ClCompile Include="..\..\fichiers\FenetreTir.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Facade.cpp">
+    <ClCompile Include="..\..\fichiers\Joueur.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Plateau.cpp">
+    <ClCompile Include="..\..\fichiers\MoteurJeu.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fichiers\Plateau.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

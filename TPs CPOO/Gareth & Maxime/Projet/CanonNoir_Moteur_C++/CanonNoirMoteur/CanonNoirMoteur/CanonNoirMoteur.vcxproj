@@ -115,19 +115,20 @@
   <ItemGroup>
     <ClCompile Include="..\..\fichiers\Bateau.cpp" />
     <ClCompile Include="..\..\fichiers\Caravelle.cpp" />
+    <ClCompile Include="..\..\fichiers\Case.cpp" />
+    <ClCompile Include="..\..\fichiers\CaseBordurePlateau.cpp" />
+    <ClCompile Include="..\..\fichiers\CaseCanonNoir.cpp" />
+    <ClCompile Include="..\..\fichiers\CasePort.cpp" />
+    <ClCompile Include="..\..\fichiers\CaseTresor.cpp" />
+    <ClCompile Include="..\..\fichiers\Dé.cpp" />
+    <ClCompile Include="..\..\fichiers\Facade.cpp" />
+    <ClCompile Include="..\..\fichiers\FenetreInit.cpp" />
+    <ClCompile Include="..\..\fichiers\FenetreTir.cpp" />
     <ClCompile Include="..\..\fichiers\Fregate.cpp" />
+    <ClCompile Include="..\..\fichiers\Joueur.cpp" />
+    <ClCompile Include="..\..\fichiers\MoteurJeu.cpp" />
+    <ClCompile Include="..\..\fichiers\Plateau.cpp" />
     <ClCompile Include="..\..\fichiers\Radeau.cpp" />
-    <ClCompile Include="Case.cpp" />
-    <ClCompile Include="CaseBordurePlateau.cpp" />
-    <ClCompile Include="CaseCanonNoir.cpp" />
-    <ClCompile Include="CasePort.cpp" />
-    <ClCompile Include="CaseTresor.cpp" />
-    <ClCompile Include="Dé.cpp" />
-    <ClCompile Include="Facade.cpp" />
-    <ClCompile Include="FenetreInit.cpp" />
-    <ClCompile Include="FenetreTir.cpp" />
-    <ClCompile Include="Joueur.cpp" />
-    <ClCompile Include="Plateau.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
