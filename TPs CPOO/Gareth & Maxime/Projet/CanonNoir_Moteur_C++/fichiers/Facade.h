@@ -1,9 +1,9 @@
 ﻿/**
-* \file  Facade.h
-* \brief fichier qui regroupe les fonctionnalité et les attributs de la facade du moteur
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\file  Facade.h
+*\brief fichier qui regroupe les fonctionnalité et les attributs de la facade du moteur
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef FACADE_H
@@ -61,6 +61,7 @@ class Facade
 		*\brief Function which initiates the nb_Joueurs value 
 		*/
 		void initNbJoueurs(int n);
+
 		/**
 		*\fn void execute()
 		*\brief Function which is called after an action and which call MoteurJeu::execute() 
@@ -68,6 +69,19 @@ class Facade
 		//permet de ne pas faire de l'attente active
 		void execute();
 		
+		/**
+		*\fn int getAngle()
+		*\brief Function which gives the angle of the current shot 
+		*\param[out] int, the angle
+		*/
+		int getAngle();
+
+		/**
+		*\fn int getPuissance()
+		*\brief Function which gives the power of the current shot
+		*\param[out] int, the power
+		*/
+		int getPuissance();
 
 		
 		//à traiter
@@ -87,8 +101,6 @@ class Facade
 		void afficher1De();
 		void afficherJoueur1();
 		void JeuInitialise();
-		int getAngle();
-		int getPuissance();
 		void activerClicRefuserDuel();
 		void desactiverClicRefuserDuel();
 		void afficherAttaquant();
