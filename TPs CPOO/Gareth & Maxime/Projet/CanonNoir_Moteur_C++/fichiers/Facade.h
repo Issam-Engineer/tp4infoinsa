@@ -12,7 +12,9 @@
 #include <cstdlib>
 #include <string>
 #include <iostream>
-#include "MoteurJeu.h"
+#include "Joueur.h"
+
+class MoteurJeu;
 
 class Facade
 {
@@ -21,17 +23,24 @@ class Facade
 		//utilisés
 		MoteurJeu* _moteur;
 		int _nb_Joueurs;
+		int _couleur1;
+		int _couleur2;
+		int _couleur3;
+		int _couleur4;
+		/* Nom facultatif ... type non primitif
+		string nom1;
+		string nom2;
+		string nom3;
+		string nom4;*/
 
 		//à traiter
 		pair<int,int> _caseClic;
 		bool _afficherDe1;
 		bool _afficherDe2;
-		int* _couleurs; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
 		pair<int,int> _posBateau; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
 		bool _getNewPos;
 		bool _clicDepart;
 		bool _clicInit;
-		string* _noms; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
 		bool _partieEnCours;
 		bool _clicNbJoueurs;
 		bool _lancerDe;
@@ -70,17 +79,40 @@ class Facade
 		/**
 		*\fn int getAngle()
 		*\brief Function which gives the angle of the current shot 
-		*\param[out] int, the angle
+		*\return int, the angle
 		*/
 		int getAngle();
 
 		/**
 		*\fn int getPuissance()
 		*\brief Function which gives the power of the current shot
-		*\param[out] int, the power
+		*\return int, the power
 		*/
 		int getPuissance();
-
+		/**
+		*\fn int getcouleur1()
+		*\brief Function which gives the color1
+		*\return int, the color
+		*/
+		int getCouleur1();
+		/**
+		*\fn int getcouleur2()
+		*\brief Function which gives the color2
+		*\return int, the color
+		*/
+		int getCouleur2();
+		/**
+		*\fn int getcouleur3()
+		*\brief Function which gives the color3
+		*\return int, the color
+		*/
+		int getCouleur3();
+		/**
+		*\fn int getcouleur4()
+		*\brief Function which gives the color4
+		*\return int, the color
+		*/
+		int getCouleur4();
 		
 		//à traiter
 		void activeClicDepart();
@@ -88,7 +120,6 @@ class Facade
 		void desactiveClicDepart();
 		void acitveClicInit();
 		void desactiveClicInit();
-		void initCouleurs();
 		void initNoms();
 		void lancerPartie();
 		void activeClicNbJoueurs();

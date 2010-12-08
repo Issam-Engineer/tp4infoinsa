@@ -9,9 +9,10 @@
 #ifndef MOTEURJEU_H
 #define MOTEURJEU_H
 
-#include "Etat.h"
 #include "Joueur.h"
 #include "Facade.h"
+
+class Etat;
 
 class MoteurJeu
 {

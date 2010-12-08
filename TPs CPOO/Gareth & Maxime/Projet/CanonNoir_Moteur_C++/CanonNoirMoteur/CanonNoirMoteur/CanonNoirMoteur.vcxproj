@@ -113,6 +113,7 @@
     <ClInclude Include="..\..\fichiers\Radeau.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\fichiers\AttenteInitialisation.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteNbJoueurs.cpp" />
     <ClCompile Include="..\..\fichiers\Bateau.cpp" />
     <ClCompile Include="..\..\fichiers\Caravelle.cpp" />
