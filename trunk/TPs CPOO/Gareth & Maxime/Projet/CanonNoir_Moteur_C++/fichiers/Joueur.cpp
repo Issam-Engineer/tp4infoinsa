@@ -8,3 +8,11 @@
 
 #include "Joueur.h"
 
+Joueur::Joueur(string n, int num){
+	_nom=n;_numero=num;
+}
+
+Joueur::Joueur(){
+	_nom = "défault";
+	_numero=0;
+}

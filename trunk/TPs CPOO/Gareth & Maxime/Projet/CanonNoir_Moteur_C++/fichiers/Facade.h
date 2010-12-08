@@ -21,7 +21,7 @@ class Facade
 
 	public :
 		//utilisés
-		MoteurJeu* moteur;// association bi-directionnelle
+		MoteurJeu * moteur;// association bi-directionnelle
 		int nb_Joueurs;
 
 		//à traiter

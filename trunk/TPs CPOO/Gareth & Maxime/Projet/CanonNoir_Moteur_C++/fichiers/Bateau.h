@@ -20,44 +20,44 @@ class Bateau
 
 	protected :
 
-		bool peutPorterTresor;
-		bool peutJouer2Des;
-		bool peutTirer;
-		bool peutEtreVise;
-		pair<int,int> position;
+		bool pPTresor;
+		bool pJ2Des;
+		bool pTirer;
+		bool pEVise;
+		pair<int,int> pos;
 
 	public :
 
 		/**
-		* \fn virtual string typeBateau()
-		* \brief Pure virtual function which allows inherited classes to give their name
-		* \return string the class name
+		*\fn virtual string typeBateau()
+		*\brief Pure virtual function which allows inherited classes to give their name
+		*\return string the class name
 		*/
 		virtual string typeBateau();/*ON NE MET PAS VIRTUELLE PURE*/
 		/**
-		* \fn Virtual void init()
-		* \brief function which allows inherited classes to initialize themselves
+		*\fn Virtual void init()
+		*\brief function which allows inherited classes to initialize themselves
 		*/
 		virtual void init();/*ON NE MET PAS VIRTUELLE PURE*/
 
 		/**
-		* \fn pair<int,int> getPosition()
-		* \brief Virtual function which return the boat position
-		* \return pair<int,int> boat position
+		*\fn pair<int,int> getPosition()
+		*\brief Virtual function which return the boat position
+		*\return pair<int,int> boat position
 		*/
 		virtual pair<int,int> getPosition();
 		/**
-		* \fn bool peutTirer()
-		* \brief Virtual function which indicates if the boat can shoot
-		* (for example a Radeau can't be shot)
+		*\fn bool peutTirer()
+		*\brief Virtual function which indicates if the boat can shoot
+		*(for example a Radeau can't be shot)
 		*
-		* \return bool true if boat can shoot
+		*\return bool true if boat can shoot
 		*/
 		virtual bool peutTirer();
 		/**
 		*\fn bool peutEtreVise()
 		*\brief Virtual function which indicates if the boat can be shot
-		* (for example a Radeau can't be shot)
+		*(for example a Radeau can't be shot)
 		*
 		*\return bool true if the boat can be shot
 		*/
@@ -80,16 +80,16 @@ class Bateau
 }; 
 
 inline pair<int,int> Bateau::getPosition(){
-	return position;
+	return pos;
 }
 inline bool Bateau::peutTirer(){
-	return peutTirer;
+	return pTirer;
 }
 inline bool Bateau::peutEtreVise(){
-	return peutEtreVise;
+	return pEVise;
 }
 inline bool Bateau::peutJouer2Des(){
-	return peutJouer2Des;
+	return pJ2Des;
 }
 
 #endif
