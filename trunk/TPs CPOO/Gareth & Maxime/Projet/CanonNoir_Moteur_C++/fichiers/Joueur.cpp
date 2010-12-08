@@ -8,8 +8,8 @@
 
 #include "Joueur.h"
 
-Joueur::Joueur(string n, int num){
-	_nom=n;_numero=num;
+Joueur::Joueur(int num, int coul){
+	_numero=num;
 }
 
 Joueur::Joueur(){

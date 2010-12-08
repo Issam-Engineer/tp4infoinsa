@@ -30,11 +30,13 @@ class Joueur
 
 	public :
 
+
 		/**
-		*\fn Joueur(string n, int coul, int num)
+		*\fn Joueur(int num,int coul)
 		*\brief constructor with 3 parameters
 		*/
-		Joueur(string n, int num);
+		Joueur(int num, int couleur); /*string ???*/
+
 		/**
 		*\fn Joueur()
 		*\brief default constructor
