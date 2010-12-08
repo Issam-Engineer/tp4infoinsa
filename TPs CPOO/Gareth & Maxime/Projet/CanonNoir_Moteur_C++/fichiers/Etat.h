@@ -22,11 +22,17 @@ public:
 
 public:
 	/**
-	* \fn void execute()
-	* \brief function which execute the current state
+	*\fn void execute()
+	*\brief function which execute the current state
 	*/
 	virtual void execute(); /*on ne la met pas virtuelle pure ... sinon on ne peut pas instancier un état !*/
-
+	/**
+	*\fn void modifMotor(MoteurJeu m)
+	*\brief function which changes the current motor
+	*\param[in] MoteurJeu m
+	*/
+	virtual void modifMotor(MoteurJeu m);
+	
 };
 
 #endif

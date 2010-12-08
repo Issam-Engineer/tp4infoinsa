@@ -10,19 +10,19 @@
 
 Fregate::Fregate(){
 
-	peutTirer = true;
-	PeutPorterTresor = true;
-	peutEtreVise = true;
-	peutJouer2Des = true;
+	pTirer = true;
+	pPTresor = true;
+	pEVise = true;
+	pJ2Des = true;
 
 }
 
 void Fregate::init(){
 	
-	peutTirer = true;
-	PeutPorterTresor = true;
-	peutEtreVise = true;
-	peutJouer2Des = true;
+	pTirer = true;
+	pPTresor = true;
+	pEVise = true;
+	pJ2Des = true;
 	// gérer l'initialisation de sa position ???
 
 }

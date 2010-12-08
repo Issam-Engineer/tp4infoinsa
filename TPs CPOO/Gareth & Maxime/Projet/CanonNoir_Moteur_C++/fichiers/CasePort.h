@@ -15,8 +15,8 @@ class CasePort : public Case
 {
 	private :
 
-		int couleur;
-		Etat EtatDepot;
+		int _couleur;
+		Etat _EtatDepot;
 
 
 	public :
@@ -38,11 +38,11 @@ class CasePort : public Case
 }; 
 
 inline int CasePort::getCouleur(){
-	return couleur;
+	return _couleur;
 }
 
 inline int CasePort::getEtat(){
-	return new Etat(EtatDepot);
+	return new EtatDepot();
 }
 
 #endif
