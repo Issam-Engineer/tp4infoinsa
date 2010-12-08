@@ -7,7 +7,10 @@
 */
 
 #include "AttenteInitialisation.h"
+#include "AttentePremLancerDe.h"
 
 void AttenteInitialisation::execute(){
-
+	if(){//vérif sur les couleurs
+		//créer le tableau de joueur
+		motor.modifCourant(new AttentePremLancerDe());
 }

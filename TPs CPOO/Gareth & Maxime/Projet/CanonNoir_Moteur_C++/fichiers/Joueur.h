@@ -12,6 +12,7 @@
 #include <cstdlib>
 #include <iostream>
 #include "Bateau.h"
+#include "CasePort.h"
 
 using namespace std;
 
@@ -20,6 +21,7 @@ class Joueur
 
 	public :
 
+		CasePort _cp; //il a la case port en fonctiond de sa couleur
 		string _nom;
 		int _numero;
 		bool _gagnant;
