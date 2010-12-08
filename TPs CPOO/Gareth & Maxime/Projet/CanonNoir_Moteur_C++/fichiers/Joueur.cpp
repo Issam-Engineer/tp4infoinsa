@@ -8,8 +8,9 @@
 
 #include "Joueur.h"
 
-Joueur::Joueur(int num, int coul){
+Joueur::Joueur(int num, CasePort c){
 	_numero=num;
+	_cp=c;
 }
 
 Joueur::Joueur(){
