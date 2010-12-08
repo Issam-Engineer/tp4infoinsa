@@ -14,43 +14,41 @@
 #include <iostream>
 #include "MoteurJeu.h"
 
-using namespace std;
-
 class Facade
 {
 
 	public :
 		//utilisés
-		MoteurJeu * moteur;// association bi-directionnelle
-		int nb_Joueurs;
+		MoteurJeu* _moteur;
+		int _nb_Joueurs;
 
 		//à traiter
-		pair<int,int> caseClic;
-		bool afficherDe1;
-		bool afficherDe2;
-		int* couleurs;
-		pair<int,int> posBateau;
-		bool getNewPos;
-		bool clicDepart;
-		bool clicInit;
-		string* noms;
-		bool partieEnCours;
-		bool clicNbJoueurs;
-		bool lancerDe;
-		bool tabPremierLance;
-		bool afficherJoueur1;
-		bool initialiserOK;
-		Joueur* tempJoueurs;
-		int angle;
-		int puissance;
-		bool clicRefuserDuel;
-		bool afficherAttaqué;
-		bool afficherAttanquant;
-		bool bateauSelect;
-		pair<int,int>* casesProposees;
-		Bateau* tabBateau;
-		bool fenetreInit;
-		bool fenetreTir;
+		pair<int,int> _caseClic;
+		bool _afficherDe1;
+		bool _afficherDe2;
+		int* _couleurs; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
+		pair<int,int> _posBateau; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
+		bool _getNewPos;
+		bool _clicDepart;
+		bool _clicInit;
+		string* _noms; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
+		bool _partieEnCours;
+		bool _clicNbJoueurs;
+		bool _lancerDe;
+		bool _tabPremierLance;
+		bool _afficherJoueur1;
+		bool _initialiserOK;
+		Joueur* _tempJoueurs; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
+		int _angle;
+		int _puissance;
+		bool _clicRefuserDuel;
+		bool _afficherAttaqué;
+		bool _afficherAttanquant;
+		bool _bateauSelect;
+		pair<int,int>* _casesProposees; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
+		Bateau* _tabBateau; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
+		bool _fenetreInit;
+		bool _fenetreTir;
 
 
 	public :
@@ -105,8 +103,8 @@ class Facade
 		void desactiverClicRefuserDuel();
 		void afficherAttaquant();
 		void afficherAttaqué();
-		void clicCase(pair<int c, object int>);
-		void afficherCasesProposees(pair<int c, object int>[]);
+		void clicCase(pair<int,int>); 
+		void afficherCasesProposees(pair<int,int>[]);
 		pair<int,int> afficherCasesProposees();
 		void ouvrirFenetreInit();
 		void fermerFenetreInit();

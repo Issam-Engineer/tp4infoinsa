@@ -30,7 +30,7 @@ class CaseNavigable : public Case
 		* \brief pure virtual function which allows inherited classes to give their state
 		* \return Etat the associated state
 		*/
-		virtual void getEtat();
+		virtual Etat getEtat();
 
 }; 
 

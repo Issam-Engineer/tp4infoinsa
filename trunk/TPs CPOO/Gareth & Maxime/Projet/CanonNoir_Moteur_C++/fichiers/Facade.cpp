@@ -9,17 +9,17 @@
 #include "Facade.h"
 
 void Facade::initNbJoueurs(int n){
-	nb_Joueurs=n;
+	_nb_Joueurs=n;
 }
 
 void Facade::execute(){
-	moteur->execute();
+	_moteur->execute();
 }
 
 int Facade::getAngle(){
-	return angle;
+	return _angle;
 }
 
 int Facade::getPuissance(){
-	return puissance;
+	return _puissance;
 }

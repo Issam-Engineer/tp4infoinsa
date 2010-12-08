@@ -23,9 +23,9 @@ class Case
 
 	protected :
 
-		pair<int,int>  position;
-		bool accessible;
-		int hauteur;
+		pair<int,int>  _position;
+		bool _accessible;
+		int _hauteur;
 
 	public :
 
@@ -58,13 +58,13 @@ class Case
 }; 
 
 inline bool Case::accessible(){
-	return accessible;
+	return _accessible;
 }
 inline int Case::getHauteur(){
-	return hauteur;
+	return _hauteur;
 }
 inline pair<int,int> Case::getPosition(){
-	return position;
+	return _position;
 }
 
 #endif

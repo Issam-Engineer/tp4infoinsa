@@ -19,9 +19,9 @@ class Plateau
 {
 	private :
 
-		int longueur;
-		int largeur;
-		Case * tabCase;
+		int _longueur;
+		int _largeur;
+		Case * _tabCase;
 
 	public :
 
@@ -41,11 +41,11 @@ class Plateau
 }; 
 
 inline int Plateau::largeur(){
-	return largeur;
+	return _largeur;
 }
 
 inline int Plateau::longueur(){
-	return longueur;
+	return _longueur;
 }
 
 #endif
