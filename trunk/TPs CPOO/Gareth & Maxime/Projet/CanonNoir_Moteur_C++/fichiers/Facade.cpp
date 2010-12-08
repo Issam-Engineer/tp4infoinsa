@@ -8,6 +8,7 @@
 
 #include "Facade.h"
 
+
 void Facade::initNbJoueurs(int n){
 	_nb_Joueurs=n;
 }
@@ -22,4 +23,20 @@ int Facade::getAngle(){
 
 int Facade::getPuissance(){
 	return _puissance;
+}
+
+int Facade::getCouleur1(){
+	return _couleur1;
+}
+
+int Facade::getCouleur2(){
+	return _couleur2;
+}
+
+int Facade::getCouleur3(){
+	return _couleur3;
+}
+
+int Facade::getCouleur4(){
+	return _couleur4;
 }

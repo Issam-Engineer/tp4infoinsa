@@ -9,24 +9,10 @@
 #ifndef ATTENTEINITIALISATION_H
 #define ATTENTEINITIALISATION_H
 
-/// <remarks>execute() => rentrer nbjoueur couleur et nom (puis Joueur(j,nom,coul))</remarks>
+#include "Etat.h"
+
 class AttenteInitialisation : public Etat
 {
-	private :
-
-		Moteur motor;
-
-	protected :
-
-
-	public :
-
-
-	private :
-
-
-	protected :
-
 
 	public :
 		/**

@@ -24,7 +24,11 @@ class EtatDepot : public Etat
 		*\brief Function which executes the current state
 		*/
 		virtual void execute();
-
+		/** 
+		*\fn EtatDepos()
+		*\brief default constructor
+		*/
+		EtatDepot();
 }; 
 
 #endif
