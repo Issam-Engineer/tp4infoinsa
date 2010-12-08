@@ -16,5 +16,5 @@ void AttenteNbJoueurs::execute(){
 		motor.modifNbJoueurs(motor.getFacade()->nb_Joueurs);
 		motor.modifCourant(new AttenteInitialisation());
 	}else{
-		cerr<<"ERROR : AttenteNbJoueurs"<<endl;
+		cerr<<"ERROR : AttenteNbJoueurs : Facade::nb_joueur n'a pas une valeur correcte"<<endl;
 }

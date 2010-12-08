@@ -9,8 +9,6 @@
 #ifndef MOTEURJEU_H
 #define MOTEURJEU_H
 
-/// <remarks>{ context MoteurJeu::execute() return : courant.execute() }</remarks>
-
 #include "Etat.h"
 #include "Joueur.h"
 #include "Facade.h"
@@ -25,8 +23,6 @@ class MoteurJeu
 		int j_indJoueurCourant;
 		Joueur * tabJoueurs;
 		bool finPartie;
-		
-		friend class Etat; // pouvoir utiliser les attributs du moteur à partir d'Etat
 
 	public :
 

@@ -10,19 +10,19 @@
 
 Radeau::Radeau() {
 	
-	peutTirer = false;
-	PeutPorterTresor = false;
-	peutEtreVise = false;
-	peutJouer2Des = false;
+	pTirer = false;
+	pPTresor = false;
+	pEVise = false;
+	pJ2Des = false;
 
 }
 
 void Radeau::init(){
 	
-	peutTirer = false;
-	PeutPorterTresor = false;
-	peutEtreVise = false;
-	peutJouer2Des = false;
+	pTirer = false;
+	pPTresor = false;
+	pEVise = false;
+	pJ2Des = false;
 	// gérer l'initialisation de sa position ???
 
 }
