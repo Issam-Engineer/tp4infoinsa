@@ -53,6 +53,12 @@ class MoteurJeu
 		*/
 		Facade* getFacade() const;  
 		/**
+		*\fn int getNbJoueurs();
+		*\brief function which give nbjoueurs
+		*\rerturn int nbjoueurs 
+		*/
+		int getNbJoueurs() const;  
+		/**
 		*\fn void modifNbJoueurs(int n);
 		*\brief function which changes the current nbJoueurs
 		*\parma[in] int n 
@@ -69,5 +75,5 @@ class MoteurJeu
 
 
 inline Facade* MoteurJeu::getFacade() const { return facade;}
-
+inline int MoteurJeu::getNbJoueurs() const {return nbJoueurs;} 
 #endif

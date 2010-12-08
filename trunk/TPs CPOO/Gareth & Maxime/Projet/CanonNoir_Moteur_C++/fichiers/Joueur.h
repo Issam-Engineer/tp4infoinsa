@@ -32,10 +32,10 @@ class Joueur
 
 
 		/**
-		*\fn Joueur(int num,int coul)
+		*\fn Joueur(int num,CasePort c)
 		*\brief constructor with 3 parameters
 		*/
-		Joueur(int num, int couleur); /*string ???*/
+		Joueur(int num, CasePort c); /*string ???*/
 
 		/**
 		*\fn Joueur()

@@ -9,29 +9,16 @@
 #ifndef ATTENTEPREMLANCERDE_H
 #define ATTENTEPREMLANCERDE_H
 
-/// <remarks>
-/// le tableau resDe contient les résultats du lancement des deux dé par joueur(non ordonné)
-/// j_indJoueur = 0 
-/// </remarks>
+#include "MoteurJeu.h"
+#include "Etat.h"
+
 class AttentePremLancerDe : public Etat
 {
 	private :
 
-		static int[] resDe;
-		Moteur motor;
+		static int* resDe;
+		MoteurJeu motor;
 		static int nbLance;
-
-	protected :
-
-
-	public :
-
-
-	private :
-
-
-	protected :
-
 
 	public :
 		/**

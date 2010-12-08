@@ -12,9 +12,10 @@
 #include <cstdlib>
 #include <string>
 #include <iostream>
-#include "Joueur.h"
+
 
 class MoteurJeu;
+class Joueur;
 
 class Facade
 {
