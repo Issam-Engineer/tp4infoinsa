@@ -17,11 +17,11 @@ class CaseCanonNoir : public CaseContourIle
 	public :
 
 		/**
-		* \fn Etat getEtat() 
+		* \fn int getEtat() 
 		* \brief Function which gives the state associated to the class
-		* \return Etat the associated state
+		* \return int the associated state
 		*/
-		virtual Etat getEtat();
+		int getEtat();
 
 }; 
 

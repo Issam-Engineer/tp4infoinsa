@@ -11,17 +11,18 @@
 
 #include <cstdlib>
 #include <iostream>
+
 #include "Bateau.h"
-#include "CasePort.h"
 
 using namespace std;
+class CasePort;
 
 class Joueur
 {
 
 	public :
 
-		CasePort _cp; //il a la case port en fonctiond de sa couleur
+		CasePort* _cp; //il a la case port en fonctiond de sa couleur
 		int _numero;
 		bool _gagnant;
 		Bateau _bateau1;
@@ -34,7 +35,7 @@ class Joueur
 		*\fn Joueur(int num,CasePort c)
 		*\brief constructor with 3 parameters
 		*/
-		Joueur(int num, CasePort c);
+		Joueur(int num, CasePort* c);
 
 		/**
 		*\fn Joueur()

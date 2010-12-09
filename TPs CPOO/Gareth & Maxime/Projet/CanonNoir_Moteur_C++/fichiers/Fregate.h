@@ -16,16 +16,16 @@ class Fregate : public Bateau
 
 	public :
 		/**
-		*\fn virtual string typeBateau() = 0
+		*\fn string typeBateau()
 		*\brief inherited function which gives the name of the class
 		*\return string the name of the class
-		*/
-		string typeBateau();
+		
+		char* typeBateau();*/
 		/**
 		*\fn void init()
 		*\brief inherited function which initialized the Fregate
 		*/
-		void init();
+		virtual void init();
 		/**
 		*\fn Fregate()
 		*\brief default constructor

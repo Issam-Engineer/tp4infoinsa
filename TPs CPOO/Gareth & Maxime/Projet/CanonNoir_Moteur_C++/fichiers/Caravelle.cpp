@@ -17,17 +17,13 @@ Caravelle::Caravelle(){
 }
 
 void Caravelle::init(){
-	
 	pTirer = true;
 	pPTresor = true;
 	pEVise = true;
 	pJ2Des = true;
 	// gérer l'initialisation de sa position ???
-
 }
 
-string Caravelle::typeBateau(){
-
+/*char* Caravelle::typeBateau(){
 	return "Caravelle";
-
-}
+}*/

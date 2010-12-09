@@ -8,7 +8,7 @@
 
 #include "Joueur.h"
 
-Joueur::Joueur(int num, CasePort c){
+Joueur::Joueur(int num, CasePort* c){
 	_numero=num;
 	_cp=c;
 }

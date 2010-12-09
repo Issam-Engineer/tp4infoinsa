@@ -31,7 +31,7 @@ class CasePort : public Case
 		* \brief Function which gives the state associated to the class
 		* \return Etat the associated state
 		*/
-		Etat getEtat();
+		int getEtat();
 
 }; 
 

@@ -17,16 +17,16 @@ class Caravelle : public Bateau
 	public :
 
 		/**
-		*\fn virtual string typeBateau() = 0
+		*\fn virtual string typeBateau()
 		*\brief Inherited function which gives the name of the class
 		*\return string the name of the class
-		*/
-		string typeBateau();
+		
+		char* typeBateau();*/
 		/**
 		*\fn void init()
 		*\brief Inherited function which initialized the Caravelle
 		*/
-		void init();
+		virtual void init();
 		/**
 		*\fn Caravelle()
 		*\brief Default constructor
