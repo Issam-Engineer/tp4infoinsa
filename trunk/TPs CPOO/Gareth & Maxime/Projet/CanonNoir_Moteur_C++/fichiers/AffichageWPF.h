@@ -11,19 +11,6 @@
 
 class AffichageWPF
 {
-	private :
-
-
-	protected :
-
-
-	public :
-
-
-	private :
-
-
-	protected :
 
 
 	public :

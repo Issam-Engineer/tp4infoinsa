@@ -10,13 +10,9 @@
 #define ETATDEPOT_H
 
 #include "Etat.h"
-#include "MoteurJeu.h"
 
 class EtatDepot : public Etat
 {
-	private :
-
-		MoteurJeu motor;
 
 	public :
 		/**

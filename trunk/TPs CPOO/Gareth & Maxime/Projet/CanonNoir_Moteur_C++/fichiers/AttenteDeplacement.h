@@ -9,12 +9,10 @@
 #ifndef ATTENTEDEPLACEMENT_H
 #define ATTENTEDEPLACEMENT_H
 
-/// <remarks>execute() => amène le Joueur sur une case. Selon la case on lance  un état Tir, Depot, </remarks>
+#include "Etat.h"
+
 class AttenteDeplacement : public Etat
 {
-	private :
-
-		MoteurJeu motor;
 
 	public :
 		/**

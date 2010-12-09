@@ -7,6 +7,7 @@
 */
 
 #include "Facade.h"
+#include "MoteurJeu.h"
 
 
 void Facade::initNbJoueurs(int n){

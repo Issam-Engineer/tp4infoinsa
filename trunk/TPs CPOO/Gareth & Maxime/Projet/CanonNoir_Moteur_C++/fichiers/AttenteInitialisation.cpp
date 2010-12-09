@@ -10,11 +10,12 @@
 #include "AttentePremLancerDe.h"
 #include "Joueur.h"
 
-void AttenteInitialisation::execute(){
+/*void AttenteInitialisation::execute(){
 	if(){//vérif sur les couleurs
+		
+		
 		//créer le tableau de joueur
-
-		/*chercher la CasePort dans le plateau ayant la couleur*/ 
+		chercher la CasePort dans le plateau ayant la couleur 
 		int c1=motor.getFacade()->getCouleur1();
 		int c2=motor.getFacade()->getCouleur2();
 		if(motor.getNbJoueurs()>2){
@@ -31,4 +32,5 @@ void AttenteInitialisation::execute(){
 		Joueur j4 = Joueur(3,);
 		
 		motor.modifCourant(new AttentePremLancerDe());
-}
+	}
+}*/

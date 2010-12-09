@@ -50,6 +50,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -74,7 +75,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\fichiers\Adaptateur.h" />
     <ClInclude Include="..\..\fichiers\AffichageWPF.h" />
     <ClInclude Include="..\..\fichiers\AttenteCanonAngle.h" />
     <ClInclude Include="..\..\fichiers\AttenteCanonPuissance.h" />

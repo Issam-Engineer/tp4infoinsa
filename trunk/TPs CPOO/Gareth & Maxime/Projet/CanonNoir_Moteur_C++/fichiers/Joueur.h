@@ -22,7 +22,6 @@ class Joueur
 	public :
 
 		CasePort _cp; //il a la case port en fonctiond de sa couleur
-		string _nom;
 		int _numero;
 		bool _gagnant;
 		Bateau _bateau1;
@@ -35,7 +34,7 @@ class Joueur
 		*\fn Joueur(int num,CasePort c)
 		*\brief constructor with 3 parameters
 		*/
-		Joueur(int num, CasePort c); /*string ???*/
+		Joueur(int num, CasePort c);
 
 		/**
 		*\fn Joueur()
@@ -74,6 +73,5 @@ class Joueur
 inline Bateau Joueur::getBateau1() const{ return _bateau1 ;}
 inline Bateau Joueur::getBateau2() const{ return _bateau2 ;}
 inline int Joueur::numero() const{ return _numero ;}
-inline string Joueur::nom() const{ return _nom ;}
 
 #endif

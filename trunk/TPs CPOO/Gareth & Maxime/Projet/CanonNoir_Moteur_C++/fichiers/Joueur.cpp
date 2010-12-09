@@ -14,6 +14,5 @@ Joueur::Joueur(int num, CasePort c){
 }
 
 Joueur::Joueur(){
-	_nom = "défault";
 	_numero=0;
 }
