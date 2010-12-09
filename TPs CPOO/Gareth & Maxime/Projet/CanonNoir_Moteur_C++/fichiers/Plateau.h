@@ -13,14 +13,6 @@
 #include <cstdlib>
 #include <vector>
 #include "Case.h"
-#include "CaseBordurePlateau.h"
-#include "CaseCanonNoir.h"
-#include "CaseContourIle.h"
-#include "CaseIle.h"
-#include "CaseNavigable.h"
-#include "CasePort.h"
-#include "CaseTresor.h"
-
 
 using namespace std;
 
