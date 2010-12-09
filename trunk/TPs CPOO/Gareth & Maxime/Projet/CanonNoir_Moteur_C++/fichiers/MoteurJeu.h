@@ -19,6 +19,7 @@ class MoteurJeu
 
 		Facade * facade; // association bi-directionnelle
 		Etat * courant;
+		// SI ON VEUT FAIRE UN TABLEAU D ETATS : Etat etat[13]; =>setEtat(int i)
 		Joueur * tabJoueurs;
 		int nbJoueurs;
 		int j_indJoueurCourant;
