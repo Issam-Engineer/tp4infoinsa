@@ -9,24 +9,10 @@
 #ifndef ATTENTECHOIXBATEAU_H
 #define ATTENTECHOIXBATEAU_H
 
-/// <remarks>Si le nbJoueur=2 Execute de l'état précédent propose cet état</remarks>
+#include "Etat.h"
+
 class AttenteChoixBateau : public Etat
 {
-	private :
-
-		Moteur motor;
-
-	protected :
-
-
-	public :
-
-
-	private :
-
-
-	protected :
-
 
 	public :
 		/**

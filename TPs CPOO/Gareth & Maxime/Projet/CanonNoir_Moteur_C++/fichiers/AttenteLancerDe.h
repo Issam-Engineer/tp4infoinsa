@@ -9,28 +9,10 @@
 #ifndef ATTENTELANCERDE_H
 #define ATTENTELANCERDE_H
 
-/// <remarks>
-/// execute() => qui appel la fonction Motor.de.lanceDe()
-/// 
-/// vérifier finPartie=false
-/// </remarks>
+#include "Etat.h"
+
 class AttenteLancerDe : public Etat
 {
-	private :
-
-		Moteur motor;
-
-	protected :
-
-
-	public :
-
-
-	private :
-
-
-	protected :
-
 
 	public :
 		/**

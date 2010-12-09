@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\fichiers\Adaptateur.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\fichiers\AffichageWPF.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>

@@ -8,3 +8,9 @@
 
 #include "Plateau.h"
 
+
+Plateau::Plateau(){
+	_longueur=11;
+	_largeur=8;
+	_tabCase[0] = new CasePort();
+}

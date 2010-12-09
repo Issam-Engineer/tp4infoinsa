@@ -10,15 +10,12 @@
 #define CASEPORT_H
 
 #include "Case.h"
-#include "EtatDepot.h"
 
 class CasePort : public Case
 {
 	private :
 
 		int _couleur;
-		Etat _EtatDepot;
-
 
 	public :
 
@@ -41,9 +38,5 @@ class CasePort : public Case
 inline int CasePort::getCouleur(){
 	return _couleur;
 }
-
-/*inline Etat CasePort::getEtat(){
-	return new EtatDepot();
-}*/
 
 #endif

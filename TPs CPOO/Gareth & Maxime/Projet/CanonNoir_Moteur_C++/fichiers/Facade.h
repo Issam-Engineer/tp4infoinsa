@@ -28,17 +28,12 @@ class Facade
 		int _couleur2;
 		int _couleur3;
 		int _couleur4;
-		/* Nom facultatif ... type non primitif
-		string nom1;
-		string nom2;
-		string nom3;
-		string nom4;*/
 
 		//à traiter
-		pair<int,int> _caseClic;
+		/*pair<int,int> _caseClic;*/
 		bool _afficherDe1;
 		bool _afficherDe2;
-		pair<int,int> _posBateau; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
+		/*pair<int,int> _posBateau; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF*/
 		bool _getNewPos;
 		bool _clicDepart;
 		bool _clicInit;
@@ -55,8 +50,8 @@ class Facade
 		bool _afficherAttaqué;
 		bool _afficherAttanquant;
 		bool _bateauSelect;
-		pair<int,int>* _casesProposees; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
-		Bateau* _tabBateau; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
+		/*pair<int,int>* _casesProposees; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
+		Bateau* _tabBateau; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF*/
 		bool _fenetreInit;
 		bool _fenetreTir;
 
@@ -135,9 +130,9 @@ class Facade
 		void desactiverClicRefuserDuel();
 		void afficherAttaquant();
 		void afficherAttaqué();
-		void clicCase(pair<int,int>); 
+		/*void clicCase(pair<int,int>); 
 		void afficherCasesProposees(pair<int,int>[]);
-		pair<int,int> afficherCasesProposees();
+		pair<int,int> afficherCasesProposees();*/
 		void ouvrirFenetreInit();
 		void fermerFenetreInit();
 		void ouvrirFenetreTir();
