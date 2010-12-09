@@ -29,11 +29,11 @@ class CaseBordurePlateau : public CaseNavigable
 		*/
 		bool DuelPossible();
 		/**
-		* \fn virtual void getEtat()
+		* \fn virtual int getEtat()
 		* \brief function which gives the associated state
-		* \return Etat the associated state
+		* \return int the associated state
 		*/
-		Etat getEtat();
+		int getEtat();
 
 }; 
 

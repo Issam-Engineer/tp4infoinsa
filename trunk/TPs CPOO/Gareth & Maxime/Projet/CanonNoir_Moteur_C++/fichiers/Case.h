@@ -34,15 +34,12 @@ class Case
 		*\brief default constructor
 		*/
 		Case();
-
 		/**
-		*\fn virtual void getEtat()
+		*\fn virtual int getEtat()
 		*\brief virtual function which allows inherited classes to give their state
-		*\return Etat the associated state
+		*\return int the associated state
 		*/
-		
-		virtual Etat getEtat();
-
+		virtual int getEtat();
 		/**
 		*\fn int getHauteur()
 		*\brief Function which gives the height

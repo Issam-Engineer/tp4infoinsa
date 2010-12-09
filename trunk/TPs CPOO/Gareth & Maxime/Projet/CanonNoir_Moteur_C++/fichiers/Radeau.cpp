@@ -9,26 +9,20 @@
 #include "Radeau.h"
 
 Radeau::Radeau() {
-	
 	pTirer = false;
 	pPTresor = false;
 	pEVise = false;
 	pJ2Des = false;
-
 }
 
 void Radeau::init(){
-	
 	pTirer = false;
 	pPTresor = false;
 	pEVise = false;
 	pJ2Des = false;
 	// gérer l'initialisation de sa position ???
-
 }
 
-string Radeau::typeBateau(){
-
+/*char* Radeau::typeBateau(){
 	return "Radeau";
-
-}
+}*/

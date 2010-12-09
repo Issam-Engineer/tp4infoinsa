@@ -26,11 +26,11 @@ class CaseNavigable : public Case
 		*/
 		virtual bool hasBateau();
 		/**
-		* \fn virtual void getEtat()
+		* \fn virtual int getEtat()
 		* \brief pure virtual function which allows inherited classes to give their state
-		* \return Etat the associated state
+		* \return int the associated state
 		*/
-		virtual Etat getEtat();
+		virtual int getEtat();
 
 }; 
 

@@ -25,7 +25,7 @@ public:
 	*\fn void execute()
 	*\brief function which execute the current state
 	*/
-	virtual void execute(); /*on ne la met pas virtuelle pure ... sinon on ne peut pas instancier un état !*/
+	virtual void execute();
 	/**
 	*\fn void modifMotor(MoteurJeu m)
 	*\brief function which changes the current motor

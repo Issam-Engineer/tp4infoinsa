@@ -16,16 +16,16 @@ class Radeau : public Bateau
 
 	public :
 		/**
-		* \fn virtual string typeBateau() = 0
+		* \fn string typeBateau()
 		* \brief Inherited function which gives the name of the class
 		* \return string the name of the class
-		*/
-		string typeBateau();
+		
+		char* typeBateau();*/
 		/**
 		* \fn void init()
 		* \brief Inherited function which initialized the Radeau
 		*/
-		void init();
+		virtual void init();
 		/**
 		* \fn Radeau()
 		* \brief Default constructor

@@ -32,13 +32,14 @@ class Bateau
 		*\fn virtual string typeBateau()
 		*\brief Pure virtual function which allows inherited classes to give their name
 		*\return string the class name
-		*/
-		virtual string typeBateau();/*ON NE MET PAS VIRTUELLE PURE*/
+		
+		virtual char* typeBateau();*/
+
 		/**
 		*\fn Virtual void init()
 		*\brief function which allows inherited classes to initialize themselves
 		*/
-		virtual void init();/*ON NE MET PAS VIRTUELLE PURE*/
+		virtual void init();
 
 		/**
 		*\fn pair<int,int> getPosition()

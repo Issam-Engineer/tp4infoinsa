@@ -9,20 +9,19 @@
 #ifndef MOTEURJEU_H
 #define MOTEURJEU_H
 
-#include "Joueur.h"
 #include "Facade.h"
-
 class Etat;
+class Joueur;
 
 class MoteurJeu
 {
 	private :
 
 		Facade * facade; // association bi-directionnelle
-		int nbJoueurs;
 		Etat * courant;
-		int j_indJoueurCourant;
 		Joueur * tabJoueurs;
+		int nbJoueurs;
+		int j_indJoueurCourant;
 		bool finPartie;
 
 	public :
