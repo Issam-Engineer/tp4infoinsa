@@ -123,6 +123,9 @@
     <ClInclude Include="..\..\fichiers\Etat.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\fichiers\enum.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\fichiers\Radeau.cpp">
