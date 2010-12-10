@@ -10,6 +10,7 @@
 #define MOTEURJEU_H
 
 #include "Facade.h"
+#include "enum.h"
 class Etat;
 class Joueur;
 
@@ -18,8 +19,8 @@ class MoteurJeu
 	private :
 
 		Facade * facade; // association bi-directionnelle
-		Etat * courant;
-		// SI ON VEUT FAIRE UN TABLEAU D ETATS : Etat etat[13]; =>setEtat(int i)
+		Etat** _etats; 
+		int courant;
 		Joueur * tabJoueurs;
 		int nbJoueurs;
 		int j_indJoueurCourant;
@@ -28,10 +29,10 @@ class MoteurJeu
 	public :
 
 		/**
-		*\fn void setEtat()
-		*\brief Function which sets the initial state to the motor
+		*\fn void setEtat(int i)
+		*\brief Function which define the motor state
 		*/
-		void setEtat();
+		void setEtat(int i);
 		/**
 		*\fn void execute()
 		*
@@ -65,11 +66,11 @@ class MoteurJeu
 		*/
 		void modifNbJoueurs(int n);  
 		/**
-		*\fn void modifCourant(Etat* e);
-		*\brief function which changes the current Etat courant
-		*\parma[in] Etat* e
+		*\fn void modifCourant(int e);
+		*\brief function which changes the current int courant
+		*\parma[in] int e
 		*/
-		void modifCourant(Etat* e);  
+		void modifCourant(int e);  
 
 }; 
 

@@ -7,28 +7,39 @@
 */
 
 #include "MoteurJeu.h"
-#include "AttenteNbJoueurs.h"
+#include "Etat.h"
 
+MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),j_indJoueurCourant(0),tabJoueurs(NULL),finPartie(false){
+	etats[0]=new AttenteNbJoueurs();
+	etats[1]=new AttenteInitialisation();
+	etats[2]=new AttentePremLancerDe();
+	etats[3]=new AttenteChoixBateau();
+	etats[4]=new ProposeDeplacement();
+	etats[5]=new AttenteDeplacement();
+	etats[6]=new Duel();
+	etats[7]=new AttenteCanonPuissance();
+	etats[8]=new AttenteCanonAngle();
+	etats[9]=new EtatCanonFin();
+	etats[10]=new EtatTresor();
+	etats[11]=new EtatDepos();
+	courant = ATTENTENBJOUEURS;
+};
 
-void MoteurJeu::setEtat(){
-	Etat* courant = new AttenteNbJoueurs();
-	courant->modifMotor(*this);
+void MoteurJeu::setEtat(int i){
+	courant=i;
+	_etats[courant]->modifMotor(*this);
 }
 
 
 void MoteurJeu::execute(){
-	courant->modifMotor(*this);
-	courant->execute();
+	_etats[courant]->execute();
 }
 
-MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),j_indJoueurCourant(0),tabJoueurs(NULL),finPartie(false){
-	
-};
 
 void MoteurJeu::modifNbJoueurs(int n){
 	nbJoueurs=n;
 }
 
-void MoteurJeu::modifCourant(Etat* e){
+void MoteurJeu::modifCourant(int e){
 	courant=e;
 }
