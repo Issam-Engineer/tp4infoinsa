@@ -6,30 +6,22 @@
 * \version 1.0
 */
 
+
 #ifndef PROPOSEDEPLACEMENT_H
 #define PROPOSEDEPLACEMENT_H
 
+#include "Case.h"
+
+using namespace std;
 /// <remarks>
 /// execute() => affiche les possibilités de déplacement
 /// 
 /// </remarks>
 class ProposeDeplacement : public Etat
 {
-	private :
-
-		Moteur motor;
-
-	protected :
-
-
 	public :
 
-		pair<int,int>[] tabCase;
-
-	private :
-
-
-	protected :
+		Case * tabCase;
 
 
 	public :
