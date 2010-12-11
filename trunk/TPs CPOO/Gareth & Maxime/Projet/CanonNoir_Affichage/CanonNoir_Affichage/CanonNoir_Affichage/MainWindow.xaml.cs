@@ -35,6 +35,11 @@ namespace CanonNoir_Affichage
             f.Show();
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     
 
         /*public void MouseDown(object sender,MouseButtonEventArgs e){
