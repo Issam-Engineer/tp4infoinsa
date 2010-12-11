@@ -1,6 +1,6 @@
 /**
 *\file  enum.h
-*\brief File which contains the enumaration conresponding to the Etats
+*\brief File which contains the enumaration corresponding to the different states (Etat)
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX
 *\version 1.0
@@ -19,5 +19,5 @@ enum enumEtat {
 	ATTENTECANONANGLE,
 	ETATCANONFIN,
 	ETATTRESOR,
-	ETATDEPOS
+	ETATDEPOT
 };
