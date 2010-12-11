@@ -14,23 +14,30 @@ using System.Windows.Shapes;
 namespace CanonNoir_Affichage
 {
     /// <summary>
-    /// Logique d'interaction pour Window1.xaml
+    /// Logique d'interaction pour CanonNoirIntro.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class CanonNoirIntro : Window
     {
-        public Window1()
+        public CanonNoirIntro()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+           MainWindow m = new MainWindow();
+           m.Show();
+           Close();
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
-}
+};

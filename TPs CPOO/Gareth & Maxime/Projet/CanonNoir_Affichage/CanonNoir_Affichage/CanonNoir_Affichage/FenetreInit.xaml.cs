@@ -26,24 +26,68 @@ namespace CanonNoir_Affichage
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             //appeler fonction de façade qui initialise nbjoueur=2
-            Close();
+            textBox1.IsEnabled = true;
+            comboBox1.IsEnabled = true;
+            textBox2.IsEnabled = true;
+            comboBox2.IsEnabled = true;
+            textBox3.IsEnabled = false;
+            comboBox3.IsEnabled = false;
+            textBox4.IsEnabled = false;
+            comboBox4.IsEnabled = false;
+            button2.IsEnabled = false;
+            button3.IsEnabled = true;
+            button4.IsEnabled = true;
+            button1.IsEnabled = true;
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
         {
             //appeler fonction de façade qui initialise nbjouer=3
-            Close();
+            textBox1.IsEnabled = true;
+            comboBox1.IsEnabled = true;
+            textBox2.IsEnabled = true;
+            comboBox2.IsEnabled = true;
+            textBox3.IsEnabled = true;
+            comboBox3.IsEnabled = true;
+            textBox4.IsEnabled = false;
+            comboBox4.IsEnabled = false;
+            button3.IsEnabled = false;
+            button2.IsEnabled = true;
+            button4.IsEnabled = true;
+            button1.IsEnabled = true;
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
         {
             //appeler fonction de façade qui initialise nbjouer=4
-            Close();
+            textBox1.IsEnabled = true;
+            comboBox1.IsEnabled = true;
+            textBox2.IsEnabled = true;
+            comboBox2.IsEnabled = true;
+            textBox3.IsEnabled = true;
+            comboBox3.IsEnabled = true;
+            textBox4.IsEnabled = true;
+            comboBox4.IsEnabled = true;
+            button4.IsEnabled = false;
+            button2.IsEnabled = true;
+            button3.IsEnabled = true;
+            button1.IsEnabled = true;
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            if (((textBox1.IsEnabled && textBox1 == null) ||
+                (textBox1.IsEnabled && textBox2 == null) ||
+                (textBox1.IsEnabled && textBox3 == null) ||
+                (textBox1.IsEnabled && textBox4 == null)) || ((comboBox1.SelectedItem == comboBox2.SelectedItem) || (comboBox1.SelectedItem == comboBox3.SelectedItem)))
+            { } else {
+                Close();
+            }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
