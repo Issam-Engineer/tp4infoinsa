@@ -10,18 +10,18 @@
 #include "Etat.h"
 
 MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),j_indJoueurCourant(0),tabJoueurs(NULL),finPartie(false){
-	etats[0]=new AttenteNbJoueurs();
-	etats[1]=new AttenteInitialisation();
-	etats[2]=new AttentePremLancerDe();
-	etats[3]=new AttenteChoixBateau();
-	etats[4]=new ProposeDeplacement();
-	etats[5]=new AttenteDeplacement();
-	etats[6]=new Duel();
-	etats[7]=new AttenteCanonPuissance();
-	etats[8]=new AttenteCanonAngle();
-	etats[9]=new EtatCanonFin();
-	etats[10]=new EtatTresor();
-	etats[11]=new EtatDepos();
+	_etats[0] = new AttenteNbJoueurs();
+	_etats[1] = new AttenteInitialisation();
+	_etats[2] = new AttentePremLancerDe();
+	_etats[3] = new AttenteChoixBateau();
+	_etats[4] = new ProposeDeplacement();
+	_etats[5] = new AttenteDeplacement();
+	_etats[6] = new Duel();
+	_etats[7] = new AttenteCanonPuissance();
+	_etats[8] = new AttenteCanonAngle();
+	_etats[9] = new EtatCanonFin();
+	_etats[10] = new EtatTresor();
+	_etats[11] = new EtatDepot();
 	courant = ATTENTENBJOUEURS;
 };
 
