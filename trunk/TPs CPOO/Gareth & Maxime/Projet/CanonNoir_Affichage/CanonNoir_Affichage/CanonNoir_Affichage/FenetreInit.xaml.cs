@@ -76,10 +76,10 @@ namespace CanonNoir_Affichage
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            if (((textBox1.IsEnabled && textBox1 == null) ||
-                (textBox1.IsEnabled && textBox2 == null) ||
-                (textBox1.IsEnabled && textBox3 == null) ||
-                (textBox1.IsEnabled && textBox4 == null)) || ((comboBox1.SelectedItem == comboBox2.SelectedItem) || (comboBox1.SelectedItem == comboBox3.SelectedItem)))
+            if (((textBox1.IsEnabled && textBox1.Text == "") ||
+                (textBox2.IsEnabled && textBox2.Text == "") ||
+                (textBox3.IsEnabled && textBox3.Text == "") ||
+                (textBox4.IsEnabled && textBox4.Text == "")) || ((comboBox1.SelectedValue == comboBox2.SelectedValue) || (comboBox1.SelectedItem == comboBox3.SelectedItem)))
             { } else {
                 Close();
             }
