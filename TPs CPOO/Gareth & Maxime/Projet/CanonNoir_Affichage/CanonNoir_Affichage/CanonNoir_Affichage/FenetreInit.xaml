@@ -1,7 +1,7 @@
 ﻿<Window x:Class="CanonNoir_Affichage.FenetreInit"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Initialisation" Height="300" Width="300" Loaded="Window_Loaded">
+        Title="Initialisation" Height="300" Width="300" Loaded="Window_Loaded" Icon="/CanonNoir_Affichage;component/Images/De.jpg">
     <Grid Background="#FFBAB4FF">
         <Label Content="Joueur 1 :" Height="25" HorizontalAlignment="Left" Margin="12,94,0,0" Name="label1" VerticalAlignment="Top" Width="86" />
         <Label Content="Joueur 3 :" Height="25" HorizontalAlignment="Left" Margin="12,156,0,0" Name="label2" VerticalAlignment="Top" Width="86" />
