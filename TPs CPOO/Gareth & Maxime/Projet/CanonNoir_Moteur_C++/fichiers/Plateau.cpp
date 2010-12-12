@@ -116,3 +116,12 @@ Plateau::Plateau(){
 	_tabCase[86] = new CaseBordurePlateau();
 	_tabCase[87] = new CasePort();
 }
+
+CasePort getCasePort(int couleur) {
+	CasePort cp;
+	for(int i=0; i<((Plateau::longueur()*Plateau::largeur())-1), i++){
+		if(_tabCase[i].getCouleur() == couleur){
+			cp = _tabCase[i];
+	}
+	return cp;
+}
