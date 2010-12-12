@@ -42,6 +42,13 @@ class Plateau
 		*\return int length of the game board
 		*/
 		int longueur();
+		/**
+		*\fn CasePort getCasePort()
+		*\brief Function which returns the harbour corresponding to the given colour
+		*\param[in] int couleur
+		*\return CasePort
+		*/
+		CasePort getCasePort(int couleur);
 
 }; 
 
