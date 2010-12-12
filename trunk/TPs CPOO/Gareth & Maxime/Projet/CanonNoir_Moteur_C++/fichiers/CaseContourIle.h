@@ -13,7 +13,14 @@
 
 class CaseContourIle : public CaseNavigable
 {
-	
+	public :
+
+		/**
+		*\fn CaseContourIle()
+		*\brief Default constructor of CaseContourIle
+		*\return pointer on the instance
+		*/
+		CaseContourIle();
 }; 
 
 #endif

@@ -12,14 +12,14 @@ Fregate::Fregate(){
 	pTirer = true;
 	pPTresor = true;
 	pEVise = true;
-	pJ2Des = true;
+	pJ2Des = false;
 }
 
 void Fregate::init(){
 	pTirer = true;
 	pPTresor = true;
 	pEVise = true;
-	pJ2Des = true;
+	pJ2Des = false;
 	// gérer l'initialisation de sa position ???
 }
 

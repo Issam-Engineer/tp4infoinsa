@@ -1,9 +1,9 @@
 ﻿/**
-* \file  CaseBordurePlateau.h
-* \brief File containing the functionalities and the attributes of the CaseBordurePlateau class
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\file  CaseBordurePlateau.h
+*\brief File containing the functionalities and the attributes of the CaseBordurePlateau class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef CASEBORDUREPLATEAU_H
@@ -17,11 +17,11 @@ class CaseBordurePlateau : public CaseNavigable
 	public :
 
 		/**
-		* \fn CaseBordurePlateau CaseOpposee()
+		* \fn Case CaseOpposee()
 		* \brief function which gives the opposite case
-		* \return CaseBordurePlateau the associated case
+		* \return Case the associated case
 		*/
-		CaseBordurePlateau CaseOpposee();
+		Case CaseOpposee();
 		/**
 		* \fn bool DuelPossible()
 		* \brief function which says if it's possible to have a Duel
@@ -34,7 +34,17 @@ class CaseBordurePlateau : public CaseNavigable
 		* \return int the associated state
 		*/
 		int getEtat();
+		/**
+		*\fn CaseBordurePlateau()
+		*\brief Default constructor of CaseBordurePlateau
+		*\return pointer on the instance
+		*/
+		CaseBordurePlateau();
 
 }; 
+
+inline int CaseBordurePlateau::getEtat(){
+	return 7;
+}
 
 #endif

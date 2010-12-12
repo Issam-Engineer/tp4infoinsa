@@ -50,7 +50,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers;D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -121,6 +121,9 @@
     <ClCompile Include="..\..\fichiers\Case.cpp" />
     <ClCompile Include="..\..\fichiers\CaseBordurePlateau.cpp" />
     <ClCompile Include="..\..\fichiers\CaseCanonNoir.cpp" />
+    <ClCompile Include="..\..\fichiers\CaseContourIle.cpp" />
+    <ClCompile Include="..\..\fichiers\CaseIle.cpp" />
+    <ClCompile Include="..\..\fichiers\CaseNavigable.cpp" />
     <ClCompile Include="..\..\fichiers\CasePort.cpp" />
     <ClCompile Include="..\..\fichiers\CaseTresor.cpp" />
     <ClCompile Include="..\..\fichiers\Dé.cpp" />

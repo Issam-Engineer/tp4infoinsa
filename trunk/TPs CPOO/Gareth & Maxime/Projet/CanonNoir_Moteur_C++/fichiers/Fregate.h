@@ -17,13 +17,13 @@ class Fregate : public Bateau
 	public :
 		/**
 		*\fn string typeBateau()
-		*\brief inherited function which gives the name of the class
+		*\brief Inherited function which gives the name of the class
 		*\return string the name of the class
 		
 		char* typeBateau();*/
 		/**
 		*\fn void init()
-		*\brief inherited function which initialized the Fregate
+		*\brief Inherited function which initialises the Fregate
 		*/
 		virtual void init();
 		/**

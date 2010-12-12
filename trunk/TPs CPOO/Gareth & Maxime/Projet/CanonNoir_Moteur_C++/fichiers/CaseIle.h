@@ -13,6 +13,14 @@
 
 class CaseIle : public Case
 {
+	public :
+
+		/**
+		*\fn CaseIle()
+		*\brief Default constructor of CaseIle
+		*\return pointer on the instance
+		*/
+		CaseIle();
 }; 
 
 #endif

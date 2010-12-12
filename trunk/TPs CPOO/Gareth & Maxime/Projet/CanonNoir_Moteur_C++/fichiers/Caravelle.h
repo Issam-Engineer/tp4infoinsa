@@ -24,7 +24,7 @@ class Caravelle : public Bateau
 		char* typeBateau();*/
 		/**
 		*\fn void init()
-		*\brief Inherited function which initialized the Caravelle
+		*\brief Inherited function which initialises the Caravelle
 		*/
 		virtual void init();
 		/**

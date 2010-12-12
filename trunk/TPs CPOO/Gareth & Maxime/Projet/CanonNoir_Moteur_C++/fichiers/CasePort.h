@@ -32,11 +32,21 @@ class CasePort : public Case
 		* \return Etat the associated state
 		*/
 		int getEtat();
+		/**
+		*\fn CasePort()
+		*\brief Default constructor of CasePort
+		*\return pointer on the instance
+		*/
+		CasePort();
 
 }; 
 
 inline int CasePort::getCouleur(){
 	return _couleur;
+}
+
+inline int CasePort::getEtat(){
+	return 13;
 }
 
 #endif

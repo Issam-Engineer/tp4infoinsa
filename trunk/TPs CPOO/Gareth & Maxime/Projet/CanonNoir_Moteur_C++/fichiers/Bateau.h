@@ -12,6 +12,7 @@
 #include <cstdlib>
 #include <string>
 #include <iostream>
+#include "Case.h"
 
 using namespace std;
 
@@ -24,7 +25,7 @@ class Bateau
 		bool pJ2Des;
 		bool pTirer;
 		bool pEVise;
-		pair<int,int> pos;
+		Case pos;
 
 	public :
 
@@ -42,11 +43,11 @@ class Bateau
 		virtual void init();
 
 		/**
-		*\fn pair<int,int> getPosition()
+		*\fn Case getPosition()
 		*\brief Virtual function which return the boat position
-		*\return pair<int,int> boat position
+		*\return Case the boat position
 		*/
-		virtual pair<int,int> getPosition();
+		virtual Case getPosition();
 		/**
 		*\fn bool peutTirer()
 		*\brief Virtual function which indicates if the boat can shoot
@@ -73,14 +74,14 @@ class Bateau
 		*/
 		virtual bool peutJouer2Des();
 		/**
-		*\fn void positionner(pair<int,int> p)
+		*\fn void positionner(Case p)
 		*\brief Virtual function which replaces the boat at a given position
-		*\param[in] pair<int,int> a position
+		*\param[in] Case a position
 		*/
-		virtual void positionner(pair<int,int> p);
+		virtual void positionner(Case p);
 }; 
 
-inline pair<int,int> Bateau::getPosition(){
+inline Case Bateau::getPosition(){
 	return pos;
 }
 inline bool Bateau::peutTirer(){

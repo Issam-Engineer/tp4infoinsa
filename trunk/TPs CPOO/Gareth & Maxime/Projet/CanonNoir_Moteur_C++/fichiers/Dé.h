@@ -9,6 +9,10 @@
 #ifndef DE_H
 #define DE_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 class Dé
 {
 	private :
@@ -21,9 +25,9 @@ class Dé
 
 		/**
 		* \fn void lancerDe()
-		* \brief Virtual function which rolls the dice
+		* \brief Function which rolls the dice
 		*/
-		virtual void lancerDe();
+		void lancerDe();
 
 }; 
 

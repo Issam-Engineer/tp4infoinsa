@@ -23,7 +23,7 @@ class Radeau : public Bateau
 		char* typeBateau();*/
 		/**
 		* \fn void init()
-		* \brief Inherited function which initialized the Radeau
+		* \brief Inherited function which initialises the Radeau
 		*/
 		virtual void init();
 		/**

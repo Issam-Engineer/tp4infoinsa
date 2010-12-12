@@ -32,16 +32,16 @@ class Plateau
 		Plateau();
 		/**
 		*\fn int largeur()
-		*\brief Virtual function which returns the width of game board
+		*\brief Function which returns the width of game board
 		*\return int width of the game board
 		*/
-		virtual int largeur();
+		int largeur();
 		/**
 		*\fn int longueur()
-		*\brief Virtual function which returns the length of game board
+		*\brief Function which returns the length of game board
 		*\return int length of the game board
 		*/
-		virtual int longueur();
+		int longueur();
 
 }; 
 
