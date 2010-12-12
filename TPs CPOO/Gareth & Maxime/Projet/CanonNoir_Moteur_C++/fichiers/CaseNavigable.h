@@ -31,6 +31,12 @@ class CaseNavigable : public Case
 		* \return int the associated state
 		*/
 		virtual int getEtat();
+		/**
+		*\fn CaseNavigable()
+		*\brief Default constructor of CaseNavigable
+		*\return pointer on the instance
+		*/
+		CaseNavigable();
 
 }; 
 

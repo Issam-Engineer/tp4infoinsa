@@ -23,7 +23,7 @@ class Case
 
 	protected :
 
-		pair<int,int>  _position;
+		pair<int,int> _position;
 		bool _accessible;
 		int _hauteur;
 

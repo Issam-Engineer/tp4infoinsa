@@ -22,7 +22,17 @@ class CaseCanonNoir : public CaseContourIle
 		* \return int the associated state
 		*/
 		int getEtat();
+		/**
+		*\fn CaseCanonNoir()
+		*\brief Default constructor of CaseCanonNoir
+		*\return pointer on the instance
+		*/
+		CaseCanonNoir();
 
 }; 
+
+inline int CaseCanonNoir::getEtat(){
+	return 8;
+}
 
 #endif

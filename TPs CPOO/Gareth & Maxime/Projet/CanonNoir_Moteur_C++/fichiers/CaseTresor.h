@@ -22,11 +22,17 @@ class CaseTresor : public CaseContourIle
 		* \return int the associated state
 		*/
 		int getEtat();
+		/**
+		*\fn CaseTresor()
+		*\brief Default constructor of CaseTresor
+		*\return pointer on the instance
+		*/
+		CaseTresor();
 
 }; 
 
-/*inline Etat CaseTresor::getEtat(){
-	return new Etat(EtatTresor);
-}*/
+inline int CaseTresor::getEtat(){
+	return 12;
+}
 
 #endif
