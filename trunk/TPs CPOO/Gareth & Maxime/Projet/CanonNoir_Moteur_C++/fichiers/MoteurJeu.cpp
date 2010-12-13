@@ -23,6 +23,8 @@
 #include "EtatTresor.h"
 #include "EtatDepot.h"
 #include "EtatFinPartie.h"
+#include "Joueur.h"
+#include "Plateau.h"
 
 
 MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),j_indJoueurCourant(0),tabJoueurs(NULL),finPartie(false){
@@ -61,4 +63,12 @@ void MoteurJeu::modifNbJoueurs(int n){
 
 void MoteurJeu::modifCourant(int e){
 	courant=e;
+}
+
+Joueur MoteurJeu::getJoueurInd(int i){
+	return tabJoueurs[i];
+}
+
+Plateau* MoteurJeu::getPlateau() const {
+	return _plateau;
 }

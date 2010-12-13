@@ -1,83 +1,44 @@
-﻿La génération a démarré 12/12/2010 03:30:41.
-     1>Projet "D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\CanonNoirMoteur\CanonNoirMoteur.vcxproj" sur le nœud 2 (build cible(s)).
+﻿La génération a démarré 13/12/2010 22:22:45.
+     1>Projet "C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\CanonNoirMoteur\CanonNoirMoteur.vcxproj" sur le nœud 2 (build cible(s)).
      1>InitializeBuildStatus:
          Mise à jour de l'horodatage "Debug\CanonNoirMoteur.unsuccessfulbuild".
        ClCompile:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /I"D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\fichiers\CaseCanonNoir.cpp ..\..\fichiers\CaseContourIle.cpp ..\..\fichiers\CaseIle.cpp ..\..\fichiers\CaseTresor.cpp ..\..\fichiers\Plateau.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /I"D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\fichiers\AttenteInitialisation.cpp ..\..\fichiers\AttenteNbJoueurs.cpp ..\..\fichiers\Bateau.cpp ..\..\fichiers\Caravelle.cpp ..\..\fichiers\Case.cpp ..\..\fichiers\CaseBordurePlateau.cpp ..\..\fichiers\CaseCanonNoir.cpp ..\..\fichiers\CaseContourIle.cpp ..\..\fichiers\CaseIle.cpp ..\..\fichiers\CaseNavigable.cpp ..\..\fichiers\CasePort.cpp ..\..\fichiers\CaseTresor.cpp ..\..\fichiers\Etat.cpp ..\..\fichiers\Facade.cpp ..\..\fichiers\Fregate.cpp ..\..\fichiers\Joueur.cpp ..\..\fichiers\MoteurJeu.cpp ..\..\fichiers\Plateau.cpp ..\..\fichiers\Radeau.cpp
+         Radeau.cpp
          Plateau.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\plateau.cpp(122): error C2143: erreur de syntaxe : absence de ';' avant ')'
+         MoteurJeu.cpp
+         Joueur.cpp
+         Fregate.cpp
+         Facade.cpp
+         Etat.cpp
          CaseTresor.cpp
-         CaseCanonNoir.cpp
-         Génération de code en cours...
-         Compilation en cours...
+         CasePort.cpp
+         CaseNavigable.cpp
          CaseIle.cpp
          CaseContourIle.cpp
+         CaseCanonNoir.cpp
+         CaseBordurePlateau.cpp
+         Case.cpp
+         Caravelle.cpp
+         Bateau.cpp
+         AttenteNbJoueurs.cpp
+         AttenteInitialisation.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attenteinitialisation.cpp(18): error C2027: utilisation du type non défini 'Plateau'
+                 c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.h(14) : voir la déclaration de 'Plateau'
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attenteinitialisation.cpp(18): error C2227: la partie gauche de '->getCasePort' doit pointer vers un type class/struct/union/générique
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attenteinitialisation.cpp(19): error C2027: utilisation du type non défini 'Plateau'
+                 c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.h(14) : voir la déclaration de 'Plateau'
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attenteinitialisation.cpp(19): error C2227: la partie gauche de '->getCasePort' doit pointer vers un type class/struct/union/générique
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attenteinitialisation.cpp(20): error C2027: utilisation du type non défini 'Plateau'
+                 c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.h(14) : voir la déclaration de 'Plateau'
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attenteinitialisation.cpp(20): error C2227: la partie gauche de '->getCasePort' doit pointer vers un type class/struct/union/générique
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attenteinitialisation.cpp(21): error C2027: utilisation du type non défini 'Plateau'
+                 c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.h(14) : voir la déclaration de 'Plateau'
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attenteinitialisation.cpp(21): error C2227: la partie gauche de '->getCasePort' doit pointer vers un type class/struct/union/générique
          Génération de code en cours...
-       ManifestResourceCompile:
-         Toutes les sorties sont à jour.
-       Link:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CanonNoirMoteur.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.lib" /MACHINE:X86 Debug\CanonNoirMoteur.exe.embed.manifest.res
-         Debug\AttenteInitialisation.obj
-         Debug\AttenteNbJoueurs.obj
-         Debug\Bateau.obj
-         Debug\Caravelle.obj
-         Debug\Case.obj
-         Debug\CaseBordurePlateau.obj
-         Debug\CaseCanonNoir.obj
-         Debug\CaseContourIle.obj
-         Debug\CaseIle.obj
-         Debug\CaseNavigable.obj
-         Debug\CasePort.obj
-         Debug\CaseTresor.obj
-         "Debug\Dé.obj"
-         Debug\Etat.obj
-         Debug\Facade.obj
-         Debug\FenetreInit.obj
-         Debug\FenetreTir.obj
-         Debug\Fregate.obj
-         Debug\Joueur.obj
-         Debug\MoteurJeu.obj
-         Debug\Plateau.obj
-         Debug\Radeau.obj
-     1>Joueur.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall Case::getEtat(void)" (?getEtat@Case@@UAEHXZ)
-     1>Radeau.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall Case::getEtat(void)" (?getEtat@Case@@UAEHXZ)
-     1>Caravelle.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall Case::getEtat(void)" (?getEtat@Case@@UAEHXZ)
-     1>Case.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall Case::getEtat(void)" (?getEtat@Case@@UAEHXZ)
-     1>CaseIle.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall Case::getEtat(void)" (?getEtat@Case@@UAEHXZ)
-     1>Fregate.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall Case::getEtat(void)" (?getEtat@Case@@UAEHXZ)
-     1>Caravelle.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Bateau::init(void)" (?init@Bateau@@UAEXXZ)
-     1>Fregate.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Bateau::init(void)" (?init@Bateau@@UAEXXZ)
-     1>Joueur.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Bateau::init(void)" (?init@Bateau@@UAEXXZ)
-     1>Radeau.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Bateau::init(void)" (?init@Bateau@@UAEXXZ)
-     1>CaseTresor.obj : error LNK2001: symbole externe non résolu "public: virtual bool __thiscall CaseNavigable::hasBateau(void)" (?hasBateau@CaseNavigable@@UAE_NXZ)
-     1>CaseBordurePlateau.obj : error LNK2001: symbole externe non résolu "public: virtual bool __thiscall CaseNavigable::hasBateau(void)" (?hasBateau@CaseNavigable@@UAE_NXZ)
-     1>CaseCanonNoir.obj : error LNK2001: symbole externe non résolu "public: virtual bool __thiscall CaseNavigable::hasBateau(void)" (?hasBateau@CaseNavigable@@UAE_NXZ)
-     1>CaseContourIle.obj : error LNK2001: symbole externe non résolu "public: virtual bool __thiscall CaseNavigable::hasBateau(void)" (?hasBateau@CaseNavigable@@UAE_NXZ)
-     1>CaseNavigable.obj : error LNK2001: symbole externe non résolu "public: virtual bool __thiscall CaseNavigable::hasBateau(void)" (?hasBateau@CaseNavigable@@UAE_NXZ)
-     1>CaseContourIle.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall CaseNavigable::getEtat(void)" (?getEtat@CaseNavigable@@UAEHXZ)
-     1>CaseNavigable.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall CaseNavigable::getEtat(void)" (?getEtat@CaseNavigable@@UAEHXZ)
-     1>MoteurJeu.obj : error LNK2019: symbole externe non résolu "public: __thiscall EtatDepot::EtatDepot(void)" (??0EtatDepot@@QAE@XZ) référencé dans la fonction "public: __thiscall MoteurJeu::MoteurJeu(void)" (??0MoteurJeu@@QAE@XZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteInitialisation::execute(void)" (?execute@AttenteInitialisation@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttentePremLancerDe::execute(void)" (?execute@AttentePremLancerDe@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttentePremLancerDe::determinerOrdre(void)" (?determinerOrdre@AttentePremLancerDe@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteLancerDe::execute(void)" (?execute@AttenteLancerDe@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteLancerDe::choisirDe(void)" (?choisirDe@AttenteLancerDe@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteChoixBateau::execute(void)" (?execute@AttenteChoixBateau@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall ProposeDeplacement::execute(void)" (?execute@ProposeDeplacement@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteDeplacement::execute(void)" (?execute@AttenteDeplacement@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Duel::execute(void)" (?execute@Duel@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatTir::execute(void)" (?execute@EtatTir@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatTir::tirCanon(void)" (?tirCanon@EtatTir@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatTir::init(int,int)" (?init@EtatTir@@UAEXHH@Z)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteCanonPuissance::execute(void)" (?execute@AttenteCanonPuissance@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteCanonAngle::execute(void)" (?execute@AttenteCanonAngle@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatCanonFin::execute(void)" (?execute@EtatCanonFin@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatTresor::execute(void)" (?execute@EtatTresor@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatFinPartie::execute(void)" (?execute@EtatFinPartie@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Etat::execute(void)" (?execute@Etat@@UAEXXZ)
-     1>MSVCRTD.lib(crtexe.obj) : error LNK2019: symbole externe non résolu _main référencé dans la fonction ___tmainCRTStartup
-     1>D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.exe : fatal error LNK1120: 24 externes non résolus
-     1>Génération du projet "D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\CanonNoirMoteur\CanonNoirMoteur.vcxproj" terminée (build cible(s)) -- ÉCHEC.
+     1>Génération du projet "C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\CanonNoirMoteur\CanonNoirMoteur.vcxproj" terminée (build cible(s)) -- ÉCHEC.
 
 ÉCHEC de la build.
 
-Temps écoulé 00:00:05.48
+Temps écoulé 00:00:25.36
