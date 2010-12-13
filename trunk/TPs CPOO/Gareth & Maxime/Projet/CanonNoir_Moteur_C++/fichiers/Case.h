@@ -58,6 +58,13 @@ class Case
 		*\return pair<int,int> the square position
 		*/
 		virtual pair<int,int> getPosition();
+
+		/**
+		*\fn int getCouleur()
+		*\brief use for CasePort 
+		*\return 0 by default
+		*/
+		virtual int getCouleur();
 		
 }; 
 

@@ -25,7 +25,6 @@ class CasePort : public Case
 		* \return int color of the harbour
 		*/
 		int getCouleur();
-
 		/**
 		* \fn void getEtat() 
 		* \brief Function which gives the state associated to the class

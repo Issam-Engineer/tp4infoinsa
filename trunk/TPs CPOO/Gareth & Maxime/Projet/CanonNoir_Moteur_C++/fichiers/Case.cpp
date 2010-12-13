@@ -14,3 +14,7 @@ Case::Case(){
 	_accessible = true;
 	_hauteur = 0;
 }
+
+int Case::getCouleur(){
+	return 0;
+}
