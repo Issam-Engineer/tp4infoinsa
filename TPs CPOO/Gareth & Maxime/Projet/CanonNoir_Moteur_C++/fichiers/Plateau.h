@@ -14,6 +14,7 @@
 #include <vector>
 #include "Case.h"
 
+class CasePort;
 using namespace std;
 
 class Plateau
@@ -43,12 +44,12 @@ class Plateau
 		*/
 		int longueur();
 		/**
-		*\fn CasePort getCasePort()
+		*\fn CasePort* getCasePort(int c)
 		*\brief Function which returns the harbour corresponding to the given colour
-		*\param[in] int couleur
-		*\return CasePort
+		*\param[in] c int couleur
+		*\return CasePort*
 		*/
-		CasePort getCasePort(int couleur);
+		CasePort* getCasePort(int couleur);
 
 }; 
 
