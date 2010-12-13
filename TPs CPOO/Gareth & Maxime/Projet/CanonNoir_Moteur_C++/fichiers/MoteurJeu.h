@@ -11,7 +11,7 @@
 
 #include "Facade.h"
 #include "enum.h"
-#include "Plateau.h"
+class Plateau;
 class Etat;
 class Joueur;
 
@@ -26,7 +26,7 @@ class MoteurJeu
 		int nbJoueurs;
 		int j_indJoueurCourant;
 		bool finPartie;
-		Plateau _plateau;
+		Plateau* _plateau;
 
 	public :
 
@@ -66,7 +66,13 @@ class MoteurJeu
 		*\brief acces function for the Plateau
 		*\return the plateau
 		*/
-		Plateau getPlateau() const;  
+		Plateau* getPlateau() const;  
+		/**
+		*\fn Joueur getJoueurInd(int i) const
+		*\brief acces function for the Joueur number i
+		*\return the Joueur
+		*/
+		Joueur getJoueurInd(int i); 
 		/**
 		*\fn void modifNbJoueurs(int n);
 		*\brief function which changes the current nbJoueurs
@@ -79,11 +85,13 @@ class MoteurJeu
 		*\parma[in] int e
 		*/
 		void modifCourant(int e);  
+		
 
 }; 
 
 
 inline Facade* MoteurJeu::getFacade() const { return facade;}
 inline int MoteurJeu::getNbJoueurs() const {return nbJoueurs;} 
-inline Plateau MoteuJeu::getPlateau() const {return _plateau;}
+
+
 #endif
