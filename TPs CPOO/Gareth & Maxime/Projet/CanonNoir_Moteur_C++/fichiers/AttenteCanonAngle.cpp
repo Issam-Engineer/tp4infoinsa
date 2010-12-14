@@ -6,6 +6,11 @@
 *\version 1.0
 */
 
+#include "AttenteCanonAngle.h"
+
 void AttenteCanonAngle::execute(){
+
+
+
 	motor.modifCourant(ATTENTECANONPUISSANCE);
 }

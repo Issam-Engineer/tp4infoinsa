@@ -6,6 +6,8 @@
 *\version 1.0
 */
 
+#include "AttenteCanonPuissance.h"
+
 void AttenteCanonPuissance::execute(){
 	motor.modifCourant(ETATCANONFIN);
 }

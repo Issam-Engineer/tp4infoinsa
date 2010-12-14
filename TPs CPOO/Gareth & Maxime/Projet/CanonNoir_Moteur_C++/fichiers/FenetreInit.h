@@ -20,11 +20,6 @@ class FenetreInit
 	public :
 
 
-	private :
-
-
-	protected :
-
 
 	public :
 
