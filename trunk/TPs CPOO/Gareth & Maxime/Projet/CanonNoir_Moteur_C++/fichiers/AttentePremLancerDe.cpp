@@ -7,6 +7,7 @@
 */
 
 #include "AttentePremLancerDe.h"
+#include "Joueur.h"
 
 void AttentePremLancerDe::setNbLance(int i){
 	nbLance = i;	
@@ -25,7 +26,8 @@ void AttentePremLancerDe::determinerOrdre(){
 		for(int j=0;i<motor.getNbJoueurs();j++){
 			if(resDe[j]>max){ max=resDe[j];ind=j;}
 		}
-		temp[i]=motor.getJoueurInd(j);
+		resDe[ind]=0;
+		temp[i] = motor.getJoueurInd(i);
 	}
 	motor.setTabJoueur(temp);
 }
