@@ -27,7 +27,7 @@
 #include "Plateau.h"
 
 
-MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),j_indJoueurCourant(0),tabJoueurs(NULL),finPartie(false){
+MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),_JCourant(0),tabJoueurs(NULL),finPartie(false){
 	_etats[0] = new AttenteNbJoueurs();
 	_etats[1] = new AttenteInitialisation();
 	_etats[2] = new AttentePremLancerDe();
@@ -76,4 +76,8 @@ Plateau* MoteurJeu::getPlateau() const {
 void MoteurJeu::setTabJoueur(Joueur * t){
 	/*delete tabJoueurs;*/
 	tabJoueurs = t;
+}
+
+void MoteurJeu::setJCourant(int i){
+	_JCourant=i;
 }

@@ -16,11 +16,11 @@ class Fregate : public Bateau
 
 	public :
 		/**
-		*\fn string typeBateau()
+		*\fn virtual char type()
 		*\brief Inherited function which gives the name of the class
-		*\return string the name of the class
-		
-		char* typeBateau();*/
+		*\return char the name of the class
+		*/
+		char type();
 		/**
 		*\fn void init()
 		*\brief Inherited function which initialises the Fregate
@@ -32,5 +32,7 @@ class Fregate : public Bateau
 		*/
 		Fregate();
 }; 
+
+inline char Fregate::type() {return 'F';}
 
 #endif
