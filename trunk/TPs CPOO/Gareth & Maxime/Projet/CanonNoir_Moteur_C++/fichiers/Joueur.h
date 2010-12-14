@@ -43,21 +43,16 @@ class Joueur
 		*/
 		Joueur();
 		/**
-		*\fn string nom() const
-		*\brief acces function to the Joueur's name
-		*/
-		string nom() const;
-		/**
 		*\fn int numero() const
 		*\brief acces function to the Joueur's number
 		*/
-		int numero() const;
+		int getNumero() const;
 		/**
 		*\fn void modifierNumero(int i)
 		*\brief function which permits to change the Joueur's number
 		*\param[in] int i 
 		*/
-		void modifierNumero(int i);
+		void setNumero(int i);
 		/**
 		*\fn Bateau getBateau1() const
 		*\brief acces function to the Joueur's boat 1
@@ -68,11 +63,16 @@ class Joueur
 		*\brief acces function to the Joueur's boat 1
 		*/
 		Bateau getBateau2() const;
+		/**
+		*\fn void GAGNANT()
+		*\brief the Joueur is the winner
+		*/
+		void GAGNANT();
 
 }; 
 
 inline Bateau Joueur::getBateau1() const{ return _bateau1 ;}
 inline Bateau Joueur::getBateau2() const{ return _bateau2 ;}
-inline int Joueur::numero() const{ return _numero ;}
+inline int Joueur::getNumero() const{ return _numero ;}
 
 #endif

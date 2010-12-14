@@ -16,3 +16,11 @@ Joueur::Joueur(int num, CasePort* c){
 Joueur::Joueur(){
 	_numero=0;
 }
+
+void Joueur::setNumero(int i){
+	_numero=i;
+}
+
+void Joueur::GAGNANT(){
+	_gagnant=true;
+}
