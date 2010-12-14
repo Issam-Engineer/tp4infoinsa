@@ -17,7 +17,6 @@ class AttentePremLancerDe : public Etat
 	private :
 
 		static int* resDe;
-		MoteurJeu motor;
 		static int nbLance;
 
 	public :
@@ -25,9 +24,40 @@ class AttentePremLancerDe : public Etat
 		*\fn void execute()
 		*\brief Function which executes the current state
 		*/
-		virtual void execute();
-		virtual void determinerOrdre();
-
+		void execute();
+		/**
+		*\fn void determinerOrdre();
+		*\brief permet de déterminer l'ordre des joueurs
+		*/
+		void determinerOrdre(); 
+		/**
+		*\fn int* getResDe()
+		*\brief acces function
+		*/
+		int* getResDe();
+		/**
+		*\fn int getNbLance()
+		*\brief acces function
+		*/
+		int getNbLance();
+		/**
+		*\fn void setNbLance(int i)
+		*\brief function which changes the value of NbLance
+		*/
+		void setNbLance(int i);
+		/**
+		*\fn void setResDe(int i)
+		*\brief function which add the score i to the table resDe
+		*/
+		void setResDe(int i);
 }; 
+
+inline int* AttentePremLancerDe::getResDe(){
+	return resDe;
+}
+inline int AttentePremLancerDe::getNbLance(){
+	return nbLance;
+}
+
 
 #endif

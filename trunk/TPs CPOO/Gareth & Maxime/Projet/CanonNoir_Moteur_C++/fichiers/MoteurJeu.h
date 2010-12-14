@@ -11,6 +11,8 @@
 
 #include "Facade.h"
 #include "enum.h"
+#include "Dé.h"
+
 class Plateau;
 class Etat;
 class Joueur;
@@ -27,6 +29,7 @@ class MoteurJeu
 		int j_indJoueurCourant;
 		bool finPartie;
 		Plateau* _plateau;
+		De _de;
 
 	public :
 
@@ -74,6 +77,12 @@ class MoteurJeu
 		*/
 		Joueur getJoueurInd(int i); 
 		/**
+		*\fn Dé getDe() const
+		*\brief acces function 
+		*\return the Dé
+		*/
+		De getDe() const; 
+		/**
 		*\fn void modifNbJoueurs(int n);
 		*\brief function which changes the current nbJoueurs
 		*\parma[in] int n 
@@ -85,13 +94,18 @@ class MoteurJeu
 		*\parma[in] int e
 		*/
 		void modifCourant(int e);  
-		
+		/**
+		*\fn void setTabJoueur(Joueur * t);
+		*\brief function which changes the current tabjoueur
+		*\parma[in] Joueur* j
+		*/
+		void setTabJoueur(Joueur * t);  
 
 }; 
 
 
 inline Facade* MoteurJeu::getFacade() const { return facade;}
 inline int MoteurJeu::getNbJoueurs() const {return nbJoueurs;} 
-
+inline De MoteurJeu::getDe() const {return _de;} 
 
 #endif
