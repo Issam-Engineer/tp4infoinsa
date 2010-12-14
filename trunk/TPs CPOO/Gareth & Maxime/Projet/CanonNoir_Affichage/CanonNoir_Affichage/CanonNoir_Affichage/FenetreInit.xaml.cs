@@ -31,13 +31,17 @@ namespace CanonNoir_Affichage
             textBox2.IsEnabled = true;
             comboBox2.IsEnabled = true;
             textBox3.IsEnabled = false;
-            comboBox3.IsEnabled = false;
+            comboBox3.IsEnabled = true;
             textBox4.IsEnabled = false;
-            comboBox4.IsEnabled = false;
+            comboBox4.IsEnabled = true;
             button2.IsEnabled = false;
             button3.IsEnabled = true;
             button4.IsEnabled = true;
             button1.IsEnabled = true;
+            label1.Content = "J1 (Port 1) :";
+            label2.Content = "J1 (Port 2) :";
+            label3.Content = "J2 (Port 1) :";
+            label4.Content = "J2 (Port 2) :";
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
@@ -55,6 +59,10 @@ namespace CanonNoir_Affichage
             button2.IsEnabled = true;
             button4.IsEnabled = true;
             button1.IsEnabled = true;
+            label1.Content = "Joueur 1 :";
+            label2.Content = "Joueur 2 :";
+            label3.Content = "Joueur 3 :";
+            label4.Content = "Joueur 4 :";
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
@@ -72,6 +80,10 @@ namespace CanonNoir_Affichage
             button2.IsEnabled = true;
             button3.IsEnabled = true;
             button1.IsEnabled = true;
+            label1.Content = "Joueur 1 :";
+            label2.Content = "Joueur 2 :";
+            label3.Content = "Joueur 3 :";
+            label4.Content = "Joueur 4 :";
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
