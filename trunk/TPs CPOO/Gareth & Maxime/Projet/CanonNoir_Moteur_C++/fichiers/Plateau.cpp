@@ -117,11 +117,11 @@ Plateau::Plateau(){
 	_tabCase[87] = new CasePort();
 }
 
-CasePort* Plateau::getCasePort(int couleur) {
-	CasePort* cp;
-	for(int i=0; i<((_longueur*_largeur)-1), i++){
+Case* Plateau::getCasePort(int couleur) {
+	Case* cp;
+	for(int i=0; i<((_longueur*_largeur)-1); i++){
 			if(_tabCase[i]->getCouleur() == couleur){ // il faut définir une fonction getCouleur pour les Case et utiliser l'héritage
-				cp = (CasePort*) _tabCase[i]; // /!\ au cast
+				cp = _tabCase[i]; // /!\ au cast
 			}
 		}
 		return cp;
