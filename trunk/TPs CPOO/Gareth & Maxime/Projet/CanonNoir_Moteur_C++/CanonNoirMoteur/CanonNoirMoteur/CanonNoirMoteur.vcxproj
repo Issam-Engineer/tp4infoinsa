@@ -115,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\fichiers\AttenteInitialisation.cpp" />
+    <ClCompile Include="..\..\fichiers\AttenteLancerDe.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteNbJoueurs.cpp" />
     <ClCompile Include="..\..\fichiers\AttentePremLancerDe.cpp" />
     <ClCompile Include="..\..\fichiers\Bateau.cpp" />
