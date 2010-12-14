@@ -26,7 +26,7 @@ class MoteurJeu
 		int courant;
 		Joueur * tabJoueurs;
 		int nbJoueurs;
-		int j_indJoueurCourant;
+		int _JCourant;
 		bool finPartie;
 		Plateau* _plateau;
 		De _de;
@@ -100,6 +100,17 @@ class MoteurJeu
 		*\parma[in] Joueur* j
 		*/
 		void setTabJoueur(Joueur * t);  
+		/**
+		*\fn int getJCourant();
+		*\brief acces function
+		*\return int _JCourant
+		*/
+		int getJCourant() const;
+		/**
+		*\fn void setJCourant(int i);
+		*\brief function wich changers the current JCourant
+		*/
+		void setJCourant(int i);
 
 }; 
 
@@ -107,5 +118,6 @@ class MoteurJeu
 inline Facade* MoteurJeu::getFacade() const { return facade;}
 inline int MoteurJeu::getNbJoueurs() const {return nbJoueurs;} 
 inline De MoteurJeu::getDe() const {return _de;} 
+inline int MoteurJeu::getJCourant() const{return _JCourant;} 
 
 #endif

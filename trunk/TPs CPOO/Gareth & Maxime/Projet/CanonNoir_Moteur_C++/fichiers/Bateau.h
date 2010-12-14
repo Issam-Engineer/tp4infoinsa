@@ -30,11 +30,11 @@ class Bateau
 	public :
 
 		/**
-		*\fn virtual string typeBateau()
+		*\fn virtual char type()
 		*\brief Pure virtual function which allows inherited classes to give their name
-		*\return string the class name
-		
-		virtual char* typeBateau();*/
+		*\return char the class name
+		*/
+		virtual char type();
 
 		/**
 		*\fn Virtual void init()
@@ -92,6 +92,9 @@ inline bool Bateau::peutEtreVise(){
 }
 inline bool Bateau::peutJouer2Des(){
 	return pJ2Des;
+}
+inline char Bateau::type(){
+	return 'E';
 }
 
 #endif

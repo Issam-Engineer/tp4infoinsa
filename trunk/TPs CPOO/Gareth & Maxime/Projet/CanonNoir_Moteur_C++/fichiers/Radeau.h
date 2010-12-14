@@ -16,11 +16,11 @@ class Radeau : public Bateau
 
 	public :
 		/**
-		* \fn string typeBateau()
+		* \fn char typeBateau()
 		* \brief Inherited function which gives the name of the class
-		* \return string the name of the class
-		
-		char* typeBateau();*/
+		* \return char the name of the class
+		*/
+		char type();
 		/**
 		* \fn void init()
 		* \brief Inherited function which initialises the Radeau
@@ -32,5 +32,7 @@ class Radeau : public Bateau
 		*/
 		Radeau(); 
 }; 
+
+inline char Radeau::type(){ return 'R';} 
 
 #endif

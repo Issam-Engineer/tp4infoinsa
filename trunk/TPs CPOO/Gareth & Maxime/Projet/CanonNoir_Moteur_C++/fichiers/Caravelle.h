@@ -17,11 +17,11 @@ class Caravelle : public Bateau
 	public :
 
 		/**
-		*\fn virtual string typeBateau()
+		*\fn virtual char type()
 		*\brief Inherited function which gives the name of the class
-		*\return string the name of the class
-		
-		char* typeBateau();*/
+		*\return char the name of the class
+		*/
+		char type();
 		/**
 		*\fn void init()
 		*\brief Inherited function which initialises the Caravelle
@@ -34,5 +34,7 @@ class Caravelle : public Bateau
 		Caravelle();
 
 }; 
+
+inline char Caravelle::type() {	return 'C';}
 
 #endif
