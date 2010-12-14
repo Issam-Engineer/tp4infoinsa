@@ -29,17 +29,21 @@ class Facade
 		int _couleur3;
 		int _couleur4;
 
-		//à traiter
-		/*pair<int,int> _caseClic;*/
+		bool _clicDe;
+
 		bool _afficherDe1;
 		bool _afficherDe2;
+
+		//à traiter
+		/*pair<int,int> _caseClic;*/
+		
+		
 		/*pair<int,int> _posBateau; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF*/
 		bool _getNewPos;
 		bool _clicDepart;
 		bool _clicInit;
 		bool _partieEnCours;
 		bool _clicNbJoueurs;
-		bool _lancerDe;
 		bool _tabPremierLance;
 		bool _afficherJoueur1;
 		bool _initialiserOK;
@@ -109,7 +113,40 @@ class Facade
 		*\return int, the color
 		*/
 		int getCouleur4();
+		/**
+		*\fn bool getClicDe()
+		*\brief acces function
+		*\return bool _clicDe
+		*/
+		bool getClicDe();
+		/**
+		*\fn void setClicDe(bool b)
+		*\brief function which change the value of the boolean _clicDe
+		*/
+		void setClicDe(bool b);
+		/**
+		*\fn bool getAfficherDe1()
+		*\brief acces function
+		*/
+		bool getAfficherDe1();
+		/**
+		*\fn bool getAfficherDe2()
+		*\brief acces function
+		*/
+		bool getAfficherDe2();
+		/**
+		*\fn void setAfficherDe1(bool b)
+		*\brief function which change the value of the boolean _afficherDe1
+		*/
+		void setAfficherDe1(bool b);
+		/**
+		*\fn void setAfficherDe2(bool b)
+		*\brief function which change the value of the boolean _afficherDe2
+		*/
+		void setAfficherDe2(bool b);
 		
+
+
 		//à traiter
 		void activeClicDepart();
 		void initialiser();
@@ -122,8 +159,6 @@ class Facade
 		void desactiveClicNbJoueurs();
 		void premierLancerDe();
 		void afficherTabDe();
-		void afficher2De();
-		void afficher1De();
 		void afficherJoueur1();
 		void JeuInitialise();
 		void activerClicRefuserDuel();
@@ -139,5 +174,9 @@ class Facade
 		void fermerFenetreTir();
 
 }; 
+
+inline bool Facade::getClicDe(){ return _clicDe;}
+inline bool Facade::getAfficherDe1(){ return _afficherDe1;}
+inline bool Facade::getAfficherDe2(){ return _afficherDe2;}
 
 #endif
