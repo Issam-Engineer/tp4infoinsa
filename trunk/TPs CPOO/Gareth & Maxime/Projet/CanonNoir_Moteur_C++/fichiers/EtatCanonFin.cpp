@@ -6,6 +6,8 @@
 *\version 1.0
 */
 
+#include "EtatCanonFin.h"
+
 void EtatCanonFin::execute(){
 	motor.modifCourant(ATTENTELANCERDE);
 }

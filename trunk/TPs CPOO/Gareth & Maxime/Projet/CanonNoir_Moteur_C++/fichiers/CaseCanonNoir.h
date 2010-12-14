@@ -10,6 +10,7 @@
 #define CASECANONNOIR_H
 
 #include "CaseContourIle.h"
+#include "Etat.h"
 
 class CaseCanonNoir : public CaseContourIle
 {
@@ -31,6 +32,5 @@ class CaseCanonNoir : public CaseContourIle
 
 }; 
 
-inline int CaseCanonNoir::getEtat(){return 8;}
 
 #endif

@@ -6,7 +6,14 @@
 *\version 1.0
 */
 
+#include "EtatTir.h"
+#include "FenetreTir.h"
+
 
 void EtatTir::execute(){
-	motor.modifCourant(ATTENTECHOIXBATEAU);
+	if(!Duel) motor.modifCourant(ATTENTECHOIXBATEAU);
+	else{ 
+		motor.modifCourant(ATTENTECANONANGLE);
+		new FenetreTir();
+	}
 }
