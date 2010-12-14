@@ -14,8 +14,6 @@
 
 class EtatTir : public Etat
 {
-	private :
-
 
 	protected :
 

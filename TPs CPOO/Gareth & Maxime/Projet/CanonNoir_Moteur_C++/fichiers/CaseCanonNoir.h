@@ -31,8 +31,6 @@ class CaseCanonNoir : public CaseContourIle
 
 }; 
 
-inline int CaseCanonNoir::getEtat(){
-	return 8;
-}
+inline int CaseCanonNoir::getEtat(){return 8;}
 
 #endif
