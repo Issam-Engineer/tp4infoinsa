@@ -72,3 +72,8 @@ Joueur MoteurJeu::getJoueurInd(int i){
 Plateau* MoteurJeu::getPlateau() const {
 	return _plateau;
 }
+
+void MoteurJeu::setTabJoueur(Joueur * t){
+	/*delete tabJoueurs;*/
+	tabJoueurs = t;
+}
