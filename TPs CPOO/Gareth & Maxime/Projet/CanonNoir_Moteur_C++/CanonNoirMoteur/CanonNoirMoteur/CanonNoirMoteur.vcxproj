@@ -114,6 +114,8 @@
     <ClInclude Include="..\..\fichiers\Radeau.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\fichiers\AttenteCanonAngle.cpp" />
+    <ClCompile Include="..\..\fichiers\AttenteCanonPuissance.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteInitialisation.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteLancerDe.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteNbJoueurs.cpp" />
@@ -130,6 +132,8 @@
     <ClCompile Include="..\..\fichiers\CaseTresor.cpp" />
     <ClCompile Include="..\..\fichiers\Dé.cpp" />
     <ClCompile Include="..\..\fichiers\Etat.cpp" />
+    <ClCompile Include="..\..\fichiers\EtatCanonFin.cpp" />
+    <ClCompile Include="..\..\fichiers\EtatTir.cpp" />
     <ClCompile Include="..\..\fichiers\Facade.cpp" />
     <ClCompile Include="..\..\fichiers\FenetreInit.cpp" />
     <ClCompile Include="..\..\fichiers\FenetreTir.cpp" />
