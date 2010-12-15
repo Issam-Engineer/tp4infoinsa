@@ -24,9 +24,14 @@ namespace CanonNoir_Affichage
             InitializeComponent();
         }
 
-        private void Plateau_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void SourisDown(object sender, MouseButtonEventArgs e)
         {
+            Point p = e.GetPosition(Plateau);
+            //Gérer l'affichage par case
+            int x = (int)(((int)p.X * 11) / ((int)Plateau.Width));
+            int y = (int)(((int)p.Y * 8) / ((int)Plateau.Height));
 
+            MessageBox.Show("x =" + x + " et y=" + y);
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -38,6 +43,21 @@ namespace CanonNoir_Affichage
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void button5_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
 
     
