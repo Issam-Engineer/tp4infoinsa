@@ -22,7 +22,8 @@ class Joueur
 
 	public :
 
-		CasePort* _cp; //il a la case port en fonctiond de sa couleur
+		CasePort* _cp1; //il a la case port en fonctiond de sa couleur
+		CasePort* _cp2;
 		int _numero;
 		bool _gagnant;
 		Bateau _bateau1;
@@ -36,7 +37,11 @@ class Joueur
 		*\brief constructor with 3 parameters
 		*/
 		Joueur(int num, CasePort* c);
-
+		/**
+		*\fn Joueur(int num,CasePort c)
+		*\brief constructor with 3 parameters
+		*/
+		Joueur(int num, CasePort* c);
 		/**
 		*\fn Joueur()
 		*\brief default constructor
