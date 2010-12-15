@@ -14,12 +14,11 @@
 
 class AttentePremLancerDe : public Etat
 {
-	private :
+
+	public :
 
 		static int* resDe;
 		static int nbLance;
-
-	public :
 		/**
 		*\fn void execute()
 		*\brief Function which executes the current state

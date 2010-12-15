@@ -14,9 +14,10 @@ CaseCanonNoir::CaseCanonNoir(){
 }
 
 int CaseCanonNoir::getEtat(){
-	int et;
-	 if(motor.getNbJoueurs()==2){
+	/*int et;
+	if(motor.getNbJoueurs()==2){
 	 	et = 4;
 	 }else{ et = 8; }
-	return et;
+		return et;*/
+	return 4;
 }

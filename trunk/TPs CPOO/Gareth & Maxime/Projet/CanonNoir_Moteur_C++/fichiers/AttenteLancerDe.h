@@ -19,12 +19,12 @@ class AttenteLancerDe : public Etat
 		*\fn void choisirDe()
 		*\brief Function which chooses the dice to take in account
 		*/
-		virtual void choisirDe();
+		void choisirDe();
 		/**
 		*\fn void execute()
 		*\brief Function which executes the current state
 		*/
-		virtual void execute();
+		void execute();
 
 }; 
 

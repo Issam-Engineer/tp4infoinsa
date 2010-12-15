@@ -15,14 +15,10 @@ Fregate::Fregate(){
 	pJ2Des = false;
 }
 
-void Fregate::init(){
+/*void Fregate::init(){
 	pTirer = true;
 	pPTresor = true;
 	pEVise = true;
 	pJ2Des = false;
 	// gérer l'initialisation de sa position ???
-}
-
-/*char* Fregate::typeBateau(){
-	return "Fregate";
 }*/

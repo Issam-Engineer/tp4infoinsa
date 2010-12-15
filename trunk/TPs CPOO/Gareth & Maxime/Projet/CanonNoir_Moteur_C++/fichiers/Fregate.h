@@ -24,8 +24,8 @@ class Fregate : public Bateau
 		/**
 		*\fn void init()
 		*\brief Inherited function which initialises the Fregate
-		*/
-		virtual void init();
+		
+		virtual void init();*/
 		/**
 		*\fn Fregate()
 		*\brief default constructor

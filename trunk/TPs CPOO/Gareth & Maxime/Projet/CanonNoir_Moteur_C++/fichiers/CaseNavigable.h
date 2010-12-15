@@ -15,22 +15,22 @@ class CaseNavigable : public Case
 {
 	private :
 
-		bool bateau;
+		bool _bateau;
 
 	public :
 
 		/**
-		* \fn virtual bool hasBateau()
-		* \brief function which indicates if the case has a boat
-		* \return bool yes if the naviguable case has a boat
+		*\fn virtual bool hasBateau()
+		*\brief function which indicates if the case has a boat
+		*\return bool yes if the naviguable case has a boat
 		*/
 		virtual bool hasBateau();
 		/**
-		* \fn virtual int getEtat()
-		* \brief pure virtual function which allows inherited classes to give their state
-		* \return int the associated state
+		*\fn virtual void setBateau(bool b)
+		*\brief function which modify the current value of _bateau
+		*\return bool b
 		*/
-		virtual int getEtat();
+		virtual void setBateau(bool b);
 		/**
 		*\fn CaseNavigable()
 		*\brief Default constructor of CaseNavigable
@@ -39,5 +39,8 @@ class CaseNavigable : public Case
 		CaseNavigable();
 
 }; 
+
+inline bool CaseNavigable::hasBateau(){return _bateau;}
+inline void CaseNavigable::setBateau(bool b){_bateau=b;}
 
 #endif

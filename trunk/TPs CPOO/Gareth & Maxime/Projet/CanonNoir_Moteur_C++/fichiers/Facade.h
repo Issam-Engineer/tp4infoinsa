@@ -34,17 +34,20 @@ class Facade
 		bool _afficherDe1;
 		bool _afficherDe2;
 
+		bool _choixDe1;
+		bool _choixDe2;
+		bool _choix2De;
+
+		int _clicX;
+		int _clicY;
+
 		//à traiter
-		/*pair<int,int> _caseClic;*/
-		
-		
 		/*pair<int,int> _posBateau; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF*/
 		bool _getNewPos;
 		bool _clicDepart;
 		bool _clicInit;
 		bool _partieEnCours;
 		bool _clicNbJoueurs;
-		bool _tabPremierLance;
 		bool _afficherJoueur1;
 		bool _initialiserOK;
 		Joueur* _tempJoueurs; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
@@ -144,8 +147,36 @@ class Facade
 		*\brief function which change the value of the boolean _afficherDe2
 		*/
 		void setAfficherDe2(bool b);
-		
-
+		/**
+		*\fn bool getChoixDe1()
+		*\brief acces function
+		*/
+		bool getChoixDe1();
+		/**
+		*\fn bool getChoixDe2()
+		*\brief acces function
+		*/
+		bool getChoixDe2();
+		/**
+		*\fn bool getChoix2De()
+		*\brief acces function
+		*/
+		bool getChoix2De();
+		/**
+		*\fn void setChoixDe1(bool b)
+		*\brief function which change the value of the boolean _afficherDe2
+		*/
+		void setChoixDe1(bool b);
+		/**
+		*\fn void setChoixDe2(bool b)
+		*\brief function which change the value of the boolean _afficherDe2
+		*/
+		void setChoixDe2(bool b);
+		/**
+		*\fn void setChoix2De(bool b)
+		*\brief function which change the value of the boolean _afficherDe2
+		*/
+		void setChoix2De(bool b);
 
 		//à traiter
 		void activeClicDepart();
@@ -157,8 +188,6 @@ class Facade
 		void lancerPartie();
 		void activeClicNbJoueurs();
 		void desactiveClicNbJoueurs();
-		void premierLancerDe();
-		void afficherTabDe();
 		void afficherJoueur1();
 		void JeuInitialise();
 		void activerClicRefuserDuel();
@@ -178,5 +207,8 @@ class Facade
 inline bool Facade::getClicDe(){ return _clicDe;}
 inline bool Facade::getAfficherDe1(){ return _afficherDe1;}
 inline bool Facade::getAfficherDe2(){ return _afficherDe2;}
+inline bool Facade::getChoixDe1(){return _choixDe1;}
+inline bool Facade::getChoixDe2(){return _choixDe2;}
+inline bool Facade::getChoix2De(){return _choix2De;}
 
 #endif

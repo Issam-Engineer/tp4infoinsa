@@ -10,7 +10,14 @@
 
 Joueur::Joueur(int num, CasePort* c){
 	_numero=num;
-	_cp=c;
+	_cp1=c;
+	_cp2=NULL;
+}
+
+Joueur::Joueur(int num, CasePort* c1, CasePort* c2){
+	_numero=num;
+	_cp1=c1;
+	_cp2=c2;
 }
 
 Joueur::Joueur(){

@@ -24,7 +24,7 @@ class MoteurJeu
 		Facade * facade; // association bi-directionnelle
 		Etat** _etats; 
 		int courant;
-		Joueur * tabJoueurs;
+		Joueur* tabJoueurs;
 		int nbJoueurs;
 		int _JCourant;
 		bool finPartie;

@@ -140,6 +140,7 @@
     <ClCompile Include="..\..\fichiers\FenetreTir.cpp" />
     <ClCompile Include="..\..\fichiers\Fregate.cpp" />
     <ClCompile Include="..\..\fichiers\Joueur.cpp" />
+    <ClCompile Include="..\..\fichiers\Main.cpp" />
     <ClCompile Include="..\..\fichiers\MoteurJeu.cpp" />
     <ClCompile Include="..\..\fichiers\Plateau.cpp" />
     <ClCompile Include="..\..\fichiers\Radeau.cpp" />
