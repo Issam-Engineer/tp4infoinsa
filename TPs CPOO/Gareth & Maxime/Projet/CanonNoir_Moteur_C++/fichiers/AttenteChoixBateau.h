@@ -19,7 +19,7 @@ class AttenteChoixBateau : public Etat
 		*\fn void execute()
 		*\brief Function which executes the current state
 		*/
-		virtual void execute();
+		void execute();
 
 }; 
 

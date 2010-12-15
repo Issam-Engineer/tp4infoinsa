@@ -22,8 +22,8 @@ class Joueur
 
 	public :
 
-		CasePort* _cp1; //il a la case port en fonctiond de sa couleur
-		CasePort* _cp2;
+		CasePort* _cp1; 
+		CasePort* _cp2;/*NULL if nb joueur !=2*/
 		int _numero;
 		bool _gagnant;
 		Bateau _bateau1;
@@ -33,15 +33,15 @@ class Joueur
 
 
 		/**
-		*\fn Joueur(int num,CasePort c)
-		*\brief constructor with 3 parameters
+		*\fn Joueur(int num,CasePort* c)
+		*\brief constructor with 2 parameters
 		*/
 		Joueur(int num, CasePort* c);
 		/**
-		*\fn Joueur(int num,CasePort c)
-		*\brief constructor with 3 parameters
+		*\fn Joueur(int num,CasePort* c, CasePort* c2)
+		*\brief constructor with 3 parameters => only when there is 2 players
 		*/
-		Joueur(int num, CasePort* c);
+		Joueur(int num, CasePort* c1, CasePort* c2);
 		/**
 		*\fn Joueur()
 		*\brief default constructor

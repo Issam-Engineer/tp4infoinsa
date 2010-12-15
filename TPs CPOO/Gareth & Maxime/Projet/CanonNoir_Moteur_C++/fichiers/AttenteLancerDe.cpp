@@ -6,17 +6,27 @@
 * \version 1.0
 */
 #include "AttenteLancerDe.h"
+#include "Joueur.h"
+//#include "enum.h"
 
 void AttenteLancerDe::execute(){
 
 	if(motor.getFacade()->getClicDe() == true){
 
-		motor.getDe().lancerDe();
+		motor.getDe().lancerDe();//Le de contient les deux nouvelle valeurs
 		//si le joueur possède une caravelle on affiche les deux dé (il peut ensuite choisir)
 		if(	motor.getJoueurInd(motor.getJCourant()).getBateau1().type() == 'C' ||
 			motor.getJoueurInd(motor.getJCourant()).getBateau2().type() == 'C' ){
+				motor.getFacade()->setAfficherDe1(true);
+				motor.getFacade()->setAfficherDe2(true);
 
+		}else{
+			motor.getFacade()->setAfficherDe1(true);
+			motor.getFacade()->setAfficherDe2(false);
+		
 		}
+
+		motor.modifCourant(ATTENTECHOIXBATEAU);
 
 	}else{//remettre le booléen qui a changé à false
 	}

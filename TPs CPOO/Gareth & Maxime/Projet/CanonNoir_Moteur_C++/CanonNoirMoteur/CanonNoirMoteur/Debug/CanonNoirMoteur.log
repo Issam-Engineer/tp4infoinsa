@@ -1,18 +1,19 @@
-﻿La génération a démarré 14/12/2010 17:30:24.
+﻿La génération a démarré 15/12/2010 21:20:19.
      1>Projet "C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\CanonNoirMoteur\CanonNoirMoteur.vcxproj" sur le nœud 2 (build cible(s)).
      1>InitializeBuildStatus:
          Mise à jour de l'horodatage "Debug\CanonNoirMoteur.unsuccessfulbuild".
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /I"D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\fichiers\AttenteInitialisation.cpp ..\..\fichiers\AttentePremLancerDe.cpp ..\..\fichiers\MoteurJeu.cpp
-         MoteurJeu.cpp
-         AttentePremLancerDe.cpp
-         AttenteInitialisation.cpp
-         Génération de code en cours...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /I"D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\fichiers\AttenteLancerDe.cpp
+         AttenteLancerDe.cpp
        ManifestResourceCompile:
          Toutes les sorties sont à jour.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CanonNoirMoteur.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.lib" /MACHINE:X86 Debug\CanonNoirMoteur.exe.embed.manifest.res
+         Debug\AttenteCanonAngle.obj
+         Debug\AttenteCanonPuissance.obj
+         Debug\AttenteChoixBateau.obj
          Debug\AttenteInitialisation.obj
+         Debug\AttenteLancerDe.obj
          Debug\AttenteNbJoueurs.obj
          Debug\AttentePremLancerDe.obj
          Debug\Bateau.obj
@@ -27,55 +28,37 @@
          Debug\CaseTresor.obj
          "Debug\Dé.obj"
          Debug\Etat.obj
+         Debug\EtatCanonFin.obj
+         Debug\EtatTir.obj
          Debug\Facade.obj
          Debug\FenetreInit.obj
          Debug\FenetreTir.obj
          Debug\Fregate.obj
          Debug\Joueur.obj
+         Debug\Main.obj
          Debug\MoteurJeu.obj
          Debug\Plateau.obj
          Debug\Radeau.obj
-     1>AttentePremLancerDe.obj : error LNK2001: symbole externe non résolu "private: static int AttentePremLancerDe::nbLance" (?nbLance@AttentePremLancerDe@@0HA)
-     1>AttentePremLancerDe.obj : error LNK2001: symbole externe non résolu "private: static int * AttentePremLancerDe::resDe" (?resDe@AttentePremLancerDe@@0PAHA)
-     1>Joueur.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall Case::getEtat(void)" (?getEtat@Case@@UAEHXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall Case::getEtat(void)" (?getEtat@Case@@UAEHXZ)
-     1>Radeau.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall Case::getEtat(void)" (?getEtat@Case@@UAEHXZ)
-     1>Caravelle.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall Case::getEtat(void)" (?getEtat@Case@@UAEHXZ)
-     1>Case.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall Case::getEtat(void)" (?getEtat@Case@@UAEHXZ)
-     1>CaseIle.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall Case::getEtat(void)" (?getEtat@Case@@UAEHXZ)
-     1>Fregate.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall Case::getEtat(void)" (?getEtat@Case@@UAEHXZ)
-     1>Radeau.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Bateau::init(void)" (?init@Bateau@@UAEXXZ)
-     1>Caravelle.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Bateau::init(void)" (?init@Bateau@@UAEXXZ)
-     1>Fregate.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Bateau::init(void)" (?init@Bateau@@UAEXXZ)
-     1>Joueur.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Bateau::init(void)" (?init@Bateau@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Bateau::init(void)" (?init@Bateau@@UAEXXZ)
-     1>CaseTresor.obj : error LNK2001: symbole externe non résolu "public: virtual bool __thiscall CaseNavigable::hasBateau(void)" (?hasBateau@CaseNavigable@@UAE_NXZ)
-     1>CaseBordurePlateau.obj : error LNK2001: symbole externe non résolu "public: virtual bool __thiscall CaseNavigable::hasBateau(void)" (?hasBateau@CaseNavigable@@UAE_NXZ)
-     1>CaseCanonNoir.obj : error LNK2001: symbole externe non résolu "public: virtual bool __thiscall CaseNavigable::hasBateau(void)" (?hasBateau@CaseNavigable@@UAE_NXZ)
-     1>CaseContourIle.obj : error LNK2001: symbole externe non résolu "public: virtual bool __thiscall CaseNavigable::hasBateau(void)" (?hasBateau@CaseNavigable@@UAE_NXZ)
-     1>CaseNavigable.obj : error LNK2001: symbole externe non résolu "public: virtual bool __thiscall CaseNavigable::hasBateau(void)" (?hasBateau@CaseNavigable@@UAE_NXZ)
-     1>CaseContourIle.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall CaseNavigable::getEtat(void)" (?getEtat@CaseNavigable@@UAEHXZ)
-     1>CaseNavigable.obj : error LNK2001: symbole externe non résolu "public: virtual int __thiscall CaseNavigable::getEtat(void)" (?getEtat@CaseNavigable@@UAEHXZ)
+     1>AttentePremLancerDe.obj : error LNK2001: symbole externe non résolu "public: static int AttentePremLancerDe::nbLance" (?nbLance@AttentePremLancerDe@@2HA)
+     1>AttentePremLancerDe.obj : error LNK2001: symbole externe non résolu "public: static int * AttentePremLancerDe::resDe" (?resDe@AttentePremLancerDe@@2PAHA)
+     1>EtatTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::champPuissance(void)" (?champPuissance@FenetreTir@@UAEXXZ)
+     1>EtatTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::champAngle(void)" (?champAngle@FenetreTir@@UAEXXZ)
+     1>EtatTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::fermerFenetre(void)" (?fermerFenetre@FenetreTir@@UAEXXZ)
+     1>EtatTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::clicTir(void)" (?clicTir@FenetreTir@@UAEXXZ)
+     1>EtatTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::rafraichir(void)" (?rafraichir@FenetreTir@@UAEXXZ)
+     1>EtatTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::clicRefuserDuel(void)" (?clicRefuserDuel@FenetreTir@@UAEXXZ)
      1>MoteurJeu.obj : error LNK2019: symbole externe non résolu "public: __thiscall EtatDepot::EtatDepot(void)" (??0EtatDepot@@QAE@XZ) référencé dans la fonction "public: __thiscall MoteurJeu::MoteurJeu(void)" (??0MoteurJeu@@QAE@XZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteLancerDe::execute(void)" (?execute@AttenteLancerDe@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteLancerDe::choisirDe(void)" (?choisirDe@AttenteLancerDe@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteChoixBateau::execute(void)" (?execute@AttenteChoixBateau@@UAEXXZ)
      1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall ProposeDeplacement::execute(void)" (?execute@ProposeDeplacement@@UAEXXZ)
      1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteDeplacement::execute(void)" (?execute@AttenteDeplacement@@UAEXXZ)
      1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Duel::execute(void)" (?execute@Duel@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatTir::execute(void)" (?execute@EtatTir@@UAEXXZ)
      1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatTir::tirCanon(void)" (?tirCanon@EtatTir@@UAEXXZ)
      1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatTir::init(int,int)" (?init@EtatTir@@UAEXHH@Z)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteCanonPuissance::execute(void)" (?execute@AttenteCanonPuissance@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteCanonAngle::execute(void)" (?execute@AttenteCanonAngle@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatCanonFin::execute(void)" (?execute@EtatCanonFin@@UAEXXZ)
      1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatTresor::execute(void)" (?execute@EtatTresor@@UAEXXZ)
      1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatFinPartie::execute(void)" (?execute@EtatFinPartie@@UAEXXZ)
      1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Etat::execute(void)" (?execute@Etat@@UAEXXZ)
-     1>MSVCRTD.lib(crtexe.obj) : error LNK2019: symbole externe non résolu _main référencé dans la fonction ___tmainCRTStartup
-     1>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.exe : fatal error LNK1120: 23 externes non résolus
+     1>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.exe : fatal error LNK1120: 17 externes non résolus
      1>Génération du projet "C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\CanonNoirMoteur\CanonNoirMoteur.vcxproj" terminée (build cible(s)) -- ÉCHEC.
 
 ÉCHEC de la build.
 
-Temps écoulé 00:00:06.13
+Temps écoulé 00:00:02.23

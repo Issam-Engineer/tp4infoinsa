@@ -24,8 +24,8 @@ class Radeau : public Bateau
 		/**
 		* \fn void init()
 		* \brief Inherited function which initialises the Radeau
-		*/
-		virtual void init();
+		
+		virtual void init();*/
 		/**
 		* \fn Radeau()
 		* \brief Default constructor

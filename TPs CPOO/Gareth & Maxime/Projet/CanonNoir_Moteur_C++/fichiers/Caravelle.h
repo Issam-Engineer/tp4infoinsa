@@ -25,8 +25,8 @@ class Caravelle : public Bateau
 		/**
 		*\fn void init()
 		*\brief Inherited function which initialises the Caravelle
-		*/
-		virtual void init();
+		
+		virtual void init();*/
 		/**
 		*\fn Caravelle()
 		*\brief Default constructor

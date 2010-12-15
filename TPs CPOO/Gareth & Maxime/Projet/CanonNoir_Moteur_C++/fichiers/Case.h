@@ -77,5 +77,8 @@ inline int Case::getHauteur(){
 inline pair<int,int> Case::getPosition(){
 	return _position;
 }
+inline int Case::getEtat(){
+	return -1;
+}
 
 #endif

@@ -53,3 +53,15 @@ void Facade::setAfficherDe1(bool b){
 void Facade::setAfficherDe2(bool b){
 	_afficherDe2=b;
 }
+
+void Facade::setChoixDe1(bool b){
+	_choixDe1=b;
+}
+
+void Facade::setChoixDe2(bool b){
+	_choixDe2=b;
+}
+
+void Facade::setChoix2De(bool b){
+	_choix2De=b;
+}

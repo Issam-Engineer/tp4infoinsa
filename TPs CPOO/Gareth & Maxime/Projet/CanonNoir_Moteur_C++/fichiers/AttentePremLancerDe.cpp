@@ -19,7 +19,7 @@ void AttentePremLancerDe::setResDe(int i){
 
 void AttentePremLancerDe::determinerOrdre(){
 	//TRIER ORDRE DES JOUEURS
-	Joueur* temp;
+	Joueur temp[4];
 	for(int i=0;i<motor.getNbJoueurs();i++){
 		int max=0;
 		int ind;
@@ -28,7 +28,7 @@ void AttentePremLancerDe::determinerOrdre(){
 		}
 		resDe[ind]=0;
 		motor.getJoueurInd(i).setNumero(i);//On modifie le numéro du joueur !
-		temp[i]=motor.getJoueurInd(i);
+		temp[i] = motor.getJoueurInd(i);
 	}
 	motor.setTabJoueur(temp);
 }

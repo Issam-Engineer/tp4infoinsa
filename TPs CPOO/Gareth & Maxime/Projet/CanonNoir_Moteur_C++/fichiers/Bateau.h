@@ -39,8 +39,8 @@ class Bateau
 		/**
 		*\fn Virtual void init()
 		*\brief function which allows inherited classes to initialize themselves
-		*/
-		virtual void init();
+		
+		virtual void init();*/
 
 		/**
 		*\fn Case getPosition()
