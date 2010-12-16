@@ -58,20 +58,20 @@ Plateau::Plateau(){
 	//LIGNE 4
 	_tabCase[33] = new CaseBordurePlateau();
 	_tabCase[34] = new CaseContourIle();
-	_tabCase[35] = new CasePort();
-	_tabCase[36] = new CasePort();
+	_tabCase[35] = new CaseIle();
+	_tabCase[36] = new CaseIle();
 	_tabCase[37] = new CaseNavigable();
 	_tabCase[38] = new CaseNavigable();
 	_tabCase[39] = new CaseTresor();
-	_tabCase[40] = new CasePort();
-	_tabCase[41] = new CasePort();
+	_tabCase[40] = new CaseIle();
+	_tabCase[41] = new CaseIle();
 	_tabCase[42] = new CaseContourIle();
 	_tabCase[43] = new CaseBordurePlateau();
 	//LIGNE 5
 	_tabCase[44] = new CaseBordurePlateau();
 	_tabCase[45] = new CaseCanonNoir();
-	_tabCase[46] = new CasePort();
-	_tabCase[47] = new CasePort();
+	_tabCase[46] = new CaseIle();
+	_tabCase[47] = new CaseIle();
 	_tabCase[48] = new CaseNavigable();
 	_tabCase[49] = new CaseNavigable();
 	_tabCase[50] = new CaseContourIle();
