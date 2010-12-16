@@ -25,7 +25,7 @@ class Bateau
 		bool pJ2Des;
 		bool pTirer;
 		bool pEVise;
-		Case pos;
+		Case* pos;
 
 	public :
 
@@ -47,7 +47,7 @@ class Bateau
 		*\brief Virtual function which return the boat position
 		*\return Case the boat position
 		*/
-		virtual Case getPosition();
+		virtual Case* getPosition();
 		/**
 		*\fn bool peutTirer()
 		*\brief Virtual function which indicates if the boat can shoot
@@ -81,7 +81,7 @@ class Bateau
 		virtual void positionner(Case p);
 }; 
 
-inline Case Bateau::getPosition(){
+inline Case* Bateau::getPosition(){
 	return pos;
 }
 inline bool Bateau::peutTirer(){
