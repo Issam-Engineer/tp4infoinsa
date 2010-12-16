@@ -78,7 +78,7 @@ class Bateau
 		*\brief Virtual function which replaces the boat at a given position
 		*\param[in] Case a position
 		*/
-		virtual void positionner(Case p);
+		virtual void positionner(Case* p);
 }; 
 
 inline Case* Bateau::getPosition(){

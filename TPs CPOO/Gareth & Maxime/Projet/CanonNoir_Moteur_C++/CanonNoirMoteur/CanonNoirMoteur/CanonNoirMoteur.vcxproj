@@ -79,6 +79,7 @@
     <ClInclude Include="..\..\fichiers\AttenteCanonAngle.h" />
     <ClInclude Include="..\..\fichiers\AttenteCanonPuissance.h" />
     <ClInclude Include="..\..\fichiers\AttenteChoixBateau.h" />
+    <ClInclude Include="..\..\fichiers\AttenteChoixDe.h" />
     <ClInclude Include="..\..\fichiers\AttenteDeplacement.h" />
     <ClInclude Include="..\..\fichiers\AttenteInitialisation.h" />
     <ClInclude Include="..\..\fichiers\AttenteLancerDe.h" />
@@ -117,6 +118,7 @@
     <ClCompile Include="..\..\fichiers\AttenteCanonAngle.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteCanonPuissance.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteChoixBateau.cpp" />
+    <ClCompile Include="..\..\fichiers\AttenteChoixDe.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteInitialisation.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteLancerDe.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteNbJoueurs.cpp" />

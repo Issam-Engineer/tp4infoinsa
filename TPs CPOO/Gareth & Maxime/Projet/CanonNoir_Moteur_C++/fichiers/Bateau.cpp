@@ -8,6 +8,6 @@
 
 #include "Bateau.h"
 
-void Bateau::positionner(Case p){
+void Bateau::positionner(Case* p){
 	pos=p;
 }

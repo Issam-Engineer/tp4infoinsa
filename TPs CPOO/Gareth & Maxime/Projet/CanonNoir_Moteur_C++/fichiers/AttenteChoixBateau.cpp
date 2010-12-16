@@ -7,6 +7,7 @@
 */
 
 #include "AttenteChoixBateau.h"
+#include "Joueur.h"
 
 void AttenteChoixBateau::execute(){
 
@@ -26,7 +27,7 @@ void AttenteChoixBateau::execute(){
 		if( motor.getJoueurInd(motor.getJCourant()).bateauAtPos(posit)){
 
 			//le bateau correspond bien à une caravelle
-			if(motor.getJoueurInd(motor.getJCourant()).getBateauAtPos(posit).type() == 'C'){
+			if( motor.getJoueurInd(motor.getJCourant()).getBateauPos(posit).type() == 'C' ){
 
 				//ON DOIT PROPOSER D'UTILISER 1 ou 2 DES
 				motor.getFacade()->setChoixDe1(true);
@@ -35,6 +36,7 @@ void AttenteChoixBateau::execute(){
 
 				motor.modifCourant(ATTENTECHOIXDE);
 			}
+		}
 
 		
 	//3 ou 4 Joueurs

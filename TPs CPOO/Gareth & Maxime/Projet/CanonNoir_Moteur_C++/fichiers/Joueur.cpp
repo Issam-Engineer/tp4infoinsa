@@ -47,5 +47,7 @@ Bateau Joueur::getBateauPos(pair<int,int> p){
 		else res=_bateau2;
 	}else{
 		cerr<<"ERREUR : il n'y a pas de bateau à cette position"<<endl;
+
 	}
+	return res;
 }
