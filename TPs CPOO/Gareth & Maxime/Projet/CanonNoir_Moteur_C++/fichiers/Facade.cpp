@@ -65,3 +65,11 @@ void Facade::setChoixDe2(bool b){
 void Facade::setChoix2De(bool b){
 	_choix2De=b;
 }
+
+void Facade::setX(int u){
+	_clicX=u;
+}
+
+void Facade::setY(int u){
+	_clicY=u;
+}

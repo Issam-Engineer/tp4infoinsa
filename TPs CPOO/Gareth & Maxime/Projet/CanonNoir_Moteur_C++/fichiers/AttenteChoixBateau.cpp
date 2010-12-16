@@ -14,8 +14,12 @@ void AttenteChoixBateau::execute(){
 	if(motor.getNbJoueurs() == 2){
 		
 		pair<int,int> posit; // construire à partir de la facade la position
-		
-		
+		int x= motor.getFacade()->getX();
+		int y=  motor.getFacade()->getY();
+		if( x!=-1 && y!=-1 ){
+			posit = make_pair(x,y);
+		}
+		//if( motor.getJoueurInd(motor.getJCourant).hasBateau
 		//EN FONCTION DU BATEAU CHOISIT ON DOIT PROPOSER D'UTILISER 1 ou 2 DES
 		motor.getFacade()->setChoixDe1(true);
 		motor.getFacade()->setChoixDe2(true);		

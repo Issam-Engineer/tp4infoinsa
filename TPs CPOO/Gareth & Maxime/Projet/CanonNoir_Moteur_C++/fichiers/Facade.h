@@ -177,6 +177,26 @@ class Facade
 		*\brief function which change the value of the boolean _afficherDe2
 		*/
 		void setChoix2De(bool b);
+		/**
+		*\fn bool getX()
+		*\brief acces function
+		*/
+		int getX();
+		/**
+		*\fn bool getY()
+		*\brief acces function
+		*/
+		int getY();
+		/**
+		*\fn void setX(int u)
+		*\brief function which change the value of the boolean _afficherDe2
+		*/
+		void setX(int u);
+			/**
+		*\fn void setY(int u)
+		*\brief function which change the value of the boolean _afficherDe2
+		*/
+		void setY(int u);
 
 		//à traiter
 		void activeClicDepart();
@@ -210,5 +230,7 @@ inline bool Facade::getAfficherDe2(){ return _afficherDe2;}
 inline bool Facade::getChoixDe1(){return _choixDe1;}
 inline bool Facade::getChoixDe2(){return _choixDe2;}
 inline bool Facade::getChoix2De(){return _choix2De;}
+inline int Facade::getX(){return _clicX;}
+inline int Facade::getY(){return _clicY;}
 
 #endif
