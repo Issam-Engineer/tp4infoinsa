@@ -31,7 +31,39 @@ namespace CanonNoir_Affichage
             int x = (int)(((int)p.X * 11) / ((int)Plateau.Width));
             int y = (int)(((int)p.Y * 8) / ((int)Plateau.Height));
 
-            MessageBox.Show("x =" + x + " et y=" + y);
+            //MessageBox.Show("x =" + x + " et y=" + y);
+            String Caseclic = "";
+            if((x == 0 || x == 10) && (y == 0 || y == 7)) {
+                Caseclic = "Case Port";
+                if(x==0 && y ==0){ Caseclic += " Rouge"; }
+                else if(x == 10 && y == 0){ Caseclic += " Jaune"; }
+                else if(x == 0 && y == 7){ Caseclic += " Vert"; }
+                else { Caseclic += " Bleu"; }
+            } else if((x == 7 && y == 1) || ((x == 1 || x == 9) && y == 4) || (x == 3 && y == 7)) {
+                Caseclic = "Case Canon Noir";
+            } else if((x == 4 && (y == 2 || y == 5)) || (x==6 && (y == 3 || y == 6))) {
+                Caseclic = "Case Trésor";
+            } else if(((x == 2 || x == 3 || x == 7 || x == 8) && y == 1)
+                || ((x == 1 || x == 4 || x == 6 || x == 9) && y == 2)
+                || ((x == 1 || x == 6 || x == 9) && y == 3)
+                || ((x == 1 || x == 6 || x == 9) && y == 4)
+                || ((x == 2 || x == 3 || x == 4 || x == 6 || x == 9) && y == 5)
+                || ((x == 1 || x == 2 || x == 3 || x == 4 || x == 6) && y == 6)) {
+                Caseclic = "Case Contour Île";
+            } else if(((x == 1 || x == 2 || x == 3 || x == 4 || x == 5 || x == 6 || x == 7 || x == 8 || x == 9) && (y == 0 || y == 7))
+                        || ((x == 0 || x == 10) && (y == 1 || y == 2 || y == 3 || y == 4 || y == 5 || y == 6))) {
+                Caseclic = "Case Bordure Plateau";
+            } else if(((x == 2 || x == 3 || x == 7 || x == 8)
+                    && (y == 2 || y == 3 || y == 4 || y == 5))) {
+                Caseclic = "Case Île";
+                   
+            } else if (((x == 2 || x == 3 || x == 7 || x == 8)
+                    && (y != 2 && y != 3 && y != 4 && y != 5))
+                    || x == 1 || x == 4 || x == 5 || x == 6 || x == 9 || x == 10) {
+                Caseclic = "Case Navigable";
+            } 
+
+            MessageBox.Show(Caseclic);
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -58,6 +90,11 @@ namespace CanonNoir_Affichage
         private void button5_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        {
+
         }
 
     
