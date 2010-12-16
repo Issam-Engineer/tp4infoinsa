@@ -1,10 +1,42 @@
-﻿La génération a démarré 15/12/2010 21:20:19.
+﻿La génération a démarré 16/12/2010 20:06:57.
      1>Projet "C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\CanonNoirMoteur\CanonNoirMoteur.vcxproj" sur le nœud 2 (build cible(s)).
      1>InitializeBuildStatus:
          Mise à jour de l'horodatage "Debug\CanonNoirMoteur.unsuccessfulbuild".
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /I"D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\fichiers\AttenteLancerDe.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /I"D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\fichiers\AttenteCanonAngle.cpp ..\..\fichiers\AttenteCanonPuissance.cpp ..\..\fichiers\AttenteChoixBateau.cpp ..\..\fichiers\AttenteChoixDe.cpp ..\..\fichiers\AttenteInitialisation.cpp ..\..\fichiers\AttenteLancerDe.cpp ..\..\fichiers\AttenteNbJoueurs.cpp ..\..\fichiers\AttentePremLancerDe.cpp ..\..\fichiers\Bateau.cpp ..\..\fichiers\Caravelle.cpp ..\..\fichiers\Case.cpp ..\..\fichiers\CaseBordurePlateau.cpp ..\..\fichiers\CaseCanonNoir.cpp ..\..\fichiers\CaseContourIle.cpp ..\..\fichiers\CaseIle.cpp ..\..\fichiers\CaseNavigable.cpp ..\..\fichiers\CasePort.cpp ..\..\fichiers\CaseTresor.cpp ..\..\fichiers\Etat.cpp ..\..\fichiers\EtatCanonFin.cpp ..\..\fichiers\EtatTir.cpp ..\..\fichiers\Facade.cpp ..\..\fichiers\Fregate.cpp ..\..\fichiers\Joueur.cpp ..\..\fichiers\Main.cpp ..\..\fichiers\MoteurJeu.cpp ..\..\fichiers\Plateau.cpp ..\..\fichiers\Radeau.cpp
+         AttenteChoixDe.cpp
+         Génération de code en cours...
+         Compilation en cours...
+         Radeau.cpp
+         Plateau.cpp
+         MoteurJeu.cpp
+         Main.cpp
+         Joueur.cpp
+         Fregate.cpp
+         Facade.cpp
+         EtatTir.cpp
+         EtatCanonFin.cpp
+         Etat.cpp
+         CaseTresor.cpp
+         CasePort.cpp
+         CaseNavigable.cpp
+         CaseIle.cpp
+         CaseContourIle.cpp
+         CaseCanonNoir.cpp
+         CaseBordurePlateau.cpp
+         Case.cpp
+         Caravelle.cpp
+         Bateau.cpp
+         Génération de code en cours...
+         Compilation en cours...
+         AttentePremLancerDe.cpp
+         AttenteNbJoueurs.cpp
          AttenteLancerDe.cpp
+         AttenteInitialisation.cpp
+         AttenteChoixBateau.cpp
+         AttenteCanonPuissance.cpp
+         AttenteCanonAngle.cpp
+         Génération de code en cours...
        ManifestResourceCompile:
          Toutes les sorties sont à jour.
        Link:
@@ -12,6 +44,7 @@
          Debug\AttenteCanonAngle.obj
          Debug\AttenteCanonPuissance.obj
          Debug\AttenteChoixBateau.obj
+         Debug\AttenteChoixDe.obj
          Debug\AttenteInitialisation.obj
          Debug\AttenteLancerDe.obj
          Debug\AttenteNbJoueurs.obj
@@ -61,4 +94,4 @@
 
 ÉCHEC de la build.
 
-Temps écoulé 00:00:02.23
+Temps écoulé 00:00:39.10
