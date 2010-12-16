@@ -69,10 +69,23 @@ class Joueur
 		*/
 		Bateau getBateau2() const;
 		/**
+		*\fn bool bateauAtPos(pair<int,int> p)
+		*\brief function which says if the player has a bateau at the given position
+		*\return a boolean, true if there is a boat 
+		*/
+		bool bateauAtPos(pair<int,int> p);
+		/**
+		*\fn Bateau Joueur::getBateauPos(pair<int,int> p)
+		*\brief acces function to the boat at the given position
+		*\return the boat
+		*/
+		Bateau Joueur::getBateauPos(pair<int,int> p);
+		/**
 		*\fn void GAGNANT()
 		*\brief the Joueur is the winner
 		*/
 		void GAGNANT();
+
 
 }; 
 
