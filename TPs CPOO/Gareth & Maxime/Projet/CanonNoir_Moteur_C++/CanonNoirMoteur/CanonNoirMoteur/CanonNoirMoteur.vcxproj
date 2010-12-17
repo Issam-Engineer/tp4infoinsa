@@ -145,6 +145,7 @@
     <ClCompile Include="..\..\fichiers\Main.cpp" />
     <ClCompile Include="..\..\fichiers\MoteurJeu.cpp" />
     <ClCompile Include="..\..\fichiers\Plateau.cpp" />
+    <ClCompile Include="..\..\fichiers\ProposeDeplacement.cpp" />
     <ClCompile Include="..\..\fichiers\Radeau.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
