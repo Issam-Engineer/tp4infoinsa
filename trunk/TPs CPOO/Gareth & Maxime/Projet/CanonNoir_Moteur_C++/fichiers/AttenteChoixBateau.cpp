@@ -11,22 +11,24 @@
 
 void AttenteChoixBateau::execute(){
 
+	// construire à partir de la facade la position
+	pair<int,int> posit; 
+	int x= motor.getFacade()->getX();
+	int y=  motor.getFacade()->getY();
+
+	if( x!=-1 && y!=-1 ){
+			posit = make_pair(x,y);
+	}else{
+		return; //C'est que les positions ne sont pas correctes
+	}
+
 	//2 Joueurs
 	if(motor.getNbJoueurs() == 2){
-
-		// construire à partir de la facade la position
-		pair<int,int> posit; 
-		int x= motor.getFacade()->getX();
-		int y=  motor.getFacade()->getY();
-
-		if( x!=-1 && y!=-1 ){
-			posit = make_pair(x,y);
-		}
 
 		//si le joueur a bien un bateau sur la case cliquée
 		if( motor.getJoueurInd(motor.getJCourant()).bateauAtPos(posit)){
 
-			//le bateau cliquer peut jouer 2 dés
+			//le bateau du joueur cliqué peut jouer 2 dés
 			if( motor.getJoueurInd(motor.getJCourant()).getBateauPos(posit).peutJouer2Des()){
 
 				//ON DOIT PROPOSER D'UTILISER 1 ou 2 DES
@@ -54,6 +56,6 @@ void AttenteChoixBateau::execute(){
 		motor.modifCourant(PROPOSEDEPLACEMENT);
 
 	}else{
-
+		return;
 	}
 }

@@ -23,7 +23,6 @@ class ProposeDeplacement : public Etat
 
 		Case * tabCase;
 
-
 	public :
 		/**
 		*\fn void execute()

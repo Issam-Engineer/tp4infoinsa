@@ -224,5 +224,8 @@
     <ClCompile Include="..\..\fichiers\AttenteChoixDe.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\fichiers\ProposeDeplacement.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
