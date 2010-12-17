@@ -26,8 +26,8 @@ void AttenteChoixBateau::execute(){
 		//si le joueur a bien un bateau sur la case cliquée
 		if( motor.getJoueurInd(motor.getJCourant()).bateauAtPos(posit)){
 
-			//le bateau correspond bien à une caravelle
-			if( motor.getJoueurInd(motor.getJCourant()).getBateauPos(posit).type() == 'C' ){
+			//le bateau cliquer peut jouer 2 dés
+			if( motor.getJoueurInd(motor.getJCourant()).getBateauPos(posit).peutJouer2Des()){
 
 				//ON DOIT PROPOSER D'UTILISER 1 ou 2 DES
 				motor.getFacade()->setChoixDe1(true);
@@ -40,16 +40,20 @@ void AttenteChoixBateau::execute(){
 
 		
 	//3 ou 4 Joueurs
-	}else if(motor.getJoueurInd(motor.getJCourant()).getBateau1().type() == 'C'){ 
+	}else if(	motor.getJoueurInd(motor.getJCourant()).bateauAtPos(posit) &&
+				motor.getJoueurInd(motor.getJCourant()).getBateauPos(posit).peutJouer2Des()){ 
 		
 		motor.getFacade()->setChoixDe1(true);
 		motor.getFacade()->setChoixDe2(true);		
 		motor.getFacade()->setChoix2De(true);
+
 		motor.modifCourant(ATTENTECHOIXDE);
 
-	}else{
+	}else if (motor.getJoueurInd(motor.getJCourant()).bateauAtPos(posit)){//bateau autre qu'une caravelle
 
 		motor.modifCourant(PROPOSEDEPLACEMENT);
+
+	}else{
 
 	}
 }

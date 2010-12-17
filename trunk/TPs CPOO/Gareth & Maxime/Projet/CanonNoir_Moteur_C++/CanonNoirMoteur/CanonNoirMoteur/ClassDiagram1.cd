@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AffichageWPF" Collapsed="true">
+    <Position X="35.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhAAAAAAAAAAAAAAgAAAAAAAAAAAAABAAAABAQAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\AffichageWPF.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttenteCanonAngle" Collapsed="true">
+    <Position X="28.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\AttenteCanonAngle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttenteCanonPuissance" Collapsed="true">
+    <Position X="31" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\AttenteCanonPuissance.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttenteChoixBateau" Collapsed="true">
+    <Position X="13" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\AttenteChoixBateau.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttenteChoixDe" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\AttenteChoixDe.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttenteDeplacement" Collapsed="true">
+    <Position X="19.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\AttenteDeplacement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttenteInitialisation" Collapsed="true">
+    <Position X="24.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\AttenteInitialisation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttenteLancerDe" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\AttenteLancerDe.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttenteNbJoueurs" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\AttenteNbJoueurs.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttentePremLancerDe" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEAAAAAAAAAAAAAAQAEAAAAABABABAAEAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\AttentePremLancerDe.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bateau" Collapsed="true">
+    <Position X="10.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAKAAAIAAIAAAAAQAAAIAAAAABAAAAAAAEAAARAAI=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\Bateau.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Caravelle" Collapsed="true">
+    <Position X="10.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\Caravelle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Case" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAIAAAAAAAAAAAAAAIAgEAAAAAAgAAAYAAgAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\Case.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CaseBordurePlateau" Collapsed="true">
+    <Position X="7.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACAAAAgAAAAIAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\CaseBordurePlateau.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CaseCanonNoir" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\CaseCanonNoir.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CaseContourIle" Collapsed="true">
+    <Position X="4" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\CaseContourIle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CaseIle" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\CaseIle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CaseNavigable" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAQAAAQAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\CaseNavigable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasePort" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAgIAAIAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\CasePort.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CaseTresor" Collapsed="true">
+    <Position X="5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\CaseTresor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Duel" Collapsed="true">
+    <Position X="26.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\Duel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="De" Collapsed="true">
+    <Position X="37.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAACAABAADAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\Dé.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Etat" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\Etat.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EtatCanonFin" Collapsed="true">
+    <Position X="33.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\EtatCanonFin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EtatDepot" Collapsed="true">
+    <Position X="17.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\EtatDepot.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EtatFinPartie" Collapsed="true">
+    <Position X="22" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\EtatFinPartie.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EtatTir" Collapsed="true">
+    <Position X="31" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAEAAgBAAAAAAIAAAAAAABQAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\EtatTir.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EtatTresor" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\EtatTresor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Facade" Collapsed="true">
+    <Position X="39.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAENGCIEAEPCpAkJAJXCEBAABBAkiDWimQEbHQZQAM=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\Facade.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FenetreInit" Collapsed="true">
+    <Position X="35.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AggAAAAAEAAAAAAAAAAAAAAAARAAQAAAABAAAAAAAAQ=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\FenetreInit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FenetreTir" Collapsed="true">
+    <Position X="37.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAEAAAAAAABAAABAAAEAAAAABAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\FenetreTir.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fregate" Collapsed="true">
+    <Position X="13" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\Fregate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Joueur" Collapsed="true">
+    <Position X="39.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACQQAAAAAAABAIAAAAgAAAAIAQAAAAAIQCABAEAEAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\Joueur.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MoteurJeu" Collapsed="true">
+    <Position X="35.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAwAEQAAAAAACBABAEIAAAEgAjAKBAAAIAAAQAAEA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\MoteurJeu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plateau" Collapsed="true">
+    <Position X="37.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAAAAAEAAEAAAAAAAAAAAAAgACAAAAAAAAAABA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\Plateau.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProposeDeplacement" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\ProposeDeplacement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Radeau" Collapsed="true">
+    <Position X="8.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\Radeau.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="enumEtat" Collapsed="true">
+    <Position X="35.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAQAAQAAABAAoAgAAOAACAABACAAAAgAAAEACA=</HashCode>
+      <FileName>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers\enum.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
