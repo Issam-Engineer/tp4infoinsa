@@ -7,6 +7,7 @@
 */
 
 #include "ProposeDeplacement.h"
+#include "Joueur.h"
 
 void ProposeDeplacement::execute(){
 
@@ -66,17 +67,45 @@ void ProposeDeplacement::execute(){
 		motor.getFacade()->sety4(0);
 	}
 	//Proposition 5 : déplacement diagonale haute-gauche
-	int x5;
 	int y5;
+	int x5;
+	if( ((x5=x-_valeurDe)>0) && ((y5=y-_valeurDe)>0) ){
+		motor.getFacade()->setx5(x5);
+		motor.getFacade()->sety5(y5);
+	}else{
+		motor.getFacade()->setx5(0);
+		motor.getFacade()->sety5(0);
+	}
 	//Proposition 6 : déplacement diagonale haute-droite
 	int x6;
 	int y6;
+	if( ((x6=x+_valeurDe)<11) && ((y6=y-_valeurDe)>0) ){
+		motor.getFacade()->setx6(x6);
+		motor.getFacade()->sety6(y6);
+	}else{
+		motor.getFacade()->setx6(0);
+		motor.getFacade()->sety6(0);
+	}
 	//Proposition 7 : déplacement diagonale bas-droite
-	int x7;
 	int y7;
+	int x7;
+	if( ((x7=x+_valeurDe)<11) && ((y7=y+_valeurDe)<8) ){
+		motor.getFacade()->setx7(x7);
+		motor.getFacade()->sety7(y7);
+	}else{
+		motor.getFacade()->setx7(0);
+		motor.getFacade()->sety7(0);
+	}
 	//Proposition 8 : déplacement diagonale bas-gauche
 	int x8;
 	int y8;
+	if( ((x8=x-_valeurDe)>0) && ((y8=y+_valeurDe)<8) ){
+		motor.getFacade()->setx8(x8);
+		motor.getFacade()->sety8(y8);
+	}else{
+		motor.getFacade()->setx8(0);
+		motor.getFacade()->sety8(0);
+	}
 
 
 }
