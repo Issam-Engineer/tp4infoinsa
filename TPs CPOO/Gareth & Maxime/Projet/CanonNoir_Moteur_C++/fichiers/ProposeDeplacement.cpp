@@ -33,6 +33,14 @@ void ProposeDeplacement::execute(){
 	//Proposition 1 : déplacement vers la gauche
 	int x1;
 	if( (x1=x-_valeurDe) > 0 ){
+		
+		/*
+		bool accessible=true;
+		for(int i=0;i<=_valeurDe;i++){
+			Case caseTemp = motor.getPlateau()->getCase(make_pair(x1,x-i));
+			accessible = accessible && caseTemp.accessible();
+		}
+		*/
 		motor.getFacade()->setx1(x1);
 		motor.getFacade()->sety1(y);
 	}else{
