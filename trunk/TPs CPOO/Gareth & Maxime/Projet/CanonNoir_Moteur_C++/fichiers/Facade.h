@@ -41,6 +41,23 @@ class Facade
 		int _clicX;
 		int _clicY;
 
+		int _x1;
+		int _x2;
+		int _x3;
+		int _x4;
+		int _x5;
+		int _x6;
+		int _x7;
+		int _x8;
+		int _y1;
+		int _y2;
+		int _y3;
+		int _y4;
+		int _y5;
+		int _y6;
+		int _y7;
+		int _y8;
+
 		//à traiter
 		/*pair<int,int> _posBateau; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF*/
 		bool _getNewPos;
@@ -57,8 +74,6 @@ class Facade
 		bool _afficherAttaqué;
 		bool _afficherAttanquant;
 		bool _bateauSelect;
-		/*pair<int,int>* _casesProposees; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
-		Bateau* _tabBateau; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF*/
 		bool _fenetreInit;
 		bool _fenetreTir;
 
@@ -192,11 +207,171 @@ class Facade
 		*\brief function which change the value of the boolean _afficherDe2
 		*/
 		void setX(int u);
-			/**
+		/**
 		*\fn void setY(int u)
 		*\brief function which change the value of the boolean _afficherDe2
 		*/
 		void setY(int u);
+		/**
+		*\fn int getx1()
+		*\brief acces function
+		*/
+		int getx1();
+		/**
+		*\fn int getx2()
+		*\brief acces function
+		*/
+		int getx2();
+		/**
+		*\fn int getx3()
+		*\brief acces function
+		*/
+		int getx3();
+		/**
+		*\fn int getx4()
+		*\brief acces function
+		*/
+		int getx4();
+		/**
+		*\fn int getx5()
+		*\brief acces function
+		*/
+		int getx5();
+		/**
+		*\fn int getx6()
+		*\brief acces function
+		*/
+		int getx6();
+		/**
+		*\fn int getx7()
+		*\brief acces function
+		*/
+		int getx7();
+		/**
+		*\fn int getx8()
+		*\brief acces function
+		*/
+		int getx8();
+		/**
+		*\fn int gety1()
+		*\brief acces function
+		*/
+		int gety1();
+		/**
+		*\fn int gety2()
+		*\brief acces function
+		*/
+		int gety2();
+		/**
+		*\fn int gety3()
+		*\brief acces function
+		*/
+		int gety3();
+		/**
+		*\fn int gety4()
+		*\brief acces function
+		*/
+		int gety4();
+		/**
+		*\fn int gety5()
+		*\brief acces function
+		*/
+		int gety5();
+		/**
+		*\fn int gety6()
+		*\brief acces function
+		*/
+		int gety6();
+		/**
+		*\fn int gety7()
+		*\brief acces function
+		*/
+		int gety7();
+		/**
+		*\fn int gety8()
+		*\brief acces function
+		*/
+		int gety8();
+		/**
+		*\fn void setx1(int i)
+		*\brief function which change the value of the int _x1
+		*/
+		void setx1(int i);
+		/**
+		*\fn void setx2(int i)
+		*\brief function which change the value of the int _x2
+		*/
+		void setx2(int i);
+		/**
+		*\fn void setx3(int i)
+		*\brief function which change the value of the int _x3
+		*/
+		void setx3(int i);
+		/**
+		*\fn void setx4(int i)
+		*\brief function which change the value of the int _x4
+		*/
+		void setx4(int i);
+		/**
+		*\fn void setx5(int i)
+		*\brief function which change the value of the int _x5
+		*/
+		void setx5(int i);
+		/**
+		*\fn void setx6(int i)
+		*\brief function which change the value of the int _x6
+		*/
+		void setx6(int i);
+		/**
+		*\fn void setx7(int i)
+		*\brief function which change the value of the int _x7
+		*/
+		void setx7(int i);
+		/**
+		*\fn void setx8(int i)
+		*\brief function which change the value of the int _x8
+		*/
+		void setx8(int i);
+		/**
+		*\fn void sety1(int i)
+		*\brief function which change the value of the int _y1
+		*/
+		void sety1(int i);
+		/**
+		*\fn void sety2(int i)
+		*\brief function which change the value of the int _y2
+		*/
+		void sety2(int i);
+		/**
+		*\fn void sety3(int i)
+		*\brief function which change the value of the int _y3
+		*/
+		void sety3(int i);
+		/**
+		*\fn void sety4(int i)
+		*\brief function which change the value of the int _y4
+		*/
+		void sety4(int i);
+		/**
+		*\fn void sety5(int i)
+		*\brief function which change the value of the int _y5
+		*/
+		void sety5(int i);
+		/**
+		*\fn void sety6(int i)
+		*\brief function which change the value of the int _y6
+		*/
+		void sety6(int i);
+		/**
+		*\fn void sety7(int i)
+		*\brief function which change the value of the int _y7
+		*/
+		void sety7(int i);
+		/**
+		*\fn void sety8(int i)
+		*\brief function which change the value of the int _y8
+		*/
+		void sety8(int i);
 
 		//à traiter
 		void activeClicDepart();
@@ -214,9 +389,7 @@ class Facade
 		void desactiverClicRefuserDuel();
 		void afficherAttaquant();
 		void afficherAttaqué();
-		/*void clicCase(pair<int,int>); 
-		void afficherCasesProposees(pair<int,int>[]);
-		pair<int,int> afficherCasesProposees();*/
+		/*void clicCase(pair<int,int>);*/
 		void ouvrirFenetreInit();
 		void fermerFenetreInit();
 		void ouvrirFenetreTir();
@@ -232,5 +405,21 @@ inline bool Facade::getChoixDe2(){return _choixDe2;}
 inline bool Facade::getChoix2De(){return _choix2De;}
 inline int Facade::getX(){return _clicX;}
 inline int Facade::getY(){return _clicY;}
+inline int Facade::getx1(){return _x1;}
+inline int Facade::getx2(){return _x2;}
+inline int Facade::getx3(){return _x3;}
+inline int Facade::getx4(){return _x4;}
+inline int Facade::getx5(){return _x5;}
+inline int Facade::getx6(){return _x6;}
+inline int Facade::getx7(){return _x7;}
+inline int Facade::getx8(){return _x8;}
+inline int Facade::gety1(){return _y1;}
+inline int Facade::gety2(){return _y2;}
+inline int Facade::gety3(){return _y3;}
+inline int Facade::gety4(){return _y4;}
+inline int Facade::gety5(){return _y5;}
+inline int Facade::gety6(){return _y6;}
+inline int Facade::gety7(){return _y7;}
+inline int Facade::gety8(){return _y8;}
 
 #endif

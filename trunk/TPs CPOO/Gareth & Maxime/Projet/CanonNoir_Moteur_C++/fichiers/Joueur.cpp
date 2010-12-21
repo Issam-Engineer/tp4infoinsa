@@ -7,17 +7,23 @@
 */
 
 #include "Joueur.h"
+#include "Caravelle.h"
+
 
 Joueur::Joueur(int num, CasePort* c){
 	_numero=num;
 	_cp1=c;
 	_cp2=NULL;
+	_bateau1=Caravelle();
+	_bateau1.setCourant(true);
 }
 
 Joueur::Joueur(int num, CasePort* c1, CasePort* c2){
 	_numero=num;
 	_cp1=c1;
 	_cp2=c2;
+	_bateau1=Caravelle();
+	_bateau2=Caravelle();
 }
 
 Joueur::Joueur(){
@@ -48,6 +54,16 @@ Bateau Joueur::getBateauPos(pair<int,int> p){
 	}else{
 		cerr<<"ERREUR : il n'y a pas de bateau à cette position"<<endl;
 
+	}
+	return res;
+}
+
+Bateau Joueur::getBateauCourant(){
+	Bateau res;
+	if(_bateau1.getCourant()) res=_bateau1;
+	else if(_bateau2.getCourant()) res=_bateau2;
+	else {
+		cout<<"ERREUR : ce n'est il n'y a pas de bateau courant"<<endl;
 	}
 	return res;
 }
