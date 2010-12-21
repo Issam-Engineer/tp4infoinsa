@@ -26,6 +26,7 @@ class Bateau
 		bool pTirer;
 		bool pEVise;
 		Case* pos;
+		bool _courant; // vrai si c'est le bateau courant
 
 	public :
 
@@ -37,10 +38,16 @@ class Bateau
 		virtual char type();
 
 		/**
-		*\fn Virtual void init()
-		*\brief function which allows inherited classes to initialize themselves
-		
-		virtual void init();*/
+		*\fn bool getCourant()
+		*\brief acces function
+		*\return true if the boat is the current boat of the player
+		*/
+		bool getCourant();
+		/**
+		*\fn void setCourant(bool t)
+		*\brief function which chnages the value of _courant
+		*/
+		void setCourant(bool t);
 
 		/**
 		*\fn Case getPosition()
@@ -96,5 +103,10 @@ inline bool Bateau::peutJouer2Des(){
 inline char Bateau::type(){
 	return 'E';
 }
-
+inline bool Bateau::getCourant(){
+	return _courant;
+}
+inline void Bateau::setCourant(bool t){
+	_courant=t;
+}
 #endif

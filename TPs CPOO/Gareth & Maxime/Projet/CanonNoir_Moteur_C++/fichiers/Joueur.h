@@ -75,11 +75,17 @@ class Joueur
 		*/
 		bool bateauAtPos(pair<int,int> p);
 		/**
-		*\fn Bateau Joueur::getBateauPos(pair<int,int> p)
+		*\fn Bateau getBateauPos(pair<int,int> p)
 		*\brief acces function to the boat at the given position
 		*\return the boat
 		*/
-		Bateau Joueur::getBateauPos(pair<int,int> p);
+		Bateau getBateauPos(pair<int,int> p);
+		/**
+		*\fn Bateau getBateauCourant()
+		*\brief function which permits to obtain the current boat
+		*\return Bateau the current boat
+		*/
+		Bateau getBateauCourant();
 		/**
 		*\fn void GAGNANT()
 		*\brief the Joueur is the winner

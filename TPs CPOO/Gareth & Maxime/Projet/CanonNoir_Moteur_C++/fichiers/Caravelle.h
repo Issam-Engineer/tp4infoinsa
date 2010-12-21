@@ -22,11 +22,7 @@ class Caravelle : public Bateau
 		*\return char the name of the class
 		*/
 		char type();
-		/**
-		*\fn void init()
-		*\brief Inherited function which initialises the Caravelle
-		
-		virtual void init();*/
+
 		/**
 		*\fn Caravelle()
 		*\brief Default constructor

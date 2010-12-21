@@ -13,15 +13,13 @@
 #include "Case.h"
 
 using namespace std;
-/// <remarks>
-/// execute() => affiche les possibilités de déplacement
-/// 
-/// </remarks>
+
 class ProposeDeplacement : public Etat
 {
 	public :
 
 		Case * tabCase;
+		int _valeurDe;
 
 	public :
 		/**
