@@ -6,6 +6,7 @@
 *\version 1.0
 */
 
+
 #include "ProposeDeplacement.h"
 #include "Joueur.h"
 

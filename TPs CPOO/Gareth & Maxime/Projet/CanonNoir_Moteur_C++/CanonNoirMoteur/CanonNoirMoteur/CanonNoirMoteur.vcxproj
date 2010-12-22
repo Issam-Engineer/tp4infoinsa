@@ -147,6 +147,7 @@
     <ClCompile Include="..\..\fichiers\Plateau.cpp" />
     <ClCompile Include="..\..\fichiers\ProposeDeplacement.cpp" />
     <ClCompile Include="..\..\fichiers\Radeau.cpp" />
+    <ClCompile Include="AttenteDeplacement.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
