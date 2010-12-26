@@ -5,6 +5,7 @@
 * \author Gareth THIVEUX
 * \version 1.0
 */
+#include "StdAfx.h"
 #include "AttenteLancerDe.h"
 #include "Joueur.h"
 //#include "enum.h"

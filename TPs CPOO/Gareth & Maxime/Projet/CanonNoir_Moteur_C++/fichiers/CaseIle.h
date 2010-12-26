@@ -11,6 +11,8 @@
 
 #include "Case.h"
 
+using namespace std;
+
 class __declspec(dllexport) CaseIle : public Case
 {
 	public :
