@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{356FFD44-3105-4849-8919-E26CB4F85F12}</ProjectGuid>
+    <RootNamespace>Canon_Noir_Dll</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\Canon_Noir_Dll.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\Canon_Noir_Dll.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Etat.cs" />
+    <None Include="Canon_Noir_Dll.def" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\Canon_Noir_Dll.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteCanonAngle.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteCanonPuissance.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteChoixBateau.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteChoixDe.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteInitialisation.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteLancerDe.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteNbJoueurs.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttentePremLancerDe.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Bateau.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Caravelle.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Case.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CaseBordurePlateau.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CaseCanonNoir.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CaseContourIle.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CaseIle.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CaseNavigable.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CasePort.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CaseTresor.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Dé.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Etat.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\EtatCanonFin.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\EtatTir.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Facade.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\FenetreInit.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\FenetreTir.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Fregate.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Joueur.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Main.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\MoteurJeu.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Plateau.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\ProposeDeplacement.cpp" />
+    <ClCompile Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Radeau.cpp" />
+    <ClCompile Include="Canon_Noir_Dll.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Adaptateur.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AffichageWPF.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteCanonAngle.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteCanonPuissance.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteChoixBateau.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteChoixDe.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteDeplacement.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteInitialisation.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteLancerDe.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteNbJoueurs.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttentePremLancerDe.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Bateau.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Caravelle.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Case.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CaseBordurePlateau.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CaseCanonNoir.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CaseContourIle.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CaseIle.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CaseNavigable.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CasePort.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\CaseTresor.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Duel.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Dé.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\enum.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Etat.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\EtatCanonFin.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\EtatDepot.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\EtatFinPartie.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\EtatTir.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\EtatTresor.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Facade.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\FenetreInit.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\FenetreTir.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Fregate.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Joueur.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\MoteurJeu.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Plateau.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\ProposeDeplacement.h" />
+    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Radeau.h" />
+    <ClInclude Include="Canon_Noir_Dll.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Canon_Noir_Dll.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,213 @@
+﻿La génération a démarré 26/12/2010 17:37:55.
+     1>Projet "C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\Wrapper\Canon_Noir_Dll\Canon_Noir_Dll\Canon_Noir_Dll.vcxproj" sur le nœud 2 (build cible(s)).
+     1>InitializeBuildStatus:
+         Mise à jour de l'horodatage "Debug\Canon_Noir_Dll.unsuccessfulbuild".
+       ClCompile:
+         Toutes les sorties sont à jour.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Canon_Noir_Dll.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteCanonAngle.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteCanonPuissance.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteChoixBateau.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteChoixDe.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteInitialisation.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteLancerDe.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteNbJoueurs.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\AttentePremLancerDe.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\Bateau.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\Caravelle.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\Case.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\CaseBordurePlateau.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\CaseCanonNoir.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\CaseContourIle.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\CaseIle.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\CaseNavigable.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\CasePort.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\CaseTresor.cpp "..\..\..\CanonNoir_Moteur_C++\fichiers\Dé.cpp" ..\..\..\CanonNoir_Moteur_C++\fichiers\Etat.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\EtatCanonFin.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\EtatTir.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\Facade.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\FenetreInit.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\FenetreTir.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\Fregate.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\Joueur.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\Main.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\MoteurJeu.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\Plateau.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\ProposeDeplacement.cpp ..\..\..\CanonNoir_Moteur_C++\fichiers\Radeau.cpp
+         Radeau.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\radeau.cpp(9): warning C4627: '#include "Radeau.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\radeau.cpp(19): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         ProposeDeplacement.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\proposedeplacement.cpp(10): warning C4627: '#include "ProposeDeplacement.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\proposedeplacement.cpp(11): warning C4627: '#include "Joueur.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\proposedeplacement.cpp(121): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         Plateau.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\plateau.cpp(9): warning C4627: '#include "Plateau.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\plateau.cpp(10): warning C4627: '#include "CaseBordurePlateau.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\plateau.cpp(11): warning C4627: '#include "CaseCanonNoir.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\plateau.cpp(12): warning C4627: '#include "CaseContourIle.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\plateau.cpp(13): warning C4627: '#include "CaseIle.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\plateau.cpp(14): warning C4627: '#include "CaseNavigable.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\plateau.cpp(15): warning C4627: '#include "CasePort.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\plateau.cpp(16): warning C4627: '#include "CaseTresor.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\plateau.cpp(129): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         MoteurJeu.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(9): warning C4627: '#include "MoteurJeu.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(10): warning C4627: '#include "Etat.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(11): warning C4627: '#include "AttenteNbJoueurs.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(12): warning C4627: '#include "AttenteInitialisation.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(13): warning C4627: '#include "AttentePremLancerDe.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(14): warning C4627: '#include "AttenteLancerDe.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(15): warning C4627: '#include "AttenteChoixBateau.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(16): warning C4627: '#include "ProposeDeplacement.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(17): warning C4627: '#include "AttenteDeplacement.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(18): warning C4627: '#include "Duel.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(19): warning C4627: '#include "EtatTir.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(20): warning C4627: '#include "AttenteCanonPuissance.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(21): warning C4627: '#include "AttenteCanonAngle.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(22): warning C4627: '#include "EtatCanonFin.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(23): warning C4627: '#include "EtatTresor.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(24): warning C4627: '#include "EtatDepot.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(25): warning C4627: '#include "EtatFinPartie.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(26): warning C4627: '#include "Joueur.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(27): warning C4627: '#include "Plateau.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\moteurjeu.cpp(87): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         Main.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\main.cpp(1): warning C4627: '#include "MoteurJeu.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\main.cpp(8): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         Joueur.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\joueur.cpp(9): warning C4627: '#include "Joueur.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\joueur.cpp(10): warning C4627: '#include "Caravelle.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\joueur.cpp(70): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         Fregate.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\fregate.cpp(9): warning C4627: '#include "Fregate.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\fregate.cpp(25): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         FenetreTir.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\fenetretir.cpp(9): warning C4627: '#include "FenetreTir.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\fenetretir.cpp(11): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         FenetreInit.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\fenetreinit.cpp(9): warning C4627: '#include "FenetreInit.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\fenetreinit.cpp(11): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         Facade.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\facade.cpp(9): warning C4627: '#include "Facade.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\facade.cpp(10): warning C4627: '#include "MoteurJeu.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\facade.cpp(137): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         EtatTir.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\etattir.cpp(9): warning C4627: '#include "EtatTir.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\etattir.cpp(10): warning C4627: '#include "FenetreTir.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\etattir.cpp(20): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         EtatCanonFin.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\etatcanonfin.cpp(9): warning C4627: '#include "EtatCanonFin.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\etatcanonfin.cpp(14): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         Etat.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\etat.cpp(9): warning C4627: '#include "Etat.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\etat.cpp(14): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         Dé.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\dé.cpp(9): warning C4627: '#include "Dé.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\dé.cpp(17): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         CaseTresor.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\casetresor.cpp(9): warning C4627: '#include "CaseTresor.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\casetresor.cpp(15): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         CasePort.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\caseport.cpp(9): warning C4627: '#include "CasePort.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\caseport.cpp(16): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         CaseNavigable.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\casenavigable.cpp(9): warning C4627: '#include "CaseNavigable.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\casenavigable.cpp(15): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         CaseIle.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\caseile.cpp(9): warning C4627: '#include "CaseIle.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\caseile.cpp(15): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         CaseContourIle.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\casecontourile.cpp(9): warning C4627: '#include "CaseContourIle.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\casecontourile.cpp(15): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         CaseCanonNoir.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\casecanonnoir.cpp(9): warning C4627: '#include "CaseCanonNoir.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\casecanonnoir.cpp(24): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         Génération de code en cours...
+         Compilation en cours...
+         CaseBordurePlateau.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\casebordureplateau.cpp(9): warning C4627: '#include "CaseBordurePlateau.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\casebordureplateau.cpp(15): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         Case.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.cpp(9): warning C4627: '#include "Case.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.cpp(21): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         Caravelle.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\caravelle.cpp(9): warning C4627: '#include "Caravelle.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\caravelle.cpp(26): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         Bateau.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\bateau.cpp(9): warning C4627: '#include "Bateau.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\bateau.cpp(14): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         AttentePremLancerDe.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentepremlancerde.cpp(9): warning C4627: '#include "AttentePremLancerDe.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentepremlancerde.cpp(10): warning C4627: '#include "Joueur.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentepremlancerde.cpp(63): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         AttenteNbJoueurs.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentenbjoueurs.cpp(9): warning C4627: '#include "AttenteNbJoueurs.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentenbjoueurs.cpp(20): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         AttenteLancerDe.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentelancerde.cpp(8): warning C4627: '#include "AttenteLancerDe.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentelancerde.cpp(9): warning C4627: '#include "Joueur.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentelancerde.cpp(35): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         AttenteInitialisation.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attenteinitialisation.cpp(9): warning C4627: '#include "AttenteInitialisation.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attenteinitialisation.cpp(10): warning C4627: '#include "AttentePremLancerDe.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attenteinitialisation.cpp(11): warning C4627: '#include "Joueur.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attenteinitialisation.cpp(12): warning C4627: '#include "Plateau.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attenteinitialisation.cpp(50): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         AttenteChoixDe.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentechoixde.cpp(9): warning C4627: '#include "AttenteChoixDe.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentechoixde.cpp(18): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         AttenteChoixBateau.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentechoixbateau.cpp(9): warning C4627: '#include "AttenteChoixBateau.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentechoixbateau.cpp(10): warning C4627: '#include "Joueur.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentechoixbateau.cpp(66): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         AttenteCanonPuissance.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentecanonpuissance.cpp(9): warning C4627: '#include "AttenteCanonPuissance.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentecanonpuissance.cpp(14): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         AttenteCanonAngle.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentecanonangle.cpp(9): warning C4627: '#include "AttenteCanonAngle.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'StdAfx.h' ou régénérez l'en-tête précompilé
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\attentecanonangle.cpp(17): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "StdAfx.h"' à votre source ?
+         Génération de code en cours...
+     1>Génération du projet "C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\Wrapper\Canon_Noir_Dll\Canon_Noir_Dll\Canon_Noir_Dll.vcxproj" terminée (build cible(s)) -- ÉCHEC.
+
+ÉCHEC de la build.
+
+Temps écoulé 00:00:00.38
