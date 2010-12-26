@@ -35,4 +35,7 @@ public:
 	
 };
 
+inline void Etat::execute(){
+	//NE FAIS RIEN (on est obligé de mettre la définir pour l'édition des liens)
+}
 #endif
