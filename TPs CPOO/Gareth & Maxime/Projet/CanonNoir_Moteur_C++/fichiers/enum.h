@@ -6,7 +6,7 @@
 *\version 1.0
 */
 
-enum enumEtat {
+enum __declspec(dllexport) enumEtat {
 	ATTENTENBJOUEURS = 0,
 	ATTENTEINITIALISATION = 1,
 	ATTENTEPREMLANCERDE = 2,

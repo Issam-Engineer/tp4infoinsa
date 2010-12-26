@@ -11,7 +11,7 @@
 
 #include "Case.h"
 
-class CasePort : public Case
+class __declspec(dllexport) CasePort : public Case
 {
 	private :
 

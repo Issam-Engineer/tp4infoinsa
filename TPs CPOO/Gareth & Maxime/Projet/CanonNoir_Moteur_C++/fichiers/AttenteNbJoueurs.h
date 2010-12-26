@@ -11,7 +11,7 @@
 
 #include "Etat.h"
 
-class AttenteNbJoueurs : public Etat
+class __declspec(dllexport) AttenteNbJoueurs : public Etat
 {
 
 	public :

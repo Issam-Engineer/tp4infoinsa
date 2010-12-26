@@ -10,9 +10,6 @@
 #include "MoteurJeu.h"
 
 
-void Facade::initNbJoueurs(int n){
-	_nb_Joueurs=n;
-}
 
 void Facade::execute(){
 	_moteur->execute();

@@ -12,7 +12,7 @@
 #include "MoteurJeu.h"
 #include "Etat.h"
 
-class AttentePremLancerDe : public Etat
+class __declspec(dllexport) AttentePremLancerDe : public Etat
 {
 
 	public :

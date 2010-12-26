@@ -11,7 +11,7 @@
 
 #include "EtatTir.h"
 
-class AttenteCanonPuissance : public EtatTir
+class __declspec(dllexport) AttenteCanonPuissance : public EtatTir
 {
 	
 	public :

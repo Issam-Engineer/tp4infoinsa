@@ -11,7 +11,7 @@
 
 #include "CaseNavigable.h"
 
-class CaseBordurePlateau : public CaseNavigable
+class __declspec(dllexport) CaseBordurePlateau : public CaseNavigable
 {
 
 	public :

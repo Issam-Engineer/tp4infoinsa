@@ -11,7 +11,7 @@
 
 #include "Case.h"
 
-class CaseNavigable : public Case
+class __declspec(dllexport) CaseNavigable : public Case
 {
 	private :
 

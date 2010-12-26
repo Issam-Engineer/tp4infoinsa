@@ -17,7 +17,7 @@
 class MoteurJeu;
 class Joueur;
 
-class Facade
+class __declspec(dllexport) Facade
 {
 
 	public :
@@ -421,5 +421,6 @@ inline int Facade::gety5(){return _y5;}
 inline int Facade::gety6(){return _y6;}
 inline int Facade::gety7(){return _y7;}
 inline int Facade::gety8(){return _y8;}
+
 
 #endif

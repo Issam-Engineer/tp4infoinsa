@@ -16,7 +16,7 @@
 
 using namespace std;
 
-class Bateau
+class __declspec(dllexport) Bateau
 {
 
 	protected :

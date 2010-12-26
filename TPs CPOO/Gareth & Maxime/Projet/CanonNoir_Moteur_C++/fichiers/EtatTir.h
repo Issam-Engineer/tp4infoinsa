@@ -12,7 +12,7 @@
 #include "Etat.h"
 #include "MoteurJeu.h"
 
-class EtatTir : public Etat
+class __declspec(dllexport) EtatTir : public Etat
 {
 
 	protected :

@@ -11,7 +11,7 @@
 
 #include "Case.h"
 
-class CaseIle : public Case
+class __declspec(dllexport) CaseIle : public Case
 {
 	public :
 

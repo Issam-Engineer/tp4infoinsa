@@ -9,7 +9,7 @@
 #ifndef AFFICHAGEWPF_H
 #define AFFICHAGEWPF_H
 
-class AffichageWPF
+class __declspec(dllexport) AffichageWPF
 {
 
 

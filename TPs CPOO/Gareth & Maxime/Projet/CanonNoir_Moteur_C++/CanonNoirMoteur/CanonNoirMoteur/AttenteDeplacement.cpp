@@ -9,7 +9,7 @@
 
 void AttenteDeplacement::execute(){
 	//vérifier qu'il a cliqué sur une case correcte
-
+	
 	//modifier les valeur : positBateau... et faire un case.getState()
 
 }

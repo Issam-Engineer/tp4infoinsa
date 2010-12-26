@@ -9,7 +9,7 @@
 #ifndef FENETREINIT_H
 #define FENETREINIT_H
 
-class FenetreInit
+class __declspec(dllexport) FenetreInit
 {
 
 	public :
