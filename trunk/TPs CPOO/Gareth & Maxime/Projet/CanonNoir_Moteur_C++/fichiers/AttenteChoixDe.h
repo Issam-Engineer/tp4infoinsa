@@ -12,7 +12,7 @@
 #include "Etat.h"
 
 
-class AttenteChoixDe : public Etat
+class __declspec(dllexport) AttenteChoixDe : public Etat
 {
 
 	public :

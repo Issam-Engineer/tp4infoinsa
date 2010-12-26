@@ -12,16 +12,23 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+//INCLURE LE WRAPPER
+//using WpfFacade;
+
 namespace CanonNoir_Affichage
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
     /// </summary>
+    /// 
+    //INITIALISER LE WRAPPER
+    //WrapperFacade facade;
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            //facade = new WrapperFacade();
         }
 
         private void SourisDown(object sender, MouseButtonEventArgs e)

@@ -12,7 +12,7 @@
 #include "Etat.h"
 #include "MoteurJeu.h"
 
-class Duel : public Etat
+class __declspec(dllexport) Duel : public Etat
 {
 	private :
 

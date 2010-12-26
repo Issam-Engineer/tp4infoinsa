@@ -11,7 +11,7 @@
 
 #include "EtatTir.h" 
 
-class AttenteCanonAngle : public EtatTir
+class  __declspec(dllexport) AttenteCanonAngle : public EtatTir
 {
 
 	public :

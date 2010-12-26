@@ -16,7 +16,7 @@
 
 using namespace std;
 
-class Plateau
+class __declspec(dllexport) Plateau
 {
 	private :
 

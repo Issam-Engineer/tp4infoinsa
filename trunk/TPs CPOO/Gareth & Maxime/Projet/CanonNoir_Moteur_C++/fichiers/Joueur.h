@@ -17,7 +17,7 @@
 using namespace std;
 class CasePort;
 
-class Joueur
+class __declspec(dllexport) Joueur
 {
 
 	public :

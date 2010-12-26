@@ -10,7 +10,7 @@
 #define ADAPTATEUR_H
 
 /// <remarks>réalisé par le wrapper</remarks>
-class Adaptateur
+class __declspec(dllexport) Adaptateur
 {
 	private :
 

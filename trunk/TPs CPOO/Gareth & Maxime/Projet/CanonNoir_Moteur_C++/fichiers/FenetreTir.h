@@ -9,21 +9,9 @@
 #ifndef FENETRETIR_H
 #define FENETRETIR_H
 
-class FenetreTir
+class __declspec(dllexport) FenetreTir
 {
-	private :
 
-
-	protected :
-
-
-	public :
-
-
-	private :
-
-
-	protected :
 
 
 	public :

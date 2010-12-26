@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-class De
+class __declspec(dllexport) De
 {
 	private :
 

@@ -14,7 +14,7 @@
 
 using namespace std;
 
-class ProposeDeplacement : public Etat
+class __declspec(dllexport) ProposeDeplacement : public Etat
 {
 	public :
 

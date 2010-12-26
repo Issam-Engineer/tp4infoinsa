@@ -17,7 +17,7 @@ class Plateau;
 class Etat;
 class Joueur;
 
-class MoteurJeu
+class __declspec(dllexport) MoteurJeu
 {
 	private :
 
