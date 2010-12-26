@@ -17,3 +17,12 @@ void EtatTir::execute(){
 		new FenetreTir();
 	}
 }
+
+void EtatTir::tirCanon(){
+	//A DEFINIR 
+}
+
+void EtatTir::init(int p,int a){
+	puissance=p;
+	angle=a;
+}
