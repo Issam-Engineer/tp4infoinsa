@@ -5,7 +5,7 @@
 * \author Gareth THIVEUX
 * \version 1.0
 */
-
+#include "StdAfx.h"
 #include "Bateau.h"
 
 void Bateau::positionner(Case* p){

@@ -5,7 +5,7 @@
 * \author Gareth THIVEUX
 * \version 1.0
 */
-
+#include "StdAfx.h"
 #include "Plateau.h"
 #include "CaseBordurePlateau.h"
 #include "CaseCanonNoir.h"
