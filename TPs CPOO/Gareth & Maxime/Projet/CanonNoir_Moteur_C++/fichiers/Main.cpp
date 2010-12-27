@@ -1,4 +1,4 @@
-#include "StdAfx.h"
+//#include "StdAfx.h"
 #include "MoteurJeu.h"
 #include <stdio.h>
 

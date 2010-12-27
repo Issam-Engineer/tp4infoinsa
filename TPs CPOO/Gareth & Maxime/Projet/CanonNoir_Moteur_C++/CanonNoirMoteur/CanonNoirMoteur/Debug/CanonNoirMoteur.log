@@ -1,14 +1,184 @@
-﻿La génération a démarré 21/12/2010 11:17:52.
-     1>Projet "C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\CanonNoirMoteur\CanonNoirMoteur.vcxproj" sur le nœud 2 (build cible(s)).
+﻿La génération a démarré 27/12/2010 20:43:04.
+     1>Projet "C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\CanonNoirMoteur\CanonNoirMoteur.vcxproj" sur le nœud 2 (build cible(s)).
      1>InitializeBuildStatus:
          Mise à jour de l'horodatage "Debug\CanonNoirMoteur.unsuccessfulbuild".
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /I"D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\fichiers\ProposeDeplacement.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /I"D:\Users\Gareth\Desktop\4INFO\SVN TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\fichiers" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\fichiers\AttenteCanonAngle.cpp ..\..\fichiers\AttenteCanonPuissance.cpp ..\..\fichiers\AttenteChoixBateau.cpp ..\..\fichiers\AttenteChoixDe.cpp ..\..\fichiers\AttenteInitialisation.cpp ..\..\fichiers\AttenteLancerDe.cpp ..\..\fichiers\AttenteNbJoueurs.cpp ..\..\fichiers\AttentePremLancerDe.cpp ..\..\fichiers\Bateau.cpp ..\..\fichiers\Caravelle.cpp ..\..\fichiers\Case.cpp ..\..\fichiers\CaseBordurePlateau.cpp ..\..\fichiers\CaseCanonNoir.cpp ..\..\fichiers\CaseContourIle.cpp ..\..\fichiers\CaseIle.cpp ..\..\fichiers\CaseNavigable.cpp ..\..\fichiers\CasePort.cpp ..\..\fichiers\CaseTresor.cpp "..\..\fichiers\Dé.cpp" ..\..\fichiers\Etat.cpp ..\..\fichiers\EtatCanonFin.cpp ..\..\fichiers\EtatTir.cpp ..\..\fichiers\Facade.cpp ..\..\fichiers\FenetreInit.cpp ..\..\fichiers\FenetreTir.cpp ..\..\fichiers\Fregate.cpp ..\..\fichiers\Joueur.cpp ..\..\fichiers\Main.cpp ..\..\fichiers\MoteurJeu.cpp ..\..\fichiers\Plateau.cpp ..\..\fichiers\ProposeDeplacement.cpp ..\..\fichiers\Radeau.cpp
+         Radeau.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
          ProposeDeplacement.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         Plateau.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\plateau.h(25): warning C4251: 'Plateau::_tabCase' : class 'std::vector<_Ty>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Plateau'
+                 with
+                 [
+                     _Ty=Case *
+                 ]
+         MoteurJeu.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\plateau.h(25): warning C4251: 'Plateau::_tabCase' : class 'std::vector<_Ty>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Plateau'
+                 with
+                 [
+                     _Ty=Case *
+                 ]
+         Main.cpp
+         Joueur.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         Fregate.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         FenetreTir.cpp
+         FenetreInit.cpp
+         Facade.cpp
+         EtatTir.cpp
+         EtatCanonFin.cpp
+         Etat.cpp
+         Dé.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\dé.cpp(13): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+         CaseTresor.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         CasePort.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         CaseNavigable.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         CaseIle.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         CaseContourIle.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         CaseCanonNoir.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         Génération de code en cours...
+         Compilation en cours...
+         CaseBordurePlateau.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         Case.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         Caravelle.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         Bateau.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         AttentePremLancerDe.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         AttenteNbJoueurs.cpp
+         AttenteLancerDe.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         AttenteInitialisation.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\plateau.h(25): warning C4251: 'Plateau::_tabCase' : class 'std::vector<_Ty>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Plateau'
+                 with
+                 [
+                     _Ty=Case *
+                 ]
+         AttenteChoixDe.cpp
+         AttenteChoixBateau.cpp
+     1>c:\users\max\desktop\tp 4info\tps cpoo\gareth & maxime\projet\canonnoir_moteur_c++\fichiers\case.h(26): warning C4251: 'Case::_position' : struct 'std::pair<_Ty1,_Ty2>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'Case'
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int
+                 ]
+         AttenteCanonPuissance.cpp
+         AttenteCanonAngle.cpp
+         Génération de code en cours...
        ManifestResourceCompile:
          Toutes les sorties sont à jour.
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CanonNoirMoteur.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.lib" /MACHINE:X86 Debug\CanonNoirMoteur.exe.embed.manifest.res
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CanonNoirMoteur.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.lib" /MACHINE:X86 Debug\CanonNoirMoteur.exe.embed.manifest.res
          Debug\AttenteCanonAngle.obj
          Debug\AttenteCanonPuissance.obj
          Debug\AttenteChoixBateau.obj
@@ -41,25 +211,42 @@
          Debug\Plateau.obj
          Debug\ProposeDeplacement.obj
          Debug\Radeau.obj
-     1>AttentePremLancerDe.obj : error LNK2001: symbole externe non résolu "public: static int AttentePremLancerDe::nbLance" (?nbLance@AttentePremLancerDe@@2HA)
+         Debug\AttenteDeplacement.obj
+            Création de la bibliothèque C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.lib et de l'objet C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.exp
+     1>AttenteInitialisation.obj : error LNK2001: symbole externe non résolu "public: static int * AttentePremLancerDe::resDe" (?resDe@AttentePremLancerDe@@2PAHA)
      1>AttentePremLancerDe.obj : error LNK2001: symbole externe non résolu "public: static int * AttentePremLancerDe::resDe" (?resDe@AttentePremLancerDe@@2PAHA)
+     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: static int * AttentePremLancerDe::resDe" (?resDe@AttentePremLancerDe@@2PAHA)
+     1>AttenteInitialisation.obj : error LNK2001: symbole externe non résolu "public: static int AttentePremLancerDe::nbLance" (?nbLance@AttentePremLancerDe@@2HA)
+     1>AttentePremLancerDe.obj : error LNK2019: symbole externe non résolu "public: static int AttentePremLancerDe::nbLance" (?nbLance@AttentePremLancerDe@@2HA) référencé dans la fonction "public: __thiscall Case::Case(class Case const &)" (??0Case@@QAE@ABV0@@Z)
+     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: static int AttentePremLancerDe::nbLance" (?nbLance@AttentePremLancerDe@@2HA)
      1>EtatTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::champPuissance(void)" (?champPuissance@FenetreTir@@UAEXXZ)
+     1>FenetreTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::champPuissance(void)" (?champPuissance@FenetreTir@@UAEXXZ)
      1>EtatTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::champAngle(void)" (?champAngle@FenetreTir@@UAEXXZ)
+     1>FenetreTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::champAngle(void)" (?champAngle@FenetreTir@@UAEXXZ)
      1>EtatTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::fermerFenetre(void)" (?fermerFenetre@FenetreTir@@UAEXXZ)
+     1>FenetreTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::fermerFenetre(void)" (?fermerFenetre@FenetreTir@@UAEXXZ)
      1>EtatTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::clicTir(void)" (?clicTir@FenetreTir@@UAEXXZ)
+     1>FenetreTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::clicTir(void)" (?clicTir@FenetreTir@@UAEXXZ)
      1>EtatTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::rafraichir(void)" (?rafraichir@FenetreTir@@UAEXXZ)
+     1>FenetreTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::rafraichir(void)" (?rafraichir@FenetreTir@@UAEXXZ)
      1>EtatTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::clicRefuserDuel(void)" (?clicRefuserDuel@FenetreTir@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2019: symbole externe non résolu "public: __thiscall EtatDepot::EtatDepot(void)" (??0EtatDepot@@QAE@XZ) référencé dans la fonction "public: __thiscall MoteurJeu::MoteurJeu(void)" (??0MoteurJeu@@QAE@XZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall AttenteDeplacement::execute(void)" (?execute@AttenteDeplacement@@UAEXXZ)
+     1>FenetreTir.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreTir::clicRefuserDuel(void)" (?clicRefuserDuel@FenetreTir@@UAEXXZ)
+     1>FenetreInit.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreInit::clicNbJoueurs2(void)" (?clicNbJoueurs2@FenetreInit@@UAEXXZ)
+     1>FenetreInit.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreInit::clicNbJoueurs4(void)" (?clicNbJoueurs4@FenetreInit@@UAEXXZ)
+     1>FenetreInit.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreInit::clicInit(void)" (?clicInit@FenetreInit@@UAEXXZ)
+     1>FenetreInit.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreInit::fermerFenetre(void)" (?fermerFenetre@FenetreInit@@UAEXXZ)
+     1>FenetreInit.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreInit::champNom(void)" (?champNom@FenetreInit@@UAEXXZ)
+     1>FenetreInit.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreInit::champCouleur(void)" (?champCouleur@FenetreInit@@UAEXXZ)
+     1>FenetreInit.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreInit::rafraichir(void)" (?rafraichir@FenetreInit@@UAEXXZ)
+     1>FenetreInit.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall FenetreInit::clicNbJoueurs3(void)" (?clicNbJoueurs3@FenetreInit@@UAEXXZ)
      1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Duel::execute(void)" (?execute@Duel@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatTir::tirCanon(void)" (?tirCanon@EtatTir@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatTir::init(int,int)" (?init@EtatTir@@UAEXHH@Z)
      1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatTresor::execute(void)" (?execute@EtatTresor@@UAEXXZ)
+     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatDepot::execute(void)" (?execute@EtatDepot@@UAEXXZ)
      1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall EtatFinPartie::execute(void)" (?execute@EtatFinPartie@@UAEXXZ)
-     1>MoteurJeu.obj : error LNK2001: symbole externe non résolu "public: virtual void __thiscall Etat::execute(void)" (?execute@Etat@@UAEXXZ)
-     1>C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.exe : fatal error LNK1120: 16 externes non résolus
-     1>Génération du projet "C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\CanonNoirMoteur\CanonNoirMoteur.vcxproj" terminée (build cible(s)) -- ÉCHEC.
+     1>MoteurJeu.obj : error LNK2019: symbole externe non résolu "public: __thiscall EtatDepot::EtatDepot(void)" (??0EtatDepot@@QAE@XZ) référencé dans la fonction "public: __thiscall MoteurJeu::MoteurJeu(void)" (??0MoteurJeu@@QAE@XZ)
+     1>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoirMoteur.exe : fatal error LNK1120: 21 externes non résolus
+     1>Génération du projet "C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\CanonNoirMoteur\CanonNoirMoteur.vcxproj" terminée (build cible(s)) -- ÉCHEC.
 
 ÉCHEC de la build.
 
-Temps écoulé 00:00:01.13
+Temps écoulé 00:00:40.31
