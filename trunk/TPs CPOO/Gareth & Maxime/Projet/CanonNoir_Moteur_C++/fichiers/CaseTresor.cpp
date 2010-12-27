@@ -5,7 +5,7 @@
 *\author Thiveux Gareth
 *\version 1.0
 */
-#include "StdAfx.h"
+//#include "StdAfx.h"
 #include "CaseTresor.h"
 
 CaseTresor::CaseTresor(){
