@@ -129,6 +129,9 @@
     <ClInclude Include="..\..\fichiers\AttenteChoixDe.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\fichiers\AttenteChoixBateauVise.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\fichiers\Radeau.cpp">
@@ -228,6 +231,9 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="AttenteDeplacement.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fichiers\AttenteChoixBateauVise.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
