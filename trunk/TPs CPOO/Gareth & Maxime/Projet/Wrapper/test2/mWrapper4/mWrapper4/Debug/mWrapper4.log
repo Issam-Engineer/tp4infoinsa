@@ -1,0 +1,31 @@
+﻿La génération a démarré 30/12/2010 22:40:46.
+     1>Projet "C:\Users\Max\Desktop\test\mWrapper4\mWrapper4\mWrapper4.vcxproj" sur le nœud 2 (build cible(s)).
+     1>InitializeBuildStatus:
+         Mise à jour de l'horodatage "Debug\mWrapper4.unsuccessfulbuild".
+       GenerateTargetFrameworkMonikerAttribute:
+       La cible est ignorée "GenerateTargetFrameworkMonikerAttribute", car tous les fichiers de sortie sont à jour par rapport aux fichiers d'entrée.
+       ClCompile:
+         Toutes les sorties sont à jour.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\mWrapper4.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt mWrapper4.cpp /clr:nostdlib 
+         mWrapper4.cpp
+         Toutes les sorties sont à jour.
+       ResourceCompile:
+         Toutes les sorties sont à jour.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Max\Desktop\test\mWrapper4\Debug\mWrapper4.dll" /INCREMENTAL /NOLOGO ProjetTest.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\mWrapper4.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Max\Desktop\test\mWrapper4\Debug\mWrapper4.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Debug\app.res
+         Debug\AssemblyInfo.obj
+         Debug\mWrapper4.obj
+         Debug\Stdafx.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+            Création de la bibliothèque C:\Users\Max\Desktop\test\mWrapper4\Debug\mWrapper4.lib et de l'objet C:\Users\Max\Desktop\test\mWrapper4\Debug\mWrapper4.exp
+         mWrapper4.vcxproj -> C:\Users\Max\Desktop\test\mWrapper4\Debug\mWrapper4.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Max\Desktop\test\mWrapper4\Debug\mWrapper4.dll;#2" /manifest Debug\mWrapper4.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Suppression du fichier "Debug\mWrapper4.unsuccessfulbuild".
+         Mise à jour de l'horodatage "Debug\mWrapper4.lastbuildstate".
+     1>Génération du projet "C:\Users\Max\Desktop\test\mWrapper4\mWrapper4\mWrapper4.vcxproj" terminée (build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:03.12
