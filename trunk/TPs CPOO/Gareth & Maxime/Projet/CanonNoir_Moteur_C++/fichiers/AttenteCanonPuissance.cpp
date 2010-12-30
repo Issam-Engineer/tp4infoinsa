@@ -9,5 +9,10 @@
 #include "AttenteCanonPuissance.h"
 
 void AttenteCanonPuissance::execute(){
-	motor.modifCourant(ETATCANONFIN);
+	if(motor.getFacade()->_puissance != 0){
+		puissance = motor.getFacade()->_puissance;
+
+		motor.modifCourant(ETATCANONFIN));
+	}else{ 
+		return;
 }
