@@ -13,7 +13,7 @@
 void EtatTir::execute(){
 	//Si ce n'est pas un Duel (donc un tir via une case Canon Noir), on attend que le joueur choisisse le bateau adversaire à viser (dans le cas de 2 joueurs)
 	if(!Duel && motor.getNbJoueurs() == 2){
-			motor.modifCourant(ATTENTECHOIXBATEAUVISE);
+			motor.modifCourant(ATTENTECHOIXBATVISE);
 	}else{ 
 		motor.modifCourant(ATTENTECANONANGLE);
 		new FenetreTir();

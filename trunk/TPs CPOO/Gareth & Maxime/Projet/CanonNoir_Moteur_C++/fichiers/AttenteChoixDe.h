@@ -6,8 +6,8 @@
 * \version 1.0
 */
 
-#ifndef ATTENTECHOIXDE
-#define ATTENTECHOIXDE
+#ifndef ATTENTECHDE
+#define ATTENTECHDE
 
 #include "Etat.h"
 
