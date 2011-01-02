@@ -7,6 +7,7 @@
 */
 //#include "StdAfx.h"
 #include "AttenteChoixBateauVise.h"
+#include "Joueur.h"
 
 void AttenteChoixBateauVise::execute(){
 	// construire à partir de la facade la position
@@ -21,7 +22,7 @@ void AttenteChoixBateauVise::execute(){
 	}
 		//on détermine le premier indice dans le tableau du joueur adverse en fonction de l'indice du joueur courant (sachant qu'on a que 2 joueurs)
 		int indJAdv;
-		if(motor.getJoueurInd(motor.getJCourant()) == 0) indJAdv = 1;
+		if(motor.getJoueurInd(motor.getJCourant()).getNumero() == 0) indJAdv = 1;
 		else indJAdv = 0;
 		//si le joueur adverse a bien un bateau sur la case cliquée
 		if(motor.getJoueurInd(indJAdv).bateauAtPos(posit) || motor.getJoueurInd(indJAdv+2).bateauAtPos(posit)){

@@ -15,4 +15,6 @@ void AttenteCanonAngle::execute(){
 		motor.modifCourant(ATTENTECANONPUISSANCE);
 	}else{ 
 		return;
+
+	}
 }
