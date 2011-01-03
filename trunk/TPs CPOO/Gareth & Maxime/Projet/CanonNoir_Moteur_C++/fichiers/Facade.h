@@ -230,22 +230,6 @@ inline bool Facade::getChoixDe2(){return _choixDe2;}
 inline bool Facade::getChoix2De(){return _choix2De;}
 inline int Facade::getX(){return _clicX;}
 inline int Facade::getY(){return _clicY;}
-inline int Facade::getx1(){return _x1;}
-inline int Facade::getx2(){return _x2;}
-inline int Facade::getx3(){return _x3;}
-inline int Facade::getx4(){return _x4;}
-inline int Facade::getx5(){return _x5;}
-inline int Facade::getx6(){return _x6;}
-inline int Facade::getx7(){return _x7;}
-inline int Facade::getx8(){return _x8;}
-inline int Facade::gety1(){return _y1;}
-inline int Facade::gety2(){return _y2;}
-inline int Facade::gety3(){return _y3;}
-inline int Facade::gety4(){return _y4;}
-inline int Facade::gety5(){return _y5;}
-inline int Facade::gety6(){return _y6;}
-inline int Facade::gety7(){return _y7;}
-inline int Facade::gety8(){return _y8;}
 inline int Facade::getAngle(){return _angle;}
 inline int Facade::getPuissance(){return _puissance;}
 
