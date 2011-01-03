@@ -11,7 +11,7 @@
 
 #include "Bateau.h"
 
-class __declspec(dllexport) Radeau : public Bateau
+class Radeau : public Bateau
 {
 
 	public :

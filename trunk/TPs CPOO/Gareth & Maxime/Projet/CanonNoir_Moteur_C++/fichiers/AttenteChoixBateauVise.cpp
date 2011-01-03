@@ -33,4 +33,7 @@ void AttenteChoixBateauVise::execute(){
 	}else{
 		return;
 	}
+	//afin de pouvoir renouveler le test sur la valeur de X et de Y
+	motor.getFacade()->setX(-1);
+	motor.getFacade()->setY(-1);
 }

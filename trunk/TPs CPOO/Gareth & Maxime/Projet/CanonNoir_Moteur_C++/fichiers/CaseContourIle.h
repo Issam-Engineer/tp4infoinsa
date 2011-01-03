@@ -11,7 +11,7 @@
 
 #include "CaseNavigable.h"
 
-class __declspec(dllexport) CaseContourIle : public CaseNavigable
+class CaseContourIle : public CaseNavigable
 {
 	public :
 

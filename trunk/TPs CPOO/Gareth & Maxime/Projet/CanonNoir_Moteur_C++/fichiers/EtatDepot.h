@@ -11,7 +11,7 @@
 
 #include "Etat.h"
 
-class __declspec(dllexport) EtatDepot : public Etat
+class EtatDepot : public Etat
 {
 
 	public :
@@ -23,8 +23,8 @@ class __declspec(dllexport) EtatDepot : public Etat
 		/** 
 		*\fn EtatDepos()
 		*\brief default constructor
-		*/
-		EtatDepot();
+		
+		EtatDepot();*/
 }; 
-
+inline void EtatDepot::execute(){};
 #endif

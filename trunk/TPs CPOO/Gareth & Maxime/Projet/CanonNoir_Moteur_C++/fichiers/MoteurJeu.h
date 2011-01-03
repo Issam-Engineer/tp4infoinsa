@@ -17,7 +17,7 @@ class Plateau;
 class Etat;
 class Joueur;
 
-class __declspec(dllexport) MoteurJeu
+class MoteurJeu
 {
 	private :
 
@@ -102,15 +102,21 @@ class __declspec(dllexport) MoteurJeu
 		void setTabJoueur(Joueur * t);  
 		/**
 		*\fn int getJCourant();
-		*\brief acces function
+		*\brief Access function
 		*\return int _JCourant
 		*/
 		int getJCourant() const;
 		/**
 		*\fn void setJCourant(int i);
-		*\brief function wich changers the current JCourant
+		*\brief Function which changes the current JCourant
 		*/
 		void setJCourant(int i);
+
+		/**
+		*\fn bool estAccessible(pair<int,int> p);
+		*\brief Function which gives a boolean indicating the accessibility of the square based on the current square and the value of the dices
+		*/
+		bool estAccessible(pair<int,int> p);
 
 }; 
 

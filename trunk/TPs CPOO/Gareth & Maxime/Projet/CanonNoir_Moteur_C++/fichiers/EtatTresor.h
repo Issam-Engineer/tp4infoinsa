@@ -12,7 +12,7 @@
 #include "Etat.h"
 #include "MoteurJeu.h"
 
-class __declspec(dllexport) EtatTresor : public Etat
+class EtatTresor : public Etat
 {
 	private :
 
@@ -26,5 +26,5 @@ class __declspec(dllexport) EtatTresor : public Etat
 		virtual void execute();
 
 }; 
-
+inline void EtatTresor::execute(){};
 #endif

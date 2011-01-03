@@ -12,7 +12,7 @@
 #include "Etat.h"
 #include "MoteurJeu.h"
 
-class __declspec(dllexport) EtatTir : public Etat
+class EtatTir : public Etat
 {
 
 	protected :
@@ -27,7 +27,8 @@ class __declspec(dllexport) EtatTir : public Etat
 		*\fn virtual void tirCanon()
 		*\brief Function which executes the shot
 		*/
-		virtual void tirCanon();
+		/*virtual void tirCanon();*/
+
 		/**
 		*\fn virtual void init(int p, int a);
 		*\brief Function which initiates the shoot

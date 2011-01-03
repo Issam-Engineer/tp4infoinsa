@@ -1,5 +1,5 @@
 /**
-*\file  ProposeDeplacement.h
+*\file  ProposeDeplacement.cpp
 *\brief File containing the functionalities and the attributes of the ProposeDeplacement class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX
@@ -42,6 +42,7 @@ void ProposeDeplacement::execute(){
 			accessible = accessible && caseTemp.accessible();
 		}
 		*/
+
 		motor.getFacade()->setx1(x1);
 		motor.getFacade()->sety1(y);
 	}else{
@@ -116,5 +117,5 @@ void ProposeDeplacement::execute(){
 		motor.getFacade()->sety8(0);
 	}
 
-
+	motor.modifCourant(ATTENTEDEPLACEMENT);
 }

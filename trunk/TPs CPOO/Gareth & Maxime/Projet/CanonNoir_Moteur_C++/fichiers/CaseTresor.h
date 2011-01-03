@@ -11,7 +11,7 @@
 
 #include "CaseContourIle.h"
 
-class __declspec(dllexport) CaseTresor : public CaseContourIle
+class CaseTresor : public CaseContourIle
 {
 
 	public :

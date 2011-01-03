@@ -15,14 +15,6 @@ void Facade::execute(){
 	_moteur->execute();
 }
 
-int Facade::getAngle(){
-	return _angle;
-}
-
-int Facade::getPuissance(){
-	return _puissance;
-}
-
 int Facade::getCouleur1(){
 	return _couleur1;
 }

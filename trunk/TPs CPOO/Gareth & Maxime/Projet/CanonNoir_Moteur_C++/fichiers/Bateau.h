@@ -16,7 +16,7 @@
 
 using namespace std;
 
-class __declspec(dllexport) Bateau
+class Bateau
 {
 
 	protected :
@@ -85,7 +85,7 @@ class __declspec(dllexport) Bateau
 		*\brief Virtual function which replaces the boat at a given position
 		*\param[in] Case a position
 		*/
-		virtual void positionner(Case* p);
+		virtual void positionner(pair<int,int> p);
 }; 
 
 inline Case* Bateau::getPosition(){

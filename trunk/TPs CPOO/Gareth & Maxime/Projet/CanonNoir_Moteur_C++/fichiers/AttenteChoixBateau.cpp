@@ -35,9 +35,9 @@ void AttenteChoixBateau::execute(){
 			if( motor.getJoueurInd(motor.getJCourant()).getBateauPos(posit).peutJouer2Des()){
 
 				//ON DOIT PROPOSER D'UTILISER 1 ou 2 DES
-				motor.getFacade()->setChoixDe1(true);
+				/*motor.getFacade()->setChoixDe1(true);
 				motor.getFacade()->setChoixDe2(true);		
-				motor.getFacade()->setChoix2De(true);
+				motor.getFacade()->setChoix2De(true);*/
 
 				motor.modifCourant(ATTENTECHOIXDE);
 			}
@@ -48,9 +48,9 @@ void AttenteChoixBateau::execute(){
 	}else if(	motor.getJoueurInd(motor.getJCourant()).bateauAtPos(posit) &&
 				motor.getJoueurInd(motor.getJCourant()).getBateauPos(posit).peutJouer2Des()){ 
 
-		motor.getFacade()->setChoixDe1(true);
+		/*motor.getFacade()->setChoixDe1(true);
 		motor.getFacade()->setChoixDe2(true);		
-		motor.getFacade()->setChoix2De(true);
+		motor.getFacade()->setChoix2De(true);*/
 
 		motor.modifCourant(ATTENTECHOIXDE);
 
@@ -62,4 +62,8 @@ void AttenteChoixBateau::execute(){
 	}else{
 		return;
 	}
+
+	//afin de pouvoir renouveler le test sur la valeur de X et de Y
+	motor.getFacade()->setX(-1);
+	motor.getFacade()->setY(-1);
 }
