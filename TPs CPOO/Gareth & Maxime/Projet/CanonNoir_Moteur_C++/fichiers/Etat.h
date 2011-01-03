@@ -15,7 +15,7 @@
 
 using namespace std;
 
-class __declspec(dllexport) Etat 
+class Etat 
 {
 public:
 	MoteurJeu motor;

@@ -16,7 +16,7 @@
 
 using namespace std;
 
-class __declspec(dllexport) Plateau
+class Plateau
 {
 	private :
 
@@ -46,9 +46,16 @@ class __declspec(dllexport) Plateau
 		*\fn Case* getCasePort(int c)
 		*\brief Function which returns the harbour corresponding to the given colour
 		*\param[in] c int couleur
-		*\return Case* on sait d'après le traitement qu'il s'agit d'une case de type CasePort
+		*\return Case* 
 		*/
 		Case* getCasePort(int couleur);
+
+		/**
+		*\fn Case* getCase(pair<int,int> p)
+		*\brief Function which returns the associated Case
+		*\return Case* 
+		*/
+		Case* getCase(pair<int,int> p);
 
 }; 
 
@@ -59,5 +66,6 @@ inline int Plateau::largeur(){
 inline int Plateau::longueur(){
 	return _longueur;
 }
+
 
 #endif

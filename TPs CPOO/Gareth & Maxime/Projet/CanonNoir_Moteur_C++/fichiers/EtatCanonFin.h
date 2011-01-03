@@ -11,7 +11,7 @@
 
 #include "EtatTir.h"
 
-class __declspec(dllexport) EtatCanonFin : public EtatTir
+class EtatCanonFin : public EtatTir
 {
 
 	public :

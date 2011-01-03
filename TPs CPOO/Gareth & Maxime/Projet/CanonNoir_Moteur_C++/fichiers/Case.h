@@ -15,7 +15,7 @@
 
 using namespace std;
 
-class __declspec(dllexport) Case
+class Case
 {
 	public :
 

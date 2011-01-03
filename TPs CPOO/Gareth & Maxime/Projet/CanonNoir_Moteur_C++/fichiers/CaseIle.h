@@ -13,7 +13,7 @@
 
 using namespace std;
 
-class __declspec(dllexport) CaseIle : public Case
+class CaseIle : public Case
 {
 	public :
 

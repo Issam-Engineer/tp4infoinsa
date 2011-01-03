@@ -9,6 +9,9 @@
 #include "AttentePremLancerDe.h"
 #include "Joueur.h"
 
+int AttentePremLancerDe::resDe[4]={0,0,0,0};
+int AttentePremLancerDe::nbLance = 0;
+
 void AttentePremLancerDe::setNbLance(int i){
 	nbLance = i;	
 }

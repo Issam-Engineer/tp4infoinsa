@@ -12,12 +12,12 @@
 #include "MoteurJeu.h"
 #include "Etat.h"
 
-class __declspec(dllexport) AttentePremLancerDe : public Etat
+class AttentePremLancerDe : public Etat
 {
 
 	public :
 
-		static int* resDe;
+		static int resDe[4];
 		static int nbLance;
 		/**
 		*\fn void execute()

@@ -12,7 +12,7 @@
 #include "CaseContourIle.h"
 #include "Etat.h"
 
-class __declspec(dllexport) CaseCanonNoir : public CaseContourIle
+class CaseCanonNoir : public CaseContourIle
 {
 
 	public :

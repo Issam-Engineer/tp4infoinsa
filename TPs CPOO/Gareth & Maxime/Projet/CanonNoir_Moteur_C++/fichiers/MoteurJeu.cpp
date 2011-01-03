@@ -84,3 +84,9 @@ void MoteurJeu::setJCourant(int i){
 	_JCourant=i;
 }
 
+bool MoteurJeu::estAccessible(pair<int,int> p){
+	bool res;
+	_plateau->getCase(p)->accessible();
+	return res;
+}
+

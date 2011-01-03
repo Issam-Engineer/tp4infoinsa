@@ -126,3 +126,12 @@ Case* Plateau::getCasePort(int couleur) {
 		}
 		return cp;
 }
+
+Case* Plateau::getCase(pair<int,int> p) {
+	Case* cp;
+	for(int i=0; i<((_longueur*_largeur)-1); i++){
+		if(_tabCase[i]->getPosition() == p) {
+			cp=_tabCase[i];
+		}
+		return cp;
+}
