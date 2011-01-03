@@ -121,6 +121,7 @@
     <ClCompile Include="..\..\fichiers\AttenteChoixBateau.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteChoixBateauVise.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteChoixDe.cpp" />
+    <ClCompile Include="..\..\fichiers\AttenteDeplacement.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteInitialisation.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteLancerDe.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteNbJoueurs.cpp" />
@@ -149,7 +150,6 @@
     <ClCompile Include="..\..\fichiers\Plateau.cpp" />
     <ClCompile Include="..\..\fichiers\ProposeDeplacement.cpp" />
     <ClCompile Include="..\..\fichiers\Radeau.cpp" />
-    <ClCompile Include="AttenteDeplacement.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

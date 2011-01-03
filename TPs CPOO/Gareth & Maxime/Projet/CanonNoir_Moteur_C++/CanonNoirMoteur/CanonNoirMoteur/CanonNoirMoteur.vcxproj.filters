@@ -230,10 +230,10 @@
     <ClCompile Include="..\..\fichiers\ProposeDeplacement.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="AttenteDeplacement.cpp">
+    <ClCompile Include="..\..\fichiers\AttenteChoixBateauVise.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\fichiers\AttenteChoixBateauVise.cpp">
+    <ClCompile Include="..\..\fichiers\AttenteDeplacement.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
