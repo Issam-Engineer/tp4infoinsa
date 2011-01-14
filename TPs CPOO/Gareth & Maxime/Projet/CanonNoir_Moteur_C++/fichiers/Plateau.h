@@ -56,6 +56,18 @@ class Plateau
 		*\return Case* 
 		*/
 		Case* getCase(pair<int,int> p);
+		/**
+		*\fn bool estAccessible(pair<int,int> p)
+		*\brief Function which says if the case at position p is accessible
+		*\return bool true is the case is accessible
+		*/
+		bool estAccessible(pair<int,int> p);
+		/**
+		*\fn void setAccessible(pair<int,int> p)
+		*\brief Function which make the case at position p accessible
+		*/
+		void setAccessible(pair<int,int> p);
+
 
 }; 
 
@@ -66,6 +78,5 @@ inline int Plateau::largeur(){
 inline int Plateau::longueur(){
 	return _longueur;
 }
-
 
 #endif

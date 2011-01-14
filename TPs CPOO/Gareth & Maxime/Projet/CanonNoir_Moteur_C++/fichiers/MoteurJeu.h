@@ -114,9 +114,15 @@ class MoteurJeu
 
 		/**
 		*\fn bool estAccessible(pair<int,int> p);
-		*\brief Function which gives a boolean indicating the accessibility of the square based on the current square and the value of the dices
+		*\brief Function which gives a boolean indicating the accessibility of the square based on the current square and the value			of the dices
 		*/
 		bool estAccessible(pair<int,int> p);
+
+		/**
+		*\fn void setAccessible(pair<int,int> p);
+		*\brief Function which make the case at the position p accessible
+		*/
+		void setAccessible(pair<int,int> p);
 
 }; 
 

@@ -47,11 +47,16 @@ class Case
 		*/
 		virtual int getHauteur();
 		/**
-		*\fn bool accessible()
+		*\fn bool estAccessible()
 		*\brief Function which indicates if it's an accessible square
 		*\return bool true if the square is accessible
  		*/
-		virtual bool accessible();
+		virtual bool estAccessible();
+			/**
+		*\fn bool setAccessible()
+		*\brief Function which make the case accessible
+ 		*/
+		virtual	void setAccessible();
 		/**
 		*\fn pair<int,int> getPosition()
 		*\brief function which gives the square position 
@@ -68,8 +73,11 @@ class Case
 		
 }; 
 
-inline bool Case::accessible(){
+inline bool Case::estAccessible(){
 	return _accessible;
+}
+inline void Case::setAccessible(){
+	_accessible=true;
 }
 inline int Case::getHauteur(){
 	return _hauteur;
