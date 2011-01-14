@@ -23,6 +23,18 @@ class CaseIle : public Case
 		*\return pointer on the instance
 		*/
 		CaseIle();
+		/**
+		*\fn void setAccessible()
+		*\brief redefine the heritated function
+		*/
+		void setAccessible();
+
 }; 
+
+inline void CaseIle::setAccessible(){
+	_accessible=false;
+	cout<<"CaseIle.h : On ne peut rendre une case ile accessible"<<endl;
+}
+
 
 #endif

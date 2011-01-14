@@ -54,7 +54,6 @@ class __declspec(dllexport) Facade
 		bool _clicNbJoueurs;
 		bool _afficherJoueur1;
 		bool _initialiserOK;
-		Joueur* _tempJoueurs; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF
 		bool _clicRefuserDuel;
 		bool _afficherAttaqué;
 		bool _afficherAttanquant;

@@ -5,7 +5,6 @@
 * \author Gareth THIVEUX
 * \version 1.0
 */
-//#include "StdAfx.h"
 #include "Plateau.h"
 #include "CaseBordurePlateau.h"
 #include "CaseCanonNoir.h"
@@ -127,11 +126,23 @@ Case* Plateau::getCasePort(int couleur) {
 		return cp;
 }
 
-Case* Plateau::getCase(pair<int,int> p) {
+Case* Plateau::getCase(pair<int,int> p){
 	Case* cp;
 	for(int i=0; i<((_longueur*_largeur)-1); i++){
 		if(_tabCase[i]->getPosition() == p) {
 			cp=_tabCase[i];
 		}
-		return cp;
+	}
+	return cp;
 }
+
+
+bool Plateau::estAccessible(pair<int,int> p){
+	return getCase(p)->estAccessible();
+}
+
+void Plateau::setAccessible(pair<int,int> p){
+	getCase(p)->setAccessible();
+}
+
+
