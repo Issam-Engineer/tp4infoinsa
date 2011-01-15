@@ -94,7 +94,6 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Etat.cs" />
     <None Include="Canon_Noir_Dll.def" />
     <None Include="ReadMe.txt" />
     <None Include="res\Canon_Noir_Dll.rc2" />
@@ -139,8 +138,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Adaptateur.h" />
-    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AffichageWPF.h" />
     <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteCanonAngle.h" />
     <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteCanonPuissance.h" />
     <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteChoixBateau.h" />

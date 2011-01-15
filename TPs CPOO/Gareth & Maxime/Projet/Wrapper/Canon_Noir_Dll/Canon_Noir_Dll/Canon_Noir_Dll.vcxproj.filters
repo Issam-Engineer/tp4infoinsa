@@ -22,7 +22,6 @@
     <None Include="res\Canon_Noir_Dll.rc2">
       <Filter>Fichiers de ressources</Filter>
     </None>
-    <None Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Etat.cs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Canon_Noir_Dll.cpp">
@@ -139,12 +138,6 @@
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\Adaptateur.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AffichageWPF.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteCanonAngle.h">
