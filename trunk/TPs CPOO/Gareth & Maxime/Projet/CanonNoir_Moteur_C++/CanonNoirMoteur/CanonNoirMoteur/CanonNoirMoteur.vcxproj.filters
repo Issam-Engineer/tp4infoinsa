@@ -96,12 +96,6 @@
     <ClInclude Include="..\..\fichiers\Facade.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\fichiers\FenetreInit.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\fichiers\FenetreTir.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\fichiers\Joueur.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
@@ -165,12 +159,6 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\fichiers\Facade.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\fichiers\FenetreInit.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\fichiers\FenetreTir.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\fichiers\Joueur.cpp">
