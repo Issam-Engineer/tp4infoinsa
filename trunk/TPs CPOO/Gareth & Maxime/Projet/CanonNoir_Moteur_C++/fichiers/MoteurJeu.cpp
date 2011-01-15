@@ -90,3 +90,6 @@ bool MoteurJeu::estAccessible(pair<int,int> p){
 	return res;
 }
 
+void MoteurJeu::setAccessible(pair<int,int> p){
+	_plateau->setAccessible(p);
+}
