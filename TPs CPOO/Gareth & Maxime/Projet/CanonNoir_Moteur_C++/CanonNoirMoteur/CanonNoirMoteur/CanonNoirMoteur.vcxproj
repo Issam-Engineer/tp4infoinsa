@@ -106,8 +106,6 @@
     <ClInclude Include="..\..\fichiers\EtatTir.h" />
     <ClInclude Include="..\..\fichiers\EtatTresor.h" />
     <ClInclude Include="..\..\fichiers\Facade.h" />
-    <ClInclude Include="..\..\fichiers\FenetreInit.h" />
-    <ClInclude Include="..\..\fichiers\FenetreTir.h" />
     <ClInclude Include="..\..\fichiers\Fregate.h" />
     <ClInclude Include="..\..\fichiers\Joueur.h" />
     <ClInclude Include="..\..\fichiers\MoteurJeu.h" />
@@ -141,8 +139,6 @@
     <ClCompile Include="..\..\fichiers\EtatCanonFin.cpp" />
     <ClCompile Include="..\..\fichiers\EtatTir.cpp" />
     <ClCompile Include="..\..\fichiers\Facade.cpp" />
-    <ClCompile Include="..\..\fichiers\FenetreInit.cpp" />
-    <ClCompile Include="..\..\fichiers\FenetreTir.cpp" />
     <ClCompile Include="..\..\fichiers\Fregate.cpp" />
     <ClCompile Include="..\..\fichiers\Joueur.cpp" />
     <ClCompile Include="..\..\fichiers\Main.cpp" />
