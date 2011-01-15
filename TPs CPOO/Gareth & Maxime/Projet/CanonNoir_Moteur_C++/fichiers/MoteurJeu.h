@@ -13,9 +13,13 @@
 #include "enum.h"
 #include "Dé.h"
 
+
+using namespace std;
+
 class Plateau;
 class Etat;
 class Joueur;
+
 
 class MoteurJeu
 {
