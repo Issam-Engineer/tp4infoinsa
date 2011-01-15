@@ -7,7 +7,7 @@
 */
 //#include "StdAfx.h"
 #include "EtatTir.h"
-#include "FenetreTir.h"
+//#include "FenetreTir.h"
 
 
 void EtatTir::execute(){
@@ -16,7 +16,7 @@ void EtatTir::execute(){
 			motor.modifCourant(ATTENTECHOIXBATVISE);
 	}else{ 
 		motor.modifCourant(ATTENTECANONANGLE);
-		new FenetreTir();
+		//new FenetreTir();
 	}
 }
 
