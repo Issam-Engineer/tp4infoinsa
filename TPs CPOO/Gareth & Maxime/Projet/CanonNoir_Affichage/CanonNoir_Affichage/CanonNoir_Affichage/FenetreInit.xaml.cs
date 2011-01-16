@@ -41,6 +41,7 @@ namespace CanonNoir_Affichage
             label2.Content = "J1 (Port 2) :";
             label3.Content = "J2 (Port 1) :";
             label4.Content = "J2 (Port 2) :";
+            facade.initNbJoueurs(2);
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
@@ -58,6 +59,7 @@ namespace CanonNoir_Affichage
             label2.Content = "Joueur 2 :";
             label3.Content = "Joueur 3 :";
             label4.Content = "Joueur 4 :";
+            facade.initNbJoueurs(3);
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
@@ -75,6 +77,7 @@ namespace CanonNoir_Affichage
             label2.Content = "Joueur 2 :";
             label3.Content = "Joueur 3 :";
             label4.Content = "Joueur 4 :";
+            facade.initNbJoueurs(4);
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
