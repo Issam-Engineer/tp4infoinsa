@@ -22,8 +22,8 @@ void AttentePremLancerDe::setResDe(int i){
 
 void AttentePremLancerDe::determinerOrdre(){
 	//TRIER ORDRE DES JOUEURS
-	/*Joueur temp[4];*/
-	vector<Joueur> temp;
+	Joueur temp[4];
+	/*vector<Joueur> temp;*/
 	for(int i=0;i<motor.getNbJoueurs();i++){
 		int max=0;
 		int ind;
