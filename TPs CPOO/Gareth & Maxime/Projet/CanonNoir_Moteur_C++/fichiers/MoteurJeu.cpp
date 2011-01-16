@@ -45,6 +45,8 @@ MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),_JCourant(0),finPartie(false){
 	_etats[12] = new EtatTresor();
 	_etats[13] = new EtatDepot();
 	_etats[14] = new EtatFinPartie();
+	_etats[15] = new AttenteChoixDe();
+	_etats[16] = new AttenteChoixBateauVise();
 	courant = ATTENTENBJOUEURS;
 
 };
