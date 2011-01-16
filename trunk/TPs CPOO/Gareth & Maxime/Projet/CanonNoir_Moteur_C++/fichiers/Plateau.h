@@ -11,7 +11,7 @@
 
 #include <iostream>
 #include <cstdlib>
-/*#include <vector>*/
+#include <vector>
 #include "Case.h"
 
 using namespace std;
@@ -22,8 +22,7 @@ class Plateau
 
 		int _longueur;
 		int _largeur;
-		/*vector<Case*> _tabCase;*/
-		Case* _tabCase[88];
+		vector<Case*> _tabCase;
 
 	public :
 		/**
