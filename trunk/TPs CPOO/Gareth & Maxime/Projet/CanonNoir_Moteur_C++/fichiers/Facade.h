@@ -5,7 +5,6 @@
 *\author Gareth THIVEUX
 *\version 1.0
 */
-
 #ifndef FACADE_H
 #define FACADE_H
 
