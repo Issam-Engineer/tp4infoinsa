@@ -46,7 +46,12 @@ MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),_JCourant(0),finPartie(false){
 	_etats[13] = new EtatDepot();
 	_etats[14] = new EtatFinPartie();
 	courant = ATTENTENBJOUEURS;
+
 };
+
+MoteurJeu::~MoteurJeu(){
+	
+}
 
 void MoteurJeu::setEtat(int i){
 	courant=i;

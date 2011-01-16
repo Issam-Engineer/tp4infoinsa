@@ -44,9 +44,7 @@ class MoteurJeu
 		void setEtat(int i);
 		/**
 		*\fn void execute()
-		*
 		*this function is used when someone clic (is called by Facade::execute())
-		*
 		*\brief Function which executes the current state
 		*/
 		void execute();
@@ -56,6 +54,11 @@ class MoteurJeu
 		*\return pointer on the instance
 		*/
 		MoteurJeu();
+		/**
+		*\fn ~MoteurJeu()
+		*\brief destructor
+		*/
+		~MoteurJeu();
 		/**
 		*\fn Facade* getFacade() const
 		*\brief acces function for the facade
