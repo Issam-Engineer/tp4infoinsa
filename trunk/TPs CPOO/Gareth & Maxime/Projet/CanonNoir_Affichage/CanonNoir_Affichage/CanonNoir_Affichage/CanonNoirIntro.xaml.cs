@@ -25,7 +25,7 @@ namespace CanonNoir_Affichage
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-           MainWindow m = new MainWindow();
+           FenetreInit m = new FenetreInit();
            m.Show();
            Close();
         }
@@ -38,6 +38,11 @@ namespace CanonNoir_Affichage
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             
+        }
+
+        private void image2_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
         }
     }
 };
