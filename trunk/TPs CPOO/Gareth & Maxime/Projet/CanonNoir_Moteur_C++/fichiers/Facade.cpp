@@ -10,6 +10,30 @@
 #include "MoteurJeu.h"
 
 
+extern "C" __declspec(dllexport) Facade* Facade_new(){return new Facade();}
+extern "C" __declspec(dllexport) void Facade_delete(Facade * f){delete f;}
+
+Facade::Facade(){
+	_moteur=new MoteurJeu();
+	_nb_Joueurs=0;
+	_couleur1=-1;
+	_couleur2=-1;
+	_couleur3=-1;
+	_couleur4=-1;
+	_clicDe=false;
+	_afficherDe1=false;
+	_afficherDe2=false;
+	_choixDe1=false;
+	_choixDe2=false;
+	_choix2De=false;
+	_clicX=-1;
+	_clicY=-1;
+	_angle=-1;
+	_puissance=-1;
+}
+Facade::~Facade(){
+	delete _moteur;
+}
 
 void Facade::execute(){
 	_moteur->execute();
