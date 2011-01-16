@@ -23,6 +23,8 @@
 #include "EtatTresor.h"
 #include "EtatDepot.h"
 #include "EtatFinPartie.h"
+#include "AttenteChoixDe.h"
+#include "AttenteChoixBateauVise.h"
 #include "Joueur.h"
 #include "Plateau.h"
 
