@@ -27,11 +27,10 @@ class MoteurJeu
 	private :
 
 		Facade * facade; // association bi-directionnelle
-		/*Etat** _etats;*/
 		vector<Etat*> _etats;
 		int courant;
-		vector<Joueur> tabJoueurs;
-		/*Joueur* tabJoueurs;*/
+		//vector<Joueur> tabJoueurs;
+		Joueur* tabJoueurs;
 		int nbJoueurs;
 		int _JCourant;
 		bool finPartie;
@@ -110,7 +109,7 @@ class MoteurJeu
 		*\parma[in] Joueur* j
 		*/
 		/*void setTabJoueur(Joueur * t); */ 
-		void setTabJoueur(vector<Joueur> t);
+		void setTabJoueur(/*vector<Joueur>*/Joueur* t);
 		/**
 		*\fn int getJCourant();
 		*\brief Access function
