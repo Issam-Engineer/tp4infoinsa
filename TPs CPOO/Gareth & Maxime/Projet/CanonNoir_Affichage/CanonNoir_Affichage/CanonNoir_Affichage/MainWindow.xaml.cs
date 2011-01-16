@@ -1,4 +1,5 @@
 ﻿using System;
+using mWrapper;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,18 +18,13 @@ using System.Windows.Shapes;
 
 namespace CanonNoir_Affichage
 {
-    /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
-    /// </summary>
-    /// 
-    //INITIALISER LE WRAPPER
-    //WrapperFacade facade;
+
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
-            //facade = new WrapperFacade();
         }
 
         private void SourisDown(object sender, MouseButtonEventArgs e)

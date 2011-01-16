@@ -1,4 +1,5 @@
 ﻿using System;
+using mWrapper;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,14 +14,16 @@ using System.Windows.Shapes;
 
 namespace CanonNoir_Affichage
 {
-    /// <summary>
-    /// Logique d'interaction pour FenetreInit.xaml
-    /// </summary>
     public partial class FenetreInit : Window
     {
+
+        //INITIALISER LE WRAPPER
+        WrapperFacade facade;
+
         public FenetreInit()
         {
             InitializeComponent();
+            facade = new WrapperFacade();
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)

@@ -34,9 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="mWrapper">
-      <HintPath>..\..\mWrapper\Debug\mWrapper.dll</HintPath>
-    </Reference>
     <Reference Include="mWrapper4">
       <HintPath>..\..\mWrapper4\Debug\mWrapper4.dll</HintPath>
     </Reference>
