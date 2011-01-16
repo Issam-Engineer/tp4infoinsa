@@ -66,6 +66,17 @@ class __declspec(dllexport) Facade
 		
 		//utilisées
 		/**
+		*\fn Facade()
+		*\brief constructor
+		*/
+		Facade();
+		/**
+		*\fn ~Facade()
+		*\brief destructor
+		*/
+		~Facade();
+
+		/**
 		*\fn void initNbJoueurs(int n)
 		*\brief Function which initiates the nb_Joueurs value 
 		*/
@@ -231,5 +242,9 @@ inline int Facade::getX(){return _clicX;}
 inline int Facade::getY(){return _clicY;}
 inline int Facade::getAngle(){return _angle;}
 inline int Facade::getPuissance(){return _puissance;}
+
+
+extern "C" __declspec(dllexport) Facade* Facade_new();
+extern "C" __declspec(dllexport) void Facade_delete(Facade* f);
 
 #endif
