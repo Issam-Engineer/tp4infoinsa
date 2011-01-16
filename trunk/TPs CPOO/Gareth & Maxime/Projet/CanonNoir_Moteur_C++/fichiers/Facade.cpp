@@ -13,6 +13,8 @@
 extern "C" __declspec(dllexport) Facade* Facade_new(){return new Facade();}
 extern "C" __declspec(dllexport) void Facade_delete(Facade * f){delete f;}
 
+
+
 Facade::Facade(){
 	_moteur=new MoteurJeu();
 	_nb_Joueurs=0;
@@ -31,8 +33,13 @@ Facade::Facade(){
 	_angle=-1;
 	_puissance=-1;
 }
+
 Facade::~Facade(){
 	delete _moteur;
+}
+
+void Facade::initNbJoueurs(int n){
+	_nb_Joueurs=n;
 }
 
 void Facade::execute(){
