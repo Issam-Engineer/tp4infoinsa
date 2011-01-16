@@ -12,6 +12,7 @@
 #include "Facade.h"
 #include "enum.h"
 #include "Dé.h"
+#include <vector>
 
 
 using namespace std;
@@ -26,9 +27,11 @@ class MoteurJeu
 	private :
 
 		Facade * facade; // association bi-directionnelle
-		Etat** _etats; 
+		/*Etat** _etats;*/
+		vector<Etat*> _etats;
 		int courant;
-		Joueur* tabJoueurs;
+		vector<Joueur> tabJoueurs;
+		/*Joueur* tabJoueurs;*/
 		int nbJoueurs;
 		int _JCourant;
 		bool finPartie;
@@ -106,7 +109,8 @@ class MoteurJeu
 		*\brief function which changes the current tabjoueur
 		*\parma[in] Joueur* j
 		*/
-		void setTabJoueur(Joueur * t);  
+		/*void setTabJoueur(Joueur * t); */ 
+		void setTabJoueur(vector<Joueur> t);
 		/**
 		*\fn int getJCourant();
 		*\brief Access function
