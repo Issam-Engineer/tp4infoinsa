@@ -10,9 +10,10 @@
 #include "ProposeDeplacement.h"
 #include "Joueur.h"
 
+ProposeDeplacement::ProposeDeplacement(MoteurJeu* m){
+	motor=m;
+}
+
 void ProposeDeplacement::execute(){
-
-
-
-	motor.modifCourant(ATTENTEDEPLACEMENT);
+	motor->modifCourant(ATTENTEDEPLACEMENT);
 }

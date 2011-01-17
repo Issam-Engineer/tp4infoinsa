@@ -36,13 +36,12 @@ MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),_JCourant(0),finPartie(false){
 
 void MoteurJeu::initialiser(){
 	_etats[0] = new AttenteNbJoueurs(this);
-	/*_etats.push_back(new AttenteNbJoueurs(this*));
-	_etats[1] = new AttenteInitialisation();
-	_etats[2] = new AttentePremLancerDe();
-	_etats[3] = new AttenteLancerDe();
-	_etats[4] = new AttenteChoixBateau();
-	_etats[5] = new ProposeDeplacement();
-	_etats[6] = new AttenteDeplacement();
+	_etats[1] = new AttenteInitialisation(this);
+	_etats[2] = new AttentePremLancerDe(this);
+	_etats[3] = new AttenteLancerDe(this);
+	_etats[4] = new AttenteChoixBateau(this);
+	_etats[5] = new ProposeDeplacement(this);
+	/*_etats[6] = new AttenteDeplacement();
 	_etats[7] = new Duel();
 	_etats[8] = new EtatTir();
 	_etats[9] = new AttenteCanonPuissance();
@@ -62,7 +61,7 @@ MoteurJeu::~MoteurJeu(){
 
 void MoteurJeu::setEtat(int i){
 	courant=i;
-	_etats[courant]->modifMotor(*this);
+	_etats[courant]->modifMotor(this);
 }
 
 

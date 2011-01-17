@@ -16,6 +16,12 @@ class AttenteChoixBateau : public Etat
 
 	public :
 		/**
+		*\fn AttenteChoixBateau(MoteurJeu * m)
+		*\brief Constructor
+		*/
+		AttenteChoixBateau(MoteurJeu * m);
+		
+		/**
 		*\fn void execute()
 		*\brief Function which executes the current state
 		*/

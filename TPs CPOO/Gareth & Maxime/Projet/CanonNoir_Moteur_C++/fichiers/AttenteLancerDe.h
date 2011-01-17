@@ -15,6 +15,12 @@ class AttenteLancerDe : public Etat
 {
 
 	public :
+
+		/**
+		*\fn AttenteLancerDe(MoteurJeu* m)
+		*\brief Constructor
+		*/
+		AttenteLancerDe(MoteurJeu* m);
 		/**
 		*\fn void choisirDe()
 		*\brief Function which chooses the dice to take in account

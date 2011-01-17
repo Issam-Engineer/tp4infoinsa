@@ -16,12 +16,18 @@ using namespace std;
 
 class ProposeDeplacement : public Etat
 {
-	public :
+	private :
 
 		Case * tabCase;
 		int _valeurDe;
 
 	public :
+		/**
+		*\fn ProposeDeplacement(MoteurJeu * m)
+		*\brief Constructor
+		*/
+		ProposeDeplacement(MoteurJeu * m);
+
 		/**
 		*\fn void execute()
 		*\brief Function which executes the current state

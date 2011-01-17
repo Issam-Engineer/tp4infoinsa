@@ -20,6 +20,12 @@ class AttentePremLancerDe : public Etat
 		static int resDe[4];
 		static int nbLance;
 		/**
+		*\fn AttentePremLancerDe(MoteurJeu* m)
+		*\brief Constructor
+		*/
+		AttentePremLancerDe(MoteurJeu* m);
+
+		/**
 		*\fn void execute()
 		*\brief Function which executes the current state
 		*/
