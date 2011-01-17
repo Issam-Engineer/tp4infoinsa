@@ -12,8 +12,8 @@
 void AttenteChoixBateauVise::execute(){
 	// construire à partir de la facade la position
 	pair<int,int> posit; 
-	int x= motor.getFacade()->getX();
-	int y=  motor.getFacade()->getY();
+	int x= motor->getFacade()->getX();
+	int y=  motor->getFacade()->getY();
 
 	if( x!=-1 && y!=-1 ){
 			posit = make_pair(x,y);
@@ -22,18 +22,18 @@ void AttenteChoixBateauVise::execute(){
 	}
 		//on détermine le premier indice dans le tableau du joueur adverse en fonction de l'indice du joueur courant (sachant qu'on a que 2 joueurs)
 		int indJAdv;
-		if(motor.getJoueurInd(motor.getJCourant()).getNumero() == 0) indJAdv = 1;
+		if(motor->getJoueurInd(motor->getJCourant()).getNumero() == 0) indJAdv = 1;
 		else indJAdv = 0;
 		//si le joueur adverse a bien un bateau sur la case cliquée
-		if(motor.getJoueurInd(indJAdv).bateauAtPos(posit) || motor.getJoueurInd(indJAdv+2).bateauAtPos(posit)){
+		if(motor->getJoueurInd(indJAdv).bateauAtPos(posit) || motor->getJoueurInd(indJAdv+2).bateauAtPos(posit)){
 			//on oriente le tir depuis le canon dans la direction du bateau visé (à coder)
 
-		motor.modifCourant(ATTENTECANONANGLE);
+		motor->modifCourant(ATTENTECANONANGLE);
 
 	}else{
 		return;
 	}
 	//afin de pouvoir renouveler le test sur la valeur de X et de Y
-	motor.getFacade()->setX(-1);
-	motor.getFacade()->setY(-1);
+	motor->getFacade()->setX(-1);
+	motor->getFacade()->setY(-1);
 }

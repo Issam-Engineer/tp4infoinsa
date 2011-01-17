@@ -13,5 +13,5 @@ void AttenteChoixDe::execute(){
 	//if le joueur à cliquer on vérifie la valeur des booléen pour ensuite voir quels dés on doit prendre 
 	//il s'agit simplement d'un etat qui permet de gérer l'interaction !
 	
-	motor.modifCourant(PROPOSEDEPLACEMENT);
+	motor->modifCourant(PROPOSEDEPLACEMENT);
 }

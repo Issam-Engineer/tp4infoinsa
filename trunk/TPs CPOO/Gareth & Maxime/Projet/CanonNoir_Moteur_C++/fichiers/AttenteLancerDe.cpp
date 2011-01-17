@@ -8,26 +8,29 @@
 //#include "StdAfx.h"
 #include "AttenteLancerDe.h"
 #include "Joueur.h"
-//#include "enum.h"
+
+AttenteLancerDe::AttenteLancerDe(MoteurJeu* m){
+	motor=m;
+}
 
 void AttenteLancerDe::execute(){
 
-	if(motor.getFacade()->getClicDe() == true){
+	if(motor->getFacade()->getClicDe() == true){
 
-		motor.getDe().lancerDe();//Le de contient les deux nouvelle valeurs
+		motor->getDe().lancerDe();//Le de contient les deux nouvelle valeurs
 		//si le joueur possède une caravelle on affiche les deux dé (il peut ensuite choisir)
-		if(	motor.getJoueurInd(motor.getJCourant()).getBateau1().type() == 'C' ||
-			motor.getJoueurInd(motor.getJCourant()).getBateau2().type() == 'C' ){
-				motor.getFacade()->setAfficherDe1(true);
-				motor.getFacade()->setAfficherDe2(true);
+		if(	motor->getJoueurInd(motor->getJCourant()).getBateau1().type() == 'C' ||
+			motor->getJoueurInd(motor->getJCourant()).getBateau2().type() == 'C' ){
+				motor->getFacade()->setAfficherDe1(true);
+				motor->getFacade()->setAfficherDe2(true);
 
 		}else{
-			motor.getFacade()->setAfficherDe1(true);
-			motor.getFacade()->setAfficherDe2(false);
+			motor->getFacade()->setAfficherDe1(true);
+			motor->getFacade()->setAfficherDe2(false);
 		
 		}
 
-		motor.modifCourant(ATTENTECHOIXBATEAU);
+		motor->modifCourant(ATTENTECHOIXBATEAU);
 
 	}else{//remettre le booléen qui a changé à false
 	}

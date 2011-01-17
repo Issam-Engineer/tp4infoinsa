@@ -31,7 +31,7 @@ public:
 	*\brief function which changes the current motor
 	*\param[in] MoteurJeu m
 	*/
-	virtual void modifMotor(MoteurJeu m);
+	virtual void modifMotor(MoteurJeu *m);
 	
 };
 

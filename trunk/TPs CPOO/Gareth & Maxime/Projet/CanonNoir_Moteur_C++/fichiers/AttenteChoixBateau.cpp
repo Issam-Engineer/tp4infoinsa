@@ -9,12 +9,16 @@
 #include "AttenteChoixBateau.h"
 #include "Joueur.h"
 
+AttenteChoixBateau::AttenteChoixBateau(MoteurJeu * m){
+	motor=m;
+}
+
 void AttenteChoixBateau::execute(){
 
 	// construire à partir de la facade la position
 	pair<int,int> posit; 
-	int x= motor.getFacade()->getX();
-	int y=  motor.getFacade()->getY();
+	int x= motor->getFacade()->getX();
+	int y=  motor->getFacade()->getY();
 
 	if( x!=-1 && y!=-1 ){
 			posit = make_pair(x,y);
@@ -23,47 +27,47 @@ void AttenteChoixBateau::execute(){
 	}
 
 	//2 Joueurs
-	if(motor.getNbJoueurs() == 2){
+	if(motor->getNbJoueurs() == 2){
 
 		//si le joueur a bien un bateau sur la case cliquée
-		if( motor.getJoueurInd(motor.getJCourant()).bateauAtPos(posit)){
+		if( motor->getJoueurInd(motor->getJCourant()).bateauAtPos(posit)){
 
 			//On indique quel bateau est le courant grâce au booléen courant de bateau, qui est à false lors de l'initialisation (quand il y a 2 joueurs)
-			motor.getJoueurInd(motor.getJCourant()).getBateauPos(posit).setCourant(true);
+			motor->getJoueurInd(motor->getJCourant()).getBateauPos(posit).setCourant(true);
 
 			//le bateau du joueur cliqué peut jouer 2 dés
-			if( motor.getJoueurInd(motor.getJCourant()).getBateauPos(posit).peutJouer2Des()){
+			if( motor->getJoueurInd(motor->getJCourant()).getBateauPos(posit).peutJouer2Des()){
 
 				//ON DOIT PROPOSER D'UTILISER 1 ou 2 DES
-				/*motor.getFacade()->setChoixDe1(true);
-				motor.getFacade()->setChoixDe2(true);		
-				motor.getFacade()->setChoix2De(true);*/
+				/*motor->getFacade()->setChoixDe1(true);
+				motor->getFacade()->setChoixDe2(true);		
+				motor->getFacade()->setChoix2De(true);*/
 
-				motor.modifCourant(ATTENTECHOIXDE);
+				motor->modifCourant(ATTENTECHOIXDE);
 			}
 		}
 
 		
 	//3 ou 4 Joueurs
-	}else if(	motor.getJoueurInd(motor.getJCourant()).bateauAtPos(posit) &&
-				motor.getJoueurInd(motor.getJCourant()).getBateauPos(posit).peutJouer2Des()){ 
+	}else if(	motor->getJoueurInd(motor->getJCourant()).bateauAtPos(posit) &&
+				motor->getJoueurInd(motor->getJCourant()).getBateauPos(posit).peutJouer2Des()){ 
 
-		/*motor.getFacade()->setChoixDe1(true);
-		motor.getFacade()->setChoixDe2(true);		
-		motor.getFacade()->setChoix2De(true);*/
+		/*motor->getFacade()->setChoixDe1(true);
+		motor->getFacade()->setChoixDe2(true);		
+		motor->getFacade()->setChoix2De(true);*/
 
-		motor.modifCourant(ATTENTECHOIXDE);
+		motor->modifCourant(ATTENTECHOIXDE);
 
 	//bateau autre qu'une caravelle
-	}else if (motor.getJoueurInd(motor.getJCourant()).bateauAtPos(posit)){
+	}else if (motor->getJoueurInd(motor->getJCourant()).bateauAtPos(posit)){
 
-		motor.modifCourant(PROPOSEDEPLACEMENT);
+		motor->modifCourant(PROPOSEDEPLACEMENT);
 
 	}else{
 		return;
 	}
 
 	//afin de pouvoir renouveler le test sur la valeur de X et de Y
-	motor.getFacade()->setX(-1);
-	motor.getFacade()->setY(-1);
+	motor->getFacade()->setX(-1);
+	motor->getFacade()->setY(-1);
 }

@@ -21,6 +21,12 @@ class AttenteInitialisation : public Etat
 		*/
 		virtual void execute();
 
+		/**
+		*\fn AttenteInitialisation(MoteurJeu* m)
+		*\brief Constructor with one parameter
+		*/
+		AttenteInitialisation(MoteurJeu* m);
+
 }; 
 
 #endif
