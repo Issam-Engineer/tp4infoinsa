@@ -9,6 +9,10 @@
 #include "AttenteChoixBateauVise.h"
 #include "Joueur.h"
 
+AttenteChoixBateauVise::AttenteChoixBateauVise(MoteurJeu* m){
+	motor=m;
+}
+
 void AttenteChoixBateauVise::execute(){
 	// construire à partir de la facade la position
 	pair<int,int> posit; 

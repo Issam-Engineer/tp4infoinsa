@@ -8,6 +8,10 @@
 
 #include "AttenteDeplacement.h"
 
+AttenteDeplacement::AttenteDeplacement(MoteurJeu * m){
+	motor=m;
+}
+
 void AttenteDeplacement::execute(){
 
 }

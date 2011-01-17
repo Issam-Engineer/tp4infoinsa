@@ -15,6 +15,13 @@ class EtatCanonFin : public EtatTir
 {
 
 	public :
+		
+		/**
+		*\fn EtatCanonFin(MoteurJeu * m)
+		*\brief Constructor
+		*/
+		EtatCanonFin(MoteurJeu * m);
+
 		/**
 		*\fn void execute()
 		*\brief Function which executes the current state

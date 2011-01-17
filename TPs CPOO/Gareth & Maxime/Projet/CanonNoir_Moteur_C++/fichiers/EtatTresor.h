@@ -14,11 +14,14 @@
 
 class EtatTresor : public Etat
 {
-	private :
-
-		MoteurJeu motor;
-
 	public :
+
+		/**
+		*\fn EtatTresor(MoteurJeu * m)
+		*\brief Constructor
+		*/
+		//EtatTresor(MoteurJeu * m);
+
 		/**
 		*\fn void execute()
 		*\brief Function which executes the current state

@@ -8,6 +8,10 @@
 //#include "StdAfx.h"
 #include "AttenteChoixDe.h"
 
+AttenteChoixDe::AttenteChoixDe(MoteurJeu* m){
+	motor=m;
+}
+
 void AttenteChoixDe::execute(){
 
 	//if le joueur à cliquer on vérifie la valeur des booléen pour ensuite voir quels dés on doit prendre 

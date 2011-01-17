@@ -21,10 +21,10 @@ class EtatDepot : public Etat
 		*/
 		virtual void execute();
 		/** 
-		*\fn EtatDepos()
+		*\fn EtatDepos(MoteurJeu * m)
 		*\brief default constructor
-		
-		EtatDepot();*/
+		*/
+		//EtatDepot(MoteurJeu * m);
 }; 
 inline void EtatDepot::execute(){};
 #endif
