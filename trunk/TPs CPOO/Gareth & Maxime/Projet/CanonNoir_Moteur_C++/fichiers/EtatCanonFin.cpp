@@ -8,6 +8,10 @@
 //#include "StdAfx.h"
 #include "EtatCanonFin.h"
 
+EtatCanonFin::EtatCanonFin(MoteurJeu * m){
+	motor = m;
+}
+
 void EtatCanonFin::execute(){
-	motor.modifCourant(ATTENTELANCERDE);
+	motor->modifCourant(ATTENTELANCERDE);
 }

@@ -16,9 +16,6 @@ using namespace std;
 
 class ProposeDeplacement : public Etat
 {
-	private :
-
-		Case * tabCase;
 		int _valeurDe;
 
 	public :

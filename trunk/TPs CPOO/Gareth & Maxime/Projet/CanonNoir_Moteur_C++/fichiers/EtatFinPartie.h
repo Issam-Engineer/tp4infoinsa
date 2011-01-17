@@ -14,11 +14,15 @@
 
 class EtatFinPartie : public Etat
 {
-	private :
-
-		MoteurJeu motor;
 
 	public :
+
+		/**
+		*\fn EtatFinPartie(MoteurJeu * m)
+		*\brief Constructor
+		*/
+		//EtatFinPartie(MoteurJeu * m);
+
 		/**
 		*\fn void execute()
 		*\brief Function which executes the current state

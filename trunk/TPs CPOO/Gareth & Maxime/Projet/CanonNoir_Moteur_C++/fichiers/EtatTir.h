@@ -17,7 +17,6 @@ class EtatTir : public Etat
 
 	protected :
 
-		MoteurJeu motor;
 		int puissance;
 		int angle;
 		bool Duel;

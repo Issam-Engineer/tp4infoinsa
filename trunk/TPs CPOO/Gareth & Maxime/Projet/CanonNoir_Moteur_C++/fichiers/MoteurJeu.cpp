@@ -41,8 +41,9 @@ void MoteurJeu::initialiser(){
 	_etats[3] = new AttenteLancerDe(this);
 	_etats[4] = new AttenteChoixBateau(this);
 	_etats[5] = new ProposeDeplacement(this);
-	/*_etats[6] = new AttenteDeplacement();
-	_etats[7] = new Duel();
+	_etats[6] = new AttenteDeplacement(this);
+	_etats[15] = new AttenteChoixDe(this);
+	/*_etats[7] = new Duel();
 	_etats[8] = new EtatTir();
 	_etats[9] = new AttenteCanonPuissance();
 	_etats[10] = new AttenteCanonAngle();
@@ -50,7 +51,6 @@ void MoteurJeu::initialiser(){
 	_etats[12] = new EtatTresor();
 	_etats[13] = new EtatDepot();
 	_etats[14] = new EtatFinPartie();
-	_etats[15] = new AttenteChoixDe();
 	_etats[16] = new AttenteChoixBateauVise();
 	courant = ATTENTENBJOUEURS;*/
 }
@@ -72,7 +72,7 @@ void MoteurJeu::execute(){
 
 void MoteurJeu::modifNbJoueurs(int n){
 	nbJoueurs=n;
-	cout<<"NbJoueurs MoteurJeu initialise à: "<<n<<endl;
+	cout<<"NbJoueurs MoteurJeu initialise a: "<<n<<endl;
 }
 
 void MoteurJeu::modifCourant(int e){

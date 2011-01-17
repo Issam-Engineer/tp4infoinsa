@@ -21,7 +21,11 @@ class AttenteChoixDe : public Etat
 		*\brief Function which executes the current state
 		*/
 		void execute();
-
+		/**
+		*\fn AttenteChoixDe(MoteurJeu* m)
+		*\brief Constructor
+		*/
+		AttenteChoixDe(MoteurJeu * m);
 }; 
 
 

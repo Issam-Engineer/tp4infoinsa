@@ -15,6 +15,13 @@ class AttenteDeplacement : public Etat
 {
 
 	public :
+
+		/**
+		*\fn AttenteDeplacement(MoteurJeu * m)
+		*\brief Constructor
+		*/
+		AttenteDeplacement(MoteurJeu * m);
+
 		/**
 		*\fn void execute()
 		*\brief Function which executes the current state

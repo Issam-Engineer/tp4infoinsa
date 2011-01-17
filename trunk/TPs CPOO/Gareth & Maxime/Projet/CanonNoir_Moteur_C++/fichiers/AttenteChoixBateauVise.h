@@ -16,6 +16,13 @@ class AttenteChoixBateauVise : public Etat
 {
 
 	public :
+
+		/**
+		*\fn AttenteChoixBateauVise(MoteurJeu* m);
+		*\brief Constructor
+		*/
+		AttenteChoixBateauVise(MoteurJeu * m);
+
 		/**
 		*\fn void execute()
 		*\brief Function which executes the current state
