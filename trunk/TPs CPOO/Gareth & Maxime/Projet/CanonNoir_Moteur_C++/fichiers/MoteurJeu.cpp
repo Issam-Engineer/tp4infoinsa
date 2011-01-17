@@ -5,7 +5,6 @@
 * \author Gareth THIVEUX
 * \version 1.0
 */
-//#include "StdAfx.h"
 #include "MoteurJeu.h"
 #include "Etat.h"
 #include "AttenteNbJoueurs.h"
@@ -36,7 +35,8 @@ MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),_JCourant(0),finPartie(false){
 };
 
 void MoteurJeu::initialiser(){
-	_etats.push_back(new AttenteNbJoueurs(this*));
+	_etats[0] = new AttenteNbJoueurs(this);
+	/*_etats.push_back(new AttenteNbJoueurs(this*));
 	_etats[1] = new AttenteInitialisation();
 	_etats[2] = new AttentePremLancerDe();
 	_etats[3] = new AttenteLancerDe();
