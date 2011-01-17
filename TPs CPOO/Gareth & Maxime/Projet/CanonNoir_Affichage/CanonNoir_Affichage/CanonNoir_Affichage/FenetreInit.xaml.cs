@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace CanonNoir_Affichage
 {
     public partial class FenetreInit : Window
@@ -85,13 +86,44 @@ namespace CanonNoir_Affichage
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            if (
+            /*if (
                 ((comboBox1.SelectedValue == comboBox2.SelectedValue) || 
-                (comboBox1.SelectedItem == comboBox3.SelectedItem))
-                )
-            { } else {
+                (comboBox1.SelectedItem == comboBox3.SelectedItem)))
+            {*/
+                string j1 =comboBox1.SelectedItem.ToString();
+                string j2 =comboBox2.SelectedItem.ToString();
+                string j3 =comboBox3.SelectedItem.ToString();
+                string j4 =comboBox4.SelectedItem.ToString();
+
+                if (j1 == j2 || j1 == j3 || j1 == j4 || j2 == j3 || j2 == j4 || j3 == j4)
+                {
+
+                    MessageBoxResult m = MessageBox.Show("ERREUR : Attention il faut choisir une couleur par Port !");
+
+                }
+                else
+                {
+                    MessageBox.Show(j1);
+                    if(
+                    switch (j1)
+                    {
+                        case "ROUJE":
+                            facade.setCoul1(1/*ROUJE*/);
+                            break;
+                        case "VERT":
+                            facade.setCoul1(2/*VERT*/);
+                            break;
+                        case "JAUNE":
+                            facade.setCoul1(3/*JAUNE*/);
+                            break;
+                        case "BLEU":
+                            facade.setCoul1(4/*BLEU*/);
+                            break;
+                    }
+                }
+            /*}else{
                 Close();
-            }
+            }*/
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
