@@ -8,6 +8,9 @@
 //#include "StdAfx.h"
 #include "AttenteNbJoueurs.h"
 
+AttenteNbJoueurs::AttenteNbJoueurs(MoteurJeu m){
+	motor = m;
+}
 
 void AttenteNbJoueurs::execute(){
 	if((motor.getFacade())->_nb_Joueurs==2 || motor.getFacade()->_nb_Joueurs==3 || motor.getFacade()->_nb_Joueurs==4){

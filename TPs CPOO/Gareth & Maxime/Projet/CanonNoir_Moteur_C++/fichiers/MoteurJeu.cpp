@@ -30,9 +30,13 @@
 
 
 MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),_JCourant(0),finPartie(false){
-	
 	tabJoueurs = new Joueur[4];
-	_etats[0] = new AttenteNbJoueurs();
+	_etats = (* new vector<Etat*>(0,0));
+	cout<<"vecteur initialise"<<endl;
+};
+
+void MoteurJeu::initialiser(){
+	_etats.push_back(new AttenteNbJoueurs(this*));
 	_etats[1] = new AttenteInitialisation();
 	_etats[2] = new AttentePremLancerDe();
 	_etats[3] = new AttenteLancerDe();
@@ -49,9 +53,8 @@ MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),_JCourant(0),finPartie(false){
 	_etats[14] = new EtatFinPartie();
 	_etats[15] = new AttenteChoixDe();
 	_etats[16] = new AttenteChoixBateauVise();
-	courant = ATTENTENBJOUEURS;
-
-};
+	courant = ATTENTENBJOUEURS;*/
+}
 
 MoteurJeu::~MoteurJeu(){
 	
@@ -70,6 +73,7 @@ void MoteurJeu::execute(){
 
 void MoteurJeu::modifNbJoueurs(int n){
 	nbJoueurs=n;
+	cout<<"NbJoueurs MoteurJeu initialise à: "<<n<<endl;
 }
 
 void MoteurJeu::modifCourant(int e){

@@ -89,6 +89,13 @@ class __declspec(dllexport) Facade
 		void execute();
 		
 		/**
+		*\fn MoteurJeu* getMoteur()
+		*\brief Function which return the motor
+		*\return MoteurJeu the Facade's motor
+		*/
+		MoteurJeu* getMoteur();
+
+		/**
 		*\fn int getAngle()
 		*\brief Function which gives the angle of the current shot 
 		*\return int, the angle
@@ -241,7 +248,7 @@ inline int Facade::getX(){return _clicX;}
 inline int Facade::getY(){return _clicY;}
 inline int Facade::getAngle(){return _angle;}
 inline int Facade::getPuissance(){return _puissance;}
-
+inline MoteurJeu* Facade::getMoteur(){return _moteur;}
 
 extern "C" __declspec(dllexport) Facade* Facade_new();
 extern "C" __declspec(dllexport) void Facade_delete(Facade* f);

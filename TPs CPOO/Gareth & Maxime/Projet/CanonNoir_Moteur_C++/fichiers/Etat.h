@@ -17,7 +17,7 @@ using namespace std;
 
 class Etat 
 {
-public:
+protected:
 	MoteurJeu motor;
 
 public:
@@ -25,7 +25,7 @@ public:
 	*\fn void execute()
 	*\brief function which execute the current state
 	*/
-	virtual void execute();
+	virtual void execute()=0;
 	/**
 	*\fn void modifMotor(MoteurJeu m)
 	*\brief function which changes the current motor
@@ -35,7 +35,7 @@ public:
 	
 };
 
-inline void Etat::execute(){
+/*inline void Etat::execute(){
 	//NE FAIS RIEN (on est obligé de mettre la définir pour l'édition des liens)
-}
+}*/
 #endif
