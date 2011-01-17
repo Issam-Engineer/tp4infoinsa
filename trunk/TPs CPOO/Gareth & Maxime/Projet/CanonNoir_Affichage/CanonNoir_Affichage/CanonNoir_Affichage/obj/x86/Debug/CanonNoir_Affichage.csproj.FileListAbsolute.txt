@@ -38,3 +38,5 @@ C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichag
 C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\FenetreTir.g.cs
 C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\bin\Debug\mWrapper.dll
 C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\bin\Debug\mWrapper.pdb
+C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoir_Affichage.exe
+C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoir_Affichage.pdb
