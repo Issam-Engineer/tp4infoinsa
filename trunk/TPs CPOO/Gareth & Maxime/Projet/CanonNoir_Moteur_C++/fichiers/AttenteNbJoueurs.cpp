@@ -14,7 +14,11 @@ AttenteNbJoueurs::AttenteNbJoueurs(MoteurJeu* m){
 }
 
 void AttenteNbJoueurs::execute(){
-	if((motor->getFacade())->_nb_Joueurs==2 || motor->getFacade()->_nb_Joueurs==3 || motor->getFacade()->_nb_Joueurs==4){
+	if(
+		(motor->getFacade())->_nb_Joueurs==2 || 
+		motor->getFacade()->_nb_Joueurs==3 || 
+		motor->getFacade()->_nb_Joueurs==4)
+	{
 		motor->modifNbJoueurs(motor->getFacade()->_nb_Joueurs);
 		motor->modifCourant(ATTENTEINITIALISATION);
 		cout<<"Moteur nbJoueurs ="<<motor->getNbJoueurs()<<endl;

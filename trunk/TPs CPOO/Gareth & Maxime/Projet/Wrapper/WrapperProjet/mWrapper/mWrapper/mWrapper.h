@@ -21,5 +21,11 @@ namespace mWrapper {
 		void setY(int y){ f->setY(y);}
 		int getX(){ return f->getX();}
 		int getY(){ return f->getY();}
+
+		void setCoul1(int i) { f->setCoul1(i); }
+		void setCoul2(int i) { f->setCoul2(i); }
+		void setCoul3(int i) { f->setCoul3(i); }
+		void setCoul4(int i) { f->setCoul4(i); }
+
 	};
 }

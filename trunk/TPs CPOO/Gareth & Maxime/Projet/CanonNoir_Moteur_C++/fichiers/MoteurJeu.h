@@ -42,7 +42,8 @@ class MoteurJeu
 		*\fn void initialiser()
 		*\brief initialize the motor (we can't do it in the default constructor)
 		*/
-		void initialiser();
+		/*void initialiser();*/
+
 		/**
 		*\fn void setEtat(int i)
 		*\brief Function which define the motor state
@@ -55,11 +56,11 @@ class MoteurJeu
 		*/
 		void execute();
 		/**
-		*\fn MoteurJeu()
+		*\fn MoteurJeu(Facade* f)
 		*\brief default constructor of MoteurJeu
 		*\return pointer on the instance
 		*/
-		MoteurJeu();
+		MoteurJeu(Facade* f);
 		/**
 		*\fn ~MoteurJeu()
 		*\brief destructor

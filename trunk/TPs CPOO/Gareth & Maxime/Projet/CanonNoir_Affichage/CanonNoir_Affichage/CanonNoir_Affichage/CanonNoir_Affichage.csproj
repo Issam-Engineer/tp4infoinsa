@@ -36,9 +36,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="mWrapper, Version=1.0.4033.18157, Culture=neutral, processorArchitecture=x86">
+    <Reference Include="mWrapper, Version=1.0.4034.39512, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Wrapper\WrapperProjet\mWrapper\Debug\mWrapper.dll</HintPath>
+      <HintPath>..\..\..\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\mWrapper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -131,6 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\CanonNoir-gd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

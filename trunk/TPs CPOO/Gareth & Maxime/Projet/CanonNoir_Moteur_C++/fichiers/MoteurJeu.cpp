@@ -28,15 +28,10 @@
 #include "Plateau.h"
 
 
-MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),_JCourant(0),finPartie(false){
+MoteurJeu::MoteurJeu(Facade* f):facade(f),nbJoueurs(0),courant(NULL),_JCourant(0),finPartie(false){
 	tabJoueurs = new Joueur[4];
-	//_etats = (* new vector<Etat*>(0,0));
 	setEtat(0); // on initialise int courant
 	cout<<"valeur de l'int courant :"<<courant<<endl;
-};
-
-void MoteurJeu::initialiser(){
-	cout<<"vecteur initialise"<<endl;
 	_etats.push_back(new AttenteNbJoueurs(this));
 	_etats.push_back(new AttenteInitialisation(this));
 	_etats.push_back(new AttentePremLancerDe(this));
@@ -45,8 +40,7 @@ void MoteurJeu::initialiser(){
 	_etats.push_back(new ProposeDeplacement(this));
 	_etats.push_back(new AttenteDeplacement(this));
 
-
-	/*_etats[15] = new AttenteChoixDe(this);
+	/*
 	_etats[7] = new Duel();
 	_etats[8] = new EtatTir();
 	_etats[9] = new AttenteCanonPuissance();
@@ -56,8 +50,9 @@ void MoteurJeu::initialiser(){
 	_etats[13] = new EtatDepot();
 	_etats[14] = new EtatFinPartie();
 	_etats[16] = new AttenteChoixBateauVise();
-	courant = ATTENTENBJOUEURS;*/
-}
+	_etats[15] = new AttenteChoixDe(this);
+	*/
+};
 
 MoteurJeu::~MoteurJeu(){
 	

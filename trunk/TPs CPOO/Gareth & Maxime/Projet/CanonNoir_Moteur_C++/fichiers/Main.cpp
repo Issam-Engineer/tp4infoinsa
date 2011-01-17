@@ -7,8 +7,9 @@ int main( int argc, const char* argv[] )
 	printf( "\nHello World\n\n" );
 	Facade* fac = new Facade();
 
-	fac->getMoteur()->modifNbJoueurs(3);
+	fac->initNbJoueurs(3);
 
-	MoteurJeu * m = fac->getMoteur();
+	fac->execute();
 
+	fac->setCoul1(1);
 }

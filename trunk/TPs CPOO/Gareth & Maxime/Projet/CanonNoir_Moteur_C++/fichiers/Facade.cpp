@@ -16,12 +16,12 @@ extern "C" __declspec(dllexport) void Facade_delete(Facade * f){delete f;}
 
 
 Facade::Facade(){
-	_moteur=new MoteurJeu();
+	_moteur=new MoteurJeu(this);
 	_nb_Joueurs=0;
-	_couleur1=-1;
-	_couleur2=-1;
-	_couleur3=-1;
-	_couleur4=-1;
+	_couleur1=0;
+	_couleur2=0;
+	_couleur3=0;
+	_couleur4=0;
 	_clicDe=false;
 	_afficherDe1=false;
 	_afficherDe2=false;

@@ -9,7 +9,7 @@
         <Label Content="Joueur 4 :" Height="25" HorizontalAlignment="Left" Margin="11,0,0,95" Name="label4" VerticalAlignment="Bottom" Width="86" />
         <Button Content="OK" Height="23" HorizontalAlignment="Left" Margin="204,272,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" IsEnabled="False" />
         <ComboBox Height="23" HorizontalAlignment="Left" Margin="86,0,0,188" Name="comboBox1" VerticalAlignment="Bottom" Width="64" IsEnabled="False">
-            <ComboBoxItem Content="ROUGE" Background="Red" IsSelected="True" />
+            <ComboBoxItem Content="ROUGE" Background="Red" IsSelected="True"/>
             <ComboBoxItem Content="VERT" Background="Green" />
             <ComboBoxItem Content="JAUNE" Background="Yellow" />
             <ComboBoxItem Content="BLEU" Background="Blue" />
