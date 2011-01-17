@@ -18,7 +18,7 @@ using namespace std;
 class Etat 
 {
 protected:
-	MoteurJeu motor;
+	MoteurJeu* motor;
 
 public:
 	/**

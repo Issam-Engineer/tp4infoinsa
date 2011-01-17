@@ -24,7 +24,7 @@ class AttenteNbJoueurs : public Etat
 		*\fn AttenteNbJoueur(MoteurJeu m)
 		*\brief State constructor whith a moteur
 		*/
-		AttenteNbJoueurs(MoteurJeu m);
+		AttenteNbJoueurs(MoteurJeu* m);
 }; 
 
 #endif
