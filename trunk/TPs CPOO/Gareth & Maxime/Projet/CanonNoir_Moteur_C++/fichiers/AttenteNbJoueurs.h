@@ -20,6 +20,11 @@ class AttenteNbJoueurs : public Etat
 		*\brief Function which executes the current state
 		*/
 		void execute();
+		/**
+		*\fn AttenteNbJoueur(MoteurJeu m)
+		*\brief State constructor whith a moteur
+		*/
+		AttenteNbJoueurs(MoteurJeu m);
 }; 
 
 #endif

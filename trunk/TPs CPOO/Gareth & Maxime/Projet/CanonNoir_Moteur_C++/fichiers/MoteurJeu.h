@@ -40,6 +40,11 @@ class MoteurJeu
 	public :
 
 		/**
+		*\fn void initialiser()
+		*\brief initialize the motor (we can't do it in the default constructor)
+		*/
+		void initialiser();
+		/**
 		*\fn void setEtat(int i)
 		*\brief Function which define the motor state
 		*/
