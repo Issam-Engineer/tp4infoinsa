@@ -11,6 +11,7 @@
 
 AttenteChoixBateau::AttenteChoixBateau(MoteurJeu * m){
 	motor=m;
+	cout << "Constructeur : AttenteChoixBateau" << endl;
 }
 
 void AttenteChoixBateau::execute(){

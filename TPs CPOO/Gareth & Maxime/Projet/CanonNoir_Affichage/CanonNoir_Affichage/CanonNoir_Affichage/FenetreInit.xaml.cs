@@ -34,14 +34,15 @@ namespace CanonNoir_Affichage
             comboBox3.IsEnabled = true;
             comboBox4.IsEnabled = true;
             button2.IsEnabled = false;
-            button3.IsEnabled = true;
-            button4.IsEnabled = true;
+            button3.IsEnabled = false;
+            button4.IsEnabled = false;
             button1.IsEnabled = true;
             label1.Content = "J1 (Port 1) :";
             label2.Content = "J1 (Port 2) :";
             label3.Content = "J2 (Port 1) :";
             label4.Content = "J2 (Port 2) :";
             facade.initNbJoueurs(2);
+            facade.execute();
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
@@ -52,14 +53,15 @@ namespace CanonNoir_Affichage
             comboBox3.IsEnabled = true;
             comboBox4.IsEnabled = false;
             button3.IsEnabled = false;
-            button2.IsEnabled = true;
-            button4.IsEnabled = true;
+            button2.IsEnabled = false;
+            button4.IsEnabled = false;
             button1.IsEnabled = true;
             label1.Content = "Joueur 1 :";
             label2.Content = "Joueur 2 :";
             label3.Content = "Joueur 3 :";
             label4.Content = "Joueur 4 :";
             facade.initNbJoueurs(3);
+            facade.execute();
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
@@ -70,19 +72,23 @@ namespace CanonNoir_Affichage
             comboBox3.IsEnabled = true;
             comboBox4.IsEnabled = true;
             button4.IsEnabled = false;
-            button2.IsEnabled = true;
-            button3.IsEnabled = true;
+            button2.IsEnabled = false;
+            button3.IsEnabled = false;
             button1.IsEnabled = true;
             label1.Content = "Joueur 1 :";
             label2.Content = "Joueur 2 :";
             label3.Content = "Joueur 3 :";
             label4.Content = "Joueur 4 :";
             facade.initNbJoueurs(4);
+            facade.execute();
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            if (((comboBox1.SelectedValue == comboBox2.SelectedValue) || (comboBox1.SelectedItem == comboBox3.SelectedItem)))
+            if (
+                ((comboBox1.SelectedValue == comboBox2.SelectedValue) || 
+                (comboBox1.SelectedItem == comboBox3.SelectedItem))
+                )
             { } else {
                 Close();
             }

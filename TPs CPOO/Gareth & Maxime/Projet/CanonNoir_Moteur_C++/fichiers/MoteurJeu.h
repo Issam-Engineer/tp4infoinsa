@@ -29,7 +29,6 @@ class MoteurJeu
 		Facade * facade; // association bi-directionnelle
 		vector<Etat*> _etats;
 		int courant;
-		//vector<Joueur> tabJoueurs;
 		Joueur* tabJoueurs;
 		int nbJoueurs;
 		int _JCourant;

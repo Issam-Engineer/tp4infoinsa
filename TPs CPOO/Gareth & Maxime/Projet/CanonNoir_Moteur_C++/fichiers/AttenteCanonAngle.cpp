@@ -9,10 +9,10 @@
 #include "AttenteCanonAngle.h"
 
 void AttenteCanonAngle::execute(){
-	if(motor.getFacade()->_angle != 0){
-		angle = motor.getFacade()->_angle;
+	if(motor->getFacade()->_angle != 0){
+		angle = motor->getFacade()->_angle;
 
-		motor.modifCourant(ATTENTECANONPUISSANCE);
+		motor->modifCourant(ATTENTECANONPUISSANCE);
 	}else{ 
 		return;
 

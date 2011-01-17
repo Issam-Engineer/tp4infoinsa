@@ -13,6 +13,7 @@
 
 AttenteInitialisation::AttenteInitialisation(MoteurJeu* m){
 	motor=m;
+	cout << "Constructeur : AttenteInitialisation" << endl;
 }
 
 void AttenteInitialisation::execute(){

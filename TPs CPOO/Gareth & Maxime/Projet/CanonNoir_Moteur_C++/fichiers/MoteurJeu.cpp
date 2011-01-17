@@ -30,20 +30,24 @@
 
 MoteurJeu::MoteurJeu():nbJoueurs(0),courant(NULL),_JCourant(0),finPartie(false){
 	tabJoueurs = new Joueur[4];
-	_etats = (* new vector<Etat*>(0,0));
-	cout<<"vecteur initialise"<<endl;
+	//_etats = (* new vector<Etat*>(0,0));
+	setEtat(0); // on initialise int courant
+	cout<<"valeur de l'int courant :"<<courant<<endl;
 };
 
 void MoteurJeu::initialiser(){
-	_etats[0] = new AttenteNbJoueurs(this);
-	_etats[1] = new AttenteInitialisation(this);
-	_etats[2] = new AttentePremLancerDe(this);
-	_etats[3] = new AttenteLancerDe(this);
-	_etats[4] = new AttenteChoixBateau(this);
-	_etats[5] = new ProposeDeplacement(this);
-	_etats[6] = new AttenteDeplacement(this);
-	_etats[15] = new AttenteChoixDe(this);
-	/*_etats[7] = new Duel();
+	cout<<"vecteur initialise"<<endl;
+	_etats.push_back(new AttenteNbJoueurs(this));
+	_etats.push_back(new AttenteInitialisation(this));
+	_etats.push_back(new AttentePremLancerDe(this));
+	_etats.push_back(new AttenteLancerDe(this));
+	_etats.push_back(new AttenteChoixBateau(this));
+	_etats.push_back(new ProposeDeplacement(this));
+	_etats.push_back(new AttenteDeplacement(this));
+
+
+	/*_etats[15] = new AttenteChoixDe(this);
+	_etats[7] = new Duel();
 	_etats[8] = new EtatTir();
 	_etats[9] = new AttenteCanonPuissance();
 	_etats[10] = new AttenteCanonAngle();
@@ -61,7 +65,7 @@ MoteurJeu::~MoteurJeu(){
 
 void MoteurJeu::setEtat(int i){
 	courant=i;
-	_etats[courant]->modifMotor(this);
+	//_etats[courant]->modifMotor(this);
 }
 
 
