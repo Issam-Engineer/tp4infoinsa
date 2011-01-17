@@ -14,6 +14,7 @@ int AttentePremLancerDe::nbLance = 0;
 
 AttentePremLancerDe::AttentePremLancerDe(MoteurJeu* m){
 	motor=m;
+	cout << "Constructeur : AttentePremLancerDe" << endl;
 }
 
 void AttentePremLancerDe::setNbLance(int i){

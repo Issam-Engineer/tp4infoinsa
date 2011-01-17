@@ -10,6 +10,7 @@
 
 AttenteDeplacement::AttenteDeplacement(MoteurJeu * m){
 	motor=m;
+	cout << "Constructeur : AttenteDeplacement" << endl;
 }
 
 void AttenteDeplacement::execute(){

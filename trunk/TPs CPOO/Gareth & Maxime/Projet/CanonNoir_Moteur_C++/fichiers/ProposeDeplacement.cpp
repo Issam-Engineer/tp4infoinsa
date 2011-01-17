@@ -12,6 +12,7 @@
 
 ProposeDeplacement::ProposeDeplacement(MoteurJeu* m){
 	motor=m;
+	cout << "Constructeur : ProposeDeplacement" << endl;
 }
 
 void ProposeDeplacement::execute(){
