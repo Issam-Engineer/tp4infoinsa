@@ -70,8 +70,9 @@ namespace CanonNoir_Affichage
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("valeur de facade.getCoul1"+facade.getCoul1());
-            //facade.execute();
+            facade.setClicDe(true);
+            facade.execute();
+            
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

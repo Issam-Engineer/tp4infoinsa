@@ -36,5 +36,8 @@ namespace mWrapper {
 		int getCoul3() { return f->getCouleur3(); }
 		int getCoul4() { return f->getCouleur4(); }
 
+		bool getClicDe() { return f->getClicDe(); }
+		void setClicDe(bool t) { f->setClicDe(t); }
+
 	};
 }

@@ -43,6 +43,7 @@ void AttentePremLancerDe::determinerOrdre(){
 }
 
 void AttentePremLancerDe::execute(){
+	cout<<"AttentePremLancerDe.execute()"<<endl;
 	//vérifier qu'on a bien cliqué sur le bouton lancer Dé sinon on ne doit rien faire !
 	if(motor->getFacade()->getClicDe() ==true){
 
