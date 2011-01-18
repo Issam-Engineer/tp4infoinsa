@@ -89,7 +89,7 @@ class MoteurJeu
 		*\brief acces function for the Joueur number i
 		*\return the Joueur
 		*/
-		Joueur getJoueurInd(int i); 
+		Joueur* getJoueurInd(int i); 
 		/**
 		*\fn Dé getDe() const
 		*\brief acces function 
@@ -139,6 +139,11 @@ class MoteurJeu
 		*/
 		void setAccessible(pair<int,int> p);
 
+		/**
+		*\fn void setTabJoueur(int ind,Joueur j)
+		*\brief the Joueur at the indice
+		*/
+		void setTabJoueurs(int ind,Joueur j);
 }; 
 
 

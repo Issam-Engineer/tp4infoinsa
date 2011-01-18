@@ -31,13 +31,13 @@ void AttenteChoixBateau::execute(){
 	if(motor->getNbJoueurs() == 2){
 
 		//si le joueur a bien un bateau sur la case cliquée
-		if( motor->getJoueurInd(motor->getJCourant()).bateauAtPos(posit)){
+		if( motor->getJoueurInd(motor->getJCourant())->bateauAtPos(posit)){
 
 			//On indique quel bateau est le courant grâce au booléen courant de bateau, qui est à false lors de l'initialisation (quand il y a 2 joueurs)
-			motor->getJoueurInd(motor->getJCourant()).getBateauPos(posit).setCourant(true);
+			motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit).setCourant(true);
 
 			//le bateau du joueur cliqué peut jouer 2 dés
-			if( motor->getJoueurInd(motor->getJCourant()).getBateauPos(posit).peutJouer2Des()){
+			if( motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit).peutJouer2Des()){
 
 				//ON DOIT PROPOSER D'UTILISER 1 ou 2 DES
 				/*motor->getFacade()->setChoixDe1(true);
@@ -50,8 +50,8 @@ void AttenteChoixBateau::execute(){
 
 		
 	//3 ou 4 Joueurs
-	}else if(	motor->getJoueurInd(motor->getJCourant()).bateauAtPos(posit) &&
-				motor->getJoueurInd(motor->getJCourant()).getBateauPos(posit).peutJouer2Des()){ 
+	}else if(	motor->getJoueurInd(motor->getJCourant())->bateauAtPos(posit) &&
+				motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit).peutJouer2Des()){ 
 
 		/*motor->getFacade()->setChoixDe1(true);
 		motor->getFacade()->setChoixDe2(true);		
@@ -60,7 +60,7 @@ void AttenteChoixBateau::execute(){
 		motor->modifCourant(ATTENTECHOIXDE);
 
 	//bateau autre qu'une caravelle
-	}else if (motor->getJoueurInd(motor->getJCourant()).bateauAtPos(posit)){
+	}else if (motor->getJoueurInd(motor->getJCourant())->bateauAtPos(posit)){
 
 		motor->modifCourant(PROPOSEDEPLACEMENT);
 
