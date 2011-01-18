@@ -17,7 +17,6 @@ int main( int argc, const char* argv[] )
 	fac->setCoul3(3);
 	fac->setCoul4(4);
 
-	//fac->execute();
+	fac->execute();
 
-	Plateau* p = new Plateau();
 }

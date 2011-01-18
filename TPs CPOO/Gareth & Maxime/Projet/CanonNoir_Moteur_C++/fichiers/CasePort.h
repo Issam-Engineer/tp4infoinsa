@@ -32,11 +32,11 @@ class CasePort : public Case
 		*/
 		int getEtat();
 		/**
-		*\fn CasePort()
+		*\fn CasePort(int Couleur)
 		*\brief Default constructor of CasePort
 		*\return pointer on the instance
 		*/
-		CasePort();
+		CasePort(int Couleur);
 
 }; 
 
