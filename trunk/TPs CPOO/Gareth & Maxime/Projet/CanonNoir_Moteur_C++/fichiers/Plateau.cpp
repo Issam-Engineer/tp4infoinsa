@@ -19,7 +19,7 @@ Plateau::Plateau(){
 	_longueur=11;
 	_largeur=8;
 	//LIGNE 1
-	_tabCase.push_back(new CasePort());
+	_tabCase.push_back(new CasePort(1/*ROUGE*/));
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
@@ -29,7 +29,7 @@ Plateau::Plateau(){
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
-	_tabCase.push_back(new CasePort());
+	_tabCase.push_back(new CasePort(3/*JAUNE*/));
 	//LIGNE 2
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseNavigable());
@@ -103,7 +103,7 @@ Plateau::Plateau(){
 	_tabCase.push_back(new CaseNavigable());
 	_tabCase.push_back(new CaseBordurePlateau());
 	//LIGNE 8
-	_tabCase.push_back(new CasePort());
+	_tabCase.push_back(new CasePort(2/*VERT*/));
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
@@ -113,7 +113,7 @@ Plateau::Plateau(){
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
-	_tabCase.push_back(new CasePort());
+	_tabCase.push_back(new CasePort(3/*JAUNE*/));
 	/*_tabCase[0] = new CasePort();//constructeur de case avec pair<int,int>
 	_tabCase[1] = new CaseBordurePlateau();
 	_tabCase[2] = new CaseBordurePlateau();
@@ -212,7 +212,7 @@ Plateau::Plateau(){
 }
 
 Case* Plateau::getCasePort(int couleur) {
-	Case* cp;
+	Case* cp=0;
 	for(int i=0; i<((_longueur*_largeur)-1); i++){
 			if(_tabCase[i]->getCouleur() == couleur){ // il faut définir une fonction getCouleur pour les Case et utiliser l'héritage
 				cp = _tabCase[i]; // /!\ au cast
@@ -222,7 +222,7 @@ Case* Plateau::getCasePort(int couleur) {
 }
 
 Case* Plateau::getCase(pair<int,int> p){
-	Case* cp;
+	Case* cp=0;
 	for(int i=0; i<((_longueur*_largeur)-1); i++){
 		if(_tabCase[i]->getPosition() == p) {
 			cp=_tabCase[i];

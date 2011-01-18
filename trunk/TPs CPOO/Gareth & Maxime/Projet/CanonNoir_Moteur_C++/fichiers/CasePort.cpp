@@ -8,8 +8,8 @@
 //#include "StdAfx.h"
 #include "CasePort.h"
 
-CasePort::CasePort(){
+CasePort::CasePort(int c){
 	_hauteur = 1;
 	_accessible = true;
-	_couleur = 0;
+	_couleur = c;
 }
