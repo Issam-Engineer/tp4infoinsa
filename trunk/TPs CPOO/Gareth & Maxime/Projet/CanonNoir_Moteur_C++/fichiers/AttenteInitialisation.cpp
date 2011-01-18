@@ -35,6 +35,7 @@ void AttenteInitialisation::execute(){
 													(CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur2),
 													(CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur4))); cout<<"Joueur2 initialise"<<endl;
 			motor->modifCourant(ATTENTEPREMLANCERDE);
+			cout<<"Etat suivant : ATTENTEPREMLANCERDE"<<endl;
 	}		
 	else if((((motor->getFacade())->_couleur1!=0 && (motor->getFacade())->_couleur2!=0 && (motor->getFacade())->_couleur3!=0)) &&				(motor->getNbJoueurs()==3)){ 
 
@@ -42,6 +43,7 @@ void AttenteInitialisation::execute(){
 			motor->getJoueurInd(1) = (*new Joueur(2, (CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur2))); cout<<"Joueur2 initialise"<<endl;
 			motor->getJoueurInd(2) = (*new Joueur(3, (CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur3))); cout<<"Joueur3 initialise"<<endl;
 			motor->modifCourant(ATTENTEPREMLANCERDE);
+			cout<<"Etat suivant : ATTENTEPREMLANCERDE"<<endl;
 
 	}
 	else if((((motor->getFacade())->_couleur1!=0 && (motor->getFacade())->_couleur2!=0 && 
@@ -53,6 +55,7 @@ void AttenteInitialisation::execute(){
 			motor->getJoueurInd(2) = (*new Joueur(3, (CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur3)));cout<<"Joueur3 initialise"<<endl;
 			motor->getJoueurInd(3) = (*new Joueur(4, (CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur4)));cout<<"Joueur4 initialise"<<endl;
 			motor->modifCourant(ATTENTEPREMLANCERDE);
+			cout<<"Etat suivant : ATTENTEPREMLANCERDE"<<endl;
 
 	}else{
 

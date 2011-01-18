@@ -31,6 +31,7 @@
 MoteurJeu::MoteurJeu(Facade* f):facade(f),nbJoueurs(0),courant(NULL),_JCourant(0),finPartie(false){
 	tabJoueurs = new Joueur[4];
 	_plateau = new Plateau();
+	_de = (*new De());
 	setEtat(0); // on initialise int courant
 	cout<<"valeur de l'int courant :"<<courant<<endl;
 	_etats.push_back(new AttenteNbJoueurs(this));
@@ -41,18 +42,6 @@ MoteurJeu::MoteurJeu(Facade* f):facade(f),nbJoueurs(0),courant(NULL),_JCourant(0
 	_etats.push_back(new ProposeDeplacement(this));
 	_etats.push_back(new AttenteDeplacement(this));
 
-	/*
-	_etats[7] = new Duel();
-	_etats[8] = new EtatTir();
-	_etats[9] = new AttenteCanonPuissance();
-	_etats[10] = new AttenteCanonAngle();
-	_etats[11] = new EtatCanonFin();
-	_etats[12] = new EtatTresor();
-	_etats[13] = new EtatDepot();
-	_etats[14] = new EtatFinPartie();
-	_etats[16] = new AttenteChoixBateauVise();
-	_etats[15] = new AttenteChoixDe(this);
-	*/
 };
 
 MoteurJeu::~MoteurJeu(){

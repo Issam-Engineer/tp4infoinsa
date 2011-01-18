@@ -22,6 +22,11 @@ class De
 
 
 	public :
+		/**
+		*\fn De()
+		*\brief Constructor
+		*/
+		De();
 
 		/**
 		*\fn void lancerDe()

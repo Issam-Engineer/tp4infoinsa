@@ -3,9 +3,10 @@
 #include "Plateau.h"
 #include <stdio.h>
 
+
+
 int main( int argc, const char* argv[] )
 {
-	printf( "\nHello World\n\n" );
 	Facade* fac = new Facade();
 
 	fac->initNbJoueurs(2);
@@ -18,5 +19,16 @@ int main( int argc, const char* argv[] )
 	fac->setCoul4(4);
 
 	fac->execute();
+
+	fac->setClicDe(true);
+	//clic De
+	srand( time(NULL));
+	fac->execute();
+
+	fac->setClicDe(true);
+	fac->execute();
+
+	while(1);
+
 
 }
