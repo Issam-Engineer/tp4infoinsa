@@ -1,4 +1,3 @@
-// mWrapper.h
 #include "Facade.h"
 
 using namespace System;

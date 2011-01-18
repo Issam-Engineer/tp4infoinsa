@@ -51,7 +51,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers;D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

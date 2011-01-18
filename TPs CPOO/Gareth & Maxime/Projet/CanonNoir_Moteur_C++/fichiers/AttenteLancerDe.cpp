@@ -19,7 +19,7 @@ void AttenteLancerDe::execute(){
 
 	if(motor->getFacade()->getClicDe() == true){
 
-		motor->getDe().lancerDe();//Le de contient les deux nouvelle valeurs
+		motor->getDe()->lancerDe();//Le de contient les deux nouvelle valeurs
 		//si le joueur possède une caravelle on affiche les deux dé (il peut ensuite choisir)
 		if(	motor->getJoueurInd(motor->getJCourant()).getBateau1().type() == 'C' ||
 			motor->getJoueurInd(motor->getJCourant()).getBateau2().type() == 'C' ){

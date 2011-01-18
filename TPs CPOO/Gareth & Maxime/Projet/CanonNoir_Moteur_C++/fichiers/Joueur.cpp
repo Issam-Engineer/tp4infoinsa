@@ -28,6 +28,8 @@ Joueur::Joueur(int num, CasePort* c1, CasePort* c2){
 
 Joueur::Joueur(){
 	_numero=0;
+	_cp1=0;
+	_cp2=0;
 }
 
 void Joueur::setNumero(int i){

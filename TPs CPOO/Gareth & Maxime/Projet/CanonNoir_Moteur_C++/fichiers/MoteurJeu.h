@@ -95,7 +95,7 @@ class MoteurJeu
 		*\brief acces function 
 		*\return the Dé
 		*/
-		De getDe() const; 
+		De* getDe(); 
 		/**
 		*\fn void modifNbJoueurs(int n);
 		*\brief function which changes the current nbJoueurs
@@ -144,7 +144,7 @@ class MoteurJeu
 
 inline Facade* MoteurJeu::getFacade() const { return facade;}
 inline int MoteurJeu::getNbJoueurs() const {return nbJoueurs;} 
-inline De MoteurJeu::getDe() const {return _de;} 
+inline De* MoteurJeu::getDe(){return &_de;} 
 inline int MoteurJeu::getJCourant() const{return _JCourant;} 
 
 #endif

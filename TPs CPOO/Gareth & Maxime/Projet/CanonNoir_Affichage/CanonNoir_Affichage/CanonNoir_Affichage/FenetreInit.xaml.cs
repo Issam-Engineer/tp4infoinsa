@@ -19,8 +19,7 @@ namespace CanonNoir_Affichage
     {
 
         //INITIALISER LE WRAPPER
-
-        /*public static*/ WrapperFacade facade;
+        WrapperFacade facade;
 
         public FenetreInit()
         {
@@ -108,7 +107,7 @@ namespace CanonNoir_Affichage
                     switch (j1)
                     {
                         case 0:
-                            facade.setCoul1(1/*ROUJE*/);
+                            facade.setCoul1(1/*ROUGE*/);
                             break;
                         case 1:
                             facade.setCoul1(2/*VERT*/);
@@ -124,7 +123,7 @@ namespace CanonNoir_Affichage
                     switch (j2)
                     {
                         case 0:
-                            facade.setCoul2(1/*ROUJE*/);
+                            facade.setCoul2(1/*ROUGE*/);
                             break;
                         case 1:
                             facade.setCoul2(2/*VERT*/);
@@ -140,7 +139,7 @@ namespace CanonNoir_Affichage
                     switch (j3)
                     {
                         case 0:
-                            facade.setCoul3(1/*ROUJE*/);
+                            facade.setCoul3(1/*ROUGE*/);
                             break;
                         case 1:
                             facade.setCoul3(2/*VERT*/);
@@ -156,7 +155,7 @@ namespace CanonNoir_Affichage
                     switch (j4)
                     {
                         case 0:
-                            facade.setCoul4(1/*ROUJE*/);
+                            facade.setCoul4(1/*ROUGE*/);
                             break;
                         case 1:
                             facade.setCoul4(2/*VERT*/);
