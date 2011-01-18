@@ -31,11 +31,9 @@ void AttentePremLancerDe::determinerOrdre(){
 	//TRIER ORDRE DES JOUEURS
 	int i;
 	for(i=0;i < motor->getNbJoueurs();i++){
-
 		int max=0;
 		int ind;
 		int j;
-		cout<<"motor->getNbJoueurs()"<<motor->getNbJoueurs()<<endl;
 		for(j=0;j < motor->getNbJoueurs();j++){
 
 			if( resDe[j] > max){ 
@@ -44,7 +42,15 @@ void AttentePremLancerDe::determinerOrdre(){
 			}
 		}
 		resDe[ind]=0;
-		motor->getJoueurInd(i).setNumero(i);//On modifie le numéro du joueur !
+		motor->getJoueurInd(ind)->setNumero(i+1);//On modifie le numéro du joueur !
+	}
+
+
+
+	for(i=0;i<motor->getNbJoueurs();i++){
+
+		cout<<"Numéro du Joueur a l'indice "<<i<<"="<<motor->getJoueurInd(i)->getNumero()<<endl;
+
 	}
 }
 

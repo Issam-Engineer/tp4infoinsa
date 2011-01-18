@@ -26,10 +26,10 @@ void AttenteChoixBateauVise::execute(){
 	}
 		//on détermine le premier indice dans le tableau du joueur adverse en fonction de l'indice du joueur courant (sachant qu'on a que 2 joueurs)
 		int indJAdv;
-		if(motor->getJoueurInd(motor->getJCourant()).getNumero() == 0) indJAdv = 1;
+		if(motor->getJoueurInd(motor->getJCourant())->getNumero() == 0) indJAdv = 1;
 		else indJAdv = 0;
 		//si le joueur adverse a bien un bateau sur la case cliquée
-		if(motor->getJoueurInd(indJAdv).bateauAtPos(posit) || motor->getJoueurInd(indJAdv+2).bateauAtPos(posit)){
+		if(motor->getJoueurInd(indJAdv)->bateauAtPos(posit) || motor->getJoueurInd(indJAdv+2)->bateauAtPos(posit)){
 			//on oriente le tir depuis le canon dans la direction du bateau visé (à coder)
 
 		motor->modifCourant(ATTENTECANONANGLE);

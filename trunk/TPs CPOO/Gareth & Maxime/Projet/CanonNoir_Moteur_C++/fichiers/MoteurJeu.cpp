@@ -68,14 +68,17 @@ void MoteurJeu::modifCourant(int e){
 	courant=e;
 }
 
-Joueur MoteurJeu::getJoueurInd(int i){
-	return tabJoueurs[i];
+Joueur* MoteurJeu::getJoueurInd(int i){
+	return &tabJoueurs[i];
 }
 
 Plateau* MoteurJeu::getPlateau() const {
 	return _plateau;
 }
 
+void MoteurJeu::setTabJoueurs(int ind,Joueur j){
+	tabJoueurs[ind]=j;
+}
 
 void MoteurJeu::setTabJoueur(/*vector<Joueur>*/Joueur* t){
 	/*delete tabJoueurs;*/
