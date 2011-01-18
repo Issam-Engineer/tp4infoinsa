@@ -90,11 +90,12 @@ namespace CanonNoir_Affichage
                 ((comboBox1.SelectedValue == comboBox2.SelectedValue) || 
                 (comboBox1.SelectedItem == comboBox3.SelectedItem)))
             {*/
-                string j1 =comboBox1.SelectedItem.ToString();
-                string j2 =comboBox2.SelectedItem.ToString();
-                string j3 =comboBox3.SelectedItem.ToString();
-                string j4 =comboBox4.SelectedItem.ToString();
+                int j1 =comboBox1.SelectedIndex;
+                int j2 =comboBox2.SelectedIndex;
+                int j3 =comboBox3.SelectedIndex;
+                int j4 =comboBox4.SelectedIndex;
 
+            //if nb joueur = 3 on doit éviter l'erreur pour le joueur 4
                 if (j1 == j2 || j1 == j3 || j1 == j4 || j2 == j3 || j2 == j4 || j3 == j4)
                 {
 
@@ -103,28 +104,80 @@ namespace CanonNoir_Affichage
                 }
                 else
                 {
-                    MessageBox.Show(j1);
-                    if(
                     switch (j1)
                     {
-                        case "ROUJE":
+                        case 0:
                             facade.setCoul1(1/*ROUJE*/);
                             break;
-                        case "VERT":
+                        case 1:
                             facade.setCoul1(2/*VERT*/);
                             break;
-                        case "JAUNE":
+                        case 2:
                             facade.setCoul1(3/*JAUNE*/);
                             break;
-                        case "BLEU":
+                        case 3:
                             facade.setCoul1(4/*BLEU*/);
                             break;
                     }
-                }
-            /*}else{
-                Close();
-            }*/
+
+                    switch (j2)
+                    {
+                        case 0:
+                            facade.setCoul1(1/*ROUJE*/);
+                            break;
+                        case 1:
+                            facade.setCoul1(2/*VERT*/);
+                            break;
+                        case 2:
+                            facade.setCoul1(3/*JAUNE*/);
+                            break;
+                        case 3:
+                            facade.setCoul1(4/*BLEU*/);
+                            break;
+                    }
+
+                    switch (j3)
+                    {
+                        case 0:
+                            facade.setCoul1(1/*ROUJE*/);
+                            break;
+                        case 1:
+                            facade.setCoul1(2/*VERT*/);
+                            break;
+                        case 2:
+                            facade.setCoul1(3/*JAUNE*/);
+                            break;
+                        case 3:
+                            facade.setCoul1(4/*BLEU*/);
+                            break;
+                    }
+
+                    switch (j4)
+                    {
+                        case 0:
+                            facade.setCoul1(1/*ROUJE*/);
+                            break;
+                        case 1:
+                            facade.setCoul1(2/*VERT*/);
+                            break;
+                        case 2:
+                            facade.setCoul1(3/*JAUNE*/);
+                            break;
+                        case 3:
+                            facade.setCoul1(4/*BLEU*/);
+                            break;
+                    }
+
+                    facade.execute();
+                    // OUVRIR LA MAIN WINDOW EN PASSANT LA FACADE ! 
+
+                    MainWindow m = new MainWindow(facade); // attention ce n'est pas un pointeur...
+                    m.Show();
+                    Close();
+                    }
         }
+            
+        
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {

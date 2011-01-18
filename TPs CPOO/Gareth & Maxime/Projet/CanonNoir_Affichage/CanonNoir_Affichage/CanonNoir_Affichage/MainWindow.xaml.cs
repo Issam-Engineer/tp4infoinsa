@@ -21,10 +21,12 @@ namespace CanonNoir_Affichage
 
     public partial class MainWindow : Window
     {
+        WrapperFacade facade;
 
-        public MainWindow()
+        public MainWindow(WrapperFacade f)
         {
             InitializeComponent();
+            facade = f;     
         }
 
         private void SourisDown(object sender, MouseButtonEventArgs e)
@@ -69,10 +71,13 @@ namespace CanonNoir_Affichage
             MessageBox.Show(Caseclic);
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void button2_Click(object sender, RoutedEventArgs e)
         {
-            FenetreInit f = new FenetreInit();
-            f.Show();
+           /**
+             * facade.LancerDe();
+             * 
+             **/
+            facade.execute();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

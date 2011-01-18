@@ -17,6 +17,7 @@ AttenteInitialisation::AttenteInitialisation(MoteurJeu* m){
 }
 
 void AttenteInitialisation::execute(){
+	cout << "AttenteInitialisation.execute()"<<endl;
 	if( ((motor->getFacade())->_couleur1!=0 && (motor->getFacade())->_couleur2!=0) &&
 		((motor->getFacade())->_couleur3!=0 && (motor->getFacade())->_couleur4!=0) && 
 		(motor->getNbJoueurs()==2)){ //ON EST DANS LE CAS OU L'ON A DEUX JOUEURS
