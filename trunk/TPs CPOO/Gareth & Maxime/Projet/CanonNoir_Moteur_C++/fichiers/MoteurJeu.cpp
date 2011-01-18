@@ -30,6 +30,7 @@
 
 MoteurJeu::MoteurJeu(Facade* f):facade(f),nbJoueurs(0),courant(NULL),_JCourant(0),finPartie(false){
 	tabJoueurs = new Joueur[4];
+	_plateau = new Plateau();
 	setEtat(0); // on initialise int courant
 	cout<<"valeur de l'int courant :"<<courant<<endl;
 	_etats.push_back(new AttenteNbJoueurs(this));

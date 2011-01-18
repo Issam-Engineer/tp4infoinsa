@@ -19,7 +19,8 @@ Plateau::Plateau(){
 	_longueur=11;
 	_largeur=8;
 	//LIGNE 1
-	_tabCase[0] = new CasePort();//constructeur de case avec pair<int,int>
+	_tabCase.push_back(new CasePort());
+	/*_tabCase[0] = new CasePort();//constructeur de case avec pair<int,int>
 	_tabCase[1] = new CaseBordurePlateau();
 	_tabCase[2] = new CaseBordurePlateau();
 	_tabCase[3] = new CaseBordurePlateau();
@@ -113,7 +114,7 @@ Plateau::Plateau(){
 	_tabCase[84] = new CaseBordurePlateau();
 	_tabCase[85] = new CaseBordurePlateau();
 	_tabCase[86] = new CaseBordurePlateau();
-	_tabCase[87] = new CasePort();
+	_tabCase[87] = new CasePort();*/
 }
 
 Case* Plateau::getCasePort(int couleur) {
