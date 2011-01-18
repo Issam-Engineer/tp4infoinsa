@@ -13,9 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-//INCLURE LE WRAPPER
-//using WpfFacade;
-
 namespace CanonNoir_Affichage
 {
 
@@ -26,7 +23,7 @@ namespace CanonNoir_Affichage
         public MainWindow(WrapperFacade f)
         {
             InitializeComponent();
-            facade = f;     
+            facade = f;
         }
 
         private void SourisDown(object sender, MouseButtonEventArgs e)
@@ -73,11 +70,8 @@ namespace CanonNoir_Affichage
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-           /**
-             * facade.LancerDe();
-             * 
-             **/
-            facade.execute();
+            MessageBox.Show("valeur de facade.getCoul1"+facade.getCoul1());
+            //facade.execute();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
