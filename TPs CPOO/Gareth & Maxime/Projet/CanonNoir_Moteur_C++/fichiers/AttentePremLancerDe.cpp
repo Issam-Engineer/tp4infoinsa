@@ -64,7 +64,9 @@ void AttentePremLancerDe::execute(){
 		if(nbLance < motor->getNbJoueurs()){
 
 			motor->getDe()->lancerDe();
-			
+
+			motor->getFacade()->setValDe1(motor->getDe()->getDe1());
+			motor->getFacade()->setValDe2(motor->getDe()->getDe2());
 			//afficher les 2 dés
 			motor->getFacade()->setAfficherDe1(true);
 			motor->getFacade()->setAfficherDe2(true);
@@ -94,7 +96,7 @@ void AttentePremLancerDe::execute(){
 			cout<<"Etat suivant :ATTENTELANCERDE"<<endl;
 		}
 
-		motor->getFacade()->setClicDe(false); //remettre le bouléen à false (pour prochain lancé)
+		motor->getFacade()->setClicDe(false); //remettre le booléen à false (pour prochain lancer)
 		cout<<"on remet clicDe a false"<<endl;
 
 	}else{

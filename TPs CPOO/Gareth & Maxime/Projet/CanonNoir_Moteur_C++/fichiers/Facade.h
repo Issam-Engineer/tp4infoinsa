@@ -36,6 +36,9 @@ class __declspec(dllexport) Facade
 		bool _afficherDe1;
 		bool _afficherDe2;
 
+		int _valDe1;
+		int _valDe2;
+
 		bool _choixDe1;
 		bool _choixDe2;
 		bool _choix2De;
@@ -166,8 +169,30 @@ class __declspec(dllexport) Facade
 		*/
 		void setAfficherDe2(bool b);
 		/**
+		*\fn void setValDe1(int d)
+		*\brief function which change the value of the int _valDe1
+		*/		
+		void setValDe1(int d);
+		/**
+		*\fn void setValDe2(int d)
+		*\brief function which change the value of the int _valDe2
+		*/
+		void setValDe2(int d);
+		/**
+		*\fn int getValDe1()
+		*\brief acces function
+		*/
+		int getValDe1();
+		/**
+		*\fn bool getValDe2()
+		*\brief acces function
+		*\return int, the value of the dice
+		*/
+		int getValDe2();
+		/**
 		*\fn bool getChoixDe1()
 		*\brief acces function
+		*\return int, the value of the dice
 		*/
 		bool getChoixDe1();
 		/**
@@ -236,6 +261,7 @@ class __declspec(dllexport) Facade
 		*/
 		void setCoul4(int i);
 
+
 		//à traiter
 		void activeClicDepart();
 		void initialiser();
@@ -275,6 +301,10 @@ inline void Facade::setCoul1(int i){ cout<<"setCoul1 : "<<i<<endl;_couleur1=i ;}
 inline void Facade::setCoul2(int i){ cout<<"setCoul2 : "<<i<<endl;_couleur2=i ;}
 inline void Facade::setCoul3(int i){ cout<<"setCoul3 : "<<i<<endl;_couleur3=i ;}
 inline void Facade::setCoul4(int i){ cout<<"setCoul4 : "<<i<<endl;_couleur4=i ;}
+inline void Facade::setValDe1(int d){ _valDe1=d ;}
+inline void Facade::setValDe2(int d){ _valDe2=d ;}
+inline int Facade::getValDe1(){ return _valDe1;}
+inline int Facade::getValDe2(){ return _valDe2;}
 
 extern "C" __declspec(dllexport) Facade* Facade_new();
 extern "C" __declspec(dllexport) void Facade_delete(Facade* f);
