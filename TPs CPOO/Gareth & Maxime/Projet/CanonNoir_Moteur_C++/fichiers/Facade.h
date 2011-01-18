@@ -271,10 +271,10 @@ inline int Facade::getY(){return _clicY;}
 inline int Facade::getAngle(){return _angle;}
 inline int Facade::getPuissance(){return _puissance;}
 inline MoteurJeu* Facade::getMoteur(){return _moteur;}
-inline void Facade::setCoul1(int i){ cout<<"setCoul1"<<i<<endl;_couleur1=i ;}
-inline void Facade::setCoul2(int i){ cout<<"setCoul2"<<i<<endl;_couleur2=i ;}
-inline void Facade::setCoul3(int i){ cout<<"setCoul3"<<i<<endl;_couleur3=i ;}
-inline void Facade::setCoul4(int i){ cout<<"setCoul4"<<i<<endl;_couleur4=i ;}
+inline void Facade::setCoul1(int i){ cout<<"setCoul1 : "<<i<<endl;_couleur1=i ;}
+inline void Facade::setCoul2(int i){ cout<<"setCoul2 : "<<i<<endl;_couleur2=i ;}
+inline void Facade::setCoul3(int i){ cout<<"setCoul3 : "<<i<<endl;_couleur3=i ;}
+inline void Facade::setCoul4(int i){ cout<<"setCoul4 : "<<i<<endl;_couleur4=i ;}
 
 extern "C" __declspec(dllexport) Facade* Facade_new();
 extern "C" __declspec(dllexport) void Facade_delete(Facade* f);

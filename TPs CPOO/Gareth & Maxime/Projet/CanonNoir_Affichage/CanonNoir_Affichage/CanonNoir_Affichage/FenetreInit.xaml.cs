@@ -123,48 +123,48 @@ namespace CanonNoir_Affichage
                     switch (j2)
                     {
                         case 0:
-                            facade.setCoul1(1/*ROUJE*/);
+                            facade.setCoul2(1/*ROUJE*/);
                             break;
                         case 1:
-                            facade.setCoul1(2/*VERT*/);
+                            facade.setCoul2(2/*VERT*/);
                             break;
                         case 2:
-                            facade.setCoul1(3/*JAUNE*/);
+                            facade.setCoul2(3/*JAUNE*/);
                             break;
                         case 3:
-                            facade.setCoul1(4/*BLEU*/);
+                            facade.setCoul2(4/*BLEU*/);
                             break;
                     }
 
                     switch (j3)
                     {
                         case 0:
-                            facade.setCoul1(1/*ROUJE*/);
+                            facade.setCoul3(1/*ROUJE*/);
                             break;
                         case 1:
-                            facade.setCoul1(2/*VERT*/);
+                            facade.setCoul3(2/*VERT*/);
                             break;
                         case 2:
-                            facade.setCoul1(3/*JAUNE*/);
+                            facade.setCoul3(3/*JAUNE*/);
                             break;
                         case 3:
-                            facade.setCoul1(4/*BLEU*/);
+                            facade.setCoul3(4/*BLEU*/);
                             break;
                     }
 
                     switch (j4)
                     {
                         case 0:
-                            facade.setCoul1(1/*ROUJE*/);
+                            facade.setCoul4(1/*ROUJE*/);
                             break;
                         case 1:
-                            facade.setCoul1(2/*VERT*/);
+                            facade.setCoul4(2/*VERT*/);
                             break;
                         case 2:
                             facade.setCoul1(3/*JAUNE*/);
                             break;
                         case 3:
-                            facade.setCoul1(4/*BLEU*/);
+                            facade.setCoul4(4/*BLEU*/);
                             break;
                     }
 
