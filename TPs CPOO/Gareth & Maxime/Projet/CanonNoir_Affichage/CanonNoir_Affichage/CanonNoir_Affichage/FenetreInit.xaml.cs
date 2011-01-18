@@ -19,7 +19,8 @@ namespace CanonNoir_Affichage
     {
 
         //INITIALISER LE WRAPPER
-        WrapperFacade facade;
+
+        /*public static*/ WrapperFacade facade;
 
         public FenetreInit()
         {
@@ -170,8 +171,7 @@ namespace CanonNoir_Affichage
 
                     facade.execute();
                     // OUVRIR LA MAIN WINDOW EN PASSANT LA FACADE ! 
-
-                    MainWindow m = new MainWindow(facade); // attention ce n'est pas un pointeur...
+                    MainWindow m = new MainWindow(facade);
                     m.Show();
                     Close();
                     }

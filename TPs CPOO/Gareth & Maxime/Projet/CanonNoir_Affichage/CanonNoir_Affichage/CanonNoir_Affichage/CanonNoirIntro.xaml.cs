@@ -27,6 +27,8 @@ namespace CanonNoir_Affichage
         {
            FenetreInit m = new FenetreInit();
            m.Show();
+           /*MainWindow m2 = new MainWindow();
+           m2.Show();*/
            Close();
         }
 
