@@ -15,6 +15,8 @@ AttenteLancerDe::AttenteLancerDe(MoteurJeu* m){
 
 void AttenteLancerDe::execute(){
 
+	cout<<"AttenteLancerDe.execute()"<<endl;
+
 	if(motor->getFacade()->getClicDe() == true){
 
 		motor->getDe().lancerDe();//Le de contient les deux nouvelle valeurs
