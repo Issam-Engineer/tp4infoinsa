@@ -45,11 +45,12 @@ void AttentePremLancerDe::determinerOrdre(){
 		resDe[ind]=0;
 		temp[i] = (*motor->getJoueurInd(ind));
 	}
-	delete motor->getTabJoueurs();
+	//delete motor->getTabJoueurs();
 	motor->setTabJoueur(temp);
 	int k = 0;
+
 	for(k=0;k<motor->getNbJoueurs();k++){
-		cout<<"Joueur : "<< k <<" a pour numéro :"<< motor->getJoueurInd(k)->getNumero()<<" et pour port"<<endl;
+		cout<<"Joueur : "<< k <<" a pour numéro :"<< motor->getJoueurInd(k)->getNumero()<<endl;
 	}
 
 	cout<<"NUMERO DU PREMIER JOUEUR QUI COMMENCE LA PARTIE : "<<motor->getJoueurInd(0)->getNumero()<<endl;
@@ -105,6 +106,12 @@ void AttentePremLancerDe::execute(){
 			//on passe à l'état suivant
 			motor->modifCourant(ATTENTELANCERDE);
 			cout<<"Etat suivant :ATTENTELANCERDE"<<endl;
+
+			int k = 0;
+
+			for(k=0;k<motor->getNbJoueurs();k++){
+				cout<<"Joueur : "<< k <<" a pour numéro :"<< motor->getJoueurInd(k)->getNumero()<<endl;
+			}
 			
 		}
 
