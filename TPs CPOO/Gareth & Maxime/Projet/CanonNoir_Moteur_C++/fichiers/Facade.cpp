@@ -93,3 +93,15 @@ void Facade::setX(int u){
 void Facade::setY(int u){
 	_clicY=u;
 }
+
+int Facade::getDe1(){
+	return _moteur->getDe()->getDe1();
+}
+
+int Facade::getDe2(){
+	return _moteur->getDe()->getDe2();
+}
+
+int Facade::getJoueurCourant(){
+	return _moteur->getJCourant();
+}

@@ -24,6 +24,7 @@ namespace CanonNoir_Affichage
         {
             InitializeComponent();
             facade = f;
+            textBox4.Text = ""+(facade.getJoueurCourant()+1);
         }
 
         private void SourisDown(object sender, MouseButtonEventArgs e)
@@ -32,6 +33,11 @@ namespace CanonNoir_Affichage
             //Gérer l'affichage par case
             int x = (int)(((int)p.X * 11) / ((int)Plateau.Width));
             int y = (int)(((int)p.Y * 8) / ((int)Plateau.Height));
+
+            //if On est avec Left joueur Rouge
+            Canvas.SetLeft(JoueurRouge, (x * ((Plateau.Width) / 11)));
+            Canvas.SetTop(JoueurRouge, (y * ((Plateau.Height) / 8)));
+            
 
             //MessageBox.Show("x =" + x + " et y=" + y);
             String Caseclic = "";
@@ -65,13 +71,18 @@ namespace CanonNoir_Affichage
                 Caseclic = "Case Navigable";
             } 
 
-            MessageBox.Show(Caseclic);
+            //MessageBox.Show(Caseclic);
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
+            textBox4.Text = "" + (facade.getJoueurCourant() + 1);
             facade.setClicDe(true);
             facade.execute();
+            textBox2.Text = ""+facade.getde1();
+            textBox3.Text = "" + facade.getde2();
+            textBox2.IsEnabled = facade.getAfficherDe1();//On peut mettre un autre booléen
+            textBox3.IsEnabled = facade.getAfficherDe1();//On peut mettre un autre booléen
             
         }
 
@@ -100,14 +111,6 @@ namespace CanonNoir_Affichage
 
         }
 
-    
-
-        /*public void MouseDown(object sender,MouseButtonEventArgs e){
-            //On récupère la position du MouseDown
-            Point pt = e.GetPosition(Plateau);
-            //On déplace le joueur à ces coordonnées
-            Canvas.SetLeft();
-            Canvas.SetTop();
-        }*/
+   
     }
 };

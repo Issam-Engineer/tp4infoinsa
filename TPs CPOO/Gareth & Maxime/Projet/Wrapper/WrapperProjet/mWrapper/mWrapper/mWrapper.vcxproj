@@ -41,6 +41,9 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\fichiers;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug;$(LibraryPath)</LibraryPath>
+    <ReferencePath>C:\Users\Max\Desktop\TP 4INFO\TPs CPOO\Gareth &amp; Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug;$(ReferencePath)</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
