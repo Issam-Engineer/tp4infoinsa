@@ -35,41 +35,74 @@ void ProposeDeplacement::execute(){
 			int x1 = x_actuel + valde1;
 			int y1 = y_actuel;
 
-			int x2 = x_actuel;
-			int y2= y_actuel + valde1;
+			int x2 = x_actuel - valde1;
+			int y2 = y_actuel;
 
-			int x3 = x_actuel - valde1;
-			int y3 = y_actuel;
+			int x3 = x_actuel;
+			int y3 = y_actuel + valde1;
 
 			int x4 = x_actuel;
-			int y4  = y_actuel - valde1;
+			int y4 = y_actuel - valde1;
 
-			int x5;
-			int y5;
+			int x5 = x_actuel + valde1;
+			int y5 = y_actuel + valde1;
 
-			int x6;
-			int y6;
+			int x6 = x_actuel - valde1;
+			int y6 = y_actuel + valde1;
 
-			int x7;
-			int y7;
+			int x7 = x_actuel + valde1;
+			int y7 = y_actuel - valde1;
 
-			int x8;
-			int y8;
+			int x8 = x_actuel - valde1;
+			int y8 = y_actuel - valde1;
 
-			int x9;
-			int y9;
+			int x9 = x_actuel + valde2;
+			int y9 = y_actuel;
 
-			int x10;
-			int y10;
+			int x10 = x_actuel - valde2;
+			int y10 = y_actuel;
 
-			int x11;
-			int y11;
+			int x11 = x_actuel;
+			int y11 = y_actuel + valde2;
 
-			int x12;
-			int y12;
+			int x12 = x_actuel;
+			int y12 = y_actuel - valde2;
 
-			int x13;
-			int y13;
+			int x13 = x_actuel + valde2;
+			int y13 = y_actuel + valde2;
+
+			int x14 = x_actuel - valde2;
+			int y14 = y_actuel + valde2;
+
+			int x15 = x_actuel + valde2;
+			int y15 = y_actuel - valde2;
+
+			int x16 = x_actuel - valde2;
+			int y16 = y_actuel - valde2;
+
+			int x17 = x_actuel + valdede;
+			int y17 = y_actuel;
+
+			int x18 = x_actuel - valdede;
+			int y18 = y_actuel;
+
+			int x19 = x_actuel;
+			int y19 = y_actuel + valdede;
+
+			int x20 = x_actuel;
+			int y20 = y_actuel - valdede;
+
+			int x21 = x_actuel + valdede;
+			int y21 = y_actuel + valdede;
+
+			int x22 = x_actuel - valdede;
+			int y22 = y_actuel + valdede;
+
+			int x23 = x_actuel + valdede;
+			int y23 = y_actuel - valdede;
+
+			int x24 = x_actuel - valdede;
+			int y24 = y_actuel - valdede;
 		}
 
 
