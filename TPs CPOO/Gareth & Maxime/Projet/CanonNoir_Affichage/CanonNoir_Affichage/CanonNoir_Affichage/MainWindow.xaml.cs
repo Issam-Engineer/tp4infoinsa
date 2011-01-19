@@ -136,9 +136,12 @@ namespace CanonNoir_Affichage
             }
             else
             {
+                facade.setClicDe(true);
                 facade.execute();
                 textBox2.Text = "" + facade.getde1();
                 textBox3.Text = "" + facade.getde2();
+                textBox4.Text = "" + (facade.getNumJCourant());
+                facade.execute();
             }
         }
 
