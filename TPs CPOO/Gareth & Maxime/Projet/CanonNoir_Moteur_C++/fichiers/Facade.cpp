@@ -8,6 +8,7 @@
 //#include "StdAfx.h"
 #include "Facade.h"
 #include "MoteurJeu.h"
+#include "Joueur.h"
 
 
 extern "C" __declspec(dllexport) Facade* Facade_new(){return new Facade();}
@@ -32,6 +33,7 @@ Facade::Facade(){
 	_clicY=-1;
 	_angle=-1;
 	_puissance=-1;
+	_initialiserOK=false;
 }
 
 Facade::~Facade(){
@@ -102,6 +104,10 @@ int Facade::getDe2(){
 	return _moteur->getDe()->getDe2();
 }
 
-int Facade::getJoueurCourant(){
-	return _moteur->getJCourant();
+int Facade::getNumJCourant(){
+	return _moteur->getJoueurInd(_moteur->getJCourant())->getNumero();
+}
+
+int Facade::getMotorNbJoueur(){
+	return _moteur->getNbJoueurs();
 }

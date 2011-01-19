@@ -31,7 +31,7 @@ void AttentePremLancerDe::determinerOrdre(){
 	//TRIER ORDRE DES JOUEURS
 	Joueur temp[4];
 	int i;
-	/*for(i=0;i < motor->getNbJoueurs();i++){
+	for(i=0;i < motor->getNbJoueurs();i++){
 		int max=0;
 		int ind;
 		int j;
@@ -46,11 +46,14 @@ void AttentePremLancerDe::determinerOrdre(){
 		temp[i] = (*motor->getJoueurInd(ind));
 	}
 	delete motor->getTabJoueurs();
-	motor->setTabJoueur(temp);*/
+	motor->setTabJoueur(temp);
 	int k = 0;
 	for(k=0;k<motor->getNbJoueurs();k++){
 		cout<<"Joueur : "<< k <<" a pour numéro :"<< motor->getJoueurInd(k)->getNumero()<<" et pour port"<<endl;
 	}
+
+	cout<<"NUMERO DU PREMIER JOUEUR QUI COMMENCE LA PARTIE : "<<motor->getJoueurInd(0)->getNumero()<<endl;
+	motor->getFacade()->setInitialisationOK(true);
 }
 
 
@@ -69,8 +72,6 @@ void AttentePremLancerDe::execute(){
 
 			motor->getDe()->lancerDe();
 
-			//motor->getFacade()->setValDe1(motor->getDe()->getDe1());
-			//motor->getFacade()->setValDe2(motor->getDe()->getDe2());
 			//afficher les 2 dés
 			motor->getFacade()->setAfficherDe1(true);
 			motor->getFacade()->setAfficherDe2(true);
@@ -94,12 +95,17 @@ void AttentePremLancerDe::execute(){
 
 		}
 		
+			
+
 		if(nbLance == motor->getNbJoueurs()){
 			cout<<"AttentePremLancerDe.determinerOrdre"<<endl;
 			determinerOrdre();
+			//motor->setJCourant(0);
+
 			//on passe à l'état suivant
 			motor->modifCourant(ATTENTELANCERDE);
 			cout<<"Etat suivant :ATTENTELANCERDE"<<endl;
+			
 		}
 
 		motor->getFacade()->setClicDe(false); //remettre le booléen à false (pour prochain lancer)
