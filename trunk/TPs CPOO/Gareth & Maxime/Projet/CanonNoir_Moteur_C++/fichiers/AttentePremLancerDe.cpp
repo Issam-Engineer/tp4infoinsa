@@ -57,7 +57,9 @@ void AttentePremLancerDe::determinerOrdre(){
 
 
 void AttentePremLancerDe::execute(){
+	srand( time(NULL));
 	cout<<"AttentePremLancerDe.execute()"<<endl;
+
 	//vérifier qu'on a bien cliqué sur le bouton lancer Dé sinon on ne doit rien faire !
 	if(motor->getFacade()->getClicDe() == true){
 
@@ -79,10 +81,14 @@ void AttentePremLancerDe::execute(){
 			resDe[nbLance]=res;
 			nbLance++;
 			
+			//On change l'indice du joueur courant
+			motor->setJCourant((motor->getJCourant() + 1)%(motor->getNbJoueurs()));
+
+			/* Tester le tableau des dés :
 			int j;
 			for(j=0;j<4;j++){
 				cout<<resDe[j]<<endl;
-			}
+			}*/
 
 		}
 		
