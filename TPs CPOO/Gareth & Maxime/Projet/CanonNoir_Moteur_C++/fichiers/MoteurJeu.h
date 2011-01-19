@@ -144,6 +144,12 @@ class MoteurJeu
 		*\brief the Joueur at the indice
 		*/
 		void setTabJoueurs(int ind,Joueur j);
+		/**
+		*\fn Joueur* getTabJoueurs()
+		*\brief return the attribute tabjoueurs
+		*\return Joueur*
+		*/
+		Joueur* getTabJoueurs();
 }; 
 
 
@@ -151,5 +157,5 @@ inline Facade* MoteurJeu::getFacade() const { return facade;}
 inline int MoteurJeu::getNbJoueurs() const {return nbJoueurs;} 
 inline De* MoteurJeu::getDe(){return &_de;} 
 inline int MoteurJeu::getJCourant() const{return _JCourant;} 
-
+inline Joueur * MoteurJeu::getTabJoueurs(){return tabJoueurs;}
 #endif
