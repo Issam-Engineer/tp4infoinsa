@@ -39,4 +39,5 @@ void AttenteLancerDe::execute(){
 		}else{
 				motor->modifCourant(PROPOSEDEPLACEMENT);
 		}
+	}
 }

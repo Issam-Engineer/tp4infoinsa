@@ -285,6 +285,13 @@ class __declspec(dllexport) Facade
 		**/
 		int getCoulPortJCourant();
 
+		/**
+		*\fn bool getAccessible()
+		*\brief acces function
+		*\return true if the square is accessible
+		**/
+		bool getAccessible(int x, int y);
+
 
 		//à traiter
 		void activeClicDepart();

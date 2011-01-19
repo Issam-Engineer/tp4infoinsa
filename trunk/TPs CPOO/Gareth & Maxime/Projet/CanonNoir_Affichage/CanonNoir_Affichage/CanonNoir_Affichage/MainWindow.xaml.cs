@@ -142,6 +142,12 @@ namespace CanonNoir_Affichage
                 textBox3.Text = "" + facade.getde2();
                 textBox4.Text = "" + (facade.getNumJCourant());
                 facade.execute();
+                for (int x = 0; x <= 10; x++) {
+                    for (int y = 0; y <= 8; y++) {
+                        if (facade.getAccessible(x, y)) {
+                        }
+                    }
+                }
             }
         }
 
