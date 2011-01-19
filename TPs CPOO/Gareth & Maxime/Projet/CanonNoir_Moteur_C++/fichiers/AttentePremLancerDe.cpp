@@ -29,8 +29,9 @@ void AttentePremLancerDe::setResDe(int i){
 
 void AttentePremLancerDe::determinerOrdre(){
 	//TRIER ORDRE DES JOUEURS
+	Joueur temp[4];
 	int i;
-	for(i=0;i < motor->getNbJoueurs();i++){
+	/*for(i=0;i < motor->getNbJoueurs();i++){
 		int max=0;
 		int ind;
 		int j;
@@ -42,15 +43,13 @@ void AttentePremLancerDe::determinerOrdre(){
 			}
 		}
 		resDe[ind]=0;
-		motor->getJoueurInd(ind)->setNumero(i+1);//On modifie le numéro du joueur !
+		temp[i] = (*motor->getJoueurInd(ind));
 	}
-
-
-
-	for(i=0;i<motor->getNbJoueurs();i++){
-
-		cout<<"Numéro du Joueur a l'indice "<<i<<"="<<motor->getJoueurInd(i)->getNumero()<<endl;
-
+	delete motor->getTabJoueurs();
+	motor->setTabJoueur(temp);*/
+	int k = 0;
+	for(k=0;k<motor->getNbJoueurs();k++){
+		cout<<"Joueur : "<< k <<" a pour numéro :"<< motor->getJoueurInd(k)->getNumero()<<" et pour port"<<endl;
 	}
 }
 
@@ -59,7 +58,10 @@ void AttentePremLancerDe::determinerOrdre(){
 void AttentePremLancerDe::execute(){
 	srand( time(NULL));
 	cout<<"AttentePremLancerDe.execute()"<<endl;
-
+	int k = 0;
+	for(k=0;k<motor->getNbJoueurs();k++){
+		cout<<"Joueur : "<< k <<" a pour numéro :"<< motor->getJoueurInd(k)->getNumero()<<" et pour port"<<endl;
+	}
 	//vérifier qu'on a bien cliqué sur le bouton lancer Dé sinon on ne doit rien faire !
 	if(motor->getFacade()->getClicDe() == true){
 
