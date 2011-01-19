@@ -65,8 +65,8 @@ void AttentePremLancerDe::execute(){
 
 			motor->getDe()->lancerDe();
 
-			motor->getFacade()->setValDe1(motor->getDe()->getDe1());
-			motor->getFacade()->setValDe2(motor->getDe()->getDe2());
+			//motor->getFacade()->setValDe1(motor->getDe()->getDe1());
+			//motor->getFacade()->setValDe2(motor->getDe()->getDe2());
 			//afficher les 2 dés
 			motor->getFacade()->setAfficherDe1(true);
 			motor->getFacade()->setAfficherDe2(true);
@@ -78,9 +78,7 @@ void AttentePremLancerDe::execute(){
 			
 			resDe[nbLance]=res;
 			nbLance++;
-			//griser les 2 dés
-			motor->getFacade()->setAfficherDe1(false);
-			motor->getFacade()->setAfficherDe2(false);
+			
 			int j;
 			for(j=0;j<4;j++){
 				cout<<resDe[j]<<endl;

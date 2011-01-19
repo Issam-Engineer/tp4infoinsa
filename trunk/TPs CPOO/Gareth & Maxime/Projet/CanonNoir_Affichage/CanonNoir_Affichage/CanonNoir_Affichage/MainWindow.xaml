@@ -11,6 +11,10 @@
             <Canvas.Background>
                 <ImageBrush ImageSource="/CanonNoir_Affichage;component/Images/carte.PNG" />
             </Canvas.Background>
+            <Image Canvas.Left="6" Canvas.Top="6" Height="32" Name="JoueurRouge" Stretch="Fill" Width="37" Source="/CanonNoir_Affichage;component/Images/CanonRouge.png" Cursor="None" Focusable="False" />
+            <Image Canvas.Left="393" Canvas.Top="6" Cursor="None" Focusable="False" Height="32" Name="JoueurJaune" Source="/CanonNoir_Affichage;component/Images/CanonJaune.png" Stretch="Fill" Width="37" />
+            <Image Canvas.Left="6" Canvas.Top="247" Cursor="None" Focusable="False" Height="32" Name="JoueurVert" Source="/CanonNoir_Affichage;component/Images/CanonVert.png" Stretch="Fill" Width="37" />
+            <Image Canvas.Left="393" Canvas.Top="247" Cursor="None" Focusable="False" Height="32" Name="JoueurBleu" Source="/CanonNoir_Affichage;component/Images/CanonBleu.png" Stretch="Fill" Width="37" />
         </Canvas>
         <Label Content="Joueur" Height="29" HorizontalAlignment="Left" Margin="12,39,0,0" Name="label1" VerticalAlignment="Top" Width="51" />
         <ProgressBar Height="10" HorizontalAlignment="Left" Margin="111,314,0,0" Name="progressBar1" VerticalAlignment="Top" Width="100" IsIndeterminate="True" Grid.Column="1" />

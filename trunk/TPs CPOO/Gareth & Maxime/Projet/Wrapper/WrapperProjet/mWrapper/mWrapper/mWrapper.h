@@ -7,10 +7,10 @@ namespace mWrapper {
 	public ref class WrapperFacade
 	{
 	private:
-
 		Facade* f;
 
 	public:
+		
 		WrapperFacade(){ f=Facade_new();}
 		~WrapperFacade(){ Facade_delete(f);}
 
@@ -38,5 +38,12 @@ namespace mWrapper {
 		bool getClicDe() { return f->getClicDe(); }
 		void setClicDe(bool t) { f->setClicDe(t); }
 
+		int getde1(){ return f->getDe1(); }
+		int getde2(){ return f->getDe2(); }
+
+		bool getAfficherDe1() { return f->getAfficherDe1(); }
+		bool getAfficherDe2() { return f->getAfficherDe2(); }
+
+		int getJoueurCourant() { return f->getJoueurCourant(); }
 	};
 }
