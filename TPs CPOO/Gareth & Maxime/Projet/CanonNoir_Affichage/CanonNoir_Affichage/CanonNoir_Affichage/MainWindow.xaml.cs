@@ -90,8 +90,23 @@ namespace CanonNoir_Affichage
                     && (y != 2 && y != 3 && y != 4 && y != 5))
                     || x == 1 || x == 4 || x == 5 || x == 6 || x == 9 || x == 10) {
                 Caseclic = "Case Navigable";
-            } 
+            }
 
+            if (Caseclic == "Case Île")
+            {
+                MessageBox.Show("Ô malheureux ! Impossible de se déplacer sur l'île !");
+            } else if (Caseclic == "Case Trésor")
+            {
+                MessageBox.Show("Bachibouzouk ! A nous les pépettes !");
+            }
+            else if (Caseclic == "Case Canon Noir")
+            {
+                MessageBox.Show("Tonerre de Brest ! Préparez l'artillerie lourde !");
+            }
+            else if (Caseclic == "Case Bordure Plateau")
+            {
+                MessageBox.Show("Pirates à babord ! Euh ... en fait non à tribord ! En fait j'en sais rien ... On s'en fout, zoukez les artémuses !");
+            }
             //MessageBox.Show(Caseclic);
         }
 
@@ -109,15 +124,21 @@ namespace CanonNoir_Affichage
                 if (facade.getInitialisationOK())
                 {
                     MessageBox.Show("C'est parti ! A vous de jouer");
+                    textBox2.Text = "" + facade.getde1();
+                    textBox3.Text = "" + facade.getde2();
                     facade.setInitialisationOK(false);
                     debutPartie = false;
-                    facade.execute();
+                    textBox2.Text = "";
+                    textBox3.Text = "";
                     textBox4.Text = "" + (facade.getNumJCourant());
+                    
                 }
             }
             else
             {
                 facade.execute();
+                textBox2.Text = "" + facade.getde1();
+                textBox3.Text = "" + facade.getde2();
             }
         }
 
