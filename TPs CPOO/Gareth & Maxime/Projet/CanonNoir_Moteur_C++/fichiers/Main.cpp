@@ -24,7 +24,7 @@ int main( int argc, const char* argv[] )
 	//clic De
 	srand( time(NULL));
 	fac->execute();
-
+	
 	fac->setClicDe(true);
 	fac->execute();
 
