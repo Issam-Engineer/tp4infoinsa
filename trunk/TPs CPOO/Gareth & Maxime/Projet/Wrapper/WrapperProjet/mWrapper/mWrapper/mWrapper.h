@@ -44,6 +44,10 @@ namespace mWrapper {
 		bool getAfficherDe1() { return f->getAfficherDe1(); }
 		bool getAfficherDe2() { return f->getAfficherDe2(); }
 
-		int getJoueurCourant() { return f->getJoueurCourant(); }
+		int getNumJCourant() { return f->getNumJCourant(); }
+
+		int getMotorNbJoueur() { return f->getMotorNbJoueur(); }
+
+		bool getInitialisationOK() { return f->getInitialisationOK(); }
 	};
 }

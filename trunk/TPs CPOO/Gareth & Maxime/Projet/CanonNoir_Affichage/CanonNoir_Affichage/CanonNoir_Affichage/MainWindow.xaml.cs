@@ -24,7 +24,7 @@ namespace CanonNoir_Affichage
         {
             InitializeComponent();
             facade = f;
-            textBox4.Text = ""+(facade.getJoueurCourant()+1);
+            textBox4.Text = "" + (facade.getNumJCourant());
         }
 
         private void SourisDown(object sender, MouseButtonEventArgs e)
@@ -76,14 +76,17 @@ namespace CanonNoir_Affichage
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            textBox4.Text = "" + (facade.getJoueurCourant() + 1);
+            textBox4.Text = "" + (facade.getNumJCourant());
             facade.setClicDe(true);
             facade.execute();
             textBox2.Text = ""+facade.getde1();
             textBox3.Text = "" + facade.getde2();
             textBox2.IsEnabled = facade.getAfficherDe1();//On peut mettre un autre booléen
             textBox3.IsEnabled = facade.getAfficherDe1();//On peut mettre un autre booléen
-            
+            if (facade.getInitialisationOK())
+            {
+                MessageBox.Show("C'est parti ! A vous de jouer");
+            }
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

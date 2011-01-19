@@ -46,6 +46,8 @@ class __declspec(dllexport) Facade
 		int _angle;
 		int _puissance;
 
+		bool _initialiserOK;
+
 		//int JoueurCourant; Useless on va directement le chercher dans le moteur
 
 
@@ -57,7 +59,6 @@ class __declspec(dllexport) Facade
 		bool _partieEnCours;
 		bool _clicNbJoueurs;
 		bool _afficherJoueur1;
-		bool _initialiserOK;
 		bool _clicRefuserDuel;
 		bool _afficherAttaqué;
 		bool _afficherAttanquant;
@@ -253,10 +254,30 @@ class __declspec(dllexport) Facade
 
 
 		/**
-		*\fn int JoueurCourant()
+		*\fn int getNumJCourant()
 		*\return the number of the current Player
 		**/
-		int getJoueurCourant();
+		int getNumJCourant();
+
+		/**
+		*\fn int getMotorNbJoueur()
+		*\return the number of player
+		**/
+		int getMotorNbJoueur();
+
+		/**
+		*\fn void setInitialisationOk(bool b)
+		*\brief initialize the attribute _initialiserOK to the boolean b
+		**/
+		void setInitialisationOK(bool b);
+
+		/**
+		*\fn bool getInitialisationOK()
+		*\brief return the value of the attribute _initialiserOK
+		*\return true if the attribute has been initialized to true
+		**/
+		bool getInitialisationOK();
+
 
 		//à traiter
 		void activeClicDepart();
@@ -297,6 +318,9 @@ inline void Facade::setCoul1(int i){ cout<<"setCoul1 : "<<i<<endl;_couleur1=i ;}
 inline void Facade::setCoul2(int i){ cout<<"setCoul2 : "<<i<<endl;_couleur2=i ;}
 inline void Facade::setCoul3(int i){ cout<<"setCoul3 : "<<i<<endl;_couleur3=i ;}
 inline void Facade::setCoul4(int i){ cout<<"setCoul4 : "<<i<<endl;_couleur4=i ;}
+inline void Facade::setInitialisationOK(bool b){_initialiserOK=b;}
+inline bool Facade::getInitialisationOK(){return _initialiserOK;}
+
 
 extern "C" __declspec(dllexport) Facade* Facade_new();
 extern "C" __declspec(dllexport) void Facade_delete(Facade* f);
