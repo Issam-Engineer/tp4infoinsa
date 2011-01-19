@@ -115,3 +115,8 @@ int Facade::getMotorNbJoueur(){
 int Facade::getCoulPortJCourant(){
 	return _moteur->getJoueurInd(_moteur->getJCourant())->getPort1()->getCouleur();
 }
+
+bool Facade::getAccessible(int x, int y){
+	pair<int,int> p = make_pair(x,y);
+	return _moteur->estAccessible(p);
+}

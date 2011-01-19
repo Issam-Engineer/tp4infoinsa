@@ -54,5 +54,8 @@ namespace mWrapper {
 
 		int getCoulPortJCourant() { return f->getCoulPortJCourant(); }
 
+		bool getAccessible(int x, int y) { return f->getAccessible(x,y); }
+
+
 	};
 }
