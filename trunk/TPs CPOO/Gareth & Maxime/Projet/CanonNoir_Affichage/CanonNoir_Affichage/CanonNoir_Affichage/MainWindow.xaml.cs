@@ -86,7 +86,9 @@ namespace CanonNoir_Affichage
             if (facade.getInitialisationOK())
             {
                 MessageBox.Show("C'est parti ! A vous de jouer");
+                facade.setInitialisationOK(false);
             }
+
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

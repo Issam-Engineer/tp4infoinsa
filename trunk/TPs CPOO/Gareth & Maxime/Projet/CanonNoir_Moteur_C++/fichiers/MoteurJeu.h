@@ -114,7 +114,7 @@ class MoteurJeu
 		*\parma[in] Joueur* j
 		*/
 		/*void setTabJoueur(Joueur * t); */ 
-		void setTabJoueur(/*vector<Joueur>*/Joueur* t);
+		void setTabJoueur(Joueur* t);
 		/**
 		*\fn int getJCourant();
 		*\brief Access function

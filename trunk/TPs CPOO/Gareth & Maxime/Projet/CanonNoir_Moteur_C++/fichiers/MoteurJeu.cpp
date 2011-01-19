@@ -80,8 +80,7 @@ void MoteurJeu::setTabJoueurs(int ind,Joueur j){
 	tabJoueurs[ind]=j;
 }
 
-void MoteurJeu::setTabJoueur(/*vector<Joueur>*/Joueur* t){
-	/*delete tabJoueurs;*/
+void MoteurJeu::setTabJoueur(Joueur* t){
 	tabJoueurs = t;
 }
 

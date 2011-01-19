@@ -49,5 +49,7 @@ namespace mWrapper {
 		int getMotorNbJoueur() { return f->getMotorNbJoueur(); }
 
 		bool getInitialisationOK() { return f->getInitialisationOK(); }
+
+		void setInitialisationOK(bool b) { f->setInitialisationOK(b); }
 	};
 }
