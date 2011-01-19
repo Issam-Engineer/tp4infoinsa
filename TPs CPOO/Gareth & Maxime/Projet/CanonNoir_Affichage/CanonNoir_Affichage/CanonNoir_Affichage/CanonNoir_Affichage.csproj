@@ -136,9 +136,6 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Canon-copie-3.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\CanonRouge.png" />
   </ItemGroup>
   <ItemGroup>

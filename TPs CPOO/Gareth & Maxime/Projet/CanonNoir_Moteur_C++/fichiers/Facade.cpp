@@ -111,3 +111,7 @@ int Facade::getNumJCourant(){
 int Facade::getMotorNbJoueur(){
 	return _moteur->getNbJoueurs();
 }
+
+int Facade::getCoulPortJCourant(){
+	return _moteur->getJoueurInd(_moteur->getJCourant())->getPort1()->getCouleur();
+}

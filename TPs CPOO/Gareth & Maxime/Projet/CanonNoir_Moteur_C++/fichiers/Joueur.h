@@ -13,6 +13,7 @@
 #include <iostream>
 
 #include "Bateau.h"
+#include "CasePort.h"
 
 using namespace std;
 class CasePort;
@@ -59,6 +60,16 @@ class Joueur
 		*/
 		void setNumero(int i);
 		/**
+		*\fn int getPort1() const
+		*\brief acces function to the Joueur's first harbour
+		*/
+		CasePort* getPort1() const;
+		/**
+		*\fn int getPort2() const
+		*\brief acces function to the Joueur's second harbour
+		*/
+		CasePort* getPort2() const;
+		/**
 		*\fn Bateau getBateau1() const
 		*\brief acces function to the Joueur's boat 1
 		*/
@@ -95,6 +106,8 @@ class Joueur
 
 }; 
 
+inline CasePort* Joueur::getPort1() const{ return _cp1 ;}
+inline CasePort* Joueur::getPort2() const{ return _cp2 ;}
 inline Bateau Joueur::getBateau1() const{ return _bateau1 ;}
 inline Bateau Joueur::getBateau2() const{ return _bateau2 ;}
 inline int Joueur::getNumero() const{ return _numero ;}
