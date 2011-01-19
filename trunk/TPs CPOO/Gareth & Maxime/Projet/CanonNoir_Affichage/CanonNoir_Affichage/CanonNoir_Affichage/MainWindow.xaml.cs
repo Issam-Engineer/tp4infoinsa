@@ -92,6 +92,11 @@ namespace CanonNoir_Affichage
                 Caseclic = "Case Navigable";
             }
 
+            if (facade.getAccessible(x, y))
+            {
+                MessageBox.Show("Il est possible d'aller là !");
+            }
+
             if (Caseclic == "Case Île")
             {
                 MessageBox.Show("Ô malheureux ! Impossible de se déplacer sur l'île !");
@@ -141,11 +146,20 @@ namespace CanonNoir_Affichage
                 textBox2.Text = "" + facade.getde1();
                 textBox3.Text = "" + facade.getde2();
                 textBox4.Text = "" + (facade.getNumJCourant());
-                facade.execute();
+                //facade.execute();
                 for (int x = 0; x <= 10; x++) {
-                    for (int y = 0; y <= 8; y++) {
-                        if (facade.getAccessible(x, y)) {
-                        }
+                    for (int y = 0; y <= 7; y++) {
+                        //if (facade.getAccessible(x, y)) {
+                            Rectangle rec = new Rectangle();
+                            SolidColorBrush mySolidColorBrush = new SolidColorBrush();
+                            rec.StrokeThickness = 2;
+                            rec.Stroke = Brushes.Yellow;
+                            rec.Width = (Plateau.Width / 11);
+                            rec.Height = (Plateau.Height / 8);
+                            Plateau.Children.Add(rec);
+                            Canvas.SetLeft(rec, (x * ((Plateau.Width) / 11)));
+                            Canvas.SetTop(rec, (y * ((Plateau.Height) / 8)));
+                        //}
                     }
                 }
             }

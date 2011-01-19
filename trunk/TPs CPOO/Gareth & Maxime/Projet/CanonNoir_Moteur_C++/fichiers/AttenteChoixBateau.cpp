@@ -15,6 +15,7 @@ AttenteChoixBateau::AttenteChoixBateau(MoteurJeu * m){
 }
 
 void AttenteChoixBateau::execute(){
+	cout<<"AttenteChoixBateau.execute()"<<endl;
 
 	// construire à partir de la facade la position
 	pair<int,int> posit; 

@@ -14,5 +14,6 @@ AttenteDeplacement::AttenteDeplacement(MoteurJeu * m){
 }
 
 void AttenteDeplacement::execute(){
+	cout<<"AttenteDeplacement.execute()"<<endl;
 
 }
