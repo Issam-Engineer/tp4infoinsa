@@ -19,12 +19,14 @@ namespace CanonNoir_Affichage
     public partial class MainWindow : Window
     {
         WrapperFacade facade;
+        bool debutPartie = true;
 
         public MainWindow(WrapperFacade f)
         {
             InitializeComponent();
             facade = f;
             textBox4.Text = "" + (facade.getNumJCourant());
+            
         }
 
         private void SourisDown(object sender, MouseButtonEventArgs e)
@@ -35,9 +37,28 @@ namespace CanonNoir_Affichage
             int y = (int)(((int)p.Y * 8) / ((int)Plateau.Height));
 
             //if On est avec Left joueur Rouge
+            if(facade.getCoulPortJCourant() == 1){
             Canvas.SetLeft(JoueurRouge, (x * ((Plateau.Width) / 11)));
             Canvas.SetTop(JoueurRouge, (y * ((Plateau.Height) / 8)));
-            
+            }
+
+            if (facade.getCoulPortJCourant() == 2)
+            {
+                Canvas.SetLeft(JoueurVert, (x * ((Plateau.Width) / 11)));
+                Canvas.SetBottom(JoueurVert, (y * ((Plateau.Height) / 8)));
+            }
+
+            if (facade.getCoulPortJCourant() == 3)
+            {
+                Canvas.SetRight(JoueurJaune, (x * ((Plateau.Width) / 11)));
+                Canvas.SetTop(JoueurJaune, (y * ((Plateau.Height) / 8)));
+            }
+
+            if (facade.getCoulPortJCourant() == 4)
+            {
+                Canvas.SetRight(JoueurBleu, (x * ((Plateau.Width) / 11)));
+                Canvas.SetBottom(JoueurBleu, (y * ((Plateau.Height) / 8)));
+            }
 
             //MessageBox.Show("x =" + x + " et y=" + y);
             String Caseclic = "";
@@ -76,19 +97,28 @@ namespace CanonNoir_Affichage
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            textBox4.Text = "" + (facade.getNumJCourant());
-            facade.setClicDe(true);
-            facade.execute();
-            textBox2.Text = ""+facade.getde1();
-            textBox3.Text = "" + facade.getde2();
-            textBox2.IsEnabled = facade.getAfficherDe1();//On peut mettre un autre booléen
-            textBox3.IsEnabled = facade.getAfficherDe1();//On peut mettre un autre booléen
-            if (facade.getInitialisationOK())
+            if (debutPartie == true)
             {
-                MessageBox.Show("C'est parti ! A vous de jouer");
-                facade.setInitialisationOK(false);
+                textBox4.Text = "" + (facade.getNumJCourant());
+                facade.setClicDe(true);
+                facade.execute();
+                textBox2.Text = "" + facade.getde1();
+                textBox3.Text = "" + facade.getde2();
+                textBox2.IsEnabled = facade.getAfficherDe1();//On peut mettre un autre booléen
+                textBox3.IsEnabled = facade.getAfficherDe1();//On peut mettre un autre booléen
+                if (facade.getInitialisationOK())
+                {
+                    MessageBox.Show("C'est parti ! A vous de jouer");
+                    facade.setInitialisationOK(false);
+                    debutPartie = false;
+                    facade.execute();
+                    textBox4.Text = "" + (facade.getNumJCourant());
+                }
             }
-
+            else
+            {
+                facade.execute();
+            }
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

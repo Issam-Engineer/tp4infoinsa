@@ -51,5 +51,8 @@ namespace mWrapper {
 		bool getInitialisationOK() { return f->getInitialisationOK(); }
 
 		void setInitialisationOK(bool b) { f->setInitialisationOK(b); }
+
+		int getCoulPortJCourant() { return f->getCoulPortJCourant(); }
+
 	};
 }

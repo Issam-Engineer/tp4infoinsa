@@ -47,7 +47,7 @@ class __declspec(dllexport) Facade
 		int _puissance;
 
 		bool _initialiserOK;
-
+		bool _debutPartie;
 		//int JoueurCourant; Useless on va directement le chercher dans le moteur
 
 
@@ -277,6 +277,13 @@ class __declspec(dllexport) Facade
 		*\return true if the attribute has been initialized to true
 		**/
 		bool getInitialisationOK();
+
+		/**
+		*\fn int getCoulPortJCourant()
+		*\brief return the colour of the current player's harbour
+		*\return int, the colour
+		**/
+		int getCoulPortJCourant();
 
 
 		//à traiter
