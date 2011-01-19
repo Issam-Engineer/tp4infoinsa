@@ -32,12 +32,11 @@ void AttenteLancerDe::execute(){
 		}else{
 			motor->getFacade()->setAfficherDe1(true);
 			motor->getFacade()->setAfficherDe2(false);
-		
 		}
 
-		motor->modifCourant(ATTENTECHOIXBATEAU);
-
-	}else{//remettre le booléen qui a changé à false
-	}
-
+		if(motor->getNbJoueurs() == 2){
+				motor->modifCourant(ATTENTECHOIXBATEAU);
+		}else{
+				motor->modifCourant(PROPOSEDEPLACEMENT);
+		}
 }
