@@ -16,6 +16,7 @@ ProposeDeplacement::ProposeDeplacement(MoteurJeu* m){
 }
 
 void ProposeDeplacement::execute(){
+	cout<<"ProposeDeplacement.execute()"<<endl;
 
 	//Rendre les cases accessibles
 
@@ -25,10 +26,10 @@ void ProposeDeplacement::execute(){
 		int valde1 = motor->getDe()->getDe1();
 		int valde2 = motor->getDe()->getDe2();
 		int valdede = motor->getDe()->getSommeDe();
-
+	
 		pair<int,int> posit = motor->getJoueurInd(motor->getJCourant())->getBateau1().getPosition()->getPosition();
-
-		int x_actuel = posit.first;
+	}
+		/*int x_actuel = posit.first;
 		int y_actuel = posit.second;
 		casespossibles[0] = make_pair(x_actuel,y_actuel);
 
@@ -143,6 +144,6 @@ void ProposeDeplacement::execute(){
 				}
 			}
 		}
-	}
+	}*/
 	motor->modifCourant(ATTENTEDEPLACEMENT);
 }
