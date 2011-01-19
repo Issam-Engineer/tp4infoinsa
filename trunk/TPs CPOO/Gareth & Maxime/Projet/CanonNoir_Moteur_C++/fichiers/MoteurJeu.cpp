@@ -81,7 +81,9 @@ void MoteurJeu::setTabJoueurs(int ind,Joueur j){
 }
 
 void MoteurJeu::setTabJoueur(Joueur* t){
-	tabJoueurs = t;
+	for(int k=0;k<getNbJoueurs();k++){
+		tabJoueurs[k] = t[k];
+	}
 }
 
 void MoteurJeu::setJCourant(int i){
