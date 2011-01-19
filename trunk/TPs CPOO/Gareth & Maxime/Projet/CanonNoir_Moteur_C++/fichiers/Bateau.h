@@ -31,6 +31,12 @@ class Bateau
 	public :
 
 		/**
+		*\fn Bateau()
+		*\brief Constructor
+		*/
+		Bateau();
+
+		/**
 		*\fn virtual char type()
 		*\brief Pure virtual function which allows inherited classes to give their name
 		*\return char the class name
