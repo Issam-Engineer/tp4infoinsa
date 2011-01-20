@@ -115,8 +115,10 @@ Plateau::Plateau(){
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CasePort(4/*BLEU*/));
 
+	cout<<"taille du vecteur de Case* :"<<_tabCase.size()<<endl;
+	cout<<"couleur case port (11,8) "<<_tabCase[87]->getCouleur()<<endl;
 
-	for(int i=0;i<88;i++){
+	for(int i=0;i<88;i++) {
 		if(i<11) //on est dans la première ligne
 			_tabCase[i]->setPosition(make_pair(i + 1,1));
 		else if(i>=11 && i<22)
@@ -131,9 +133,16 @@ Plateau::Plateau(){
 			_tabCase[i]->setPosition(make_pair(i - 55 +1,6));
 		else if(i>=66 && i<77)
 			_tabCase[i]->setPosition(make_pair(i - 66 +1,7));
-		else if(i>=77 && i<88)
+		else if(i>=77 && i<87)
 			_tabCase[i]->setPosition(make_pair(i - 77 +1,8));
+		else if(i=87){
+			_tabCase[i]->setPosition(make_pair(11,8));
+		}
+			
 	}
+
+	cout<<"la dernière case est elle accessible?"<<estAccessible(make_pair(11,8))<<endl;
+	
 }
 
 Case* Plateau::getCasePort(int couleur) {
@@ -148,7 +157,7 @@ Case* Plateau::getCasePort(int couleur) {
 
 Case* Plateau::getCase(pair<int,int> p){
 	Case* cp=0;
-	for(int i=0; i<((_longueur*_largeur)-1); i++){
+	for(int i=0; i<88; i++){
 		if(_tabCase[i]->getPosition() == p) {
 			cp=_tabCase[i];
 		}
@@ -158,6 +167,7 @@ Case* Plateau::getCase(pair<int,int> p){
 
 
 bool Plateau::estAccessible(pair<int,int> p){
+	//cout<<"Plateau.estAccessible"<<endl;
 	return getCase(p)->estAccessible();
 }
 

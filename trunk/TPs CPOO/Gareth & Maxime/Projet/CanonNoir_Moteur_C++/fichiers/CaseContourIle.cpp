@@ -10,5 +10,5 @@
 
 CaseContourIle::CaseContourIle(){
 	_hauteur = 1;
-	_accessible = true;
+	_accessible = false;
 }

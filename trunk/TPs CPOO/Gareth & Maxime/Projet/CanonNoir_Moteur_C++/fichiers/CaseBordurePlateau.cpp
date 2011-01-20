@@ -10,5 +10,5 @@
 
 CaseBordurePlateau::CaseBordurePlateau(){
 	_hauteur = 0;
-	_accessible = true;
+	_accessible = false;
 }

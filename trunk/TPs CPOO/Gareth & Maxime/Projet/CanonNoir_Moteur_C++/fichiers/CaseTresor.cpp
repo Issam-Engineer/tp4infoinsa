@@ -10,5 +10,5 @@
 
 CaseTresor::CaseTresor(){
 	_hauteur = 2;
-	_accessible = true;
+	_accessible = false;
 }
