@@ -27,8 +27,8 @@ class Joueur
 		CasePort* _cp2;/*NULL if nb joueur !=2*/
 		int _numero;
 		bool _gagnant;
-		Bateau _bateau1;
-		Bateau _bateau2; /*NULL if nb joueur !=2*/
+		Bateau* _bateau1;
+		Bateau* _bateau2; /*NULL if nb joueur !=2*/
 
 	public :
 
@@ -73,12 +73,12 @@ class Joueur
 		*\fn Bateau getBateau1() const
 		*\brief acces function to the Joueur's boat 1
 		*/
-		Bateau getBateau1() const;
+		Bateau* getBateau1() const;
 		/**
 		*\fn Bateau getBateau2() const
 		*\brief acces function to the Joueur's boat 1
 		*/
-		Bateau getBateau2() const;
+		Bateau* getBateau2() const;
 		/**
 		*\fn bool bateauAtPos(pair<int,int> p)
 		*\brief function which says if the player has a bateau at the given position
@@ -90,13 +90,13 @@ class Joueur
 		*\brief acces function to the boat at the given position
 		*\return the boat
 		*/
-		Bateau getBateauPos(pair<int,int> p);
+		Bateau* getBateauPos(pair<int,int> p);
 		/**
 		*\fn Bateau getBateauCourant()
 		*\brief function which permits to obtain the current boat
 		*\return Bateau the current boat
 		*/
-		Bateau getBateauCourant();
+		Bateau* getBateauCourant();
 		/**
 		*\fn void GAGNANT()
 		*\brief the Joueur is the winner
@@ -121,8 +121,8 @@ inline CasePort* Joueur::getPort2() const{ return _cp2 ;}
 inline void Joueur::setCasePort1(CasePort* c) { _cp1=c ;}
 inline void Joueur::setCasePort2(CasePort* c) { _cp2=c ;}
 
-inline Bateau Joueur::getBateau1() const{ return _bateau1 ;}
-inline Bateau Joueur::getBateau2() const{ return _bateau2 ;}
+inline Bateau* Joueur::getBateau1() const{ return _bateau1 ;}
+inline Bateau* Joueur::getBateau2() const{ return _bateau2 ;}
 
 inline int Joueur::getNumero() const{ return _numero ;}
 inline void Joueur::setNumero(int i){_numero=i;}

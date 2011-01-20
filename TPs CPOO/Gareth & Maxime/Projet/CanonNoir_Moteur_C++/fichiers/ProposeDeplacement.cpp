@@ -26,10 +26,10 @@ void ProposeDeplacement::execute(){
 		int valdede = motor->getDe()->getSommeDe();
 	
 
-		pair<int,int> posit = motor->getJoueurInd(motor->getJCourant())->getBateau1().getPosition()->getPosition();
+		pair<int,int> posit = motor->getJoueurInd(motor->getJCourant())->getBateau1()->getPosition()->getPosition();
 
 		cout<<"Position x :"<<posit.first<<" et y :"<<posit.second<<endl;
-		cout<<"Type du bateau du joueur : " << motor->getJoueurInd(motor->getJCourant())->getBateau1().type() <<endl;
+		cout<<"Type du bateau du joueur : " << motor->getJoueurInd(motor->getJCourant())->getBateau1()->type() <<endl;
 	
 		int indice=0;
 		int x_actuel = posit.first;
@@ -90,7 +90,7 @@ void ProposeDeplacement::execute(){
 
 		
 
-		if( motor->getJoueurInd(motor->getJCourant())->getBateau1().type() == 'C'){
+		if( motor->getJoueurInd(motor->getJCourant())->getBateau1()->type() == 'C'){
 
 			cout<<"Le joueur possède une caravelle -> Proposer les deux dés et la somme"<<endl;
 
