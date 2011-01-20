@@ -25,7 +25,7 @@ namespace CanonNoir_Affichage
         {
             InitializeComponent();
             facade = f;
-            textBox4.Text = "" + (facade.getNumJCourant());
+            textBox4.Text = "Joueur " + (facade.getNumJCourant());
             
         }
 
@@ -119,7 +119,7 @@ namespace CanonNoir_Affichage
         {
             if (debutPartie == true)
             {
-                textBox4.Text = "" + (facade.getNumJCourant());
+                textBox4.Text = "Joueur " + (facade.getNumJCourant());
                 facade.setClicDe(true);
                 facade.execute();
                 textBox2.Text = "" + facade.getde1();
@@ -135,7 +135,7 @@ namespace CanonNoir_Affichage
                     debutPartie = false;
                     textBox2.Text = "";
                     textBox3.Text = "";
-                    textBox4.Text = "" + (facade.getNumJCourant());
+                    textBox4.Text = "Joueur " + (facade.getNumJCourant());
                     
                 }
             }
@@ -145,11 +145,11 @@ namespace CanonNoir_Affichage
                 facade.execute();
                 textBox2.Text = "" + facade.getde1();
                 textBox3.Text = "" + facade.getde2();
-                textBox4.Text = "" + (facade.getNumJCourant());
-                //facade.execute();
+                textBox4.Text = "Joueur " + (facade.getNumJCourant());
+                facade.execute();
                 for (int x = 0; x <= 10; x++) {
                     for (int y = 0; y <= 7; y++) {
-                        //if (facade.getAccessible(x, y)) {
+                        if (facade.getAccessible(x, y)) {
                             Rectangle rec = new Rectangle();
                             SolidColorBrush mySolidColorBrush = new SolidColorBrush();
                             rec.StrokeThickness = 2;
@@ -159,7 +159,7 @@ namespace CanonNoir_Affichage
                             Plateau.Children.Add(rec);
                             Canvas.SetLeft(rec, (x * ((Plateau.Width) / 11)));
                             Canvas.SetTop(rec, (y * ((Plateau.Height) / 8)));
-                        //}
+                        }
                     }
                 }
             }
