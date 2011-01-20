@@ -103,10 +103,6 @@ void AttentePremLancerDe::execute(){
 			cout<<"Etat suivant :ATTENTELANCERDE"<<endl;
 
 			int k = 0;
-
-			/*for(k=0;k<motor->getNbJoueurs();k++){
-				cout<<"Joueur : "<< k <<" a pour numéro :"<< motor->getJoueurInd(k)->getNumero()<<endl;
-			}*/
 			
 		}
 

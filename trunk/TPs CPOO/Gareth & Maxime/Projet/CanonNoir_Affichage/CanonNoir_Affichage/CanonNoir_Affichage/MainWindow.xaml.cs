@@ -170,6 +170,8 @@ namespace CanonNoir_Affichage
                         }
                     }
                  }
+
+                facade.setProposerDeplacement(false);
                 }
             }
         }
