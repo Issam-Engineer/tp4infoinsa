@@ -350,7 +350,9 @@ inline void Facade::setCoul3(int i){ cout<<"setCoul3 : "<<i<<endl;_couleur3=i ;}
 inline void Facade::setCoul4(int i){ cout<<"setCoul4 : "<<i<<endl;_couleur4=i ;}
 inline void Facade::setInitialisationOK(bool b){_initialiserOK=b;}
 inline bool Facade::getInitialisationOK(){return _initialiserOK;}
-inline bool Facade::getProposerDeplacement(){return _ProposerDeplacement;}
+inline bool Facade::getProposerDeplacement(){
+	cout<<"getProposerDeplacement ="<<_ProposerDeplacement<<endl;return _ProposerDeplacement;
+}
 inline void Facade::setProposerDeplacement(bool b){ _ProposerDeplacement = b; }
 
 
