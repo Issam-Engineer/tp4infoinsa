@@ -37,7 +37,7 @@ class MoteurJeu
 		De _de;
 
 	public :
-
+		
 		/**
 		*\fn void initialiser()
 		*\brief initialize the motor (we can't do it in the default constructor)
@@ -144,6 +144,7 @@ class MoteurJeu
 		*\brief the Joueur at the indice
 		*/
 		void setTabJoueurs(int ind,Joueur j);
+
 		/**
 		*\fn Joueur* getTabJoueurs()
 		*\brief return the attribute tabjoueurs

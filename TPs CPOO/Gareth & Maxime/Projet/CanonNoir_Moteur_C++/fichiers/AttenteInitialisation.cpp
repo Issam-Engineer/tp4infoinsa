@@ -50,16 +50,29 @@ void AttenteInitialisation::execute(){
 			(motor->getFacade())->_couleur3!=0) && (motor->getFacade())->_couleur4!=0) &&				
 			(motor->getNbJoueurs()==4)){ 
 
+			/*	motor->getJoueurInd(0)->setNumero(1);
+				motor->getJoueurInd(1)->setNumero(2);
+				motor->getJoueurInd(2)->setNumero(3);
+				motor->getJoueurInd(3)->setNumero(4);
+
+				motor->getJoueurInd(0)->setCasePort1((CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur1));
+				motor->getJoueurInd(1)->setCasePort1((CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur2));
+				motor->getJoueurInd(2)->setCasePort1((CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur3));
+				motor->getJoueurInd(3)->setCasePort1((CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur4));*/
+	
 			motor->setTabJoueurs(0,*new Joueur(1, (CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur1)));cout<<"Joueur1 initialise"<<endl;
 			motor->setTabJoueurs(1,*new Joueur(2, (CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur2)));cout<<"Joueur2 initialise"<<endl;
 			motor->setTabJoueurs(2,*new Joueur(3, (CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur3)));cout<<"Joueur3 initialise"<<endl;
 			motor->setTabJoueurs(3,*new Joueur(4, (CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur4)));cout<<"Joueur4 initialise"<<endl;
 			
-			/*cout<<"couleur du port du Joueur 4 :"<< motor->getJoueurInd(4)->getPort1()->getCouleur() << "et position :" 
-				<< motor->getJoueurInd(4)->getPort1()->getPosition().first << "," <<
-				motor->getJoueurInd(4)->getPort1()->getPosition().first*/
-			cout<<"num du Joueur 4 :"<< motor->getJoueurInd(4)->getNumero()<<endl;
-			//cout<< "COULEUR " << motor->getPlateau()->getCasePort(1)->getCouleur() <<endl;
+			cout<<"couleur du port du Joueur 4 :"
+				<< motor->getJoueurInd(3)->getPort1()->getCouleur() 
+				<< "et position :" 
+				<< motor->getJoueurInd(3)->getPort1()->getPosition().first << "," 
+				<<motor->getJoueurInd(3)->getPort1()->getPosition().first
+				<<endl;
+
+			cout<<"num du Joueur 4 :"<< motor->getJoueurInd(3)->getNumero()<<endl;
 			
 			motor->modifCourant(ATTENTEPREMLANCERDE);
 			cout<<"Etat suivant : ATTENTEPREMLANCERDE"<<endl;
