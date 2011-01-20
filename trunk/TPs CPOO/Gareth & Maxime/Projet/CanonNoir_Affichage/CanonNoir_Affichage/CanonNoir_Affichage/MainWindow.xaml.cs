@@ -146,9 +146,11 @@ namespace CanonNoir_Affichage
                 textBox2.Text = "" + facade.getde1();
                 textBox3.Text = "" + facade.getde2();
                 textBox4.Text = "Joueur " + (facade.getNumJCourant());
-               
 
-                facade.execute();
+                if (facade.getProposerDeplacement())
+                {
+                    facade.execute();
+                
 
                 for (int x = 0; x <= 10; x++) {
                     for (int y = 0; y <= 7; y++)
@@ -168,6 +170,7 @@ namespace CanonNoir_Affichage
                         }
                     }
                  }
+                }
             }
         }
 
