@@ -103,13 +103,28 @@ class Joueur
 		*/
 		void GAGNANT();
 
+		/**
+		*\fn void setCasePort1(CasePort* c)
+		*\brief modify the attribute CasePort1
+		**/
+		void setCasePort1(CasePort* c);
+		/**
+		*\fn void setCasePort2(CasePort* c)
+		*\brief modify the attribute CasePort1
+		**/
+		void setCasePort2(CasePort* c);
 
 }; 
 
 inline CasePort* Joueur::getPort1() const{ return _cp1 ;}
 inline CasePort* Joueur::getPort2() const{ return _cp2 ;}
+inline void Joueur::setCasePort1(CasePort* c) { _cp1=c ;}
+inline void Joueur::setCasePort2(CasePort* c) { _cp2=c ;}
+
 inline Bateau Joueur::getBateau1() const{ return _bateau1 ;}
 inline Bateau Joueur::getBateau2() const{ return _bateau2 ;}
+
 inline int Joueur::getNumero() const{ return _numero ;}
+inline void Joueur::setNumero(int i){_numero=i;}
 
 #endif

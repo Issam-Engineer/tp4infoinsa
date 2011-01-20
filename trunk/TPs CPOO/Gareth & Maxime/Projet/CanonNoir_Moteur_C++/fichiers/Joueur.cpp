@@ -33,9 +33,6 @@ Joueur::Joueur(){
 	_cp2=0;
 }
 
-void Joueur::setNumero(int i){
-	_numero=i;
-}
 
 void Joueur::GAGNANT(){
 	_gagnant=true;
