@@ -146,10 +146,16 @@ namespace CanonNoir_Affichage
                 textBox2.Text = "" + facade.getde1();
                 textBox3.Text = "" + facade.getde2();
                 textBox4.Text = "Joueur " + (facade.getNumJCourant());
+               
+
                 facade.execute();
+
                 for (int x = 0; x <= 10; x++) {
-                    for (int y = 0; y <= 7; y++) {
-                        if (facade.getAccessible(x, y)) {
+                    for (int y = 0; y <= 7; y++)
+                    {
+
+                        if (facade.getAccessible(x + 1, y + 1))
+                        {
                             Rectangle rec = new Rectangle();
                             SolidColorBrush mySolidColorBrush = new SolidColorBrush();
                             rec.StrokeThickness = 2;
@@ -161,7 +167,7 @@ namespace CanonNoir_Affichage
                             Canvas.SetTop(rec, (y * ((Plateau.Height) / 8)));
                         }
                     }
-                }
+                 }
             }
         }
 

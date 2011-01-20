@@ -23,10 +23,10 @@ int main( int argc, const char* argv[] )
 
 	fac->setClicDe(true);
 	//clic De
-	srand( time(NULL));
+	/*srand( time(NULL));
 	fac->execute();
 	
-	/*fac->setClicDe(true);
+	fac->setClicDe(true);
 	fac->execute();
 	
 	fac->setClicDe(true);
@@ -39,7 +39,11 @@ int main( int argc, const char* argv[] )
 	fac->execute();
 
 	fac->setClicDe(true);
-	fac->execute();*/
+	fac->execute();
+
+	cout<<"La case (4,2) est elle accessible ? "<<fac->getAccessible(1,2)<<endl;*/
+
+
 
 	while(1);
 

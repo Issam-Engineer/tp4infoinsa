@@ -27,11 +27,18 @@ void ProposeDeplacement::execute(){
 		int valde2 = motor->getDe()->getDe2();
 		int valdede = motor->getDe()->getSommeDe();
 	
+		cout<<"couleur du port du Joueur d'indice 3 :"
+				<< motor->getJoueurInd(3)->getPort1()->getCouleur() 
+				<< "et position :" 
+				<< motor->getJoueurInd(3)->getPort1()->getPosition().first << "," 
+				<< motor->getJoueurInd(3)->getPort1()->getPosition().second
+				<<endl;
+
 		pair<int,int> posit = motor->getJoueurInd(motor->getJCourant())->getBateau1().getPosition()->getPosition();
 
 		cout<<"Position x :"<<posit.first<<" et y :"<<posit.second<<endl;
-	}
-		/*int x_actuel = posit.first;
+	
+		int x_actuel = posit.first;
 		int y_actuel = posit.second;
 		casespossibles[0] = make_pair(x_actuel,y_actuel);
 
@@ -146,6 +153,6 @@ void ProposeDeplacement::execute(){
 				}
 			}
 		}
-	}*/
+	}
 	motor->modifCourant(ATTENTEDEPLACEMENT);
 }

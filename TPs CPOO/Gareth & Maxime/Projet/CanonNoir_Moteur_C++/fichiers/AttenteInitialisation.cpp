@@ -69,8 +69,8 @@ void AttenteInitialisation::execute(){
 				<< motor->getJoueurInd(3)->getPort1()->getCouleur() 
 				<< "et position :" 
 				<< motor->getJoueurInd(3)->getPort1()->getPosition().first << "," 
-				<<motor->getJoueurInd(3)->getPort1()->getPosition().first
-				<<endl;
+				<< motor->getJoueurInd(3)->getPort1()->getPosition().second
+				<< endl;
 
 			cout<<"num du Joueur 4 :"<< motor->getJoueurInd(3)->getNumero()<<endl;
 			

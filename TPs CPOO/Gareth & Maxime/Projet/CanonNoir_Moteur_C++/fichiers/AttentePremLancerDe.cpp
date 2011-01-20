@@ -55,17 +55,19 @@ void AttentePremLancerDe::determinerOrdre(){
 
 	cout<<"NUMERO DU PREMIER JOUEUR QUI COMMENCE LA PARTIE : "<<motor->getJoueurInd(0)->getNumero()<<endl;
 	motor->getFacade()->setInitialisationOK(true);
+
+	
 }
 
 
 
 void AttentePremLancerDe::execute(){
-	//srand( time(NULL));
+	srand( time(NULL));
 	cout<<"AttentePremLancerDe.execute()"<<endl;
 	int k = 0;
-	for(k=0;k<motor->getNbJoueurs();k++){
+	/*for(k=0;k<motor->getNbJoueurs();k++){
 		cout<<"Joueur : "<< k <<" a pour numéro :"<< motor->getJoueurInd(k)->getNumero()<<" et pour port"<<endl;
-	}
+	}*/
 	//vérifier qu'on a bien cliqué sur le bouton lancer Dé sinon on ne doit rien faire !
 	if(motor->getFacade()->getClicDe() == true){
 
@@ -79,20 +81,14 @@ void AttentePremLancerDe::execute(){
 
 			int res = motor->getDe()->getSommeDe();
 
-			cout<<"nbLance = "<<nbLance<<endl;
-			cout<<"motor->getDe().getSommeDe() = "<< res <<endl;
+			/*cout<<"nbLance = "<<nbLance<<endl;
+			cout<<"motor->getDe().getSommeDe() = "<< res <<endl;*/
 			
 			resDe[nbLance]=res;
 			nbLance++;
 			
 			//On change l'indice du joueur courant
 			motor->setJCourant((motor->getJCourant() + 1)%(motor->getNbJoueurs()));
-
-			/* Tester le tableau des dés :
-			int j;
-			for(j=0;j<4;j++){
-				cout<<resDe[j]<<endl;
-			}*/
 
 		}
 		
@@ -101,7 +97,6 @@ void AttentePremLancerDe::execute(){
 		if(nbLance == motor->getNbJoueurs()){
 			cout<<"AttentePremLancerDe.determinerOrdre"<<endl;
 			determinerOrdre();
-			//motor->setJCourant(0);
 
 			//on passe à l'état suivant
 			motor->modifCourant(ATTENTELANCERDE);
@@ -109,9 +104,9 @@ void AttentePremLancerDe::execute(){
 
 			int k = 0;
 
-			for(k=0;k<motor->getNbJoueurs();k++){
+			/*for(k=0;k<motor->getNbJoueurs();k++){
 				cout<<"Joueur : "<< k <<" a pour numéro :"<< motor->getJoueurInd(k)->getNumero()<<endl;
-			}
+			}*/
 			
 		}
 

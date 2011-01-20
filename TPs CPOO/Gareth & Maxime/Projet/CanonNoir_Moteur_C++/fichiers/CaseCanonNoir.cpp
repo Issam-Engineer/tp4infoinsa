@@ -10,7 +10,7 @@
 
 CaseCanonNoir::CaseCanonNoir(){
 	_hauteur = 2;
-	_accessible = true;
+	_accessible = false;
 }
 
 int CaseCanonNoir::getEtat(){

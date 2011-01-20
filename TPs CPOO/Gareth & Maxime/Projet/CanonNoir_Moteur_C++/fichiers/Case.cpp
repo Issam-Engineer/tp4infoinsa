@@ -11,7 +11,7 @@
 
 Case::Case(){
 	_position= make_pair(0,0);
-	_accessible = true;
+	_accessible = false;
 	_hauteur = 0;
 }
 

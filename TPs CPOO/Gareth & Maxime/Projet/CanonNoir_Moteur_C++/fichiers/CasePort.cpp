@@ -10,6 +10,6 @@
 
 CasePort::CasePort(int c){
 	_hauteur = 1;
-	_accessible = true;
+	_accessible = false;
 	_couleur = c;
 }
