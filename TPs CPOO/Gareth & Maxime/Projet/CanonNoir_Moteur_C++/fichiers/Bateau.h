@@ -33,8 +33,8 @@ class Bateau
 		/**
 		*\fn Bateau()
 		*\brief Constructor
-		*/
-		Bateau();
+		
+		Bateau();*/
 
 		/**
 		*\fn virtual char type()
@@ -87,11 +87,11 @@ class Bateau
 		*/
 		virtual bool peutJouer2Des();
 		/**
-		*\fn void positionner(Case p)
+		*\fn void positionner(Case* c)
 		*\brief Virtual function which replaces the boat at a given position
 		*\param[in] Case a position
 		*/
-		virtual void positionner(pair<int,int> p);
+		virtual void positionner(Case* c);
 }; 
 
 inline Case* Bateau::getPosition(){

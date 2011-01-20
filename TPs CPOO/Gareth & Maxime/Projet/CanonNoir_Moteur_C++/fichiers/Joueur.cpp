@@ -14,8 +14,8 @@ Joueur::Joueur(int num, CasePort* c){
 	_numero=num;
 	_cp1=c;
 	_cp2=NULL;
-	_bateau1 = Caravelle();
-	//_bateau1.positionner(c->getPosition());
+	_bateau1 = (*new Caravelle());
+	_bateau1.positionner(c);
 	_bateau1.setCourant(true);
 }
 

@@ -9,7 +9,8 @@ int main( int argc, const char* argv[] )
 {
 	Facade* fac = new Facade();
 
-	fac->initNbJoueurs(2);
+	fac->initNbJoueurs(4);
+	
 
 	fac->execute();
 
@@ -25,8 +26,20 @@ int main( int argc, const char* argv[] )
 	srand( time(NULL));
 	fac->execute();
 	
+	/*fac->setClicDe(true);
+	fac->execute();
+	
 	fac->setClicDe(true);
 	fac->execute();
+	
+	fac->setClicDe(true);
+	fac->execute();
+
+	fac->setClicDe(true);
+	fac->execute();
+
+	fac->setClicDe(true);
+	fac->execute();*/
 
 	while(1);
 

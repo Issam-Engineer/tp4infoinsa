@@ -16,10 +16,3 @@ Caravelle::Caravelle(){
 	pJ2Des = true;
 }
 
-/*void Caravelle::init(){
-	pTirer = true;
-	pPTresor = true;
-	pEVise = true;
-	pJ2Des = true;
-	// gérer l'initialisation de sa position ???
-}*/

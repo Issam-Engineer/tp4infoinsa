@@ -60,7 +60,7 @@ void AttentePremLancerDe::determinerOrdre(){
 
 
 void AttentePremLancerDe::execute(){
-	srand( time(NULL));
+	//srand( time(NULL));
 	cout<<"AttentePremLancerDe.execute()"<<endl;
 	int k = 0;
 	for(k=0;k<motor->getNbJoueurs();k++){
