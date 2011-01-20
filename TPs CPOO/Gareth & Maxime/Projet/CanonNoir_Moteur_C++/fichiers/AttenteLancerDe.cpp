@@ -38,6 +38,7 @@ void AttenteLancerDe::execute(){
 				motor->modifCourant(ATTENTECHOIXBATEAU);
 		}else{
 				motor->modifCourant(PROPOSEDEPLACEMENT);
+				motor->getFacade()->setProposerDeplacement(true);
 		}
 	}
 }

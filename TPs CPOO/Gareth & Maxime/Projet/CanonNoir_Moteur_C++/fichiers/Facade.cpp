@@ -34,6 +34,7 @@ Facade::Facade(){
 	_angle=-1;
 	_puissance=-1;
 	_initialiserOK=false;
+	_ProposerDeplacement=false;
 }
 
 Facade::~Facade(){

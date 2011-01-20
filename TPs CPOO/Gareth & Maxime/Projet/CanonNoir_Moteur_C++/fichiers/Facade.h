@@ -48,7 +48,9 @@ class __declspec(dllexport) Facade
 
 		bool _initialiserOK;
 		bool _debutPartie;
-		//int JoueurCourant; Useless on va directement le chercher dans le moteur
+
+		bool _ProposerDeplacement;
+
 
 
 		//à traiter
@@ -292,6 +294,20 @@ class __declspec(dllexport) Facade
 		**/
 		bool getAccessible(int x, int y);
 
+		/**
+		*\fn bool getProposerDeplacement()
+		*\brief return the value of the attribute _ProposerDeplacement
+		*\return true if the attribute is at true
+		**/
+		bool getProposerDeplacement();
+
+		/**
+		*\fn void setProposerDeplacement(bool b)
+		*\brief change the value of the attribute _ProposerDeplacement
+		**/
+		void setProposerDeplacement(bool b);
+
+
 
 		//à traiter
 		void activeClicDepart();
@@ -334,6 +350,8 @@ inline void Facade::setCoul3(int i){ cout<<"setCoul3 : "<<i<<endl;_couleur3=i ;}
 inline void Facade::setCoul4(int i){ cout<<"setCoul4 : "<<i<<endl;_couleur4=i ;}
 inline void Facade::setInitialisationOK(bool b){_initialiserOK=b;}
 inline bool Facade::getInitialisationOK(){return _initialiserOK;}
+inline bool Facade::getProposerDeplacement(){return _ProposerDeplacement;}
+inline void Facade::setProposerDeplacement(bool b){ _ProposerDeplacement = b; }
 
 
 extern "C" __declspec(dllexport) Facade* Facade_new();

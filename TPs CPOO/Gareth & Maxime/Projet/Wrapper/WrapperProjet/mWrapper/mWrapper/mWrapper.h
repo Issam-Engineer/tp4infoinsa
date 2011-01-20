@@ -56,6 +56,7 @@ namespace mWrapper {
 
 		bool getAccessible(int x, int y) { return f->getAccessible(x,y); }
 
-
+		bool getProposerDeplacement() { return f->getProposerDeplacement(); }
+		void setProposerDeplacement(bool b) { f->setProposerDeplacement(b); }
 	};
 }
