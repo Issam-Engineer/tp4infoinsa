@@ -18,3 +18,7 @@ Case::Case(){
 int Case::getCouleur(){
 	return 0;
 }
+
+void Case::setPosition(pair<int,int> p){
+	_position=p;
+}

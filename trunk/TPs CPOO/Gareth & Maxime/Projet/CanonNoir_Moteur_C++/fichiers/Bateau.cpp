@@ -8,11 +8,6 @@
 
 #include "Bateau.h"
 
-Bateau::Bateau(){
-}
-
-void Bateau::positionner(pair<int,int> p){
-	Case c;
-	//c.getPosition()=p;
-	//pos = &c;
+void Bateau::positionner(Case* c){
+	pos=c;
 }

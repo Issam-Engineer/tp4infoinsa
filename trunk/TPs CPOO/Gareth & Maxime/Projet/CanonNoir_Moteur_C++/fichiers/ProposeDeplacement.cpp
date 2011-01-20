@@ -28,6 +28,8 @@ void ProposeDeplacement::execute(){
 		int valdede = motor->getDe()->getSommeDe();
 	
 		pair<int,int> posit = motor->getJoueurInd(motor->getJCourant())->getBateau1().getPosition()->getPosition();
+
+		cout<<"Position x :"<<posit.first<<" et y :"<<posit.second<<endl;
 	}
 		/*int x_actuel = posit.first;
 		int y_actuel = posit.second;

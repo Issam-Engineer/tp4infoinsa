@@ -38,6 +38,7 @@ class CasePort : public Case
 		*/
 		CasePort(int Couleur);
 
+
 }; 
 
 inline int CasePort::getCouleur(){

@@ -54,6 +54,13 @@ void AttenteInitialisation::execute(){
 			motor->setTabJoueurs(1,*new Joueur(2, (CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur2)));cout<<"Joueur2 initialise"<<endl;
 			motor->setTabJoueurs(2,*new Joueur(3, (CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur3)));cout<<"Joueur3 initialise"<<endl;
 			motor->setTabJoueurs(3,*new Joueur(4, (CasePort*) motor->getPlateau()->getCasePort(motor->getFacade()->_couleur4)));cout<<"Joueur4 initialise"<<endl;
+			
+			/*cout<<"couleur du port du Joueur 4 :"<< motor->getJoueurInd(4)->getPort1()->getCouleur() << "et position :" 
+				<< motor->getJoueurInd(4)->getPort1()->getPosition().first << "," <<
+				motor->getJoueurInd(4)->getPort1()->getPosition().first*/
+			cout<<"num du Joueur 4 :"<< motor->getJoueurInd(4)->getNumero()<<endl;
+			//cout<< "COULEUR " << motor->getPlateau()->getCasePort(1)->getCouleur() <<endl;
+			
 			motor->modifCourant(ATTENTEPREMLANCERDE);
 			cout<<"Etat suivant : ATTENTEPREMLANCERDE"<<endl;
 
