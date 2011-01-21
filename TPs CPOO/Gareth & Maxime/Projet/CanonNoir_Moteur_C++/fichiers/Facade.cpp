@@ -35,6 +35,7 @@ Facade::Facade(){
 	_puissance=-1;
 	_initialiserOK=false;
 	_ProposerDeplacement=false;
+	_enableClicDe=true;
 }
 
 Facade::~Facade(){
