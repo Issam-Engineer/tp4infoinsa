@@ -20,6 +20,7 @@ namespace CanonNoir_Affichage
     {
         WrapperFacade facade;
         bool debutPartie = true;
+        int index = 0;
 
         public MainWindow(WrapperFacade f)
         {
@@ -74,7 +75,7 @@ namespace CanonNoir_Affichage
                     Canvas.SetTop(JoueurBleu, (Y_Canvas * ((Plateau.Height) / 8)));
                 }
 
-                //facade.setAccessibleAll(false);
+                facade.setAccessibleAll(false);
                 /***
                  * 
                  * Si Il Toutes les cases sont inaccessible on supprime tous les rectangles
@@ -90,7 +91,15 @@ namespace CanonNoir_Affichage
                             BoolTest = true;
                     }
                 }
-                if (BoolTest==false) Plateau.Children.Clear();
+                if (BoolTest == false)
+                {
+                    
+                    for (int k = 0; k < index; k++)
+                    {
+                        Plateau.Children.RemoveAt(0);
+                    }
+                    index = 0;
+                }
                 /******************/
             }
         }
@@ -144,15 +153,18 @@ namespace CanonNoir_Affichage
 
                                 if (facade.getAccessible(x + 1, y + 1))
                                 {
+                                    
                                     Rectangle rec = new Rectangle();
                                     SolidColorBrush mySolidColorBrush = new SolidColorBrush();
                                     rec.StrokeThickness = 2;
                                     rec.Stroke = Brushes.Yellow;
                                     rec.Width = (Plateau.Width / 11);
                                     rec.Height = (Plateau.Height / 8);
-                                    Plateau.Children.Add(rec);
+                                    //Plateau.Children.Add(rec);
+                                    Plateau.Children.Insert(index, rec);
                                     Canvas.SetLeft(rec, (x * ((Plateau.Width) / 11)));
                                     Canvas.SetTop(rec, (y * ((Plateau.Height) / 8)));
+                                    index++;
                                 }
                             }
                         }
