@@ -32,9 +32,13 @@ namespace CanonNoir_Affichage
         private void SourisDown(object sender, MouseButtonEventArgs e)
         {
             Point p = e.GetPosition(Plateau);
+
             //Gérer l'affichage par case
             int x = (int)(((int)p.X * 11) / ((int)Plateau.Width));
             int y = (int)(((int)p.Y * 8) / ((int)Plateau.Height));
+            facade.setX(x);
+            facade.setY(y);
+            facade.execute();
 
             //if On est avec Left joueur Rouge
             if(facade.getCoulPortJCourant() == 1){
@@ -117,6 +121,7 @@ namespace CanonNoir_Affichage
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
+
             if (debutPartie == true)
             {
                 textBox4.Text = "Joueur " + (facade.getNumJCourant());
@@ -136,44 +141,47 @@ namespace CanonNoir_Affichage
                     textBox2.Text = "";
                     textBox3.Text = "";
                     textBox4.Text = "Joueur " + (facade.getNumJCourant());
-                    
+
                 }
             }
             else
             {
-                facade.setClicDe(true);
-                facade.execute();
-                textBox2.Text = "" + facade.getde1();
-                textBox3.Text = "" + facade.getde2();
-                textBox4.Text = "Joueur " + (facade.getNumJCourant());
 
-                if (facade.getProposerDeplacement())
-                {
+                    facade.setClicDe(true);
                     facade.execute();
-                
+                    textBox2.Text = "" + facade.getde1();
+                    textBox3.Text = "" + facade.getde2();
+                    textBox4.Text = "Joueur " + (facade.getNumJCourant());
 
-                for (int x = 0; x <= 10; x++) {
-                    for (int y = 0; y <= 7; y++)
+                    if (facade.getProposerDeplacement())
                     {
+                        facade.execute();
 
-                        if (facade.getAccessible(x + 1, y + 1))
+
+                        for (int x = 0; x <= 10; x++)
                         {
-                            Rectangle rec = new Rectangle();
-                            SolidColorBrush mySolidColorBrush = new SolidColorBrush();
-                            rec.StrokeThickness = 2;
-                            rec.Stroke = Brushes.Yellow;
-                            rec.Width = (Plateau.Width / 11);
-                            rec.Height = (Plateau.Height / 8);
-                            Plateau.Children.Add(rec);
-                            Canvas.SetLeft(rec, (x * ((Plateau.Width) / 11)));
-                            Canvas.SetTop(rec, (y * ((Plateau.Height) / 8)));
-                        }
-                    }
-                 }
+                            for (int y = 0; y <= 7; y++)
+                            {
 
-                facade.setProposerDeplacement(false);
+                                if (facade.getAccessible(x + 1, y + 1))
+                                {
+                                    Rectangle rec = new Rectangle();
+                                    SolidColorBrush mySolidColorBrush = new SolidColorBrush();
+                                    rec.StrokeThickness = 2;
+                                    rec.Stroke = Brushes.Yellow;
+                                    rec.Width = (Plateau.Width / 11);
+                                    rec.Height = (Plateau.Height / 8);
+                                    Plateau.Children.Add(rec);
+                                    Canvas.SetLeft(rec, (x * ((Plateau.Width) / 11)));
+                                    Canvas.SetTop(rec, (y * ((Plateau.Height) / 8)));
+                                }
+                            }
+                        }
+
+                        facade.setProposerDeplacement(false);
+                    }
                 }
-            }
+            
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
