@@ -14,6 +14,11 @@ AttenteDeplacement::AttenteDeplacement(MoteurJeu * m){
 }
 
 void AttenteDeplacement::execute(){
-	cout<<"AttenteDeplacement.execute()"<<endl;
 
+	cout<<"AttenteDeplacement.execute()"<<endl;
+	int x = motor->getFacade()->getX();
+	int y = motor->getFacade()->getY();
+
+	cout<<"x = "<<x<<endl;
+	cout<<"y = "<<y<<endl;
 }
