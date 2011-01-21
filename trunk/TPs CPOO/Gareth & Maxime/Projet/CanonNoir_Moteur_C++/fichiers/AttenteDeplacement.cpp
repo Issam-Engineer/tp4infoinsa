@@ -27,5 +27,4 @@ void AttenteDeplacement::execute(){
 	motor->getJoueurInd(motor->getJCourant())->getBateau1()->positionner(motor->getPlateau()->getCase(make_pair(x,y)));
 	motor->setJCourant(motor->getJCourant()+1);
 
-
 }

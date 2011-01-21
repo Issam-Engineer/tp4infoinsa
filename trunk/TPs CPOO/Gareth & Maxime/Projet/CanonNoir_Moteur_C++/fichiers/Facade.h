@@ -323,6 +323,12 @@ class __declspec(dllexport) Facade
 		**/
 		bool getEnableClicDe();
 
+		/**
+		*\fn void setAccessibleAll(bool b)
+		*\brief put all case accesibility to boolean b
+		**/
+		void setAccessibleAll(bool b);
+
 		//à traiter
 		void activeClicDepart();
 		void initialiser();
@@ -370,6 +376,7 @@ inline bool Facade::getProposerDeplacement(){
 inline void Facade::setProposerDeplacement(bool b){ _ProposerDeplacement = b; }
 inline void Facade::setEnableClicDe(bool b){ _enableClicDe=b; }
 inline bool Facade::getEnableClicDe(){ return _enableClicDe; }
+
 
 extern "C" __declspec(dllexport) Facade* Facade_new();
 extern "C" __declspec(dllexport) void Facade_delete(Facade* f);

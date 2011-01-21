@@ -38,17 +38,7 @@ class MoteurJeu
 
 	public :
 		
-		/**
-		*\fn void initialiser()
-		*\brief initialize the motor (we can't do it in the default constructor)
-		*/
-		/*void initialiser();*/
-
-		/**
-		*\fn void setEtat(int i)
-		*\brief Function which define the motor state
-		*/
-		void setEtat(int i);
+		
 		/**
 		*\fn void execute()
 		*this function is used when someone clic (is called by Facade::execute())
@@ -151,6 +141,12 @@ class MoteurJeu
 		*\return Joueur*
 		*/
 		Joueur* getTabJoueurs();
+
+		/**
+		*\fn void setAccessibleAll(bool b)
+		*\brief put all case accesibility to boolean b
+		**/
+		void setAccessibleAll(bool b);
 }; 
 
 
@@ -159,4 +155,7 @@ inline int MoteurJeu::getNbJoueurs() const {return nbJoueurs;}
 inline De* MoteurJeu::getDe(){return &_de;} 
 inline int MoteurJeu::getJCourant() const{return _JCourant;} 
 inline Joueur * MoteurJeu::getTabJoueurs(){return tabJoueurs;}
+inline void MoteurJeu::setJCourant(int i){_JCourant=i;}
+inline void MoteurJeu::modifCourant(int e){courant=e;}
+
 #endif

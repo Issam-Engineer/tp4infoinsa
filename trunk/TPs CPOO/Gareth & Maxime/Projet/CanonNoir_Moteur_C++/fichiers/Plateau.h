@@ -70,6 +70,13 @@ class Plateau
 		void setAccessible(pair<int,int> p);
 
 
+		/**
+		*\fn void setAccessibleAll(bool b);
+		*\brief Function which put all the case inaccessible
+		*/
+		void setAccessibleAll(bool b);
+
+
 }; 
 
 inline int Plateau::largeur(){
