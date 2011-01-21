@@ -101,6 +101,7 @@ namespace CanonNoir_Affichage
                     index = 0;
                 }
                 /******************/
+                textBox4.Text = "Joueur " + (facade.getNumJCourant());
             }
         }
 

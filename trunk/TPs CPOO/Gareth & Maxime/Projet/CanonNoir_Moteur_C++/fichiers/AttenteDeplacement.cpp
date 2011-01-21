@@ -27,4 +27,20 @@ void AttenteDeplacement::execute(){
 	motor->getJoueurInd(motor->getJCourant())->getBateau1()->positionner(motor->getPlateau()->getCase(make_pair(x,y)));
 	motor->setJCourant(motor->getJCourant()+1);
 
+	// QUEL EST L'ETAT SUIVANT ?
+
+	int ETAT_SUIVANT;
+	
+	ETAT_SUIVANT = motor->getCase(x,y)->getEtat();
+
+	if(ETAT_SUIVANT != -1){
+		motor->modifCourant(ETAT_SUIVANT);
+		cout<<"ModifCourant(ETAT_SUIVANT) avec ETAT_SUIVANT = "<<ETAT_SUIVANT<<endl;
+	}
+
+
+
+
+
+
 }

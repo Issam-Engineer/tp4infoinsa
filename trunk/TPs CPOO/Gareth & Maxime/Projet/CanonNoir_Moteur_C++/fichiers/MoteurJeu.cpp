@@ -85,3 +85,5 @@ bool MoteurJeu::estAccessible(pair<int,int> p){
 
 void MoteurJeu::setAccessible(pair<int,int> p){_plateau->setAccessible(p);}
 void MoteurJeu::setAccessibleAll(bool b){_plateau->setAccessibleAll(b);}
+
+Case* MoteurJeu::getCase(int x, int y){return _plateau->getCase(make_pair(x,y)); }
