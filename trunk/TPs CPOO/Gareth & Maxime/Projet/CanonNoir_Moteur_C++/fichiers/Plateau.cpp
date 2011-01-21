@@ -19,7 +19,7 @@ Plateau::Plateau(){
 	_longueur=11;
 	_largeur=8;
 	//LIGNE 1
-	_tabCase.push_back(new CasePort(1/*ROUGE*/));
+	_tabCase.push_back(new CasePort(ROUGE));
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
@@ -29,7 +29,7 @@ Plateau::Plateau(){
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
-	_tabCase.push_back(new CasePort(3/*JAUNE*/));
+	_tabCase.push_back(new CasePort(JAUNE));
 	//LIGNE 2
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseNavigable());
@@ -103,7 +103,7 @@ Plateau::Plateau(){
 	_tabCase.push_back(new CaseNavigable());
 	_tabCase.push_back(new CaseBordurePlateau());
 	//LIGNE 8
-	_tabCase.push_back(new CasePort(2/*VERT*/));
+	_tabCase.push_back(new CasePort(VERT));
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
@@ -113,10 +113,10 @@ Plateau::Plateau(){
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
 	_tabCase.push_back(new CaseBordurePlateau());
-	_tabCase.push_back(new CasePort(4/*BLEU*/));
+	_tabCase.push_back(new CasePort(BLEU));
 
-	cout<<"taille du vecteur de Case* :"<<_tabCase.size()<<endl;
-	cout<<"couleur case port (11,8) "<<_tabCase[87]->getCouleur()<<endl;
+	/*cout<<"taille du vecteur de Case* :"<<_tabCase.size()<<endl;
+	cout<<"couleur case port (11,8) "<<_tabCase[87]->getCouleur()<<endl;*/
 
 	for(int i=0;i<88;i++) {
 		if(i<11) //on est dans la première ligne
@@ -141,7 +141,7 @@ Plateau::Plateau(){
 			
 	}
 
-	cout<<"la dernière case est elle accessible?"<<estAccessible(make_pair(11,8))<<endl;
+	//cout<<"la dernière case est elle accessible?"<<estAccessible(make_pair(11,8))<<endl;
 	
 }
 

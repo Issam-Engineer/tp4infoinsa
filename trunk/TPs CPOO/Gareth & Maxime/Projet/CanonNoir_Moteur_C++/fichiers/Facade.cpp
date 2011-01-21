@@ -117,6 +117,10 @@ int Facade::getMotorNbJoueur(){
 }
 
 int Facade::getCoulPortJCourant(){
+	/*cout<<"le joueur courant est le joueur numéro :"<<_moteur->getJoueurInd(_moteur->getJCourant())->getNumero()<<endl;
+	cout<<"La couleur du Port du joueur courant est :"
+		<<_moteur->getJoueurInd(_moteur->getJCourant())->getPort1()->getCouleur()
+		<<endl;*/
 	return _moteur->getJoueurInd(_moteur->getJCourant())->getPort1()->getCouleur();
 }
 

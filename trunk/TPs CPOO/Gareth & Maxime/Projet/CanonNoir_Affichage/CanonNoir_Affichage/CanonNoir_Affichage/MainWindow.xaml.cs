@@ -43,31 +43,32 @@ namespace CanonNoir_Affichage
             if (facade.getAccessible(x, y))
             {
                 MessageBox.Show("Il est possible d'aller là !");
-            }
-            //if On est avec Left joueur Rouge
-            /*if(facade.getCoulPortJCourant() == 1){
-                Canvas.SetLeft(JoueurRouge, (x * ((Plateau.Width) / 11)));
-                Canvas.SetTop(JoueurRouge, (y * ((Plateau.Height) / 8)));
-            }
 
-            if (facade.getCoulPortJCourant() == 2)
-            {
-                Canvas.SetLeft(JoueurVert, (x * ((Plateau.Width) / 11)));
-                Canvas.SetBottom(JoueurVert, (y * ((Plateau.Height) / 8)));
+                //if On est avec Le joueur Rouge
+                if (facade.getCoulPortJCourant() == 1)
+                {
+                    Canvas.SetLeft(JoueurRouge, (x * ((Plateau.Width) / 11)));
+                    Canvas.SetTop(JoueurRouge, (y * ((Plateau.Height) / 8)));
+                }
+                //if On est avec Le joueur Vert
+                else if (facade.getCoulPortJCourant() == 2)
+                {
+                    Canvas.SetLeft(JoueurVert, (x * ((Plateau.Width) / 11)));
+                    Canvas.SetBottom(JoueurVert, (y * ((Plateau.Height) / 8)));
+                }
+                //if On est avec Le joueur Jaune
+                else if (facade.getCoulPortJCourant() == 3)
+                {
+                    Canvas.SetRight(JoueurJaune, (x * ((Plateau.Width) / 11)));
+                    Canvas.SetTop(JoueurJaune, (y * ((Plateau.Height) / 8)));
+                }
+                //if On est avec Le joueur Bleu
+                else if (facade.getCoulPortJCourant() == 4)
+                {
+                    Canvas.SetRight(JoueurBleu, (x * ((Plateau.Width) / 11)));
+                    Canvas.SetBottom(JoueurBleu, (y * ((Plateau.Height) / 8)));
+                }
             }
-
-            if (facade.getCoulPortJCourant() == 3)
-            {
-                Canvas.SetRight(JoueurJaune, (x * ((Plateau.Width) / 11)));
-                Canvas.SetTop(JoueurJaune, (y * ((Plateau.Height) / 8)));
-            }
-
-            if (facade.getCoulPortJCourant() == 4)
-            {
-                Canvas.SetRight(JoueurBleu, (x * ((Plateau.Width) / 11)));
-                Canvas.SetBottom(JoueurBleu, (y * ((Plateau.Height) / 8)));
-            }*/
-
             //MessageBox.Show("x =" + x + " et y=" + y);
             /* String Caseclic = "";
              if((x == 0 || x == 10) && (y == 0 || y == 7)) {

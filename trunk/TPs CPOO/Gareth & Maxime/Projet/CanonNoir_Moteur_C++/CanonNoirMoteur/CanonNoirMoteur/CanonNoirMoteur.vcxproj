@@ -99,6 +99,7 @@
     <ClInclude Include="..\..\fichiers\Duel.h" />
     <ClInclude Include="..\..\fichiers\Dé.h" />
     <ClInclude Include="..\..\fichiers\enum.h" />
+    <ClInclude Include="..\..\fichiers\enumCOULEUR.h" />
     <ClInclude Include="..\..\fichiers\Etat.h" />
     <ClInclude Include="..\..\fichiers\EtatCanonFin.h" />
     <ClInclude Include="..\..\fichiers\EtatDepot.h" />
