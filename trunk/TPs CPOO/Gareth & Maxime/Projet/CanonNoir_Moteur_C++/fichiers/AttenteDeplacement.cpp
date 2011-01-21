@@ -7,6 +7,8 @@
 */
 
 #include "AttenteDeplacement.h"
+#include "Joueur.h"
+#include "Plateau.h"
 
 AttenteDeplacement::AttenteDeplacement(MoteurJeu * m){
 	motor=m;
@@ -21,4 +23,8 @@ void AttenteDeplacement::execute(){
 
 	cout<<"x = "<<x<<endl;
 	cout<<"y = "<<y<<endl;
+
+	motor->getJoueurInd(motor->getJCourant())->getBateau1()->positionner(motor->getPlateau()->getCase(make_pair(x,y)));
+	motor->setJCourant(motor->getJCourant()+1);
+
 }
