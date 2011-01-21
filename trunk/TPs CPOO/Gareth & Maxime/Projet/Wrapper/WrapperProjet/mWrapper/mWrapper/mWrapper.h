@@ -58,5 +58,8 @@ namespace mWrapper {
 
 		bool getProposerDeplacement() { return f->getProposerDeplacement(); }
 		void setProposerDeplacement(bool b) { f->setProposerDeplacement(b); }
+
+		bool getEnableClicDe() { return f->getEnableClicDe(); }
+		void setEnableClicDe(bool b) { f->setEnableClicDe(b); }
 	};
 }

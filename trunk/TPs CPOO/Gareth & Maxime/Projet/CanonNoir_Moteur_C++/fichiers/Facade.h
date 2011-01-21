@@ -52,6 +52,8 @@ class __declspec(dllexport) Facade
 		bool _ProposerDeplacement;
 
 
+		bool _enableClicDe;
+
 
 		//à traiter
 		/*pair<int,int> _posBateau; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF*/
@@ -308,6 +310,18 @@ class __declspec(dllexport) Facade
 		void setProposerDeplacement(bool b);
 
 
+		/**
+		*\fn void setEnableClicDe(bool b)
+		*\brief set enable or nor the boolean enableClicDe
+		**/
+		void setEnableClicDe(bool b);
+
+		/**
+		*\fn void getEnableClicDe(bool b)
+		*\brief return the value of the attribute enableClicDe
+		*\return true if it is true
+		**/
+		bool getEnableClicDe();
 
 		//à traiter
 		void activeClicDepart();
@@ -354,7 +368,8 @@ inline bool Facade::getProposerDeplacement(){
 	cout<<"getProposerDeplacement ="<<_ProposerDeplacement<<endl;return _ProposerDeplacement;
 }
 inline void Facade::setProposerDeplacement(bool b){ _ProposerDeplacement = b; }
-
+inline void Facade::setEnableClicDe(bool b){ _enableClicDe=b; }
+inline bool Facade::getEnableClicDe(){ return _enableClicDe; }
 
 extern "C" __declspec(dllexport) Facade* Facade_new();
 extern "C" __declspec(dllexport) void Facade_delete(Facade* f);
