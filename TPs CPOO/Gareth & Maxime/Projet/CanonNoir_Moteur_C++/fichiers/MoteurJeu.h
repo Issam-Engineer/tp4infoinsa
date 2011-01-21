@@ -20,7 +20,7 @@ using namespace std;
 class Plateau;
 class Etat;
 class Joueur;
-
+class Case;
 
 class MoteurJeu
 {
@@ -147,6 +147,13 @@ class MoteurJeu
 		*\brief put all case accesibility to boolean b
 		**/
 		void setAccessibleAll(bool b);
+
+		/**
+		*\fn Case* getCase(pair<int,int> p)
+		*\brief return a pointer on the Case at the position p
+		*\return a pointer
+		**/
+		Case* getCase(int x,int y);
 }; 
 
 
