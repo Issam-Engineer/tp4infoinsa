@@ -34,97 +34,71 @@ namespace CanonNoir_Affichage
             Point p = e.GetPosition(Plateau);
 
             //Gérer l'affichage par case
-            int x = (int)(((int)p.X * 11) / ((int)Plateau.Width)+1);
-            int y = (int)(((int)p.Y * 8) / ((int)Plateau.Height)+1);
+            int x = (int)(((int)p.X * 11) / ((int)Plateau.Width) +1);
+            int y = (int)(((int)p.Y * 8) / ((int)Plateau.Height) +1);
             facade.setX(x);
             facade.setY(y);
+            int CoulJC = facade.getCoulPortJCourant(); // récuperer AVANT le execute !!!
             facade.execute();
 
-            if (facade.getAccessible(x, y))
+            if (facade.getAccessible(x,y))
             {
-                MessageBox.Show("Il est possible d'aller là !");
 
+                MessageBox.Show("La case x = "+ x +" y = "+y+" est bien accessible");
+
+                int X_Canvas=x-1;
+                int Y_Canvas=y-1;
+                
                 //if On est avec Le joueur Rouge
-                if (facade.getCoulPortJCourant() == 1)
+                if ( CoulJC == 1)
                 {
-                    Canvas.SetLeft(JoueurRouge, (x * ((Plateau.Width) / 11)));
-                    Canvas.SetTop(JoueurRouge, (y * ((Plateau.Height) / 8)));
+                    Canvas.SetLeft(JoueurRouge, (X_Canvas * ((Plateau.Width) / 11)));
+                    Canvas.SetTop(JoueurRouge, (Y_Canvas * ((Plateau.Height) / 8)));
                 }
                 //if On est avec Le joueur Vert
-                else if (facade.getCoulPortJCourant() == 2)
+                else if ( CoulJC == 2)
                 {
-                    Canvas.SetLeft(JoueurVert, (x * ((Plateau.Width) / 11)));
-                    Canvas.SetBottom(JoueurVert, (y * ((Plateau.Height) / 8)));
+                    Canvas.SetLeft(JoueurVert, (X_Canvas * ((Plateau.Width) / 11)));
+                    Canvas.SetTop(JoueurVert, (Y_Canvas * ((Plateau.Height) / 8)));
                 }
                 //if On est avec Le joueur Jaune
-                else if (facade.getCoulPortJCourant() == 3)
+                else if ( CoulJC == 3)
                 {
-                    Canvas.SetRight(JoueurJaune, (x * ((Plateau.Width) / 11)));
-                    Canvas.SetTop(JoueurJaune, (y * ((Plateau.Height) / 8)));
+                    Canvas.SetLeft(JoueurJaune, (X_Canvas * ((Plateau.Width) / 11)));
+                    Canvas.SetTop(JoueurJaune, (Y_Canvas * ((Plateau.Height) / 8)));
                 }
                 //if On est avec Le joueur Bleu
-                else if (facade.getCoulPortJCourant() == 4)
+                else if ( CoulJC == 4)
                 {
-                    Canvas.SetRight(JoueurBleu, (x * ((Plateau.Width) / 11)));
-                    Canvas.SetBottom(JoueurBleu, (y * ((Plateau.Height) / 8)));
+                    Canvas.SetLeft(JoueurBleu, (X_Canvas * ((Plateau.Width) / 11)));
+                    Canvas.SetTop(JoueurBleu, (Y_Canvas * ((Plateau.Height) / 8)));
                 }
-            }
-            //MessageBox.Show("x =" + x + " et y=" + y);
-            /* String Caseclic = "";
-             if((x == 0 || x == 10) && (y == 0 || y == 7)) {
-                 Caseclic = "Case Port";
-                 if(x==0 && y ==0){ Caseclic += " Rouge"; }
-                 else if(x == 10 && y == 0){ Caseclic += " Jaune"; }
-                 else if(x == 0 && y == 7){ Caseclic += " Vert"; }
-                 else { Caseclic += " Bleu"; }
-             } else if((x == 7 && y == 1) || ((x == 1 || x == 9) && y == 4) || (x == 3 && y == 7)) {
-                 Caseclic = "Case Canon Noir";
-             } else if((x == 4 && (y == 2 || y == 5)) || (x==6 && (y == 3 || y == 6))) {
-                 Caseclic = "Case Trésor";
-             } else if(((x == 2 || x == 3 || x == 7 || x == 8) && y == 1)
-                 || ((x == 1 || x == 4 || x == 6 || x == 9) && y == 2)
-                 || ((x == 1 || x == 6 || x == 9) && y == 3)
-                 || ((x == 1 || x == 6 || x == 9) && y == 4)
-                 || ((x == 2 || x == 3 || x == 4 || x == 6 || x == 9) && y == 5)
-                 || ((x == 1 || x == 2 || x == 3 || x == 4 || x == 6) && y == 6)) {
-                 Caseclic = "Case Contour Île";
-             } else if(((x == 1 || x == 2 || x == 3 || x == 4 || x == 5 || x == 6 || x == 7 || x == 8 || x == 9) && (y == 0 || y == 7))
-                         || ((x == 0 || x == 10) && (y == 1 || y == 2 || y == 3 || y == 4 || y == 5 || y == 6))) {
-                 Caseclic = "Case Bordure Plateau";
-             } else if(((x == 2 || x == 3 || x == 7 || x == 8)
-                     && (y == 2 || y == 3 || y == 4 || y == 5))) {
-                 Caseclic = "Case Île";
-                   
-             } else if (((x == 2 || x == 3 || x == 7 || x == 8)
-                     && (y != 2 && y != 3 && y != 4 && y != 5))
-                     || x == 1 || x == 4 || x == 5 || x == 6 || x == 9 || x == 10) {
-                 Caseclic = "Case Navigable";
-             }*/
 
-        
-            /*
-            if (Caseclic == "Case Île")
-            {
-                MessageBox.Show("Ô malheureux ! Impossible de se déplacer sur l'île !");
-            } else if (Caseclic == "Case Trésor")
-            {
-                MessageBox.Show("Bachibouzouk ! A nous les pépettes !");
+                //facade.setAccessibleAll(false);
+                /***
+                 * 
+                 * Si Il Toutes les cases sont inaccessible on supprime tous les rectangles
+                 * 
+                 ***/
+                /******************/
+                bool BoolTest = false;
+                for (int i = 1; i <= 11; i++)
+                {
+                    for (int j = 1; j <= 8; j++)
+                    {
+                        if (facade.getAccessible(i, j))
+                            BoolTest = true;
+                    }
+                }
+                if (BoolTest==false) Plateau.Children.Clear();
+                /******************/
             }
-            else if (Caseclic == "Case Canon Noir")
-            {
-                MessageBox.Show("Tonerre de Brest ! Préparez l'artillerie lourde !");
-            }
-            else if (Caseclic == "Case Bordure Plateau")
-            {
-                MessageBox.Show("Pirates à babord ! Euh ... en fait non à tribord ! En fait j'en sais rien ... On s'en fout, zoukez les artémuses !");
-            }*/
-            //MessageBox.Show(Caseclic);
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            /*if (facade.getEnableClicDe())
-                button2.IsEnabled = false;*/
+            if (facade.getEnableClicDe() == false)
+                button2.IsEnabled = false;
 
             if (debutPartie == true)
             {
@@ -145,6 +119,7 @@ namespace CanonNoir_Affichage
                     textBox2.Text = "";
                     textBox3.Text = "";
                     textBox4.Text = "Joueur " + (facade.getNumJCourant());
+
 
                 }
             }

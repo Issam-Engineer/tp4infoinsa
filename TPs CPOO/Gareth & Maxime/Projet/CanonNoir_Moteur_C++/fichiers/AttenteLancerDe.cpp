@@ -37,6 +37,8 @@ void AttenteLancerDe::execute(){
 		if(motor->getNbJoueurs() == 2){
 				motor->modifCourant(ATTENTECHOIXBATEAU);
 		}else{
+				motor->getFacade()->setEnableClicDe(false);
+				cout<<"Valeur de enableClicDe de facade :"<<motor->getFacade()->getEnableClicDe()<<endl;
 				motor->modifCourant(PROPOSEDEPLACEMENT);
 				motor->getFacade()->setProposerDeplacement(true);
 		}

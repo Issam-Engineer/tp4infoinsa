@@ -32,7 +32,7 @@ MoteurJeu::MoteurJeu(Facade* f):facade(f),nbJoueurs(0),courant(NULL),_JCourant(0
 	tabJoueurs = new Joueur[4];
 	_plateau = new Plateau();
 	_de = (*new De());
-	setEtat(0); // on initialise int courant
+	modifCourant(0); // on initialise int courant
 	cout<<"valeur de l'int courant :"<<courant<<endl;
 	_etats.push_back(new AttenteNbJoueurs(this));
 	_etats.push_back(new AttenteInitialisation(this));
@@ -48,12 +48,6 @@ MoteurJeu::~MoteurJeu(){
 	
 }
 
-void MoteurJeu::setEtat(int i){
-	courant=i;
-	//_etats[courant]->modifMotor(this);
-}
-
-
 void MoteurJeu::execute(){
 	_etats[courant]->execute();
 }
@@ -62,10 +56,6 @@ void MoteurJeu::execute(){
 void MoteurJeu::modifNbJoueurs(int n){
 	nbJoueurs=n;
 	cout<<"NbJoueurs MoteurJeu initialise a: "<<n<<endl;
-}
-
-void MoteurJeu::modifCourant(int e){
-	courant=e;
 }
 
 Joueur* MoteurJeu::getJoueurInd(int i){
@@ -86,10 +76,6 @@ void MoteurJeu::setTabJoueur(Joueur* t){
 	}
 }
 
-void MoteurJeu::setJCourant(int i){
-	_JCourant=i;
-}
-
 bool MoteurJeu::estAccessible(pair<int,int> p){
 	bool res;
 	//cout<<"estaccessible("<<p.first<<","<<p.second<<")"<<endl;
@@ -97,6 +83,5 @@ bool MoteurJeu::estAccessible(pair<int,int> p){
 	return res;
 }
 
-void MoteurJeu::setAccessible(pair<int,int> p){
-	_plateau->setAccessible(p);
-}
+void MoteurJeu::setAccessible(pair<int,int> p){_plateau->setAccessible(p);}
+void MoteurJeu::setAccessibleAll(bool b){_plateau->setAccessibleAll(b);}

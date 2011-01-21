@@ -128,3 +128,5 @@ bool Facade::getAccessible(int x, int y){
 	pair<int,int> p = make_pair(x,y);
 	return _moteur->estAccessible(p);
 }
+
+void Facade::setAccessibleAll(bool b){_moteur->setAccessibleAll(b);}

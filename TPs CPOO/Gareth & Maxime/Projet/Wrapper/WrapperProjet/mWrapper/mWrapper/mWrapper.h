@@ -61,5 +61,7 @@ namespace mWrapper {
 
 		bool getEnableClicDe() { return f->getEnableClicDe(); }
 		void setEnableClicDe(bool b) { f->setEnableClicDe(b); }
+
+		void setAccessibleAll(bool b) { f->setAccessibleAll(b); }
 	};
 }

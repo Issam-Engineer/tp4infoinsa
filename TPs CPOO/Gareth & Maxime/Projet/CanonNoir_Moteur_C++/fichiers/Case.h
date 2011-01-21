@@ -56,7 +56,7 @@ class Case
 		*\fn bool setAccessible()
 		*\brief Function which make the case accessible
  		*/
-		virtual	void setAccessible();
+		virtual	void setAccessible(bool b);
 		/**
 		*\fn pair<int,int> getPosition()
 		*\brief function which gives the square position 
@@ -81,8 +81,8 @@ class Case
 inline bool Case::estAccessible(){
 	return _accessible;
 }
-inline void Case::setAccessible(){
-	_accessible=true;
+inline void Case::setAccessible(bool b){
+	_accessible=b;
 }
 inline int Case::getHauteur(){
 	return _hauteur;
