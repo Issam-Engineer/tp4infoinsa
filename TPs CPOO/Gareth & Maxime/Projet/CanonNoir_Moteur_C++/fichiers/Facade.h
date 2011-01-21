@@ -36,9 +36,9 @@ class __declspec(dllexport) Facade
 		bool _afficherDe1;
 		bool _afficherDe2;
 
-		bool _choixDe1;
+		/*bool _choixDe1;
 		bool _choixDe2;
-		bool _choix2De;
+		bool _choix2De;*/
 
 		int _clicX;
 		int _clicY;
@@ -350,9 +350,9 @@ class __declspec(dllexport) Facade
 inline bool Facade::getClicDe(){ return _clicDe;}
 inline bool Facade::getAfficherDe1(){ return _afficherDe1;}
 inline bool Facade::getAfficherDe2(){ return _afficherDe2;}
-inline bool Facade::getChoixDe1(){return _choixDe1;}
+/*inline bool Facade::getChoixDe1(){return _choixDe1;}
 inline bool Facade::getChoixDe2(){return _choixDe2;}
-inline bool Facade::getChoix2De(){return _choix2De;}
+inline bool Facade::getChoix2De(){return _choix2De;}*/
 inline int Facade::getX(){return _clicX;}
 inline int Facade::getY(){return _clicY;}
 inline int Facade::getAngle(){return _angle;}

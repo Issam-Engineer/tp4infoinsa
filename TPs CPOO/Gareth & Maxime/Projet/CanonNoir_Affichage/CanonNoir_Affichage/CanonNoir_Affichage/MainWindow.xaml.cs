@@ -34,16 +34,20 @@ namespace CanonNoir_Affichage
             Point p = e.GetPosition(Plateau);
 
             //Gérer l'affichage par case
-            int x = (int)(((int)p.X * 11) / ((int)Plateau.Width));
-            int y = (int)(((int)p.Y * 8) / ((int)Plateau.Height));
+            int x = (int)(((int)p.X * 11) / ((int)Plateau.Width)+1);
+            int y = (int)(((int)p.Y * 8) / ((int)Plateau.Height)+1);
             facade.setX(x);
             facade.setY(y);
             facade.execute();
 
+            if (facade.getAccessible(x, y))
+            {
+                MessageBox.Show("Il est possible d'aller là !");
+            }
             //if On est avec Left joueur Rouge
-            if(facade.getCoulPortJCourant() == 1){
-            Canvas.SetLeft(JoueurRouge, (x * ((Plateau.Width) / 11)));
-            Canvas.SetTop(JoueurRouge, (y * ((Plateau.Height) / 8)));
+            /*if(facade.getCoulPortJCourant() == 1){
+                Canvas.SetLeft(JoueurRouge, (x * ((Plateau.Width) / 11)));
+                Canvas.SetTop(JoueurRouge, (y * ((Plateau.Height) / 8)));
             }
 
             if (facade.getCoulPortJCourant() == 2)
@@ -62,45 +66,42 @@ namespace CanonNoir_Affichage
             {
                 Canvas.SetRight(JoueurBleu, (x * ((Plateau.Width) / 11)));
                 Canvas.SetBottom(JoueurBleu, (y * ((Plateau.Height) / 8)));
-            }
+            }*/
 
             //MessageBox.Show("x =" + x + " et y=" + y);
-            String Caseclic = "";
-            if((x == 0 || x == 10) && (y == 0 || y == 7)) {
-                Caseclic = "Case Port";
-                if(x==0 && y ==0){ Caseclic += " Rouge"; }
-                else if(x == 10 && y == 0){ Caseclic += " Jaune"; }
-                else if(x == 0 && y == 7){ Caseclic += " Vert"; }
-                else { Caseclic += " Bleu"; }
-            } else if((x == 7 && y == 1) || ((x == 1 || x == 9) && y == 4) || (x == 3 && y == 7)) {
-                Caseclic = "Case Canon Noir";
-            } else if((x == 4 && (y == 2 || y == 5)) || (x==6 && (y == 3 || y == 6))) {
-                Caseclic = "Case Trésor";
-            } else if(((x == 2 || x == 3 || x == 7 || x == 8) && y == 1)
-                || ((x == 1 || x == 4 || x == 6 || x == 9) && y == 2)
-                || ((x == 1 || x == 6 || x == 9) && y == 3)
-                || ((x == 1 || x == 6 || x == 9) && y == 4)
-                || ((x == 2 || x == 3 || x == 4 || x == 6 || x == 9) && y == 5)
-                || ((x == 1 || x == 2 || x == 3 || x == 4 || x == 6) && y == 6)) {
-                Caseclic = "Case Contour Île";
-            } else if(((x == 1 || x == 2 || x == 3 || x == 4 || x == 5 || x == 6 || x == 7 || x == 8 || x == 9) && (y == 0 || y == 7))
-                        || ((x == 0 || x == 10) && (y == 1 || y == 2 || y == 3 || y == 4 || y == 5 || y == 6))) {
-                Caseclic = "Case Bordure Plateau";
-            } else if(((x == 2 || x == 3 || x == 7 || x == 8)
-                    && (y == 2 || y == 3 || y == 4 || y == 5))) {
-                Caseclic = "Case Île";
+            /* String Caseclic = "";
+             if((x == 0 || x == 10) && (y == 0 || y == 7)) {
+                 Caseclic = "Case Port";
+                 if(x==0 && y ==0){ Caseclic += " Rouge"; }
+                 else if(x == 10 && y == 0){ Caseclic += " Jaune"; }
+                 else if(x == 0 && y == 7){ Caseclic += " Vert"; }
+                 else { Caseclic += " Bleu"; }
+             } else if((x == 7 && y == 1) || ((x == 1 || x == 9) && y == 4) || (x == 3 && y == 7)) {
+                 Caseclic = "Case Canon Noir";
+             } else if((x == 4 && (y == 2 || y == 5)) || (x==6 && (y == 3 || y == 6))) {
+                 Caseclic = "Case Trésor";
+             } else if(((x == 2 || x == 3 || x == 7 || x == 8) && y == 1)
+                 || ((x == 1 || x == 4 || x == 6 || x == 9) && y == 2)
+                 || ((x == 1 || x == 6 || x == 9) && y == 3)
+                 || ((x == 1 || x == 6 || x == 9) && y == 4)
+                 || ((x == 2 || x == 3 || x == 4 || x == 6 || x == 9) && y == 5)
+                 || ((x == 1 || x == 2 || x == 3 || x == 4 || x == 6) && y == 6)) {
+                 Caseclic = "Case Contour Île";
+             } else if(((x == 1 || x == 2 || x == 3 || x == 4 || x == 5 || x == 6 || x == 7 || x == 8 || x == 9) && (y == 0 || y == 7))
+                         || ((x == 0 || x == 10) && (y == 1 || y == 2 || y == 3 || y == 4 || y == 5 || y == 6))) {
+                 Caseclic = "Case Bordure Plateau";
+             } else if(((x == 2 || x == 3 || x == 7 || x == 8)
+                     && (y == 2 || y == 3 || y == 4 || y == 5))) {
+                 Caseclic = "Case Île";
                    
-            } else if (((x == 2 || x == 3 || x == 7 || x == 8)
-                    && (y != 2 && y != 3 && y != 4 && y != 5))
-                    || x == 1 || x == 4 || x == 5 || x == 6 || x == 9 || x == 10) {
-                Caseclic = "Case Navigable";
-            }
+             } else if (((x == 2 || x == 3 || x == 7 || x == 8)
+                     && (y != 2 && y != 3 && y != 4 && y != 5))
+                     || x == 1 || x == 4 || x == 5 || x == 6 || x == 9 || x == 10) {
+                 Caseclic = "Case Navigable";
+             }*/
 
-            if (facade.getAccessible(x, y))
-            {
-                MessageBox.Show("Il est possible d'aller là !");
-            }
-
+        
+            /*
             if (Caseclic == "Case Île")
             {
                 MessageBox.Show("Ô malheureux ! Impossible de se déplacer sur l'île !");
@@ -115,12 +116,14 @@ namespace CanonNoir_Affichage
             else if (Caseclic == "Case Bordure Plateau")
             {
                 MessageBox.Show("Pirates à babord ! Euh ... en fait non à tribord ! En fait j'en sais rien ... On s'en fout, zoukez les artémuses !");
-            }
+            }*/
             //MessageBox.Show(Caseclic);
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
+            /*if (facade.getEnableClicDe())
+                button2.IsEnabled = false;*/
 
             if (debutPartie == true)
             {

@@ -92,6 +92,7 @@ void MoteurJeu::setJCourant(int i){
 
 bool MoteurJeu::estAccessible(pair<int,int> p){
 	bool res;
+	cout<<"estaccessible("<<p.first<<","<<p.second<<")"<<endl;
 	res = _plateau->estAccessible(p);
 	return res;
 }
