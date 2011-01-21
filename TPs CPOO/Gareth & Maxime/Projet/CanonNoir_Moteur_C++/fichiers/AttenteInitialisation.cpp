@@ -17,12 +17,12 @@ AttenteInitialisation::AttenteInitialisation(MoteurJeu* m){
 }
 
 void AttenteInitialisation::execute(){
-	cout << "AttenteInitialisation.execute()"<<endl;
+	/*cout << "AttenteInitialisation.execute()"<<endl;
 	cout << "motor->getFacade()->_couleur1 ="<<motor->getFacade()->_couleur1<<endl;
 	cout << "motor->getFacade()->_couleur2 ="<<motor->getFacade()->_couleur2<<endl;
 	cout << "motor->getFacade()->_couleur3 ="<<motor->getFacade()->_couleur3<<endl;
 	cout << "motor->getFacade()->_couleur4 ="<<motor->getFacade()->_couleur4<<endl;
-	cout << "motor->getNbJoueurs() ="<<motor->getNbJoueurs()<<endl;
+	cout << "motor->getNbJoueurs() ="<<motor->getNbJoueurs()<<endl;*/
 
 
 	if( ((motor->getFacade())->_couleur1!=0 && (motor->getFacade())->_couleur2!=0) &&

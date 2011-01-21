@@ -13,6 +13,7 @@
 #include <cstdlib>
 #include <vector>
 #include "Case.h"
+#include "enumCOULEUR.h"
 
 using namespace std;
 

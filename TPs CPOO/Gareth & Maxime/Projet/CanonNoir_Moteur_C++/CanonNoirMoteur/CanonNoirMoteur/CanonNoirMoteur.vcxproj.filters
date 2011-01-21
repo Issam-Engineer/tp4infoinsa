@@ -126,6 +126,9 @@
     <ClInclude Include="..\..\fichiers\AttenteChoixBateauVise.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\fichiers\enumCOULEUR.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\fichiers\Radeau.cpp">
