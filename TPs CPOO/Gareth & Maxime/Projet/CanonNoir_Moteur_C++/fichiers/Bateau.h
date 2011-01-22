@@ -41,7 +41,7 @@ class Bateau
 		*\brief Pure virtual function which allows inherited classes to give their name
 		*\return char the class name
 		*/
-		virtual char type();
+		virtual char type()=0;
 
 		/**
 		*\fn bool getCourant()
@@ -106,9 +106,9 @@ inline bool Bateau::peutEtreVise(){
 inline bool Bateau::peutJouer2Des(){
 	return pJ2Des;
 }
-inline char Bateau::type(){
+/*inline char Bateau::type(){
 	return 'E';
-}
+}*/
 inline bool Bateau::getCourant(){
 	return _courant;
 }
