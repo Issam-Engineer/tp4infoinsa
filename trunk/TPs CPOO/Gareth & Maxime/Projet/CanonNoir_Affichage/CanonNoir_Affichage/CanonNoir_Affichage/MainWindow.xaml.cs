@@ -45,10 +45,11 @@ namespace CanonNoir_Affichage
 
             if (facade.getChoixBateau() == true)
             {
-
+                MessageBox.Show("ETAT ATTENTE CHOIX BATEAU");
             }
             else
             {
+                MessageBox.Show("ETAT ATTENTEDEPLACEMENT");
                 if (facade.getAccessible(x, y))
                 {
 
@@ -204,7 +205,6 @@ namespace CanonNoir_Affichage
                     {
 
                         MessageBox.Show("Choisis un de tes 2 bateaux");
-                        facade.setChoixBateau(true);
                         button2.IsEnabled = false;
                     }
 

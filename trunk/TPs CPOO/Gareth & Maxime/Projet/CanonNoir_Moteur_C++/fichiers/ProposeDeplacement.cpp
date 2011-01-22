@@ -61,13 +61,15 @@ void ProposeDeplacement::execute(){
 
 	//if(motor->getNbJoueurs()==4 || motor->getNbJoueurs()==3 /*Finallement, je pense que c'est pareil pour deux joueurs sauf qu'il a choisit son bateau avant*/){
 		//pair<int,int> casespossibles[24];
-		pair<int,int> casespossibles[48];
+		pair<int,int> casespossibles[24];
 		int valde1 = motor->getDe()->getDe1();
 		int valde2 = motor->getDe()->getDe2();
 		int valdede = motor->getDe()->getSommeDe();
 	
+		
+		//motor->getJoueurInd(motor->getJCourant())->getBateau1()->getPosition()->getPosition();
+		pair<int,int> posit =motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->getPosition()->getPosition(); 
 
-		pair<int,int> posit = motor->getJoueurInd(motor->getJCourant())->getBateau1()->getPosition()->getPosition();
 		cout<<"Position x :"<<posit.first<<" et y :"<<posit.second<<endl;
 		cout<<"Type du bateau du joueur : " << motor->getJoueurInd(motor->getJCourant())->getBateau1()->type() <<endl;
 	
@@ -250,193 +252,5 @@ void ProposeDeplacement::execute(){
 
 		motor->modifCourant(ATTENTEDEPLACEMENT);
 		
-		// CAS AVEC DEUX JOUEURS
-		/*if(motor->getNbJoueurs()==2){
-
-			pair<int,int> posit2 = motor->getJoueurInd(motor->getJCourant())->getBateau2()->getPosition()->getPosition();
-			cout<<"Position du bateau 2 : x :"<<posit2.first<<" et y :"<<posit2.second<<endl;
-			cout<<"Type du bateau2 du joueur : " << motor->getJoueurInd(motor->getJCourant())->getBateau2()->type() <<endl;
-
-			int x_actuel2 = posit2.first;
-			int y_actuel2 = posit2.second;
-
-			casespossibles[indice] = make_pair(x_actuel2,y_actuel2);
-			indice++;
-			
-
-			int x12 = x_actuel2 + valde1;
-			int y12 = y_actuel2;
-			if(x12>0 && x12<=11 && y12>0 && y12<=8){
-				casespossibles[indice] = make_pair(x12,y12);
-				indice++;
-			}
-			int x22 = x_actuel2 - valde1;
-			int y22 = y_actuel2;
-			if(x22>0 && x22<=11 && y22>0 && y22<=8){
-				casespossibles[indice] = make_pair(x22,y22);
-				indice++;
-			}
-			int x3 = x_actuel2;
-			int y3 = y_actuel2 + valde1;
-			if(x3>0 && x3<=11 && y3>0 && y3<=8){
-				casespossibles[indice] = make_pair(x3,y3);
-				indice++;
-			}
-			int x42 = x_actuel2;
-			int y42 = y_actuel2 - valde1;
-			if(x42>0 && x42<=11 && y42>0 && y42<=8){
-				casespossibles[indice] = make_pair(x42,y42);
-				indice++;
-			}
-			int x52 = x_actuel2 + valde1;
-			int y52 = y_actuel2 + valde1;
-			if(x52>0 && x52<=11 && y52>0 && y52<=8){
-				casespossibles[indice] = make_pair(x52,y52);
-				indice++;
-			}
-			int x62 = x_actuel2 - valde1;
-			int y62 = y_actuel2 + valde1;
-			if(x62>0 && x62<=11 && y62>0 && y62<=8){
-				casespossibles[indice] = make_pair(x62,y62);
-				indice++;
-			}
-			int x72 = x_actuel2 + valde1;
-			int y72 = y_actuel2 - valde1;
-			if(x72>0 && x72<=11 && y72>0 && y72<=8){
-				casespossibles[indice] = make_pair(x72,y72);
-				indice++;
-			}
-			int x82 = x_actuel2 - valde1;
-			int y82 = y_actuel2 - valde1;
-			if(x82>0 && x82<=11 && y82>0 && y82<=8){
-				casespossibles[indice] = make_pair(x82,y82);
-				indice++;
-			}
-
-			
-			//Cas d'une caravelle
-			if( motor->getJoueurInd(motor->getJCourant())->getBateau1()->type() == 'C'){
-
-				cout<<"Le joueur possède une caravelle -> Proposer les deux dés et la somme"<<endl;
-
-				int x92 = x_actuel2 + valde2;
-				int y92 = y_actuel2;
-				if(x92>0 && x92<=11 && y92>0 && y92<=8){
-					casespossibles[indice] = make_pair(x92,y92);
-					indice++;
-				}
-				int x102 = x_actuel2 - valde2;
-				int y102 = y_actuel2;
-				if(x102>0 && x102<=11 && y102>0 && y102<=8){
-					casespossibles[indice] = make_pair(x102,y102);
-					indice++;
-				}
-				int x112 = x_actuel2;
-				int y112 = y_actuel2 + valde2;
-				if(x112>0 && x112<=11 && y112>0 && y112<=8){
-					casespossibles[indice] = make_pair(x112,y112);
-					indice++;
-				}
-				int x122 = x_actuel2;
-				int y122 = y_actuel2 - valde2;
-				if(x122>0 && x122<=11 && y122>0 && y122<=8){
-					casespossibles[indice] = make_pair(x122,y122);
-					indice++;
-				}
-				int x132 = x_actuel2 + valde2;
-				int y132 = y_actuel2 + valde2;
-				if(x132>0 && x132<=11 && y132>0 && y132<=8){
-					casespossibles[indice] = make_pair(x132,y132);
-					indice++;
-				}
-				int x142 = x_actuel2 - valde2;
-				int y142 = y_actuel2 + valde2;
-				if(x142>0 && x142<=11 && y142>0 && y142<=8){
-					casespossibles[indice] = make_pair(x142,y142);
-					indice++;
-				}
-				int x152 = x_actuel2 + valde2;
-				int y152 = y_actuel2 - valde2;
-				if(x152>0 && x152<=11 && y152>0 && y152<=8){
-					casespossibles[indice] = make_pair(x152,y152);
-					indice++;
-				}
-				int x162 = x_actuel2 - valde2;
-				int y162 = y_actuel2 - valde2;
-				if(x162>0 && x162<=11 && y162>0 && y162<=8){
-					casespossibles[16] = make_pair(x162,y162);
-					indice++;
-				}
-				int x172 = x_actuel2 + valdede;
-				int y172 = y_actuel2;
-				if(x172>0 && x172<=11 && y172>0 && y172<=8){
-					casespossibles[indice] = make_pair(x172,y172);
-					indice++;
-				}
-				int x182 = x_actuel2 - valdede;
-				int y182 = y_actuel2;
-				if(x182>0 && x182<=11 && y182>0 && y182<=8){
-					casespossibles[indice] = make_pair(x182,y182);
-					indice++;
-				}
-				int x192 = x_actuel2;
-				int y192 = y_actuel2 + valdede;
-				if(x192>0 && x192<=11 && y192>0 && y192<=8){
-					casespossibles[indice] = make_pair(x192,y192);
-					indice++;
-				}
-				int x202 = x_actuel2;
-				int y202 = y_actuel2 - valdede;
-				if(x202>0 && x202<=11 && y202>0 && y202<=8){
-					casespossibles[indice] = make_pair(x202,y202);
-					indice++;
-				}
-				int x212 = x_actuel2 + valdede;
-				int y212 = y_actuel2 + valdede;
-				if(x212>0 && x212<=11 && y212>0 && y212<=8){
-					casespossibles[indice] = make_pair(x212,y212);
-					indice++;
-				}
-				int x222 = x_actuel2 - valdede;
-				int y222 = y_actuel2 + valdede;
-				if(x222>0 && x222<=11 && y222>0 && y222<=8){
-					casespossibles[indice] = make_pair(x222,y222);
-					indice++;
-				}
-				int x232 = x_actuel2 + valdede;
-				int y232 = y_actuel2 - valdede;
-				if(x232>0 && x232<=11 && y232>0 && y232<=8){
-					casespossibles[indice] = make_pair(x232,y232);
-					indice++;
-				}
-				int x242 = x_actuel2 - valdede;
-				int y242 = y_actuel2 - valdede;
-				if(x242>0 && x242<=11 && y242>0 && y242<=8){
-					casespossibles[indice] = make_pair(x242,y242);
-					indice++;
-				}
-
-				for(int c=0;c<indice;c++){
-					if(casespossibles[c].first>=1 && casespossibles[c].first<=11 &&
-						casespossibles[c].second>=1 && casespossibles[c].second<=8){
-									motor->setAccessible(casespossibles[c]);
-					}
-					traverseIle(casespossibles, c);
-				}
-			} else {
-				for(int c=0; c<indice ;c++){
-					if(casespossibles[c].first>=1 && casespossibles[c].first<=11 &&
-							casespossibles[c].second>=1 && casespossibles[c].second<=8){
-								motor->setAccessible(casespossibles[c]);
-					}
-					traverseIle(casespossibles, c);
-				}//for
-			}//else
-
-			motor->modifCourant(ATTENTECHOIXBATEAU);
-
-		}//if*/
-
-	//}
 	
 }
