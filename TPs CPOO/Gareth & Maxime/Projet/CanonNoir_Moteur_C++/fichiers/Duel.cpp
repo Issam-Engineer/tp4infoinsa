@@ -21,5 +21,7 @@ void Duel::execute(){
 	//sinon, on finit le tour
 	cout<<"Duel.execute()"<<endl;
 
+
+	motor->setJCourant((motor->getJCourant()+1)%(motor->getNbJoueurs()));
 	motor->modifCourant(ATTENTELANCERDE);
 }

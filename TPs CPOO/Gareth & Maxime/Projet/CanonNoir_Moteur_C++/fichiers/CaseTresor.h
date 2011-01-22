@@ -31,8 +31,6 @@ class CaseTresor : public CaseContourIle
 
 }; 
 
-inline int CaseTresor::getEtat(){
-	return 12;
-}
+inline int CaseTresor::getEtat(){ return 12; }
 
 #endif

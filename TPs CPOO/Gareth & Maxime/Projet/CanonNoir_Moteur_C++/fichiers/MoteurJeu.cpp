@@ -41,13 +41,13 @@ MoteurJeu::MoteurJeu(Facade* f):facade(f),nbJoueurs(0),courant(NULL),_JCourant(0
 	_etats.push_back(new AttenteChoixBateau(this));
 	_etats.push_back(new ProposeDeplacement(this));
 	_etats.push_back(new AttenteDeplacement(this));
-	//_etats.push_back(new Duel(this));
-	//_etats.push_back(new EtatTir(this));
+	_etats.push_back(new Duel(this));
+	_etats.push_back(new EtatTir(this));
 	//_etats.push_back(new AttenteCanonPuissance(this));
 	//_etats.push_back(new AttenteCanonAngle(this));
 	//_etats.push_back(new EtatCanonFin(this));
-	//_etats.push_back(new EtatTresor(this));
-	//_etats.push_back(new EtatDepot(this));
+	_etats.push_back(new EtatTresor(this));
+	_etats.push_back(new EtatDepot(this));
 	//_etats.push_back(new EtatFinPartie(this));
 	//_etats.push_back(new AttenteChoixDethis));
 	//_etats.push_back(new AttenteChoixBateauVise(this));

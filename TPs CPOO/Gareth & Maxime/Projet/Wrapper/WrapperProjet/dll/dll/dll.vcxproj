@@ -94,10 +94,13 @@
     <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\CaseNavigable.cpp" />
     <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\CasePort.cpp" />
     <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\CaseTresor.cpp" />
+    <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\Duel.cpp" />
     <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\Dé.cpp" />
     <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\Etat.cpp" />
     <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\EtatCanonFin.cpp" />
+    <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\EtatDepot.cpp" />
     <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\EtatTir.cpp" />
+    <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\EtatTresor.cpp" />
     <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\Facade.cpp" />
     <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\Fregate.cpp" />
     <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\Joueur.cpp" />
