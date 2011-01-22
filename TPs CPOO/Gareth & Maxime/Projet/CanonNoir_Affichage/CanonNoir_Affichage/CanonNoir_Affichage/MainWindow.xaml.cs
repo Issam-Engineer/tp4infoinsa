@@ -40,7 +40,9 @@ namespace CanonNoir_Affichage
             facade.setX(x);
             facade.setY(y);
             int CoulJC = facade.getCoulPortJCourant(); // récuperer AVANT le execute !!!
+
             facade.execute();
+
             if (facade.getChoixBateau() == true)
             {
 
@@ -147,6 +149,7 @@ namespace CanonNoir_Affichage
                     facade.setClicDe(true);
                     textBox4.Text = "Joueur " + (facade.getNumJCourant());
                     facade.execute();
+                    //après le execute
                     textBox2.Text = "" + facade.getde1();
                     textBox3.Text = "" + facade.getde2();
                     textBox4.Text = "Joueur " + (facade.getNumJCourant());
@@ -202,7 +205,7 @@ namespace CanonNoir_Affichage
 
                         MessageBox.Show("Choisis un de tes 2 bateaux");
                         facade.setChoixBateau(true);
-
+                        button2.IsEnabled = false;
                     }
 
                 }
