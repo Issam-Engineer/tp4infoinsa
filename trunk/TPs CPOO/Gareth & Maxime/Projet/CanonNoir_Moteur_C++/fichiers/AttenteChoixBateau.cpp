@@ -24,24 +24,23 @@ void AttenteChoixBateau::execute(){
 	if( x!=-1 && y!=-1 ){
 			posit = make_pair(x,y);
 	}else{
-		cout<<"Position x et y =-1"<<endl; //C'est que les positions ne sont pas correctes
+		cout<<"Position x=-1 et y=-1"<<endl; //C'est que les positions ne sont pas correctes
 	}
 
-	//2 Joueurs
-	if(motor->getNbJoueurs() == 2){
+		
+	//si le joueur a bien un bateau sur la case cliquée
+	if( motor->getJoueurInd(motor->getJCourant())->bateauAtPos(posit)){
 
-		//si le joueur a bien un bateau sur la case cliquée
-		if( motor->getJoueurInd(motor->getJCourant())->bateauAtPos(posit)){
+		//On indique quel bateau est le courant grâce au booléen courant de bateau
+		motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit)->setCourant(true);
+		motor->modifCourant(PROPOSEDEPLACEMENT);
+		motor->getFacade()->setChoixBateau(false);
 
-			//On indique quel bateau est le courant grâce au booléen courant de bateau, qui est à false lors de l'initialisation (quand il y a 2 joueurs)
-			motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit)->setCourant(true);
-			motor->modifCourant(PROPOSEDEPLACEMENT);
-	
-		}else{
+	}else{
 			
-			cout<<"ERREUR : AttenteChoixBateau il faut cliquer sur un des bateaux"<<endl;
+		cout<<"ERREUR : AttenteChoixBateau il faut cliquer sur un des bateaux"<<endl;
 
-		}
 	}
-
 }
+
+

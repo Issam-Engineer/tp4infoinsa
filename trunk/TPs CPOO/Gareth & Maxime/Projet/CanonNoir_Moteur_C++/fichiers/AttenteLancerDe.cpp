@@ -34,16 +34,16 @@ void AttenteLancerDe::execute(){
 			motor->getFacade()->setAfficherDe2(false);
 		}
 
-		/*if(motor->getNbJoueurs() == 2){
+		if(motor->getNbJoueurs() == 2){
 				motor->getFacade()->setEnableClicDe(false);
 				cout<<"Valeur de enableClicDe de facade :"<<motor->getFacade()->getEnableClicDe()<<endl;
 				motor->modifCourant(ATTENTECHOIXBATEAU);
-				motor->getFacade()->setProposerDeplacement(true);// IL Faudrait plutot un booleen pour le attenteChoixBateau
-		}else{*/
+				// IL Faudrait plutot un booleen pour le attenteChoixBateau
+		}else{
 				motor->getFacade()->setEnableClicDe(false);
 				cout<<"Valeur de enableClicDe de facade :"<<motor->getFacade()->getEnableClicDe()<<endl;
 				motor->modifCourant(PROPOSEDEPLACEMENT);
 				motor->getFacade()->setProposerDeplacement(true);
-		//}
+		}
 	}
 }

@@ -251,7 +251,7 @@ void ProposeDeplacement::execute(){
 		motor->modifCourant(ATTENTEDEPLACEMENT);
 		
 		// CAS AVEC DEUX JOUEURS
-		if(motor->getNbJoueurs()==2){
+		/*if(motor->getNbJoueurs()==2){
 
 			pair<int,int> posit2 = motor->getJoueurInd(motor->getJCourant())->getBateau2()->getPosition()->getPosition();
 			cout<<"Position du bateau 2 : x :"<<posit2.first<<" et y :"<<posit2.second<<endl;
@@ -435,7 +435,7 @@ void ProposeDeplacement::execute(){
 
 			motor->modifCourant(ATTENTECHOIXBATEAU);
 
-		}//if
+		}//if*/
 
 	//}
 	

@@ -63,5 +63,8 @@ namespace mWrapper {
 		void setEnableClicDe(bool b) { f->setEnableClicDe(b); }
 
 		void setAccessibleAll(bool b) { f->setAccessibleAll(b); }
+
+		bool getChoixBateau() { return f->getChoixBateau(); }
+		void setChoixBateau(bool b) { f->setChoixBateau(b); } 
 	};
 }
