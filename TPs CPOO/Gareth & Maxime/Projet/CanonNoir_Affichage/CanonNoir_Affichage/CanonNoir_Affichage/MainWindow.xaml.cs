@@ -41,68 +41,74 @@ namespace CanonNoir_Affichage
             facade.setY(y);
             int CoulJC = facade.getCoulPortJCourant(); // récuperer AVANT le execute !!!
             facade.execute();
-
-            if (facade.getAccessible(x,y))
+            if (facade.getChoixBateau() == true)
             {
 
-                MessageBox.Show("La case x = "+ x +" y = "+y+" est bien accessible");
+            }
+            else
+            {
+                if (facade.getAccessible(x, y))
+                {
 
-                int X_Canvas=x-1;
-                int Y_Canvas=y-1;
-                
-                //if On est avec Le joueur Rouge
-                if ( CoulJC == 1)
-                {
-                    Canvas.SetLeft(JoueurRouge, (X_Canvas * ((Plateau.Width) / 11)));
-                    Canvas.SetTop(JoueurRouge, (Y_Canvas * ((Plateau.Height) / 8)));
-                }
-                //if On est avec Le joueur Vert
-                else if ( CoulJC == 2)
-                {
-                    Canvas.SetLeft(JoueurVert, (X_Canvas * ((Plateau.Width) / 11)));
-                    Canvas.SetTop(JoueurVert, (Y_Canvas * ((Plateau.Height) / 8)));
-                }
-                //if On est avec Le joueur Jaune
-                else if ( CoulJC == 3)
-                {
-                    Canvas.SetLeft(JoueurJaune, (X_Canvas * ((Plateau.Width) / 11)));
-                    Canvas.SetTop(JoueurJaune, (Y_Canvas * ((Plateau.Height) / 8)));
-                }
-                //if On est avec Le joueur Bleu
-                else if ( CoulJC == 4)
-                {
-                    Canvas.SetLeft(JoueurBleu, (X_Canvas * ((Plateau.Width) / 11)));
-                    Canvas.SetTop(JoueurBleu, (Y_Canvas * ((Plateau.Height) / 8)));
-                }
+                    MessageBox.Show("La case x = " + x + " y = " + y + " est bien accessible");
 
-                facade.setAccessibleAll(false);
-                /***
-                 * 
-                 * Si Il Toutes les cases sont inaccessible on supprime tous les rectangles
-                 * 
-                 ***/
-                /******************/
-                bool BoolTest = false;
-                for (int i = 1; i <= 11; i++)
-                {
-                    for (int j = 1; j <= 8; j++)
+                    int X_Canvas = x - 1;
+                    int Y_Canvas = y - 1;
+
+                    //if On est avec Le joueur Rouge
+                    if (CoulJC == 1)
                     {
-                        if (facade.getAccessible(i, j))
-                            BoolTest = true;
+                        Canvas.SetLeft(JoueurRouge, (X_Canvas * ((Plateau.Width) / 11)));
+                        Canvas.SetTop(JoueurRouge, (Y_Canvas * ((Plateau.Height) / 8)));
                     }
-                }
-                if (BoolTest == false)
-                {
-                    
-                    for (int k = 0; k < index; k++)
+                    //if On est avec Le joueur Vert
+                    else if (CoulJC == 2)
                     {
-                        Plateau.Children.RemoveAt(0);
+                        Canvas.SetLeft(JoueurVert, (X_Canvas * ((Plateau.Width) / 11)));
+                        Canvas.SetTop(JoueurVert, (Y_Canvas * ((Plateau.Height) / 8)));
                     }
-                    index = 0;
+                    //if On est avec Le joueur Jaune
+                    else if (CoulJC == 3)
+                    {
+                        Canvas.SetLeft(JoueurJaune, (X_Canvas * ((Plateau.Width) / 11)));
+                        Canvas.SetTop(JoueurJaune, (Y_Canvas * ((Plateau.Height) / 8)));
+                    }
+                    //if On est avec Le joueur Bleu
+                    else if (CoulJC == 4)
+                    {
+                        Canvas.SetLeft(JoueurBleu, (X_Canvas * ((Plateau.Width) / 11)));
+                        Canvas.SetTop(JoueurBleu, (Y_Canvas * ((Plateau.Height) / 8)));
+                    }
+
+                    facade.setAccessibleAll(false);
+                    /***
+                     * 
+                     * Si Il Toutes les cases sont inaccessible on supprime tous les rectangles
+                     * 
+                     ***/
+                    /******************/
+                    bool BoolTest = false;
+                    for (int i = 1; i <= 11; i++)
+                    {
+                        for (int j = 1; j <= 8; j++)
+                        {
+                            if (facade.getAccessible(i, j))
+                                BoolTest = true;
+                        }
+                    }
+                    if (BoolTest == false)
+                    {
+
+                        for (int k = 0; k < index; k++)
+                        {
+                            Plateau.Children.RemoveAt(0);
+                        }
+                        index = 0;
+                    }
+                    /******************/
+                    textBox4.Text = "Joueur " + (facade.getNumJCourant());
+                    button2.IsEnabled = true;
                 }
-                /******************/
-                textBox4.Text = "Joueur " + (facade.getNumJCourant());
-                button2.IsEnabled = true;
             }
         }
 
@@ -157,18 +163,25 @@ namespace CanonNoir_Affichage
 
                                 if (facade.getAccessible(x + 1, y + 1))
                                 {
-                                    
+
                                     Rectangle rec = new Rectangle();
                                     SolidColorBrush mySolidColorBrush = new SolidColorBrush();
                                     rec.StrokeThickness = 2;
                                     int CoulJC = facade.getCoulPortJCourant();
-                                    if (CoulJC == 1) {
+                                    if (CoulJC == 1)
+                                    {
                                         rec.Stroke = Brushes.Red;
-                                    } else if (CoulJC == 2) {
+                                    }
+                                    else if (CoulJC == 2)
+                                    {
                                         rec.Stroke = Brushes.Green;
-                                    } else if (CoulJC == 3) {
+                                    }
+                                    else if (CoulJC == 3)
+                                    {
                                         rec.Stroke = Brushes.Yellow;
-                                    } else {
+                                    }
+                                    else
+                                    {
                                         rec.Stroke = Brushes.Blue;
                                     }
                                     rec.Width = (Plateau.Width / 11);
@@ -184,6 +197,14 @@ namespace CanonNoir_Affichage
                         facade.setProposerDeplacement(false);
                         button2.IsEnabled = false;
                     }
+                    else // ATTENTECHOIXBATEAU
+                    {
+
+                        MessageBox.Show("Choisis un de tes 2 bateaux");
+                        facade.setChoixBateau(true);
+
+                    }
+
                 }
             
         }

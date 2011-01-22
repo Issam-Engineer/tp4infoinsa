@@ -54,21 +54,8 @@ class __declspec(dllexport) Facade
 
 		bool _enableClicDe;
 
-
-		//à traiter
-		/*pair<int,int> _posBateau; // ATTENTION CE N'EST PAS UN TYPE PRIMITIF*/
-		bool _getNewPos;
-		bool _clicDepart;
-		bool _clicInit;
-		bool _partieEnCours;
-		bool _clicNbJoueurs;
-		bool _afficherJoueur1;
-		bool _clicRefuserDuel;
-		bool _afficherAttaqué;
-		bool _afficherAttanquant;
-		bool _bateauSelect;
-		bool _fenetreInit;
-		bool _fenetreTir;
+		bool _choixBateau; // dit si on est à l'étape choixBateau
+		
 
 
 	public :
@@ -317,7 +304,7 @@ class __declspec(dllexport) Facade
 		void setEnableClicDe(bool b);
 
 		/**
-		*\fn void getEnableClicDe(bool b)
+		*\fn bool getEnableClicDe()
 		*\brief return the value of the attribute enableClicDe
 		*\return true if it is true
 		**/
@@ -328,6 +315,21 @@ class __declspec(dllexport) Facade
 		*\brief put all case accesibility to boolean b
 		**/
 		void setAccessibleAll(bool b);
+
+		/**
+		*\fn bool getChoixBateau()
+		*\brief return the value of the attribute _choixBateau
+		*\return true if it is true
+		**/
+		bool getChoixBateau();
+
+		/**
+		*\fn void setChoixBateau(bool b)
+		*\brief put the value of the attribute _choixBateau to boolean b
+		**/
+		void setChoixBateau(bool b);
+
+
 
 		//à traiter
 		void activeClicDepart();
@@ -376,7 +378,8 @@ inline bool Facade::getProposerDeplacement(){
 inline void Facade::setProposerDeplacement(bool b){ _ProposerDeplacement = b; }
 inline void Facade::setEnableClicDe(bool b){ _enableClicDe=b; }
 inline bool Facade::getEnableClicDe(){ return _enableClicDe; }
-
+inline void Facade::setChoixBateau(bool b){ _choixBateau=b; }
+inline bool Facade::getChoixBateau(){ return _choixBateau; }
 
 extern "C" __declspec(dllexport) Facade* Facade_new();
 extern "C" __declspec(dllexport) void Facade_delete(Facade* f);
