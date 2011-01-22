@@ -102,6 +102,7 @@ namespace CanonNoir_Affichage
                 }
                 /******************/
                 textBox4.Text = "Joueur " + (facade.getNumJCourant());
+                button2.IsEnabled = true;
             }
         }
 
@@ -109,6 +110,7 @@ namespace CanonNoir_Affichage
         {
             if (facade.getEnableClicDe() == false)
                 button2.IsEnabled = false;
+
 
             if (debutPartie == true)
             {
@@ -137,6 +139,7 @@ namespace CanonNoir_Affichage
             {
 
                     facade.setClicDe(true);
+                    textBox4.Text = "Joueur " + (facade.getNumJCourant());
                     facade.execute();
                     textBox2.Text = "" + facade.getde1();
                     textBox3.Text = "" + facade.getde2();
@@ -171,6 +174,7 @@ namespace CanonNoir_Affichage
                         }
 
                         facade.setProposerDeplacement(false);
+                        button2.IsEnabled = false;
                     }
                 }
             
