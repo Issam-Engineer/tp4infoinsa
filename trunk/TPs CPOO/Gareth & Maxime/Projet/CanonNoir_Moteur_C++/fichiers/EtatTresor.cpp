@@ -18,5 +18,7 @@ void EtatTresor::execute(){
 	//on incrémente le compteur du bateau courant
 	cout<<"EtatTresor.execute()"<<endl;
 
+
+	motor->setJCourant((motor->getJCourant()+1)%(motor->getNbJoueurs()));
 	motor->modifCourant(ATTENTELANCERDE);
 }
