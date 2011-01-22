@@ -86,7 +86,7 @@ namespace CanonNoir_Affichage
                     facade.setAccessibleAll(false);
                     /***
                      * 
-                     * Si Il Toutes les cases sont inaccessible on supprime tous les rectangles
+                     * Si Il Toutes les cases sont inaccessibles on supprime tous les rectangles
                      * 
                      ***/
                     /******************/
