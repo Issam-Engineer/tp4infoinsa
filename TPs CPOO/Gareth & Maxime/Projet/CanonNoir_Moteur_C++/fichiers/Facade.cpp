@@ -38,6 +38,7 @@ Facade::Facade(){
 	_initialiserOK=false;
 	_ProposerDeplacement=false;
 	_enableClicDe=true;
+	_choixBateau=false;
 }
 
 Facade::~Facade(){

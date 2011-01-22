@@ -35,7 +35,7 @@ void AttenteChoixBateau::execute(){
 		motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit)->setCourant(true);
 		motor->modifCourant(PROPOSEDEPLACEMENT);
 		motor->getFacade()->setChoixBateau(false);
-		motor->execute();
+		cout<<"Etape de seléction du bateau courant OK"<<endl;
 	}else{
 			
 		cout<<"ERREUR : AttenteChoixBateau il faut cliquer sur un des bateaux"<<endl;
