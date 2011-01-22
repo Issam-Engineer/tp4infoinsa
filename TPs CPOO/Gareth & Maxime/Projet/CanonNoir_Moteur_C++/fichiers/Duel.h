@@ -10,13 +10,11 @@
 #define DUEL_H
 
 #include "Etat.h"
-#include "MoteurJeu.h"
 
 class Duel : public Etat
 {
 	private :
 
-		MoteurJeu motor;
 		bool touche;
 
 	public :
@@ -25,7 +23,12 @@ class Duel : public Etat
 		*\brief function which execute the current state
 		*/
 		virtual void execute();
+		/**
+		*\fn Duel(MoteurJeu* m)
+		*\brief Constructor
+		*/
+		Duel(MoteurJeu * m);
 
 }; 
-inline void Duel::execute(){};
+
 #endif

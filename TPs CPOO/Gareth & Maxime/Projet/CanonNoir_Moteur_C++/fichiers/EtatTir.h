@@ -10,7 +10,6 @@
 #define ETATTIR_H
 
 #include "Etat.h"
-#include "MoteurJeu.h"
 
 class EtatTir : public Etat
 {
@@ -40,6 +39,12 @@ class EtatTir : public Etat
 		*\brief Function which executes the current state
 		*/
 		virtual void execute();
+		/**
+		*\fn EtatTir(MoteurJeu* m)
+		*\brief Constructor
+		*/
+		EtatTir(MoteurJeu * m);
+
 
 }; 
 

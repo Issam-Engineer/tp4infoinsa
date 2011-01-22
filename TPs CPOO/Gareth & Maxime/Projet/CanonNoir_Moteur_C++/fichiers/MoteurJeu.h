@@ -130,6 +130,12 @@ class MoteurJeu
 		void setAccessible(pair<int,int> p);
 
 		/**
+		*\fn void setInaccessible(pair<int,int> p);
+		*\brief Function which make the case at the position p inaccessible
+		*/
+		void setInaccessible(pair<int,int> p);
+
+		/**
 		*\fn void setTabJoueur(int ind,Joueur j)
 		*\brief the Joueur at the indice
 		*/

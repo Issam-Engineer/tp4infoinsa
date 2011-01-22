@@ -175,6 +175,10 @@ void Plateau::setAccessible(pair<int,int> p){
 	getCase(p)->setAccessible(true);
 }
 
+void Plateau::setInaccessible(pair<int,int> p){
+	getCase(p)->setAccessible(false);
+}
+
 void Plateau::setAccessibleAll(bool b){
 	int i,j;
 	for(i=1;i<=11;i++){

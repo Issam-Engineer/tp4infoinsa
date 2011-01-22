@@ -68,6 +68,11 @@ class Plateau
 		*\brief Function which make the case at position p accessible
 		*/
 		void setAccessible(pair<int,int> p);
+		/**
+		*\fn void setInaccessible(pair<int,int> p)
+		*\brief Function which make the case at position p inaccessible
+		*/
+		void setInaccessible(pair<int,int> p);
 
 
 		/**
