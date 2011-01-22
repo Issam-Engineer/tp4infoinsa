@@ -15,9 +15,8 @@ AttenteChoixBateau::AttenteChoixBateau(MoteurJeu * m){
 }
 
 void AttenteChoixBateau::execute(){
-	cout<<"AttenteChoixBateau.execute()"<<endl;
 
-	// construire à partir de la facade la position
+	cout<<"AttenteChoixBateau.execute()"<<endl;
 	pair<int,int> posit; 
 	int x= motor->getFacade()->getX();
 	int y=  motor->getFacade()->getY();
@@ -25,7 +24,7 @@ void AttenteChoixBateau::execute(){
 	if( x!=-1 && y!=-1 ){
 			posit = make_pair(x,y);
 	}else{
-		return; //C'est que les positions ne sont pas correctes
+		cout<<"Position x et y =-1"<<endl; //C'est que les positions ne sont pas correctes
 	}
 
 	//2 Joueurs
@@ -36,40 +35,13 @@ void AttenteChoixBateau::execute(){
 
 			//On indique quel bateau est le courant grâce au booléen courant de bateau, qui est à false lors de l'initialisation (quand il y a 2 joueurs)
 			motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit)->setCourant(true);
+			motor->modifCourant(PROPOSEDEPLACEMENT);
+	
+		}else{
+			
+			cout<<"ERREUR : AttenteChoixBateau il faut cliquer sur un des bateaux"<<endl;
 
-			//le bateau du joueur cliqué peut jouer 2 dés
-			if( motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit)->peutJouer2Des()){
-
-				//ON DOIT PROPOSER D'UTILISER 1 ou 2 DES
-				/*motor->getFacade()->setChoixDe1(true);
-				motor->getFacade()->setChoixDe2(true);		
-				motor->getFacade()->setChoix2De(true);*/
-
-				motor->modifCourant(ATTENTECHOIXDE);
-			}
 		}
-
-		
-	//3 ou 4 Joueurs
-	}else if(	motor->getJoueurInd(motor->getJCourant())->bateauAtPos(posit) &&
-				motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit)->peutJouer2Des()){ 
-
-		/*motor->getFacade()->setChoixDe1(true);
-		motor->getFacade()->setChoixDe2(true);		
-		motor->getFacade()->setChoix2De(true);*/
-
-		motor->modifCourant(ATTENTECHOIXDE);
-
-	//bateau autre qu'une caravelle
-	}else if (motor->getJoueurInd(motor->getJCourant())->bateauAtPos(posit)){
-
-		motor->modifCourant(PROPOSEDEPLACEMENT);
-
-	}else{
-		return;
 	}
 
-	//afin de pouvoir renouveler le test sur la valeur de X et de Y
-	motor->getFacade()->setX(-1);
-	motor->getFacade()->setY(-1);
 }
