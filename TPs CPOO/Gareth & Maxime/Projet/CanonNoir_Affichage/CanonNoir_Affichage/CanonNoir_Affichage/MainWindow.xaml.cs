@@ -161,7 +161,16 @@ namespace CanonNoir_Affichage
                                     Rectangle rec = new Rectangle();
                                     SolidColorBrush mySolidColorBrush = new SolidColorBrush();
                                     rec.StrokeThickness = 2;
-                                    rec.Stroke = Brushes.Yellow;
+                                    int CoulJC = facade.getCoulPortJCourant();
+                                    if (CoulJC == 1) {
+                                        rec.Stroke = Brushes.Red;
+                                    } else if (CoulJC == 2) {
+                                        rec.Stroke = Brushes.Green;
+                                    } else if (CoulJC == 3) {
+                                        rec.Stroke = Brushes.Yellow;
+                                    } else {
+                                        rec.Stroke = Brushes.Blue;
+                                    }
                                     rec.Width = (Plateau.Width / 11);
                                     rec.Height = (Plateau.Height / 8);
                                     //Plateau.Children.Add(rec);
