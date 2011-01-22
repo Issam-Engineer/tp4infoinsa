@@ -15,6 +15,40 @@ ProposeDeplacement::ProposeDeplacement(MoteurJeu* m){
 	cout << "Constructeur : ProposeDeplacement" << endl;
 }
 
+void ProposeDeplacement::traverseIle(pair<int,int>* tab, int i){
+	for(int d=(tab[0].first); d<=(tab[i].first); d++){
+		for(int e=(tab[0].second); e<=(tab[i].second); e++){
+			if((d == 3  || d == 4 || d == 8 || d == 9) && (e == 3  || e == 4 || e == 5 || e == 6)){
+				motor->setInaccessible(tab[i]);
+			}
+		}
+	}
+
+	for(int d=(tab[0].first); d<=(tab[i].first); d++){
+		for(int e=(tab[0].second); e>=(tab[i].second); e--){
+			if((d == 3  || d == 4 || d == 8 || d == 9) && (e == 3  || e == 4 || e == 5 || e == 6)){
+				motor->setInaccessible(tab[i]);
+			}
+		}
+	}
+				
+	for(int d=(tab[0].first); d>=(tab[i].first); d--){
+		for(int e=(tab[0].second); e<=(tab[i].second); e++){
+			if((d == 3  || d == 4 || d == 8 || d == 9) && (e == 3  || e == 4 || e == 5 || e == 6)){
+				motor->setInaccessible(tab[i]);
+			}
+		}
+	}
+				
+	for(int d=(tab[0].first); d>=(tab[i].first); d--){
+		for(int e=(tab[0].second); e>=(tab[i].second); e--){
+			if((d == 3  || d == 4 || d == 8 || d == 9) && (e == 3  || e == 4 || e == 5 || e == 6)){
+				//motor->setInaccessible(tab[i]);
+			}
+		}
+	}
+}
+
 void ProposeDeplacement::execute(){
 	cout<<"ProposeDeplacement.execute()"<<endl;
 
@@ -193,11 +227,10 @@ void ProposeDeplacement::execute(){
 
 			for(int c=0;c<indice;c++){
 				if(casespossibles[c].first>=1 && casespossibles[c].first<=11 &&
-						casespossibles[c].second>=1 && casespossibles[c].second<=8){
-
-							motor->setAccessible(casespossibles[c]);
-
+					casespossibles[c].second>=1 && casespossibles[c].second<=8){
+								motor->setAccessible(casespossibles[c]);
 				}
+				traverseIle(casespossibles, c);
 			}
 		} else {
 			for(int c=0; c<indice ;c++){
@@ -205,6 +238,7 @@ void ProposeDeplacement::execute(){
 						casespossibles[c].second>=1 && casespossibles[c].second<=8){
 							motor->setAccessible(casespossibles[c]);
 				}
+				traverseIle(casespossibles, c);
 			}
 		}
 	}

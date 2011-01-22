@@ -20,7 +20,7 @@ class EtatCanonFin : public EtatTir
 		*\fn EtatCanonFin(MoteurJeu * m)
 		*\brief Constructor
 		*/
-		EtatCanonFin(MoteurJeu * m);
+		//EtatCanonFin(MoteurJeu * m);
 
 		/**
 		*\fn void execute()

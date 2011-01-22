@@ -10,24 +10,20 @@
 #define ETATTRESOR_H
 
 #include "Etat.h"
-#include "MoteurJeu.h"
 
 class EtatTresor : public Etat
 {
 	public :
-
-		/**
-		*\fn EtatTresor(MoteurJeu * m)
-		*\brief Constructor
-		*/
-		//EtatTresor(MoteurJeu * m);
-
 		/**
 		*\fn void execute()
 		*\brief Function which executes the current state
 		*/
-		virtual void execute();
+		void execute();
+		/**
+		*\fn EtatTresor(MoteurJeu* m)
+		*\brief Constructor
+		*/
+		EtatTresor(MoteurJeu * m);
 
 }; 
-inline void EtatTresor::execute(){};
 #endif

@@ -31,6 +31,12 @@ class ProposeDeplacement : public Etat
 		*/
 		virtual void execute();
 
+		/**
+		*\fn void traverseIle(pair<int,int>* tab, int i)
+		*\brief Function which checks if there's no island on the path between the actuel square and the destination one
+		*/
+		void traverseIle(pair<int,int>* tab, int i);
+
 }; 
 
 #endif

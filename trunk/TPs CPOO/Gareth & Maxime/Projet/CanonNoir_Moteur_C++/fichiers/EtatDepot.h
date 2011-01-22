@@ -24,7 +24,7 @@ class EtatDepot : public Etat
 		*\fn EtatDepos(MoteurJeu * m)
 		*\brief default constructor
 		*/
-		//EtatDepot(MoteurJeu * m);
+		EtatDepot(MoteurJeu * m);
 }; 
-inline void EtatDepot::execute(){};
+
 #endif
