@@ -25,6 +25,10 @@ Joueur::Joueur(int num, CasePort* c1, CasePort* c2){
 	_cp2=c2;
 	_bateau1 = new Caravelle();
 	_bateau2 = new Caravelle();
+	_bateau1->positionner(c1);
+	_bateau2->positionner(c2);
+	_bateau1->setCourant(false);
+	_bateau2->setCourant(false);
 }
 
 Joueur::Joueur(){
