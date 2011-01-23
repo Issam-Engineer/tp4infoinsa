@@ -57,10 +57,9 @@ void ProposeDeplacement::traverseIle(pair<int,int>* tab, int i){
 
 
 void ProposeDeplacement::execute(){
-	cout<<"ProposeDeplacement.execute()"<<endl;
 
-	//if(motor->getNbJoueurs()==4 || motor->getNbJoueurs()==3 /*Finallement, je pense que c'est pareil pour deux joueurs sauf qu'il a choisit son bateau avant*/){
-		//pair<int,int> casespossibles[24];
+		cout<<"ProposeDeplacement.execute()"<<endl;
+
 		pair<int,int> casespossibles[24];
 		int valde1 = motor->getDe()->getDe1();
 		int valde2 = motor->getDe()->getDe2();
