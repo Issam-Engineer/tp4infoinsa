@@ -22,6 +22,7 @@ void EtatDepot::execute(){
 		Bateau* BC = motor->getJoueurInd(motor->getJCourant())->getBateauCourant();
 	if(BC->type() == 'C' && BC->getATresor()){
 		motor->getJoueurInd(motor->getJCourant())->setNbTresors(motor->getJoueurInd(motor->getJCourant())->getNbTresors()+1);
+		motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->setATresor(false);
 		if(motor->getJoueurInd(motor->getJCourant())->getNbTresors() == 3){
 			motor->getJoueurInd(motor->getJCourant())->GAGNANT();
 			motor->getFacade()->setPartieTerminee(true);
