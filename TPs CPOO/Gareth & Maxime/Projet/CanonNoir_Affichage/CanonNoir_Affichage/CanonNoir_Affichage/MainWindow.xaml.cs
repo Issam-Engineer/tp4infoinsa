@@ -64,7 +64,7 @@ namespace CanonNoir_Affichage
                                 Rectangle rec = new Rectangle();
                                 SolidColorBrush mySolidColorBrush = new SolidColorBrush();
                                 rec.StrokeThickness = 2;
-                                int CoulJ = facade.getCoulPortJCourant();
+                                int CoulJ = facade.getCoulBateauCourant();
                                 if (CoulJ == 1)
                                 {
                                     rec.Stroke = Brushes.Red;
@@ -105,27 +105,27 @@ namespace CanonNoir_Affichage
 
                     int X_Canvas = x - 1;
                     int Y_Canvas = y - 1;
-
+                    int CoulBC = facade.getCoulBateauCourant();
                     //if On est avec Le joueur Rouge
-                    if (CoulJC == 1)
+                    if (CoulBC == 1)
                     {
                         Canvas.SetLeft(JoueurRouge, (X_Canvas * ((Plateau.Width) / 11)));
                         Canvas.SetTop(JoueurRouge, (Y_Canvas * ((Plateau.Height) / 8)));
                     }
                     //if On est avec Le joueur Vert
-                    else if (CoulJC == 2)
+                    else if (CoulBC == 2)
                     {
                         Canvas.SetLeft(JoueurVert, (X_Canvas * ((Plateau.Width) / 11)));
                         Canvas.SetTop(JoueurVert, (Y_Canvas * ((Plateau.Height) / 8)));
                     }
                     //if On est avec Le joueur Jaune
-                    else if (CoulJC == 3)
+                    else if (CoulBC == 3)
                     {
                         Canvas.SetLeft(JoueurJaune, (X_Canvas * ((Plateau.Width) / 11)));
                         Canvas.SetTop(JoueurJaune, (Y_Canvas * ((Plateau.Height) / 8)));
                     }
                     //if On est avec Le joueur Bleu
-                    else if (CoulJC == 4)
+                    else if (CoulBC == 4)
                     {
                         Canvas.SetLeft(JoueurBleu, (X_Canvas * ((Plateau.Width) / 11)));
                         Canvas.SetTop(JoueurBleu, (Y_Canvas * ((Plateau.Height) / 8)));
@@ -219,7 +219,7 @@ namespace CanonNoir_Affichage
                                     Rectangle rec = new Rectangle();
                                     SolidColorBrush mySolidColorBrush = new SolidColorBrush();
                                     rec.StrokeThickness = 2;
-                                    int CoulJC = facade.getCoulPortJCourant();
+                                    int CoulJC = facade.getCoulBateauCourant();
                                     if (CoulJC == 1)
                                     {
                                         rec.Stroke = Brushes.Red;
