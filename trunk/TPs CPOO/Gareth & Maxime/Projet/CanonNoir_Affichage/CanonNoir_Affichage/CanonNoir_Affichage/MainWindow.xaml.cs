@@ -48,18 +48,17 @@ namespace CanonNoir_Affichage
                 MessageBox.Show("ETAT ATTENTE CHOIX BATEAU");
                 facade.execute();
 
-
-
                 facade.execute();
 
-                if (facade.getChoixBateau() == true)
-                {
-                    for (int x2 = 0; x <= 10; x++)
+                /*if (facade.getChoixBateau() == true)
+                {*/
+
+                    for (int i = 0; i <= 10; i++)
                     {
-                        for (int y2 = 0; y <= 7; y++)
+                        for (int j = 0; j <= 7; j++)
                         {
 
-                            if (facade.getAccessible(x2 + 1, y2 + 1))
+                            if (facade.getAccessible(i + 1, j + 1))
                             {
 
                                 Rectangle rec = new Rectangle();
@@ -91,12 +90,12 @@ namespace CanonNoir_Affichage
                             }
                         }
                     }
-                }
+                //}
             }
             else
             {
 
-                //facade.execute();
+                facade.execute();
 
                 MessageBox.Show("ETAT ATTENTEDEPLACEMENT");
                 if (facade.getAccessible(x, y))
