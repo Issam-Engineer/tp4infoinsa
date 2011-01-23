@@ -73,5 +73,9 @@ namespace mWrapper {
 
 		bool getPartieTerminee() { return f->getPartieTerminee(); }
 
+		bool getTresorRecup() { return f->getTresorRecup(); }
+
+		void setTresorRecup(bool b) { return f->setTresorRecup(b); }
+
 	};
 }
