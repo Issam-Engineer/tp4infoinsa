@@ -70,7 +70,7 @@ void ProposeDeplacement::execute(){
 		pair<int,int> posit =motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->getPosition()->getPosition(); 
 
 		cout<<"Position x :"<<posit.first<<" et y :"<<posit.second<<endl;
-		cout<<"Type du bateau du joueur : " << motor->getJoueurInd(motor->getJCourant())->getBateau1()->type() <<endl;
+		cout<<"Type du bateau du joueur : " << motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->type() <<endl;
 	
 		int indice=0;
 		int x_actuel = posit.first;
@@ -244,6 +244,8 @@ void ProposeDeplacement::execute(){
 				if(casespossibles[c].first>=1 && casespossibles[c].first<=11 &&
 						casespossibles[c].second>=1 && casespossibles[c].second<=8){
 							motor->setAccessible(casespossibles[c]);
+							cout<<"est accessible la case"<< casespossibles[c].first<<" "<<casespossibles[c].second<<endl;
+
 				}
 				traverseIle(casespossibles, c);
 			}

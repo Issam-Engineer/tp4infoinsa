@@ -84,8 +84,8 @@ namespace CanonNoir_Affichage
                                 rec.Width = (Plateau.Width / 11);
                                 rec.Height = (Plateau.Height / 8);
                                 Plateau.Children.Insert(index, rec);
-                                Canvas.SetLeft(rec, (x * ((Plateau.Width) / 11)));
-                                Canvas.SetTop(rec, (y * ((Plateau.Height) / 8)));
+                                Canvas.SetLeft(rec, (i * ((Plateau.Width) / 11)));
+                                Canvas.SetTop(rec, (j * ((Plateau.Height) / 8)));
                                 index++;
                             }
                         }
