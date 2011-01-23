@@ -57,8 +57,11 @@ class __declspec(dllexport) Facade
 		bool _choixBateau; // dit si on est à l'étape choixBateau
 
 		int _coulBatCourant;
+
+		bool _tresorRecup;
 		
 		bool _partieTerminee;
+
 
 	public :
 		
@@ -364,6 +367,19 @@ class __declspec(dllexport) Facade
 		**/
 		bool getPartieTerminee();
 
+		/**
+		*\fn bool setTresorRecup()
+		*\brief Puts the value of the attribute _tresorRecup to bool b
+		**/
+		void setTresorRecup(bool b);
+
+		/**
+		*\fn bool getTresorRecup()
+		*\brief Acces function
+		*\return bool true if a player has found a treasure
+		**/
+		bool getTresorRecup();
+
 		//à traiter
 		void activeClicDepart();
 		void initialiser();
@@ -416,6 +432,10 @@ inline bool Facade::getChoixBateau(){ return _choixBateau; }
 
 inline void Facade::setPartieTerminee(bool b){ _partieTerminee=b; }
 inline bool Facade::getPartieTerminee(){ return _partieTerminee; }
+
+inline void Facade::setTresorRecup(bool b){ _tresorRecup=b; }
+inline bool Facade::getTresorRecup(){ return _tresorRecup; }
+
 
 extern "C" __declspec(dllexport) Facade* Facade_new();
 extern "C" __declspec(dllexport) void Facade_delete(Facade* f);

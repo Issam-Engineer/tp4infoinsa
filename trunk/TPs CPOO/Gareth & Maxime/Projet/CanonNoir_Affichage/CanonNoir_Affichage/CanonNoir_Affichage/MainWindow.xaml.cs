@@ -21,7 +21,6 @@ namespace CanonNoir_Affichage
         WrapperFacade facade;
         bool debutPartie = true;
         int index = 0;
-        bool tresorRecup = true;
 
         public MainWindow(WrapperFacade f)
         {
@@ -58,7 +57,6 @@ namespace CanonNoir_Affichage
                     {
                         for (int j = 0; j <= 7; j++)
                         {
-
                             if (facade.getAccessible(i + 1, j + 1))
                             {
 
@@ -92,7 +90,7 @@ namespace CanonNoir_Affichage
                         }
                     }
 
-                    if (facade.getATresor() && tresorRecup) {
+                    if (facade.getATresor() && facade.getTresorRecup()) {
                             int coulB = facade.getCoulBateauCourant();
                             MessageBox.Show("Un trésor a été découvert ! Ramenez-le au port au plus vite !");
                             //if On est avec Le joueur Rouge
@@ -115,7 +113,7 @@ namespace CanonNoir_Affichage
                             {
                                 JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleuetresor.jpg", UriKind.Relative));
                             }
-                            tresorRecup = false;
+                            facade.setTresorRecup(false);
                         }
                 //}
             }
