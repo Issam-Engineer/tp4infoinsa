@@ -55,6 +55,8 @@ class __declspec(dllexport) Facade
 		bool _enableClicDe;
 
 		bool _choixBateau; // dit si on est à l'étape choixBateau
+
+		int _coulBatCourant;
 		
 
 
@@ -325,7 +327,7 @@ class __declspec(dllexport) Facade
 
 		/**
 		*\fn void setChoixBateau(bool b)
-		*\brief put the value of the attribute _choixBateau to boolean b
+		*\brief puts the value of the attribute _choixBateau to boolean b
 		**/
 		void setChoixBateau(bool b);
 
@@ -336,6 +338,11 @@ class __declspec(dllexport) Facade
 		**/
 		int getCoulBateauCourant();
 
+		/**
+		*\fn bool setCoulBateauCourant()
+		*\brief put the value of the attribute _coulBatCourant to int c
+		**/
+		void setCoulBateauCourant(int c);
 
 		//à traiter
 		void activeClicDepart();

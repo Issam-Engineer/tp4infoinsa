@@ -39,7 +39,7 @@ namespace CanonNoir_Affichage
             int y = (int)(((int)p.Y * 8) / ((int)Plateau.Height) +1);
             facade.setX(x);
             facade.setY(y);
-            int CoulJC = facade.getCoulPortJCourant(); // récuperer AVANT le execute !!!
+            //int CoulJC = facade.getCoulBateauCourant(); // récuperer AVANT le execute !!!
 
 
 
@@ -49,7 +49,7 @@ namespace CanonNoir_Affichage
                 facade.execute();
 
                 facade.execute();
-
+                int CoulJ = facade.getCoulBateauCourant();
                 /*if (facade.getChoixBateau() == true)
                 {*/
 
@@ -64,7 +64,7 @@ namespace CanonNoir_Affichage
                                 Rectangle rec = new Rectangle();
                                 SolidColorBrush mySolidColorBrush = new SolidColorBrush();
                                 rec.StrokeThickness = 2;
-                                int CoulJ = facade.getCoulBateauCourant();
+                                
                                 if (CoulJ == 1)
                                 {
                                     rec.Stroke = Brushes.Red;
@@ -94,9 +94,8 @@ namespace CanonNoir_Affichage
             }
             else
             {
-
+                
                 facade.execute();
-
                 MessageBox.Show("ETAT ATTENTEDEPLACEMENT");
                 if (facade.getAccessible(x, y))
                 {

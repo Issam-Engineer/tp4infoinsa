@@ -35,9 +35,11 @@ void AttenteChoixBateau::execute(){
 
 		//On indique quel bateau est le courant grâce au booléen courant de bateau
 		motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit)->setCourant(true);
+		motor->getFacade()->setCoulBateauCourant(motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->getCouleur());
 		motor->modifCourant(PROPOSEDEPLACEMENT);
 		motor->getFacade()->setChoixBateau(false);
-		cout<<"Etape de seléction du bateau courant OK"<<endl;
+		cout<<"Etape de sélection du bateau courant OK"<<endl;
+		cout<<"Couleur du bateau courant : "<<motor->getFacade()->getCoulBateauCourant()<<endl;
 		//motor->getFacade()->execute();
 	}else{
 			
