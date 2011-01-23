@@ -14,5 +14,6 @@ Caravelle::Caravelle(){
 	pPTresor = true;
 	pEVise = true;
 	pJ2Des = true;
+	aTresor = false;
 }
 

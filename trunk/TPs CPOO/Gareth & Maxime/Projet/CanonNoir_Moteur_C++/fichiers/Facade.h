@@ -344,6 +344,13 @@ class __declspec(dllexport) Facade
 		**/
 		void setCoulBateauCourant(int c);
 
+		/**
+		*\fn bool getATresor()
+		*\brief acces function
+		*\return bool true if the current boat of the current player carries a treasure
+		**/
+		bool getATresor();
+
 		//à traiter
 		void activeClicDepart();
 		void initialiser();

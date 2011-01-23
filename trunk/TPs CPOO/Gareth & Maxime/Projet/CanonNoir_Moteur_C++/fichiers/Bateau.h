@@ -28,6 +28,7 @@ class Bateau
 		Case* pos;
 		bool _courant; // vrai si c'est le bateau courant
 		int _couleurb;
+		bool aTresor;
 
 	public :
 
@@ -105,6 +106,21 @@ class Bateau
 		*/
 		void setCouleur(int c);
 
+		/**
+		*\fn bool getATresor()
+		*\brief acces function
+		*\return bool true if the current boat carries a treasure
+		*/
+		bool getATresor();
+
+		/**
+		*\fn virtual setATresor(bool b)
+		*\brief function which changes the value of aTresor
+		*/
+		virtual void setATresor(bool b);
+
+
+
 }; 
 
 inline Case* Bateau::getPosition(){
@@ -134,4 +150,11 @@ inline int Bateau::getCouleur(){
 inline void Bateau::setCouleur(int c){
 	_couleurb=c;
 }
+inline bool Bateau::getATresor(){
+	return aTresor;
+}
+inline void Bateau::setATresor(bool b){
+	aTresor = b;
+}
+
 #endif

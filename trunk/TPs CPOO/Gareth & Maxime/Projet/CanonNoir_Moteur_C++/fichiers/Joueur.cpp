@@ -18,6 +18,7 @@ Joueur::Joueur(int num, CasePort* c){
 	_bateau1->positionner(c);
 	_bateau1->setCourant(true);
 	_bateau1->setCouleur(c->getCouleur());
+	_nbTresors = 0;
 }
 
 Joueur::Joueur(int num, CasePort* c1, CasePort* c2){
@@ -32,12 +33,14 @@ Joueur::Joueur(int num, CasePort* c1, CasePort* c2){
 	_bateau2->setCourant(false);
 	_bateau1->setCouleur(c1->getCouleur());
 	_bateau2->setCouleur(c2->getCouleur());
+	_nbTresors = 0;
 }
 
 Joueur::Joueur(){
 	_numero=0;
 	_cp1=0;
 	_cp2=0;
+	_nbTresors = 0;
 }
 
 

@@ -13,6 +13,7 @@ Fregate::Fregate(){
 	pPTresor = true;
 	pEVise = true;
 	pJ2Des = false;
+	aTresor = false;
 }
 
 /*void Fregate::init(){
