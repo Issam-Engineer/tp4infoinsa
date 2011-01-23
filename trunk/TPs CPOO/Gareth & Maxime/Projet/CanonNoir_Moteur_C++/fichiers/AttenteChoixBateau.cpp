@@ -21,6 +21,8 @@ void AttenteChoixBateau::execute(){
 	int x= motor->getFacade()->getX();
 	int y=  motor->getFacade()->getY();
 
+
+	cout<<"le x de la facade ="<<x<<" et le y="<<y<<endl;
 	if( x!=-1 && y!=-1 ){
 			posit = make_pair(x,y);
 	}else{
