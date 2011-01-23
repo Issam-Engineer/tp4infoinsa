@@ -41,14 +41,63 @@ namespace CanonNoir_Affichage
             facade.setY(y);
             int CoulJC = facade.getCoulPortJCourant(); // récuperer AVANT le execute !!!
 
-            facade.execute();
+
 
             if (facade.getChoixBateau() == true)
             {
                 MessageBox.Show("ETAT ATTENTE CHOIX BATEAU");
+                facade.execute();
+
+
+
+                facade.execute();
+
+                if (facade.getChoixBateau() == true)
+                {
+                    for (int x2 = 0; x <= 10; x++)
+                    {
+                        for (int y2 = 0; y <= 7; y++)
+                        {
+
+                            if (facade.getAccessible(x2 + 1, y2 + 1))
+                            {
+
+                                Rectangle rec = new Rectangle();
+                                SolidColorBrush mySolidColorBrush = new SolidColorBrush();
+                                rec.StrokeThickness = 2;
+                                int CoulJ = facade.getCoulPortJCourant();
+                                if (CoulJ == 1)
+                                {
+                                    rec.Stroke = Brushes.Red;
+                                }
+                                else if (CoulJ == 2)
+                                {
+                                    rec.Stroke = Brushes.Green;
+                                }
+                                else if (CoulJ == 3)
+                                {
+                                    rec.Stroke = Brushes.Yellow;
+                                }
+                                else
+                                {
+                                    rec.Stroke = Brushes.Blue;
+                                }
+                                rec.Width = (Plateau.Width / 11);
+                                rec.Height = (Plateau.Height / 8);
+                                Plateau.Children.Insert(index, rec);
+                                Canvas.SetLeft(rec, (x * ((Plateau.Width) / 11)));
+                                Canvas.SetTop(rec, (y * ((Plateau.Height) / 8)));
+                                index++;
+                            }
+                        }
+                    }
+                }
             }
             else
             {
+
+                //facade.execute();
+
                 MessageBox.Show("ETAT ATTENTEDEPLACEMENT");
                 if (facade.getAccessible(x, y))
                 {
@@ -112,7 +161,7 @@ namespace CanonNoir_Affichage
                     textBox4.Text = "Joueur " + (facade.getNumJCourant());
                     button2.IsEnabled = true;
                 }
-            }
+            } 
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
