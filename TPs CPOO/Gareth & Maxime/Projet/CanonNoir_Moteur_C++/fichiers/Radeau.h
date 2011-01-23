@@ -31,8 +31,19 @@ class Radeau : public Bateau
 		* \brief Default constructor
 		*/
 		Radeau(); 
+
+		/**
+		*\fn void setATresor()
+		*\brief redefines the heritated function
+		*/
+		void setATresor(bool b);
 }; 
 
 inline char Radeau::type(){ return 'R';} 
+
+inline void Radeau::setATresor(bool b){
+	aTresor=false;
+	cout<<"Radeau.h : un radeau ne peut pas prendre de trésor !"<<endl;
+}
 
 #endif

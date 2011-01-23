@@ -140,3 +140,5 @@ bool Facade::getAccessible(int x, int y){
 }
 
 void Facade::setAccessibleAll(bool b){_moteur->setAccessibleAll(b);}
+
+bool Facade::getATresor(){return _moteur->getJoueurInd(_moteur->getJCourant())->getBateauCourant()->getATresor();}

@@ -13,6 +13,7 @@ Radeau::Radeau() {
 	pPTresor = false;
 	pEVise = false;
 	pJ2Des = false;
+	aTresor = false;
 }
 
 

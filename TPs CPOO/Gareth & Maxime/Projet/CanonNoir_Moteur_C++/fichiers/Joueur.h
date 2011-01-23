@@ -29,6 +29,7 @@ class Joueur
 		bool _gagnant;
 		Bateau* _bateau1;
 		Bateau* _bateau2; /*NULL if nb joueur !=2*/
+		int _nbTresors;
 
 	public :
 

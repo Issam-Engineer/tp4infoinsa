@@ -69,5 +69,7 @@ namespace mWrapper {
 
 		int getCoulBateauCourant() { return f->getCoulBateauCourant(); }
 
+		bool getATresor() { return f->getATresor(); }
+
 	};
 }
