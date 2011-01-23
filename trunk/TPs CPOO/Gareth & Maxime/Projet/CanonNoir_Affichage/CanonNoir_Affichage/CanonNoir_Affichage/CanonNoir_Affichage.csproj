@@ -147,6 +147,33 @@
   <ItemGroup>
     <Resource Include="Images\CanonVert.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\caravellebleue.jpg" />
+    <Resource Include="Images\caravellejaune.jpg" />
+    <Resource Include="Images\caravellerouge.jpg" />
+    <Resource Include="Images\caravelleverte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\caravellebleuetresor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\caravelle.jpg" />
+    <Resource Include="Images\caravellejaunetresor.jpg" />
+    <Resource Include="Images\caravellerougetresor.jpg" />
+    <Resource Include="Images\caravellevertetresor.jpg" />
+    <Resource Include="Images\fregatebleue.jpg" />
+    <Resource Include="Images\fregatebleuetresor.jpg" />
+    <Resource Include="Images\fregatejaune.jpg" />
+    <Resource Include="Images\fregatejaunetresor.jpg" />
+    <Resource Include="Images\fregaterouge.jpg" />
+    <Resource Include="Images\fregaterougetresor.jpg" />
+    <Resource Include="Images\fregateverte.jpg" />
+    <Resource Include="Images\fregatevertetresor.jpg" />
+    <Resource Include="Images\radeaubleu.jpg" />
+    <Resource Include="Images\radeaujaune.jpg" />
+    <Resource Include="Images\radeaurouge.jpg" />
+    <Resource Include="Images\radeauvert.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
