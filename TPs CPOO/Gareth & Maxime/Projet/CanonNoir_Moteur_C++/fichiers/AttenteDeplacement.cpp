@@ -26,6 +26,7 @@ void AttenteDeplacement::execute(){
 
 	motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->positionner(motor->getPlateau()->getCase(make_pair(x,y)));
 	motor->getFacade()->setCoulBateauCourant(motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->getCouleur());
+	motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->setCourant(false);
 	// QUEL EST L'ETAT SUIVANT ?
 
 	int ETAT_SUIVANT;
