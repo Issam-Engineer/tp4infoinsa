@@ -27,6 +27,7 @@ class Bateau
 		bool pEVise;
 		Case* pos;
 		bool _courant; // vrai si c'est le bateau courant
+		int _couleurb;
 
 	public :
 
@@ -51,7 +52,7 @@ class Bateau
 		bool getCourant();
 		/**
 		*\fn void setCourant(bool t)
-		*\brief function which chnages the value of _courant
+		*\brief function which changes the value of _courant
 		*/
 		void setCourant(bool t);
 
@@ -92,6 +93,18 @@ class Bateau
 		*\param[in] Case a position
 		*/
 		virtual void positionner(Case* c);
+		/**
+		*\fn bool getCouleur()
+		*\brief acces function
+		*\return the color of the boat
+		*/
+		int getCouleur();
+		/**
+		*\fn void setCouleur(int c)
+		*\brief function which changes the value of _couleurb
+		*/
+		void setCouleur(int c);
+
 }; 
 
 inline Case* Bateau::getPosition(){
@@ -114,5 +127,11 @@ inline bool Bateau::getCourant(){
 }
 inline void Bateau::setCourant(bool t){
 	_courant=t;
+}
+inline int Bateau::getCouleur(){
+	return _couleurb;
+}
+inline void Bateau::setCouleur(int c){
+	_couleurb=c;
 }
 #endif

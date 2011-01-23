@@ -329,6 +329,12 @@ class __declspec(dllexport) Facade
 		**/
 		void setChoixBateau(bool b);
 
+		/**
+		*\fn bool getCoulBateauCourant()
+		*\brief acces function
+		*\return the color of the current boat
+		**/
+		int getCoulBateauCourant();
 
 
 		//à traiter
