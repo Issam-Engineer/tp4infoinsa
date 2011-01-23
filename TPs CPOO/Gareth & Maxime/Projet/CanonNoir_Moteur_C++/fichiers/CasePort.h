@@ -41,12 +41,8 @@ class CasePort : public Case
 
 }; 
 
-inline int CasePort::getCouleur(){
-	return _couleur;
-}
+inline int CasePort::getCouleur(){ return _couleur; }
 
-inline int CasePort::getEtat(){
-	return 13;
-}
+inline int CasePort::getEtat(){ return ETATDEPOT; }
 
 #endif

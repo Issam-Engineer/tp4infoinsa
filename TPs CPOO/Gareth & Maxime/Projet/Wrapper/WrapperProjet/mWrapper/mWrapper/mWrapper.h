@@ -71,5 +71,7 @@ namespace mWrapper {
 
 		bool getATresor() { return f->getATresor(); }
 
+		bool getPartieTerminee() { return f->getPartieTerminee(); }
+
 	};
 }

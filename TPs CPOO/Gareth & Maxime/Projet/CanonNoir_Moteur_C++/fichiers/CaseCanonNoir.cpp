@@ -13,11 +13,11 @@ CaseCanonNoir::CaseCanonNoir(){
 	_accessible = false;
 }
 
-int CaseCanonNoir::getEtat(){
+//int CaseCanonNoir::getEtat(){
 	/*int et;
 	if(motor.getNbJoueurs()==2){
 	 	et = 4;
 	 }else{ et = 8; }
 		return et;*/
-	return 4;
-}
+	//return 4;
+//}
