@@ -32,5 +32,6 @@ class CaseCanonNoir : public CaseContourIle
 
 }; 
 
+inline int CaseCanonNoir::getEtat(){ return ETATTIR; }
 
 #endif

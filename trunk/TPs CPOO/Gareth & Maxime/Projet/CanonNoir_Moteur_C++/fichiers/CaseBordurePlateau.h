@@ -43,8 +43,6 @@ class CaseBordurePlateau : public CaseNavigable
 
 }; 
 
-inline int CaseBordurePlateau::getEtat(){
-	return 7;
-}
+inline int CaseBordurePlateau::getEtat(){ return DUEL; }
 
 #endif

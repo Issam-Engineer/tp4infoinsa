@@ -21,6 +21,7 @@ namespace CanonNoir_Affichage
         WrapperFacade facade;
         bool debutPartie = true;
         int index = 0;
+        bool tresorRecup = true;
 
         public MainWindow(WrapperFacade f)
         {
@@ -90,6 +91,32 @@ namespace CanonNoir_Affichage
                             }
                         }
                     }
+
+                    if (facade.getATresor() && tresorRecup) {
+                            int coulB = facade.getCoulBateauCourant();
+                            MessageBox.Show("Un trésor a été découvert ! Ramenez-le au port au plus vite !");
+                            //if On est avec Le joueur Rouge
+                            if (coulB == 1)
+                            {
+                                JoueurRouge.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellerougetresor.jpg", UriKind.Relative));
+                            }
+                            //if On est avec Le joueur Vert
+                            else if (coulB == 2)
+                            {
+                                JoueurVert.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellevertetresor.jpg", UriKind.Relative));
+                            }
+                            //if On est avec Le joueur Jaune
+                            else if (coulB == 3)
+                            {
+                                JoueurJaune.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellejaunetresor.jpg", UriKind.Relative));
+                            }
+                            //if On est avec Le joueur Bleu
+                            else if (coulB == 4)
+                            {
+                                JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleuetresor.jpg", UriKind.Relative));
+                            }
+                            tresorRecup = false;
+                        }
                 //}
             }
             else
@@ -131,6 +158,8 @@ namespace CanonNoir_Affichage
                     }
 
                     facade.setAccessibleAll(false);
+
+                    }
                     /***
                      * 
                      * Si Il Toutes les cases sont inaccessibles on supprime tous les rectangles
@@ -159,33 +188,9 @@ namespace CanonNoir_Affichage
                     textBox4.Text = "Joueur " + (facade.getNumJCourant());
                     button2.IsEnabled = true;
 
-                    /*if (facade.getATresor() == true) {
-                        int coulB = facade.getCoulPortJCourant();
-                        MessageBox.Show("Un trésor a été découvert ! Ramenez-le au port au plus vite !");
-                        //if On est avec Le joueur Rouge
-                        if (coulB == 1)
-                        {
-                            JoueurRouge.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellerougetresor.jpg"));
-                        }
-                        //if On est avec Le joueur Vert
-                        else if (coulB == 2)
-                        {
-                            JoueurVert.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellevertetresor.jpg"));
-                        }
-                        //if On est avec Le joueur Jaune
-                        else if (coulB == 3)
-                        {
-                            JoueurJaune.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellejaunetresor.jpg"));
-                        }
-                        //if On est avec Le joueur Bleu
-                        else if (coulB == 4)
-                        {
-                            JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleuetresor.jpg"));
-                        }
-                    }*/
                 }
-            } 
         }
+
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {

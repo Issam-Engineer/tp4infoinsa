@@ -58,7 +58,7 @@ class __declspec(dllexport) Facade
 
 		int _coulBatCourant;
 		
-
+		bool _partieTerminee;
 
 	public :
 		
@@ -351,6 +351,19 @@ class __declspec(dllexport) Facade
 		**/
 		bool getATresor();
 
+		/**
+		*\fn bool setPartieTerminee()
+		*\brief Puts the value of the attribute _partieTerminee to bool b
+		**/
+		void setPartieTerminee(bool b);
+
+		/**
+		*\fn bool getPartieTerminee()
+		*\brief Acces function
+		*\return bool true if the game is finished
+		**/
+		bool getPartieTerminee();
+
 		//à traiter
 		void activeClicDepart();
 		void initialiser();
@@ -400,6 +413,9 @@ inline void Facade::setEnableClicDe(bool b){ _enableClicDe=b; }
 inline bool Facade::getEnableClicDe(){ return _enableClicDe; }
 inline void Facade::setChoixBateau(bool b){ _choixBateau=b; }
 inline bool Facade::getChoixBateau(){ return _choixBateau; }
+
+inline void Facade::setPartieTerminee(bool b){ _partieTerminee=b; }
+inline bool Facade::getPartieTerminee(){ return _partieTerminee; }
 
 extern "C" __declspec(dllexport) Facade* Facade_new();
 extern "C" __declspec(dllexport) void Facade_delete(Facade* f);

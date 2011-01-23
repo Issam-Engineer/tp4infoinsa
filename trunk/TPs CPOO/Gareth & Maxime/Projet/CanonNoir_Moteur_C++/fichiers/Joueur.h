@@ -106,26 +106,42 @@ class Joueur
 
 		/**
 		*\fn void setCasePort1(CasePort* c)
-		*\brief modify the attribute CasePort1
+		*\brief modifies the attribute CasePort1
 		**/
 		void setCasePort1(CasePort* c);
 		/**
 		*\fn void setCasePort2(CasePort* c)
-		*\brief modify the attribute CasePort1
+		*\brief modifies the attribute CasePort1
 		**/
 		void setCasePort2(CasePort* c);
 
+		/**
+		*\fn int getNbTresors()
+		*\brief Access function
+		*\return int the number of treasures of the current player
+		**/
+		int getNbTresors() const;
+		/**
+		*\fn void setNbTresors()
+		*\brief Modifies the attribute _nbTresors
+		**/
+		void setNbTresors(int n);
+		
+
 }; 
 
-inline CasePort* Joueur::getPort1() const{ return _cp1 ;}
-inline CasePort* Joueur::getPort2() const{ return _cp2 ;}
+inline CasePort* Joueur::getPort1() const { return _cp1 ;}
+inline CasePort* Joueur::getPort2() const { return _cp2 ;}
 inline void Joueur::setCasePort1(CasePort* c) { _cp1=c ;}
 inline void Joueur::setCasePort2(CasePort* c) { _cp2=c ;}
 
-inline Bateau* Joueur::getBateau1() const{ return _bateau1 ;}
-inline Bateau* Joueur::getBateau2() const{ return _bateau2 ;}
+inline Bateau* Joueur::getBateau1() const { return _bateau1 ;}
+inline Bateau* Joueur::getBateau2() const { return _bateau2 ;}
 
 inline int Joueur::getNumero() const{ return _numero ;}
 inline void Joueur::setNumero(int i){_numero=i;}
+
+inline int Joueur::getNbTresors() const { return _nbTresors; }
+inline void Joueur::setNbTresors(int n) { _nbTresors = n; }
 
 #endif

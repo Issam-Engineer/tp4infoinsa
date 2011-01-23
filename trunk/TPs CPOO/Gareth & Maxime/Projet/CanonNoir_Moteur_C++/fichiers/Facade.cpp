@@ -39,6 +39,7 @@ Facade::Facade(){
 	_ProposerDeplacement=false;
 	_enableClicDe=true;
 	_choixBateau=false;
+	_partieTerminee=false;
 }
 
 Facade::~Facade(){
