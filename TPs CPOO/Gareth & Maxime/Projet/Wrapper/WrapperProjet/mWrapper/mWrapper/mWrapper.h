@@ -68,5 +68,6 @@ namespace mWrapper {
 		void setChoixBateau(bool b) { f->setChoixBateau(b); } 
 
 		int getCoulBateauCourant() { return f->getCoulBateauCourant(); }
+
 	};
 }

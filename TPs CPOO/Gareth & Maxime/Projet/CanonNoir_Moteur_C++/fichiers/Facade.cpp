@@ -126,7 +126,11 @@ int Facade::getCoulPortJCourant(){
 }
 
 int Facade::getCoulBateauCourant(){
-	return _moteur->getJoueurInd(_moteur->getJCourant())->getBateauCourant()->getCouleur();
+	return _coulBatCourant;
+}
+
+void Facade::setCoulBateauCourant(int c){
+	_coulBatCourant = c;
 }
 
 
