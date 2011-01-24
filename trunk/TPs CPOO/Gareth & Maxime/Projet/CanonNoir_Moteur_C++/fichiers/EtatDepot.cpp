@@ -29,6 +29,7 @@ void EtatDepot::execute(){
 		} else {
 		cout<<"Et un trésor de plus ! Plus que "<<(3-(motor->getJoueurInd(motor->getJCourant())->getNbTresors()))<<endl;
 		}
+	 //motor->getJoueurInd(motor->getJCourant())->getBateauCourant() = new Caravelle();
 	}
 
 	motor->setJCourant((motor->getJCourant()+1)%(motor->getNbJoueurs()));
