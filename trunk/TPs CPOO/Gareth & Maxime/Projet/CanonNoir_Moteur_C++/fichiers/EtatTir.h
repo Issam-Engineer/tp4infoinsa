@@ -10,6 +10,7 @@
 #define ETATTIR_H
 
 #include "Etat.h"
+#include <list>
 
 class EtatTir : public Etat
 {
@@ -19,6 +20,12 @@ class EtatTir : public Etat
 		int puissance;
 		int angle;
 		bool Duel;
+
+		list<pair<double,double> > calculHistogramme (std::pair<int,int> p1,std::pair<int,int> p2) ;
+
+		double f(int x,int x1,int x2,int y1,int y2);
+
+		double g(int y,int x1,int x2,int y1,int y2);
 		 
 	public :
 		/**

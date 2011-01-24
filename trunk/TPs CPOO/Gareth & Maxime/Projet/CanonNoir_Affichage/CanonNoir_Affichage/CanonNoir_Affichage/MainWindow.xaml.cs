@@ -292,20 +292,6 @@ namespace CanonNoir_Affichage
 
         }
 
-        private void button3_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
-
-        private void button4_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
-
-        private void button5_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
 
         private void Window_Loaded_1(object sender, RoutedEventArgs e)
         {
