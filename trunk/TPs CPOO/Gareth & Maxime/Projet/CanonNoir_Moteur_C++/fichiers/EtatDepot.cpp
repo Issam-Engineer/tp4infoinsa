@@ -29,8 +29,7 @@ void EtatDepot::execute(){
 					motor->getFacade()->setPartieTerminee(true);
 				} else {
 				cout<<"Et un trésor de plus ! Plus que "<<(3-(motor->getJoueurInd(motor->getJCourant())->getNbTresors()))<<endl;
-			} 
-			} else {
+			} } else {
 	 //motor->getJoueurInd(motor->getJCourant())->setBateau((motor->getJoueurInd(motor->getJCourant())->getBateauCourant()), (new Caravelle()));
 				cout<<"Bateau réparé !"<<endl;
 			}
