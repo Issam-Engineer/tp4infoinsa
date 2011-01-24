@@ -24,6 +24,7 @@ class Case;
 
 class MoteurJeu
 {
+	
 	private :
 
 		Facade * facade; // association bi-directionnelle
@@ -43,6 +44,8 @@ class MoteurJeu
 
 	public :
 		
+		//use for the State of Shoot
+		vector< pair<double, double> > histogramme;
 		
 		/**
 		*\fn void execute()

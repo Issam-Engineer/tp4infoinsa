@@ -84,5 +84,8 @@ namespace mWrapper {
 
 		int getSizeHistogramme() { return f->getSizeHistogramme(); }
 
+		double getLongueurHisto(int indice) { return getLongueurHisto(indice) ; }
+		double getHauteurHisto(int indice) { return getHauteurHisto(indice) ; }
+
 	};
 }
