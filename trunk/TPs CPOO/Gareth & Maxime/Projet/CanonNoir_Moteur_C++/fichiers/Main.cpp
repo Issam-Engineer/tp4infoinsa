@@ -11,8 +11,8 @@ int main( int argc, const char* argv[] )
 
 	fac->initNbJoueurs(4);
 	
-
-	fac->execute();
+	
+	/*fac->execute();
 
 	fac->setCoul1(1);
 	fac->setCoul2(2);
@@ -23,7 +23,7 @@ int main( int argc, const char* argv[] )
 
 	fac->setClicDe(true);
 	//clic De
-	/*srand( time(NULL));
+	srand( time(NULL));
 	fac->execute();
 	
 	fac->setClicDe(true);
@@ -44,6 +44,10 @@ int main( int argc, const char* argv[] )
 	cout<<"La case (4,2) est elle accessible ? "<<fac->getAccessible(1,2)<<endl;*/
 
 
+
+	fac->getMoteur()->modifCourant(ETATTIR);
+
+	fac->execute();
 
 	while(1);
 
