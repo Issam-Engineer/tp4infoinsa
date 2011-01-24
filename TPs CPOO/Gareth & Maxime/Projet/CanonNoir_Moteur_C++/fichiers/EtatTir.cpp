@@ -21,7 +21,15 @@ EtatTir::EtatTir(MoteurJeu * m){
 void EtatTir::execute(){
 	//Si ce n'est pas un Duel (donc un tir via une case Canon Noir), on attend que le joueur choisisse le bateau adversaire à viser 
 	cout<<"EtatTir.execute()"<<endl;
-	calculHistogramme(make_pair(4,7),make_pair(5,3));
+	int x1=motor->x_Attaquant;
+	int y1=motor->y_Attaquant;
+
+	int x2=motor->getFacade()->getX();
+	int y2=motor->getFacade()->getY();
+
+	cout<<"(x1,y1)= ("<<x1<<"."<<y1<<") et (x2,y2)= ("<<x2<<"."<<y2<<")"<<endl;
+
+	calculHistogramme(make_pair(x1,y1),make_pair(x2,y2));
 	motor->getFacade()->setSizeHistogramme(motor->histogramme.size());
 
 }
@@ -62,19 +70,19 @@ void EtatTir::calculHistogramme (pair<int,int> p1,pair<int,int> p2){
 
 	while (x * inc_x <= x2 * inc_x && y * inc_y <= y2 * inc_y ) {
 
-		cout<< "x2 =" << x2 <<" x1 ="<<x1<<endl;
+		/*cout<< "x2 =" << x2 <<" x1 ="<<x1<<endl;
 		cout<< "y2 =" << y2 << " y1 ="<<y1<<endl;
 
 		cout<< "inc_x =" << inc_x << endl;
 		cout<< "inc_y =" << inc_x << endl;
 
 		cout<< "x =" << x << endl;
-		cout<< "y =" << y << endl;
+		cout<< "y =" << y << endl;*/
 
 		if ( f(x,x1,x2,y1,y2) == y) {
 
-			cout<<"f==y"<<endl;
-			cout<<"f(x,x1,x2,y1,y2)"<<f(x,x1,x2,y1,y2)<<endl;
+			/*cout<<"f==y"<<endl;
+			cout<<"f(x,x1,x2,y1,y2)"<<f(x,x1,x2,y1,y2)<<endl;*/
 			intersections.push_back( pair< double , double >(x, y));
 			x += inc_x ;
 			if ( y2 == y1 ){
@@ -84,14 +92,14 @@ void EtatTir::calculHistogramme (pair<int,int> p1,pair<int,int> p2){
 			}
 
 		} else if(f(x,x1,x2,y1,y2) * inc_y < y * inc_y ) {
-			cout<<"f*inc_y < y*inc_y"<<endl;
-			cout<<"f(x,x1,x2,y1,y2)"<<f(x,x1,x2,y1,y2)<<endl;
+			/*cout<<"f*inc_y < y*inc_y"<<endl;
+			cout<<"f(x,x1,x2,y1,y2)"<<f(x,x1,x2,y1,y2)<<endl;*/
 			intersections.push_back( pair< double , double >(x, f(x,x1,x2,y1,y2) ));
 			x += inc_x ;
 
 		} else {
-			cout<<"else"<<endl;
-			cout<<"g(x,x1,x2,y1,y2)"<<g(x,x1,x2,y1,y2)<<endl;
+			/*cout<<"else"<<endl;
+			cout<<"g(x,x1,x2,y1,y2)"<<g(x,x1,x2,y1,y2)<<endl;*/
 			intersections.push_back( pair< double , double >( g(y,x1,x2,y1,y2) , y ));
 			y += inc_y ;
 		}
@@ -118,7 +126,7 @@ void EtatTir::calculHistogramme (pair<int,int> p1,pair<int,int> p2){
 			h = motor->getPlateau()->getCase(make_pair(i,j))->getHauteur();	// Hauteur de la case de coordonnée i,j		
 			l = sqrt (( xb - xa) * (xb - xa) + (yb - ya) * (yb - ya));	
 			cout<<"longueur :"<<l<<" hauteur :"<<h<<endl;
-			motor->histogramme.push_back ( std::pair<double , double >(l, h));	
+			motor->histogramme.push_back( std::pair<double , double >(l, h));	
 		}
 	}
 }

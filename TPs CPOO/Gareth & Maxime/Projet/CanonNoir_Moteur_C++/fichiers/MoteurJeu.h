@@ -38,15 +38,16 @@ class MoteurJeu
 		De _de;
 
 		//Utile pour l'EtatTir
-		int x_Attaquant;
-		int y_Attaquant;
+		
 
 
 	public :
 		
 		//use for the State of Shoot
 		vector< pair<double, double> > histogramme;
-		
+		int x_Attaquant;
+		int y_Attaquant;
+
 		/**
 		*\fn void execute()
 		*this function is used when someone clic (is called by Facade::execute())
