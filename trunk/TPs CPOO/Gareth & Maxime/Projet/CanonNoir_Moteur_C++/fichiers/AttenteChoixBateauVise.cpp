@@ -22,6 +22,9 @@ void AttenteChoixBateauVise::execute(){
 	int x = motor->getFacade()->getX();
 	int y = motor->getFacade()->getX();
 
+	cout<<" x courant de la facade : "<<x<<endl;
+	cout<<" y courant de la facade : "<<y<<endl;
+
 	if( x!=-1 && y!=-1 ){
 			posit = make_pair(x,y);
 	}else{
@@ -31,9 +34,20 @@ void AttenteChoixBateauVise::execute(){
 		
 	
 	//si le joueur adverse a bien un bateau sur la case cliquée
-	if(motor->getJoueurCourant()->bateauAtPos(posit))
+	int i = motor->getJCourant();
+	bool b = false;
+	for (int j=0;j<4;j++){
+		if(j==i){}
+		else{
+			if(motor->getJoueurInd(i)->bateauAtPos(posit)) b=true;
+		}
+	}
+
+	if(b=true){
 		motor->modifCourant(ETATTIR);
-	else 
+		motor->execute();
+	}else{
 		cout<<"Erreur : AttenteChoixBateauVise"<<endl;
+	}
 
 }
