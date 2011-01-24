@@ -42,8 +42,8 @@ namespace CanonNoir_Affichage
             //int CoulJC = facade.getCoulBateauCourant(); // récuperer AVANT le execute !!!
 
 
-
-            if (facade.getChoixBateau() == true)
+            //if (facade.getChoixBateau() == true)
+            if (facade.getEtatCourant() == 4)
             {
                 MessageBox.Show("ETAT ATTENTE CHOIX BATEAU");
                 facade.execute();
@@ -90,7 +90,7 @@ namespace CanonNoir_Affichage
                         }
                     }
 
-                    if (facade.getATresor() && facade.getTresorRecup()) {
+                    if (facade.getATresor() && /*facade.getEtatCourant() == 7*/facade.getTresorRecup()) {
                             int coulB = facade.getCoulBateauCourant();
                             MessageBox.Show("Un trésor a été découvert ! Ramenez-le au port au plus vite !");
                             //if On est avec Le joueur Rouge

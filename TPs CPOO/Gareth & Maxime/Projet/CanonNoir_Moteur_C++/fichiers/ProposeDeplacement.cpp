@@ -131,7 +131,7 @@ void ProposeDeplacement::execute(){
 
 		
 		//Cas d'une caravelle
-		if( motor->getJoueurInd(motor->getJCourant())->getBateau1()->type() == 'C'){
+		if( motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->type() == 'C'){
 
 			cout<<"Le joueur possède une caravelle -> Proposer les deux dés et la somme"<<endl;
 
@@ -250,7 +250,7 @@ void ProposeDeplacement::execute(){
 				traverseIle(casespossibles, c);
 			}
 		}
-
+		motor->getFacade()->setCoulBateauCourant(motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->getCouleur());
 		motor->modifCourant(ATTENTEDEPLACEMENT);
 		
 	
