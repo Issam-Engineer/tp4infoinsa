@@ -118,15 +118,14 @@ namespace CanonNoir_Affichage
                 }
                 //}
             }
-            else if(facade.getEtatCourant() == 1)
+            else if(facade.getEtatCourant() == 11)
             {
-
-                MessageBox.Show("On choisit le bateau à attaquer");
-                facade.execute(); // Only this
+                MessageBox.Show("ATTAQUE !!!! (choix d'un bateau)");
+                facade.execute(); 
                 FenetreTir fT = new FenetreTir(facade);
                 fT.Show();
             }
-            else
+            else if(facade.getEtatCourant() == 6)
             {
 
                 facade.execute();

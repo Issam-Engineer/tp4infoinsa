@@ -36,7 +36,9 @@ void AttenteDeplacement::execute(){
 	if(ETAT_SUIVANT != -1){
 		motor->modifCourant(ETAT_SUIVANT);
 		cout<<"ModifCourant(ETAT_SUIVANT) avec ETAT_SUIVANT = "<<ETAT_SUIVANT<<endl;
-		motor->getFacade()->execute();
+		if(ETAT_SUIVANT != ATTENTECHOIXBATVISE){
+			motor->getFacade()->execute();
+		}
 
 	} else {
 		motor->setJCourant((motor->getJCourant()+1)%(motor->getNbJoueurs()));
