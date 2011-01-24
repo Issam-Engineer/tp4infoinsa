@@ -60,109 +60,113 @@ namespace CanonNoir_Affichage
                 /*if (facade.getChoixBateau() == true)
                 {*/
 
-                    for (int i = 0; i <= 10; i++)
+                for (int i = 0; i <= 10; i++)
+                {
+                    for (int j = 0; j <= 7; j++)
                     {
-                        for (int j = 0; j <= 7; j++)
+                        if (facade.getAccessible(i + 1, j + 1))
                         {
-                            if (facade.getAccessible(i + 1, j + 1))
-                            {
 
-                                Rectangle rec = new Rectangle();
-                                SolidColorBrush mySolidColorBrush = new SolidColorBrush();
-                                rec.StrokeThickness = 2;
-                                
-                                if (CoulJ == 1)
-                                {
-                                    rec.Stroke = Brushes.Red;
-                                }
-                                else if (CoulJ == 2)
-                                {
-                                    rec.Stroke = Brushes.Green;
-                                }
-                                else if (CoulJ == 3)
-                                {
-                                    rec.Stroke = Brushes.Yellow;
-                                }
-                                else
-                                {
-                                    rec.Stroke = Brushes.Blue;
-                                }
-                                rec.Width = (Plateau.Width / 11);
-                                rec.Height = (Plateau.Height / 8);
-                                Plateau.Children.Insert(index, rec);
-                                Canvas.SetLeft(rec, (i * ((Plateau.Width) / 11)));
-                                Canvas.SetTop(rec, (j * ((Plateau.Height) / 8)));
-                                index++;
+                            Rectangle rec = new Rectangle();
+                            SolidColorBrush mySolidColorBrush = new SolidColorBrush();
+                            rec.StrokeThickness = 2;
+
+                            if (CoulJ == 1)
+                            {
+                                rec.Stroke = Brushes.Red;
                             }
+                            else if (CoulJ == 2)
+                            {
+                                rec.Stroke = Brushes.Green;
+                            }
+                            else if (CoulJ == 3)
+                            {
+                                rec.Stroke = Brushes.Yellow;
+                            }
+                            else
+                            {
+                                rec.Stroke = Brushes.Blue;
+                            }
+                            rec.Width = (Plateau.Width / 11);
+                            rec.Height = (Plateau.Height / 8);
+                            Plateau.Children.Insert(index, rec);
+                            Canvas.SetLeft(rec, (i * ((Plateau.Width) / 11)));
+                            Canvas.SetTop(rec, (j * ((Plateau.Height) / 8)));
+                            index++;
                         }
                     }
+                }
 
-                    if (facade.getATresor() && /*facade.getEtatCourant() == 7*/facade.getTresorRecup()) {
-                            int coulB = facade.getCoulBateauCourant();
-                            MessageBox.Show("Un trésor a été découvert ! Ramenez-le au port au plus vite !");
-                            //if On est avec Le joueur Rouge
-                            if (coulB == 1)
-                            {
-                                JoueurRouge.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellerougetresor.jpg", UriKind.Relative));
-                            }
-                            //if On est avec Le joueur Vert
-                            else if (coulB == 2)
-                            {
-                                JoueurVert.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellevertetresor.jpg", UriKind.Relative));
-                            }
-                            //if On est avec Le joueur Jaune
-                            else if (coulB == 3)
-                            {
-                                JoueurJaune.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellejaunetresor.jpg", UriKind.Relative));
-                            }
-                            //if On est avec Le joueur Bleu
-                            else if (coulB == 4)
-                            {
-                                JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleuetresor.jpg", UriKind.Relative));
-                            }
-                            facade.setTresorRecup(false);
-                        }
+                if (facade.getATresor() && /*facade.getEtatCourant() == 7*/facade.getTresorRecup())
+                {
+                    int coulB = facade.getCoulBateauCourant();
+                    MessageBox.Show("Un trésor a été découvert ! Ramenez-le au port au plus vite !");
+                    //if On est avec Le joueur Rouge
+                    if (coulB == 1)
+                    {
+                        JoueurRouge.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellerougetresor.jpg", UriKind.Relative));
+                    }
+                    //if On est avec Le joueur Vert
+                    else if (coulB == 2)
+                    {
+                        JoueurVert.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellevertetresor.jpg", UriKind.Relative));
+                    }
+                    //if On est avec Le joueur Jaune
+                    else if (coulB == 3)
+                    {
+                        JoueurJaune.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellejaunetresor.jpg", UriKind.Relative));
+                    }
+                    //if On est avec Le joueur Bleu
+                    else if (coulB == 4)
+                    {
+                        JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleuetresor.jpg", UriKind.Relative));
+                    }
+                    facade.setTresorRecup(false);
+                }
                 //}
             }
             else
             {
-                
+
                 facade.execute();
-                MessageBox.Show("ETAT ATTENTEDEPLACEMENT");
-                if (facade.getAccessible(x, y))
-                {
 
-                    MessageBox.Show("La case x = " + x + " y = " + y + " est bien accessible");
+                /*if (facade.getEtatCourant() == 5)
+                {*/
+                    MessageBox.Show("ETAT ATTENTEDEPLACEMENT");
+                    if (facade.getAccessible(x, y))
+                    {
 
-                    int X_Canvas = x - 1;
-                    int Y_Canvas = y - 1;
-                    int CoulBC = facade.getCoulBateauCourant();
-                    //if On est avec Le joueur Rouge
-                    if (CoulBC == 1)
-                    {
-                        Canvas.SetLeft(JoueurRouge, (X_Canvas * ((Plateau.Width) / 11)));
-                        Canvas.SetTop(JoueurRouge, (Y_Canvas * ((Plateau.Height) / 8)));
-                    }
-                    //if On est avec Le joueur Vert
-                    else if (CoulBC == 2)
-                    {
-                        Canvas.SetLeft(JoueurVert, (X_Canvas * ((Plateau.Width) / 11)));
-                        Canvas.SetTop(JoueurVert, (Y_Canvas * ((Plateau.Height) / 8)));
-                    }
-                    //if On est avec Le joueur Jaune
-                    else if (CoulBC == 3)
-                    {
-                        Canvas.SetLeft(JoueurJaune, (X_Canvas * ((Plateau.Width) / 11)));
-                        Canvas.SetTop(JoueurJaune, (Y_Canvas * ((Plateau.Height) / 8)));
-                    }
-                    //if On est avec Le joueur Bleu
-                    else if (CoulBC == 4)
-                    {
-                        Canvas.SetLeft(JoueurBleu, (X_Canvas * ((Plateau.Width) / 11)));
-                        Canvas.SetTop(JoueurBleu, (Y_Canvas * ((Plateau.Height) / 8)));
-                    }
+                        MessageBox.Show("La case x = " + x + " y = " + y + " est bien accessible");
 
-                    facade.setAccessibleAll(false);
+                        int X_Canvas = x - 1;
+                        int Y_Canvas = y - 1;
+                        int CoulBC = facade.getCoulBateauCourant();
+                        //if On est avec Le joueur Rouge
+                        if (CoulBC == 1)
+                        {
+                            Canvas.SetLeft(JoueurRouge, (X_Canvas * ((Plateau.Width) / 11)));
+                            Canvas.SetTop(JoueurRouge, (Y_Canvas * ((Plateau.Height) / 8)));
+                        }
+                        //if On est avec Le joueur Vert
+                        else if (CoulBC == 2)
+                        {
+                            Canvas.SetLeft(JoueurVert, (X_Canvas * ((Plateau.Width) / 11)));
+                            Canvas.SetTop(JoueurVert, (Y_Canvas * ((Plateau.Height) / 8)));
+                        }
+                        //if On est avec Le joueur Jaune
+                        else if (CoulBC == 3)
+                        {
+                            Canvas.SetLeft(JoueurJaune, (X_Canvas * ((Plateau.Width) / 11)));
+                            Canvas.SetTop(JoueurJaune, (Y_Canvas * ((Plateau.Height) / 8)));
+                        }
+                        //if On est avec Le joueur Bleu
+                        else if (CoulBC == 4)
+                        {
+                            Canvas.SetLeft(JoueurBleu, (X_Canvas * ((Plateau.Width) / 11)));
+                            Canvas.SetTop(JoueurBleu, (Y_Canvas * ((Plateau.Height) / 8)));
+                        }
+
+                        facade.setAccessibleAll(false);
 
                     }
                     /***
@@ -197,9 +201,13 @@ namespace CanonNoir_Affichage
                     if (facade.getEtatCourant() == 11)
                     {
                         MessageBox.Show("Choisi Le bateau à attaquer !");
+                        facade.setAccessibleAll(false);
+                        FenetreTir fT = new FenetreTir(facade);
+                        fT.Show();
                     }
 
-                }
+                //}
+            }
         }
 
 

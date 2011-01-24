@@ -33,7 +33,6 @@ class CaseIle : public Case
 
 inline void CaseIle::setAccessible(bool b){
 	_accessible=false;
-	cout<<"CaseIle.h : On ne peut rendre une case ile accessible"<<endl;
 }
 
 
