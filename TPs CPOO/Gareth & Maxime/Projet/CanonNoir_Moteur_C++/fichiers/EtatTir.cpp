@@ -21,7 +21,7 @@ EtatTir::EtatTir(MoteurJeu * m){
 void EtatTir::execute(){
 	//Si ce n'est pas un Duel (donc un tir via une case Canon Noir), on attend que le joueur choisisse le bateau adversaire à viser 
 	cout<<"EtatTir.execute()"<<endl;
-	list<pair<double,double> > histogram = calculHistogramme (make_pair(0,0),make_pair(10,7));
+	list<pair<double,double> > histogram = calculHistogramme (make_pair(0,7),make_pair(5,3));
 
 }
 
@@ -74,6 +74,7 @@ list<pair<double,double> > EtatTir::calculHistogramme (pair<int,int> p1,pair<int
 		if ( f(x,x1,x2,y1,y2) == y) {
 
 			cout<<"f==y"<<endl;
+			cout<<"f(x,x1,x2,y1,y2)"<<f(x,x1,x2,y1,y2)<<endl;
 			intersections.push_back( pair< double , double >(x, y));
 			x += inc_x ;
 			if ( y2 == y1 ){
@@ -84,17 +85,20 @@ list<pair<double,double> > EtatTir::calculHistogramme (pair<int,int> p1,pair<int
 
 		} else if(f(x,x1,x2,y1,y2) * inc_y < y * inc_y ) {
 			cout<<"f*inc_y < y*inc_y"<<endl;
+			cout<<"f(x,x1,x2,y1,y2)"<<f(x,x1,x2,y1,y2)<<endl;
 			intersections.push_back( pair< double , double >(x, f(x,x1,x2,y1,y2) ));
 			x += inc_x ;
 
 		} else {
 			cout<<"else"<<endl;
+			cout<<"g(x,x1,x2,y1,y2)"<<g(x,x1,x2,y1,y2)<<endl;
 			intersections.push_back( pair< double , double >( g(y,x1,x2,y1,y2) , y ));
 			y += inc_y ;
 		}
 	}
 
 	cout<<"intersection.size() = "<<intersections.size()<<endl;
+
 	
 	if( intersections.size () >= 1) {
 
@@ -104,10 +108,11 @@ list<pair<double,double> > EtatTir::calculHistogramme (pair<int,int> p1,pair<int
 		it = intersections.begin();
 		end = intersections.end();
 		for (; it != end; ++ it) {
+			
 			xa = xb;
 			ya = yb;		
 			xb = it->first ;		
-			yb = it->second ;		
+			yb = it->second ;
 			i = ( int ) min (xa,xb) + 1;		
 			j = ( int ) min (ya,yb) + 1;
 			/*if(i<=11 && j<=11){*/

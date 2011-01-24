@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Tir" Height="365" Width="461" Background="#FFAA1111" Loaded="Window_Loaded" Icon="/CanonNoir_Affichage;component/Images/Canon.jpg">
-    <Grid>
+    <Grid Background="#FF2B712B">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="195*" />
             <ColumnDefinition Width="244*" />
@@ -17,8 +17,8 @@
         <Label Content="Attaquant" Height="28" HorizontalAlignment="Left" Margin="12,228,0,0" Name="label3" VerticalAlignment="Top" Foreground="White" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="75,228,0,0" Name="textBox1" VerticalAlignment="Top" Width="110" />
         <Label Content="Attaqué" Height="28" HorizontalAlignment="Left" Margin="12,262,0,0" Name="label4" VerticalAlignment="Top" Foreground="White" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="75,262,0,0" Name="textBox2" VerticalAlignment="Top" Width="110" />
-        <Canvas Grid.Column="1" Height="254" HorizontalAlignment="Left" Margin="10,36,0,0" Name="canvas1" VerticalAlignment="Top" Width="222" />
-        <Label Content="Visualisation du tir" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="71,7,0,0" Name="label5" VerticalAlignment="Top" Foreground="White" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="75,262,0,0" Name="textBox2" VerticalAlignment="Top" Width="110" />   
+        <Label Content="Visualisation du tir" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="71,7,0,0" Name="label5" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontStyle="Italic" />
+        <Canvas Grid.Column="1" Height="273" HorizontalAlignment="Left" Margin="0,41,0,0" Name="canvas1" VerticalAlignment="Top" Width="232" Background="#FFC0F795" />
     </Grid>
 </Window>
