@@ -126,6 +126,8 @@ class Joueur
 		*\brief Modifies the attribute _nbTresors
 		**/
 		void setNbTresors(int n);
+
+		void setBateau(Bateau* old, Bateau* newb);
 		
 
 }; 
@@ -143,5 +145,7 @@ inline void Joueur::setNumero(int i){_numero=i;}
 
 inline int Joueur::getNbTresors() const { return _nbTresors; }
 inline void Joueur::setNbTresors(int n) { _nbTresors = n; }
+
+inline void Joueur::setBateau(Bateau* old, Bateau* newb) { old = newb; }
 
 #endif

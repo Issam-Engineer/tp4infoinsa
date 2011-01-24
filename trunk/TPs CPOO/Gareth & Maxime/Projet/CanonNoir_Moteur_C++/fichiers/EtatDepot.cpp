@@ -20,17 +20,21 @@ void EtatDepot::execute(){
 	//et si oui, on incrémente le compteur du joueur courant
 	cout<<"EtatDepot.execute()"<<endl;
 		Bateau* BC = motor->getJoueurInd(motor->getJCourant())->getBateauCourant();
-	if(BC->type() == 'C' && BC->getATresor()){
-		motor->getJoueurInd(motor->getJCourant())->setNbTresors(motor->getJoueurInd(motor->getJCourant())->getNbTresors()+1);
-		motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->setATresor(false);
-		if(motor->getJoueurInd(motor->getJCourant())->getNbTresors() == 3){
-			motor->getJoueurInd(motor->getJCourant())->GAGNANT();
-			motor->getFacade()->setPartieTerminee(true);
-		} else {
-		cout<<"Et un trésor de plus ! Plus que "<<(3-(motor->getJoueurInd(motor->getJCourant())->getNbTresors()))<<endl;
+		if(BC->getCouleur() == BC->getPosition()->getCouleur()) {
+			if(BC->type() == 'C' && BC->getATresor()) {
+				motor->getJoueurInd(motor->getJCourant())->setNbTresors(motor->getJoueurInd(motor->getJCourant())->getNbTresors()+1);
+				motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->setATresor(false);
+				if(motor->getJoueurInd(motor->getJCourant())->getNbTresors() == 3){
+					motor->getJoueurInd(motor->getJCourant())->GAGNANT();
+					motor->getFacade()->setPartieTerminee(true);
+				} else {
+				cout<<"Et un trésor de plus ! Plus que "<<(3-(motor->getJoueurInd(motor->getJCourant())->getNbTresors()))<<endl;
+			} 
+			} else {
+	 //motor->getJoueurInd(motor->getJCourant())->setBateau((motor->getJoueurInd(motor->getJCourant())->getBateauCourant()), (new Caravelle()));
+				cout<<"Bateau réparé !"<<endl;
+			}
 		}
-	 //motor->getJoueurInd(motor->getJCourant())->getBateauCourant() = new Caravelle();
-	}
 
 	motor->setJCourant((motor->getJCourant()+1)%(motor->getNbJoueurs()));
 	motor->modifCourant(ATTENTELANCERDE);
