@@ -24,6 +24,22 @@ namespace CanonNoir_Affichage
         {
             InitializeComponent();
             facade = f;
+            int index = 0;
+
+            
+
+            int indice_largeur = (int) canvas1.Width / /*taille du vecteur*/ 10;
+            int indice_hauteur = (int)canvas1.Height / /*hauteur Maximale*/ 4;
+
+            Rectangle rec = new Rectangle();
+            rec.Stroke = Brushes.Blue;
+            rec.Width = 2/*longueur*/ *indice_largeur ;
+            rec.Height = 3/*hauteur*/ * indice_hauteur;
+
+            canvas1.Children.Insert(index, rec);
+            Canvas.SetLeft(rec, rec.ActualWidth);
+            Canvas.SetBottom(rec, 0);
+            index++;
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)

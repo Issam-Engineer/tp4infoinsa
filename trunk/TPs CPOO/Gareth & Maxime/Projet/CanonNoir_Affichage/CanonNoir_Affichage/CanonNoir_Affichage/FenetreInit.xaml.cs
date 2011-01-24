@@ -25,6 +25,8 @@ namespace CanonNoir_Affichage
         {
             InitializeComponent();
             facade = new WrapperFacade();
+            FenetreTir ft = new FenetreTir(facade);
+            ft.Show();
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
