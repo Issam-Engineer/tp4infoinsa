@@ -9,6 +9,6 @@
 #include "CaseNavigable.h"
 
 CaseNavigable::CaseNavigable(){
-	_hauteur = 1;
+	_hauteur = 0;
 	_accessible = false;
 }

@@ -19,23 +19,14 @@ EtatTir::EtatTir(MoteurJeu * m){
 
 
 void EtatTir::execute(){
-	//Si ce n'est pas un Duel (donc un tir via une case Canon Noir), on attend que le joueur choisisse le bateau adversaire à viser (dans le cas de 2 joueurs)
+	//Si ce n'est pas un Duel (donc un tir via une case Canon Noir), on attend que le joueur choisisse le bateau adversaire à viser 
 	cout<<"EtatTir.execute()"<<endl;
 	list<pair<double,double> > histogram = calculHistogramme (make_pair(1,1),make_pair(5,7));
-	if(!Duel && motor->getNbJoueurs() == 2){
-			motor->modifCourant(ATTENTECHOIXBATVISE);
 
-			
 
-	}else{ 
-		motor->modifCourant(ATTENTECANONANGLE);
-	}
+
 }
 
-void EtatTir::init(int p,int a){
-	puissance=p;
-	angle=a;
-}
 
 list<pair<double,double> > EtatTir::calculHistogramme (pair<int,int> p1,pair<int,int> p2){
 
@@ -45,11 +36,11 @@ list<pair<double,double> > EtatTir::calculHistogramme (pair<int,int> p1,pair<int
 	int y2 = p2.second;
 
 	// coordonnees des intersections avec les limites entre cases
-	std :: list < std :: pair < double , double > > intersections ;
+	std::list < std :: pair < double , double > > intersections ;
 
 	// donnees de l' histogramme
-	std :: list < std :: pair < double , double > > histogramme ;
-	std :: list < std :: pair < double , double > >:: iterator it , end ;
+	std::list < std :: pair < double , double > > histogramme ;
+	std::list < std :: pair < double , double > >:: iterator it , end ;
 
 	double h, l, xa , ya , xb , yb;
 	int x, y, i, j;
@@ -57,26 +48,18 @@ list<pair<double,double> > EtatTir::calculHistogramme (pair<int,int> p1,pair<int
 
 
 	if(x1 < x2) {
-
 		inc_x = 1;
 		x = (( int ) x1) + 1;
-
 	} else {
-
 		inc_x = -1;
 		x = ( int ) x1;
-
 	}
 	if(y1 < y2) {
-
 		inc_y = 1;
 		y = (( int ) y1) + 1;
-
 	} else {
-
 		inc_y = -1;
 		y = ( int ) y1;
-
 	}
 
 	while (x * inc_x <= x2 * inc_x && y * inc_y <= y2 * inc_y ) {

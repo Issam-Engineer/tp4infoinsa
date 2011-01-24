@@ -9,7 +9,7 @@
 #include "CasePort.h"
 
 CasePort::CasePort(int c){
-	_hauteur = 1;
+	_hauteur = 0;
 	_accessible = false;
 	_couleur = c;
 }

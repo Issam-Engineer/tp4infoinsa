@@ -36,6 +36,11 @@ class MoteurJeu
 		Plateau* _plateau;
 		De _de;
 
+		//Utile pour l'EtatTir
+		int x_Attaquant;
+		int y_Attaquant;
+
+
 	public :
 		
 		
@@ -74,12 +79,7 @@ class MoteurJeu
 		*\return the plateau
 		*/
 		Plateau* getPlateau() const;  
-		/**
-		*\fn Joueur getJoueurInd(int i) const
-		*\brief acces function for the Joueur number i
-		*\return the Joueur
-		*/
-		Joueur* getJoueurInd(int i); 
+		
 		/**
 		*\fn Dé getDe() const
 		*\brief acces function 
@@ -103,20 +103,32 @@ class MoteurJeu
 		*\brief function which changes the current tabjoueur
 		*\parma[in] Joueur* j
 		*/
-		/*void setTabJoueur(Joueur * t); */ 
-		void setTabJoueur(Joueur* t);
+		void setTabJoueur(Joueur * t);  
+		
 		/**
 		*\fn int getJCourant();
 		*\brief Access function
 		*\return int _JCourant
 		*/
 		int getJCourant() const;
+
 		/**
 		*\fn void setJCourant(int i);
 		*\brief Function which changes the current JCourant
 		*/
 		void setJCourant(int i);
-
+		/**
+		*\fn Joueur* getJoueurInd(int i) 
+		*\brief acces function for the Joueur number i
+		*\return a pointer on the Joueur
+		*/
+		Joueur* getJoueurInd(int i); 
+		/**
+		*\fn Joueur* getJoueurCourant() 
+		*\brief acces function to the current Joueur
+		*\return a pointer on the Joueur
+		*/
+		Joueur* getJoueurCourant(); 
 		/**
 		*\fn bool estAccessible(pair<int,int> p);
 		*\brief Function which gives a boolean indicating the accessibility of the square based on the current square and the value			of the dices
@@ -167,6 +179,19 @@ class MoteurJeu
 		*\return an int
 		**/
 		int getCourant() const;
+
+		/**
+		*\fn void setXAttaquant(int x);
+		*\brief save the value of x
+		**/
+		void setXAttaquant(int x);
+
+		/**
+		*\fn void setXAttaquant(int y);
+		*\brief save the value of y
+		**/
+		void setYAttaquant(int x);
+
 }; 
 
 
@@ -178,5 +203,7 @@ inline Joueur * MoteurJeu::getTabJoueurs(){return tabJoueurs;}
 inline void MoteurJeu::setJCourant(int i){_JCourant=i;}
 inline void MoteurJeu::modifCourant(int e){courant=e;}
 inline int MoteurJeu::getCourant() const{return courant;}
+inline void MoteurJeu::setXAttaquant(int x){ x_Attaquant=x; }
+inline void MoteurJeu::setYAttaquant(int y){ y_Attaquant=y; }
 
 #endif

@@ -387,28 +387,17 @@ class __declspec(dllexport) Facade
 		**/
 		int getEtatCourant();
 
+		/**
+		*\fn void SaveXAttaquant()
+		*\brief used when there is an EtatTir to save the value x
+		*/
+		void SaveXAttaquant();
 
-		//à traiter
-		void activeClicDepart();
-		void initialiser();
-		void desactiveClicDepart();
-		void acitveClicInit();
-		void desactiveClicInit();
-		void initNoms();
-		void lancerPartie();
-		void activeClicNbJoueurs();
-		void desactiveClicNbJoueurs();
-		void afficherJoueur1();
-		void JeuInitialise();
-		void activerClicRefuserDuel();
-		void desactiverClicRefuserDuel();
-		void afficherAttaquant();
-		void afficherAttaqué();
-		/*void clicCase(pair<int,int>);*/
-		void ouvrirFenetreInit();
-		void fermerFenetreInit();
-		void ouvrirFenetreTir();
-		void fermerFenetreTir();
+		/**
+		*\fn void SaveYAttaquant()
+		*\brief used when there is an EtatTir to save the value y
+		*/
+		void SaveYAttaquant();
 
 }; 
 

@@ -15,29 +15,22 @@ AttenteChoixBateauVise::AttenteChoixBateauVise(MoteurJeu* m){
 
 void AttenteChoixBateauVise::execute(){
 	// construire à partir de la facade la position
-	pair<int,int> posit; 
-	int x= motor->getFacade()->getX();
-	int y=  motor->getFacade()->getY();
+	pair<int,int> posit;
+	int x = motor->getFacade()->getX();
+	int y = motor->getFacade()->getX();
 
 	if( x!=-1 && y!=-1 ){
 			posit = make_pair(x,y);
 	}else{
+		cout<<"position case visée incorrecte"<<endl;
 		return; //C'est que les positions ne sont pas correctes
 	}
-		//on détermine le premier indice dans le tableau du joueur adverse en fonction de l'indice du joueur courant (sachant qu'on a que 2 joueurs)
-		int indJAdv;
-		if(motor->getJoueurInd(motor->getJCourant())->getNumero() == 0) indJAdv = 1;
-		else indJAdv = 0;
-		//si le joueur adverse a bien un bateau sur la case cliquée
-		if(motor->getJoueurInd(indJAdv)->bateauAtPos(posit) || motor->getJoueurInd(indJAdv+2)->bateauAtPos(posit)){
-			//on oriente le tir depuis le canon dans la direction du bateau visé (à coder)
+		
+	
+	//si le joueur adverse a bien un bateau sur la case cliquée
+	if(motor->getJoueurCourant()->bateauAtPos(posit))
+		motor->modifCourant(ETATTIR);
+	else 
+		cout<<"Erreur : AttenteChoixBateauVise"<<endl;
 
-		motor->modifCourant(ATTENTECANONANGLE);
-
-	}else{
-		return;
-	}
-	//afin de pouvoir renouveler le test sur la valeur de X et de Y
-	motor->getFacade()->setX(-1);
-	motor->getFacade()->setY(-1);
 }

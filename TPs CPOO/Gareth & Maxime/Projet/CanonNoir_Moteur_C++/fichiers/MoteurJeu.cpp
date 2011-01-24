@@ -45,7 +45,7 @@ MoteurJeu::MoteurJeu(Facade* f):facade(f),nbJoueurs(0),courant(NULL),_JCourant(0
 	_etats.push_back(new EtatDepot(this));
 	_etats.push_back(new Duel(this));
 	_etats.push_back(new EtatTir(this));
-	//_etats.push_back(new AttenteChoixBateauVise(this));
+	_etats.push_back(new AttenteChoixBateauVise(this));
 	//_etats.push_back(new AttenteCanonPuissance(this));
 	//_etats.push_back(new AttenteCanonAngle(this));
 	//_etats.push_back(new EtatCanonFin(this));
@@ -86,7 +86,6 @@ void MoteurJeu::setTabJoueur(Joueur* t){
 
 bool MoteurJeu::estAccessible(pair<int,int> p){
 	bool res;
-	//cout<<"estaccessible("<<p.first<<","<<p.second<<")"<<endl;
 	res = _plateau->estAccessible(p);
 	return res;
 }
@@ -96,3 +95,7 @@ void MoteurJeu::setInaccessible(pair<int,int> p){_plateau->setInaccessible(p);}
 void MoteurJeu::setAccessibleAll(bool b){_plateau->setAccessibleAll(b);}
 
 Case* MoteurJeu::getCase(int x, int y){return _plateau->getCase(make_pair(x,y)); }
+
+Joueur* MoteurJeu::getJoueurCourant(){
+	return &tabJoueurs[_JCourant];
+}
