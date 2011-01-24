@@ -193,6 +193,12 @@ namespace CanonNoir_Affichage
                     textBox4.Text = "Joueur " + (facade.getNumJCourant());
                     button2.IsEnabled = true;
 
+                    //Si on atteint une case Canon Noir !
+                    if (facade.getEtatCourant() == 11)
+                    {
+                        MessageBox.Show("Choisi Le bateau à attaquer !");
+                    }
+
                 }
         }
 
