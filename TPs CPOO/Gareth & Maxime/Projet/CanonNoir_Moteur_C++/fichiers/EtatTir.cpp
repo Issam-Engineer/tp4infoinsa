@@ -21,8 +21,12 @@ EtatTir::EtatTir(MoteurJeu * m){
 void EtatTir::execute(){
 	//Si ce n'est pas un Duel (donc un tir via une case Canon Noir), on attend que le joueur choisisse le bateau adversaire à viser (dans le cas de 2 joueurs)
 	cout<<"EtatTir.execute()"<<endl;
+	list<pair<double,double> > histogram = calculHistogramme (make_pair(1,1),make_pair(5,7));
 	if(!Duel && motor->getNbJoueurs() == 2){
 			motor->modifCourant(ATTENTECHOIXBATVISE);
+
+			
+
 	}else{ 
 		motor->modifCourant(ATTENTECANONANGLE);
 	}
@@ -39,7 +43,6 @@ list<pair<double,double> > EtatTir::calculHistogramme (pair<int,int> p1,pair<int
 	int x2 = p2.first;
 	int y1 = p1.second;
 	int y2 = p2.second;
-
 
 	// coordonnees des intersections avec les limites entre cases
 	std :: list < std :: pair < double , double > > intersections ;
@@ -112,7 +115,8 @@ list<pair<double,double> > EtatTir::calculHistogramme (pair<int,int> p1,pair<int
 			i = ( int ) min (xa,xb) + 1;		
 			j = ( int ) min (ya,yb) + 1;		
 			h = motor->getPlateau()->getCase(make_pair(i,j))->getHauteur();	// Hauteur de la case de coordonnée i,j		
-			l = sqrt (( xb - xa) * (xb - xa) + (yb - ya) * (yb - ya));		
+			l = sqrt (( xb - xa) * (xb - xa) + (yb - ya) * (yb - ya));	
+			cout<<"longueur :"<<l<<" hauteur :"<<h<<endl;
 			histogramme.push_back ( std :: pair <double , double >(l, h));	
 		}
 	}
