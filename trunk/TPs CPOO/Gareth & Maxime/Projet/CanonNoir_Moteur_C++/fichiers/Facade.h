@@ -413,6 +413,19 @@ class __declspec(dllexport) Facade
 		**/
 		void setSizeHistogramme(int i);
 		
+		/**
+		*\fn double getLongueurHisto(int ind)
+		*\brief give the value of the longueur in the histogramme
+		*\return double 
+		**/
+		double getLongueurHisto(int ind);
+
+		/**
+		*\fn double getHauteurHisto(int ind)
+		*\brief give the value of the hauteur in the histogramme
+		*\return double 
+		**/
+		double getHauteurHisto(int ind);
 }; 
 
 inline bool Facade::getClicDe(){ return _clicDe;}

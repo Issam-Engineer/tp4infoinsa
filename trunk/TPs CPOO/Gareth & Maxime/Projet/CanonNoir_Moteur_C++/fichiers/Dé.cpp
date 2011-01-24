@@ -23,7 +23,7 @@ int Random (int _iMin, int _iMax)
 
 void De::lancerDe() {
 
-	_valeurDe1 = Random(1,6)/*1 + (int)((double)rand() / ((double)RAND_MAX + 1) * 6)*/; 
+	_valeurDe1 = 1/*Random(1,6)1 + (int)((double)rand() / ((double)RAND_MAX + 1) * 6)*/; 
 	_valeurDe2 = Random(1,6)/*1 + (int)((double)rand() / ((double)RAND_MAX + 1) * 6)*/; 
 
 	cout<<"La valeur des 2 des : _valeurDe1 = "<<_valeurDe1<<" \ _valeurDe2 ="<<_valeurDe2<<endl;

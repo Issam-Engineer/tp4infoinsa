@@ -34,6 +34,8 @@ namespace CanonNoir_Affichage
         {
             Point p = e.GetPosition(Plateau);
 
+            MessageBox.Show("Etat" + facade.getEtatCourant());
+
             if(facade.getEtatCourant() == 11/*ATTENTECHOIXBATEAUVISE*/){
                 //Sauvegarder la position actuelle
                 facade.SaveXAttaquant();

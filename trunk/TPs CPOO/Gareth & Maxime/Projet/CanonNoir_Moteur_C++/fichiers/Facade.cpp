@@ -146,3 +146,11 @@ void Facade::SaveYAttaquant(){
 	_moteur->setYAttaquant(_clicY);
 	cout<<"SaveY"<<endl;
 }
+
+double Facade::getLongueurHisto(int indice){
+	return _moteur->histogramme[indice].first ;
+}
+
+double Facade::getHauteurHisto(int indice){
+	return _moteur->histogramme[indice].second ;
+}
