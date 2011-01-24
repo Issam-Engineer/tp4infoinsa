@@ -18,7 +18,8 @@ ProposeDeplacement::ProposeDeplacement(MoteurJeu* m){
 void ProposeDeplacement::traverseIle(pair<int,int>* tab, int i){
 	for(int d=(tab[0].first); d<=(tab[i].first); d++){
 		for(int e=(tab[0].second); e<=(tab[i].second); e++){
-			if((d == 3  || d == 4 || d == 8 || d == 9) && (e == 3  || e == 4 || e == 5 || e == 6)){
+			//if((d == 3  || d == 4 || d == 8 || d == 9) && (e == 3  || e == 4 || e == 5 || e == 6)){
+			if(motor->getFacade()->getAccessible(d,e) == false){
 				motor->setInaccessible(tab[i]);
 			}
 		}
@@ -26,7 +27,8 @@ void ProposeDeplacement::traverseIle(pair<int,int>* tab, int i){
 
 	for(int d=(tab[0].first); d<=(tab[i].first); d++){
 		for(int e=(tab[0].second); e>=(tab[i].second); e--){
-			if((d == 3  || d == 4 || d == 8 || d == 9) && (e == 3  || e == 4 || e == 5 || e == 6)){
+			//if((d == 3  || d == 4 || d == 8 || d == 9) && (e == 3  || e == 4 || e == 5 || e == 6)){
+			if(motor->getFacade()->getAccessible(d,e) == false){
 				motor->setInaccessible(tab[i]);
 			}
 		}
@@ -34,7 +36,8 @@ void ProposeDeplacement::traverseIle(pair<int,int>* tab, int i){
 				
 	for(int d=(tab[0].first); d>=(tab[i].first); d--){
 		for(int e=(tab[0].second); e<=(tab[i].second); e++){
-			if((d == 3  || d == 4 || d == 8 || d == 9) && (e == 3  || e == 4 || e == 5 || e == 6)){
+			//if((d == 3  || d == 4 || d == 8 || d == 9) && (e == 3  || e == 4 || e == 5 || e == 6)){
+			if(motor->getFacade()->getAccessible(d,e) == false){
 				motor->setInaccessible(tab[i]);
 			}
 		}
@@ -42,7 +45,8 @@ void ProposeDeplacement::traverseIle(pair<int,int>* tab, int i){
 				
 	for(int d=(tab[0].first); d>=(tab[i].first); d--){
 		for(int e=(tab[0].second); e>=(tab[i].second); e--){
-			if((d == 3  || d == 4 || d == 8 || d == 9) && (e == 3  || e == 4 || e == 5 || e == 6)){
+			//if((d == 3  || d == 4 || d == 8 || d == 9) && (e == 3  || e == 4 || e == 5 || e == 6)){
+			if(motor->getFacade()->getAccessible(d,e) == false){
 				//motor->setInaccessible(tab[i]);
 			}
 		}
