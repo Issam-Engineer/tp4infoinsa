@@ -81,5 +81,8 @@ namespace mWrapper {
 
 		void SaveXAttaquant() { f->SaveXAttaquant(); }
 		void SaveYAttaquant() { f->SaveYAttaquant(); }
+
+		int getSizeHistogramme() { return f->getSizeHistogramme(); }
+
 	};
 }

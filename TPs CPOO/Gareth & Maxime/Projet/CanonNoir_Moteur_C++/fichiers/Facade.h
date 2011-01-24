@@ -62,6 +62,8 @@ class __declspec(dllexport) Facade
 		
 		bool _partieTerminee;
 
+		int sizeHistogramme; // pour pouvoir ajuster la taille de la fenêtre de Tir
+		int* histogramme;
 
 	public :
 		
@@ -399,14 +401,23 @@ class __declspec(dllexport) Facade
 		*/
 		void SaveYAttaquant();
 
+		/**
+		*\fn int getSizeHistogramme() 
+		*\brief return the attribute SizeHistogramme
+		*\return the value of the attribute
+		**/
+		int getSizeHistogramme();
+		/**
+		*\fn void setSizeHistogramme() 
+		*\brief change the value of the sizeHistogramme attribute
+		**/
+		void setSizeHistogramme(int i);
+		
 }; 
 
 inline bool Facade::getClicDe(){ return _clicDe;}
 inline bool Facade::getAfficherDe1(){ return _afficherDe1;}
 inline bool Facade::getAfficherDe2(){ return _afficherDe2;}
-/*inline bool Facade::getChoixDe1(){return _choixDe1;}
-inline bool Facade::getChoixDe2(){return _choixDe2;}
-inline bool Facade::getChoix2De(){return _choix2De;}*/
 inline int Facade::getX(){return _clicX;}
 inline int Facade::getY(){return _clicY;}
 inline int Facade::getAngle(){return _angle;}
@@ -432,6 +443,9 @@ inline bool Facade::getPartieTerminee(){ return _partieTerminee; }
 
 inline void Facade::setTresorRecup(bool b){ _tresorRecup=b; }
 inline bool Facade::getTresorRecup(){ return _tresorRecup; }
+inline void Facade::setSizeHistogramme(int s){sizeHistogramme=s;}
+
+inline int Facade::getSizeHistogramme(){return sizeHistogramme;}
 
 
 extern "C" __declspec(dllexport) Facade* Facade_new();
