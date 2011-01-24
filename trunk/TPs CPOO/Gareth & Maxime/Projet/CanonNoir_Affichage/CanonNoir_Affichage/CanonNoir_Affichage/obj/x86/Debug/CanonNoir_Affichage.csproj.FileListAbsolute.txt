@@ -59,3 +59,22 @@ D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoi
 D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\CanonNoir_Affichage.exe
 D:\Users\Gareth\Desktop\4INFO\TPs 4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\CanonNoir_Affichage.pdb
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoir_Affichage.exe
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Moteur_C++\CanonNoirMoteur\Debug\CanonNoir_Affichage.pdb
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\CanonNoirIntro.baml
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\FenetreInit.baml
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\MainWindow.baml
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\FenetreTir.baml
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\CanonNoirIntro.g.cs
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\FenetreInit.g.cs
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\FenetreTir.g.cs
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\App.g.cs
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\CanonNoir_Affichage_MarkupCompile.cache
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\CanonNoir_Affichage.g.resources
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\CanonNoir_Affichage.Properties.Resources.resources
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\CanonNoir_Affichage.exe
+C:\Users\Maxime\Desktop\TP4INFO\TPs CPOO\Gareth & Maxime\Projet\CanonNoir_Affichage\CanonNoir_Affichage\CanonNoir_Affichage\obj\x86\Debug\CanonNoir_Affichage.pdb

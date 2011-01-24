@@ -83,18 +83,6 @@ void Facade::setAfficherDe2(bool b){
 	_afficherDe2=b;
 }
 
-/*void Facade::setChoixDe1(bool b){
-	_choixDe1=b;
-}
-
-void Facade::setChoixDe2(bool b){
-	_choixDe2=b;
-}
-
-void Facade::setChoix2De(bool b){
-	_choix2De=b;
-}*/
-
 void Facade::setX(int u){
 	_clicX=u;
 }
@@ -147,4 +135,12 @@ bool Facade::getATresor(){return _moteur->getJoueurInd(_moteur->getJCourant())->
 
 int Facade::getEtatCourant(){
 	return _moteur->getCourant();
+}
+
+void Facade::SaveXAttaquant(){
+	_moteur->setXAttaquant(_clicX);
+}
+
+void Facade::SaveYAttaquant(){
+	_moteur->setYAttaquant(_clicY);
 }

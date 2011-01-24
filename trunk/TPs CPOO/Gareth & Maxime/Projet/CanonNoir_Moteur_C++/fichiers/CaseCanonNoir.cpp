@@ -5,19 +5,15 @@
 *\author Thiveux Gareth
 *\version 1.0
 */
-//#include "StdAfx.h"
 #include "CaseCanonNoir.h"
 
 CaseCanonNoir::CaseCanonNoir(){
-	_hauteur = 2;
+	_hauteur = 1;
 	_accessible = false;
 }
 
-//int CaseCanonNoir::getEtat(){
-	/*int et;
-	if(motor.getNbJoueurs()==2){
-	 	et = 4;
-	 }else{ et = 8; }
-		return et;*/
-	//return 4;
-//}
+int CaseCanonNoir::getEtat(){
+	
+	return ATTENTECHOIXBATVISE;	
+
+}

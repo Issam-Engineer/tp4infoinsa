@@ -34,6 +34,13 @@ namespace CanonNoir_Affichage
         {
             Point p = e.GetPosition(Plateau);
 
+            if(facade.getEtatCourant() == 11/*ATTENTECHOIXBATEAUVISE*/){
+                //Sauvegarder la position actuelle
+                facade.SaveXAttaquant();
+                facade.SaveYAttaquant();
+            }
+
+
             //Gérer l'affichage par case
             int x = (int)(((int)p.X * 11) / ((int)Plateau.Width) +1);
             int y = (int)(((int)p.Y * 8) / ((int)Plateau.Height) +1);

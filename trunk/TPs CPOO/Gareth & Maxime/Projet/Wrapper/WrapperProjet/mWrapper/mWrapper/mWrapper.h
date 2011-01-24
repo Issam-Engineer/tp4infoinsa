@@ -28,7 +28,7 @@ namespace mWrapper {
 		void setCoul3(int i) { f->setCoul3(i); }
 		void setCoul4(int i) { f->setCoul4(i); }
 
-		MoteurJeu* getMoteur() { return f->getMoteur(); }
+		//MoteurJeu* getMoteur() { return f->getMoteur(); }
 
 		int getCoul1() { return f->getCouleur1(); }
 		int getCoul2() { return f->getCouleur2(); }
@@ -79,5 +79,7 @@ namespace mWrapper {
 
 		int getEtatCourant() { return f->getEtatCourant(); }
 
+		void SaveXAttaquant() { f->SaveXAttaquant(); }
+		void SaveYAttaquant() { f->SaveYAttaquant(); }
 	};
 }

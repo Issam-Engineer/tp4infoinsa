@@ -9,6 +9,6 @@
 #include "CaseTresor.h"
 
 CaseTresor::CaseTresor(){
-	_hauteur = 2;
+	_hauteur = 1;
 	_accessible = false;
 }

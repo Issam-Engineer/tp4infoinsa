@@ -19,20 +19,14 @@ class EtatTir : public Etat
 
 		int puissance;
 		int angle;
+		
 		bool Duel;
 
 		list<pair<double,double> > calculHistogramme (std::pair<int,int> p1,std::pair<int,int> p2) ;
-
 		double f(int x,int x1,int x2,int y1,int y2);
-
 		double g(int y,int x1,int x2,int y1,int y2);
 		 
 	public :
-		/**
-		*\fn virtual void tirCanon()
-		*\brief Function which executes the shot
-		*/
-		/*virtual void tirCanon();*/
 
 		/**
 		*\fn virtual void init(int p, int a);
@@ -48,11 +42,14 @@ class EtatTir : public Etat
 		virtual void execute();
 		/**
 		*\fn EtatTir(MoteurJeu* m)
-		*\brief Constructor
+		*\brief Constructor 
 		*/
 		EtatTir(MoteurJeu * m);
 
 
 }; 
+
+
+inline void EtatTir::init(int p,int a){puissance=p;angle=a;};
 
 #endif
