@@ -96,7 +96,7 @@ class Bateau
 		virtual void positionner(Case* c);
 		/**
 		*\fn bool getCouleur()
-		*\brief acces function
+		*\brief access function
 		*\return the color of the boat
 		*/
 		int getCouleur();
@@ -108,13 +108,13 @@ class Bateau
 
 		/**
 		*\fn bool getATresor()
-		*\brief acces function
+		*\brief access function
 		*\return bool true if the current boat carries a treasure
 		*/
 		bool getATresor();
 
 		/**
-		*\fn virtual setATresor(bool b)
+		*\fn virtual void setATresor(bool b)
 		*\brief function which changes the value of aTresor
 		*/
 		virtual void setATresor(bool b);
