@@ -28,12 +28,21 @@ class CaseIle : public Case
 		*\brief redefine the heritated function
 		*/
 		void setAccessible(bool b);
+		/**
+		*\fn virtual char getTypeCase()
+		*\brief Inherited function which gives the type of the square
+		*\return char the type of the square
+		*/
+		char getTypeCase();
+
 
 }; 
 
 inline void CaseIle::setAccessible(bool b){
 	_accessible=false;
 }
+
+inline char CaseIle::getTypeCase() {return 'I';}
 
 
 #endif

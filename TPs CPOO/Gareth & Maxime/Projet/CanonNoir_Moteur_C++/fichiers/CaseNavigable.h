@@ -37,10 +37,18 @@ class CaseNavigable : public Case
 		*\return pointer on the instance
 		*/
 		CaseNavigable();
+		/**
+		*\fn virtual char getTypeCase()
+		*\brief Inherited function which gives the type of the square
+		*\return char the type of the square
+		*/
+		char getTypeCase();
+
 
 }; 
 
 inline bool CaseNavigable::hasBateau(){return _bateau;}
 inline void CaseNavigable::setBateau(bool b){_bateau=b;}
+inline char CaseNavigable::getTypeCase() {return 'N';}
 
 #endif

@@ -41,6 +41,12 @@ class Case
 		*/
 		virtual int getEtat();
 		/**
+		*\fn int getTypeCase()
+		*\brief Function which gives the type of the square
+		*\return char the type of the square
+		*/
+		virtual char getTypeCase()=0;
+		/**
 		*\fn int getHauteur()
 		*\brief Function which gives the height
 		*\return int the height of the square
