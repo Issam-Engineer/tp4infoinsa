@@ -139,8 +139,10 @@ int Facade::getEtatCourant(){
 
 void Facade::SaveXAttaquant(){
 	_moteur->setXAttaquant(_clicX);
+	cout<<"SaveX"<<endl;
 }
 
 void Facade::SaveYAttaquant(){
 	_moteur->setYAttaquant(_clicY);
+	cout<<"SaveY"<<endl;
 }

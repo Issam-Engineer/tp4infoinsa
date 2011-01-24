@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using mWrapper;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -13,14 +14,16 @@ using System.Windows.Shapes;
 
 namespace CanonNoir_Affichage
 {
-    /// <summary>
-    /// Logique d'interaction pour FenetreTir.xaml
-    /// </summary>
+
     public partial class FenetreTir : Window
     {
-        public FenetreTir()
+
+        WrapperFacade facade;
+
+        public FenetreTir(WrapperFacade f)
         {
             InitializeComponent();
+            facade = f;
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
