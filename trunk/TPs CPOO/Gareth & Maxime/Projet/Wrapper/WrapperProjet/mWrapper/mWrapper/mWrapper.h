@@ -77,5 +77,7 @@ namespace mWrapper {
 
 		void setTresorRecup(bool b) { return f->setTresorRecup(b); }
 
+		int getEtatCourant() { return f->getEtatCourant(); }
+
 	};
 }

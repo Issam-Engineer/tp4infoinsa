@@ -160,6 +160,13 @@ class MoteurJeu
 		*\return a pointer
 		**/
 		Case* getCase(int x,int y);
+
+		/**
+		*\fn int getCourant() const
+		*\brief return the current state, as an integer
+		*\return an int
+		**/
+		int getCourant() const;
 }; 
 
 
@@ -170,5 +177,6 @@ inline int MoteurJeu::getJCourant() const{return _JCourant;}
 inline Joueur * MoteurJeu::getTabJoueurs(){return tabJoueurs;}
 inline void MoteurJeu::setJCourant(int i){_JCourant=i;}
 inline void MoteurJeu::modifCourant(int e){courant=e;}
+inline int MoteurJeu::getCourant() const{return courant;}
 
 #endif

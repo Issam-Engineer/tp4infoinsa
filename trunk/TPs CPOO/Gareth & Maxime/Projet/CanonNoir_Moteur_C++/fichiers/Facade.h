@@ -380,6 +380,14 @@ class __declspec(dllexport) Facade
 		**/
 		bool getTresorRecup();
 
+		/**
+		*\fn int getEtatCourant()
+		*\brief Acces function
+		*\return int, the current state
+		**/
+		int getEtatCourant();
+
+
 		//à traiter
 		void activeClicDepart();
 		void initialiser();
