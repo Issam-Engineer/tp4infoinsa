@@ -29,7 +29,15 @@ class CaseCanonNoir : public CaseContourIle
 		*\return pointer on the instance
 		*/
 		CaseCanonNoir();
+		/**
+		*\fn virtual char getTypeCase()
+		*\brief Inherited function which gives the type of the square
+		*\return char the type of the square
+		*/
+		char getTypeCase();
 
 }; 
+
+inline char CaseCanonNoir::getTypeCase() {return 'C';}
 
 #endif

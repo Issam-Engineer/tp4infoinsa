@@ -37,12 +37,19 @@ class CasePort : public Case
 		*\return pointer on the instance
 		*/
 		CasePort(int Couleur);
+		/**
+		*\fn virtual char getTypeCase()
+		*\brief Inherited function which gives the type of the square
+		*\return char the type of the square
+		*/
+		char getTypeCase();
+
 
 
 }; 
 
 inline int CasePort::getCouleur(){ return _couleur; }
-
 inline int CasePort::getEtat(){ return ETATDEPOT; }
+inline char CasePort::getTypeCase() {return 'P';}
 
 #endif

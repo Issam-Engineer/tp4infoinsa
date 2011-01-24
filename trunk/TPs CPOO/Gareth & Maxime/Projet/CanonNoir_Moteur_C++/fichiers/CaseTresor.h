@@ -28,9 +28,16 @@ class CaseTresor : public CaseContourIle
 		*\return pointer on the instance
 		*/
 		CaseTresor();
+		/**
+		*\fn virtual char getTypeCase()
+		*\brief Inherited function which gives the type of the square
+		*\return char the type of the square
+		*/
+		char getTypeCase();
 
 }; 
 
 inline int CaseTresor::getEtat(){ return ETATTRESOR; }
+inline char CaseTresor::getTypeCase() {return 'T';}
 
 #endif

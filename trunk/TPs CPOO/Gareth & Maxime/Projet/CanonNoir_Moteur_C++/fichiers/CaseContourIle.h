@@ -21,6 +21,14 @@ class CaseContourIle : public CaseNavigable
 		*\return pointer on the instance
 		*/
 		CaseContourIle();
+		/**
+		*\fn virtual char getTypeCase()
+		*\brief Inherited function which gives the type of the square
+		*\return char the type of the square
+		*/
+		char getTypeCase();
 }; 
+
+inline char CaseContourIle::getTypeCase() {return 'A';}
 
 #endif

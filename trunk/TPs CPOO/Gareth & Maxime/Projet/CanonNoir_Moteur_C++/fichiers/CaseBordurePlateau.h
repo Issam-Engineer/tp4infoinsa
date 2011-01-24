@@ -17,11 +17,11 @@ class CaseBordurePlateau : public CaseNavigable
 	public :
 
 		/**
-		* \fn Case CaseOpposee()
+		* \fn Case* CaseOpposee()
 		* \brief function which gives the opposite case
 		* \return Case the associated case
 		*/
-		Case CaseOpposee();
+		Case* CaseOpposee();
 		/**
 		* \fn bool DuelPossible()
 		* \brief function which says if it's possible to have a Duel
@@ -40,9 +40,17 @@ class CaseBordurePlateau : public CaseNavigable
 		*\return pointer on the instance
 		*/
 		CaseBordurePlateau();
+		/**
+		*\fn virtual char getTypeCase()
+		*\brief Inherited function which gives the type of the square
+		*\return char the type of the square
+		*/
+		char getTypeCase();
 
 }; 
 
 inline int CaseBordurePlateau::getEtat(){ return DUEL; }
+
+inline char CaseBordurePlateau::getTypeCase() {return 'B';}
 
 #endif
