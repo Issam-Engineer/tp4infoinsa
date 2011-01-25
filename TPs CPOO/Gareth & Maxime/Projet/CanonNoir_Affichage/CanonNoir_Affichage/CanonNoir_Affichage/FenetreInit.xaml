@@ -32,12 +32,13 @@
             <ComboBoxItem Background="Yellow" Content="JAUNE" />
             <ComboBoxItem Background="Blue" Content="BLEU" IsSelected="True" />
         </ComboBox>
-        <Label Content="Choisir le nombre de joueurs :" Height="25" HorizontalAlignment="Left" Margin="11,12,0,0" Name="label5" VerticalAlignment="Top" Width="174" />
+        <Label Content="Choisir le nombre de joueurs " Height="25" HorizontalAlignment="Left" Margin="11,12,0,0" Name="label5" VerticalAlignment="Top" Width="174" FontWeight="Bold" FontStyle="Italic" />
         <Button Content="2" Height="23" HorizontalAlignment="Left" Margin="16,43,0,0" Name="button2" VerticalAlignment="Top" Width="30" Click="button2_Click" />
         <Button Content="3" Height="23" HorizontalAlignment="Left" Margin="64,43,0,0" Name="button3" VerticalAlignment="Top" Width="30" Click="button3_Click" />
         <Button Content="4" Height="23" HorizontalAlignment="Left" Margin="112,43,0,0" Name="button4" VerticalAlignment="Top" Width="30" Click="button4_Click" />
         <Label Content="Port" Height="28" HorizontalAlignment="Left" Margin="86,72,0,0" Name="label7" VerticalAlignment="Top" Width="56" />
         <Label Content="Si vous êtes 2 :" Height="26" HorizontalAlignment="Left" Margin="11,218,0,0" Name="label8" VerticalAlignment="Top" Width="87" DataContext="{Binding}" Target="{Binding}" FontWeight="Bold" />
         <Label Content="Joueur1 = Joueur1 + Joueur3" Height="29" HorizontalAlignment="Left" Margin="86,237,0,0" Name="label6" VerticalAlignment="Top" Width="179" FontWeight="Bold" />
+        <Image Height="307" HorizontalAlignment="Left" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="291" />
     </Grid>
 </Window>

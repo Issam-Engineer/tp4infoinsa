@@ -41,6 +41,13 @@ class EtatCanonFin : public Etat
 		*/
 		virtual void init(int p, int a);
 
+
+		/**
+		*\fn bool tir()
+		*\brief function which calculates the tir
+		*\return a bool true if the bateau is touched
+		**/
+		bool tir();
 }; 
 
 

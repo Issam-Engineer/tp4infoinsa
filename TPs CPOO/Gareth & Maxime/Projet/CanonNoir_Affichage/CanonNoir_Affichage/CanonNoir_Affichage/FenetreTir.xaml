@@ -11,15 +11,13 @@
         <Button Content="Refuser Duel" Height="23" HorizontalAlignment="Left" Margin="75,30,0,0" Name="button1" VerticalAlignment="Top" Width="75" IsEnabled="False" />
         <Label Content="Puissance" Height="29" HorizontalAlignment="Left" Margin="0,79,0,0" Name="label1" VerticalAlignment="Top" Width="89" Foreground="White" />
         <Label Content="Angle" Height="29" HorizontalAlignment="Left" Margin="2,114,0,0" Name="label2" VerticalAlignment="Top" Width="89" Foreground="White" />
-        <Slider Height="23" HorizontalAlignment="Left" Margin="63,84,0,0" Name="slider1" VerticalAlignment="Top" Width="100" Delay="100" Interval="10" IsMoveToPointEnabled="True" IsSelectionRangeEnabled="True" Maximum="100" SelectionStart="50" SmallChange="10" Value="50" DataContext="{Binding}" ValueChanged="slider1_ValueChanged" />
-        <Button Content="FEU à VOLONTÉ !" Height="43" HorizontalAlignment="Left" Margin="90,163,0,0" Name="button2" VerticalAlignment="Top" Width="100" Foreground="Black" IsEnabled="True" Focusable="True" Visibility="Visible" />
+        <Slider Height="23" HorizontalAlignment="Left" Margin="63,84,0,0" Name="slider1" VerticalAlignment="Top" Width="141" Delay="100" Interval="10" IsMoveToPointEnabled="True" IsSelectionRangeEnabled="True" Maximum="100" SelectionStart="50" SmallChange="10" Value="50" DataContext="{Binding}"/>
+        <Button Content="FEU à VOLONTÉ !" Height="43" HorizontalAlignment="Left" Margin="90,163,0,0" Name="button2" VerticalAlignment="Top" Width="100" Foreground="Black" IsEnabled="True" Focusable="True" Visibility="Visible" Click="button2_Click" />
         <Image Height="61" HorizontalAlignment="Left" Margin="12,154,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="67" Source="/CanonNoir_Affichage;component/Images/Canon.jpg" />
         <Label Content="Attaquant" Height="28" HorizontalAlignment="Left" Margin="12,242,0,0" Name="label3" VerticalAlignment="Top" Foreground="White" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="75,242,0,0" Name="textBox1" VerticalAlignment="Top" Width="110" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="75,242,0,0" Name="textBox1" VerticalAlignment="Top" Width="110" FontWeight="Bold" FontSize="14" />
         <Label Content="Visualisation du tir" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="71,7,0,0" Name="label5" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontStyle="Italic" />
         <Canvas Grid.Column="1" Height="352" HorizontalAlignment="Left" Margin="0,41,0,0" Name="canvas1" VerticalAlignment="Top" Width="284" Background="#FFC0F795"></Canvas>
-        <Slider Delay="100" Height="23" HorizontalAlignment="Left" Interval="10" IsMoveToPointEnabled="True" IsSelectionRangeEnabled="False" Margin="63,119,0,0" Name="slider2" VerticalAlignment="Top" Width="100" Value="45" Orientation="Horizontal" Maximum="90" SmallChange="5" ValueChanged="slider2_ValueChanged" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="169,84,0,0" Name="puiss_box" VerticalAlignment="Top" Width="43" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="169,119,0,0" Name="angle_box" VerticalAlignment="Top" Width="43" />
+        <Slider Delay="100" Height="23" HorizontalAlignment="Left" Interval="10" IsMoveToPointEnabled="True" IsSelectionRangeEnabled="False" Margin="63,119,0,0" Name="slider2" VerticalAlignment="Top" Width="141" Value="45" Orientation="Horizontal" Maximum="90" SmallChange="5"  />
     </Grid>
 </Window>

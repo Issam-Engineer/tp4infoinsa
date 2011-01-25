@@ -16,5 +16,37 @@ EtatCanonFin::EtatCanonFin(MoteurJeu * m){
 void EtatCanonFin::execute(){
 	cout<<"EtatTCanonFin.execute()"<<endl;
 
+	angle = motor->getFacade()->getAngle();
+	puissance = motor->getFacade()->getPuissance();
+
+	bool touche = tir();
+
+	if(touche){
+
+		cout<<"TOUCHE"<<endl;
+		
+	}else{
+
+		cout<<"RATE"<<endl;
+
+	}
+
+	motor->setJCourant(motor->getJCourant()+1);
 	motor->modifCourant(ATTENTELANCERDE);
+}
+
+
+
+// SIMULE LE TIR !
+int Random2 (int _iMin, int _iMax)
+{
+	return (_iMin + (rand () % (_iMax-_iMin+1)));
+} 
+
+bool EtatCanonFin::tir(){
+	int tir = Random2(0,1);
+	if(tir=0)
+		return true;
+	else 
+		return false;
 }
