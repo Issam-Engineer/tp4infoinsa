@@ -67,6 +67,10 @@ class __declspec(dllexport) Facade
 		int sizeHistogramme; // pour pouvoir ajuster la taille de la fenêtre de Tir
 		int* histogramme;
 
+		int angle;
+		int puissance;
+
+
 	public :
 		
 		//utilisées
@@ -91,7 +95,6 @@ class __declspec(dllexport) Facade
 		*\fn void execute()
 		*\brief Function which is called after an action and which call MoteurJeu::execute() 
 		*/
-		//permet de ne pas faire de l'attente active
 		void execute();
 		
 		/**
@@ -114,6 +117,16 @@ class __declspec(dllexport) Facade
 		*\return int, the power
 		*/
 		int getPuissance();
+		/**
+		*\fn void setAngle(int a)
+		*\brief Function which changes the angle 
+		*/
+		void setAngle(int a);
+		/**
+		*\fn void setPuissance(int p)
+		*\brief Function which changes the puissance
+		*/
+		void setPuissance(int p);
 		/**
 		*\fn int getcouleur1()
 		*\brief Function which gives the color1
@@ -454,6 +467,8 @@ class __declspec(dllexport) Facade
 		*\return double 
 		**/
 		double getHauteurHisto(int ind);
+
+		
 }; 
 
 inline bool Facade::getClicDe(){ return _clicDe;}
@@ -463,6 +478,8 @@ inline int Facade::getX(){return _clicX;}
 inline int Facade::getY(){return _clicY;}
 inline int Facade::getAngle(){return _angle;}
 inline int Facade::getPuissance(){return _puissance;}
+inline void Facade::setAngle(int a){_angle=a;}
+inline void Facade::setPuissance(int p){_puissance=p;}
 inline MoteurJeu* Facade::getMoteur(){return _moteur;}
 inline void Facade::setCoul1(int i){ cout<<"setCoul1 : "<<i<<endl;_couleur1=i ;}
 inline void Facade::setCoul2(int i){ cout<<"setCoul2 : "<<i<<endl;_couleur2=i ;}

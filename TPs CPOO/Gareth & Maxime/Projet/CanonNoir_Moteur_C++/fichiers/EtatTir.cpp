@@ -13,7 +13,6 @@
 
 EtatTir::EtatTir(MoteurJeu * m){
 	motor = m;
-	init(0,0);
 	cout << "Constructeur : EtatTir" << endl;
 }
 
@@ -32,6 +31,8 @@ void EtatTir::execute(){
 
 	//on indique à la facade la taille de l'histogramme
 	motor->getFacade()->setSizeHistogramme(motor->histogramme.size());
+
+	motor->modifCourant(ETATCANONFIN);
 
 }
 

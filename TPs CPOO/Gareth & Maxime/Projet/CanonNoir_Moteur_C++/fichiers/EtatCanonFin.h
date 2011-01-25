@@ -11,8 +11,13 @@
 
 #include "EtatTir.h"
 
-class EtatCanonFin : public EtatTir
+class EtatCanonFin : public Etat
 {
+
+	private:
+
+		int puissance;
+		int angle;
 
 	public :
 		
@@ -20,7 +25,7 @@ class EtatCanonFin : public EtatTir
 		*\fn EtatCanonFin(MoteurJeu * m)
 		*\brief Constructor
 		*/
-		//EtatCanonFin(MoteurJeu * m);
+		EtatCanonFin(MoteurJeu * m);
 
 		/**
 		*\fn void execute()
@@ -28,6 +33,17 @@ class EtatCanonFin : public EtatTir
 		*/
 		void execute();
 
+		/**
+		*\fn virtual void init(int p, int a);
+		*\brief Function which initiates the shoot
+		*\param[in] int p : the power
+		*\param[in] int a : the angle
+		*/
+		virtual void init(int p, int a);
+
 }; 
+
+
+inline void EtatCanonFin::init(int p,int a){puissance=p;angle=a;};
 
 #endif

@@ -18,12 +18,6 @@
     <ClInclude Include="..\..\fichiers\AffichageWPF.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\fichiers\AttenteCanonAngle.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\fichiers\AttenteCanonPuissance.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\fichiers\AttenteChoixBateau.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
@@ -195,12 +189,6 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\fichiers\AttenteLancerDe.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\fichiers\AttenteCanonAngle.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\fichiers\AttenteCanonPuissance.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\fichiers\EtatCanonFin.cpp">

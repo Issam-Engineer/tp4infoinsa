@@ -23,7 +23,7 @@ namespace CanonNoir_Affichage
         public FenetreTir(WrapperFacade f)
         {
 
-            textBox.Text = "Joueur " + (facade.getNumJCourant());
+            textBox1.Text = "Joueur " + (facade.getNumJCourant());
             InitializeComponent();
             facade = f;
             int index = 0;
@@ -54,6 +54,7 @@ namespace CanonNoir_Affichage
 
                 index++;
             }
+            button2.IsEnabled = true;
                        
         }
 
@@ -64,7 +65,9 @@ namespace CanonNoir_Affichage
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+           
+
+            facade.execute();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

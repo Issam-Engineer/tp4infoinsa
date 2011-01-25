@@ -15,10 +15,7 @@
 class EtatTir : public Etat
 {
 
-	protected :
-
-		int puissance;
-		int angle;
+	private :
 		
 		bool Duel;
 
@@ -28,13 +25,7 @@ class EtatTir : public Etat
 		 
 	public :
 
-		/**
-		*\fn virtual void init(int p, int a);
-		*\brief Function which initiates the shoot
-		*\param[in] int p : the power
-		*\param[in] int a : the angle
-		*/
-		virtual void init(int p, int a);
+		
 		/**
 		*\fn void execute()
 		*\brief Function which executes the current state
@@ -50,6 +41,5 @@ class EtatTir : public Etat
 }; 
 
 
-inline void EtatTir::init(int p,int a){puissance=p;angle=a;};
 
 #endif
