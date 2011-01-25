@@ -182,7 +182,7 @@ namespace CanonNoir_Affichage
                     facade.setAccessibleAll(false);
                 }
 
-                if (facade.getEtatCourant() == 8 /*&& facade.getBonPort()*/)
+                if (facade.getEtatCourant() == 8/* &&facade.getBonPort()*/)
                 {
                     MessageBox.Show("Trésor ramené à bon port !");
                     int coulB = facade.getCoulBateauCourant();
@@ -210,7 +210,7 @@ namespace CanonNoir_Affichage
                 }
             }
 
-            if (/*facade.getATresor() &&*/facade.getEtatCourant() == 7/* && facade.getTypeBateauCourant() != 1*//*&& facade.getTresorRecup()*/)
+            if (/*facade.getATresor() && */facade.getEtatCourant() == 7/* && facade.getTypeBateauCourant() != 1*//*&& facade.getTresorRecup()*/)
             {
                 int coulB = facade.getCoulBateauCourant();
                 MessageBox.Show("Un trésor a été découvert ! Ramenez-le au port au plus vite !");
@@ -235,6 +235,7 @@ namespace CanonNoir_Affichage
                     JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleuetresor.jpg", UriKind.Relative));
                 }
                 facade.setTresorRecup(false);
+                facade.setATresor(false);
             }
         }
 
