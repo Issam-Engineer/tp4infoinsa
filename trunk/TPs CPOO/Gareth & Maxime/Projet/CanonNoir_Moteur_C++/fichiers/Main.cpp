@@ -45,9 +45,20 @@ int main( int argc, const char* argv[] )
 
 
 
-	fac->getMoteur()->modifCourant(ETATTIR);
+	fac->getMoteur()->histogramme.push_back(make_pair(1,3));
+	fac->getMoteur()->histogramme.push_back(make_pair(1,2));
+	fac->getMoteur()->histogramme.push_back(make_pair(1.41,0));
+	fac->getMoteur()->histogramme.push_back(make_pair(1.41,0));
 
-	fac->execute();
+	fac->getLongueurHisto(0);
+	fac->getLongueurHisto(1);
+	fac->getLongueurHisto(2);
+	fac->getLongueurHisto(3);
+
+	fac->getHauteurHisto(0);
+	fac->getHauteurHisto(1);
+	fac->getHauteurHisto(2);
+	fac->getHauteurHisto(3);
 
 	while(1);
 

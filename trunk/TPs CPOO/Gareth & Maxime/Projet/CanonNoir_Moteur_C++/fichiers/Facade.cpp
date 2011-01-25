@@ -153,20 +153,20 @@ int Facade::getTypeBateauCourant(){
 
 void Facade::SaveXAttaquant(){
 	_moteur->setXAttaquant(_clicX);
-	cout<<"SaveX"<<endl;
+	//cout<<"SaveX"<<endl;
 }
 
 void Facade::SaveYAttaquant(){
 	_moteur->setYAttaquant(_clicY);
-	cout<<"SaveY"<<endl;
+	//cout<<"SaveY"<<endl;
 }
 
 double Facade::getLongueurHisto(int indice){
-	cout<<"valeur du first : "<<_moteur->histogramme[indice].first<<endl;
+	//cout<<"valeur du first : "<<_moteur->histogramme[indice].first<<endl;
 	return _moteur->histogramme[indice].first;
 }
 
 double Facade::getHauteurHisto(int indice){
-	cout<<"valeur du second : "<<_moteur->histogramme[indice].second<<endl;
+	//cout<<"valeur du second : "<<_moteur->histogramme[indice].second<<endl;
 	return _moteur->histogramme[indice].second ;
 }

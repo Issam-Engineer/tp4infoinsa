@@ -25,26 +25,31 @@ namespace CanonNoir_Affichage
             InitializeComponent();
             facade = f;
             int index = 0;
-            int indice_largeur = (int)canvas1.Width / /*taille du vecteur*/ facade.getSizeHistogramme();
+            int indice_largeur = (int)canvas1.Width / /*taille du vecteur*/ (facade.getSizeHistogramme()+2);
             int indice_hauteur = (int)canvas1.Height / /*hauteur Maximale*/ 4;
-            double l_actuelle = 0;
+            double l_actuelle = indice_largeur;
 
             MessageBox.Show("Taille de l'histo" + facade.getSizeHistogramme());
 
-            for (int i = 0; i < facade.getSizeHistogramme(); i++)
+            int k;
+            for ( k = 0 ; k < facade.getSizeHistogramme() ; k++)
             {
-                double l = facade.getLongueurHisto(i);
-                double h = facade.getHauteurHisto(i);
+
+                double l = facade.getLongueurHisto(k);
+                double h = facade.getHauteurHisto(k);
 
                 Rectangle rec = new Rectangle();
-                rec.Fill = Brushes.Blue;
+                rec.Fill = Brushes.Brown;
                 rec.Width = l/*longueur*/ * indice_largeur;
                 rec.Height = h/*hauteur*/ * indice_hauteur;
 
                 canvas1.Children.Insert(index, rec);
+
                 Canvas.SetLeft(rec, l_actuelle);
                 Canvas.SetBottom(rec, 0);
-                l_actuelle += l;
+
+                l_actuelle = l_actuelle + (l*indice_largeur);
+
                 index++;
             }
                        
