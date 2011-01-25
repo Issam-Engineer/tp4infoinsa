@@ -48,14 +48,14 @@ class EtatCanonFin : public Etat
 		*\fn bool tir()
 		*\brief function which calculates the tir
 		*\return a bool true if the bateau is touched
-		**/
+		*/
 		bool tir();
 
 		/**
 		*\fn double z(double x)
 		*\brief return the result of a parabolic function
 		*\return y a double result of z function
-		**/
+		*/
 		double z(double x);
 }; 
 

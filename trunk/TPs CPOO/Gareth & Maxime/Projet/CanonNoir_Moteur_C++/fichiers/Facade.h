@@ -256,178 +256,178 @@ class __declspec(dllexport) Facade
 		/**
 		*\fn int getDe1()
 		*\brief return the value of the motor De1
-		**/
+		*/
 		int getDe1();
 
 		/**
 		*\fn int getDe2()
 		*\brief return the value of the motor De1
-		**/
+		*/
 		int getDe2();
 
 
 		/**
 		*\fn int getNumJCourant()
 		*\return the number of the current Player
-		**/
+		*/
 		int getNumJCourant();
 
 		/**
 		*\fn int getMotorNbJoueur()
 		*\return the number of player
-		**/
+		*/
 		int getMotorNbJoueur();
 
 		/**
 		*\fn void setInitialisationOk(bool b)
 		*\brief initialize the attribute _initialiserOK to the boolean b
-		**/
+		*/
 		void setInitialisationOK(bool b);
 
 		/**
 		*\fn bool getInitialisationOK()
 		*\brief return the value of the attribute _initialiserOK
 		*\return true if the attribute has been initialized to true
-		**/
+		*/
 		bool getInitialisationOK();
 
 		/**
 		*\fn int getCoulPortJCourant()
 		*\brief return the colour of the current player's harbour
 		*\return int, the colour
-		**/
+		*/
 		int getCoulPortJCourant();
 
 		/**
 		*\fn bool getAccessible()
 		*\brief acces function
 		*\return true if the square is accessible
-		**/
+		*/
 		bool getAccessible(int x, int y);
 
 		/**
 		*\fn bool getProposerDeplacement()
 		*\brief return the value of the attribute _ProposerDeplacement
 		*\return true if the attribute is at true
-		**/
+		*/
 		bool getProposerDeplacement();
 
 		/**
 		*\fn void setProposerDeplacement(bool b)
 		*\brief change the value of the attribute _ProposerDeplacement
-		**/
+		*/
 		void setProposerDeplacement(bool b);
 
 
 		/**
 		*\fn void setEnableClicDe(bool b)
 		*\brief set enable or nor the boolean enableClicDe
-		**/
+		*/
 		void setEnableClicDe(bool b);
 
 		/**
 		*\fn bool getEnableClicDe()
 		*\brief return the value of the attribute enableClicDe
 		*\return true if it is true
-		**/
+		*/
 		bool getEnableClicDe();
 
 		/**
 		*\fn void setAccessibleAll(bool b)
 		*\brief put all case accesibility to boolean b
-		**/
+		*/
 		void setAccessibleAll(bool b);
 
 		/**
 		*\fn bool getChoixBateau()
 		*\brief return the value of the attribute _choixBateau
 		*\return true if it is true
-		**/
+		*/
 		bool getChoixBateau();
 
 		/**
 		*\fn void setChoixBateau(bool b)
 		*\brief puts the value of the attribute _choixBateau to boolean b
-		**/
+		*/
 		void setChoixBateau(bool b);
 
 		/**
 		*\fn bool getCoulBateauCourant()
 		*\brief acces function
 		*\return the color of the current boat
-		**/
+		*/
 		int getCoulBateauCourant();
 
 		/**
 		*\fn bool setCoulBateauCourant()
 		*\brief put the value of the attribute _coulBatCourant to int c
-		**/
+		*/
 		void setCoulBateauCourant(int c);
 
 		/**
 		*\fn bool getATresor()
 		*\brief acces function
 		*\return bool true if the current boat of the current player carries a treasure
-		**/
+		*/
 		bool getATresor();
 
 		/**
 		*\fn bool setATresor()
 		*\brief Puts the value of the attribute aTresor of the current player's current boat to bool b
-		**/
+		*/
 		void setATresor(bool b);
 
 		/**
 		*\fn bool setPartieTerminee()
 		*\brief Puts the value of the attribute _partieTerminee to bool b
-		**/
+		*/
 		void setPartieTerminee(bool b);
 
 		/**
 		*\fn bool getPartieTerminee()
 		*\brief Acces function
 		*\return bool true if the game is finished
-		**/
+		*/
 		bool getPartieTerminee();
 
 		/**
 		*\fn bool setTresorRecup()
 		*\brief Puts the value of the attribute _tresorRecup to bool b
-		**/
+		*/
 		void setTresorRecup(bool b);
 
 		/**
 		*\fn bool getTresorRecup()
 		*\brief Acces function
 		*\return bool true if a player has found a treasure
-		**/
+		*/
 		bool getTresorRecup();
 
 		/**
 		*\fn bool setBonPort()
 		*\brief Puts the value of the attribute bonPort of the current player's current boat to bool b
-		**/
+		*/
 		void setBonPort(bool b);
 
 		/**
 		*\fn bool getBonPort()
 		*\brief Acces function
 		*\return bool true if a player is in his harbour
-		**/
+		*/
 		bool getBonPort();
 
 		/**
 		*\fn int getEtatCourant()
 		*\brief Acces function
 		*\return int, the current state
-		**/
+		*/
 		int getEtatCourant();
 
 		/**
 		*\fn int getTypeBateauCourant()
 		*\brief Acces function
 		*\return int, the type of the current player's current boat
-		**/
+		*/
 		int getTypeBateauCourant();
 
 		/**
@@ -446,26 +446,26 @@ class __declspec(dllexport) Facade
 		*\fn int getSizeHistogramme() 
 		*\brief return the attribute SizeHistogramme
 		*\return the value of the attribute
-		**/
+		*/
 		int getSizeHistogramme();
 		/**
 		*\fn void setSizeHistogramme() 
 		*\brief change the value of the sizeHistogramme attribute
-		**/
+		*/
 		void setSizeHistogramme(int i);
 		
 		/**
 		*\fn double getLongueurHisto(int ind)
 		*\brief give the value of the longueur in the histogramme
 		*\return double 
-		**/
+		*/
 		double getLongueurHisto(int ind);
 
 		/**
 		*\fn double getHauteurHisto(int ind)
 		*\brief give the value of the hauteur in the histogramme
 		*\return double 
-		**/
+		*/
 		double getHauteurHisto(int ind);
 
 		

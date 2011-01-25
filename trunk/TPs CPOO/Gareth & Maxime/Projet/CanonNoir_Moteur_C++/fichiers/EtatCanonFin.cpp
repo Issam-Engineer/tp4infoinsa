@@ -23,6 +23,7 @@ void EtatCanonFin::execute(){
 
 	if(touche){
 
+
 		cout<<"TOUCHE"<<endl;
 		
 	}else{
