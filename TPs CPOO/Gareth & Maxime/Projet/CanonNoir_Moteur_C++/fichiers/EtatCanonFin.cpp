@@ -44,6 +44,9 @@ int Random2 (int _iMin, int _iMax)
 } 
 
 bool EtatCanonFin::tir(){
+
+	//double y = -0.5 * 9.81 * pow(x,2) * (1+ pow(tan(_angle*PI/180),2))/ pow((double)(_force/10),2) + x * tan(_angle*PI/180);
+
 	int tir = Random2(0,1);
 	if(tir=0)
 		return true;
