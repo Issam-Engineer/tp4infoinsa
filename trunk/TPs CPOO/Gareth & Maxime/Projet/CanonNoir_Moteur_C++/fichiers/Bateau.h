@@ -13,6 +13,7 @@
 #include <string>
 #include <iostream>
 #include "Case.h"
+#include "CasePort.h"
 
 using namespace std;
 
@@ -29,6 +30,7 @@ class Bateau
 		//bool _courant; // vrai si c'est le bateau courant
 		int _couleurb;
 		bool aTresor;
+		CasePort* _cp;
 
 	public :
 
@@ -119,6 +121,7 @@ class Bateau
 		*/
 		virtual void setATresor(bool b);
 
+		void setPort(CasePort* c);
 
 
 }; 
@@ -155,6 +158,9 @@ inline bool Bateau::getATresor(){
 }
 inline void Bateau::setATresor(bool b){
 	aTresor = b;
+}
+inline void Bateau::setPort(CasePort* c){
+	_cp = c;
 }
 
 #endif

@@ -20,6 +20,7 @@ Joueur::Joueur(int num, CasePort* c){
 	//_bateau1->setCourant(true);
 	_bateau1->setCouleur(c->getCouleur());
 	//_nbTresors = 0;
+	_bateau1->setPort(c);
 }
 
 Joueur::Joueur(int num, CasePort* c1, CasePort* c2){
@@ -35,6 +36,8 @@ Joueur::Joueur(int num, CasePort* c1, CasePort* c2){
 	_bateau1->setCouleur(c1->getCouleur());
 	_bateau2->setCouleur(c2->getCouleur());
 	//_nbTresors = 0;
+	_bateau1->setPort(c1);
+	_bateau2->setPort(c2);
 }
 
 Joueur::Joueur(){
