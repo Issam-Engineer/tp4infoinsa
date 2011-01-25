@@ -103,5 +103,8 @@ namespace mWrapper {
 			return j;
 		}
 
+		void setAngle(int a){ f->setAngle(a); }
+		void setPuissance(int p){ f->setPuissance(p); }
+
 	};
 }

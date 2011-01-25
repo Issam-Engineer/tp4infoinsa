@@ -57,12 +57,6 @@
     <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\CasePort.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteCanonAngle.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteCanonPuissance.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteChoixBateau.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
@@ -122,12 +116,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteCanonAngle.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteCanonPuissance.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteChoixBateau.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>

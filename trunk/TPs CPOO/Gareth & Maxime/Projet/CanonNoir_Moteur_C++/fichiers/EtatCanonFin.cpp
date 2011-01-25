@@ -5,14 +5,16 @@
 *\author Gareth THIVEUX
 *\version 1.0
 */
-//#include "StdAfx.h"
 #include "EtatCanonFin.h"
 
+
+EtatCanonFin::EtatCanonFin(MoteurJeu * m){
+	motor=m;
+	init(0,0);
+}
 
 void EtatCanonFin::execute(){
 	cout<<"EtatTCanonFin.execute()"<<endl;
 
-
-	motor->setJCourant((motor->getJCourant()+1)%(motor->getNbJoueurs()));
 	motor->modifCourant(ATTENTELANCERDE);
 }

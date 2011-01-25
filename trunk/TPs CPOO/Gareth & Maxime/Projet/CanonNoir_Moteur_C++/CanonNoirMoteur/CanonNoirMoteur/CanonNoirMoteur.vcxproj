@@ -76,8 +76,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\fichiers\AffichageWPF.h" />
-    <ClInclude Include="..\..\fichiers\AttenteCanonAngle.h" />
-    <ClInclude Include="..\..\fichiers\AttenteCanonPuissance.h" />
     <ClInclude Include="..\..\fichiers\AttenteChoixBateau.h" />
     <ClInclude Include="..\..\fichiers\AttenteChoixBateauVise.h" />
     <ClInclude Include="..\..\fichiers\AttenteChoixDe.h" />
@@ -115,8 +113,6 @@
     <ClInclude Include="..\..\fichiers\Radeau.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\fichiers\AttenteCanonAngle.cpp" />
-    <ClCompile Include="..\..\fichiers\AttenteCanonPuissance.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteChoixBateau.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteChoixBateauVise.cpp" />
     <ClCompile Include="..\..\fichiers\AttenteChoixDe.cpp" />
