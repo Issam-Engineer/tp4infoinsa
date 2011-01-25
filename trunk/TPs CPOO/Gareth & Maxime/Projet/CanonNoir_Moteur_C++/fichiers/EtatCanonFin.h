@@ -10,6 +10,8 @@
 #define ETATCANONFIN_H
 
 #include "EtatTir.h"
+#include <math.h>
+#define PI 3.141592653589793238
 
 class EtatCanonFin : public Etat
 {
@@ -48,6 +50,13 @@ class EtatCanonFin : public Etat
 		*\return a bool true if the bateau is touched
 		**/
 		bool tir();
+
+		/**
+		*\fn double z(double x)
+		*\brief return the result of a parabolic function
+		*\return y a double result of z function
+		**/
+		double z(double x);
 }; 
 
 
