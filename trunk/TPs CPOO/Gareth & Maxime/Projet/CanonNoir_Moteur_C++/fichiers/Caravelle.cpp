@@ -15,5 +15,6 @@ Caravelle::Caravelle(){
 	pEVise = true;
 	pJ2Des = true;
 	aTresor = false;
+	bonPort = false;
 }
 

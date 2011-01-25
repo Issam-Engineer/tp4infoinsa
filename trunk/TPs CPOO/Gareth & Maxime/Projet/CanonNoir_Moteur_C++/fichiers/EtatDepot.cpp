@@ -22,22 +22,23 @@ void EtatDepot::execute(){
 	cout<<"EtatDepot.execute()"<<endl;
 		Bateau* BC = motor->getJoueurInd(motor->getJCourant())->getBateauCourant();
 		CasePort* CP = (CasePort*)BC->getPosition();
-		if(BC->getCouleur() == CP->getCouleur()) {
-			motor->getFacade()->setBonPort(true);
+		BC->getPort();
+		if(BC->getPort()->getCouleur() == CP->getCouleur()) {
+			//motor->getFacade()->setBonPort(true);
 			if(BC->type() == 'C' && BC->getATresor()) {
-				BC->getPosition()->setNbTresors((CP->getNbTresors())+1);
+				BC->getPort()->setNbTresors((BC->getPort()->getNbTresors())+1);
 				motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->setATresor(false);
-				if(BC->getPosition()->getNbTresors() == 3){
+				if(BC->getPort()->getNbTresors() == 3){
 					motor->getJoueurInd(motor->getJCourant())->GAGNANT();
 					motor->getFacade()->setPartieTerminee(true);
 				} else {
-				cout<<"Et un trésor de plus ! Plus que "<<(3-(CP->getNbTresors()))<<endl;
+				cout<<"Et un trésor de plus ! Plus que "<<(3-(BC->getPort()->getNbTresors()))<<endl;
 			} } else {
 	            motor->getJoueurInd(motor->getJCourant())->setBateauCourant(new Caravelle());
 				cout<<"Caravelle récupérée !"<<endl;
 			}
 		}
-	motor->getFacade()->setBonPort(false);
+	//motor->getFacade()->setBonPort(false);
 
 	motor->setJCourant((motor->getJCourant()+1)%(motor->getNbJoueurs()));
 	motor->modifCourant(ATTENTELANCERDE);
