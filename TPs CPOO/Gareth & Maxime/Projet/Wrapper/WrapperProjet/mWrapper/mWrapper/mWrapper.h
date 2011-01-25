@@ -71,6 +71,8 @@ namespace mWrapper {
 
 		bool getATresor() { return f->getATresor(); }
 
+		void setATresor(bool b) { return f->setATresor(b); }
+
 		bool getPartieTerminee() { return f->getPartieTerminee(); }
 
 		bool getTresorRecup() { return f->getTresorRecup(); }

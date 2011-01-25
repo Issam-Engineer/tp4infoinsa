@@ -30,6 +30,7 @@ class Bateau
 		//bool _courant; // vrai si c'est le bateau courant
 		int _couleurb;
 		bool aTresor;
+		bool bonPort;
 		CasePort* _cp;
 
 	public :
@@ -123,6 +124,21 @@ class Bateau
 
 		void setPort(CasePort* c);
 
+		Case* getPort();
+
+				/**
+		*\fn bool getBonPort()
+		*\brief access function
+		*\return bool true if the current boat is in his own harbour
+		*/
+		bool getBonPort();
+
+		/**
+		*\fn virtual void setBonPort(bool b)
+		*\brief function which changes the value of bonPort
+		*/
+		virtual void setBonPort(bool b);
+
 
 }; 
 
@@ -161,6 +177,15 @@ inline void Bateau::setATresor(bool b){
 }
 inline void Bateau::setPort(CasePort* c){
 	_cp = c;
+}
+inline Case* Bateau::getPort(){
+	return _cp;
+}
+inline bool Bateau::getBonPort(){
+	return bonPort;
+}
+inline void Bateau::setBonPort(bool b){
+	bonPort = b;
 }
 
 #endif

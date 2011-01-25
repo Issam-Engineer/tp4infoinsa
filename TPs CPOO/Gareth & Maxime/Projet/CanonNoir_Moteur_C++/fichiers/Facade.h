@@ -60,7 +60,7 @@ class __declspec(dllexport) Facade
 
 		bool _tresorRecup;
 
-		bool _bonPort;
+		//bool _bonPort;
 		
 		bool _partieTerminee;
 
@@ -359,6 +359,12 @@ class __declspec(dllexport) Facade
 		bool getATresor();
 
 		/**
+		*\fn bool setATresor()
+		*\brief Puts the value of the attribute aTresor of the current player's current boat to bool b
+		**/
+		void setATresor(bool b);
+
+		/**
 		*\fn bool setPartieTerminee()
 		*\brief Puts the value of the attribute _partieTerminee to bool b
 		**/
@@ -386,7 +392,7 @@ class __declspec(dllexport) Facade
 
 		/**
 		*\fn bool setBonPort()
-		*\brief Puts the value of the attribute _bonPort to bool b
+		*\brief Puts the value of the attribute bonPort of the current player's current boat to bool b
 		**/
 		void setBonPort(bool b);
 
@@ -479,8 +485,8 @@ inline bool Facade::getPartieTerminee(){ return _partieTerminee; }
 inline void Facade::setTresorRecup(bool b){ _tresorRecup=b; }
 inline bool Facade::getTresorRecup(){ return _tresorRecup; }
 
-inline void Facade::setBonPort(bool b){ _bonPort=b; }
-inline bool Facade::getBonPort(){ return _bonPort; }
+//inline void Facade::setBonPort(bool b){ _bonPort=b; }
+//inline bool Facade::getBonPort(){ return _bonPort; }
 
 inline void Facade::setSizeHistogramme(int s){sizeHistogramme=s;cout<<"longueur histo :"<<sizeHistogramme<<endl;}
 inline int Facade::getSizeHistogramme(){return sizeHistogramme;}
