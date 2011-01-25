@@ -22,14 +22,13 @@ namespace CanonNoir_Affichage
 
         public FenetreTir(WrapperFacade f)
         {
-            int angle = (int)slider2.Value;
-            int puissance = (int)slider1.Value;
-            angle_box.Text = "" + angle;
-            puiss_box.Text = "" + puissance;
+            facade = f;
+            InitializeComponent();
+
+            /*angle_box.Text = "" + slider2.Value;
+            puiss_box.Text = "" + slider1.Value;*/
 
             textBox1.Text = "Joueur " + (facade.getNumJCourant());
-            InitializeComponent();
-            facade = f;
             int index = 0;
             int indice_largeur = (int)canvas1.Width / /*taille du vecteur*/ (facade.getSizeHistogramme()+2);
             int indice_hauteur = (int)canvas1.Height / /*hauteur Maximale*/ 4;
@@ -80,7 +79,18 @@ namespace CanonNoir_Affichage
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            angle_box.Text = "" + slider2.Value;
+            puiss_box.Text = "" + slider1.Value;
+        }
 
+        private void slider1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            puiss_box.Text = "" + slider1.Value;
+        }
+
+        private void slider2_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            angle_box.Text = "" + slider2.Value;
         }
 
     }
