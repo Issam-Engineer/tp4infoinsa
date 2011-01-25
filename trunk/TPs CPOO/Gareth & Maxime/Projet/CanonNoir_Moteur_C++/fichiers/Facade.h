@@ -456,8 +456,8 @@ inline bool Facade::getPartieTerminee(){ return _partieTerminee; }
 
 inline void Facade::setTresorRecup(bool b){ _tresorRecup=b; }
 inline bool Facade::getTresorRecup(){ return _tresorRecup; }
-inline void Facade::setSizeHistogramme(int s){sizeHistogramme=s;}
 
+inline void Facade::setSizeHistogramme(int s){sizeHistogramme=s;cout<<"longueur histo :"<<sizeHistogramme<<endl;}
 inline int Facade::getSizeHistogramme(){return sizeHistogramme;}
 
 

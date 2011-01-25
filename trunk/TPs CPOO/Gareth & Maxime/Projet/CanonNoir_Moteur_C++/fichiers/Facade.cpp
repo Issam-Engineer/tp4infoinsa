@@ -148,7 +148,7 @@ void Facade::SaveYAttaquant(){
 }
 
 double Facade::getLongueurHisto(int indice){
-	return _moteur->histogramme[indice].first ;
+	return _moteur->histogramme[indice].first;
 }
 
 double Facade::getHauteurHisto(int indice){

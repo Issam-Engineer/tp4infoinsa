@@ -28,8 +28,9 @@ void EtatTir::execute(){
 	int y2=motor->getFacade()->getY();
 
 	cout<<"(x1,y1)= ("<<x1<<"."<<y1<<") et (x2,y2)= ("<<x2<<"."<<y2<<")"<<endl;
-
 	calculHistogramme(make_pair(x1,y1),make_pair(x2,y2));
+
+	//on indique à la facade la taille de l'histogramme
 	motor->getFacade()->setSizeHistogramme(motor->histogramme.size());
 
 }
@@ -122,11 +123,12 @@ void EtatTir::calculHistogramme (pair<int,int> p1,pair<int,int> p2){
 			yb = it->second ;
 			i = ( int ) min (xa,xb) + 1;		
 			j = ( int ) min (ya,yb) + 1;
-
-			h = motor->getPlateau()->getCase(make_pair(i,j))->getHauteur();	// Hauteur de la case de coordonnée i,j		
-			l = sqrt (( xb - xa) * (xb - xa) + (yb - ya) * (yb - ya));	
-			cout<<"longueur :"<<l<<" hauteur :"<<h<<endl;
-			motor->histogramme.push_back( std::pair<double , double >(l, h));	
+			if(i<=11 && j<=8){
+				h = motor->getPlateau()->getCase(make_pair(i,j))->getHauteur();	// Hauteur de la case de coordonnée i,j		
+				l = sqrt (( xb - xa) * (xb - xa) + (yb - ya) * (yb - ya));	
+				cout<<"longueur :"<<l<<" hauteur :"<<h<<endl;
+				motor->histogramme.push_back( std::pair<double , double >(l, h));	
+			}
 		}
 	}
 }
