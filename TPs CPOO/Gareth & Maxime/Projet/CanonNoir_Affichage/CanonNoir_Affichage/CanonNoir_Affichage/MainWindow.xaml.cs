@@ -149,8 +149,8 @@ namespace CanonNoir_Affichage
                  * 
                  * Si Il Toutes les cases sont inaccessibles on supprime tous les rectangles
                  * 
-                 ***/
-                /******************/
+                 */
+                /*****************/
                 bool BoolTest = false;
                 for (int i = 1; i <= 11; i++)
                 {
@@ -169,7 +169,7 @@ namespace CanonNoir_Affichage
                     }
                     index = 0;
                 }
-                /******************/
+                /*****************/
                 textBox4.Text = "Joueur " + (facade.getNumJCourant());
                 button2.IsEnabled = true;
 

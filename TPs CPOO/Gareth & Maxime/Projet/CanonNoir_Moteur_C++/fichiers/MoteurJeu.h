@@ -167,33 +167,33 @@ class MoteurJeu
 		/**
 		*\fn void setAccessibleAll(bool b)
 		*\brief put all case accesibility to boolean b
-		**/
+		*/
 		void setAccessibleAll(bool b);
 
 		/**
 		*\fn Case* getCase(pair<int,int> p)
 		*\brief return a pointer on the Case at the position p
 		*\return a pointer
-		**/
+		*/
 		Case* getCase(int x,int y);
 
 		/**
 		*\fn int getCourant() const
 		*\brief return the current state, as an integer
 		*\return an int
-		**/
+		*/
 		int getCourant() const;
 
 		/**
 		*\fn void setXAttaquant(int x);
 		*\brief save the value of x
-		**/
+		*/
 		void setXAttaquant(int x);
 
 		/**
 		*\fn void setXAttaquant(int y);
 		*\brief save the value of y
-		**/
+		*/
 		void setYAttaquant(int x);
 
 }; 

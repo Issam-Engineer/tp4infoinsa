@@ -48,12 +48,12 @@ class CasePort : public Case
 		*\fn int getNbTresors()
 		*\brief Access function
 		*\return int the number of treasures of the harbour
-		**/
+		*/
 		int getNbTresors() const;
 		/**
 		*\fn void setNbTresors()
 		*\brief Modifies the attribute _nbTresors
-		**/
+		*/
 		void setNbTresors(int n);
 
 

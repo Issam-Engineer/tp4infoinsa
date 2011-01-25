@@ -93,7 +93,7 @@ class Case
 		/**
 		*\fn void setPosition(pair<int,int> p)
 		*\brief change the value of the attribute _position
-		**/
+		*/
 		void setPosition(pair<int,int> p);
 }; 
 

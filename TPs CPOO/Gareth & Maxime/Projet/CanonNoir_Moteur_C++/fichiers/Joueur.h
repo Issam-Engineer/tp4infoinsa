@@ -108,17 +108,17 @@ class Joueur
 		/**
 		*\fn void setCasePort1(CasePort* c)
 		*\brief modifies the attribute CasePort1
-		**/
+		*/
 		void setCasePort1(CasePort* c);
 		/**
 		*\fn void setCasePort2(CasePort* c)
 		*\brief modifies the attribute CasePort1
-		**/
+		*/
 		void setCasePort2(CasePort* c);
 		/**
 		*\fn void setBateauCourant(Bateau* b)
 		*\brief modifies the current boat
-		**/
+		*/
 		void setBateauCourant(Bateau* b);
 		
 
