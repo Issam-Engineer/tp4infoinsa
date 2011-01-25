@@ -148,9 +148,11 @@ void Facade::SaveYAttaquant(){
 }
 
 double Facade::getLongueurHisto(int indice){
+	cout<<"valeur du first : "<<_moteur->histogramme[indice].first<<endl;
 	return _moteur->histogramme[indice].first;
 }
 
 double Facade::getHauteurHisto(int indice){
+	cout<<"valeur du second : "<<_moteur->histogramme[indice].second<<endl;
 	return _moteur->histogramme[indice].second ;
 }
