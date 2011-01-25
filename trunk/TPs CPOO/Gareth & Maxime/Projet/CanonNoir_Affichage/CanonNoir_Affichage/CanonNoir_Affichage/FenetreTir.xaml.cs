@@ -22,6 +22,10 @@ namespace CanonNoir_Affichage
 
         public FenetreTir(WrapperFacade f)
         {
+            int angle = (int)slider2.Value;
+            int puissance = (int)slider1.Value;
+            angle_box.Text = "" + angle;
+            puiss_box.Text = "" + puissance;
 
             textBox1.Text = "Joueur " + (facade.getNumJCourant());
             InitializeComponent();
@@ -65,7 +69,11 @@ namespace CanonNoir_Affichage
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-           
+            int angle = (int) slider2.Value;
+            int puissance = (int)  slider1.Value;
+
+            facade.setAngle(angle);
+            facade.setPuissance(puissance);
 
             facade.execute();
         }
