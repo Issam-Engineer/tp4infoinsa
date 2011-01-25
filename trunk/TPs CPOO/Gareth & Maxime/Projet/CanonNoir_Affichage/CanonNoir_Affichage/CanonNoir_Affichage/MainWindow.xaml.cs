@@ -90,32 +90,7 @@ namespace CanonNoir_Affichage
                     }
                 }
 
-                if (facade.getATresor() && /*facade.getEtatCourant() == 7*/facade.getTresorRecup())
-                {
-                    int coulB = facade.getCoulBateauCourant();
-                    MessageBox.Show("Un trésor a été découvert ! Ramenez-le au port au plus vite !");
-                    //if On est avec Le joueur Rouge
-                    if (coulB == 1)
-                    {
-                        JoueurRouge.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellerougetresor.jpg", UriKind.Relative));
-                    }
-                    //if On est avec Le joueur Vert
-                    else if (coulB == 2)
-                    {
-                        JoueurVert.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellevertetresor.jpg", UriKind.Relative));
-                    }
-                    //if On est avec Le joueur Jaune
-                    else if (coulB == 3)
-                    {
-                        JoueurJaune.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellejaunetresor.jpg", UriKind.Relative));
-                    }
-                    //if On est avec Le joueur Bleu
-                    else if (coulB == 4)
-                    {
-                        JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleuetresor.jpg", UriKind.Relative));
-                    }
-                    facade.setTresorRecup(false);
-                }
+     
                 //}
             }
             else if(facade.getEtatCourant() == 11)
@@ -207,7 +182,59 @@ namespace CanonNoir_Affichage
                     facade.setAccessibleAll(false);
                 }
 
-                //}
+                if (facade.getEtatCourant() == 8 && facade.getBonPort())
+                {
+                    MessageBox.Show("Trésor ramené à bon port !");
+                    int coulB = facade.getCoulBateauCourant();
+                    //if On est avec Le joueur Rouge
+                    if (coulB == 1)
+                    {
+                        JoueurRouge.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellerouge.jpg", UriKind.Relative));
+                    }
+                    //if On est avec Le joueur Vert
+                    else if (coulB == 2)
+                    {
+                        JoueurVert.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravelleverte.jpg", UriKind.Relative));
+                    }
+                    //if On est avec Le joueur Jaune
+                    else if (coulB == 3)
+                    {
+                        JoueurJaune.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellejaune.jpg", UriKind.Relative));
+                    }
+                    //if On est avec Le joueur Bleu
+                    else if (coulB == 4)
+                    {
+                        JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleue.jpg", UriKind.Relative));
+                    }
+                    facade.setBonPort(false);
+                }
+            }
+
+            if (/*facade.getATresor() &&*/facade.getEtatCourant() == 7/* && facade.getTypeBateauCourant() != 1*/&& facade.getTresorRecup())
+            {
+                int coulB = facade.getCoulBateauCourant();
+                MessageBox.Show("Un trésor a été découvert ! Ramenez-le au port au plus vite !");
+                //if On est avec Le joueur Rouge
+                if (coulB == 1)
+                {
+                    JoueurRouge.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellerougetresor.jpg", UriKind.Relative));
+                }
+                //if On est avec Le joueur Vert
+                else if (coulB == 2)
+                {
+                    JoueurVert.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellevertetresor.jpg", UriKind.Relative));
+                }
+                //if On est avec Le joueur Jaune
+                else if (coulB == 3)
+                {
+                    JoueurJaune.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellejaunetresor.jpg", UriKind.Relative));
+                }
+                //if On est avec Le joueur Bleu
+                else if (coulB == 4)
+                {
+                    JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleuetresor.jpg", UriKind.Relative));
+                }
+                facade.setTresorRecup(false);
             }
         }
 

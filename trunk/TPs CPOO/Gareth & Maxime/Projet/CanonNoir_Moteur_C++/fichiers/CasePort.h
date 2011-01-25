@@ -16,6 +16,7 @@ class CasePort : public Case
 	private :
 
 		int _couleur;
+		int _nbTresors;
 
 	public :
 
@@ -43,7 +44,17 @@ class CasePort : public Case
 		*\return char the type of the square
 		*/
 		char getTypeCase();
-
+		/**
+		*\fn int getNbTresors()
+		*\brief Access function
+		*\return int the number of treasures of the harbour
+		**/
+		int getNbTresors() const;
+		/**
+		*\fn void setNbTresors()
+		*\brief Modifies the attribute _nbTresors
+		**/
+		void setNbTresors(int n);
 
 
 }; 
@@ -51,5 +62,7 @@ class CasePort : public Case
 inline int CasePort::getCouleur(){ return _couleur; }
 inline int CasePort::getEtat(){ return ETATDEPOT; }
 inline char CasePort::getTypeCase() {return 'P';}
+inline int CasePort::getNbTresors() const { return _nbTresors; }
+inline void CasePort::setNbTresors(int n) { _nbTresors = n; }
 
 #endif

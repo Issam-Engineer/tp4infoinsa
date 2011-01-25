@@ -77,7 +77,13 @@ namespace mWrapper {
 
 		void setTresorRecup(bool b) { return f->setTresorRecup(b); }
 
+		bool getBonPort() { return f->getBonPort(); }
+
+		void setBonPort(bool b) { return f->setBonPort(b); }
+
 		int getEtatCourant() { return f->getEtatCourant(); }
+
+		int getTypeBateauCourant() { return f->getTypeBateauCourant(); }
 
 		void SaveXAttaquant() { f->SaveXAttaquant(); }
 		void SaveYAttaquant() { f->SaveYAttaquant(); }

@@ -34,7 +34,8 @@ void AttenteChoixBateau::execute(){
 	if( motor->getJoueurInd(motor->getJCourant())->bateauAtPos(posit)){
 
 		//On indique quel bateau est le courant grâce au booléen courant de bateau
-		motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit)->setCourant(true);
+		//motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit)->setCourant(true);
+		motor->getJoueurInd(motor->getJCourant())->setBateauCourant(motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit));
 		motor->getFacade()->setCoulBateauCourant(motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->getCouleur());
 		motor->modifCourant(PROPOSEDEPLACEMENT);
 		motor->getFacade()->setChoixBateau(false);

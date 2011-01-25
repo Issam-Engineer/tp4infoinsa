@@ -36,7 +36,7 @@ void AttenteDeplacement::execute(){
 	if(ETAT_SUIVANT != -1){
 		motor->modifCourant(ETAT_SUIVANT);
 		cout<<"ModifCourant(ETAT_SUIVANT) avec ETAT_SUIVANT = "<<ETAT_SUIVANT<<endl;
-		if(ETAT_SUIVANT != ATTENTECHOIXBATVISE){
+		if(ETAT_SUIVANT != ATTENTECHOIXBATVISE && ETAT_SUIVANT != ETATTRESOR && ETAT_SUIVANT != ETATDEPOT){
 			motor->getFacade()->execute();
 		}
 
@@ -45,6 +45,6 @@ void AttenteDeplacement::execute(){
 		motor->modifCourant(ATTENTELANCERDE);
 		motor->getFacade()->setEnableClicDe(true);
 	}
-	boc->setCourant(false);
+	//boc->setCourant(false);
 
 }

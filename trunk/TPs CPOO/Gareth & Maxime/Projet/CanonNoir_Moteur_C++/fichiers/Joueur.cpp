@@ -16,9 +16,10 @@ Joueur::Joueur(int num, CasePort* c){
 	_cp2=NULL;
 	_bateau1 = new Caravelle();
 	_bateau1->positionner(c);
-	_bateau1->setCourant(true);
+	_bateauCourant = _bateau1;
+	//_bateau1->setCourant(true);
 	_bateau1->setCouleur(c->getCouleur());
-	_nbTresors = 0;
+	//_nbTresors = 0;
 }
 
 Joueur::Joueur(int num, CasePort* c1, CasePort* c2){
@@ -29,18 +30,18 @@ Joueur::Joueur(int num, CasePort* c1, CasePort* c2){
 	_bateau2 = new Caravelle();
 	_bateau1->positionner(c1);
 	_bateau2->positionner(c2);
-	_bateau1->setCourant(false);
-	_bateau2->setCourant(false);
+	//_bateau1->setCourant(false);
+	//_bateau2->setCourant(false);
 	_bateau1->setCouleur(c1->getCouleur());
 	_bateau2->setCouleur(c2->getCouleur());
-	_nbTresors = 0;
+	//_nbTresors = 0;
 }
 
 Joueur::Joueur(){
 	_numero=0;
 	_cp1=0;
 	_cp2=0;
-	_nbTresors = 0;
+	//_nbTresors = 0;
 }
 
 
@@ -67,7 +68,7 @@ Bateau* Joueur::getBateauPos(pair<int,int> p){
 	return res;
 }
 
-Bateau* Joueur::getBateauCourant(){
+/*Bateau* Joueur::getBateauCourant(){
 	Bateau* res;
 	if(_bateau1->getCourant()) res=_bateau1;
 	else if(_bateau2->getCourant()) res=_bateau2;
@@ -75,4 +76,4 @@ Bateau* Joueur::getBateauCourant(){
 		cout<<"ERREUR : ce n'est il n'y a pas de bateau courant"<<endl;
 	}
 	return res;
-}
+}*/

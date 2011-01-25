@@ -59,6 +59,8 @@ class __declspec(dllexport) Facade
 		int _coulBatCourant;
 
 		bool _tresorRecup;
+
+		bool _bonPort;
 		
 		bool _partieTerminee;
 
@@ -383,11 +385,31 @@ class __declspec(dllexport) Facade
 		bool getTresorRecup();
 
 		/**
+		*\fn bool setBonPort()
+		*\brief Puts the value of the attribute _bonPort to bool b
+		**/
+		void setBonPort(bool b);
+
+		/**
+		*\fn bool getBonPort()
+		*\brief Acces function
+		*\return bool true if a player is in his harbour
+		**/
+		bool getBonPort();
+
+		/**
 		*\fn int getEtatCourant()
 		*\brief Acces function
 		*\return int, the current state
 		**/
 		int getEtatCourant();
+
+		/**
+		*\fn int getTypeBateauCourant()
+		*\brief Acces function
+		*\return int, the type of the current player's current boat
+		**/
+		int getTypeBateauCourant();
 
 		/**
 		*\fn void SaveXAttaquant()
@@ -456,6 +478,9 @@ inline bool Facade::getPartieTerminee(){ return _partieTerminee; }
 
 inline void Facade::setTresorRecup(bool b){ _tresorRecup=b; }
 inline bool Facade::getTresorRecup(){ return _tresorRecup; }
+
+inline void Facade::setBonPort(bool b){ _bonPort=b; }
+inline bool Facade::getBonPort(){ return _bonPort; }
 
 inline void Facade::setSizeHistogramme(int s){sizeHistogramme=s;cout<<"longueur histo :"<<sizeHistogramme<<endl;}
 inline int Facade::getSizeHistogramme(){return sizeHistogramme;}

@@ -12,4 +12,5 @@ CasePort::CasePort(int c){
 	_hauteur = 0;
 	_accessible = false;
 	_couleur = c;
+	_nbTresors = 0;
 }

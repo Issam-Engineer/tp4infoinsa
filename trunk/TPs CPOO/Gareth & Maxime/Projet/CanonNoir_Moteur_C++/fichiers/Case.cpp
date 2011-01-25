@@ -19,6 +19,13 @@ int Case::getCouleur(){
 	return 0;
 }
 
+int Case::getNbTresors(){
+	return 0;
+}
+
+void Case::setNbTresors(int n){
+}
+
 void Case::setPosition(pair<int,int> p){
 	_position=p;
 }
