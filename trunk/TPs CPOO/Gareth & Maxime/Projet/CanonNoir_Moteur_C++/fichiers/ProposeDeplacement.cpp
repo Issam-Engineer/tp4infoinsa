@@ -49,7 +49,7 @@ void ProposeDeplacement::traverseIle(pair<int,int>* tab, int i){
 				cout<<"i : "<<i<<endl;
 				cout<<"tab[0] : ("<<tab[0].first<<","<<tab[0].second<<")"<<endl;
 				cout<<"tab[i] : ("<<tab[i].first<<","<<tab[i].second<<")"<<endl;
-				motor->setInaccessible(tab[i]);
+				//motor->setInaccessible(tab[i]);
 			}
 		}
 	}
