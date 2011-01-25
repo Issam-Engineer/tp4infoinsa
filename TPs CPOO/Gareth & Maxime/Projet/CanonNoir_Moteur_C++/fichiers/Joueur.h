@@ -28,8 +28,9 @@ class Joueur
 		int _numero;
 		bool _gagnant;
 		Bateau* _bateau1;
-		Bateau* _bateau2; /*NULL if nb joueur !=2*/
-		int _nbTresors;
+		Bateau* _bateau2;/*NULL if nb joueur !=2*/
+		Bateau* _bateauCourant;
+		//int _nbTresors;
 
 	public :
 
@@ -114,20 +115,11 @@ class Joueur
 		*\brief modifies the attribute CasePort1
 		**/
 		void setCasePort2(CasePort* c);
-
 		/**
-		*\fn int getNbTresors()
-		*\brief Access function
-		*\return int the number of treasures of the current player
+		*\fn void setBateauCourant(Bateau* b)
+		*\brief modifies the current boat
 		**/
-		int getNbTresors() const;
-		/**
-		*\fn void setNbTresors()
-		*\brief Modifies the attribute _nbTresors
-		**/
-		void setNbTresors(int n);
-
-		void setBateau(Bateau* old, Bateau* newb);
+		void setBateauCourant(Bateau* b);
 		
 
 }; 
@@ -143,9 +135,7 @@ inline Bateau* Joueur::getBateau2() const { return _bateau2 ;}
 inline int Joueur::getNumero() const{ return _numero ;}
 inline void Joueur::setNumero(int i){_numero=i;}
 
-inline int Joueur::getNbTresors() const { return _nbTresors; }
-inline void Joueur::setNbTresors(int n) { _nbTresors = n; }
-
-inline void Joueur::setBateau(Bateau* old, Bateau* newb) { old = newb; }
+inline Bateau* Joueur::getBateauCourant() { return _bateauCourant; }
+inline void Joueur::setBateauCourant(Bateau* b) { _bateauCourant = b; }
 
 #endif

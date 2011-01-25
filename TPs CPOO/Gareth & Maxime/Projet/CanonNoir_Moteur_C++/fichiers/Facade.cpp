@@ -137,6 +137,15 @@ int Facade::getEtatCourant(){
 	return _moteur->getCourant();
 }
 
+int Facade::getTypeBateauCourant(){
+	char type = _moteur->getJoueurInd(_moteur->getJCourant())->getBateauCourant()->type();
+	int typeret=0;
+	if(type == 'C') { typeret = 3; }
+	else if(type == 'F') { typeret = 2; }
+	else { typeret = 1; }
+	return typeret;
+}
+
 void Facade::SaveXAttaquant(){
 	_moteur->setXAttaquant(_clicX);
 	cout<<"SaveX"<<endl;

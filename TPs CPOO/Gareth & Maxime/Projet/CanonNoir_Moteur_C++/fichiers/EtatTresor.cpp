@@ -20,12 +20,15 @@ void EtatTresor::execute(){
 	cout<<"EtatTresor.execute()"<<endl;
 
 	Bateau* BC = motor->getJoueurInd(motor->getJCourant())->getBateauCourant();
-	if(BC->type() == 'C' && !BC->getATresor()){
+	if((BC->type() == 'C' ||  BC->type() == 'F') && !BC->getATresor()){
 		BC->setATresor(true);
 		motor->getFacade()->setTresorRecup(true);
 		cout<<"Trésor à bord !"<<endl;
+	} else {
+		motor->getFacade()->setTresorRecup(false);
 	}
 
 	motor->setJCourant((motor->getJCourant()+1)%(motor->getNbJoueurs()));
 	motor->modifCourant(ATTENTELANCERDE);
+	motor->getFacade()->execute();
 }

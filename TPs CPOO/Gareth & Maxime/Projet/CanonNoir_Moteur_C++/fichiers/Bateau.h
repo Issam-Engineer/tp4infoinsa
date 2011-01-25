@@ -26,7 +26,7 @@ class Bateau
 		bool pTirer;
 		bool pEVise;
 		Case* pos;
-		bool _courant; // vrai si c'est le bateau courant
+		//bool _courant; // vrai si c'est le bateau courant
 		int _couleurb;
 		bool aTresor;
 
@@ -138,12 +138,12 @@ inline bool Bateau::peutJouer2Des(){
 /*inline char Bateau::type(){
 	return 'E';
 }*/
-inline bool Bateau::getCourant(){
+/*inline bool Bateau::getCourant(){
 	return _courant;
 }
 inline void Bateau::setCourant(bool t){
 	_courant=t;
-}
+}*/
 inline int Bateau::getCouleur(){
 	return _couleurb;
 }

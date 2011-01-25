@@ -78,6 +78,19 @@ class Case
 		virtual int getCouleur();
 		
 		/**
+		*\fn int getNbTresors()
+		*\brief use for CasePort 
+		*\return 0 by default
+		*/
+		virtual int getNbTresors();
+
+		/**
+		*\fn int setNbTresors()
+		*\brief use for CasePort, to change the number of treasures
+		*/
+		virtual void setNbTresors(int n);
+		
+		/**
 		*\fn void setPosition(pair<int,int> p)
 		*\brief change the value of the attribute _position
 		**/
