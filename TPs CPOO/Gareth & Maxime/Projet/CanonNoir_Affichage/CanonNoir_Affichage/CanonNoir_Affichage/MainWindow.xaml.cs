@@ -99,6 +99,7 @@ namespace CanonNoir_Affichage
                 facade.execute(); 
                 FenetreTir fT = new FenetreTir(facade);
                 fT.Show();
+
             }
             else if(facade.getEtatCourant() == 6)
             {
