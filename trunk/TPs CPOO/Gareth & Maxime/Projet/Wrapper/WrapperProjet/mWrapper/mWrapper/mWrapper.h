@@ -90,8 +90,8 @@ namespace mWrapper {
 
 		int getSizeHistogramme() { return f->getSizeHistogramme(); }
 
-		double getLongueurHisto(int indice) { cout<<"Longueur : Indice ="<<indice<<;return getLongueurHisto(indice) ; }
-		double getHauteurHisto(int indice) { cout<<"Hauteur : Indice ="<<indice<<;return getHauteurHisto(indice) ; }
+		double getLongueurHisto(int indice) { cout<<"Longueur : Indice ="<<indice<<endl;return getLongueurHisto(indice) ; }
+		double getHauteurHisto(int indice) { cout<<"Hauteur : Indice ="<<indice<<endl;return getHauteurHisto(indice) ; }
 
 	};
 }
