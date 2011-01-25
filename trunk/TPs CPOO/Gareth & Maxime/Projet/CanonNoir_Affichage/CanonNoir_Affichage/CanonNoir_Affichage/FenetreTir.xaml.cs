@@ -25,8 +25,6 @@ namespace CanonNoir_Affichage
             facade = f;
             InitializeComponent();
 
-            /*angle_box.Text = "" + slider2.Value;
-            puiss_box.Text = "" + slider1.Value;*/
 
             textBox1.Text = "Joueur " + (facade.getNumJCourant());
             int index = 0;
@@ -66,32 +64,24 @@ namespace CanonNoir_Affichage
             Close();
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            int angle = (int) slider2.Value;
-            int puissance = (int)  slider1.Value;
+            int angle = (int)slider2.Value;
+            int puissance = (int)slider1.Value;
 
             facade.setAngle(angle);
             facade.setPuissance(puissance);
 
             facade.execute();
+
+            Close();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            angle_box.Text = "" + slider2.Value;
-            puiss_box.Text = "" + slider1.Value;
-        }
-
-        private void slider1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            puiss_box.Text = "" + slider1.Value;
-        }
-
-        private void slider2_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            angle_box.Text = "" + slider2.Value;
-        }
 
     }
 }
