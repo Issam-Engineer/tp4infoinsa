@@ -22,6 +22,8 @@ namespace CanonNoir_Affichage
 
         public FenetreTir(WrapperFacade f)
         {
+
+            textBox.Text = "Joueur " + (facade.getNumJCourant());
             InitializeComponent();
             facade = f;
             int index = 0;
@@ -69,5 +71,6 @@ namespace CanonNoir_Affichage
         {
 
         }
+
     }
 }

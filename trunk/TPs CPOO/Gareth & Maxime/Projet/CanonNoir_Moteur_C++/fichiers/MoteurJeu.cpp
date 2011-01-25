@@ -16,8 +16,6 @@
 #include "AttenteDeplacement.h"
 #include "Duel.h"
 #include "EtatTir.h"
-#include "AttenteCanonPuissance.h"
-#include "AttenteCanonAngle.h"
 #include "EtatCanonFin.h"
 #include "EtatTresor.h"
 #include "EtatDepot.h"
@@ -46,8 +44,6 @@ MoteurJeu::MoteurJeu(Facade* f):facade(f),nbJoueurs(0),courant(NULL),_JCourant(0
 	_etats.push_back(new Duel(this));
 	_etats.push_back(new EtatTir(this));
 	_etats.push_back(new AttenteChoixBateauVise(this));
-	//_etats.push_back(new AttenteCanonPuissance(this));
-	//_etats.push_back(new AttenteCanonAngle(this));
 	//_etats.push_back(new EtatCanonFin(this));
 	//_etats.push_back(new EtatFinPartie(this));
 };
