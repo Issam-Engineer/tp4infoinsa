@@ -120,7 +120,12 @@ class Joueur
 		*\brief function which modifies the current boat
 		*/
 		void setBateauCourant(Bateau* b);
-		
+
+		/**
+		*\fn void setBateau1(Bateau * b)
+		*\brief changes the Bateau1 of the player 
+		*/
+		void setBateau1(Bateau* b);
 
 }; 
 
@@ -137,5 +142,7 @@ inline void Joueur::setNumero(int i){_numero=i;}
 
 inline Bateau* Joueur::getBateauCourant() { return _bateauCourant; }
 inline void Joueur::setBateauCourant(Bateau* b) { _bateauCourant = b; }
+
+inline void Joueur::setBateau1(Bateau* b){ _bateau1=b;}
 
 #endif
