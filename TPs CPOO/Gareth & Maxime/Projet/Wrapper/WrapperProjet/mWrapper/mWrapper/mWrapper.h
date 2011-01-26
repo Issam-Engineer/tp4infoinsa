@@ -85,6 +85,16 @@ namespace mWrapper {
 
 		int getNbTresors(int c) { return f->getNbTresors(c); }
 
+		bool getATresor(int c) { return f->getATresor(c); }
+
+		void setATresor(int c, bool b) { f->setATresor(c,b); }
+
+		bool getBonPort(int c) { return f->getBonPort(c); }
+
+		void setBonPort(int c, bool b) { f->setBonPort(c,b); }
+
+		int getTypeBat(int c) { return f->getTypeBat(c); }
+
 		int getEtatCourant() { return f->getEtatCourant(); }
 
 		int getTypeBateauCourant() { return f->getTypeBateauCourant(); }
