@@ -56,32 +56,34 @@ void EtatCanonFin::execute(){
 		}else{// NB JOUEURS != 2
 
 			cout<<"Attaque NbJoueur != 2"<<endl;
+			int indice;
 			for(int i=0; i<motor->getNbJoueurs(); i++){
 
 				if(motor->getJoueurInd(i)->getBateau1()->getPosition()->getPosition() ==
 					make_pair(motor->getFacade()->getX(),motor->getFacade()->getY()))
 				{
 					res = motor->getJoueurInd(i)->getBateau1();
+					indice = i;
 				}
 			}
 			
-			/*if(res->type() == 'C'){
+			if(res->type() == 'C'){
 				if(res->getATresor() == true){
-				
-					res = new Fregate();
-					res->setATresor(true);
+					cout<<"tir et trésor -> il devient frégate"<<endl;
+					motor->getJoueurInd(indice)->setBateau1(new Fregate());
+					motor->getJoueurInd(indice)->getBateau1()->setATresor(true);
 					motor->getFacade()->setTypeBat(res->getPort()->getCouleur(),2);
-
 				} else {
-					res = new Fregate();
+					cout<<"tir mais pas de trésor -> il devient frégate"<<endl;
+					motor->getJoueurInd(indice)->setBateau1(new Fregate());
 					motor->getFacade()->setTypeBat(res->getPort()->getCouleur(),2);
 				} 
 			} else if (res->type() == 'F') {
-				res = new Radeau();
-				res->setATresor(false);
+				motor->getJoueurInd(indice)->setBateau1(new Radeau());
+				motor->getJoueurInd(indice)->getBateau1()->setATresor(false);
 				motor->getFacade()->setTypeBat(res->getPort()->getCouleur(),1);
-			}*/
-
+			}
+			
 		}
 
 		
