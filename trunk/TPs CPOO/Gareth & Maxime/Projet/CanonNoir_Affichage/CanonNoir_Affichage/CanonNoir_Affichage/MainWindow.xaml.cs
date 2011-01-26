@@ -452,8 +452,8 @@ namespace CanonNoir_Affichage
                     else // ATTENTECHOIXBATEAU
                     {
 
-                        MessageBox.Show("Choisis un de tes 2 bateaux");
-                        textBox12.Text = "Choisis un de tes 2 bateaux";
+                        //MessageBox.Show("Choisis un de tes 2 bateaux");
+                        textBox12.Text = "Choisis un de tes deux bateaux";
                         button2.IsEnabled = false;
                     }
 
