@@ -6,6 +6,10 @@
 *\version 1.0
 */
 
+/**
+*\enum enumCouleur
+*\brief Enum which allows to change the colors whith indices
+*/
 enum enumCouleur{
 	ROUGE=1,
 	VERT=2,

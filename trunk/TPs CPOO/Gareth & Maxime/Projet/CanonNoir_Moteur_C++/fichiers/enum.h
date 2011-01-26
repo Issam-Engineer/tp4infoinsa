@@ -6,6 +6,10 @@
 *\version 1.0
 */
 
+/**
+*\enum enumEtat
+*\brief Enum which allows to change the current state of the motor whith indices
+*/
 enum enumEtat{
 	ATTENTENBJOUEURS,
 	ATTENTEINITIALISATION,
