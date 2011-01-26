@@ -1,9 +1,9 @@
 /**
-* \file  Etat.cpp
+*\file Etat.cpp
 *\brief File which contains the functions of the Etat interface
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #include "Etat.h"

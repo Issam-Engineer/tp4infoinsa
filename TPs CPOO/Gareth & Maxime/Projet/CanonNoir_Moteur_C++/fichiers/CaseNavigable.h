@@ -1,9 +1,9 @@
 ﻿/**
-* \file  CaseNavigable.h
-* \brief File containing the functionalities and the attributes of the CaseNavigable class
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\file  CaseNavigable.h
+*\brief File containing the functionalities and the attributes of the CaseNavigable class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef CASENAVIGABLE_H

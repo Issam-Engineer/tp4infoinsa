@@ -1,9 +1,9 @@
 ﻿/**
-* \file  Joueur.h
-* \brief file which contains the attributes and function declarations of the Joueur class
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\file Joueur.h
+*\brief file which contains the attributes and function declarations of the Joueur class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef JOUEUR_H

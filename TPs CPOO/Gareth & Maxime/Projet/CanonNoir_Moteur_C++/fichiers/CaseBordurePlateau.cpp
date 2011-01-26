@@ -1,8 +1,8 @@
 /**
 *\file CaseBordurePlateau.cpp
-*\brief file which contains functions and code of the CaseBordurePlateau class
-*\author Havez Maxime
-*\author Thiveux Gareth
+*\brief File which contains functions and code of the CaseBordurePlateau class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
 *\version 1.0
 */
 

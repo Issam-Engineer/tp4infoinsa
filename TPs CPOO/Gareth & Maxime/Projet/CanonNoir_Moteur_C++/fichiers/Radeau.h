@@ -1,9 +1,9 @@
 ﻿/**
-* \file  Radeau.h
-* \brief file which contains the attributes and function declarations of the Radeau class
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\file Radeau.h
+*\brief file which contains the attributes and function declarations of the Radeau class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef RADEAU_H

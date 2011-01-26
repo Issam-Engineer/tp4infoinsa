@@ -1,5 +1,5 @@
 ﻿/**
-*\file  MoteurJeu.h
+*\file MoteurJeu.h
 *\brief File which contains the attributes and function declarations of the MoteurJeu class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX

@@ -1,9 +1,9 @@
 ﻿/**
-* \file  Duel.h
-* \brief File containing the functionalities and the attributes of the Duel class
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\file Duel.h
+*\brief File containing the functionalities and the attributes of the Duel class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef DUEL_H

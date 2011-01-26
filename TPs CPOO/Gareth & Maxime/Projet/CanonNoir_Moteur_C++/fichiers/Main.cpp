@@ -1,3 +1,11 @@
+/**
+*\file Main.cpp
+*\brief File which contains the tests of the Main class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
+*/
+
 #include "MoteurJeu.h"
 #include "AttenteNbJoueurs.h"
 #include "Plateau.h"

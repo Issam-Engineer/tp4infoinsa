@@ -1,5 +1,5 @@
 ﻿/**
-*\file  Plateau.h
+*\file Plateau.h
 *\brief File which contains the attributes and function declarations of Plateau class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX
