@@ -1,6 +1,6 @@
 ﻿/**
 *\file  Bateau.h
-*\brief File which contains the attributes and function declarations of the Bateau class
+*\brief File containing the attributes and function declarations of the Bateau class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX
 *\version 1.0

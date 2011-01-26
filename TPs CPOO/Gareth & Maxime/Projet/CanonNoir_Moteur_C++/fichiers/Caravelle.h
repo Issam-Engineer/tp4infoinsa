@@ -1,6 +1,6 @@
 ﻿/**
 *\file  Caravelle.h
-*\brief File which contains the attributes and function declarations of the Caravelle class
+*\brief File containing the attributes and function declarations of the Caravelle class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX
 *\version 1.0

@@ -1,6 +1,6 @@
 ﻿/**
 *\file  Fregate.h
-*\brief file which contains the attributes and function declarations of the Fregate class
+*\brief File which contains the attributes and function declarations of the Fregate class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX
 *\version 1.0
