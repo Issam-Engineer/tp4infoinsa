@@ -44,6 +44,18 @@ Facade::Facade(){
 	_nbTresorsVert=0;
 	_nbTresorsJaune=0;
 	_nbTresorsBleu=0;
+	_aTresorBatRouge=false;
+	_aTresorBatVert=false;
+	_aTresorBatJaune=false;
+	_aTresorBatBleu=false;
+	_bonPortRouge=false;
+	_bonPortVert=false;
+	_bonPortJaune=false;
+	_bonPortBleu=false;
+	_typeBatRouge=3;
+	_typeBatVert=3;
+	_typeBatJaune=3;
+	_typeBatBleu=3;
 	_partieTerminee=false;
 }
 
@@ -180,6 +192,83 @@ void Facade::setNbTresors(int c){
 	}
 }
 
+bool Facade::getATresor(int c){
+	bool res;
+	if(c == 1){
+		res = _aTresorBatRouge;
+	} else if(c == 2){
+		res = _aTresorBatVert;
+	} else if(c == 3){
+		res = _aTresorBatJaune;
+	} else if(c == 4){
+		res = _aTresorBatBleu;
+	}
+	return res;
+}
+
+void Facade::setATresor(int c, bool b){
+	if(c == 1){
+		_aTresorBatRouge = b;
+	} else if(c == 2){
+		_aTresorBatVert = b;
+	} else if(c == 3){
+		_aTresorBatJaune = b;
+	} else if(c == 4){
+		_aTresorBatBleu = b;
+	}
+}
+
+bool Facade::getBonPort(int c){
+	bool res;
+	if(c == 1){
+		res = _bonPortRouge;
+	} else if(c == 2){
+		res = _bonPortVert;
+	} else if(c == 3){
+		res = _bonPortJaune;
+	} else if(c == 4){
+		res = _bonPortBleu;
+	}
+	return res;
+}
+
+void Facade::setBonPort(int c, bool b){
+	if(c == 1){
+		_bonPortRouge = b;
+	} else if(c == 2){
+		_bonPortVert = b;
+	} else if(c == 3){
+		_bonPortJaune = b;
+	} else if(c == 4){
+		_bonPortBleu = b;
+	}
+}
+
+int Facade::getTypeBat(int c){
+	int type;
+	if(c == 1){
+		type = _typeBatRouge;
+	} else if(c == 2){
+		type = _typeBatVert;
+	} else if(c == 3){
+		type = _typeBatJaune;
+	} else if(c == 4){
+		type = _typeBatBleu;
+	}
+	return type;
+}
+
+void Facade::setTypeBat(int c, int t){
+	if(c == 1){
+		_typeBatRouge = t ;
+	} else if(c == 2){
+		_typeBatVert = t;
+	} else if(c == 3){
+		_typeBatJaune = t;
+	} else if(c == 4){
+		_typeBatBleu = t;
+	}
+}
 
 int Facade::getEtatCourant(){
 	return _moteur->getCourant();

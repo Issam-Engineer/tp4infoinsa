@@ -65,6 +65,21 @@ class __declspec(dllexport) Facade
 		int _nbTresorsJaune;
 		int _nbTresorsBleu;
 
+		bool _aTresorBatRouge;
+		bool _aTresorBatVert;
+		bool _aTresorBatJaune;
+		bool _aTresorBatBleu;
+
+		bool _bonPortRouge;
+		bool _bonPortVert;
+		bool _bonPortJaune;
+		bool _bonPortBleu;
+
+		int _typeBatRouge;
+		int _typeBatVert;
+		int _typeBatJaune;
+		int _typeBatBleu;
+
 		//bool _bonPort;
 		
 		bool _partieTerminee;
@@ -377,7 +392,7 @@ class __declspec(dllexport) Facade
 		bool getATresor();
 
 		/**
-		*\fn bool setATresor()
+		*\fn bool setATresor(bool b)
 		*\brief Puts the value of the attribute aTresor of the current player's current boat to bool b
 		*/
 		void setATresor(bool b);
@@ -390,10 +405,49 @@ class __declspec(dllexport) Facade
 		int getNbTresors(int c);
 
 		/**
-		*\fn setNbTresors()
+		*\fn setNbTresors(int c)
 		*\brief Increments by one the value of the attribute NbTresor of the given color
 		*/
 		void setNbTresors(int c);
+
+		/**
+		*\fn bool getATresor(int c)
+		*\brief Access function
+		*\return bool true if the current boat of the current player carries a treasure
+		*/
+		bool getATresor(int c);
+
+		/**
+		*\fn bool setATresor(int c, bool b)
+		*\brief Puts the value of the attribute _aTresorBat of the current player's current boat to bool b
+		*/
+		void setATresor(int c, bool b);
+
+		/**
+		*\fn bool getBonPort(int c)
+		*\brief Access function
+		*\return bool true if the current boat of the current player is in his own harbour
+		*/
+		bool getBonPort(int c);
+
+		/**
+		*\fn bool getBonPort(int c, bool b)
+		*\brief Puts the value of the attribute _bonPort of the current player's current boat to bool b
+		*/
+		void setBonPort(int c, bool b);
+
+		/**
+		*\fn int getTypeBat(int c)
+		*\brief acces function
+		*\return int, the type of the boat associated to the harbour of colour c
+		*/
+		int getTypeBat(int c);
+
+		/**
+		*\fn setTypeBat(int c, int t)
+		*\brief Puts the value of the attribute _typeBat of the current player's current boat to int t
+		*/
+		void setTypeBat(int c, int t);
 
 		/**
 		*\fn bool setPartieTerminee()
