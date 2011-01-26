@@ -15,10 +15,10 @@
             <Canvas.Background>
                 <ImageBrush ImageSource="/CanonNoir_Affichage;component/Images/carte.PNG" />
             </Canvas.Background>
-            <Image Canvas.Left="17" Canvas.Top="11" Height="59" Name="JoueurRouge" Stretch="Fill" Width="61" Source="/CanonNoir_Affichage;component/Images/caravellerouge.jpg" Cursor="None" Focusable="False" ForceCursor="False" />
-            <Image Canvas.Left="570" Canvas.Top="12" Cursor="None" Focusable="False" Height="59" Name="JoueurJaune" Source="/CanonNoir_Affichage;component/Images/caravellejaune.jpg" Stretch="Fill" Width="61" ForceCursor="False" />
-            <Image Canvas.Left="16" Canvas.Top="374" Cursor="None" Focusable="False" Height="59" Name="JoueurVert" Source="/CanonNoir_Affichage;component/Images/caravelleverte.jpg" Stretch="Fill" Width="61" ForceCursor="False" />
-            <Image Canvas.Left="570" Canvas.Top="378" Cursor="None" Focusable="False" Height="59" Name="JoueurBleu" Source="/CanonNoir_Affichage;component/Images/caravellebleue.jpg" Stretch="Fill" Width="61" ForceCursor="False"/>
+            <Image Canvas.Left="10" Canvas.Top="7" Height="59" Name="JoueurRouge" Stretch="Fill" Width="61" Source="/CanonNoir_Affichage;component/Images/caravellerouge.jpg" Cursor="None" Focusable="False" ForceCursor="False" />
+            <Image Canvas.Left="581" Canvas.Top="8" Cursor="None" Focusable="False" Height="59" Name="JoueurJaune" Source="/CanonNoir_Affichage;component/Images/caravellejaune.jpg" Stretch="Fill" Width="61" ForceCursor="False" />
+            <Image Canvas.Left="10" Canvas.Top="375" Cursor="None" Focusable="False" Height="59" Name="JoueurVert" Source="/CanonNoir_Affichage;component/Images/caravelleverte.jpg" Stretch="Fill" Width="61" ForceCursor="False" />
+            <Image Canvas.Left="578" Canvas.Top="380" Cursor="None" Focusable="False" Height="59" Name="JoueurBleu" Source="/CanonNoir_Affichage;component/Images/caravellebleue.jpg" Stretch="Fill" Width="61" ForceCursor="False"/>
         </Canvas>
         <Button Content="Lancer Dés" Height="27" HorizontalAlignment="Left" Margin="112,64,0,0" Name="button2" VerticalAlignment="Top" Width="90" IsEnabled="True" IsDefault="False" Click="button2_Click" FontSize="16" />
         <Label Content="Dé 1" Height="30" HorizontalAlignment="Left" Margin="99,12,0,0" Name="label2" VerticalAlignment="Top" Width="58" FontSize="14" FontWeight="Bold" Grid.Row="1" />

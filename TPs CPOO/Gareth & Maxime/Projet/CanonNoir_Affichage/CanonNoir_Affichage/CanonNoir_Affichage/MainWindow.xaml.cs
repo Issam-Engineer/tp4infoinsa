@@ -35,6 +35,7 @@ namespace CanonNoir_Affichage
             textBox6.Text = "Type : Caravelle - Pas de trésor à bord";
             textBox8.Text = "Type : Caravelle - Pas de trésor à bord";
             textBox10.Text = "Type : Caravelle - Pas de trésor à bord";
+            textBox12.Text = "Chaque joueur lance les dés tour à tour";
             textBox5.Text = facade.getNbTresors(1) + "/3";
             textBox7.Text = facade.getNbTresors(2) + "/3";
             textBox9.Text = facade.getNbTresors(3) + "/3";
@@ -371,6 +372,7 @@ namespace CanonNoir_Affichage
                 {
                     coulBateau = "bleu";
                 }
+                
                MessageBox.Show("PARTIE TERMINÉE ! Le bateau "+coulBateau+" a ramené 3 trésors à son port !\n Le joueur " + facade.getNumJCourant() + " l'emporte !");
                textBox12.Text ="PARTIE TERMINÉE !";
                Close();

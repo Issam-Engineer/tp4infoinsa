@@ -7,6 +7,8 @@
 */
 //#include "StdAfx.h"
 #include "Duel.h"
+#include "Bateau.h"
+#include "Joueur.h"
 
 Duel::Duel(MoteurJeu * m){
 	motor = m;
@@ -20,6 +22,31 @@ void Duel::execute(){
 	//Si oui, on propose d'engager le duel, et si le joueur accepte on passe dans l'état EtatTir
 	//sinon, on finit le tour
 	cout<<"Duel.execute()"<<endl;
+	/*int x_face;
+	int y_face;
+	if(motor->getFacade()->getX() == 1){
+		x_face = 11;
+		y_face = motor->getFacade()->getY();
+	} else if(motor->getFacade()->getX() == 11) {
+		x_face = 1;
+		y_face = motor->getFacade()->getY();
+	} else if(motor->getFacade()->getY() == 1) {
+		x_face = motor->getFacade()->getX();
+		y_face = 8;
+	} else if(motor->getFacade()->getY() == 8) {
+		x_face = motor->getFacade()->getX();
+		y_face = 1;
+	}
+
+	Bateau* res;
+	for(int i=0; i<motor->getNbJoueurs(); i++){
+		if(motor->getJoueurInd(i)->bateauAtPos(make_pair(x_face,y_face)) == true){
+			res = motor->getJoueurInd(i)->getBateauPos(make_pair(x_face,y_face));
+			cout<<"Bateau en face !"<<endl;
+			//motor->modifCourant(ETATTIR);
+			//motor->getFacade()->execute();
+		}
+	}*/
 
 
 	motor->setJCourant((motor->getJCourant()+1)%(motor->getNbJoueurs()));
