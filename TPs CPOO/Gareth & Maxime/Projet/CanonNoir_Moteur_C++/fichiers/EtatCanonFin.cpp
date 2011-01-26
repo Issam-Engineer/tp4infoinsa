@@ -27,26 +27,62 @@ void EtatCanonFin::execute(){
 	if(touche){
 		cout<<"TOUCHE"<<endl;
 		Bateau* res;
-		for(int i=0; i<motor->getNbJoueurs(); i++){
-			if(motor->getJoueurInd(i)->bateauAtPos(make_pair(motor->getFacade()->getX(),motor->getFacade()->getY())) == true){
-				res = motor->getJoueurInd(i)->getBateauPos(make_pair(motor->getFacade()->getX(),motor->getFacade()->getY()));
+
+		if(motor->getNbJoueurs()==2){
+
+			cout<<"Attaque NbJoueur = 2"<<endl;
+			for(int i=0; i<motor->getNbJoueurs(); i++){
+				if(motor->getJoueurInd(i)->bateauAtPos(make_pair(motor->getFacade()->getX(),motor->getFacade()->getY())) == true){
+					res = motor->getJoueurInd(i)->getBateauPos(make_pair(motor->getFacade()->getX(),motor->getFacade()->getY()));
+				}
 			}
-		}
-		if(res->type() == 'C'){
-			if(res->getATresor() == true){
+			if(res->type() == 'C'){
+				if(res->getATresor() == true){
 				res = new Fregate();
 				res->setATresor(true);
 				motor->getFacade()->setTypeBat(res->getPort()->getCouleur(),2);
-			} else {
-				res = new Fregate();
-				motor->getFacade()->setTypeBat(res->getPort()->getCouleur(),2);
-			} 
-		} else if (res->type() == 'F') {
+				} else {
+					res = new Fregate();
+					motor->getFacade()->setTypeBat(res->getPort()->getCouleur(),2);
+				} 
+			} else if (res->type() == 'F') {
 				res = new Radeau();
 				res->setATresor(false);
 				motor->getFacade()->setTypeBat(res->getPort()->getCouleur(),1);
 			}
-	
+
+		}else{// NB JOUEURS != 2
+
+			cout<<"Attaque NbJoueur != 2"<<endl;
+			for(int i=0; i<motor->getNbJoueurs(); i++){
+
+				if(motor->getJoueurInd(i)->getBateau1()->getPosition()->getPosition() ==
+					make_pair(motor->getFacade()->getX(),motor->getFacade()->getY()))
+				{
+					res = motor->getJoueurInd(i)->getBateau1();
+				}
+			}
+			
+			/*if(res->type() == 'C'){
+				if(res->getATresor() == true){
+				
+					res = new Fregate();
+					res->setATresor(true);
+					motor->getFacade()->setTypeBat(res->getPort()->getCouleur(),2);
+
+				} else {
+					res = new Fregate();
+					motor->getFacade()->setTypeBat(res->getPort()->getCouleur(),2);
+				} 
+			} else if (res->type() == 'F') {
+				res = new Radeau();
+				res->setATresor(false);
+				motor->getFacade()->setTypeBat(res->getPort()->getCouleur(),1);
+			}*/
+
+		}
+
+		
 	}else{
 
 		cout<<"RATE"<<endl;
