@@ -283,9 +283,9 @@ namespace CanonNoir_Affichage
                         types = "Radeau";
                     }
                     //if On est avec Le joueur Rouge
-                    if (i == 1 && !DepotRouge /*&& inPortRouge*/)
+                    if (i == 1 && !DepotRouge /*&& inPortRouge*/ && x==1 && y==1)
                     {
-                        MessageBox.Show("Trésor ramené à bon port !");
+                        MessageBox.Show("Trésor ramené à bon port (Rouge)!");
                         textBox12.Text = "Trésor déposé !";
                         JoueurRouge.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellerouge.jpg", UriKind.Relative));
                         textBox5.Text = facade.getNbTresors(i) + "/3";
@@ -294,9 +294,9 @@ namespace CanonNoir_Affichage
                         inPortRouge = false;
                     }
                     //if On est avec Le joueur Vert
-                    else if (i == 2 && !DepotVert /*&& inPortVert*/)
+                    else if (i == 2 && !DepotVert /*&& inPortVert*/ && x == 1 && y == 8)
                     {
-                        MessageBox.Show("Trésor ramené à bon port !");
+                        MessageBox.Show("Trésor ramené à bon port (Vert)!");
                         textBox12.Text = "Trésor déposé !";
                         JoueurVert.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravelleverte.jpg", UriKind.Relative));
                         textBox7.Text = facade.getNbTresors(i) + "/3";
@@ -305,9 +305,9 @@ namespace CanonNoir_Affichage
                         inPortVert = false;
                     }
                     //if On est avec Le joueur Jaune
-                    else if (i == 3 && !DepotJaune /*&& inPortJaune*/)
+                    else if (i == 3 && !DepotJaune /*&& inPortJaune*/ && x == 11 && y == 1)
                     {
-                        MessageBox.Show("Trésor ramené à bon port !");
+                        MessageBox.Show("Trésor ramené à bon port (Jaune)!");
                         textBox12.Text = "Trésor déposé !";
                         JoueurJaune.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellejaune.jpg", UriKind.Relative));
                         textBox9.Text = facade.getNbTresors(i) + "/3";
@@ -316,9 +316,9 @@ namespace CanonNoir_Affichage
                         inPortJaune = false;
                     }
                     //if On est avec Le joueur Bleu
-                    else if (i == 4 && !DepotBleu /*&& inPortBleu*/)
+                    else if (i == 4 && !DepotBleu /*&& inPortBleu*/ && x == 8 && y == 11)
                     {
-                        MessageBox.Show("Trésor ramené à bon port !");
+                        MessageBox.Show("Trésor ramené à bon port (Bleu)!");
                         textBox12.Text = "Trésor déposé !";
                         JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleue.jpg", UriKind.Relative));
                         textBox11.Text = facade.getNbTresors(i) + "/3";
