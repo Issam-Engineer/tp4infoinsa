@@ -63,7 +63,11 @@ void MoteurJeu::modifNbJoueurs(int n){
 }
 
 Joueur* MoteurJeu::getJoueurInd(int i){
-	return &tabJoueurs[i];
+	if(i<this->nbJoueurs){
+		return &tabJoueurs[i];
+	}else{
+		cout<<"Erreur : acces à une donnee qui n'est pas dans le tableau de joueurs"<<endl;
+	}
 }
 
 Plateau* MoteurJeu::getPlateau() const {

@@ -41,51 +41,51 @@ class Case
 		*/
 		virtual int getEtat();
 		/**
-		*\fn int getTypeCase()
+		*\fn virtual int getTypeCase()
 		*\brief Function which gives the type of the square
 		*\return char the type of the square
 		*/
 		virtual char getTypeCase()=0;
 		/**
-		*\fn int getHauteur()
+		*\fn virtual int getHauteur()
 		*\brief Function which gives the height
 		*\return int the height of the square
 		*/
 		virtual int getHauteur();
 		/**
-		*\fn bool estAccessible()
+		*\fn virtual bool estAccessible()
 		*\brief Function which indicates if it's an accessible square
 		*\return bool true if the square is accessible
  		*/
 		virtual bool estAccessible();
-			/**
-		*\fn bool setAccessible()
-		*\brief Function which make the case accessible
+		/**
+		*\fn virtual bool setAccessible()
+		*\brief Function which makes the case accessible
  		*/
 		virtual	void setAccessible(bool b);
 		/**
-		*\fn pair<int,int> getPosition()
+		*\fn virtual pair<int,int> getPosition()
 		*\brief function which gives the square position 
 		*\return pair<int,int> the square position
 		*/
 		virtual pair<int,int> getPosition();
 
 		/**
-		*\fn int getCouleur()
+		*\fn virtual int getCouleur()
 		*\brief use for CasePort 
 		*\return 0 by default
 		*/
 		virtual int getCouleur();
 		
 		/**
-		*\fn int getNbTresors()
+		*\fn virtual int getNbTresors()
 		*\brief use for CasePort 
 		*\return 0 by default
 		*/
 		virtual int getNbTresors();
 
 		/**
-		*\fn int setNbTresors()
+		*\fn virtual int setNbTresors()
 		*\brief use for CasePort, to change the number of treasures
 		*/
 		virtual void setNbTresors();
