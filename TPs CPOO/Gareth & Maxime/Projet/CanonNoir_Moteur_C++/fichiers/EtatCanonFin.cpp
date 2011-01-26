@@ -36,7 +36,8 @@ void EtatCanonFin::execute(){
 					res = motor->getJoueurInd(i)->getBateauPos(make_pair(motor->getFacade()->getX(),motor->getFacade()->getY()));
 				}
 			}
-			if(res->type() == 'C'){
+
+			/*if(res->type() == 'C'){
 				if(res->getATresor() == true){
 				res = new Fregate();
 				res->setATresor(true);
@@ -49,7 +50,8 @@ void EtatCanonFin::execute(){
 				res = new Radeau();
 				res->setATresor(false);
 				motor->getFacade()->setTypeBat(res->getPort()->getCouleur(),1);
-			}
+			}*/
+
 
 		}else{// NB JOUEURS != 2
 
