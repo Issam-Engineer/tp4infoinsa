@@ -1,9 +1,9 @@
 /**
-* \file Radeau.cpp
-* \brief file which contains functions and code of the Radeau class
-* \author Havez Maxime
-* \author Thiveux Gareth
-* \version 1.0
+*\file Radeau.cpp
+*\brief File which contains functions and code of the Radeau class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #include "Radeau.h"

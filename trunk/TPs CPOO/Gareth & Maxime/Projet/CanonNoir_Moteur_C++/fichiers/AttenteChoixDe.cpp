@@ -1,5 +1,5 @@
 /**
-*\file  AttenteChoixDe.h
+*\file AttenteChoixDe.cpp
 *\brief File containing the functionalities and the attributes of the AttenteChoixDe class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX

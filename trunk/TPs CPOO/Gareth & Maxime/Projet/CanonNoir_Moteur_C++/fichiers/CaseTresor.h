@@ -1,9 +1,9 @@
 ﻿/**
-* \file  CaseTresor.h
-* \brief File containing the functionalities and the attributes of the CaseTresor class
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\file  CaseTresor.h
+*\brief File containing the functionalities and the attributes of the CaseTresor class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef CASETRESOR_H

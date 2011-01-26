@@ -1,9 +1,9 @@
 /**
-* \file Fregate.cpp
-* \brief file which contains functions and code of the Fregate class
-* \author Havez Maxime
-* \author Thiveux Gareth
-* \version 1.0
+*\file Fregate.cpp
+*\brief File which contains functions and code of the Fregate class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #include "Fregate.h"

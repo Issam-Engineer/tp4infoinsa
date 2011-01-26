@@ -1,9 +1,9 @@
 ﻿/**
-* \file  EtatCanonFin.h
-* \brief file which contains function declarations and attributes of the EtatCanonFin class
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\file EtatCanonFin.h
+*\brief file which contains function declarations and attributes of the EtatCanonFin class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef ETATCANONFIN_H

@@ -1,9 +1,9 @@
 ﻿/**
-* \file  EtatTir.h
-* \brief file which contains function declarations and attributes of the EtatTir class
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\file EtatTir.h
+*\brief file which contains function declarations and attributes of the EtatTir class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef ETATTIR_H

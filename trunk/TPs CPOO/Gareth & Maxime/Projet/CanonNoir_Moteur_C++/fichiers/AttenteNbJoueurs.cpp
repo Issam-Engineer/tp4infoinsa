@@ -1,5 +1,5 @@
 /**
-*\file  AttenteNbJoueurs.h
+*\file AttenteNbJoueurs.cpp
 *\brief File which contains the functions and code of the AttenteNbJoueurs class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX

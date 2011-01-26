@@ -1,5 +1,5 @@
 ﻿/**
-*\file  Dé.h
+*\file Dé.h
 *\brief File which contains the attributes and function declarations of the Dé class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX

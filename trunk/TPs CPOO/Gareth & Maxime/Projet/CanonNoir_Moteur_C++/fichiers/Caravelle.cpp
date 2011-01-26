@@ -1,9 +1,9 @@
 /**
-* \file Caravelle.cpp
-* \brief file which contains function and code of the Caravelle class
-* \author Havez Maxime
-* \author Thiveux Gareth
-* \version 1.0
+*\file Caravelle.cpp
+*\brief File which contains function and code of the Caravelle class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #include "Caravelle.h"

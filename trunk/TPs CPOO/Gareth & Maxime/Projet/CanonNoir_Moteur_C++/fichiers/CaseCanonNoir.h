@@ -1,9 +1,9 @@
 ﻿/**
-* \file  CaseCanonNoir.h
-* \brief File containing the functionalities and the attributes of the CaseCanonNoir class
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\file  CaseCanonNoir.h
+*\brief File containing the functionalities and the attributes of the CaseCanonNoir class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef CASECANONNOIR_H

@@ -1,5 +1,5 @@
 ﻿/**
-*\file  AttenteNbJoueurs.h
+*\file AttenteNbJoueurs.h
 *\brief File containing the functionalities and the attributes of the AttenteNbJoueurs class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX

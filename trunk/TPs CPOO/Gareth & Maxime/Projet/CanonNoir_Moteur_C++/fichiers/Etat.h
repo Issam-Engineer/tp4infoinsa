@@ -1,9 +1,9 @@
 /**
-* \file  Etat.h
+*\file Etat.h
 *\brief File which contains the function declarations of the Etat interface
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef ETAT_H

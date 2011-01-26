@@ -25,6 +25,10 @@ namespace CanonNoir_Affichage
         bool DepotVert = false;
         bool DepotJaune = false;
         bool DepotBleu = false;
+        bool inPortRouge = false;
+        bool inPortVert = false;
+        bool inPortJaune = false;
+        bool inPortBleu = false;
 
         public MainWindow(WrapperFacade f)
         {
@@ -83,7 +87,7 @@ namespace CanonNoir_Affichage
         {
             Point p = e.GetPosition(Plateau);
 
-            
+
             //Gérer l'affichage par case
             int x = (int)(((int)p.X * 11) / ((int)Plateau.Width) +1);
             int y = (int)(((int)p.Y * 8) / ((int)Plateau.Height) +1);
@@ -91,6 +95,26 @@ namespace CanonNoir_Affichage
             facade.setY(y);
             //int CoulJC = facade.getCoulBateauCourant(); // récuperer AVANT le execute !!!
 
+            if (facade.getEtatCourant() == 8)
+            {
+                int coulB = facade.getCoulBateauCourant();
+                if (coulB == 1)
+                {
+                    inPortRouge = true;
+                }
+                else if (coulB == 2)
+                {
+                    inPortVert = true;
+                }
+                else if (coulB == 3)
+                {
+                    inPortJaune = true;
+                }
+                else if (coulB == 3)
+                {
+                    inPortBleu = true;
+                }
+            }
 
             //if (facade.getChoixBateau() == true)
             if (facade.getEtatCourant() == 4)
@@ -144,7 +168,7 @@ namespace CanonNoir_Affichage
             }
             else if(facade.getEtatCourant() == 11)
             {
-                MessageBox.Show("ATTAQUE !!!! (choix d'un bateau)");
+                //MessageBox.Show("ATTAQUE !!!! (choix d'un bateau)");
                 textBox12.Text = "ATTAQUE !!!! (choix d'un bateau)";
                 facade.execute(); 
                 FenetreTir fT = new FenetreTir(facade);
@@ -226,7 +250,7 @@ namespace CanonNoir_Affichage
                 //Si on atteint une case Canon Noir !
                 if (facade.getEtatCourant() == 11)
                 {
-                    //MessageBox.Show("Choisis Le bateau à attaquer !");
+                    MessageBox.Show("Choisis Le bateau à attaquer !");
                     textBox12.Text = "Choisis Le bateau à attaquer !";
                     //Sauver la position de l'attaquant
                     facade.SaveXAttaquant();
@@ -234,72 +258,79 @@ namespace CanonNoir_Affichage
                     facade.setAccessibleAll(false);
                 }
 
-                    for (int i = 1; i <= 4; i++)
-                    {
-                        if (facade.getBonPort(i)/*facade.getEtatCourant() == 8*/)
-                        {
-                            //int coulB = facade.getCoulBateauCourant();
-                            //int nbtresors = facade.getNbTresorsPort();
-                            int type = facade.getTypeBat(i);
-                            String types = "";
-                            if (type == 3)
-                            {
-                                types = "Caravelle";
-                            }
-                            else if (type == 2)
-                            {
-                                types = "Frégate";
-                            }
-                            else if (type == 1)
-                            {
-                                types = "Radeau";
-                            }
-                            //if On est avec Le joueur Rouge
-                            if (i == 1 && !DepotRouge)
-                            {
-                                MessageBox.Show("Trésor ramené à bon port !");
-                                textBox12.Text = "Trésor déposé !";
-                                JoueurRouge.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellerouge.jpg", UriKind.Relative));
-                                textBox5.Text = facade.getNbTresors(i) + "/3";
-                                textBox1.Text = "Type : " + types + " - Pas de trésor à bord";
-                                DepotRouge = true;
-                            }
-                            //if On est avec Le joueur Vert
-                            else if (i == 2 && !DepotVert)
-                            {
-                                MessageBox.Show("Trésor ramené à bon port !");
-                                textBox12.Text = "Trésor déposé !";
-                                JoueurVert.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravelleverte.jpg", UriKind.Relative));
-                                textBox7.Text = facade.getNbTresors(i) + "/3";
-                                textBox6.Text = "Type : " + types + " - Pas de trésor à bord";
-                                DepotVert = true;
-                            }
-                            //if On est avec Le joueur Jaune
-                            else if (i == 3 && !DepotJaune)
-                            {
-                                MessageBox.Show("Trésor ramené à bon port !");
-                                textBox12.Text = "Trésor déposé !";
-                                JoueurJaune.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellejaune.jpg", UriKind.Relative));
-                                textBox9.Text = facade.getNbTresors(i) + "/3";
-                                textBox8.Text = "Type : " + types + " - Pas de trésor à bord";
-                                DepotJaune = true;
-                            }
-                            //if On est avec Le joueur Bleu
-                            else if (i == 4 && !DepotBleu)
-                            {
-                                MessageBox.Show("Trésor ramené à bon port !");
-                                textBox12.Text = "Trésor déposé !";
-                                JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleue.jpg", UriKind.Relative));
-                                textBox11.Text = facade.getNbTresors(i) + "/3";
-                                textBox10.Text = "Type : " + types + " - Pas de trésor à bord";
-                                DepotBleu = true;
-                            }
-                            facade.setBonPort(false);
-                            
-                        }
-                }
-
             }
+
+            for (int i = 1; i <= 4; i++)
+            {
+                if (facade.getBonPort(i)/*facade.getEtatCourant() == 8*/)
+                {
+                    //MessageBox.Show("Trésor ramené à bon port !");
+                    //textBox12.Text = "Trésor déposé !";
+                    //int coulB = facade.getCoulBateauCourant();
+                    //int nbtresors = facade.getNbTresorsPort();
+                    int type = facade.getTypeBat(i);
+                    String types = "";
+                    if (type == 3)
+                    {
+                        types = "Caravelle";
+                    }
+                    else if (type == 2)
+                    {
+                        types = "Frégate";
+                    }
+                    else if (type == 1)
+                    {
+                        types = "Radeau";
+                    }
+                    //if On est avec Le joueur Rouge
+                    if (i == 1 && !DepotRouge /*&& inPortRouge*/)
+                    {
+                        MessageBox.Show("Trésor ramené à bon port !");
+                        textBox12.Text = "Trésor déposé !";
+                        JoueurRouge.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellerouge.jpg", UriKind.Relative));
+                        textBox5.Text = facade.getNbTresors(i) + "/3";
+                        textBox1.Text = "Type : " + types + " - Pas de trésor à bord";
+                        DepotRouge = true;
+                        inPortRouge = false;
+                    }
+                    //if On est avec Le joueur Vert
+                    else if (i == 2 && !DepotVert /*&& inPortVert*/)
+                    {
+                        MessageBox.Show("Trésor ramené à bon port !");
+                        textBox12.Text = "Trésor déposé !";
+                        JoueurVert.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravelleverte.jpg", UriKind.Relative));
+                        textBox7.Text = facade.getNbTresors(i) + "/3";
+                        textBox6.Text = "Type : " + types + " - Pas de trésor à bord";
+                        DepotVert = true;
+                        inPortVert = false;
+                    }
+                    //if On est avec Le joueur Jaune
+                    else if (i == 3 && !DepotJaune /*&& inPortJaune*/)
+                    {
+                        MessageBox.Show("Trésor ramené à bon port !");
+                        textBox12.Text = "Trésor déposé !";
+                        JoueurJaune.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellejaune.jpg", UriKind.Relative));
+                        textBox9.Text = facade.getNbTresors(i) + "/3";
+                        textBox8.Text = "Type : " + types + " - Pas de trésor à bord";
+                        DepotJaune = true;
+                        inPortJaune = false;
+                    }
+                    //if On est avec Le joueur Bleu
+                    else if (i == 4 && !DepotBleu /*&& inPortBleu*/)
+                    {
+                        MessageBox.Show("Trésor ramené à bon port !");
+                        textBox12.Text = "Trésor déposé !";
+                        JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleue.jpg", UriKind.Relative));
+                        textBox11.Text = facade.getNbTresors(i) + "/3";
+                        textBox10.Text = "Type : " + types + " - Pas de trésor à bord";
+                        DepotBleu = true;
+                        inPortBleu = false;
+                    }
+                    facade.setBonPort(false);
+
+                }
+            }
+
             //for(int i=1; i<=4; i++){
             if (/*facade.getATresor(i)*/facade.getEtatCourant() == 7) { 
                 int coulB = facade.getCoulBateauCourant();

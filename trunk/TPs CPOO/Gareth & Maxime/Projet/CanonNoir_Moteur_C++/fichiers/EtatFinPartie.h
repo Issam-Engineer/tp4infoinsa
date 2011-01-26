@@ -1,5 +1,5 @@
 ﻿/**
-*\file  EtatFinPartie.h
+*\file EtatFinPartie.h
 *\brief file which contains function declarations and attributes of the EtatFinPartie class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX

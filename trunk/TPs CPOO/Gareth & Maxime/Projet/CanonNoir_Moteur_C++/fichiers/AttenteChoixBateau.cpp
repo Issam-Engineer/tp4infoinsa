@@ -1,5 +1,5 @@
 /**
-*\file  AttenteChoixBateau.h
+*\file AttenteChoixBateau.cpp
 *\brief File containing the functionalities and the attributes of the AttenteChoixBateau class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX

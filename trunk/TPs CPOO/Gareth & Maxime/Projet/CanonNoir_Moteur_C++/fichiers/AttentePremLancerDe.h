@@ -1,9 +1,9 @@
 ﻿/**
-* \file  AttentePremLancerDe.h
-* \brief File containing the functionalities and the attributes of the AttentePremLancerDe class
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\file AttentePremLancerDe.h
+*\brief File containing the functionalities and the attributes of the AttentePremLancerDe class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef ATTENTEPREMLANCERDE_H

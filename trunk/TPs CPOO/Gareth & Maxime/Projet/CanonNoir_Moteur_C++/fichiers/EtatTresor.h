@@ -1,9 +1,9 @@
 ﻿/**
-* \file  EtatTresor.h
-* \brief file which contains function declarations and attributes of the EtatTresor class
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\file  EtatTresor.h
+*\brief file which contains function declarations and attributes of the EtatTresor class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef ETATTRESOR_H

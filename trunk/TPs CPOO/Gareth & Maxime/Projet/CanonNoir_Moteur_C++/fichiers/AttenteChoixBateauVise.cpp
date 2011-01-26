@@ -1,5 +1,5 @@
 /**
-*\file  AttenteChoixBateauVise.h
+*\file AttenteChoixBateauVise.cpp
 *\brief File containing the functionalities and the attributes of the AttenteChoixBateauVise class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX

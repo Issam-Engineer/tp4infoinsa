@@ -1,9 +1,9 @@
 /**
-* \file  AttenteChoixDe.h
-* \brief File containing the functionalities and the attributes of the AttenteChoixDe class
-* \author Maxime HAVEZ
-* \author Gareth THIVEUX
-* \version 1.0
+*\file AttenteChoixDe.h
+*\brief File containing the functionalities and the attributes of the AttenteChoixDe class
+*\author Maxime HAVEZ
+*\author Gareth THIVEUX
+*\version 1.0
 */
 
 #ifndef ATTENTECHDE
