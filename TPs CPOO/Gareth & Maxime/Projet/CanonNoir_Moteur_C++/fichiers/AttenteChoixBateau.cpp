@@ -38,6 +38,7 @@ void AttenteChoixBateau::execute(){
 		motor->getJoueurInd(motor->getJCourant())->setBateauCourant(motor->getJoueurInd(motor->getJCourant())->getBateauPos(posit));
 		motor->getFacade()->setCoulBateauCourant(motor->getJoueurInd(motor->getJCourant())->getBateauCourant()->getCouleur());
 		motor->modifCourant(PROPOSEDEPLACEMENT);
+		cout<<"Etat suivant : PROPOSEDEPLACEMENT"<<endl;
 		motor->getFacade()->setChoixBateau(false);
 		cout<<"Etape de sélection du bateau courant OK"<<endl;
 		cout<<"Couleur du bateau courant : "<<motor->getFacade()->getCoulBateauCourant()<<endl;

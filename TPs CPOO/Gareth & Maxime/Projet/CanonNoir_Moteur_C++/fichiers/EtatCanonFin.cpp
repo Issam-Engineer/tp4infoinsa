@@ -90,6 +90,6 @@ bool EtatCanonFin::tir(){
 double EtatCanonFin::z(double x){
 
 	double y;
-	y = -0.5 * 9.81 * pow(x,2) * (1+ pow(tan(angle*PI/180),2))/ pow((double)(puissance/10),2) + x * tan(angle*PI/180);
+	return y = -0.5 * 9.81 * pow(x,2) * (1+ pow(tan(angle*PI/180),2))/ pow((double)(puissance/10),2) + x * tan(angle*PI/180);
 	return y;
 }
