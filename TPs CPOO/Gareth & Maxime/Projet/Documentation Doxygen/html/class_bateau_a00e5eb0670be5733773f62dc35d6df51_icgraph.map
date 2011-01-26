@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_joueur.html#a5654719eb79051c72eee0a289441e5be" title="function which says if the player has a bateau at the given position" alt="" coords="191,97,332,126"/>
+<area shape="rect" id="node5" href="$class_etat_canon_fin.html#afb4786bc286bb0bc26cd46c413043069" title="Function which executes the current state." alt="" coords="648,97,803,126"/>
+<area shape="rect" id="node7" href="$class_attente_choix_bateau_vise.html#ab18e139996328ffb07bfbf988fe8fbba" title="Function which executes the current state." alt="" coords="381,45,600,74"/>
+<area shape="rect" id="node9" href="$class_joueur.html#a744f60bbbf845f96cf9d57234be0eb7b" title="acces function to the boat at the given position" alt="" coords="416,149,565,178"/>
+<area shape="rect" id="node12" href="$class_etat_depot.html#a590535cf485b98a301338e4e393f53c7" title="Function which executes the current state." alt="" coords="195,201,328,230"/>
+</map>

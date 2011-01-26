@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_etat_tir_8h.html" title="file which contains function declarations and attributes of the EtatTir class" alt="" coords="157,83,227,112"/>
+<area shape="rect" id="node33" href="$_plateau_8h.html" title="File which contains the attributes and function declarations of Plateau class." alt="" coords="416,83,493,112"/>
+<area shape="rect" id="node5" href="$_etat_8h.html" title="File which contains the function declarations of the Etat interface." alt="" coords="368,237,424,267"/>
+<area shape="rect" id="node11" href="$_moteur_jeu_8h.html" title="File which contains the attributes and function declarations of the MoteurJeu class." alt="" coords="280,315,373,344"/>
+<area shape="rect" id="node13" href="$_facade_8h.html" title="fichier qui regroupe les fonctionnalité et les attributs de la facade du moteur" alt="" coords="211,392,285,421"/>
+<area shape="rect" id="node19" href="$enum_8h.html" title="File which contains the enumaration corresponding to the different states (Etat)" alt="" coords="309,392,373,421"/>
+<area shape="rect" id="node21" href="$_d_xC3_xA9_8h.html" title="File which contains the attributes and function declarations of the Dé class." alt="" coords="139,392,187,421"/>
+<area shape="rect" id="node38" href="$_case_8h.html" title="File containing the functionalities and the attributes of the Case class." alt="" coords="365,160,427,189"/>
+<area shape="rect" id="node43" href="$enum_c_o_u_l_e_u_r_8h.html" title="File which contains the enumaration corresponding to the different colors." alt="" coords="451,160,576,189"/>
+</map>

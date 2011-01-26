@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_plateau.html#a1a346e3ae645072d870578e9713578b8" title="Function which says if the case at position p is accessible." alt="" coords="184,5,339,35"/>
+<area shape="rect" id="node7" href="$class_attente_deplacement.html#ac524e34a91424ec82247a95006158dd1" title="Function which executes the current state." alt="" coords="395,59,589,88"/>
+<area shape="rect" id="node9" href="$class_moteur_jeu.html#a66bfae2f68f0f1c3998d33aad61ed395" title="return a pointer on the Case at the position pair&lt;x,y&gt;" alt="" coords="192,109,331,139"/>
+<area shape="rect" id="node14" href="$class_plateau.html#a74b4f5cf49d1f4f549f786bca559062a" title="Function which makes the case accessible." alt="" coords="184,163,339,192"/>
+<area shape="rect" id="node18" href="$class_plateau.html#ae881545e521dd4a2e9e9cb802425d8d0" title="Function which put all the case inaccessible." alt="" coords="176,216,347,245"/>
+<area shape="rect" id="node22" href="$class_plateau.html#a042993d8abf6ef4f29fa96d7a7ae3de1" title="Function which make the case at position p inaccessible." alt="" coords="180,269,343,299"/>
+<area shape="rect" id="node5" href="$class_moteur_jeu.html#abedf613946c850423de823d11fa86064" title="Function which gives a boolean indicating the accessibility of the square based on the current square..." alt="" coords="407,5,577,35"/>
+<area shape="rect" id="node12" href="$class_propose_deplacement.html#a7f175e6c27e5b949159b6b6bb6c26242" title="Function which checks if there&#39;s no island on the path between the actuel square and the destinat..." alt="" coords="639,191,849,220"/>
+<area shape="rect" id="node16" href="$class_moteur_jeu.html#a827eeb8dcaf11c30f10bb31501b8ddb9" title="Function which make the case at the position p accessible." alt="" coords="407,163,577,192"/>
+<area shape="rect" id="node20" href="$class_moteur_jeu.html#ad98a200b000d8e12a04103f4ec26f3e8" title="put all case accesibility to boolean b" alt="" coords="399,216,585,245"/>
+<area shape="rect" id="node24" href="$class_moteur_jeu.html#a2f9cf18b743b36a404ae0cd2db1a8f16" title="Function which make the case at the position p inaccessible." alt="" coords="403,269,581,299"/>
+</map>

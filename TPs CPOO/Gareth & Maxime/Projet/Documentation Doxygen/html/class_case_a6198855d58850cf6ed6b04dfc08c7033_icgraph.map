@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_plateau.html#a1a346e3ae645072d870578e9713578b8" title="Function which says if the case at position p is accessible." alt="" coords="199,5,353,35"/>
+<area shape="rect" id="node5" href="$class_moteur_jeu.html#abedf613946c850423de823d11fa86064" title="Function which gives a boolean indicating the accessibility of the square based on the current square..." alt="" coords="404,5,575,35"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_propose_deplacement.html#a486d26c93fd8bdb108ac5b0bcbb99cfd" title="Function which executes the current state." alt="" coords="223,5,423,35"/>
+<area shape="rect" id="node5" href="$class_etat_tresor.html#a0b4e87ec6cf7715968c1bc9b75584e8e" title="Function which executes the current state." alt="" coords="255,59,391,88"/>
+<area shape="rect" id="node7" href="$class_etat_depot.html#a590535cf485b98a301338e4e393f53c7" title="Function which executes the current state." alt="" coords="256,112,389,141"/>
+<area shape="rect" id="node9" href="$class_etat_canon_fin.html#afb4786bc286bb0bc26cd46c413043069" title="Function which executes the current state." alt="" coords="245,165,400,195"/>
+<area shape="rect" id="node11" href="$class_duel.html#af5e8469a4f083d6fe9af8bfdbc8e1a46" title="function which execute the current state" alt="" coords="272,219,373,248"/>
+<area shape="rect" id="node13" href="$class_attente_prem_lancer_de.html#a3f4c31cf56fffe3bda17a9214166bd2f" title="Function which executes the current state." alt="" coords="221,272,424,301"/>
+<area shape="rect" id="node15" href="$class_attente_lancer_de.html#a4202ca4c6fa05bba3d65eb3f099893d5" title="Function which executes the current state." alt="" coords="236,325,409,355"/>
+<area shape="rect" id="node17" href="$class_attente_deplacement.html#ac524e34a91424ec82247a95006158dd1" title="Function which executes the current state." alt="" coords="225,379,420,408"/>
+<area shape="rect" id="node19" href="$class_attente_choix_bateau_vise.html#ab18e139996328ffb07bfbf988fe8fbba" title="Function which executes the current state." alt="" coords="213,432,432,461"/>
+<area shape="rect" id="node21" href="$class_attente_choix_bateau.html#a605cddd03d3c37ec5c7e48a71251998f" title="Function which executes the current state." alt="" coords="227,485,419,515"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_attente_deplacement_8h.html" title="File containing the functionalities and the attributes of the AttenteDeplacement class." alt="" coords="633,160,783,189"/>
+<area shape="rect" id="node31" href="$_joueur_8h.html" title="file which contains the attributes and function declarations of the Joueur class" alt="" coords="332,83,401,112"/>
+<area shape="rect" id="node49" href="$_plateau_8h.html" title="File which contains the attributes and function declarations of Plateau class." alt="" coords="513,237,591,267"/>
+<area shape="rect" id="node5" href="$_etat_8h.html" title="File which contains the function declarations of the Etat interface." alt="" coords="589,392,645,421"/>
+<area shape="rect" id="node11" href="$_moteur_jeu_8h.html" title="File which contains the attributes and function declarations of the MoteurJeu class." alt="" coords="648,469,741,499"/>
+<area shape="rect" id="node13" href="$_facade_8h.html" title="fichier qui regroupe les fonctionnalité et les attributs de la facade du moteur" alt="" coords="296,547,371,576"/>
+<area shape="rect" id="node19" href="$enum_8h.html" title="File which contains the enumaration corresponding to the different states (Etat)" alt="" coords="648,547,712,576"/>
+<area shape="rect" id="node21" href="$_d_xC3_xA9_8h.html" title="File which contains the attributes and function declarations of the Dé class." alt="" coords="736,547,784,576"/>
+<area shape="rect" id="node35" href="$_bateau_8h.html" title="File which contains the attributes and function declarations of the Bateau class." alt="" coords="224,160,299,189"/>
+<area shape="rect" id="node45" href="$_case_port_8h.html" title="File which contains the attributes and function declarations of the CasePort class." alt="" coords="324,237,409,267"/>
+<area shape="rect" id="node40" href="$_case_8h.html" title="File containing the functionalities and the attributes of the Case class." alt="" coords="332,315,393,344"/>
+<area shape="rect" id="node55" href="$enum_c_o_u_l_e_u_r_8h.html" title="File which contains the enumaration corresponding to the different colors." alt="" coords="589,315,715,344"/>
+</map>

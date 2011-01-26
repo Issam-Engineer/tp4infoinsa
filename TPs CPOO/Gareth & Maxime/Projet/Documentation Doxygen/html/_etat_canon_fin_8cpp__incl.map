@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_etat_canon_fin_8h.html" title="file which contains function declarations and attributes of the EtatCanonFin class" alt="" coords="179,83,291,112"/>
+<area shape="rect" id="node37" href="$_joueur_8h.html" title="file which contains the attributes and function declarations of the Joueur class" alt="" coords="596,83,665,112"/>
+<area shape="rect" id="node55" href="$_fregate_8h.html" title="file which contains the attributes and function declarations of the Fregate class" alt="" coords="393,83,471,112"/>
+<area shape="rect" id="node58" href="$_radeau_8h.html" title="file which contains the attributes and function declarations of the Radeau class" alt="" coords="495,83,572,112"/>
+<area shape="rect" id="node5" href="$_etat_tir_8h.html" title="file which contains function declarations and attributes of the EtatTir class" alt="" coords="200,160,269,189"/>
+<area shape="rect" id="node7" href="$_etat_8h.html" title="File which contains the function declarations of the Etat interface." alt="" coords="509,392,565,421"/>
+<area shape="rect" id="node13" href="$_moteur_jeu_8h.html" title="File which contains the attributes and function declarations of the MoteurJeu class." alt="" coords="343,469,436,499"/>
+<area shape="rect" id="node15" href="$_facade_8h.html" title="fichier qui regroupe les fonctionnalité et les attributs de la facade du moteur" alt="" coords="352,547,427,576"/>
+<area shape="rect" id="node21" href="$enum_8h.html" title="File which contains the enumaration corresponding to the different states (Etat)" alt="" coords="451,547,515,576"/>
+<area shape="rect" id="node23" href="$_d_xC3_xA9_8h.html" title="File which contains the attributes and function declarations of the Dé class." alt="" coords="99,547,147,576"/>
+<area shape="rect" id="node41" href="$_bateau_8h.html" title="File which contains the attributes and function declarations of the Bateau class." alt="" coords="496,160,571,189"/>
+<area shape="rect" id="node51" href="$_case_port_8h.html" title="File which contains the attributes and function declarations of the CasePort class." alt="" coords="571,237,656,267"/>
+<area shape="rect" id="node46" href="$_case_8h.html" title="File containing the functionalities and the attributes of the Case class." alt="" coords="572,315,633,344"/>
+</map>

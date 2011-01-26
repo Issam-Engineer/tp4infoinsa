@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_moteur_jeu_8h.html" title="File which contains the attributes and function declarations of the MoteurJeu class." alt="" coords="1721,83,1814,112"/>
+<area shape="rect" id="node38" href="$_facade_8cpp.html" title="File which contains the functions and code of the Facade class." alt="" coords="2610,547,2701,576"/>
+<area shape="rect" id="node147" href="$m_wrapper_8h.html" title="File which contains the functions and code of the WrapperFacade class used by the interface..." alt="" coords="2743,83,2837,112"/>
+<area shape="rect" id="node5" href="$_etat_8h.html" title="File which contains the function declarations of the Etat interface." alt="" coords="1025,160,1081,189"/>
+<area shape="rect" id="node11" href="$_moteur_jeu_8cpp.html" title="File which contains the functions and code of the MoteurJeu class." alt="" coords="762,547,869,576"/>
+<area shape="rect" id="node40" href="$_main_8cpp_source.html" title="Main.cpp" alt="" coords="2202,547,2277,576"/>
+<area shape="rect" id="node95" href="$_attente_prem_lancer_de_8h.html" title="File containing the functionalities and the attributes of the AttentePremLancerDe class..." alt="" coords="210,469,370,499"/>
+<area shape="rect" id="node132" href="$_etat_fin_partie_8h.html" title="file which contains function declarations and attributes of the EtatFinPartie class" alt="" coords="1983,392,2093,421"/>
+<area shape="rect" id="node7" href="$_attente_choix_bateau_8h.html" title="File containing the functionalities and the attributes of the AttenteChoixBateau class." alt="" coords="1013,469,1162,499"/>
+<area shape="rect" id="node13" href="$_case_8h.html" title="File containing the functionalities and the attributes of the Case class." alt="" coords="1925,237,1986,267"/>
+<area shape="rect" id="node78" href="$_attente_choix_bateau_vise_8h.html" title="File containing the functionalities and the attributes of the AttenteChoixBateauVise class..." alt="" coords="1578,469,1751,499"/>
+<area shape="rect" id="node82" href="$_attente_choix_de_8h.html" title="File containing the functionalities and the attributes of the AttenteChoixDe class." alt="" coords="758,237,881,267"/>
+<area shape="rect" id="node87" href="$_attente_deplacement_8h.html" title="File containing the functionalities and the attributes of the AttenteDeplacement class." alt="" coords="1186,469,1335,499"/>
+<area shape="rect" id="node91" href="$_attente_initialisation_8h.html" title="File containing the functionalities and the attributes of the AttenteInitialisation class..." alt="" coords="45,469,186,499"/>
+<area shape="rect" id="node100" href="$_attente_lancer_de_8h.html" title="File containing the functionalities and the attributes of the AttenteLancerDe class." alt="" coords="807,469,938,499"/>
+<area shape="rect" id="node104" href="$_attente_nb_joueurs_8h.html" title="File which contains the functions and code of the AttenteNbJoueurs class." alt="" coords="495,469,631,499"/>
+<area shape="rect" id="node110" href="$_case_canon_noir_8h.html" title="File containing the functionalities and the attributes of the CaseCanonNoir class." alt="" coords="1607,237,1730,267"/>
+<area shape="rect" id="node115" href="$_duel_8h.html" title="File containing the functionalities and the attributes of the Duel class." alt="" coords="1941,469,1999,499"/>
+<area shape="rect" id="node119" href="$_etat_8cpp.html" title="File which contains the functions of the Etat interface." alt="" coords="1217,237,1286,267"/>
+<area shape="rect" id="node121" href="$_etat_tir_8h.html" title="file which contains function declarations and attributes of the EtatTir class" alt="" coords="606,315,675,344"/>
+<area shape="rect" id="node128" href="$_etat_depot_8h.html" title="file which contains function declarations and attributes of the EtatDepot class" alt="" coords="1775,469,1866,499"/>
+<area shape="rect" id="node136" href="$_etat_tresor_8h.html" title="file which contains function declarations and attributes of the EtatTresor class" alt="" coords="1461,469,1554,499"/>
+<area shape="rect" id="node9" href="$_attente_choix_bateau_8cpp_source.html" title="AttenteChoixBateau.cpp" alt="" coords="1258,547,1421,576"/>
+<area shape="rect" id="node15" href="$_bateau_8h.html" title="File which contains the attributes and function declarations of the Bateau class." alt="" coords="2333,392,2407,421"/>
+<area shape="rect" id="node52" href="$_case_port_8h.html" title="File which contains the attributes and function declarations of the CasePort class." alt="" coords="2197,315,2282,344"/>
+<area shape="rect" id="node58" href="$_plateau_8h.html" title="File which contains the attributes and function declarations of Plateau class." alt="" coords="1602,315,1679,344"/>
+<area shape="rect" id="node67" href="$_case_8cpp.html" title="File which contains the functions and code of the Case class." alt="" coords="1855,315,1933,344"/>
+<area shape="rect" id="node69" href="$_case_navigable_8h.html" title="File containing the functionalities and the attributes of the CaseNavigable class." alt="" coords="1957,315,2074,344"/>
+<area shape="rect" id="node72" href="$_case_ile_8h.html" title="File containing the functionalities and the attributes of the CaseIle class." alt="" coords="2098,315,2173,344"/>
+<area shape="rect" id="node75" href="$_propose_deplacement_8h.html" title="File containing the functionalities and the attributes of the ProposeDeplacement class." alt="" coords="1217,392,1374,421"/>
+<area shape="rect" id="node17" href="$_joueur_8h.html" title="file which contains the attributes and function declarations of the Joueur class" alt="" coords="2023,469,2093,499"/>
+<area shape="rect" id="node30" href="$_duel_8cpp.html" title="File which contains the functions and code of theDuel class." alt="" coords="2106,547,2178,576"/>
+<area shape="rect" id="node43" href="$_bateau_8cpp.html" title="File which contains the functions and code of the Bateau class." alt="" coords="2429,469,2517,499"/>
+<area shape="rect" id="node45" href="$_caravelle_8h.html" title="File which contains the attributes and function declarations of the Caravelle class." alt="" coords="2319,469,2405,499"/>
+<area shape="rect" id="node50" href="$_fregate_8h.html" title="file which contains the attributes and function declarations of the Fregate class" alt="" coords="2218,469,2295,499"/>
+<area shape="rect" id="node20" href="$_attente_choix_bateau_vise_8cpp_source.html" title="AttenteChoixBateauVise.cpp" alt="" coords="1765,547,1954,576"/>
+<area shape="rect" id="node22" href="$_attente_deplacement_8cpp.html" title="File containing the functionalities and the attributes of the AttenteDeplacement class." alt="" coords="1445,547,1610,576"/>
+<area shape="rect" id="node24" href="$_attente_initialisation_8cpp.html" title="File which contains the functions and code of the AttenteInitialisation class." alt="" coords="259,547,417,576"/>
+<area shape="rect" id="node26" href="$_attente_lancer_de_8cpp.html" title="File which contains the functions and code of the AttenteLancerDe class." alt="" coords="1090,547,1234,576"/>
+<area shape="rect" id="node28" href="$_attente_prem_lancer_de_8cpp.html" title="File which contains the functions and code of the AttentePremLancerDe class." alt="" coords="893,547,1066,576"/>
+<area shape="rect" id="node32" href="$_etat_depot_8cpp.html" title="File which contains the functions and code of the EtatDepot class." alt="" coords="1978,547,2082,576"/>
+<area shape="rect" id="node34" href="$_etat_fin_partie_8cpp.html" title="File which contains the functions and code of the EtatFinPartie class." alt="" coords="2301,547,2423,576"/>
+<area shape="rect" id="node36" href="$_etat_tresor_8cpp.html" title="File which contains the functions and code of the EtatTresor class." alt="" coords="1634,547,1741,576"/>
+<area shape="rect" id="node56" href="$_plateau_8cpp.html" title="File which contains the functions and code of the Plateau class." alt="" coords="2117,392,2207,421"/>
+<area shape="rect" id="node62" href="$_etat_tir_8cpp.html" title="File which contains the functions and code of the EtatTir class." alt="" coords="721,392,806,421"/>
+<area shape="rect" id="node84" href="$_attente_choix_de_8cpp_source.html" title="AttenteChoixDe.cpp" alt="" coords="750,315,889,344"/>
+<area shape="rect" id="node106" href="$_attente_nb_joueurs_8cpp_source.html" title="AttenteNbJoueurs.cpp" alt="" coords="489,547,638,576"/>
+<area shape="rect" id="node112" href="$_case_canon_noir_8cpp.html" title="file which contains functions and code of the CaseCanonNoir class" alt="" coords="1391,315,1527,344"/>
+<area shape="rect" id="node123" href="$_etat_canon_fin_8h.html" title="file which contains function declarations and attributes of the EtatCanonFin class" alt="" coords="585,392,697,421"/>
+</map>

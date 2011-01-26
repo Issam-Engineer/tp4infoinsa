@@ -1,0 +1,172 @@
+\hypertarget{class_etat_canon_fin}{
+\section{EtatCanonFin Class Reference}
+\label{class_etat_canon_fin}\index{EtatCanonFin@{EtatCanonFin}}
+}
+
+
+Inheritance diagram for EtatCanonFin:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{class_etat_canon_fin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for EtatCanonFin:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_etat_canon_fin__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_etat_canon_fin_a93c11d6a5f7d469647cd7adbd8f0a83e}{
+\hyperlink{class_etat_canon_fin_a93c11d6a5f7d469647cd7adbd8f0a83e}{EtatCanonFin} (\hyperlink{class_moteur_jeu}{MoteurJeu} $\ast$m)}
+\label{class_etat_canon_fin_a93c11d6a5f7d469647cd7adbd8f0a83e}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_etat_canon_fin_afb4786bc286bb0bc26cd46c413043069}{
+void \hyperlink{class_etat_canon_fin_afb4786bc286bb0bc26cd46c413043069}{execute} ()}
+\label{class_etat_canon_fin_afb4786bc286bb0bc26cd46c413043069}
+
+\begin{DoxyCompactList}\small\item\em Function which executes the current state. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{class_etat_canon_fin_aac7f457072f1d159a897313390926a2d}{init} (int p, int a)
+\begin{DoxyCompactList}\small\item\em Function which initiates the shoot. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_etat_canon_fin_ac518ead16dbc90bc20aa44dc7126c6d6}{tir} ()
+\begin{DoxyCompactList}\small\item\em function which calculates the tir \item\end{DoxyCompactList}\item 
+double \hyperlink{class_etat_canon_fin_acb13afa9fd5ff6371060565844fbee4d}{z} (double x)
+\begin{DoxyCompactList}\small\item\em return the result of a parabolic function \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file EtatCanonFin.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_etat_canon_fin_aac7f457072f1d159a897313390926a2d}{
+\index{EtatCanonFin@{EtatCanonFin}!init@{init}}
+\index{init@{init}!EtatCanonFin@{EtatCanonFin}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void EtatCanonFin::init (
+\begin{DoxyParamCaption}
+\item[{int}]{p, }
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_etat_canon_fin_aac7f457072f1d159a897313390926a2d}
+
+
+Function which initiates the shoot. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em int} & p : the power \\
+\hline
+\mbox{\tt in}  & {\em int} & a : the angle \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file EtatCanonFin.h.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=354pt]{class_etat_canon_fin_aac7f457072f1d159a897313390926a2d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_etat_canon_fin_ac518ead16dbc90bc20aa44dc7126c6d6}{
+\index{EtatCanonFin@{EtatCanonFin}!tir@{tir}}
+\index{tir@{tir}!EtatCanonFin@{EtatCanonFin}}
+\subsubsection[{tir}]{\setlength{\rightskip}{0pt plus 5cm}bool EtatCanonFin::tir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_etat_canon_fin_ac518ead16dbc90bc20aa44dc7126c6d6}
+
+
+function which calculates the tir 
+
+\begin{DoxyReturn}{Returns}
+a bool true if the bateau is touched 
+\end{DoxyReturn}
+
+
+Definition at line 106 of file EtatCanonFin.cpp.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_etat_canon_fin_ac518ead16dbc90bc20aa44dc7126c6d6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_etat_canon_fin_ac518ead16dbc90bc20aa44dc7126c6d6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_etat_canon_fin_acb13afa9fd5ff6371060565844fbee4d}{
+\index{EtatCanonFin@{EtatCanonFin}!z@{z}}
+\index{z@{z}!EtatCanonFin@{EtatCanonFin}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}double EtatCanonFin::z (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}
+\label{class_etat_canon_fin_acb13afa9fd5ff6371060565844fbee4d}
+
+
+return the result of a parabolic function 
+
+\begin{DoxyReturn}{Returns}
+y a double result of z function 
+\end{DoxyReturn}
+
+
+Definition at line 128 of file EtatCanonFin.cpp.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_etat_canon_fin_acb13afa9fd5ff6371060565844fbee4d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_etat_canon_fin_8h}{EtatCanonFin.h}\item 
+\hyperlink{_etat_canon_fin_8cpp}{EtatCanonFin.cpp}\end{DoxyCompactItemize}

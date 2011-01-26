@@ -1,0 +1,519 @@
+\hypertarget{class_moteur_jeu}{
+\section{MoteurJeu Class Reference}
+\label{class_moteur_jeu}\index{MoteurJeu@{MoteurJeu}}
+}
+
+
+Collaboration diagram for MoteurJeu:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_moteur_jeu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_moteur_jeu_a1b3da5ce343d467b8f31c373a608a5ab}{execute} ()
+\begin{DoxyCompactList}\small\item\em Function which executes the current state. \item\end{DoxyCompactList}\item 
+\hyperlink{class_moteur_jeu_a0537d1dad0601669f09a7f8fd7d6db9c}{MoteurJeu} (Facade $\ast$f)
+\begin{DoxyCompactList}\small\item\em default constructor of \hyperlink{class_moteur_jeu}{MoteurJeu} \item\end{DoxyCompactList}\item 
+\hypertarget{class_moteur_jeu_a9651e5302c48ec31820ec3664a0d1eff}{
+\hyperlink{class_moteur_jeu_a9651e5302c48ec31820ec3664a0d1eff}{$\sim$MoteurJeu} ()}
+\label{class_moteur_jeu_a9651e5302c48ec31820ec3664a0d1eff}
+
+\begin{DoxyCompactList}\small\item\em destructor \item\end{DoxyCompactList}\item 
+Facade $\ast$ \hyperlink{class_moteur_jeu_aa123f6cbd22f11bd3e1039945335b21f}{getFacade} () const 
+\begin{DoxyCompactList}\small\item\em acces function for the facade \item\end{DoxyCompactList}\item 
+\hypertarget{class_moteur_jeu_a484018f5752b543246199f46993bfb32}{
+int \hyperlink{class_moteur_jeu_a484018f5752b543246199f46993bfb32}{getNbJoueurs} () const }
+\label{class_moteur_jeu_a484018f5752b543246199f46993bfb32}
+
+\begin{DoxyCompactList}\small\item\em function which give nbjoueurs  int nbjoueurs \item\end{DoxyCompactList}\item 
+\hyperlink{class_plateau}{Plateau} $\ast$ \hyperlink{class_moteur_jeu_a3bbef363f379f03269de384b8d0af4c2}{getPlateau} () const 
+\begin{DoxyCompactList}\small\item\em acces function for the \hyperlink{class_plateau}{Plateau} \item\end{DoxyCompactList}\item 
+\hyperlink{class_de}{De} $\ast$ \hyperlink{class_moteur_jeu_ab6f1f07047e2da443f02d1e3a4fb3bd3}{getDe} ()
+\begin{DoxyCompactList}\small\item\em acces function \item\end{DoxyCompactList}\item 
+\hypertarget{class_moteur_jeu_a73fece04f5bf1e5d794013df0b18a15a}{
+void \hyperlink{class_moteur_jeu_a73fece04f5bf1e5d794013df0b18a15a}{modifNbJoueurs} (int n)}
+\label{class_moteur_jeu_a73fece04f5bf1e5d794013df0b18a15a}
+
+\begin{DoxyCompactList}\small\item\em function which changes the current nbJoueurs \mbox{[}in\mbox{]} int n \item\end{DoxyCompactList}\item 
+\hypertarget{class_moteur_jeu_a265bd617bc6430520de3635c561216d1}{
+void \hyperlink{class_moteur_jeu_a265bd617bc6430520de3635c561216d1}{modifCourant} (int e)}
+\label{class_moteur_jeu_a265bd617bc6430520de3635c561216d1}
+
+\begin{DoxyCompactList}\small\item\em function which changes the current int courant \mbox{[}in\mbox{]} int e \item\end{DoxyCompactList}\item 
+void \hyperlink{class_moteur_jeu_a4ce4d58bc6e7c895cc8a95102aaca09d}{setTabJoueur} (\hyperlink{class_joueur}{Joueur} $\ast$t)
+\begin{DoxyCompactList}\small\item\em function which changes the current tabjoueur \mbox{[}in\mbox{]} Joueur$\ast$ j \item\end{DoxyCompactList}\item 
+int \hyperlink{class_moteur_jeu_ae63d83716e54ca6f3fe59c43523363d8}{getJCourant} () const 
+\begin{DoxyCompactList}\small\item\em Access function. \item\end{DoxyCompactList}\item 
+\hypertarget{class_moteur_jeu_a4f73411a3745c180d74085382d823294}{
+void \hyperlink{class_moteur_jeu_a4f73411a3745c180d74085382d823294}{setJCourant} (int i)}
+\label{class_moteur_jeu_a4f73411a3745c180d74085382d823294}
+
+\begin{DoxyCompactList}\small\item\em Function which changes the current JCourant. \item\end{DoxyCompactList}\item 
+\hyperlink{class_joueur}{Joueur} $\ast$ \hyperlink{class_moteur_jeu_a985bcd836a94056b4c3f00d12a181dfc}{getJoueurInd} (int i)
+\begin{DoxyCompactList}\small\item\em acces function for the \hyperlink{class_joueur}{Joueur} number i \item\end{DoxyCompactList}\item 
+\hyperlink{class_joueur}{Joueur} $\ast$ \hyperlink{class_moteur_jeu_ab24fe5ea8707ddac6dfb903c4dc8dd34}{getJoueurCourant} ()
+\begin{DoxyCompactList}\small\item\em acces function to the current \hyperlink{class_joueur}{Joueur} \item\end{DoxyCompactList}\item 
+\hypertarget{class_moteur_jeu_abedf613946c850423de823d11fa86064}{
+bool \hyperlink{class_moteur_jeu_abedf613946c850423de823d11fa86064}{estAccessible} (pair$<$ int, int $>$ p)}
+\label{class_moteur_jeu_abedf613946c850423de823d11fa86064}
+
+\begin{DoxyCompactList}\small\item\em Function which gives a boolean indicating the accessibility of the square based on the current square and the value of the dices. \item\end{DoxyCompactList}\item 
+\hypertarget{class_moteur_jeu_a827eeb8dcaf11c30f10bb31501b8ddb9}{
+void \hyperlink{class_moteur_jeu_a827eeb8dcaf11c30f10bb31501b8ddb9}{setAccessible} (pair$<$ int, int $>$ p)}
+\label{class_moteur_jeu_a827eeb8dcaf11c30f10bb31501b8ddb9}
+
+\begin{DoxyCompactList}\small\item\em Function which make the case at the position p accessible. \item\end{DoxyCompactList}\item 
+\hypertarget{class_moteur_jeu_a2f9cf18b743b36a404ae0cd2db1a8f16}{
+void \hyperlink{class_moteur_jeu_a2f9cf18b743b36a404ae0cd2db1a8f16}{setInaccessible} (pair$<$ int, int $>$ p)}
+\label{class_moteur_jeu_a2f9cf18b743b36a404ae0cd2db1a8f16}
+
+\begin{DoxyCompactList}\small\item\em Function which make the case at the position p inaccessible. \item\end{DoxyCompactList}\item 
+\hypertarget{class_moteur_jeu_a920bcbd2494e6f342d060275e28f73a7}{
+void {\bfseries setTabJoueurs} (int ind, \hyperlink{class_joueur}{Joueur} j)}
+\label{class_moteur_jeu_a920bcbd2494e6f342d060275e28f73a7}
+
+\item 
+\hyperlink{class_joueur}{Joueur} $\ast$ \hyperlink{class_moteur_jeu_a7a80dd99e515af8e09d3cc3749d38439}{getTabJoueurs} ()
+\begin{DoxyCompactList}\small\item\em return the attribute tabjoueurs \item\end{DoxyCompactList}\item 
+\hypertarget{class_moteur_jeu_ad98a200b000d8e12a04103f4ec26f3e8}{
+void \hyperlink{class_moteur_jeu_ad98a200b000d8e12a04103f4ec26f3e8}{setAccessibleAll} (bool b)}
+\label{class_moteur_jeu_ad98a200b000d8e12a04103f4ec26f3e8}
+
+\begin{DoxyCompactList}\small\item\em put all case accesibility to boolean b \item\end{DoxyCompactList}\item 
+\hyperlink{class_case}{Case} $\ast$ \hyperlink{class_moteur_jeu_a66bfae2f68f0f1c3998d33aad61ed395}{getCase} (int x, int y)
+\begin{DoxyCompactList}\small\item\em return a pointer on the \hyperlink{class_case}{Case} at the position pair$<$x,y$>$ \item\end{DoxyCompactList}\item 
+int \hyperlink{class_moteur_jeu_a7b227edf142c1823d60d43c3420c115f}{getCourant} () const 
+\begin{DoxyCompactList}\small\item\em return the current state, as an integer \item\end{DoxyCompactList}\item 
+void \hyperlink{class_moteur_jeu_a088e9616650b680346d95eca464b859f}{setXAttaquant} (int x)
+\begin{DoxyCompactList}\small\item\em save the value of x \item\end{DoxyCompactList}\item 
+\hypertarget{class_moteur_jeu_aefb5f4a59d95b0f87393de292073dba8}{
+void {\bfseries setYAttaquant} (int x)}
+\label{class_moteur_jeu_aefb5f4a59d95b0f87393de292073dba8}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_moteur_jeu_a94975baba1addaec2e3716ae5bc6fb4e}{
+vector$<$ pair$<$ double, double $>$ $>$ {\bfseries histogramme}}
+\label{class_moteur_jeu_a94975baba1addaec2e3716ae5bc6fb4e}
+
+\item 
+\hypertarget{class_moteur_jeu_a2eaad3ffb0fa2db0d72312f33e3d8f7d}{
+int {\bfseries x\_\-Attaquant}}
+\label{class_moteur_jeu_a2eaad3ffb0fa2db0d72312f33e3d8f7d}
+
+\item 
+\hypertarget{class_moteur_jeu_aeaf3842987f4492b3e1053db4302833f}{
+int {\bfseries y\_\-Attaquant}}
+\label{class_moteur_jeu_aeaf3842987f4492b3e1053db4302833f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 25 of file MoteurJeu.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_moteur_jeu_a0537d1dad0601669f09a7f8fd7d6db9c}{
+\index{MoteurJeu@{MoteurJeu}!MoteurJeu@{MoteurJeu}}
+\index{MoteurJeu@{MoteurJeu}!MoteurJeu@{MoteurJeu}}
+\subsubsection[{MoteurJeu}]{\setlength{\rightskip}{0pt plus 5cm}MoteurJeu::MoteurJeu (
+\begin{DoxyParamCaption}
+\item[{Facade $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}
+\label{class_moteur_jeu_a0537d1dad0601669f09a7f8fd7d6db9c}
+
+
+default constructor of \hyperlink{class_moteur_jeu}{MoteurJeu} 
+
+\begin{DoxyReturn}{Returns}
+pointer on the instance 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file MoteurJeu.cpp.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=356pt]{class_moteur_jeu_a0537d1dad0601669f09a7f8fd7d6db9c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_moteur_jeu_a1b3da5ce343d467b8f31c373a608a5ab}{
+\index{MoteurJeu@{MoteurJeu}!execute@{execute}}
+\index{execute@{execute}!MoteurJeu@{MoteurJeu}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}void MoteurJeu::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_moteur_jeu_a1b3da5ce343d467b8f31c373a608a5ab}
+
+
+Function which executes the current state. 
+
+this function is used when someone clic (is called by Facade::execute()) 
+
+Definition at line 55 of file MoteurJeu.cpp.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=382pt]{class_moteur_jeu_a1b3da5ce343d467b8f31c373a608a5ab_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_moteur_jeu_a66bfae2f68f0f1c3998d33aad61ed395}{
+\index{MoteurJeu@{MoteurJeu}!getCase@{getCase}}
+\index{getCase@{getCase}!MoteurJeu@{MoteurJeu}}
+\subsubsection[{getCase}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Case} $\ast$ MoteurJeu::getCase (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}
+\label{class_moteur_jeu_a66bfae2f68f0f1c3998d33aad61ed395}
+
+
+return a pointer on the \hyperlink{class_case}{Case} at the position pair$<$x,y$>$ 
+
+\begin{DoxyReturn}{Returns}
+a pointer on the case 
+\end{DoxyReturn}
+
+
+Definition at line 97 of file MoteurJeu.cpp.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_moteur_jeu_a66bfae2f68f0f1c3998d33aad61ed395_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=380pt]{class_moteur_jeu_a66bfae2f68f0f1c3998d33aad61ed395_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_moteur_jeu_a7b227edf142c1823d60d43c3420c115f}{
+\index{MoteurJeu@{MoteurJeu}!getCourant@{getCourant}}
+\index{getCourant@{getCourant}!MoteurJeu@{MoteurJeu}}
+\subsubsection[{getCourant}]{\setlength{\rightskip}{0pt plus 5cm}int MoteurJeu::getCourant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_moteur_jeu_a7b227edf142c1823d60d43c3420c115f}
+
+
+return the current state, as an integer 
+
+\begin{DoxyReturn}{Returns}
+an int 
+\end{DoxyReturn}
+
+
+Definition at line 206 of file MoteurJeu.h.
+
+\hypertarget{class_moteur_jeu_ab6f1f07047e2da443f02d1e3a4fb3bd3}{
+\index{MoteurJeu@{MoteurJeu}!getDe@{getDe}}
+\index{getDe@{getDe}!MoteurJeu@{MoteurJeu}}
+\subsubsection[{getDe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf De} $\ast$ MoteurJeu::getDe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_moteur_jeu_ab6f1f07047e2da443f02d1e3a4fb3bd3}
+
+
+acces function 
+
+\begin{DoxyReturn}{Returns}
+the Dé 
+\end{DoxyReturn}
+
+
+Definition at line 201 of file MoteurJeu.h.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=364pt]{class_moteur_jeu_ab6f1f07047e2da443f02d1e3a4fb3bd3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_moteur_jeu_aa123f6cbd22f11bd3e1039945335b21f}{
+\index{MoteurJeu@{MoteurJeu}!getFacade@{getFacade}}
+\index{getFacade@{getFacade}!MoteurJeu@{MoteurJeu}}
+\subsubsection[{getFacade}]{\setlength{\rightskip}{0pt plus 5cm}Facade $\ast$ MoteurJeu::getFacade (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_moteur_jeu_aa123f6cbd22f11bd3e1039945335b21f}
+
+
+acces function for the facade 
+
+\begin{DoxyReturn}{Returns}
+pointer on the facade 
+\end{DoxyReturn}
+
+
+Definition at line 199 of file MoteurJeu.h.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_moteur_jeu_aa123f6cbd22f11bd3e1039945335b21f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_moteur_jeu_ae63d83716e54ca6f3fe59c43523363d8}{
+\index{MoteurJeu@{MoteurJeu}!getJCourant@{getJCourant}}
+\index{getJCourant@{getJCourant}!MoteurJeu@{MoteurJeu}}
+\subsubsection[{getJCourant}]{\setlength{\rightskip}{0pt plus 5cm}int MoteurJeu::getJCourant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_moteur_jeu_ae63d83716e54ca6f3fe59c43523363d8}
+
+
+Access function. 
+
+\begin{DoxyReturn}{Returns}
+int \_\-JCourant 
+\end{DoxyReturn}
+
+
+Definition at line 202 of file MoteurJeu.h.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_moteur_jeu_ae63d83716e54ca6f3fe59c43523363d8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_moteur_jeu_ab24fe5ea8707ddac6dfb903c4dc8dd34}{
+\index{MoteurJeu@{MoteurJeu}!getJoueurCourant@{getJoueurCourant}}
+\index{getJoueurCourant@{getJoueurCourant}!MoteurJeu@{MoteurJeu}}
+\subsubsection[{getJoueurCourant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joueur} $\ast$ MoteurJeu::getJoueurCourant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_moteur_jeu_ab24fe5ea8707ddac6dfb903c4dc8dd34}
+
+
+acces function to the current \hyperlink{class_joueur}{Joueur} 
+
+\begin{DoxyReturn}{Returns}
+a pointer on the \hyperlink{class_joueur}{Joueur} 
+\end{DoxyReturn}
+
+
+Definition at line 99 of file MoteurJeu.cpp.
+
+\hypertarget{class_moteur_jeu_a985bcd836a94056b4c3f00d12a181dfc}{
+\index{MoteurJeu@{MoteurJeu}!getJoueurInd@{getJoueurInd}}
+\index{getJoueurInd@{getJoueurInd}!MoteurJeu@{MoteurJeu}}
+\subsubsection[{getJoueurInd}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joueur} $\ast$ MoteurJeu::getJoueurInd (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}
+\label{class_moteur_jeu_a985bcd836a94056b4c3f00d12a181dfc}
+
+
+acces function for the \hyperlink{class_joueur}{Joueur} number i 
+
+\begin{DoxyReturn}{Returns}
+a pointer on the \hyperlink{class_joueur}{Joueur} 
+\end{DoxyReturn}
+
+
+Definition at line 65 of file MoteurJeu.cpp.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_moteur_jeu_a985bcd836a94056b4c3f00d12a181dfc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_moteur_jeu_a3bbef363f379f03269de384b8d0af4c2}{
+\index{MoteurJeu@{MoteurJeu}!getPlateau@{getPlateau}}
+\index{getPlateau@{getPlateau}!MoteurJeu@{MoteurJeu}}
+\subsubsection[{getPlateau}]{\setlength{\rightskip}{0pt plus 5cm}Facade $\ast$ MoteurJeu::getPlateau (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_moteur_jeu_a3bbef363f379f03269de384b8d0af4c2}
+
+
+acces function for the \hyperlink{class_plateau}{Plateau} 
+
+\begin{DoxyReturn}{Returns}
+the plateau 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file MoteurJeu.cpp.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=376pt]{class_moteur_jeu_a3bbef363f379f03269de384b8d0af4c2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_moteur_jeu_a7a80dd99e515af8e09d3cc3749d38439}{
+\index{MoteurJeu@{MoteurJeu}!getTabJoueurs@{getTabJoueurs}}
+\index{getTabJoueurs@{getTabJoueurs}!MoteurJeu@{MoteurJeu}}
+\subsubsection[{getTabJoueurs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joueur} $\ast$ MoteurJeu::getTabJoueurs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_moteur_jeu_a7a80dd99e515af8e09d3cc3749d38439}
+
+
+return the attribute tabjoueurs 
+
+\begin{DoxyReturn}{Returns}
+Joueur$\ast$ 
+\end{DoxyReturn}
+
+
+Definition at line 203 of file MoteurJeu.h.
+
+\hypertarget{class_moteur_jeu_a4ce4d58bc6e7c895cc8a95102aaca09d}{
+\index{MoteurJeu@{MoteurJeu}!setTabJoueur@{setTabJoueur}}
+\index{setTabJoueur@{setTabJoueur}!MoteurJeu@{MoteurJeu}}
+\subsubsection[{setTabJoueur}]{\setlength{\rightskip}{0pt plus 5cm}void MoteurJeu::setTabJoueur (
+\begin{DoxyParamCaption}
+\item[{{\bf Joueur} $\ast$}]{t}
+\end{DoxyParamCaption}
+)}}
+\label{class_moteur_jeu_a4ce4d58bc6e7c895cc8a95102aaca09d}
+
+
+function which changes the current tabjoueur \mbox{[}in\mbox{]} Joueur$\ast$ j 
+
+the \hyperlink{class_joueur}{Joueur} at the indice 
+
+Definition at line 81 of file MoteurJeu.cpp.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=370pt]{class_moteur_jeu_a4ce4d58bc6e7c895cc8a95102aaca09d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_moteur_jeu_a4ce4d58bc6e7c895cc8a95102aaca09d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_moteur_jeu_a088e9616650b680346d95eca464b859f}{
+\index{MoteurJeu@{MoteurJeu}!setXAttaquant@{setXAttaquant}}
+\index{setXAttaquant@{setXAttaquant}!MoteurJeu@{MoteurJeu}}
+\subsubsection[{setXAttaquant}]{\setlength{\rightskip}{0pt plus 5cm}void MoteurJeu::setXAttaquant (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_moteur_jeu_a088e9616650b680346d95eca464b859f}
+
+
+save the value of x 
+
+save the value of y 
+
+Definition at line 207 of file MoteurJeu.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_moteur_jeu_8h}{MoteurJeu.h}\item 
+\hyperlink{_moteur_jeu_8cpp}{MoteurJeu.cpp}\end{DoxyCompactItemize}

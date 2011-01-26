@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_attente_prem_lancer_de.html#a76d529c687104162c9df99488b213560" title="permet de déterminer l&#39;ordre des joueurs" alt="" coords="205,5,456,35"/>
+<area shape="rect" id="node5" href="$class_attente_prem_lancer_de.html#a3f4c31cf56fffe3bda17a9214166bd2f" title="Function which executes the current state." alt="" coords="505,32,708,61"/>
+<area shape="rect" id="node7" href="$class_propose_deplacement.html#a486d26c93fd8bdb108ac5b0bcbb99cfd" title="Function which executes the current state." alt="" coords="231,109,431,139"/>
+<area shape="rect" id="node9" href="$class_etat_tresor.html#a0b4e87ec6cf7715968c1bc9b75584e8e" title="Function which executes the current state." alt="" coords="263,163,399,192"/>
+<area shape="rect" id="node11" href="$class_etat_tir.html#a5967f8c1c1f37be216eb8c45215b386d" title="Function which executes the current state." alt="" coords="273,216,388,245"/>
+<area shape="rect" id="node13" href="$class_etat_fin_partie.html#a261f9f9e8c575129f149aa863ea704c4" title="Function which executes the current state." alt="" coords="255,269,407,299"/>
+<area shape="rect" id="node15" href="$class_etat_depot.html#a590535cf485b98a301338e4e393f53c7" title="Function which executes the current state." alt="" coords="264,323,397,352"/>
+<area shape="rect" id="node17" href="$class_etat_canon_fin.html#afb4786bc286bb0bc26cd46c413043069" title="Function which executes the current state." alt="" coords="253,376,408,405"/>
+<area shape="rect" id="node20" href="$class_attente_nb_joueurs.html#ad762d4a5a9f9c2cb0ebd594759a7d334" title="Function which executes the current state." alt="" coords="241,429,420,459"/>
+<area shape="rect" id="node22" href="$class_attente_lancer_de.html#a4202ca4c6fa05bba3d65eb3f099893d5" title="Function which executes the current state." alt="" coords="244,483,417,512"/>
+<area shape="rect" id="node24" href="$class_attente_initialisation.html#ad0dae22f706df53d6e9c60acd42533cc" title="Function which executes the current state." alt="" coords="237,536,424,565"/>
+<area shape="rect" id="node26" href="$class_attente_deplacement.html#ac524e34a91424ec82247a95006158dd1" title="Function which executes the current state." alt="" coords="233,589,428,619"/>
+<area shape="rect" id="node28" href="$class_attente_choix_bateau_vise.html#ab18e139996328ffb07bfbf988fe8fbba" title="Function which executes the current state." alt="" coords="221,643,440,672"/>
+<area shape="rect" id="node30" href="$class_attente_choix_bateau.html#a605cddd03d3c37ec5c7e48a71251998f" title="Function which executes the current state." alt="" coords="235,696,427,725"/>
+</map>

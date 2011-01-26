@@ -1,0 +1,250 @@
+\hypertarget{class_joueur}{
+\section{Joueur Class Reference}
+\label{class_joueur}\index{Joueur@{Joueur}}
+}
+
+
+Collaboration diagram for Joueur:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_joueur__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_joueur_a2c6463b358d3d2629b2e7f1c4ee9436c}{
+\hyperlink{class_joueur_a2c6463b358d3d2629b2e7f1c4ee9436c}{Joueur} (int num, \hyperlink{class_case_port}{CasePort} $\ast$c)}
+\label{class_joueur_a2c6463b358d3d2629b2e7f1c4ee9436c}
+
+\begin{DoxyCompactList}\small\item\em constructor with 2 parameters \item\end{DoxyCompactList}\item 
+\hypertarget{class_joueur_a1f01deec8873ddc3d503ae5567ad7e95}{
+\hyperlink{class_joueur_a1f01deec8873ddc3d503ae5567ad7e95}{Joueur} (int num, \hyperlink{class_case_port}{CasePort} $\ast$c1, \hyperlink{class_case_port}{CasePort} $\ast$c2)}
+\label{class_joueur_a1f01deec8873ddc3d503ae5567ad7e95}
+
+\begin{DoxyCompactList}\small\item\em constructor with 3 parameters =$>$ only when there is 2 players \item\end{DoxyCompactList}\item 
+\hypertarget{class_joueur_add6c98be3020651d84f6d75ccc1d867e}{
+\hyperlink{class_joueur_add6c98be3020651d84f6d75ccc1d867e}{Joueur} ()}
+\label{class_joueur_add6c98be3020651d84f6d75ccc1d867e}
+
+\begin{DoxyCompactList}\small\item\em default constructor \item\end{DoxyCompactList}\item 
+\hypertarget{class_joueur_ab43acc166a8ccdef4821bab367e6d157}{
+int {\bfseries getNumero} () const }
+\label{class_joueur_ab43acc166a8ccdef4821bab367e6d157}
+
+\item 
+\hypertarget{class_joueur_af1d118251650c4dbebdea2aaf08fcf92}{
+void {\bfseries setNumero} (int i)}
+\label{class_joueur_af1d118251650c4dbebdea2aaf08fcf92}
+
+\item 
+\hypertarget{class_joueur_a94c4a4b3ce35ab280bca6ba875ce75de}{
+\hyperlink{class_case_port}{CasePort} $\ast$ \hyperlink{class_joueur_a94c4a4b3ce35ab280bca6ba875ce75de}{getPort1} () const }
+\label{class_joueur_a94c4a4b3ce35ab280bca6ba875ce75de}
+
+\begin{DoxyCompactList}\small\item\em acces function to the Joueur's first harbour \item\end{DoxyCompactList}\item 
+\hypertarget{class_joueur_a5a9fd927f12a6cd31c2cd7c20afae3f2}{
+\hyperlink{class_case_port}{CasePort} $\ast$ \hyperlink{class_joueur_a5a9fd927f12a6cd31c2cd7c20afae3f2}{getPort2} () const }
+\label{class_joueur_a5a9fd927f12a6cd31c2cd7c20afae3f2}
+
+\begin{DoxyCompactList}\small\item\em acces function to the Joueur's second harbour \item\end{DoxyCompactList}\item 
+\hypertarget{class_joueur_a84e2f3852269cc5543aa6c0ab944b9d9}{
+\hyperlink{class_bateau}{Bateau} $\ast$ \hyperlink{class_joueur_a84e2f3852269cc5543aa6c0ab944b9d9}{getBateau1} () const }
+\label{class_joueur_a84e2f3852269cc5543aa6c0ab944b9d9}
+
+\begin{DoxyCompactList}\small\item\em acces function to the Joueur's boat 1 \item\end{DoxyCompactList}\item 
+\hypertarget{class_joueur_adc333af6ffa8250446cf4bec4354afbe}{
+\hyperlink{class_bateau}{Bateau} $\ast$ \hyperlink{class_joueur_adc333af6ffa8250446cf4bec4354afbe}{getBateau2} () const }
+\label{class_joueur_adc333af6ffa8250446cf4bec4354afbe}
+
+\begin{DoxyCompactList}\small\item\em acces function to the Joueur's boat 1 \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_joueur_a5654719eb79051c72eee0a289441e5be}{bateauAtPos} (pair$<$ int, int $>$ p)
+\begin{DoxyCompactList}\small\item\em function which says if the player has a bateau at the given position \item\end{DoxyCompactList}\item 
+\hyperlink{class_bateau}{Bateau} $\ast$ \hyperlink{class_joueur_a744f60bbbf845f96cf9d57234be0eb7b}{getBateauPos} (pair$<$ int, int $>$ p)
+\begin{DoxyCompactList}\small\item\em acces function to the boat at the given position \item\end{DoxyCompactList}\item 
+\hyperlink{class_bateau}{Bateau} $\ast$ \hyperlink{class_joueur_ab1bed142a18ffce2b6f4edc3a5076212}{getBateauCourant} ()
+\begin{DoxyCompactList}\small\item\em function which permits to obtain the current boat \item\end{DoxyCompactList}\item 
+\hypertarget{class_joueur_a79c22fd4d58254ef510767d5a0ca27c4}{
+void \hyperlink{class_joueur_a79c22fd4d58254ef510767d5a0ca27c4}{GAGNANT} ()}
+\label{class_joueur_a79c22fd4d58254ef510767d5a0ca27c4}
+
+\begin{DoxyCompactList}\small\item\em the \hyperlink{class_joueur}{Joueur} is the winner \item\end{DoxyCompactList}\item 
+\hypertarget{class_joueur_aa74ba50e1a23e92bf598b4e2ab02b4c7}{
+void \hyperlink{class_joueur_aa74ba50e1a23e92bf598b4e2ab02b4c7}{setCasePort1} (\hyperlink{class_case_port}{CasePort} $\ast$c)}
+\label{class_joueur_aa74ba50e1a23e92bf598b4e2ab02b4c7}
+
+\begin{DoxyCompactList}\small\item\em function which modifies the attribute CasePort1 \item\end{DoxyCompactList}\item 
+\hypertarget{class_joueur_ae96bb26f6293ccaaa84ea69816ef00ba}{
+void \hyperlink{class_joueur_ae96bb26f6293ccaaa84ea69816ef00ba}{setCasePort2} (\hyperlink{class_case_port}{CasePort} $\ast$c)}
+\label{class_joueur_ae96bb26f6293ccaaa84ea69816ef00ba}
+
+\begin{DoxyCompactList}\small\item\em function which modifies the attribute CasePort1 \item\end{DoxyCompactList}\item 
+\hypertarget{class_joueur_a4a2585b5295e9ae18b2cbb21f18c562c}{
+void \hyperlink{class_joueur_a4a2585b5295e9ae18b2cbb21f18c562c}{setBateauCourant} (\hyperlink{class_bateau}{Bateau} $\ast$b)}
+\label{class_joueur_a4a2585b5295e9ae18b2cbb21f18c562c}
+
+\begin{DoxyCompactList}\small\item\em function which modifies the current boat \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_joueur_af0de4442f70bf248951e1db9a0cfe077}{
+\hyperlink{class_case_port}{CasePort} $\ast$ {\bfseries \_\-cp1}}
+\label{class_joueur_af0de4442f70bf248951e1db9a0cfe077}
+
+\item 
+\hypertarget{class_joueur_a8400f914c3f91e5a9ec6a973ea7fa1ef}{
+\hyperlink{class_case_port}{CasePort} $\ast$ {\bfseries \_\-cp2}}
+\label{class_joueur_a8400f914c3f91e5a9ec6a973ea7fa1ef}
+
+\item 
+\hypertarget{class_joueur_aa0ad65e1971ff00f9c391194cd6ed913}{
+int {\bfseries \_\-numero}}
+\label{class_joueur_aa0ad65e1971ff00f9c391194cd6ed913}
+
+\item 
+\hypertarget{class_joueur_a65d2930fd5c5e1c029aa8c0d69c0d9a7}{
+bool {\bfseries \_\-gagnant}}
+\label{class_joueur_a65d2930fd5c5e1c029aa8c0d69c0d9a7}
+
+\item 
+\hypertarget{class_joueur_aed2e49231a720cfbd55ff308f8147c1b}{
+\hyperlink{class_bateau}{Bateau} $\ast$ {\bfseries \_\-bateau1}}
+\label{class_joueur_aed2e49231a720cfbd55ff308f8147c1b}
+
+\item 
+\hypertarget{class_joueur_a17b76e11b553febefb4bc4e0e8906128}{
+\hyperlink{class_bateau}{Bateau} $\ast$ {\bfseries \_\-bateau2}}
+\label{class_joueur_a17b76e11b553febefb4bc4e0e8906128}
+
+\item 
+\hypertarget{class_joueur_adf857673b7cf479bb50e70b08e76c51c}{
+\hyperlink{class_bateau}{Bateau} $\ast$ {\bfseries \_\-bateauCourant}}
+\label{class_joueur_adf857673b7cf479bb50e70b08e76c51c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file Joueur.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_joueur_a5654719eb79051c72eee0a289441e5be}{
+\index{Joueur@{Joueur}!bateauAtPos@{bateauAtPos}}
+\index{bateauAtPos@{bateauAtPos}!Joueur@{Joueur}}
+\subsubsection[{bateauAtPos}]{\setlength{\rightskip}{0pt plus 5cm}bool Joueur::bateauAtPos (
+\begin{DoxyParamCaption}
+\item[{pair$<$ int, int $>$}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{class_joueur_a5654719eb79051c72eee0a289441e5be}
+
+
+function which says if the player has a bateau at the given position 
+
+\begin{DoxyReturn}{Returns}
+a boolean, true if there is a boat 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file Joueur.cpp.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_joueur_a5654719eb79051c72eee0a289441e5be_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_joueur_a5654719eb79051c72eee0a289441e5be_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_joueur_ab1bed142a18ffce2b6f4edc3a5076212}{
+\index{Joueur@{Joueur}!getBateauCourant@{getBateauCourant}}
+\index{getBateauCourant@{getBateauCourant}!Joueur@{Joueur}}
+\subsubsection[{getBateauCourant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bateau} $\ast$ Joueur::getBateauCourant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_joueur_ab1bed142a18ffce2b6f4edc3a5076212}
+
+
+function which permits to obtain the current boat 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_bateau}{Bateau} the current boat 
+\end{DoxyReturn}
+
+
+Definition at line 138 of file Joueur.h.
+
+\hypertarget{class_joueur_a744f60bbbf845f96cf9d57234be0eb7b}{
+\index{Joueur@{Joueur}!getBateauPos@{getBateauPos}}
+\index{getBateauPos@{getBateauPos}!Joueur@{Joueur}}
+\subsubsection[{getBateauPos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bateau} Joueur::getBateauPos (
+\begin{DoxyParamCaption}
+\item[{pair$<$ int, int $>$}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{class_joueur_a744f60bbbf845f96cf9d57234be0eb7b}
+
+
+acces function to the boat at the given position 
+
+\begin{DoxyReturn}{Returns}
+the boat 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file Joueur.cpp.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_joueur_a744f60bbbf845f96cf9d57234be0eb7b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_joueur_a744f60bbbf845f96cf9d57234be0eb7b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_joueur_8h}{Joueur.h}\item 
+\hyperlink{_joueur_8cpp}{Joueur.cpp}\end{DoxyCompactItemize}
