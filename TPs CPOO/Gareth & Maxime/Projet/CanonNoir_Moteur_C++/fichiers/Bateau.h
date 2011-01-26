@@ -38,8 +38,8 @@ class Bateau
 		/**
 		*\fn Bateau()
 		*\brief Constructor
-		
-		Bateau();*/
+		*/
+		Bateau();
 
 		/**
 		*\fn virtual char type()

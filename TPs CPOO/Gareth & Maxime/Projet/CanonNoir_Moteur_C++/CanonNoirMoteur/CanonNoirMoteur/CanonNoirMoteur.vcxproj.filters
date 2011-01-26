@@ -224,6 +224,9 @@
     <ClCompile Include="..\..\fichiers\Duel.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\fichiers\EtatFinPartie.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram11.cd" />

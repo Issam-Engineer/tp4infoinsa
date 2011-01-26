@@ -26,7 +26,54 @@ namespace CanonNoir_Affichage
         {
             InitializeComponent();
             facade = f;
-            textBox4.Text = "Joueur " + (facade.getNumJCourant());
+            textBox4.Text = "Joueur en cours : Joueur " + (facade.getNumJCourant());
+            textBox1.Text = "Type : Caravelle - Pas de trésor à bord";
+            textBox6.Text = "Type : Caravelle - Pas de trésor à bord";
+            textBox8.Text = "Type : Caravelle - Pas de trésor à bord";
+            textBox10.Text = "Type : Caravelle - Pas de trésor à bord";
+            textBox5.Text = facade.getNbTresors(1) + "/3";
+            textBox7.Text = facade.getNbTresors(2) + "/3";
+            textBox9.Text = facade.getNbTresors(3) + "/3";
+            textBox11.Text = facade.getNbTresors(4) + "/3";
+            JoueurRouge.Opacity = 1;
+            JoueurVert.Opacity = 1;
+            JoueurJaune.Opacity = 1;
+            JoueurBleu.Opacity = 1;
+
+            if (facade.getMotorNbJoueur() == 3)
+                JoueurRouge.Opacity = 0;
+                JoueurVert.Opacity = 0;
+                JoueurJaune.Opacity = 0;
+                JoueurBleu.Opacity = 0;
+                groupBox1.Opacity = 0;
+                groupBox2.Opacity = 0;
+                groupBox3.Opacity = 0;
+                groupBox4.Opacity = 0;
+            {
+                int coul1 = facade.getCoul1();
+                int coul2 = facade.getCoul2();
+                int coul3 = facade.getCoul3();
+                if (coul1 == 1 || coul2 == 1 || coul3 == 1)
+                {
+                    JoueurRouge.Opacity = 1;
+                    groupBox1.Opacity = 1;
+                }
+                if (coul1 == 2 || coul2 == 2 || coul3 == 2)
+                {
+                    JoueurVert.Opacity = 1;
+                    groupBox2.Opacity = 1;
+                }
+                if (coul1 == 3 || coul2 == 3 || coul3 == 3)
+                {
+                    JoueurJaune.Opacity = 1;
+                    groupBox3.Opacity = 1;
+                }
+                if (coul1 == 4 || coul2 == 4 || coul3 == 4)
+                {
+                    JoueurBleu.Opacity = 1;
+                    groupBox4.Opacity = 1;
+                }
+            }
             
         }
 
@@ -46,7 +93,7 @@ namespace CanonNoir_Affichage
             //if (facade.getChoixBateau() == true)
             if (facade.getEtatCourant() == 4)
             {
-                MessageBox.Show("ETAT ATTENTE CHOIX BATEAU");
+                textBox12.Text = "Choisis la case en surbrillance où tu veux aller !";
                 facade.execute();
                 facade.execute();
                 int CoulJ = facade.getCoulBateauCourant();
@@ -96,23 +143,24 @@ namespace CanonNoir_Affichage
             else if(facade.getEtatCourant() == 11)
             {
                 MessageBox.Show("ATTAQUE !!!! (choix d'un bateau)");
+                textBox12.Text = "ATTAQUE !!!! (choix d'un bateau)";
                 facade.execute(); 
                 FenetreTir fT = new FenetreTir(facade);
                 fT.Show();
 
             }
-            else if(facade.getEtatCourant() == 6)
+            else if (facade.getEtatCourant() == 6)
             {
 
                 facade.execute();
 
                 /*if (facade.getEtatCourant() == 5)
                 {*/
-                MessageBox.Show("ETAT ATTENTEDEPLACEMENT");
+                textBox12.Text ="Choisis la case en surbrillance où tu veux aller !";
                 if (facade.getAccessible(x, y))
                 {
 
-                    MessageBox.Show("La case x = " + x + " y = " + y + " est bien accessible");
+                     textBox12.Text ="Cap sur la case (" + x + "," + y + ") !";
 
                     int X_Canvas = x - 1;
                     int Y_Canvas = y - 1;
@@ -170,74 +218,146 @@ namespace CanonNoir_Affichage
                     index = 0;
                 }
                 /*****************/
-                textBox4.Text = "Joueur " + (facade.getNumJCourant());
+                textBox4.Text = "Joueur en cours : Joueur " + (facade.getNumJCourant());
                 button2.IsEnabled = true;
 
                 //Si on atteint une case Canon Noir !
                 if (facade.getEtatCourant() == 11)
                 {
-                    MessageBox.Show("Choisi Le bateau à attaquer !");
+                    //MessageBox.Show("Choisis Le bateau à attaquer !");
+                    textBox12.Text = "Choisis Le bateau à attaquer !";
                     //Sauver la position de l'attaquant
                     facade.SaveXAttaquant();
                     facade.SaveYAttaquant();
                     facade.setAccessibleAll(false);
                 }
 
-                if (facade.getEtatCourant() == 8/* &&facade.getBonPort()*/)
-                {
-                    MessageBox.Show("Trésor ramené à bon port !");
-                    int coulB = facade.getCoulBateauCourant();
-                    //if On est avec Le joueur Rouge
-                    if (coulB == 1)
+                    if (facade.getEtatCourant() == 8)
                     {
-                        JoueurRouge.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellerouge.jpg", UriKind.Relative));
+                        MessageBox.Show("Trésor ramené à bon port !");
+                        textBox12.Text ="Trésor déposé !";
+                        int coulB = facade.getCoulBateauCourant();
+                        int nbtresors = facade.getNbTresorsPort();
+                        int type = facade.getTypeBateauCourant();
+                        string types = "";
+                        if (type == 3)
+                        {
+                            types = "Caravelle";
+                        }
+                        else if (type == 2)
+                        {
+                            types = "Frégate";
+                        }
+                        else if (type == 1)
+                        {
+                            types = "Radeau";
+                        }
+                        //if On est avec Le joueur Rouge
+                        if (coulB == 1)
+                        {
+                            JoueurRouge.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellerouge.jpg", UriKind.Relative));
+                            textBox5.Text = nbtresors +"/3";
+                            textBox1.Text = "Type : " + types + " - Pas de trésor à bord";
+                        }
+                        //if On est avec Le joueur Vert
+                        else if (coulB == 2)
+                        {
+                            JoueurVert.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravelleverte.jpg", UriKind.Relative));
+                            textBox7.Text = nbtresors + "/3";
+                            textBox6.Text = "Type : " + types + " - Pas de trésor à bord";
+                        }
+                        //if On est avec Le joueur Jaune
+                        else if (coulB == 3)
+                        {
+                            JoueurJaune.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellejaune.jpg", UriKind.Relative));
+                            textBox9.Text = nbtresors + "/3";
+                            textBox8.Text = "Type : " + types + " - Pas de trésor à bord";
+                        }
+                        //if On est avec Le joueur Bleu
+                        else if (coulB == 4)
+                        {
+                            JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleue.jpg", UriKind.Relative));
+                            textBox11.Text = nbtresors + "/3";
+                            textBox10.Text = "Type : " + types + " - Pas de trésor à bord";
+                        }
+                        facade.setBonPort(false);
                     }
-                    //if On est avec Le joueur Vert
-                    else if (coulB == 2)
-                    {
-                        JoueurVert.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravelleverte.jpg", UriKind.Relative));
-                    }
-                    //if On est avec Le joueur Jaune
-                    else if (coulB == 3)
-                    {
-                        JoueurJaune.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellejaune.jpg", UriKind.Relative));
-                    }
-                    //if On est avec Le joueur Bleu
-                    else if (coulB == 4)
-                    {
-                        JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleue.jpg", UriKind.Relative));
-                    }
-                    facade.setBonPort(false);
-                }
-            }
 
-            if (/*facade.getATresor() && */facade.getEtatCourant() == 7/* && facade.getTypeBateauCourant() != 1*//*&& facade.getTresorRecup()*/)
-            {
+            }
+           if (facade.getEtatCourant() == 7) {
                 int coulB = facade.getCoulBateauCourant();
+                int type = facade.getTypeBateauCourant();
+                string types = "";
+                if(type == 3){
+                    types = "Caravelle";
+                } else if (type == 2) {
+                    types = "Frégate";
+                } else if (type == 1) {
+                    types = "Radeau";
+                }
                 MessageBox.Show("Un trésor a été découvert ! Ramenez-le au port au plus vite !");
+                textBox12.Text ="Trésor à bord !";
                 //if On est avec Le joueur Rouge
                 if (coulB == 1)
                 {
                     JoueurRouge.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellerougetresor.jpg", UriKind.Relative));
+                    textBox1.Text = "Type : "+types+" - Trésor à bord !";
                 }
                 //if On est avec Le joueur Vert
                 else if (coulB == 2)
                 {
                     JoueurVert.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellevertetresor.jpg", UriKind.Relative));
+                    textBox6.Text = "Type : " + types + " - Trésor à bord !";
                 }
                 //if On est avec Le joueur Jaune
                 else if (coulB == 3)
                 {
                     JoueurJaune.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellejaunetresor.jpg", UriKind.Relative));
+                    textBox8.Text = "Type : " + types + " - Trésor à bord !";
                 }
                 //if On est avec Le joueur Bleu
                 else if (coulB == 4)
                 {
                     JoueurBleu.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("/CanonNoir_Affichage;component/Images/caravellebleuetresor.jpg", UriKind.Relative));
+                    textBox10.Text = "Type : " + types + " - Trésor à bord !";
                 }
                 facade.setTresorRecup(false);
                 facade.setATresor(false);
             }
+
+           if (facade.getEtatCourant() == 13)
+           {
+                int coulB = facade.getCoulBateauCourant();
+               String coulBateau = "";
+                //if On est avec Le joueur Rouge
+                if (coulB == 1)
+                {
+                    coulBateau = "rouge";
+                }
+                //if On est avec Le joueur Vert
+                else if (coulB == 2)
+                {
+                    coulBateau = "vert";
+                }
+                //if On est avec Le joueur Jaune
+                else if (coulB == 3)
+                {
+                    coulBateau = "jaune";
+                }
+                //if On est avec Le joueur Bleu
+                else if (coulB == 4)
+                {
+                    coulBateau = "bleu";
+                }
+               MessageBox.Show("PARTIE TERMINÉE ! Le bateau "+coulBateau+" a ramené 3 trésors à son port !\n Le joueur " + facade.getNumJCourant() + " l'emporte !");
+               textBox12.Text ="PARTIE TERMINÉE !";
+               Close();
+           }
+
+                   textBox5.Text = facade.getNbTresors(1) + "/3";
+                   textBox7.Text = facade.getNbTresors(2) + "/3";
+                   textBox9.Text = facade.getNbTresors(3) + "/3";
+                   textBox11.Text = facade.getNbTresors(4) + "/3";
         }
 
 
@@ -249,7 +369,8 @@ namespace CanonNoir_Affichage
 
             if (debutPartie == true)
             {
-                textBox4.Text = "Joueur " + (facade.getNumJCourant());
+                textBox4.Text = "Joueur en cours : Joueur " + (facade.getNumJCourant());
+                textBox12.Text = "Chaque joueur lance les dés tour à tour";
                 facade.setClicDe(true);
                 facade.execute();
                 textBox2.Text = "" + facade.getde1();
@@ -258,14 +379,15 @@ namespace CanonNoir_Affichage
                 textBox3.IsEnabled = facade.getAfficherDe1();//On peut mettre un autre booléen
                 if (facade.getInitialisationOK())
                 {
-                    MessageBox.Show("C'est parti ! A vous de jouer");
+                    MessageBox.Show("C'est parti ! C'est le joueur "+facade.getNumJCourant()+" qui commence !");
+                    textBox12.Text ="Lance les dés !";
                     textBox2.Text = "" + facade.getde1();
                     textBox3.Text = "" + facade.getde2();
                     facade.setInitialisationOK(false);
                     debutPartie = false;
                     textBox2.Text = "";
                     textBox3.Text = "";
-                    textBox4.Text = "Joueur " + (facade.getNumJCourant());
+                    textBox4.Text = "Joueur en cours : Joueur " + (facade.getNumJCourant());
 
 
                 }
@@ -274,12 +396,12 @@ namespace CanonNoir_Affichage
             {
 
                     facade.setClicDe(true);
-                    textBox4.Text = "Joueur " + (facade.getNumJCourant());
+                    textBox4.Text = "Joueur en cours : Joueur " + (facade.getNumJCourant());
                     facade.execute();
                     //après le execute
                     textBox2.Text = "" + facade.getde1();
                     textBox3.Text = "" + facade.getde2();
-                    textBox4.Text = "Joueur " + (facade.getNumJCourant());
+                    textBox4.Text = "Joueur en cours : Joueur " + (facade.getNumJCourant());
 
                     if (facade.getProposerDeplacement())
                     {
@@ -331,6 +453,7 @@ namespace CanonNoir_Affichage
                     {
 
                         MessageBox.Show("Choisis un de tes 2 bateaux");
+                        textBox12.Text = "Choisis un de tes 2 bateaux";
                         button2.IsEnabled = false;
                     }
 

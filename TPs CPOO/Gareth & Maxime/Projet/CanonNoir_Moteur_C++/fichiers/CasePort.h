@@ -49,12 +49,13 @@ class CasePort : public Case
 		*\brief Access function
 		*\return int the number of treasures of the harbour
 		*/
-		int getNbTresors() const;
+		int getNbTresors()
+			;
 		/**
 		*\fn void setNbTresors()
 		*\brief Modifies the attribute _nbTresors
 		*/
-		void setNbTresors(int n);
+		void setNbTresors();
 
 
 }; 
@@ -62,7 +63,7 @@ class CasePort : public Case
 inline int CasePort::getCouleur(){ return _couleur; }
 inline int CasePort::getEtat(){ return ETATDEPOT; }
 inline char CasePort::getTypeCase() {return 'P';}
-inline int CasePort::getNbTresors() const { return _nbTresors; }
-inline void CasePort::setNbTresors(int n) { _nbTresors = n; }
+inline int CasePort::getNbTresors() { return _nbTresors; }
+inline void CasePort::setNbTresors() { _nbTresors+=1; }
 
 #endif

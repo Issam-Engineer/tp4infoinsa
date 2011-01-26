@@ -59,6 +59,11 @@ class __declspec(dllexport) Facade
 		int _coulBatCourant;
 
 		bool _tresorRecup;
+				
+		int _nbTresorsRouge;
+		int _nbTresorsVert;
+		int _nbTresorsJaune;
+		int _nbTresorsBleu;
 
 		//bool _bonPort;
 		
@@ -378,6 +383,19 @@ class __declspec(dllexport) Facade
 		void setATresor(bool b);
 
 		/**
+		*\fn int getNbTresors(int c)
+		*\brief acces function
+		*\return int, the number of treasures in the harbour of the given colour c
+		*/
+		int getNbTresors(int c);
+
+		/**
+		*\fn setNbTresors()
+		*\brief Increments by one the value of the attribute NbTresor of the given color
+		*/
+		void setNbTresors(int c);
+
+		/**
 		*\fn bool setPartieTerminee()
 		*\brief Puts the value of the attribute _partieTerminee to bool b
 		*/
@@ -415,6 +433,13 @@ class __declspec(dllexport) Facade
 		*\return bool true if a player is in his harbour
 		*/
 		bool getBonPort();
+
+		/**
+		*\fn int getNbTresorsPort()
+		*\brief Acces function
+		*\return int, the number of treasures of the current player's current boat harbour.
+		*/
+		int getNbTresorsPort();
 
 		/**
 		*\fn int getEtatCourant()

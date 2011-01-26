@@ -114,6 +114,9 @@
     <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\EtatTresor.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\EtatFinPartie.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\CanonNoir_Moteur_C++\fichiers\AttenteChoixBateau.h">

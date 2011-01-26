@@ -88,7 +88,7 @@ class Case
 		*\fn int setNbTresors()
 		*\brief use for CasePort, to change the number of treasures
 		*/
-		virtual void setNbTresors(int n);
+		virtual void setNbTresors();
 		
 		/**
 		*\fn void setPosition(pair<int,int> p)
