@@ -22,12 +22,12 @@ protected:
 
 public:
 	/**
-	*\fn void execute()
+	*\fn virtual void execute()
 	*\brief function which execute the current state
 	*/
-	virtual void execute()=0;
+	virtual void execute() = 0;
 	/**
-	*\fn void modifMotor(MoteurJeu m)
+	*\fn virtual void modifMotor(MoteurJeu m)
 	*\brief function which changes the current motor
 	*\param[in] MoteurJeu m
 	*/
@@ -35,7 +35,4 @@ public:
 	
 };
 
-/*inline void Etat::execute(){
-	//NE FAIT RIEN (on est obligé de mettre la définir pour l'édition des liens)
-}*/
 #endif

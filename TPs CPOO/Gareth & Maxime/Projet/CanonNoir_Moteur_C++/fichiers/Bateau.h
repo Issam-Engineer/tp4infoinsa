@@ -46,7 +46,7 @@ class Bateau
 		*\brief Pure virtual function which allows inherited classes to give their name
 		*\return char the class name
 		*/
-		virtual char type()=0;
+		virtual char type() = 0;
 
 		/**
 		*\fn bool getCourant()
@@ -86,7 +86,7 @@ class Bateau
 		*\fn bool peutJouer2Des()
 		*\brief Virtual function which indicates if the boat is allowed to play two dices
 		*
-		*Only a Caravelle can roll the dice twice
+		*	Only a Caravelle can roll the dice twice
 		*
 		*\return bool true if the boat can role the dice twice
 		*/
@@ -108,14 +108,12 @@ class Bateau
 		*\brief function which changes the value of _couleurb
 		*/
 		void setCouleur(int c);
-
 		/**
 		*\fn bool getATresor()
 		*\brief access function
 		*\return bool true if the current boat carries a treasure
 		*/
 		bool getATresor();
-
 		/**
 		*\fn virtual void setATresor(bool b)
 		*\brief function which changes the value of aTresor
@@ -126,7 +124,7 @@ class Bateau
 
 		Case* getPort();
 
-				/**
+		/**
 		*\fn bool getBonPort()
 		*\brief access function
 		*\return bool true if the current boat is in his own harbour

@@ -47,14 +47,14 @@ class Plateau
 		*\fn Case* getCasePort(int c)
 		*\brief Function which returns the harbour corresponding to the given colour
 		*\param[in] c int couleur
-		*\return Case* 
+		*\return Case* a pointer on the colored case 
 		*/
 		Case* getCasePort(int couleur);
 
 		/**
 		*\fn Case* getCase(pair<int,int> p)
 		*\brief Function which returns the associated Case
-		*\return Case* 
+		*\return Case* a pointer on the case at position p
 		*/
 		Case* getCase(pair<int,int> p);
 		/**

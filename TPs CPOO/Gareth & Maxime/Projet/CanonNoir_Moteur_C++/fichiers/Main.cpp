@@ -1,6 +1,7 @@
 #include "MoteurJeu.h"
 #include "AttenteNbJoueurs.h"
 #include "Plateau.h"
+#include "Joueur.h"
 #include <stdio.h>
 
 
@@ -82,14 +83,12 @@ int main( int argc, const char* argv[] )
 			fac->execute(); // pour proposer les cases ! (gérer dans l'affichage selon les cas)
 
 	//ex : clic sur une case au hasard
-	fac->setX(10);
+	/*fac->setX(10);
 	fac->setY(6);
-	fac->execute();
+	fac->execute();*/
 	
-
-
-	/*
-	fac->getMoteur()->histogramme.push_back(make_pair(1,3));
+	//acces à l'histogramme du moteur
+	/*fac->getMoteur()->histogramme.push_back(make_pair(1,3));
 	fac->getMoteur()->histogramme.push_back(make_pair(1,2));
 	fac->getMoteur()->histogramme.push_back(make_pair(1.41,0));
 	fac->getMoteur()->histogramme.push_back(make_pair(1.41,0));
@@ -103,6 +102,12 @@ int main( int argc, const char* argv[] )
 	fac->getHauteurHisto(1);
 	fac->getHauteurHisto(2);
 	fac->getHauteurHisto(3);*/
+
+			//acces en dehors de la taille du tableau de joueur : Message d'erreur
+			fac->getMoteur()->getJoueurInd(2); 
+
+			//Si nbJoueur = 3 ou 4 on accède à une variable non initialisée
+			fac->getMoteur()->getJoueurInd(1)->bateauAtPos(make_pair(1,2)); 
 
 	while(1);
 
