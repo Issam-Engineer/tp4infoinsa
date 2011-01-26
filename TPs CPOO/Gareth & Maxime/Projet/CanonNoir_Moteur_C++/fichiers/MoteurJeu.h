@@ -36,14 +36,11 @@ class MoteurJeu
 		bool finPartie;
 		Plateau* _plateau;
 		De _de;
-
-		//Utile pour l'EtatTir
 		
-
 
 	public :
 		
-		//use for the State of Shoot
+		//use for the State of Shoot public for simplify
 		vector< pair<double, double> > histogramme;
 		int x_Attaquant;
 		int y_Attaquant;
@@ -171,9 +168,9 @@ class MoteurJeu
 		void setAccessibleAll(bool b);
 
 		/**
-		*\fn Case* getCase(pair<int,int> p)
-		*\brief return a pointer on the Case at the position p
-		*\return a pointer
+		*\fn Case* getCase(int x,int y)
+		*\brief return a pointer on the Case at the position pair<x,y>
+		*\return a pointer on the case
 		*/
 		Case* getCase(int x,int y);
 

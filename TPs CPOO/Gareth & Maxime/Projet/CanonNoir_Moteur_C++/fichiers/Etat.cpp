@@ -5,7 +5,7 @@
 * \author Gareth THIVEUX
 * \version 1.0
 */
-//#include "StdAfx.h"
+
 #include "Etat.h"
 
 void Etat::modifMotor(MoteurJeu* m){

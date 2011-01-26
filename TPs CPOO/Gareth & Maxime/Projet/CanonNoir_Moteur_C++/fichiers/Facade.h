@@ -36,10 +36,6 @@ class __declspec(dllexport) Facade
 		bool _afficherDe1;
 		bool _afficherDe2;
 
-		/*bool _choixDe1;
-		bool _choixDe2;
-		bool _choix2De;*/
-
 		int _clicX;
 		int _clicY;
 

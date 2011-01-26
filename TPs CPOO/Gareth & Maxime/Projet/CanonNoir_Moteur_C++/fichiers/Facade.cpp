@@ -5,7 +5,7 @@
 *\author Gareth THIVEUX
 *\version 1.0
 */
-//#include "StdAfx.h"
+
 #include "Facade.h"
 #include "MoteurJeu.h"
 #include "Joueur.h"
@@ -26,11 +26,6 @@ Facade::Facade(){
 	_clicDe=false;
 	_afficherDe1=false;
 	_afficherDe2=false;
-	/*
-	_choixDe1=false;
-	_choixDe2=false;
-	_choix2De=false;
-	*/
 	_clicX=-1;
 	_clicY=-1;
 	_angle=-1;
