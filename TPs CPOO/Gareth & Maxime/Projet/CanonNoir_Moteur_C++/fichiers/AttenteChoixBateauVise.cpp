@@ -36,10 +36,17 @@ void AttenteChoixBateauVise::execute(){
 	//si le joueur adverse a bien un bateau sur la case cliquée
 	int i = motor->getJCourant();
 	bool b = false;
+	//On parcours les bateaux des concurrents
+
 	for (int j=0;j<4;j++){
 		if(j==i){}
 		else{
-			if(motor->getJoueurInd(i)->bateauAtPos(posit)) b=true;
+			if(motor->getNbJoueurs() == 2){
+				if(motor->getJoueurInd(i)->bateauAtPos(posit)) b=true;
+			}
+			else{
+				if(motor->getJoueurInd(i)->getBateau1()->getPosition()->getPosition() == posit) b=true;
+			}
 		}
 	}
 
