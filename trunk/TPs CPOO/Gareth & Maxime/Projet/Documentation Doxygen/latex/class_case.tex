@@ -1,0 +1,305 @@
+\hypertarget{class_case}{
+\section{Case Class Reference}
+\label{class_case}\index{Case@{Case}}
+}
+
+
+Inheritance diagram for Case:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_case__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_case_a14237e17aab1829965adab76b747db6c}{
+\hyperlink{class_case_a14237e17aab1829965adab76b747db6c}{Case} ()}
+\label{class_case_a14237e17aab1829965adab76b747db6c}
+
+\begin{DoxyCompactList}\small\item\em default constructor \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{class_case_a2a8077c499c658e6306e0b3f4fa9537c}{getEtat} ()
+\begin{DoxyCompactList}\small\item\em virtual function which allows inherited classes to give their state \item\end{DoxyCompactList}\item 
+virtual char \hyperlink{class_case_a5a7b67b678313b5caab23868219f16b0}{getTypeCase} ()=0
+\begin{DoxyCompactList}\small\item\em Function which gives the type of the square. \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{class_case_a69f58543e3d54b4b2de28eb63b5f76ce}{getHauteur} ()
+\begin{DoxyCompactList}\small\item\em Function which gives the height. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_case_a6198855d58850cf6ed6b04dfc08c7033}{estAccessible} ()
+\begin{DoxyCompactList}\small\item\em Function which indicates if it's an accessible square. \item\end{DoxyCompactList}\item 
+\hypertarget{class_case_a9dd18212fae5d40f0335416d0d05dc73}{
+virtual void {\bfseries setAccessible} (bool b)}
+\label{class_case_a9dd18212fae5d40f0335416d0d05dc73}
+
+\item 
+virtual pair$<$ int, int $>$ \hyperlink{class_case_ae952f972865e7aeda610791973138d16}{getPosition} ()
+\begin{DoxyCompactList}\small\item\em function which gives the square position \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{class_case_ab0a449f4f324734c8ad3f149c8dd50a6}{getCouleur} ()
+\begin{DoxyCompactList}\small\item\em use for \hyperlink{class_case_port}{CasePort} \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{class_case_a47a04f64f3a0e3c5e8588075eec0dc55}{getNbTresors} ()
+\begin{DoxyCompactList}\small\item\em use for \hyperlink{class_case_port}{CasePort} \item\end{DoxyCompactList}\item 
+\hypertarget{class_case_a43d61d4920ec11155106ca9cf3bedaad}{
+virtual void \hyperlink{class_case_a43d61d4920ec11155106ca9cf3bedaad}{setNbTresors} ()}
+\label{class_case_a43d61d4920ec11155106ca9cf3bedaad}
+
+\begin{DoxyCompactList}\small\item\em use for \hyperlink{class_case_port}{CasePort}, to change the number of treasures \item\end{DoxyCompactList}\item 
+\hypertarget{class_case_a3a28b6465f9817cf07074b72ea4f07e3}{
+void \hyperlink{class_case_a3a28b6465f9817cf07074b72ea4f07e3}{setPosition} (pair$<$ int, int $>$ p)}
+\label{class_case_a3a28b6465f9817cf07074b72ea4f07e3}
+
+\begin{DoxyCompactList}\small\item\em change the value of the attribute \_\-position \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_case_a1105ac829dadb10c7528872342c34a9e}{
+static int {\bfseries nbTotTresor}}
+\label{class_case_a1105ac829dadb10c7528872342c34a9e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_case_acfdd32ad985bf3c59298b71f53e8812d}{
+pair$<$ int, int $>$ {\bfseries \_\-position}}
+\label{class_case_acfdd32ad985bf3c59298b71f53e8812d}
+
+\item 
+\hypertarget{class_case_aa06ac844f412d042fdf6aad7ab944b88}{
+bool {\bfseries \_\-accessible}}
+\label{class_case_aa06ac844f412d042fdf6aad7ab944b88}
+
+\item 
+\hypertarget{class_case_ae57ac26f4cf36197802b3164655c78ea}{
+int {\bfseries \_\-hauteur}}
+\label{class_case_ae57ac26f4cf36197802b3164655c78ea}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Case.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_case_a6198855d58850cf6ed6b04dfc08c7033}{
+\index{Case@{Case}!estAccessible@{estAccessible}}
+\index{estAccessible@{estAccessible}!Case@{Case}}
+\subsubsection[{estAccessible}]{\setlength{\rightskip}{0pt plus 5cm}bool Case::estAccessible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_case_a6198855d58850cf6ed6b04dfc08c7033}
+
+
+Function which indicates if it's an accessible square. 
+
+\begin{DoxyReturn}{Returns}
+bool true if the square is accessible 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file Case.h.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_case_a6198855d58850cf6ed6b04dfc08c7033_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_case_ab0a449f4f324734c8ad3f149c8dd50a6}{
+\index{Case@{Case}!getCouleur@{getCouleur}}
+\index{getCouleur@{getCouleur}!Case@{Case}}
+\subsubsection[{getCouleur}]{\setlength{\rightskip}{0pt plus 5cm}int Case::getCouleur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_case_ab0a449f4f324734c8ad3f149c8dd50a6}
+
+
+use for \hyperlink{class_case_port}{CasePort} 
+
+\begin{DoxyReturn}{Returns}
+0 by default 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_case_port_a5b20959b6704c780287b57b8e44fe72a}{CasePort}.
+
+
+
+Definition at line 18 of file Case.cpp.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_case_ab0a449f4f324734c8ad3f149c8dd50a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_case_a2a8077c499c658e6306e0b3f4fa9537c}{
+\index{Case@{Case}!getEtat@{getEtat}}
+\index{getEtat@{getEtat}!Case@{Case}}
+\subsubsection[{getEtat}]{\setlength{\rightskip}{0pt plus 5cm}int Case::getEtat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_case_a2a8077c499c658e6306e0b3f4fa9537c}
+
+
+virtual function which allows inherited classes to give their state 
+
+\begin{DoxyReturn}{Returns}
+int the associated state 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_case_bordure_plateau_a2fdf2343b0374953a354ac30bb2209d8}{CaseBordurePlateau}, \hyperlink{class_case_canon_noir_abf4c2fc03e5fa38a8bf7afae0d9b8098}{CaseCanonNoir}, \hyperlink{class_case_port_ad541f8d3b3f4d17d009e41a254caeae1}{CasePort}, and \hyperlink{class_case_tresor_a2696c68020e024846366f01a6787ae73}{CaseTresor}.
+
+
+
+Definition at line 112 of file Case.h.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_case_a2a8077c499c658e6306e0b3f4fa9537c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_case_a69f58543e3d54b4b2de28eb63b5f76ce}{
+\index{Case@{Case}!getHauteur@{getHauteur}}
+\index{getHauteur@{getHauteur}!Case@{Case}}
+\subsubsection[{getHauteur}]{\setlength{\rightskip}{0pt plus 5cm}int Case::getHauteur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_case_a69f58543e3d54b4b2de28eb63b5f76ce}
+
+
+Function which gives the height. 
+
+\begin{DoxyReturn}{Returns}
+int the height of the square 
+\end{DoxyReturn}
+
+
+Definition at line 106 of file Case.h.
+
+\hypertarget{class_case_a47a04f64f3a0e3c5e8588075eec0dc55}{
+\index{Case@{Case}!getNbTresors@{getNbTresors}}
+\index{getNbTresors@{getNbTresors}!Case@{Case}}
+\subsubsection[{getNbTresors}]{\setlength{\rightskip}{0pt plus 5cm}int Case::getNbTresors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_case_a47a04f64f3a0e3c5e8588075eec0dc55}
+
+
+use for \hyperlink{class_case_port}{CasePort} 
+
+\begin{DoxyReturn}{Returns}
+0 by default 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_case_port_aa2f0f95025140925f0f1c3cdc6b9be5c}{CasePort}.
+
+
+
+Definition at line 22 of file Case.cpp.
+
+\hypertarget{class_case_ae952f972865e7aeda610791973138d16}{
+\index{Case@{Case}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Case@{Case}}
+\subsubsection[{getPosition}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ int, int $>$ Case::getPosition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_case_ae952f972865e7aeda610791973138d16}
+
+
+function which gives the square position 
+
+\begin{DoxyReturn}{Returns}
+pair$<$int,int$>$ the square position 
+\end{DoxyReturn}
+
+
+Definition at line 109 of file Case.h.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_case_ae952f972865e7aeda610791973138d16_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_case_a5a7b67b678313b5caab23868219f16b0}{
+\index{Case@{Case}!getTypeCase@{getTypeCase}}
+\index{getTypeCase@{getTypeCase}!Case@{Case}}
+\subsubsection[{getTypeCase}]{\setlength{\rightskip}{0pt plus 5cm}int Case::getTypeCase (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{class_case_a5a7b67b678313b5caab23868219f16b0}
+
+
+Function which gives the type of the square. 
+
+\begin{DoxyReturn}{Returns}
+char the type of the square 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_case_bordure_plateau_aed51310b5ed4acda3eb3aefe30366f31}{CaseBordurePlateau}, \hyperlink{class_case_canon_noir_a45e7ec6c2118c214e6968c48b4fb0ee4}{CaseCanonNoir}, \hyperlink{class_case_contour_ile_abf6a6d756b756611d0cc1f94260a6640}{CaseContourIle}, \hyperlink{class_case_ile_aba5a4057e18698f514526d6b82032602}{CaseIle}, \hyperlink{class_case_navigable_aab2139bcd41029170ef2baf92bf2b412}{CaseNavigable}, \hyperlink{class_case_port_ace3204ad6d79bf8820e279c7f223595f}{CasePort}, and \hyperlink{class_case_tresor_a96ac1aa3275f92b8e45eaa370bada8ce}{CaseTresor}.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=378pt]{class_case_a5a7b67b678313b5caab23868219f16b0_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_case_8h}{Case.h}\item 
+\hyperlink{_case_8cpp}{Case.cpp}\end{DoxyCompactItemize}

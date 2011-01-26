@@ -1,0 +1,248 @@
+\hypertarget{class_plateau}{
+\section{Plateau Class Reference}
+\label{class_plateau}\index{Plateau@{Plateau}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plateau_a07026170529dd928238ee45de0a797d7}{
+\hyperlink{class_plateau_a07026170529dd928238ee45de0a797d7}{Plateau} ()}
+\label{class_plateau_a07026170529dd928238ee45de0a797d7}
+
+\begin{DoxyCompactList}\small\item\em constructor of \hyperlink{class_plateau}{Plateau} class \item\end{DoxyCompactList}\item 
+int \hyperlink{class_plateau_a95ff4dab82132a10358e83e8b35bb23a}{largeur} ()
+\begin{DoxyCompactList}\small\item\em Function which returns the width of game board. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_plateau_a45df9e678f054afdd28ea46a54b8c7c3}{longueur} ()
+\begin{DoxyCompactList}\small\item\em Function which returns the length of game board. \item\end{DoxyCompactList}\item 
+\hyperlink{class_case}{Case} $\ast$ \hyperlink{class_plateau_aaf1a05fadd84bb14fd4580c7cfa93fdf}{getCasePort} (int couleur)
+\begin{DoxyCompactList}\small\item\em Function which returns the harbour corresponding to the given colour. \item\end{DoxyCompactList}\item 
+\hyperlink{class_case}{Case} $\ast$ \hyperlink{class_plateau_a07d8b65d2e41442e00476c758efd9c3b}{getCase} (pair$<$ int, int $>$ p)
+\begin{DoxyCompactList}\small\item\em Function which returns the associated \hyperlink{class_case}{Case}. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_plateau_a1a346e3ae645072d870578e9713578b8}{estAccessible} (pair$<$ int, int $>$ p)
+\begin{DoxyCompactList}\small\item\em Function which says if the case at position p is accessible. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_plateau_a74b4f5cf49d1f4f549f786bca559062a}{setAccessible} (pair$<$ int, int $>$ p)
+\begin{DoxyCompactList}\small\item\em Function which makes the case accessible. \item\end{DoxyCompactList}\item 
+\hypertarget{class_plateau_a042993d8abf6ef4f29fa96d7a7ae3de1}{
+void \hyperlink{class_plateau_a042993d8abf6ef4f29fa96d7a7ae3de1}{setInaccessible} (pair$<$ int, int $>$ p)}
+\label{class_plateau_a042993d8abf6ef4f29fa96d7a7ae3de1}
+
+\begin{DoxyCompactList}\small\item\em Function which make the case at position p inaccessible. \item\end{DoxyCompactList}\item 
+\hypertarget{class_plateau_ae881545e521dd4a2e9e9cb802425d8d0}{
+void \hyperlink{class_plateau_ae881545e521dd4a2e9e9cb802425d8d0}{setAccessibleAll} (bool b)}
+\label{class_plateau_ae881545e521dd4a2e9e9cb802425d8d0}
+
+\begin{DoxyCompactList}\small\item\em Function which put all the case inaccessible. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file Plateau.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_plateau_a1a346e3ae645072d870578e9713578b8}{
+\index{Plateau@{Plateau}!estAccessible@{estAccessible}}
+\index{estAccessible@{estAccessible}!Plateau@{Plateau}}
+\subsubsection[{estAccessible}]{\setlength{\rightskip}{0pt plus 5cm}bool Plateau::estAccessible (
+\begin{DoxyParamCaption}
+\item[{pair$<$ int, int $>$}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{class_plateau_a1a346e3ae645072d870578e9713578b8}
+
+
+Function which says if the case at position p is accessible. 
+
+\begin{DoxyReturn}{Returns}
+bool true is the case is accessible 
+\end{DoxyReturn}
+
+
+Definition at line 169 of file Plateau.cpp.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_plateau_a1a346e3ae645072d870578e9713578b8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=364pt]{class_plateau_a1a346e3ae645072d870578e9713578b8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_plateau_a07d8b65d2e41442e00476c758efd9c3b}{
+\index{Plateau@{Plateau}!getCase@{getCase}}
+\index{getCase@{getCase}!Plateau@{Plateau}}
+\subsubsection[{getCase}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Case} $\ast$ Plateau::getCase (
+\begin{DoxyParamCaption}
+\item[{pair$<$ int, int $>$}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{class_plateau_a07d8b65d2e41442e00476c758efd9c3b}
+
+
+Function which returns the associated \hyperlink{class_case}{Case}. 
+
+\begin{DoxyReturn}{Returns}
+Case$\ast$ a pointer on the case at position p 
+\end{DoxyReturn}
+
+
+Definition at line 158 of file Plateau.cpp.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_plateau_a07d8b65d2e41442e00476c758efd9c3b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_plateau_aaf1a05fadd84bb14fd4580c7cfa93fdf}{
+\index{Plateau@{Plateau}!getCasePort@{getCasePort}}
+\index{getCasePort@{getCasePort}!Plateau@{Plateau}}
+\subsubsection[{getCasePort}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Case} $\ast$ Plateau::getCasePort (
+\begin{DoxyParamCaption}
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{class_plateau_aaf1a05fadd84bb14fd4580c7cfa93fdf}
+
+
+Function which returns the harbour corresponding to the given colour. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & int couleur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Case$\ast$ a pointer on the colored case 
+\end{DoxyReturn}
+
+
+Definition at line 148 of file Plateau.cpp.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=366pt]{class_plateau_aaf1a05fadd84bb14fd4580c7cfa93fdf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_plateau_a95ff4dab82132a10358e83e8b35bb23a}{
+\index{Plateau@{Plateau}!largeur@{largeur}}
+\index{largeur@{largeur}!Plateau@{Plateau}}
+\subsubsection[{largeur}]{\setlength{\rightskip}{0pt plus 5cm}int Plateau::largeur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_plateau_a95ff4dab82132a10358e83e8b35bb23a}
+
+
+Function which returns the width of game board. 
+
+\begin{DoxyReturn}{Returns}
+int width of the game board 
+\end{DoxyReturn}
+
+
+Definition at line 85 of file Plateau.h.
+
+\hypertarget{class_plateau_a45df9e678f054afdd28ea46a54b8c7c3}{
+\index{Plateau@{Plateau}!longueur@{longueur}}
+\index{longueur@{longueur}!Plateau@{Plateau}}
+\subsubsection[{longueur}]{\setlength{\rightskip}{0pt plus 5cm}int Plateau::longueur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_plateau_a45df9e678f054afdd28ea46a54b8c7c3}
+
+
+Function which returns the length of game board. 
+
+\begin{DoxyReturn}{Returns}
+int length of the game board 
+\end{DoxyReturn}
+
+
+Definition at line 89 of file Plateau.h.
+
+\hypertarget{class_plateau_a74b4f5cf49d1f4f549f786bca559062a}{
+\index{Plateau@{Plateau}!setAccessible@{setAccessible}}
+\index{setAccessible@{setAccessible}!Plateau@{Plateau}}
+\subsubsection[{setAccessible}]{\setlength{\rightskip}{0pt plus 5cm}void Plateau::setAccessible (
+\begin{DoxyParamCaption}
+\item[{pair$<$ int, int $>$}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{class_plateau_a74b4f5cf49d1f4f549f786bca559062a}
+
+
+Function which makes the case accessible. 
+
+Function which make the case at position p accessible.
+
+redefine the heritated function 
+
+Definition at line 174 of file Plateau.cpp.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_plateau_a74b4f5cf49d1f4f549f786bca559062a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=364pt]{class_plateau_a74b4f5cf49d1f4f549f786bca559062a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_plateau_8h}{Plateau.h}\item 
+\hyperlink{_case_8h}{Case.h}\item 
+\hyperlink{_case_ile_8h}{CaseIle.h}\item 
+\hyperlink{_plateau_8cpp}{Plateau.cpp}\end{DoxyCompactItemize}

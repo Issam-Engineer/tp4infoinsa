@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$class_case_bordure_plateau.html" title="CaseBordurePlateau" alt="" coords="5,160,147,189"/>
+<area shape="rect" id="node7" href="$class_case_contour_ile.html" title="CaseContourIle" alt="" coords="171,160,280,189"/>
+<area shape="rect" id="node2" href="$class_case.html" title="Case" alt="" coords="125,5,176,35"/>
+<area shape="rect" id="node9" href="$class_case_canon_noir.html" title="CaseCanonNoir" alt="" coords="107,237,219,267"/>
+<area shape="rect" id="node11" href="$class_case_tresor.html" title="CaseTresor" alt="" coords="243,237,331,267"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_attente_deplacement_8cpp.html" title="File containing the functionalities and the attributes of the AttenteDeplacement class." alt="" coords="5,83,171,112"/>
+<area shape="rect" id="node5" href="$_attente_initialisation_8cpp.html" title="File which contains the functions and code of the AttenteInitialisation class." alt="" coords="195,83,352,112"/>
+<area shape="rect" id="node7" href="$_etat_tir_8cpp.html" title="File which contains the functions and code of the EtatTir class." alt="" coords="376,83,461,112"/>
+<area shape="rect" id="node9" href="$_main_8cpp_source.html" title="Main.cpp" alt="" coords="485,83,560,112"/>
+<area shape="rect" id="node11" href="$_moteur_jeu_8cpp.html" title="File which contains the functions and code of the MoteurJeu class." alt="" coords="584,83,691,112"/>
+<area shape="rect" id="node13" href="$_plateau_8cpp.html" title="File which contains the functions and code of the Plateau class." alt="" coords="715,83,805,112"/>
+</map>

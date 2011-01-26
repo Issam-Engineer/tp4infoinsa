@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_propose_deplacement.html#a486d26c93fd8bdb108ac5b0bcbb99cfd" title="Function which executes the current state." alt="" coords="181,5,381,35"/>
+<area shape="rect" id="node5" href="$class_attente_prem_lancer_de.html#a3f4c31cf56fffe3bda17a9214166bd2f" title="Function which executes the current state." alt="" coords="180,59,383,88"/>
+<area shape="rect" id="node7" href="$class_attente_lancer_de.html#a4202ca4c6fa05bba3d65eb3f099893d5" title="Function which executes the current state." alt="" coords="195,112,368,141"/>
+</map>

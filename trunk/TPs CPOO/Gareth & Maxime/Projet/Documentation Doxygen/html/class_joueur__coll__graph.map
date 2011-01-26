@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_bateau.html" title="Bateau" alt="" coords="5,184,67,213"/>
+<area shape="rect" id="node4" href="$class_case_port.html" title="CasePort" alt="" coords="81,85,156,115"/>
+<area shape="rect" id="node6" href="$class_case.html" title="Case" alt="" coords="39,5,89,35"/>
+</map>

@@ -1,0 +1,28 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_moteur_jeu_8h.html" title="File which contains the attributes and function declarations of the MoteurJeu class." alt="" coords="508,469,601,499"/>
+<area shape="rect" id="node25" href="$_etat_8h.html" title="File which contains the function declarations of the Etat interface." alt="" coords="760,392,816,421"/>
+<area shape="rect" id="node30" href="$_attente_nb_joueurs_8h.html" title="File which contains the functions and code of the AttenteNbJoueurs class." alt="" coords="209,237,345,267"/>
+<area shape="rect" id="node33" href="$_attente_initialisation_8h.html" title="File containing the functionalities and the attributes of the AttenteInitialisation class..." alt="" coords="261,160,403,189"/>
+<area shape="rect" id="node36" href="$_attente_prem_lancer_de_8h.html" title="File containing the functionalities and the attributes of the AttentePremLancerDe class..." alt="" coords="43,315,203,344"/>
+<area shape="rect" id="node40" href="$_attente_lancer_de_8h.html" title="File containing the functionalities and the attributes of the AttenteLancerDe class." alt="" coords="420,237,551,267"/>
+<area shape="rect" id="node43" href="$_attente_choix_bateau_8h.html" title="File containing the functionalities and the attributes of the AttenteChoixBateau class." alt="" coords="512,315,661,344"/>
+<area shape="rect" id="node46" href="$_propose_deplacement_8h.html" title="File containing the functionalities and the attributes of the ProposeDeplacement class." alt="" coords="1411,160,1568,189"/>
+<area shape="rect" id="node53" href="$_attente_deplacement_8h.html" title="File containing the functionalities and the attributes of the AttenteDeplacement class." alt="" coords="528,160,677,189"/>
+<area shape="rect" id="node56" href="$_duel_8h.html" title="File containing the functionalities and the attributes of the Duel class." alt="" coords="848,237,907,267"/>
+<area shape="rect" id="node59" href="$_etat_tir_8h.html" title="file which contains function declarations and attributes of the EtatTir class" alt="" coords="701,160,771,189"/>
+<area shape="rect" id="node64" href="$_etat_canon_fin_8h.html" title="file which contains function declarations and attributes of the EtatCanonFin class" alt="" coords="631,83,743,112"/>
+<area shape="rect" id="node69" href="$_etat_tresor_8h.html" title="file which contains function declarations and attributes of the EtatTresor class" alt="" coords="857,315,951,344"/>
+<area shape="rect" id="node72" href="$_etat_depot_8h.html" title="file which contains function declarations and attributes of the EtatDepot class" alt="" coords="868,83,959,112"/>
+<area shape="rect" id="node75" href="$_etat_fin_partie_8h.html" title="file which contains function declarations and attributes of the EtatFinPartie class" alt="" coords="227,315,336,344"/>
+<area shape="rect" id="node79" href="$_attente_choix_de_8h.html" title="File containing the functionalities and the attributes of the AttenteChoixDe class." alt="" coords="983,83,1105,112"/>
+<area shape="rect" id="node82" href="$_attente_choix_bateau_vise_8h.html" title="File containing the functionalities and the attributes of the AttenteChoixBateauVise class..." alt="" coords="1129,83,1303,112"/>
+<area shape="rect" id="node85" href="$_joueur_8h.html" title="file which contains the attributes and function declarations of the Joueur class" alt="" coords="1621,83,1691,112"/>
+<area shape="rect" id="node99" href="$_plateau_8h.html" title="File which contains the attributes and function declarations of Plateau class." alt="" coords="1331,237,1408,267"/>
+<area shape="rect" id="node5" href="$_facade_8h.html" title="fichier qui regroupe les fonctionnalité et les attributs de la facade du moteur" alt="" coords="1595,547,1669,576"/>
+<area shape="rect" id="node13" href="$enum_8h.html" title="File which contains the enumaration corresponding to the different states (Etat)" alt="" coords="563,547,627,576"/>
+<area shape="rect" id="node15" href="$_d_xC3_xA9_8h.html" title="File which contains the attributes and function declarations of the Dé class." alt="" coords="491,547,539,576"/>
+<area shape="rect" id="node48" href="$_case_8h.html" title="File containing the functionalities and the attributes of the Case class." alt="" coords="1557,315,1619,344"/>
+<area shape="rect" id="node89" href="$_bateau_8h.html" title="File which contains the attributes and function declarations of the Bateau class." alt="" coords="1693,160,1768,189"/>
+<area shape="rect" id="node95" href="$_case_port_8h.html" title="File which contains the attributes and function declarations of the CasePort class." alt="" coords="1483,237,1568,267"/>
+<area shape="rect" id="node105" href="$enum_c_o_u_l_e_u_r_8h.html" title="File which contains the enumaration corresponding to the different colors." alt="" coords="1307,315,1432,344"/>
+</map>

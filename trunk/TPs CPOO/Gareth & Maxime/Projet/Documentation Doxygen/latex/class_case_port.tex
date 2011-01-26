@@ -1,0 +1,201 @@
+\hypertarget{class_case_port}{
+\section{CasePort Class Reference}
+\label{class_case_port}\index{CasePort@{CasePort}}
+}
+
+
+Inheritance diagram for CasePort:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{class_case_port__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CasePort:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{class_case_port__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_case_port_a5b20959b6704c780287b57b8e44fe72a}{getCouleur} ()
+\begin{DoxyCompactList}\small\item\em Virtual function which returns the color of the harbour. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_case_port_ad541f8d3b3f4d17d009e41a254caeae1}{getEtat} ()
+\begin{DoxyCompactList}\small\item\em Function which gives the state associated to the class. \item\end{DoxyCompactList}\item 
+\hyperlink{class_case_port_a4bd64b1743c6be7a8cafe4c5be011e5e}{CasePort} (int Couleur)
+\begin{DoxyCompactList}\small\item\em Default constructor of \hyperlink{class_case_port}{CasePort}. \item\end{DoxyCompactList}\item 
+char \hyperlink{class_case_port_ace3204ad6d79bf8820e279c7f223595f}{getTypeCase} ()
+\begin{DoxyCompactList}\small\item\em Inherited function which gives the type of the square. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_case_port_aa2f0f95025140925f0f1c3cdc6b9be5c}{getNbTresors} ()
+\begin{DoxyCompactList}\small\item\em Access function. \item\end{DoxyCompactList}\item 
+\hypertarget{class_case_port_aa647ce23ecae5dc8543cf37c7729f65c}{
+void \hyperlink{class_case_port_aa647ce23ecae5dc8543cf37c7729f65c}{setNbTresors} ()}
+\label{class_case_port_aa647ce23ecae5dc8543cf37c7729f65c}
+
+\begin{DoxyCompactList}\small\item\em Modifies the attribute \_\-nbTresors. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file CasePort.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_case_port_a4bd64b1743c6be7a8cafe4c5be011e5e}{
+\index{CasePort@{CasePort}!CasePort@{CasePort}}
+\index{CasePort@{CasePort}!CasePort@{CasePort}}
+\subsubsection[{CasePort}]{\setlength{\rightskip}{0pt plus 5cm}CasePort::CasePort (
+\begin{DoxyParamCaption}
+\item[{int}]{Couleur}
+\end{DoxyParamCaption}
+)}}
+\label{class_case_port_a4bd64b1743c6be7a8cafe4c5be011e5e}
+
+
+Default constructor of \hyperlink{class_case_port}{CasePort}. 
+
+\begin{DoxyReturn}{Returns}
+pointer on the instance 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file CasePort.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_case_port_a5b20959b6704c780287b57b8e44fe72a}{
+\index{CasePort@{CasePort}!getCouleur@{getCouleur}}
+\index{getCouleur@{getCouleur}!CasePort@{CasePort}}
+\subsubsection[{getCouleur}]{\setlength{\rightskip}{0pt plus 5cm}int CasePort::getCouleur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_case_port_a5b20959b6704c780287b57b8e44fe72a}
+
+
+Virtual function which returns the color of the harbour. 
+
+\begin{DoxyReturn}{Returns}
+int color of the harbour 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_case_ab0a449f4f324734c8ad3f149c8dd50a6}{Case}.
+
+
+
+Definition at line 63 of file CasePort.h.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=366pt]{class_case_port_a5b20959b6704c780287b57b8e44fe72a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_case_port_ad541f8d3b3f4d17d009e41a254caeae1}{
+\index{CasePort@{CasePort}!getEtat@{getEtat}}
+\index{getEtat@{getEtat}!CasePort@{CasePort}}
+\subsubsection[{getEtat}]{\setlength{\rightskip}{0pt plus 5cm}int CasePort::getEtat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_case_port_ad541f8d3b3f4d17d009e41a254caeae1}
+
+
+Function which gives the state associated to the class. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_etat}{Etat} the associated state 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_case_a2a8077c499c658e6306e0b3f4fa9537c}{Case}.
+
+
+
+Definition at line 64 of file CasePort.h.
+
+\hypertarget{class_case_port_aa2f0f95025140925f0f1c3cdc6b9be5c}{
+\index{CasePort@{CasePort}!getNbTresors@{getNbTresors}}
+\index{getNbTresors@{getNbTresors}!CasePort@{CasePort}}
+\subsubsection[{getNbTresors}]{\setlength{\rightskip}{0pt plus 5cm}int CasePort::getNbTresors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_case_port_aa2f0f95025140925f0f1c3cdc6b9be5c}
+
+
+Access function. 
+
+\begin{DoxyReturn}{Returns}
+int the number of treasures of the harbour 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_case_a47a04f64f3a0e3c5e8588075eec0dc55}{Case}.
+
+
+
+Definition at line 66 of file CasePort.h.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_case_port_aa2f0f95025140925f0f1c3cdc6b9be5c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_case_port_ace3204ad6d79bf8820e279c7f223595f}{
+\index{CasePort@{CasePort}!getTypeCase@{getTypeCase}}
+\index{getTypeCase@{getTypeCase}!CasePort@{CasePort}}
+\subsubsection[{getTypeCase}]{\setlength{\rightskip}{0pt plus 5cm}char CasePort::getTypeCase (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_case_port_ace3204ad6d79bf8820e279c7f223595f}
+
+
+Inherited function which gives the type of the square. 
+
+\begin{DoxyReturn}{Returns}
+char the type of the square 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_case_a5a7b67b678313b5caab23868219f16b0}{Case}.
+
+
+
+Definition at line 65 of file CasePort.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_case_port_8h}{CasePort.h}\item 
+\hyperlink{_case_port_8cpp}{CasePort.cpp}\end{DoxyCompactItemize}

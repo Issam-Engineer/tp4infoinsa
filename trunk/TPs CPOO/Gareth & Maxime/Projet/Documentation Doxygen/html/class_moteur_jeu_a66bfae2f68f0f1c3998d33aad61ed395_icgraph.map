@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_attente_deplacement.html#ac524e34a91424ec82247a95006158dd1" title="Function which executes the current state." alt="" coords="201,5,396,35"/>
+<area shape="rect" id="node5" href="$class_propose_deplacement.html#a7f175e6c27e5b949159b6b6bb6c26242" title="Function which checks if there&#39;s no island on the path between the actuel square and the destinat..." alt="" coords="193,59,404,88"/>
+</map>

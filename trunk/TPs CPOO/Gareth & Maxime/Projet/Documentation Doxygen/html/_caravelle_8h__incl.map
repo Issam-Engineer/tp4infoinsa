@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_bateau_8h.html" title="File which contains the attributes and function declarations of the Bateau class." alt="" coords="585,83,660,112"/>
+<area shape="rect" id="node11" href="$_case_8h.html" title="File containing the functionalities and the attributes of the Case class." alt="" coords="512,237,573,267"/>
+<area shape="rect" id="node38" href="$_case_port_8h.html" title="File which contains the attributes and function declarations of the CasePort class." alt="" coords="500,160,585,189"/>
+<area shape="rect" id="node15" href="$_etat_8h.html" title="File which contains the function declarations of the Etat interface." alt="" coords="485,315,541,344"/>
+<area shape="rect" id="node19" href="$_moteur_jeu_8h.html" title="File which contains the attributes and function declarations of the MoteurJeu class." alt="" coords="323,392,416,421"/>
+<area shape="rect" id="node21" href="$_facade_8h.html" title="fichier qui regroupe les fonctionnalité et les attributs de la facade du moteur" alt="" coords="491,469,565,499"/>
+<area shape="rect" id="node26" href="$enum_8h.html" title="File which contains the enumaration corresponding to the different states (Etat)" alt="" coords="352,469,416,499"/>
+<area shape="rect" id="node28" href="$_d_xC3_xA9_8h.html" title="File which contains the attributes and function declarations of the Dé class." alt="" coords="99,469,147,499"/>
+</map>

@@ -1,0 +1,382 @@
+\hypertarget{class_bateau}{
+\section{Bateau Class Reference}
+\label{class_bateau}\index{Bateau@{Bateau}}
+}
+
+
+Inheritance diagram for Bateau:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{class_bateau__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bateau:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{class_bateau__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_bateau_a9b2027f6f3a71d6b05209e22b928db00}{
+\hyperlink{class_bateau_a9b2027f6f3a71d6b05209e22b928db00}{Bateau} ()}
+\label{class_bateau_a9b2027f6f3a71d6b05209e22b928db00}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+virtual char \hyperlink{class_bateau_ad6775916a45ddbe18a9f06df79e2ba6f}{type} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function which allows inherited classes to give their name. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_bateau_a3e257c2b988a544cd37889165ac6f5f8}{getCourant} ()
+\begin{DoxyCompactList}\small\item\em acces function \item\end{DoxyCompactList}\item 
+\hypertarget{class_bateau_ace593e482febbc5bc117388e812e2891}{
+void \hyperlink{class_bateau_ace593e482febbc5bc117388e812e2891}{setCourant} (bool t)}
+\label{class_bateau_ace593e482febbc5bc117388e812e2891}
+
+\begin{DoxyCompactList}\small\item\em function which changes the value of \_\-courant \item\end{DoxyCompactList}\item 
+virtual \hyperlink{class_case}{Case} $\ast$ \hyperlink{class_bateau_a00e5eb0670be5733773f62dc35d6df51}{getPosition} ()
+\begin{DoxyCompactList}\small\item\em Virtual function which return the boat position. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_bateau_a4e83c9f8829d9124aa228553983dde30}{peutTirer} ()
+\begin{DoxyCompactList}\small\item\em Virtual function which indicates if the boat can shoot (for example a \hyperlink{class_radeau}{Radeau} can't be shot) \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_bateau_a8034d2fb0cd3a77006d8cb93760bd052}{peutEtreVise} ()
+\begin{DoxyCompactList}\small\item\em Virtual function which indicates if the boat can be shot (for example a \hyperlink{class_radeau}{Radeau} can't be shot) \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_bateau_a2199cb19284ff581d27249d275b68c10}{peutJouer2Des} ()
+\begin{DoxyCompactList}\small\item\em Virtual function which indicates if the boat is allowed to play two dices. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{class_bateau_a4c8f0eed80f8222f52c10a28ffc1e23e}{positionner} (\hyperlink{class_case}{Case} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Virtual function which replaces the boat at a given position. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_bateau_ac9f4ecda05764e72d12119c1574c57a4}{getCouleur} ()
+\begin{DoxyCompactList}\small\item\em access function \item\end{DoxyCompactList}\item 
+\hypertarget{class_bateau_a6302c6313fc1806a2fcaf16424d3e989}{
+void \hyperlink{class_bateau_a6302c6313fc1806a2fcaf16424d3e989}{setCouleur} (int c)}
+\label{class_bateau_a6302c6313fc1806a2fcaf16424d3e989}
+
+\begin{DoxyCompactList}\small\item\em function which changes the value of \_\-couleurb \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_bateau_a10a1cc0204e2c0f1db0cdb7471c5bb70}{getATresor} ()
+\begin{DoxyCompactList}\small\item\em access function \item\end{DoxyCompactList}\item 
+\hypertarget{class_bateau_aefd58da46dd3b977260f42ea9a6647e5}{
+virtual void \hyperlink{class_bateau_aefd58da46dd3b977260f42ea9a6647e5}{setATresor} (bool b)}
+\label{class_bateau_aefd58da46dd3b977260f42ea9a6647e5}
+
+\begin{DoxyCompactList}\small\item\em function which changes the value of aTresor \item\end{DoxyCompactList}\item 
+\hypertarget{class_bateau_a349688b15a9a05a449127c750a54dac8}{
+void {\bfseries setPort} (\hyperlink{class_case_port}{CasePort} $\ast$c)}
+\label{class_bateau_a349688b15a9a05a449127c750a54dac8}
+
+\item 
+\hypertarget{class_bateau_aafff8ffbe9d8fa8f4ed65040f1a6a26d}{
+\hyperlink{class_case}{Case} $\ast$ {\bfseries getPort} ()}
+\label{class_bateau_aafff8ffbe9d8fa8f4ed65040f1a6a26d}
+
+\item 
+bool \hyperlink{class_bateau_a79d789b8f68fff52173b34d8fe6ecd6d}{getBonPort} ()
+\begin{DoxyCompactList}\small\item\em access function \item\end{DoxyCompactList}\item 
+\hypertarget{class_bateau_aa06e6f4272b39667a5a2776454743538}{
+virtual void \hyperlink{class_bateau_aa06e6f4272b39667a5a2776454743538}{setBonPort} (bool b)}
+\label{class_bateau_aa06e6f4272b39667a5a2776454743538}
+
+\begin{DoxyCompactList}\small\item\em function which changes the value of bonPort \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_bateau_a6d6408616609ad289342a6a135f2cba7}{
+bool {\bfseries pPTresor}}
+\label{class_bateau_a6d6408616609ad289342a6a135f2cba7}
+
+\item 
+\hypertarget{class_bateau_a309c21d803cb4001aa68f95641a0237f}{
+bool {\bfseries pJ2Des}}
+\label{class_bateau_a309c21d803cb4001aa68f95641a0237f}
+
+\item 
+\hypertarget{class_bateau_ad2b8e3498076f396687254c1e2d706da}{
+bool {\bfseries pTirer}}
+\label{class_bateau_ad2b8e3498076f396687254c1e2d706da}
+
+\item 
+\hypertarget{class_bateau_a7939fb4f79a9b08f6f0cde08676d7b1f}{
+bool {\bfseries pEVise}}
+\label{class_bateau_a7939fb4f79a9b08f6f0cde08676d7b1f}
+
+\item 
+\hypertarget{class_bateau_a339f689bed319640b0ee7a226b18e56e}{
+\hyperlink{class_case}{Case} $\ast$ {\bfseries pos}}
+\label{class_bateau_a339f689bed319640b0ee7a226b18e56e}
+
+\item 
+\hypertarget{class_bateau_add3dbf8892b08b6d6cd440fafbf54c5e}{
+int {\bfseries \_\-couleurb}}
+\label{class_bateau_add3dbf8892b08b6d6cd440fafbf54c5e}
+
+\item 
+\hypertarget{class_bateau_ad1d2a3e373ec5f985f26389f8eb355db}{
+bool {\bfseries aTresor}}
+\label{class_bateau_ad1d2a3e373ec5f985f26389f8eb355db}
+
+\item 
+\hypertarget{class_bateau_a8c13012f611467657dbe56e6ab959544}{
+bool {\bfseries bonPort}}
+\label{class_bateau_a8c13012f611467657dbe56e6ab959544}
+
+\item 
+\hypertarget{class_bateau_a0478f47cb4f75b0ba00fa1f2f72410fa}{
+\hyperlink{class_case_port}{CasePort} $\ast$ {\bfseries \_\-cp}}
+\label{class_bateau_a0478f47cb4f75b0ba00fa1f2f72410fa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file Bateau.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_bateau_a10a1cc0204e2c0f1db0cdb7471c5bb70}{
+\index{Bateau@{Bateau}!getATresor@{getATresor}}
+\index{getATresor@{getATresor}!Bateau@{Bateau}}
+\subsubsection[{getATresor}]{\setlength{\rightskip}{0pt plus 5cm}bool Bateau::getATresor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_bateau_a10a1cc0204e2c0f1db0cdb7471c5bb70}
+
+
+access function 
+
+\begin{DoxyReturn}{Returns}
+bool true if the current boat carries a treasure 
+\end{DoxyReturn}
+
+
+Definition at line 170 of file Bateau.h.
+
+\hypertarget{class_bateau_a79d789b8f68fff52173b34d8fe6ecd6d}{
+\index{Bateau@{Bateau}!getBonPort@{getBonPort}}
+\index{getBonPort@{getBonPort}!Bateau@{Bateau}}
+\subsubsection[{getBonPort}]{\setlength{\rightskip}{0pt plus 5cm}bool Bateau::getBonPort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_bateau_a79d789b8f68fff52173b34d8fe6ecd6d}
+
+
+access function 
+
+\begin{DoxyReturn}{Returns}
+bool true if the current boat is in his own harbour 
+\end{DoxyReturn}
+
+
+Definition at line 182 of file Bateau.h.
+
+\hypertarget{class_bateau_ac9f4ecda05764e72d12119c1574c57a4}{
+\index{Bateau@{Bateau}!getCouleur@{getCouleur}}
+\index{getCouleur@{getCouleur}!Bateau@{Bateau}}
+\subsubsection[{getCouleur}]{\setlength{\rightskip}{0pt plus 5cm}int Bateau::getCouleur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_bateau_ac9f4ecda05764e72d12119c1574c57a4}
+
+
+access function 
+
+\begin{DoxyReturn}{Returns}
+the color of the boat 
+\end{DoxyReturn}
+
+
+Definition at line 164 of file Bateau.h.
+
+\hypertarget{class_bateau_a3e257c2b988a544cd37889165ac6f5f8}{
+\index{Bateau@{Bateau}!getCourant@{getCourant}}
+\index{getCourant@{getCourant}!Bateau@{Bateau}}
+\subsubsection[{getCourant}]{\setlength{\rightskip}{0pt plus 5cm}bool Bateau::getCourant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_bateau_a3e257c2b988a544cd37889165ac6f5f8}
+
+
+acces function 
+
+\begin{DoxyReturn}{Returns}
+true if the boat is the current boat of the player 
+\end{DoxyReturn}
+\hypertarget{class_bateau_a00e5eb0670be5733773f62dc35d6df51}{
+\index{Bateau@{Bateau}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Bateau@{Bateau}}
+\subsubsection[{getPosition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Case} $\ast$ Bateau::getPosition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_bateau_a00e5eb0670be5733773f62dc35d6df51}
+
+
+Virtual function which return the boat position. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_case}{Case} the boat position 
+\end{DoxyReturn}
+
+
+Definition at line 143 of file Bateau.h.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_bateau_a00e5eb0670be5733773f62dc35d6df51_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_bateau_a8034d2fb0cd3a77006d8cb93760bd052}{
+\index{Bateau@{Bateau}!peutEtreVise@{peutEtreVise}}
+\index{peutEtreVise@{peutEtreVise}!Bateau@{Bateau}}
+\subsubsection[{peutEtreVise}]{\setlength{\rightskip}{0pt plus 5cm}bool Bateau::peutEtreVise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_bateau_a8034d2fb0cd3a77006d8cb93760bd052}
+
+
+Virtual function which indicates if the boat can be shot (for example a \hyperlink{class_radeau}{Radeau} can't be shot) 
+
+\begin{DoxyReturn}{Returns}
+bool true if the boat can be shot 
+\end{DoxyReturn}
+
+
+Definition at line 149 of file Bateau.h.
+
+\hypertarget{class_bateau_a2199cb19284ff581d27249d275b68c10}{
+\index{Bateau@{Bateau}!peutJouer2Des@{peutJouer2Des}}
+\index{peutJouer2Des@{peutJouer2Des}!Bateau@{Bateau}}
+\subsubsection[{peutJouer2Des}]{\setlength{\rightskip}{0pt plus 5cm}bool Bateau::peutJouer2Des (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_bateau_a2199cb19284ff581d27249d275b68c10}
+
+
+Virtual function which indicates if the boat is allowed to play two dices. 
+
+Only a \hyperlink{class_caravelle}{Caravelle} can roll the dice twice
+
+\begin{DoxyReturn}{Returns}
+bool true if the boat can role the dice twice 
+\end{DoxyReturn}
+
+
+Definition at line 152 of file Bateau.h.
+
+\hypertarget{class_bateau_a4e83c9f8829d9124aa228553983dde30}{
+\index{Bateau@{Bateau}!peutTirer@{peutTirer}}
+\index{peutTirer@{peutTirer}!Bateau@{Bateau}}
+\subsubsection[{peutTirer}]{\setlength{\rightskip}{0pt plus 5cm}bool Bateau::peutTirer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_bateau_a4e83c9f8829d9124aa228553983dde30}
+
+
+Virtual function which indicates if the boat can shoot (for example a \hyperlink{class_radeau}{Radeau} can't be shot) 
+
+\begin{DoxyReturn}{Returns}
+bool true if boat can shoot 
+\end{DoxyReturn}
+
+
+Definition at line 146 of file Bateau.h.
+
+\hypertarget{class_bateau_a4c8f0eed80f8222f52c10a28ffc1e23e}{
+\index{Bateau@{Bateau}!positionner@{positionner}}
+\index{positionner@{positionner}!Bateau@{Bateau}}
+\subsubsection[{positionner}]{\setlength{\rightskip}{0pt plus 5cm}void Bateau::positionner (
+\begin{DoxyParamCaption}
+\item[{{\bf Case} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_bateau_a4c8f0eed80f8222f52c10a28ffc1e23e}
+
+
+Virtual function which replaces the boat at a given position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \hyperlink{class_case}{Case}} & a position \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 11 of file Bateau.cpp.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_bateau_a4c8f0eed80f8222f52c10a28ffc1e23e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_bateau_ad6775916a45ddbe18a9f06df79e2ba6f}{
+\index{Bateau@{Bateau}!type@{type}}
+\index{type@{type}!Bateau@{Bateau}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}char Bateau::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{class_bateau_ad6775916a45ddbe18a9f06df79e2ba6f}
+
+
+Pure virtual function which allows inherited classes to give their name. 
+
+\begin{DoxyReturn}{Returns}
+char the class name 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_caravelle_ae63b0717615fb34662d0189cefbb50d0}{Caravelle}, \hyperlink{class_fregate_aacc93c2b316de955f4e4717583c0a8c1}{Fregate}, and \hyperlink{class_radeau_aff23ef397c63721fd875e6c1090edb70}{Radeau}.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{class_bateau_ad6775916a45ddbe18a9f06df79e2ba6f_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_bateau_8h}{Bateau.h}\item 
+\hyperlink{_bateau_8cpp}{Bateau.cpp}\end{DoxyCompactItemize}

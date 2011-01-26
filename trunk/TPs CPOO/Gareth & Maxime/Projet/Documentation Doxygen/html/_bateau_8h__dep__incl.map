@@ -1,0 +1,27 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_joueur_8h.html" title="file which contains the attributes and function declarations of the Joueur class" alt="" coords="1552,83,1621,112"/>
+<area shape="rect" id="node17" href="$_duel_8cpp.html" title="File which contains the functions and code of theDuel class." alt="" coords="384,160,456,189"/>
+<area shape="rect" id="node39" href="$_bateau_8cpp.html" title="File which contains the functions and code of the Bateau class." alt="" coords="2680,83,2768,112"/>
+<area shape="rect" id="node41" href="$_caravelle_8h.html" title="File which contains the attributes and function declarations of the Caravelle class." alt="" coords="2571,83,2656,112"/>
+<area shape="rect" id="node49" href="$_fregate_8h.html" title="file which contains the attributes and function declarations of the Fregate class" alt="" coords="220,83,297,112"/>
+<area shape="rect" id="node54" href="$_radeau_8h.html" title="file which contains the attributes and function declarations of the Radeau class" alt="" coords="321,83,399,112"/>
+<area shape="rect" id="node5" href="$_attente_choix_bateau_8cpp_source.html" title="AttenteChoixBateau.cpp" alt="" coords="480,160,643,189"/>
+<area shape="rect" id="node7" href="$_attente_choix_bateau_vise_8cpp_source.html" title="AttenteChoixBateauVise.cpp" alt="" coords="667,160,856,189"/>
+<area shape="rect" id="node9" href="$_attente_deplacement_8cpp.html" title="File containing the functionalities and the attributes of the AttenteDeplacement class." alt="" coords="880,160,1045,189"/>
+<area shape="rect" id="node11" href="$_attente_initialisation_8cpp.html" title="File which contains the functions and code of the AttenteInitialisation class." alt="" coords="1069,160,1227,189"/>
+<area shape="rect" id="node13" href="$_attente_lancer_de_8cpp.html" title="File which contains the functions and code of the AttenteLancerDe class." alt="" coords="1251,160,1395,189"/>
+<area shape="rect" id="node15" href="$_attente_prem_lancer_de_8cpp.html" title="File which contains the functions and code of the AttentePremLancerDe class." alt="" coords="1419,160,1592,189"/>
+<area shape="rect" id="node19" href="$_etat_canon_fin_8cpp.html" title="File which contains the functions and code of the EtatCanonFin class." alt="" coords="235,160,360,189"/>
+<area shape="rect" id="node21" href="$_etat_depot_8cpp.html" title="File which contains the functions and code of the EtatDepot class." alt="" coords="2621,160,2725,189"/>
+<area shape="rect" id="node23" href="$_etat_fin_partie_8cpp.html" title="File which contains the functions and code of the EtatFinPartie class." alt="" coords="2749,160,2872,189"/>
+<area shape="rect" id="node25" href="$_etat_tresor_8cpp.html" title="File which contains the functions and code of the EtatTresor class." alt="" coords="1616,160,1723,189"/>
+<area shape="rect" id="node27" href="$_facade_8cpp.html" title="File which contains the functions and code of the Facade class." alt="" coords="1747,160,1837,189"/>
+<area shape="rect" id="node29" href="$_joueur_8cpp.html" title="File which contains the functions and code of the Joueur class." alt="" coords="2512,160,2597,189"/>
+<area shape="rect" id="node31" href="$_main_8cpp_source.html" title="Main.cpp" alt="" coords="1861,160,1936,189"/>
+<area shape="rect" id="node33" href="$_moteur_jeu_8cpp.html" title="File which contains the functions and code of the MoteurJeu class." alt="" coords="1960,160,2067,189"/>
+<area shape="rect" id="node35" href="$_o_l_d___propose_deplacement_8cpp_source.html" title="OLD_ProposeDeplacement.cpp" alt="" coords="2091,160,2293,189"/>
+<area shape="rect" id="node37" href="$_propose_deplacement_8cpp.html" title="File containing the functionalities and the attributes of the ProposeDeplacement class." alt="" coords="2317,160,2488,189"/>
+<area shape="rect" id="node43" href="$_caravelle_8cpp.html" title="file which contains function and code of the Caravelle class" alt="" coords="2896,160,2995,189"/>
+<area shape="rect" id="node52" href="$_fregate_8cpp.html" title="file which contains functions and code of the Fregate class" alt="" coords="5,160,96,189"/>
+<area shape="rect" id="node57" href="$_radeau_8cpp.html" title="file which contains functions and code of the Radeau class" alt="" coords="120,160,211,189"/>
+</map>
