@@ -21,7 +21,8 @@ void EtatTresor::execute(){
 
 	Bateau* BC = motor->getJoueurInd(motor->getJCourant())->getBateauCourant();
 	if((BC->type() == 'C' ||  BC->type() == 'F') && !BC->getATresor()){
-		BC->setATresor(true);
+		motor->getFacade()->setATresor(true);
+		//BC->setATresor(true);
 		motor->getFacade()->setTresorRecup(true);
 		cout<<"Trésor à bord !"<<endl;
 	} else {

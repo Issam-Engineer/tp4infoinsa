@@ -40,6 +40,10 @@ Facade::Facade(){
 	_enableClicDe=true;
 	_choixBateau=false;
 	_tresorRecup=false;
+	_nbTresorsRouge=0;
+	_nbTresorsVert=0;
+	_nbTresorsJaune=0;
+	_nbTresorsBleu=0;
 	_partieTerminee=false;
 }
 
@@ -131,11 +135,50 @@ bool Facade::getAccessible(int x, int y){
 
 void Facade::setAccessibleAll(bool b){_moteur->setAccessibleAll(b);}
 
-bool Facade::getATresor(){return _moteur->getJoueurInd(_moteur->getJCourant())->getBateauCourant()->getATresor();}
-void Facade::setATresor(bool b){_moteur->getJoueurInd(_moteur->getJCourant())->getBateauCourant()->setATresor(b);}
+bool Facade::getATresor(){
+	return _moteur->getJoueurInd(_moteur->getJCourant())->getBateauCourant()->getATresor();
+}
 
-bool Facade::getBonPort(){return _moteur->getJoueurInd(_moteur->getJCourant())->getBateauCourant()->getBonPort();}
-void Facade::setBonPort(bool b){_moteur->getJoueurInd(_moteur->getJCourant())->getBateauCourant()->setBonPort(b);}
+void Facade::setATresor(bool b){
+	_moteur->getJoueurInd(_moteur->getJCourant())->getBateauCourant()->setATresor(b);
+}
+
+bool Facade::getBonPort(){
+	return _moteur->getJoueurInd(_moteur->getJCourant())->getBateauCourant()->getBonPort();
+}
+void Facade::setBonPort(bool b){
+	_moteur->getJoueurInd(_moteur->getJCourant())->getBateauCourant()->setBonPort(b);
+}
+
+int Facade::getNbTresorsPort(){
+	return _moteur->getJoueurInd(_moteur->getJCourant())->getBateauCourant()->getPort()->getNbTresors();
+}
+
+int Facade::getNbTresors(int c){
+	int tot;
+	if(c == 1){
+		tot = _nbTresorsRouge;
+	} else if(c == 2){
+		tot = _nbTresorsVert;
+	} else if(c == 3){
+		tot = _nbTresorsJaune;
+	} else if(c == 4){
+		tot = _nbTresorsBleu;
+	}
+	return tot;
+}
+
+void Facade::setNbTresors(int c){
+	if(c == 1){
+		_nbTresorsRouge+=1;
+	} else if(c == 2){
+		_nbTresorsVert+=1;
+	} else if(c == 3){
+		_nbTresorsJaune+=1;
+	} else if(c == 4){
+		_nbTresorsBleu+=1;
+	}
+}
 
 
 int Facade::getEtatCourant(){

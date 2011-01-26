@@ -136,6 +136,7 @@
     <ClCompile Include="..\..\fichiers\Etat.cpp" />
     <ClCompile Include="..\..\fichiers\EtatCanonFin.cpp" />
     <ClCompile Include="..\..\fichiers\EtatDepot.cpp" />
+    <ClCompile Include="..\..\fichiers\EtatFinPartie.cpp" />
     <ClCompile Include="..\..\fichiers\EtatTir.cpp" />
     <ClCompile Include="..\..\fichiers\EtatTresor.cpp" />
     <ClCompile Include="..\..\fichiers\Facade.cpp" />

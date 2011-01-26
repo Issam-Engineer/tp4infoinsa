@@ -23,7 +23,7 @@ int Case::getNbTresors(){
 	return 0;
 }
 
-void Case::setNbTresors(int n){
+void Case::setNbTresors(){
 }
 
 void Case::setPosition(pair<int,int> p){

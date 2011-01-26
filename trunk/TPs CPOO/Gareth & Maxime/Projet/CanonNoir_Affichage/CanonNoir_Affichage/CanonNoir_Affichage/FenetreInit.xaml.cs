@@ -96,11 +96,11 @@ namespace CanonNoir_Affichage
                 int j4 =comboBox4.SelectedIndex;
 
             //if nb joueur = 3 on doit éviter l'erreur pour le joueur 4
-                if (j1 == j2 || j1 == j3 || j1 == j4 || j2 == j3 || j2 == j4 || j3 == j4)
+                if ((facade.getMotorNbJoueur()!=3 && (j1 == j2 || j1 == j3 || j1 == j4 || j2 == j3 || j2 == j4 || j3 == j4))
+                    || (facade.getMotorNbJoueur()==3 && (j1 == j2 || j1 == j3 || j2 == j3)))
                 {
 
                     MessageBoxResult m = MessageBox.Show("ERREUR : Attention il faut choisir une couleur par Port !");
-
                 }
                 else
                 {

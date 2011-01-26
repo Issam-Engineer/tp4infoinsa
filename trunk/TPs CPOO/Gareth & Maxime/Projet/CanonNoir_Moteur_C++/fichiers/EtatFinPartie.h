@@ -21,7 +21,7 @@ class EtatFinPartie : public Etat
 		*\fn EtatFinPartie(MoteurJeu * m)
 		*\brief Constructor
 		*/
-		//EtatFinPartie(MoteurJeu * m);
+		EtatFinPartie(MoteurJeu * m);
 
 		/**
 		*\fn void execute()
@@ -30,5 +30,5 @@ class EtatFinPartie : public Etat
 		virtual void execute();
 
 }; 
-inline void EtatFinPartie::execute(){};
+
 #endif

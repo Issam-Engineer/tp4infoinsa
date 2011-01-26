@@ -11,3 +11,8 @@
 void Bateau::positionner(Case* c){
 	pos=c;
 }
+
+Bateau::Bateau() {
+	aTresor = false;
+	bonPort = false;
+}
