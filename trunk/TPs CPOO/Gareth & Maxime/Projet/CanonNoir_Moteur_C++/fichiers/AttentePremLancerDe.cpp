@@ -5,7 +5,7 @@
 * \author Gareth THIVEUX
 * \version 1.0
 */
-//#include "StdAfx.h"
+
 #include "AttentePremLancerDe.h"
 #include "Joueur.h"
 
@@ -45,7 +45,7 @@ void AttentePremLancerDe::determinerOrdre(){
 		resDe[ind]=0;
 		temp[i] = (*motor->getJoueurInd(ind));
 	}
-	//delete motor->getTabJoueurs();
+	//delete [] motor->getTabJoueurs();
 	motor->setTabJoueur(temp);
 	int k = 0;
 

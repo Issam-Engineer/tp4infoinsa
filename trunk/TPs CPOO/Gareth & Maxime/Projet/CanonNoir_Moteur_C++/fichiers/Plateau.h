@@ -73,8 +73,6 @@ class Plateau
 		*\brief Function which make the case at position p inaccessible
 		*/
 		void setInaccessible(pair<int,int> p);
-
-
 		/**
 		*\fn void setAccessibleAll(bool b);
 		*\brief Function which put all the case inaccessible

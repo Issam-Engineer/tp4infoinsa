@@ -6,7 +6,7 @@
 *\version 1.0
 */
 
-//#include "StdAfx.h"
+
 #include "ProposeDeplacement.h"
 #include "Joueur.h"
 

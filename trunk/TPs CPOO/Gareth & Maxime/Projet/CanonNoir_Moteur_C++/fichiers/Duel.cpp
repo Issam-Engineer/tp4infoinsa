@@ -5,7 +5,7 @@
 *\author Gareth THIVEUX
 *\version 1.0
 */
-//#include "StdAfx.h"
+
 #include "Duel.h"
 #include "Bateau.h"
 #include "Joueur.h"
