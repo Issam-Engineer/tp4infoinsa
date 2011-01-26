@@ -32,7 +32,7 @@ namespace CanonNoir_Affichage
             int indice_hauteur = (int)canvas1.Height / /*hauteur Maximale*/ 4;
             double l_actuelle = indice_largeur;
 
-            MessageBox.Show("Taille de l'histo" + facade.getSizeHistogramme());
+            //MessageBox.Show("Taille de l'histo" + facade.getSizeHistogramme());
 
             int k;
             for ( k = 0 ; k < facade.getSizeHistogramme() ; k++)

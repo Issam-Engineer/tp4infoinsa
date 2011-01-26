@@ -1,6 +1,6 @@
 ﻿/**
 *\file  Facade.h
-*\brief fichier qui regroupe les fonctionnalité et les attributs de la facade du moteur
+*\brief File which contains the attributes and function declarations of the Fregate class
 *\author Maxime HAVEZ
 *\author Gareth THIVEUX
 *\version 1.0
