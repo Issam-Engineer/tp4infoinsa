@@ -43,8 +43,11 @@ void AttenteChoixBateau::execute(){
 		cout<<"Etape de sélection du bateau courant OK"<<endl;
 		cout<<"Couleur du bateau courant : "<<motor->getFacade()->getCoulBateauCourant()<<endl;
 		//motor->getFacade()->execute();
+		motor->getFacade()->setCliquerBateau(true);
+
 	}else{
-			
+		
+		motor->getFacade()->setCliquerBateau(false);
 		cout<<"ERREUR : AttenteChoixBateau il faut cliquer sur un des bateaux"<<endl;
 
 	}

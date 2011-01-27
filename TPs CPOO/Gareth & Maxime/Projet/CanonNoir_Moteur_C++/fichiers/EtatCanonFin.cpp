@@ -67,7 +67,7 @@ void EtatCanonFin::execute(){
 				}
 			}
 			
-			if(res->type() == 'C'){
+			/*if(res->type() == 'C'){
 				if(res->getATresor() == true){
 					cout<<"tir et trésor -> il devient frégate"<<endl;
 					motor->getJoueurInd(indice)->setBateau1(new Fregate());
@@ -82,7 +82,7 @@ void EtatCanonFin::execute(){
 				motor->getJoueurInd(indice)->setBateau1(new Radeau());
 				motor->getJoueurInd(indice)->getBateau1()->setATresor(false);
 				motor->getFacade()->setTypeBat(res->getPort()->getCouleur(),1);
-			}
+			}*/
 			
 		}
 
@@ -93,7 +93,7 @@ void EtatCanonFin::execute(){
 
 	}
 
-	motor->setJCourant(motor->getJCourant()+1);
+	motor->setJCourant(motor->getJCourant()+1 % (motor->getNbJoueurs()));
 	motor->modifCourant(ATTENTELANCERDE);
 }
 

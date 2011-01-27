@@ -119,8 +119,12 @@ namespace CanonNoir_Affichage
             //if (facade.getChoixBateau() == true)
             if (facade.getEtatCourant() == 4)
             {
-                textBox12.Text = "Choisis la case en surbrillance où tu veux aller !";
+                
                 facade.execute();
+                if (facade.getCliquerBateau())
+                {
+                    textBox12.Text = "Choisis la case en surbrillance où tu veux aller !";
+                }
                 facade.execute();
                 int CoulJ = facade.getCoulBateauCourant();
                 /*if (facade.getChoixBateau() == true)
@@ -182,7 +186,10 @@ namespace CanonNoir_Affichage
 
                 /*if (facade.getEtatCourant() == 5)
                 {*/
+                
                 textBox12.Text ="Choisis la case en surbrillance où tu veux aller !";
+                
+
                 if (facade.getAccessible(x, y))
                 {
 
@@ -316,7 +323,7 @@ namespace CanonNoir_Affichage
                         inPortJaune = false;
                     }
                     //if On est avec Le joueur Bleu
-                    else if (i == 4 && !DepotBleu /*&& inPortBleu*/ && x == 8 && y == 11)
+                    else if (i == 4 && !DepotBleu /*&& inPortBleu*/ && x == 11 && y == 8)
                     {
                         MessageBox.Show("Trésor ramené à bon port (Bleu)!");
                         textBox12.Text = "Trésor déposé !";

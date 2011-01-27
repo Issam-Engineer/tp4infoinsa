@@ -42,13 +42,13 @@ void ProposeDeplacement::traverseIle(pair<int,int>* tab, int i){
 
 	for(int d=(tab[0].first); d>(tab[i].first); d--){
 		for(int e=(tab[0].second); e>(tab[i].second); e--){
-				cout<<"("<<d<<","<<e<<")"<<endl;
-				cout<<"i : "<<i<<endl;
+				/*cout<<"("<<d<<","<<e<<")"<<endl;
+				cout<<"i : "<<i<<endl;*/
 			if(motor->getCase(d,e)->getTypeCase() == 'I'){
-				cout<<"("<<d<<","<<e<<")"<<endl;
+				/*cout<<"("<<d<<","<<e<<")"<<endl;
 				cout<<"i : "<<i<<endl;
 				cout<<"tab[0] : ("<<tab[0].first<<","<<tab[0].second<<")"<<endl;
-				cout<<"tab[i] : ("<<tab[i].first<<","<<tab[i].second<<")"<<endl;
+				cout<<"tab[i] : ("<<tab[i].first<<","<<tab[i].second<<")"<<endl;*/
 				//motor->setInaccessible(tab[i]);
 			}
 		}
