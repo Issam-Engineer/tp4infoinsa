@@ -124,6 +124,8 @@ namespace mWrapper {
 
 		void setAngle(int a){ f->setAngle(a); }
 		void setPuissance(int p){ f->setPuissance(p); }
-
+		
+		void setCliquerBateau(bool b){ f->setCliquerBateau(b); }
+		bool getCliquerBateau(){ return f->getCliquerBateau(); }
 	};
 }

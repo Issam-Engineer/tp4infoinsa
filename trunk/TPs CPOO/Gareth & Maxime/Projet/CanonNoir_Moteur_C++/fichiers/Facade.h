@@ -86,6 +86,7 @@ class __declspec(dllexport) Facade
 		int angle;
 		int puissance;
 
+		bool cliquerBateau;
 
 	public :
 		
@@ -543,9 +544,11 @@ class __declspec(dllexport) Facade
 		*/
 		double getHauteurHisto(int ind);
 
-		
+		bool getCliquerBateau();
+		void setCliquerBateau(bool b);
 }; 
-
+inline bool Facade::getCliquerBateau(){return cliquerBateau;}
+inline void Facade::setCliquerBateau(bool b){ cliquerBateau = b;}
 inline bool Facade::getClicDe(){ return _clicDe;}
 inline bool Facade::getAfficherDe1(){ return _afficherDe1;}
 inline bool Facade::getAfficherDe2(){ return _afficherDe2;}

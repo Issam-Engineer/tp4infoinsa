@@ -17,8 +17,8 @@ void AttenteLancerDe::execute(){
 
 	
 	cout<<"AttenteLancerDe.execute()"<<endl;
-	cout<<"indice joueur courant :"<<motor->getJCourant()<<" qui correspond au joueur numéro: "<<
-		motor->getJoueurInd(0)->getNumero()<<endl;
+	/*cout<<"indice joueur courant :"<<motor->getJCourant()<<" qui correspond au joueur numéro: "<<
+		motor->getJoueurCourant()->getNumero()<<endl;*/
 
 	if(motor->getFacade()->getClicDe() == true){
 

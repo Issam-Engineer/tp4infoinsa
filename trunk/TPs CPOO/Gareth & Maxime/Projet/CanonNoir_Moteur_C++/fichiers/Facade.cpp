@@ -52,6 +52,7 @@ Facade::Facade(){
 	_typeBatJaune=3;
 	_typeBatBleu=3;
 	_partieTerminee=false;
+	cliquerBateau=true;
 }
 
 Facade::~Facade(){
